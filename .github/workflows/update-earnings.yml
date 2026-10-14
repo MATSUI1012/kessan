@@ -1,1 +1,100 @@
+name: Update JPX earnings calendar
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 0 * * 1-5'
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 openpyxl
+      - name: Download JPX earnings calendar
+        run: |
+          python - <<'PY'
+          import io, json, re
+          from pathlib import Path
+          from urllib.parse import urljoin
+          import requests
+          from bs4 import BeautifulSoup
+          from openpyxl import load_workbook
+          from datetime import datetime, date
+
+          url = 'https://www.jpx.co.jp/listing/event-schedules/financial-announcement/index.html'
+          r = requests.get(url, timeout=30, headers={'User-Agent': 'Mozilla/5.0'})
+          r.raise_for_status()
+          soup = BeautifulSoup(r.content, 'html.parser')
+          links = []
+          for a in soup.select('a[href]'):
+              link = urljoin(r.url, a['href'])
+              if link.startswith('https://www.jpx.co.jp/') and re.search(r'\.xlsx?(?:\?|$)', link, re.I):
+                  links.append(link)
+          if not links:
+              raise RuntimeError('No JPX Excel files found; old data preserved')
+
+          result = {}
+          for link in links[:20]:
+              try:
+                  x = requests.get(link, timeout=40)
+                  x.raise_for_status()
+                  wb = load_workbook(io.BytesIO(x.content), read_only=True, data_only=True)
+              except Exception as exc:
+                  print('Skipped', link, exc)
+                  continue
+              for sheet in wb:
+                  header = None
+                  for row in sheet.iter_rows(values_only=True):
+                      cells = [str(v).strip() if v is not None else '' for v in row]
+                      if header is None:
+                          c = next((i for i,v in enumerate(cells) if re.search('コード|code', v, re.I)), None)
+                          n = next((i for i,v in enumerate(cells) if re.search('会社名|銘柄名|名称|company', v, re.I)), None)
+                          d = next((i for i,v in enumerate(cells) if re.search('発表予定日|決算発表日|発表日|announcement date', v, re.I)), None)
+                          if None not in (c,n,d):
+                              header = (c,n,d)
+                          continue
+                      if max(header) >= len(row):
+                          continue
+                      code, name, rawdate = (row[i] for i in header)
+                      if code is None or name is None or rawdate is None:
+                          continue
+                      code = str(code).strip().removesuffix('.0')
+                      if not re.fullmatch(r'[0-9A-Z]{4,5}', code):
+                          continue
+                      if isinstance(rawdate, datetime):
+                          day = rawdate.date().isoformat()
+                      else:
+                          m = re.search(r'(20\d{2})[/-](\d{1,2})[/-](\d{1,2})', str(rawdate))
+                          if not m:
+                              continue
+                          try:
+                              day = date(int(m[1]),int(m[2]),int(m[3])).isoformat()
+                          except ValueError:
+                              continue
+                      result[(code,day)] = {'code':code,'name':str(name).strip(),'earnings_date':day,'source_url':link}
+              wb.close()
+
+          if not result:
+              raise RuntimeError('No earnings rows found; old data preserved')
+          p = Path('data/earnings.json')
+          p.parent.mkdir(parents=True, exist_ok=True)
+          p.write_text(json.dumps(sorted(result.values(),key=lambda x:(x['earnings_date'],x['code'])),ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print('Updated',len(result),'records')
+          PY
+      - name: Commit updated data
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/earnings.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update JPX earnings calendar'
+            git push
+          fi
 

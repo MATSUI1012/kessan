@@ -44,7 +44,7 @@ function item(r,rank){
  const safeScore=(r.signals||[]).filter(v=>!String(v.label).includes('アナリスト')||Object.keys(a).length).reduce((n,v)=>n+(Number(v.points)||0),0);
  const missing=[!r.financials?'業績実績':null,!Object.keys(a).length?'市場予想':null,!pr.length?'過去の決算反応':null].filter(Boolean);
  const coverage=`<p class="flag">${missing.length?'要確認：'+esc(missing.join('・'))+'が未取得':'基礎項目の取得あり（内容精査が必要）'}</p>`;
- const period=f.period_type==='yearly'?'通期':'四半期';
+ const period=f.period_type==='ttm'?'過去12か月(TTM)':f.period_type==='yearly'?'通期':'四半期';
  const fund=`<div class="research-facts">${fact(period+'売上高・前年同期比',pct(f.revenue_yoy_pct))}${fact(period+'営業利益・前年同期比',pct(f.operating_income_yoy_pct))}${fact('売上高（直近'+period+'）',f.revenue_yen==null?'未取得':num(f.revenue_yen/1e8)+'億円')}${fact('業績基準日',f.latest_period||'未取得')}</div>`;
  const ex=`<div class="research-facts">${fact('アナリスト予想EPS',a.eps_mean==null?'未取得':num(a.eps_mean)+'円')}${fact('アナリスト予想売上高',a.revenue_mean_yen==null?'未取得':num(a.revenue_mean_yen/1e8)+'億円')}${fact('過去20営業日騰落率',pct(r.return_20d))}${fact('5日/前20日出来高倍率',r.volume_ratio_5_20==null?'未取得':num(r.volume_ratio_5_20)+'倍')}</div>`;
  const p=pr.length?pr.map(v=>`<p>${esc(v.event_date)}：翌営業日 ${esc(pct(v.after_1d_pct))} ／ 3営業日 ${esc(pct(v.after_3d_pct))} ／ 5営業日 ${esc(pct(v.after_5d_pct))} ／ EPS予想比 ${esc(pct(v.eps_surprise_pct))}</p>`).join(''):'過去の決算日付近の株価反応は取得できず';

@@ -261,8 +261,34 @@ def yahoo_research(code,series,now=None,finance_module=None):
                 result['financials']=annual
         except Exception:
             pass
+    # EARNINGS_EVIDENCE_REPAIR_V1
+    # Japanese equities are often missing quarterly statements and earnings
+    # dates on Yahoo Finance. Use summary data only with explicit TTM labels.
+    if not result['financials']:
+        try:
+            information = ticker.get_info()
+            if isinstance(information, dict):
+                revenue = as_num(information.get('totalRevenue'))
+                if revenue is not None and revenue > 0:
+                    result['financials'] = {
+                        'revenue_yen': int(revenue),
+                        'period_type': 'ttm',
+                        'latest_period': None,
+                        'data_source': 'Yahoo Finance TTM summary, not company IR',
+                        'revenue_yoy_pct': None,
+                        'operating_income_yoy_pct': None,
+                    }
+        except Exception as exc:
+            result['fundamental_error_type'] = type(exc).__name__
     result['analyst_consensus']=analyst_forecasts(ticker)
     result['prior_reactions']=event_reactions(ticker,series,now=now)
+    result['missing_data']=[]
+    if not result['financials']:
+        result['missing_data'].append('Financial results unavailable: company IR not verified')
+    elif result['financials'].get('period_type') == 'ttm':
+        result['missing_data'].append('Only TTM revenue available; quarterly year-on-year change unknown')
+    if not result['prior_reactions']:
+        result['missing_data'].append('Historical earnings dates or surrounding daily price data unavailable')
     return result
 
 

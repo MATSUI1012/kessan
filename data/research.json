@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T01:22:07+09:00",
+  "generated_at": "2026-10-15T02:20:58+09:00",
   "schema": 1,
   "screening": {
     "days_ahead": 14,
@@ -20,7 +20,14 @@
       "volume_ratio_5_20": 56.38,
       "return_5d": 41.47,
       "return_20d": 30.96,
-      "financials": null,
+      "financials": {
+        "revenue_yen": 20554000384,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
       "analyst_consensus": {
         "revenue_mean_yen": 5622000000,
         "analyst_count": 1,
@@ -31,6 +38,10 @@
         "fundamentals": "https://finance.yahoo.com/quote/7352.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/7352.T/analysis/"
       },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
       "news": [
         {
           "title": "ＴＷＯＳＴ、前期経常を36％下方修正 - 株探",
@@ -74,7 +85,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 2
+      "evidence_count": 3
     },
     {
       "code": "4498",
@@ -89,7 +100,14 @@
       "volume_ratio_5_20": 116.26,
       "return_5d": 49.6,
       "return_20d": 51.42,
-      "financials": null,
+      "financials": {
+        "revenue_yen": 8589000192,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
       "analyst_consensus": {
         "revenue_mean_yen": 2157000000,
         "analyst_count": 1,
@@ -100,6 +118,10 @@
         "fundamentals": "https://finance.yahoo.com/quote/4498.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/4498.T/analysis/"
       },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
       "news": [
         {
           "title": "サイバートラスト(株)【4498】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
@@ -143,7 +165,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 2
+      "evidence_count": 3
     },
     {
       "code": "3911",
@@ -158,13 +180,24 @@
       "volume_ratio_5_20": 19.87,
       "return_5d": 19.64,
       "return_20d": 15.52,
-      "financials": null,
+      "financials": {
+        "revenue_yen": 13708000256,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
       "analyst_consensus": null,
       "prior_reactions": [],
       "sources": {
         "fundamentals": "https://finance.yahoo.com/quote/3911.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/3911.T/analysis/"
       },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
       "news": [
         {
           "title": "(株)Ａｉｍｉｎｇ【3911】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
@@ -208,7 +241,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 1
+      "evidence_count": 2
     },
     {
       "code": "6058",
@@ -223,7 +256,14 @@
       "volume_ratio_5_20": 0.85,
       "return_5d": -1.32,
       "return_20d": 3.18,
-      "financials": null,
+      "financials": {
+        "revenue_yen": 65891000320,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
       "analyst_consensus": {
         "revenue_mean_yen": 16452000000,
         "analyst_count": 1,
@@ -234,6 +274,10 @@
         "fundamentals": "https://finance.yahoo.com/quote/6058.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/6058.T/analysis/"
       },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
       "news": [
         {
           "title": "(株)ベクトル【6058】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
@@ -253,7 +297,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 2
+      "evidence_count": 3
     },
     {
       "code": "4413",
@@ -268,7 +312,14 @@
       "volume_ratio_5_20": 0.38,
       "return_5d": -0.17,
       "return_20d": 0.57,
-      "financials": null,
+      "financials": {
+        "revenue_yen": 19468085248,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
       "analyst_consensus": {
         "revenue_mean_yen": 5582000000,
         "analyst_count": 1,
@@ -279,6 +330,10 @@
         "fundamentals": "https://finance.yahoo.com/quote/4413.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/4413.T/analysis/"
       },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
       "news": [
         {
           "title": "(株)ボードルア【4413】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
@@ -304,7 +359,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 2
+      "evidence_count": 3
     },
     {
       "code": "6999",
@@ -319,7 +374,14 @@
       "volume_ratio_5_20": 1.24,
       "return_5d": -6.53,
       "return_20d": 10.74,
-      "financials": null,
+      "financials": {
+        "revenue_yen": 76321996800,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
       "analyst_consensus": {
         "revenue_mean_yen": 23120000000,
         "analyst_count": 1,
@@ -330,6 +392,10 @@
         "fundamentals": "https://finance.yahoo.com/quote/6999.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/6999.T/analysis/"
       },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
       "news": [
         {
           "title": "ＫＯＡ(株)【6999】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
@@ -367,7 +433,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 2
+      "evidence_count": 3
     },
     {
       "code": "6023",
@@ -382,7 +448,14 @@
       "volume_ratio_5_20": 0.74,
       "return_5d": 0.89,
       "return_20d": 8.83,
-      "financials": null,
+      "financials": {
+        "revenue_yen": 90383998976,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
       "analyst_consensus": {
         "revenue_mean_yen": 26702000000,
         "analyst_count": 1,
@@ -393,6 +466,10 @@
         "fundamentals": "https://finance.yahoo.com/quote/6023.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/6023.T/analysis/"
       },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
       "news": [
         {
           "title": "ダイハツインフィニアース(株)【6023】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
@@ -412,7 +489,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 2
+      "evidence_count": 3
     },
     {
       "code": "9250",
@@ -427,13 +504,24 @@
       "volume_ratio_5_20": 27.08,
       "return_5d": 33.58,
       "return_20d": 82.02,
-      "financials": null,
+      "financials": {
+        "revenue_yen": 3475000064,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
       "analyst_consensus": null,
       "prior_reactions": [],
       "sources": {
         "fundamentals": "https://finance.yahoo.com/quote/9250.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/9250.T/analysis/"
       },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
       "news": [
         {
           "title": "(株)ＧＲＣＳ【9250】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
@@ -473,7 +561,7 @@
           "points": 2
         }
       ],
-      "evidence_count": 1
+      "evidence_count": 2
     },
     {
       "code": "5817",
@@ -488,13 +576,24 @@
       "volume_ratio_5_20": 2.34,
       "return_5d": 10.54,
       "return_20d": 20.91,
-      "financials": null,
+      "financials": {
+        "revenue_yen": 4431000064,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
       "analyst_consensus": null,
       "prior_reactions": [],
       "sources": {
         "fundamentals": "https://finance.yahoo.com/quote/5817.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/5817.T/analysis/"
       },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
       "news": [
         {
           "title": "ＪＭＡＣＳ(株)【5817】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
@@ -516,7 +615,7 @@
           "points": 2
         }
       ],
-      "evidence_count": 1
+      "evidence_count": 2
     },
     {
       "code": "1407",
@@ -531,7 +630,14 @@
       "volume_ratio_5_20": 1.07,
       "return_5d": -3.23,
       "return_20d": -4.73,
-      "financials": null,
+      "financials": {
+        "revenue_yen": 54587998208,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
       "analyst_consensus": {
         "revenue_mean_yen": 22540666670,
         "analyst_count": 3,
@@ -542,6 +648,10 @@
         "fundamentals": "https://finance.yahoo.com/quote/1407.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/1407.T/analysis/"
       },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
       "news": [
         {
           "title": "(株)ウエストホールディングス【1407】：今の株価の理由は？値動きの背景をAIが解説 - Yahoo!ファイナンス",
@@ -569,7 +679,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 2
+      "evidence_count": 3
     },
     {
       "code": "3915",
@@ -584,7 +694,14 @@
       "volume_ratio_5_20": 1.15,
       "return_5d": 0.9,
       "return_20d": -3.94,
-      "financials": null,
+      "financials": {
+        "revenue_yen": 29397344256,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
       "analyst_consensus": {
         "revenue_mean_yen": 8103000000,
         "analyst_count": 1,
@@ -595,6 +712,10 @@
         "fundamentals": "https://finance.yahoo.com/quote/3915.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/3915.T/analysis/"
       },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
       "news": [
         {
           "title": "(株)テラスカイ【3915】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
@@ -634,7 +755,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 2
+      "evidence_count": 3
     },
     {
       "code": "3091",
@@ -649,7 +770,14 @@
       "volume_ratio_5_20": 1.15,
       "return_5d": -0.79,
       "return_20d": -0.39,
-      "financials": null,
+      "financials": {
+        "revenue_yen": 32103000064,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
       "analyst_consensus": {
         "revenue_mean_yen": 8776000000,
         "analyst_count": 2,
@@ -660,6 +788,10 @@
         "fundamentals": "https://finance.yahoo.com/quote/3091.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/3091.T/analysis/"
       },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
       "news": [
         {
           "title": "(株)ブロンコビリー【3091】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
@@ -699,7 +831,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 2
+      "evidence_count": 3
     },
     {
       "code": "6521",
@@ -714,19 +846,36 @@
       "volume_ratio_5_20": 1.22,
       "return_5d": -3.0,
       "return_20d": 4.14,
-      "financials": null,
+      "financials": {
+        "revenue_yen": 10444999680,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
       "analyst_consensus": null,
       "prior_reactions": [],
       "sources": {
         "fundamentals": "https://finance.yahoo.com/quote/6521.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/6521.T/analysis/"
       },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
       "news": [
         {
           "title": "(株)オキサイド【6521】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
           "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5ncDVOYmJQTm5yOHNvME9DakJjVTk5a0dUb0VVbzB0aExIckQ2dmZQZ0FSOFkzWjEyQUpXTnRmWDMyZjhoY1N5NHVxdVpocGRCbVVUNVRHT3BQQjRHa3RjMUZpTVlSSmtrTVhCNloxRUtwSEptbkE?oc=5",
           "source": "Yahoo!ファイナンス",
           "published_at": "2026-10-09T18:50+09:00"
+        },
+        {
+          "title": "(株)オキサイド【6521】：今の株価の理由は？値動きの背景をAIが解説 - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB1NDJOQUFUUVRDOVp3M25TM0tONUNUNGlLR0hpSFFtZ2d6NGVWMnUwYXpLNEVxNlQ5YXhvZjRtVFBCUy0ySDdHZTJHZGtTc2J1Y18tYWFpQWFpU2NXUzQw?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-10-14T15:59+09:00"
         },
         {
           "title": "明日の株式相場に向けて＝投資マネー吸い寄せるレーザー関連株 - 株探",
@@ -748,7 +897,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 1
+      "evidence_count": 2
     },
     {
       "code": "4973",
@@ -763,13 +912,24 @@
       "volume_ratio_5_20": 0.97,
       "return_5d": -6.45,
       "return_20d": 0.1,
-      "financials": null,
+      "financials": {
+        "revenue_yen": 20818960384,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
       "analyst_consensus": null,
       "prior_reactions": [],
       "sources": {
         "fundamentals": "https://finance.yahoo.com/quote/4973.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/4973.T/analysis/"
       },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
       "news": [
         {
           "title": "日本高純度化学(株)【4973】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
@@ -803,7 +963,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 1
+      "evidence_count": 2
     },
     {
       "code": "2664",
@@ -818,13 +978,24 @@
       "volume_ratio_5_20": 1.11,
       "return_5d": 2.66,
       "return_20d": 3.62,
-      "financials": null,
+      "financials": {
+        "revenue_yen": 285448011776,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
       "analyst_consensus": null,
       "prior_reactions": [],
       "sources": {
         "fundamentals": "https://finance.yahoo.com/quote/2664.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/2664.T/analysis/"
       },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
       "news": [
         {
           "title": "カワチ薬品（2664）月次動向を更新しました(2026年9月度) - 四季報オンライン",
@@ -839,16 +1010,16 @@
           "published_at": "2026-10-05T16:00+09:00"
         },
         {
-          "title": "【決算速報】アクサスＨＤ、今期経常は41倍増益へ(株探ニュース) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPYng3dmdGUWtNaHc0YllhcHVQT1lVdnowR1dEZ015MmFvODdLOHYtVjAydlFTY1cyUHVjMV9TTG1yOWJUbkpLbFhMYnJnNHExWlJZWTZqRVVEckEzdkJxSzlKTzl4OGR5Q2RWcTVCSlVWVXBuSHVHS1ZGYXUySV9JTi1pU3d3dVk?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-14T13:30+09:00"
-        },
-        {
           "title": "【決算速報】クリエイトＳ、6-8月期(1Q)経常は5％減益で着地(株探ニュース) - Yahoo!ファイナンス",
           "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMUs2d3FnUHFoSEVwNE83UDNwVndFS2RHaDN0Q1JkQUx3Z09HTEwwTkJGaTl0Q3RoZk5oZnZNaXBzT2I0WmlWNUlIbVRncEI4SjllZG5WYVFrRDBKRnVRVXRISWJIakI4MWlBUWt2MzZQbU1pT3o5SmpZTE14X2VmRnloclBPYTg?oc=5",
           "source": "Yahoo!ファイナンス",
           "published_at": "2026-10-05T15:31+09:00"
+        },
+        {
+          "title": "【決算速報】アクサスＨＤ、今期経常は41倍増益へ(株探ニュース) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPYng3dmdGUWtNaHc0YllhcHVQT1lVdnowR1dEZ015MmFvODdLOHYtVjAydlFTY1cyUHVjMV9TTG1yOWJUbkpLbFhMYnJnNHExWlJZWTZqRVVEckEzdkJxSzlKTzl4OGR5Q2RWcTVCSlVWVXBuSHVHS1ZGYXUySV9JTi1pU3d3dVk?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-10-14T13:30+09:00"
         },
         {
           "title": "【決算速報】アクサスＨＤ、前期経常を98％下方修正(株探ニュース) - Yahoo!ファイナンス",
@@ -864,7 +1035,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 1
+      "evidence_count": 2
     },
     {
       "code": "5574",
@@ -879,13 +1050,24 @@
       "volume_ratio_5_20": 0.85,
       "return_5d": -9.16,
       "return_20d": -11.53,
-      "financials": null,
+      "financials": {
+        "revenue_yen": 4260999936,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
       "analyst_consensus": null,
       "prior_reactions": [],
       "sources": {
         "fundamentals": "https://finance.yahoo.com/quote/5574.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/5574.T/analysis/"
       },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
       "news": [
         {
           "title": "(株)ＡＢＥＪＡ【5574】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
@@ -902,7 +1084,7 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 1
+      "evidence_count": 2
     },
     {
       "code": "2168",
@@ -917,13 +1099,24 @@
       "volume_ratio_5_20": 1.12,
       "return_5d": -1.21,
       "return_20d": -6.36,
-      "financials": null,
+      "financials": {
+        "revenue_yen": 308496007168,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
       "analyst_consensus": null,
       "prior_reactions": [],
       "sources": {
         "fundamentals": "https://finance.yahoo.com/quote/2168.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/2168.T/analysis/"
       },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
       "news": [
         {
           "title": "(株)パソナグループ【2168】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
@@ -946,7 +1139,7 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 1
+      "evidence_count": 2
     },
     {
       "code": "6522",
@@ -961,13 +1154,24 @@
       "volume_ratio_5_20": 0.48,
       "return_5d": -9.53,
       "return_20d": -29.18,
-      "financials": null,
+      "financials": {
+        "revenue_yen": 1546141056,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
       "analyst_consensus": null,
       "prior_reactions": [],
       "sources": {
         "fundamentals": "https://finance.yahoo.com/quote/6522.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/6522.T/analysis/"
       },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
       "news": [
         {
           "title": "(株)アスタリスク【6522】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
@@ -996,7 +1200,7 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 1
+      "evidence_count": 2
     },
     {
       "code": "2972",
@@ -1011,13 +1215,24 @@
       "volume_ratio_5_20": 0.53,
       "return_5d": -0.24,
       "return_20d": 20.06,
-      "financials": null,
+      "financials": {
+        "revenue_yen": 5493907968,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
       "analyst_consensus": null,
       "prior_reactions": [],
       "sources": {
         "fundamentals": "https://finance.yahoo.com/quote/2972.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/2972.T/analysis/"
       },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
       "news": [
         {
           "title": "野村證券株式会社がサンケイリアルエステート投資法人　投資証券＜2972＞株式の変更報告書を提出（保有増加） - ｄメニューニュース",
@@ -1034,7 +1249,7 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 1
+      "evidence_count": 2
     },
     {
       "code": "3492",
@@ -1049,13 +1264,24 @@
       "volume_ratio_5_20": 0.85,
       "return_5d": 0.39,
       "return_20d": -2.79,
-      "financials": null,
+      "financials": {
+        "revenue_yen": 11157260288,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
       "analyst_consensus": null,
       "prior_reactions": [],
       "sources": {
         "fundamentals": "https://finance.yahoo.com/quote/3492.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/3492.T/analysis/"
       },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
       "news": [
         {
           "title": "マリモ地方創生リート投資法人【3470】：株価・株式情報（夜間PTS含む） - Yahoo!ファイナンス",
@@ -1072,9 +1298,17 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 1
+      "evidence_count": 2
     }
   ],
   "count": 20,
-  "method": "調査優先度は公開価格・出来高・取得できた四半期業績等のみ。買い推奨や決算予測確率ではありません。"
+  "method": "調査優先度は公開価格・出来高・取得できた四半期業績等のみ。買い推奨や決算予測確率ではありません。",
+  "coverage": {
+    "screened": 20,
+    "financials_any": 20,
+    "quarterly_or_annual": 0,
+    "ttm_only": 20,
+    "earnings_reaction_history": 0,
+    "analyst_estimates": 9
+  }
 }

@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install dependencies
-        run: pip install yfinance
+        run: pip install requests
       - name: Fetch stock prices
         run: python update-prices.py
       - name: Save updated data

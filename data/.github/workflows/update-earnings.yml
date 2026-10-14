@@ -1,0 +1,109 @@
+name: Free JPX earnings calendar
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 0,6 * * 1-5'
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 openpyxl
+      - name: Fetch JPX official calendar and create data/earnings.json
+        shell: bash
+        run: |
+          python - <<'PY'
+          import io, json, re
+          from datetime import datetime, timezone, timedelta
+          from pathlib import Path
+          from urllib.parse import urljoin, urlparse
+          import requests
+          from bs4 import BeautifulSoup
+          from openpyxl import load_workbook
+
+          JPX = 'https://www.jpx.co.jp/listing/event-schedules/financial-announcement/index.html'
+          headers = {'User-Agent': 'Mozilla/5.0 (compatible; personal-earnings-calendar/1.0)'}
+          sess = requests.Session()
+          sess.headers.update(headers)
+          r = sess.get(JPX, timeout=35)
+          r.raise_for_status()
+          soup = BeautifulSoup(r.content, 'html.parser')
+          links = []
+          for a in soup.select('a[href]'):
+              href = urljoin(r.url, a['href'])
+              if urlparse(href).netloc.lower() not in ('www.jpx.co.jp', 'jpx.co.jp'):
+                  continue
+              if re.search(r'\.(xlsx|xls)(?:\?|$)', href, re.I):
+                  links.append((href, a.get_text(' ', strip=True)))
+          links.sort(key=lambda t: bool(re.search('決算|発表|予定|schedule|financial', t[1], re.I)), reverse=True)
+          if not links:
+              raise RuntimeError('JPX page has no Excel links; existing data preserved.')
+          now = datetime.now(timezone(timedelta(hours=9)))
+          out = {}
+          scanned = 0
+          for href, label in links[:20]:
+              try:
+                  x = sess.get(href, timeout=40)
+                  x.raise_for_status()
+                  wb = load_workbook(io.BytesIO(x.content), read_only=True, data_only=True)
+              except Exception as e:
+                  print('Skipped link:', href, str(e)[:120]); continue
+              scanned += 1
+              for ws in wb.worksheets:
+                  rows = ws.iter_rows(values_only=True)
+                  header = None
+                  for i, values in enumerate(rows):
+                      cells = [str(v).strip() if v is not None else '' for v in values]
+                      if i > 15000: break
+                      if header is None:
+                          code_col = next((j for j,s in enumerate(cells) if re.search('コード|銘柄コード|証券コード|code', s, re.I)), None)
+                          name_col = next((j for j,s in enumerate(cells) if re.search('会社名|銘柄名|名称|company', s, re.I)), None)
+                          date_col = next((j for j,s in enumerate(cells) if re.search('発表予定日|決算発表日|決算発表予定日|発表日|announcement date', s, re.I)), None)
+                          if None not in (code_col,name_col,date_col):
+                              header = (code_col,name_col,date_col)
+                          continue
+                      ci,ni,di = header
+                      if max(header) >= len(values): continue
+                      rawcode, rawname, rawdate = values[ci], values[ni], values[di]
+                      if rawcode is None or rawname is None or rawdate is None: continue
+                      code = str(rawcode).strip().removesuffix('.0')
+                      if not re.fullmatch(r'[0-9A-Z]{4,5}',code): continue
+                      name = str(rawname).strip()
+                      if not name or name.lower() in ('none','nan'): continue
+                      if isinstance(rawdate, datetime): day=rawdate.date().isoformat()
+                      else:
+                          s = str(rawdate).strip().replace('年','/').replace('月','/').replace('日','')
+                          m = re.search(r'(20\d{2})[/-](\d{1,2})[/-](\d{1,2})',s)
+                          if not m: continue
+                          try: day=f'{int(m[1]):04d}-{int(m[2]):02d}-{int(m[3]):02d}'
+                          except ValueError: continue
+                      if not (now.date()-timedelta(days=45)).isoformat() <= day <= (now.date()+timedelta(days=120)).isoformat(): continue
+                      key=(code,day)
+                      out[key]={'code':code,'name':name,'earnings_date':day,
+                                'previous_earnings_date':'','source_url':href,
+                                'updated_at':now.isoformat(timespec='seconds'),
+                                'peer_checked':False,'peer_source_url':'',
+                                'catalyst_checked':False,'catalyst_source_url':'',
+                                'expectations_checked':False,'expectations_source_url':''}
+              wb.close()
+          if scanned == 0 or not out:
+              raise RuntimeError('No recognizable earnings rows; existing data preserved.')
+          dest = Path('data/earnings.json'); dest.parent.mkdir(parents=True,exist_ok=True)
+          dest.write_text(json.dumps(sorted(out.values(),key=lambda a:(a['earnings_date'],a['code'])),ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(f'Published {len(out)} JPX calendar rows from {scanned} Excel files')
+          PY
+      - name: Commit only when new data is available
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/earnings.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update JPX earnings calendar'
+            git push
+          fi

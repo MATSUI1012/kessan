@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>決算ギャンブルAI v12</title><style>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>決算ギャンブルAI v12.1</title><style>
 *{box-sizing:border-box}body{margin:0;background:#0c1628;color:#edf4ff;font:16px system-ui,sans-serif}main{max-width:850px;margin:auto;padding:18px 15px 70px}h1{font-size:25px}.panel{background:#1b2b42;border:1px solid #384d67;border-radius:16px;padding:18px;margin:18px 0}h2{font-size:20px}p{line-height:1.6}.muted{color:#b8c8de}label{display:block;margin:13px 0 5px}input,select{width:100%;padding:12px;background:#0d1b30;border:1px solid #536980;border-radius:9px;color:#fff;font:inherit}.row,.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.metric{background:#0b192c;padding:14px;border-radius:11px;text-align:center}.metric b{font-size:25px;display:block}button{background:#65b7ff;color:#09203a;border:0;padding:13px 17px;border-radius:10px;font-size:16px;font-weight:700;margin-top:10px}a{color:#90c7ff}.item{border-top:1px solid #435671;padding:14px 0}.item b{font-size:17px}.small{font-size:13px}.flag{color:#ffce9e}.pill{display:inline-block;padding:4px 8px;border-radius:11px;background:#2b4465;margin:3px} @media(max-width:420px){.row{grid-template-columns:1fr}}
 .research-section {border-color:#486486}.research-card{background:#122238;border:1px solid #3c5370;border-radius:12px;padding:15px;margin:12px 0}
 .research-card h3{margin:0 0 8px;font-size:18px}.research-card p{margin:9px 0}.research-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin:10px 0}
@@ -7,15 +7,15 @@
 .research-links a{display:block;padding:7px 0;overflow-wrap:anywhere}.research-sub{color:#aebfd3;font-size:13px}
 @media(max-width:420px){.research-facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style></head><body><main>
-<h1>📈 決算ギャンブルAI v12</h1><p class="muted">決算直前の一次候補・業績・市場予想・過去の値動き・ニュースを照合</p>
+<h1>📈 決算ギャンブルAI v12.1</h1><p class="muted">決算直前の一次候補・業績・市場予想・過去の値動き・ニュースを照合</p>
 <section class="panel"><h2>データ接続</h2><p id="status">読み込み中</p><button id="reload">公開データを更新</button><p class="muted small">出典の正確性は別途確認。ニュース・会社業績・市場期待は自動判定しません。</p></section>
 <section class="panel"><h2>① 抽出条件</h2><div class="row"><div><label>時価総額上限（億円・以上は除外）</label><input id="cap" type="number" min="1" value="1000"></div><div><label>最低概算売買代金（億円）</label><input id="turn" type="number" min="0" step="0.5" value="2"></div><div><label>決算まで</label><select id="days"><option value="7">7日</option><option value="14" selected>14日</option><option value="30">30日</option><option value="60">60日</option><option value="all">全期間（過去含む）</option></select></div><div><label>並び順</label><select id="sort"><option value="date">決算日が近い順</option><option value="turn">売買代金が多い順</option><option value="cap">時価総額が小さい順</option></select></div></div><button id="analyze">候補を抽出</button></section>
 <section class="panel"><h2>② 集計</h2><div class="grid"><div class="metric"><b id="scope">0</b>期間内</div><div class="metric"><b id="excluded">0</b>時価総額で除外</div><div class="metric"><b id="candidates">0</b>一次候補</div><div class="metric"><b id="pending">0</b>保留</div></div><p id="summary" class="muted"></p></section>
 <section class="panel"><h2>③ 一次候補（上位30件）</h2><p class="muted">流動性と決算日による抽出。買い推奨ではありません。決算時刻・業績予想・ニュースは必ず別途確認。</p><div id="results">読み込み中</div></section>
-<section class="panel research-section" id="researchpanel"><h2>④ 決算前の根拠付き分析</h2>
-<p class="muted">上位2銘柄は調査優先度による選出。会社予想とアナリスト予想は区別し、情報が取れない項目は未取得と表示。順位は上昇確率を表しません。</p>
+<section class="panel research-section" id="researchpanel"><h2>④ 決算前の調査資料</h2>
+<p class="muted">上位2銘柄は主に出来高と株価の動きによる確認順です。業績・会社予想・決算後反応が取得できない場合、決算の有望度は判定しません。数値0の市場予想は、担当アナリスト数が確認できなければ未取得扱いです。</p>
 <p id="researchstatus" class="muted">分析データ確認中…</p><button id="researchreload">分析データを更新</button>
-<h3>優先調査する2銘柄</h3><div id="researchtop">読み込み中</div>
+<h3>需給情報で確認する2銘柄（決算予測ではありません）</h3><div id="researchtop">読み込み中</div>
 <h3>その他の調査対象</h3><div id="researchother">読み込み中</div></section>
 <section class="panel"><h2>⑤ 保留（先頭20件）</h2><div id="held">読み込み中</div></section>
 <section class="panel"><h2>データの注意点</h2><p>時価総額が1,000億円以上の銘柄は除外。時価総額が不明の銘柄や日足が15日以上古い銘柄は保留。売買代金は終値×出来高の概算です。前回決算後の動きやニュースを確認したという意味ではありません。</p></section></main><script>
@@ -38,27 +38,30 @@ const pct=x=>x===null||x===undefined||!Number.isFinite(Number(x))?'未取得':(N
 const link=(u,text)=>/^https:\/\/[^\s]+$/i.test(String(u||''))?`<a target="_blank" rel="noopener noreferrer" href="${esc(u)}">${esc(text)}</a>`:'出典なし';
 const fact=(l,v)=>`<div class="research-fact"><span class="research-sub">${esc(l)}</span><b>${esc(v)}</b></div>`;
 function item(r,rank){
- const f=r.financials||{},a=r.analyst_consensus||{},pr=Array.isArray(r.prior_reactions)?r.prior_reactions:[],news=Array.isArray(r.news)?r.news:[],s=r.sources||{};
+ const f=r.financials||{},a=(r.analyst_consensus&&Number(r.analyst_consensus.analyst_count)>=1)?r.analyst_consensus:{},pr=Array.isArray(r.prior_reactions)?r.prior_reactions:[],news=Array.isArray(r.news)?r.news:[],s=r.sources||{};
  const company=`${esc(r.name||'名称なし')}（${esc(r.code)}）`;
- const signals=(r.signals||[]).map(v=>`<span class="pill">+${esc(v.points)} ${esc(v.label)}</span>`).join('')||'<span class="research-sub">加点要素なし</span>';
+ const signals=(r.signals||[]).filter(v=>!String(v.label).includes('アナリスト')||Object.keys(a).length).map(v=>`<span class="pill">+${esc(v.points)} ${esc(v.label)}</span>`).join('')||'<span class="research-sub">検証済みの加点要素なし</span>';
+ const safeScore=(r.signals||[]).filter(v=>!String(v.label).includes('アナリスト')||Object.keys(a).length).reduce((n,v)=>n+(Number(v.points)||0),0);
+ const missing=[!r.financials?'業績実績':null,!Object.keys(a).length?'市場予想':null,!pr.length?'過去の決算反応':null].filter(Boolean);
+ const coverage=`<p class="flag">${missing.length?'要確認：'+esc(missing.join('・'))+'が未取得':'基礎項目の取得あり（内容精査が必要）'}</p>`;
  const period=f.period_type==='yearly'?'通期':'四半期';
  const fund=`<div class="research-facts">${fact(period+'売上高・前年同期比',pct(f.revenue_yoy_pct))}${fact(period+'営業利益・前年同期比',pct(f.operating_income_yoy_pct))}${fact('売上高（直近'+period+'）',f.revenue_yen==null?'未取得':num(f.revenue_yen/1e8)+'億円')}${fact('業績基準日',f.latest_period||'未取得')}</div>`;
  const ex=`<div class="research-facts">${fact('アナリスト予想EPS',a.eps_mean==null?'未取得':num(a.eps_mean)+'円')}${fact('アナリスト予想売上高',a.revenue_mean_yen==null?'未取得':num(a.revenue_mean_yen/1e8)+'億円')}${fact('過去20営業日騰落率',pct(r.return_20d))}${fact('5日/前20日出来高倍率',r.volume_ratio_5_20==null?'未取得':num(r.volume_ratio_5_20)+'倍')}</div>`;
  const p=pr.length?pr.map(v=>`<p>${esc(v.event_date)}：翌営業日 ${esc(pct(v.after_1d_pct))} ／ 3営業日 ${esc(pct(v.after_3d_pct))} ／ 5営業日 ${esc(pct(v.after_5d_pct))} ／ EPS予想比 ${esc(pct(v.eps_surprise_pct))}</p>`).join(''):'過去の決算日付近の株価反応は取得できず';
  const nl=news.length?news.map(n=>`<div>${link(n.url,n.title)}<span class="research-sub">${esc(n.source||'配信元不明')} ／ ${esc(n.published_at||'日時不明')}</span></div>`).join(''):'最近のニュースは取得できず';
- return `<article class="research-card"><h3>${rank?rank+'. ':''}${company}</h3><p><span class="pill">決算予定 ${esc(r.earnings_date)}</span><span class="pill">時価総額 ${esc(num((r.market_cap_yen||0)/1e8))}億円</span><span class="pill">調査優先度 ${esc(r.research_priority_score??0)}点</span></p>
+ return `<article class="research-card"><h3>${rank?rank+'. ':''}${company}</h3><p><span class="pill">決算予定 ${esc(r.earnings_date)}</span><span class="pill">時価総額 ${esc(num((r.market_cap_yen||0)/1e8))}億円</span><span class="pill">需給確認点 ${esc(safeScore)}点</span></p>
  <p class="research-sub">データ基準日 ${esc(r.price_date||'不明')} ／ 終値 ${esc(num(r.close))}円 ／ 概算売買代金 ${esc(num(r.turnover_oku))}億円</p>
- <p>${signals}</p><details ${rank&&rank<=2?'open':''}><summary>直近業績と市場予想</summary>${fund}<p class="research-sub">実績値はYahoo Finance掲載データ。会社公表の次回業績予想とは異なる。</p>${ex}<p class="research-links">${link(s.fundamentals,'業績データの出典（Yahoo Finance）')} ${link(s.estimates,'アナリスト予想の出典（Yahoo Finance）')}</p></details>
+ <p>${signals}</p>${coverage}<details ${rank&&rank<=2?'open':''}><summary>直近業績と市場予想</summary>${fund}<p class="research-sub">実績値はYahoo Finance掲載値であり、会社IR原本との照合は未実施。次回の会社業績予想ではありません。</p>${ex}<p class="research-links">${link(s.fundamentals,'業績データの出典（Yahoo Finance）')} ${link(s.estimates,'アナリスト予想の出典（Yahoo Finance）')}</p></details>
  <details><summary>過去の決算日付近の値動き（${pr.length}件）</summary>${p}<p class="research-sub">発表時刻は未調整の終値ベース。過去の結果は今回の上昇確率ではありません。</p></details>
  <details><summary>直近の関連ニュース（${news.length}件）</summary><div class="research-links">${nl}</div><p class="research-sub">ニュースのタイトルとリンクのみ取得。見出しの正確性・方向性は未判定。</p></details>
  <p class="research-links">${link(r.earnings_source,'JPX決算予定の出典')}　${link('https://finance.yahoo.com/quote/'+encodeURIComponent(String(r.code||'')+'.T')+'/','企業データ')}</p></article>`}
 async function loadResearch(){let s=$('researchstatus');s.textContent='決算分析データ取得中…';try{
  const res=await fetch('./data/research.json',{cache:'no-store'});if(!res.ok)throw Error('分析データはまだ公開されていません');
  const data=await res.json();if(!Array.isArray(data.records))throw Error('分析ファイルの形式が不正');
- const rows=data.records;
+ const rows=data.records.slice().sort((a,b)=>{const score=r=>(r.signals||[]).filter(v=>!String(v.label).includes('アナリスト')||Number((r.analyst_consensus||{}).analyst_count)>=1).reduce((n,v)=>n+(Number(v.points)||0),0);return score(b)-score(a)||String(a.earnings_date).localeCompare(String(b.earnings_date))||Number(b.turnover_oku||0)-Number(a.turnover_oku||0)});
  const generated=data.generated_at?new Date(data.generated_at):null;
  const stale=!generated||Number.isNaN(generated.getTime())||Date.now()-generated.getTime()>36*3600*1000;
- s.textContent='取得 '+rows.length+'件 ／ 更新 '+(generated?generated.toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'}):'不明')+(stale?' ／ 更新から36時間超・情報の鮮度に注意':'');
+ s.textContent='調査資料 '+rows.length+'件 ／ 会社の決算数値 '+rows.filter(r=>r.financials).length+'件 ／ 過去決算反応 '+rows.filter(r=>(r.prior_reactions||[]).length).length+'件 ／ 更新 '+(generated?generated.toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'}):'不明')+(stale?' ／ 更新から36時間超・情報の鮮度に注意':'');
  $('researchtop').innerHTML=rows.slice(0,2).map((r,i)=>item(r,i+1)).join('')||'調査可能な銘柄なし';
  $('researchother').innerHTML=rows.length>2?`<details><summary>その他${rows.length-2}銘柄を表示</summary>`+rows.slice(2).map(r=>item(r,0)).join('')+'</details>':'該当なし';
  }catch(e){s.textContent='分析未反映：'+e.message;$('researchtop').textContent='分析データの更新待ち';$('researchother').textContent='';}}

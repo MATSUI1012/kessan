@@ -124,7 +124,7 @@ def financial_summary(statement, period_type="quarterly"):
         return None
     cols=sorted(statement.columns,reverse=True)
     lag=4 if period_type=='quarterly' else 1
-    if len(cols)<=lag:
+    if not cols:
         return None
     out={'latest_period':str(cols[0].date()) if hasattr(cols[0],'date') else str(cols[0])[:10], 'period_type':period_type}
     for key,candidates in [
@@ -135,7 +135,7 @@ def financial_summary(statement, period_type="quarterly"):
         if row is None:
             continue
         latest=as_num(statement.loc[row,cols[0]])
-        year_ago=as_num(statement.loc[row,cols[lag]])
+        year_ago=as_num(statement.loc[row,cols[lag]]) if len(cols)>lag else None
         if latest is not None:
             out[key+'_yen']=int(latest)
             out[key+'_yoy_pct']=percentage(latest,year_ago) if year_ago is not None and year_ago>0 else None
@@ -156,8 +156,13 @@ def analyst_forecasts(ticker):
             if idx is None or col not in df.columns:
                 continue
             n=as_num(df.loc[idx,col])
-            if n is not None:
+            # Yahoo can return a zero estimate when no analysts cover the stock.
+            # Require a positive analyst count instead of treating such placeholders as consensus.
+            count_col=next((c for c in ['numberOfAnalysts','numberOfAnalystsAvg'] if c in df.columns),None)
+            coverage=as_num(df.loc[idx,count_col]) if count_col else None
+            if n is not None and coverage is not None and coverage >= 1 and (name=='eps_mean' or n>0):
                 result[name]=round(n,4) if name=='eps_mean' else int(n)
+                result['analyst_count']=int(coverage)
                 result['period']=str(idx)
         except Exception:
             continue
@@ -272,12 +277,13 @@ def score_record(r):
         components.append({'label':'20営業日で緩やかな上昇','points':1})
     rev=(r.get('financials') or {}).get('revenue_yoy_pct')
     if rev is not None and rev>5:
-        components.append({'label':'直近四半期の売上高が前年同期比5%超増','points':2})
+        components.append({'label':('直近通期' if (r.get('financials') or {}).get('period_type')=='yearly' else '直近四半期')+'売上高が前年同期比5%超増','points':2})
     op=(r.get('financials') or {}).get('operating_income_yoy_pct')
     if op is not None and op>10:
-        components.append({'label':'直近四半期の営業利益が前年同期比10%超増','points':2})
-    if r.get('analyst_consensus'):
-        components.append({'label':'アナリスト予想データあり（予想超過を保証しない）','points':1})
+        components.append({'label':('直近通期' if (r.get('financials') or {}).get('period_type')=='yearly' else '直近四半期')+'営業利益が前年同期比10%超増','points':2})
+    consensus = r.get('analyst_consensus') or {}
+    if (as_num(consensus.get('analyst_count')) or 0)>=1 and ('eps_mean' in consensus or (as_num(consensus.get('revenue_mean_yen')) or 0)>0):
+        components.append({'label':'担当アナリスト数を確認できる市場予想あり','points':1})
     reactions=r.get('prior_reactions') or []
     beats=[x['eps_surprise_pct'] for x in reactions if x.get('eps_surprise_pct') is not None]
     if len(beats)>=2 and sum(x>0 for x in beats)/len(beats)>=0.6:
@@ -285,7 +291,7 @@ def score_record(r):
     elif reactions:
         components.append({'label':'過去決算日付近の株価反応データあり','points':1})
     return {'research_priority_score':sum(x['points'] for x in components),
-            'signals':components,'evidence_count':sum(bool(r.get(x)) for x in ['financials','analyst_consensus','prior_reactions','news'])}
+            'signals':components,'evidence_count':sum(bool(r.get(x)) for x in ['financials','prior_reactions','news']) + int(bool((r.get('analyst_consensus') or {}).get('analyst_count')))}
 
 
 def build_snapshot(earnings,prices,caps,now=None,limit=20,finance_module=None,request_module=None,sleep=0.25):

@@ -1,0 +1,214 @@
+name: Earnings evidence quality and history v2
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/earnings-quality-v2.yml'
+  schedule:
+    # Runs after the existing analysis (10:30 UTC) and repair (10:50 UTC).
+    - cron: '10 11 * * 1-5'
+permissions:
+  contents: write
+concurrency:
+  group: earnings-evidence-quality-v2
+  cancel-in-progress: false
+jobs:
+  verify_and_archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Verify current snapshot and archive source-labeled earnings calendar
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import sys
+          from bisect import bisect_left
+          from collections import defaultdict
+          from datetime import datetime, timezone, timedelta
+          from pathlib import Path
+
+          root = Path('data')
+          snapshot_file = root / 'research.json'
+          snapshot = json.loads(snapshot_file.read_text(encoding='utf-8'))
+          earnings = json.loads((root / 'earnings.json').read_text(encoding='utf-8'))
+          rows = snapshot.get('records', [])
+          if not isinstance(rows, list) or len(rows) > 40:
+              sys.exit('Invalid research records: refusing to publish')
+          if not isinstance(earnings, list) or not earnings:
+              sys.exit('Missing earnings calendar: refusing to publish')
+
+          # Archived scheduled announcements are NOT evidence that a company
+          # actually disclosed at the scheduled time. Retain JPX source URLs.
+          history_file = root / 'earnings-calendar-history.json'
+          if history_file.exists():
+              history = json.loads(history_file.read_text(encoding='utf-8'))
+          else:
+              history = {'schema': 1, 'description': 'JPX scheduled earnings dates; disclosure time not verified', 'events': []}
+          known = {(str(e.get('code')), str(e.get('scheduled_date'))) for e in history['events']}
+          added = 0
+          for e in earnings:
+              code = str(e.get('code', ''))
+              date = str(e.get('earnings_date', ''))
+              url = str(e.get('source_url', ''))
+              try:
+                  datetime.strptime(date, '%Y-%m-%d')
+              except ValueError:
+                  continue
+              if not code or (code, date) in known:
+                  continue
+              history['events'].append({'code': code, 'scheduled_date': date, 'source_url': url})
+              known.add((code, date))
+              added += 1
+          history['events'].sort(key=lambda e:(e['code'], e['scheduled_date']))
+          history_file.write_text(json.dumps(history, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+          print('Scheduled earnings dates archived:', added, 'total:', len(history['events']))
+
+          # Historical market reactions require an earlier event for the SAME
+          # stock and five observed sessions after it. Never use the upcoming
+          # event itself as prior earnings performance.
+          candidates = {str(r.get('code')) for r in rows}
+          historical_dates = defaultdict(list)
+          for e in history['events']:
+              if e['code'] in candidates:
+                  historical_dates[e['code']].append(e)
+          raw_prices = json.loads((root / 'prices.json').read_text(encoding='utf-8'))
+          if not isinstance(raw_prices, list):
+              sys.exit('Invalid price data')
+          prices = defaultdict(dict)
+          for p in raw_prices:
+              code = str(p.get('code', ''))
+              if code not in candidates:
+                  continue
+              try:
+                  close = float(p.get('close'))
+                  if not (0 < close < 1e9):
+                      continue
+              except (ValueError, TypeError):
+                  continue
+              date = str(p.get('date', ''))[:10]
+              if len(date) == 10:
+                  prices[code][date] = close
+
+          now = datetime.now(timezone(timedelta(hours=9))).date()
+          sourced_reactions = 0
+          for r in rows:
+              code = str(r.get('code'))
+              current_event = str(r.get('earnings_date', ''))
+              by_day = prices[code]
+              dates = sorted(by_day)
+              events = []
+              for e in historical_dates[code]:
+                  date = e['scheduled_date']
+                  if date >= current_event or datetime.strptime(date, '%Y-%m-%d').date() > now - timedelta(days=7):
+                      continue
+                  idx = bisect_left(dates, date)
+                  # At least one earlier trading session and five later sessions.
+                  if idx < 1 or len(dates) - idx < 6:
+                      continue
+                  before = by_day[dates[idx - 1]]
+                  after = [d for d in dates[idx:] if d > date]
+                  if len(after) < 5:
+                      continue
+                  returns = [round(100 * (by_day[after[n-1]] / before - 1), 2) for n in (1, 3, 5)]
+                  events.append({
+                      'event_date': date, 'after_1d_pct': returns[0],
+                      'after_3d_pct': returns[1], 'after_5d_pct': returns[2],
+                      'eps_surprise_pct': None,
+                      'source_url': e['source_url'],
+                      'date_quality': 'JPX予定日。実際の発表日時は未検証',
+                      'method': '予定日の前営業日終値から、その翌営業日以降の終値まで。発表時刻未調整'
+                  })
+              # Keep data with stronger event-time evidence if Yahoo ever supplies it.
+              if not r.get('prior_reactions') and events:
+                  r['prior_reactions'] = events[-4:]
+                  sourced_reactions += 1
+
+          def period(r):
+              return (r.get('financials') or {}).get('period_type')
+          coverage = {
+              'screened': len(rows),
+              'official_ir_verified': 0,
+              'quarterly_or_annual_yahoo': sum(period(r) in ('quarterly','yearly') for r in rows),
+              'ttm_reference_only': sum(period(r) == 'ttm' for r in rows),
+              'market_analyst_estimates': sum((r.get('analyst_consensus') or {}).get('analyst_count',0) >= 1 for r in rows),
+              'historical_scheduled_event_reactions': sum(bool(r.get('prior_reactions')) for r in rows),
+              'news_links': sum(bool(r.get('news')) for r in rows)
+          }
+          snapshot['coverage'] = coverage
+          snapshot['method'] = ('Research PRIORITY only; no probability of an earnings beat. '
+                                'TTM revenue is not quarterly results. Prior reactions, if any, '
+                                'are based on historical JPX scheduled dates, not verified disclosure times.')
+          snapshot_file.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2), encoding='utf-8')
+          print('VALIDATED COVERAGE:', json.dumps(coverage, ensure_ascii=False))
+          print('New past-schedule reaction records:', sourced_reactions)
+          if coverage['official_ir_verified'] == 0:
+              print('NOTICE: NO VERIFIED COMPANY IR. Do not present this as earnings forecast.')
+          PY
+      - name: Correct UI coverage labels, with explicit missing-data warning
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          f = Path('index.html')
+          s = f.read_text(encoding='utf-8')
+          old = "s.textContent='調査資料 '+rows.length+'件 ／ 会社の決算数値 '+rows.filter(r=>r.financials).length+'件 ／ 過去決算反応 '+rows.filter(r=>(r.prior_reactions||[]).length).length+'件 ／ 更新 '+"
+          new = "s.textContent='調査資料 '+rows.length+'件 ／ 会社IR確認済み 0件 ／ Yahoo四半期・通期参考 '+rows.filter(r=>['quarterly','yearly'].includes((r.financials||{}).period_type)).length+'件 ／ TTM参考値 '+rows.filter(r=>(r.financials||{}).period_type==='ttm').length+'件 ／ 過去予定日付近の株価反応 '+rows.filter(r=>(r.prior_reactions||[]).length).length+'件 ／ 更新 '+"
+          if old in s:
+              s = s.replace(old, new, 1)
+          elif new in s:
+              print('UI coverage labels already patched')
+          else:
+              raise SystemExit('UI changed unexpectedly: not publishing misleading labels')
+          # Do not label a TTM summary as verified financial statements.
+          original = "const missing=[!r.financials?'業績実績':null,"
+          corrected = "const missing=[!r.financials||r.financials.period_type==='ttm'?'四半期・通期業績実績':null,"
+          if original in s:
+              s = s.replace(original, corrected, 1)
+          elif corrected not in s:
+              raise SystemExit('Missing-data UI changed unexpectedly')
+          old_hint = "<p class=\"research-sub\">実績値はYahoo Finance掲載値であり、会社IR原本との照合は未実施。次回の会社業績予想ではありません。</p>"
+          new_hint = "<p class=\"research-sub\">TTMは過去12か月の参考値です。会社IR原本とは未照合で、次回の決算予想ではありません。</p>"
+          if old_hint in s:
+              s = s.replace(old_hint, new_hint, 1)
+          f.write_text(s, encoding='utf-8')
+          print('User-facing labels verified')
+          PY
+      - name: Reject malformed financial and reaction data
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          j = json.loads(Path('data/research.json').read_text(encoding='utf-8'))
+          rs = j['records']
+          assert len(rs) <= 40
+          assert all((r.get('financials') or {}).get('period_type') in (None,'ttm','quarterly','yearly') for r in rs)
+          assert all((r.get('financials') or {}).get('period_type') != 'ttm' or (r.get('financials') or {}).get('revenue_yoy_pct') is None for r in rs)
+          assert all(all(e.get('method') and e.get('event_date') < r['earnings_date'] for e in r.get('prior_reactions', [])) for r in rs)
+          s = Path('index.html').read_text(encoding='utf-8')
+          assert '会社IR確認済み 0件' in s and '四半期・通期業績実績' in s
+          print('STRICT QA PASSED', len(rs))
+          PY
+      - name: Publish verified evidence and calendar history
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html data/research.json data/earnings-calendar-history.json
+          if git diff --cached --quiet; then
+            echo 'Verified, no changed files'; exit 0
+          fi
+          git commit -m 'Separate TTM from earnings data and archive JPX event dates'
+          for n in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; exit 1; }
+            if git push origin HEAD:main; then
+              echo 'PUBLISHED VALIDATED EVIDENCE'; exit 0
+            fi
+            sleep $((n*5))
+          done
+          exit 1

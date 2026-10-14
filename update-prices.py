@@ -56,7 +56,7 @@ def main():
         str(item.get("code", "")).strip()
         for item in earnings
         if isinstance(item, dict)
-        and start.isoformat() <= str(item.get("date", "")) <= today.isoformat()
+        and start.isoformat() <= str(item.get("earnings_date", "")) <= today.isoformat()
         and str(item.get("code", "")).strip().isdigit()
     })
 

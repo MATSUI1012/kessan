@@ -1,0 +1,136 @@
+name: Repair earnings evidence retrieval
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/earnings-repair.yml'
+  schedule:
+    - cron: '50 10 * * 1-5'
+permissions:
+  contents: write
+concurrency:
+  group: repair-earnings-evidence
+  cancel-in-progress: false
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Patch research retrieval and transparency
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          file = Path('research.py')
+          src = file.read_text(encoding='utf-8')
+          marker = '# EARNINGS_EVIDENCE_REPAIR_V1'
+          if marker not in src:
+              old = "    result['analyst_consensus']=analyst_forecasts(ticker)\n    result['prior_reactions']=event_reactions(ticker,series,now=now)\n    return result"
+              new = '''    # EARNINGS_EVIDENCE_REPAIR_V1
+              # Japanese equities are often missing quarterly statements and earnings
+              # dates on Yahoo Finance. Use summary data only with explicit TTM labels.
+              if not result['financials']:
+                  try:
+                      information = ticker.get_info()
+                      if isinstance(information, dict):
+                          revenue = as_num(information.get('totalRevenue'))
+                          if revenue is not None and revenue > 0:
+                              result['financials'] = {
+                                  'revenue_yen': int(revenue),
+                                  'period_type': 'ttm',
+                                  'latest_period': None,
+                                  'data_source': 'Yahoo Finance TTM summary, not company IR',
+                                  'revenue_yoy_pct': None,
+                                  'operating_income_yoy_pct': None,
+                              }
+                  except Exception as exc:
+                      result['fundamental_error_type'] = type(exc).__name__
+              result['analyst_consensus']=analyst_forecasts(ticker)
+              result['prior_reactions']=event_reactions(ticker,series,now=now)
+              result['missing_data']=[]
+              if not result['financials']:
+                  result['missing_data'].append('Financial results unavailable: company IR not verified')
+              elif result['financials'].get('period_type') == 'ttm':
+                  result['missing_data'].append('Only TTM revenue available; quarterly year-on-year change unknown')
+              if not result['prior_reactions']:
+                  result['missing_data'].append('Historical earnings dates or surrounding daily price data unavailable')
+              return result'''
+              if src.count(old)!=1:
+                  raise RuntimeError('research.py changed: patch anchor not uniquely present. Stop without modifying files.')
+              src = src.replace(old, new)
+              file.write_text(src, encoding='utf-8')
+              print('Patched research.py')
+          else:
+              print('Patch already present')
+          PY
+      - name: Label trailing-12-month figures correctly in the app
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text(encoding='utf-8')
+          original="const period=f.period_type==='yearly'?'通期':'四半期';"
+          corrected="const period=f.period_type==='ttm'?'過去12か月(TTM)':f.period_type==='yearly'?'通期':'四半期';"
+          if original in s:
+              s=s.replace(original,corrected,1)
+              p.write_text(s,encoding='utf-8')
+              print('TTM label fixed')
+          elif corrected in s:
+              print('TTM label already fixed')
+          else:
+              raise RuntimeError('UI source changed. Stop rather than mislabel financial data.')
+          PY
+      - name: Verify Python source
+        run: python -m py_compile research.py
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check requests yfinance pandas
+      - name: Refresh research snapshot
+        run: python research.py --limit 20
+      - name: Report actual data coverage
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          j=json.loads(Path('data/research.json').read_text(encoding='utf-8'))
+          rows=j['records']
+          stats={
+              'screened':len(rows),
+              'financials_any':sum(bool(r.get('financials')) for r in rows),
+              'quarterly_or_annual':sum((r.get('financials') or {}).get('period_type') in ('quarterly','yearly') for r in rows),
+              'ttm_only':sum((r.get('financials') or {}).get('period_type')=='ttm' for r in rows),
+              'earnings_reaction_history':sum(bool(r.get('prior_reactions')) for r in rows),
+              'analyst_estimates':sum(bool((r.get('analyst_consensus') or {}).get('analyst_count')) for r in rows),
+          }
+          j['coverage']=stats
+          Path('data/research.json').write_text(json.dumps(j,ensure_ascii=False,indent=2),encoding='utf-8')
+          print('ACTUAL COVERAGE:',json.dumps(stats,ensure_ascii=False))
+          if stats['quarterly_or_annual']==0:
+              print('WARNING: No confirmed quarterly/annual statements. TTM is not a substitute for company IR.')
+          if stats['earnings_reaction_history']==0:
+              print('WARNING: No verifiable historical earnings reactions. Do not infer an earnings-day probability.')
+          PY
+      - name: Publish source and snapshot
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research.py index.html data/research.json
+          if git diff --cached --quiet; then
+            echo 'No changes'; exit 0
+          fi
+          git commit -m 'Repair financial coverage fallback and report missing evidence'
+          for n in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; exit 1; }
+            if git push origin HEAD:main; then
+              echo 'PUBLISHED research evidence repair'; exit 0
+            fi
+            sleep $((n*5))
+          done
+          exit 1

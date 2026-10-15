@@ -85,7 +85,12 @@
           "points": 1
         }
       ],
-      "evidence_count": 3
+      "evidence_count": 3,
+      "daily_turnover_to_market_cap_ratio": 0.105,
+      "quality_flags": [
+        "5日平均出来高が前20日平均の10倍超。急増理由・企業行動を確認"
+      ],
+      "quality_review_required": true
     },
     {
       "code": "4498",
@@ -165,7 +170,14 @@
           "points": 1
         }
       ],
-      "evidence_count": 3
+      "evidence_count": 3,
+      "daily_turnover_to_market_cap_ratio": 1.442,
+      "quality_flags": [
+        "1日概算売買代金が時価総額の50%以上。単位・重複・株式分割を確認",
+        "5日平均出来高が前20日平均の10倍超。急増理由・企業行動を確認",
+        "20営業日株価変動が40%以上。材料・分割などを確認"
+      ],
+      "quality_review_required": true
     },
     {
       "code": "3911",
@@ -241,7 +253,12 @@
           "points": 1
         }
       ],
-      "evidence_count": 2
+      "evidence_count": 2,
+      "daily_turnover_to_market_cap_ratio": 0.029,
+      "quality_flags": [
+        "5日平均出来高が前20日平均の10倍超。急増理由・企業行動を確認"
+      ],
+      "quality_review_required": true
     },
     {
       "code": "6058",
@@ -297,7 +314,10 @@
           "points": 1
         }
       ],
-      "evidence_count": 3
+      "evidence_count": 3,
+      "daily_turnover_to_market_cap_ratio": 0.009,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "4413",
@@ -359,7 +379,10 @@
           "points": 1
         }
       ],
-      "evidence_count": 3
+      "evidence_count": 3,
+      "daily_turnover_to_market_cap_ratio": 0.004,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "6999",
@@ -433,7 +456,10 @@
           "points": 1
         }
       ],
-      "evidence_count": 3
+      "evidence_count": 3,
+      "daily_turnover_to_market_cap_ratio": 0.015,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "6023",
@@ -489,7 +515,10 @@
           "points": 1
         }
       ],
-      "evidence_count": 3
+      "evidence_count": 3,
+      "daily_turnover_to_market_cap_ratio": 0.006,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "9250",
@@ -561,7 +590,13 @@
           "points": 2
         }
       ],
-      "evidence_count": 2
+      "evidence_count": 2,
+      "daily_turnover_to_market_cap_ratio": 0.462,
+      "quality_flags": [
+        "5日平均出来高が前20日平均の10倍超。急増理由・企業行動を確認",
+        "20営業日株価変動が40%以上。材料・分割などを確認"
+      ],
+      "quality_review_required": true
     },
     {
       "code": "5817",
@@ -615,7 +650,10 @@
           "points": 2
         }
       ],
-      "evidence_count": 2
+      "evidence_count": 2,
+      "daily_turnover_to_market_cap_ratio": 0.042,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "1407",
@@ -679,7 +717,10 @@
           "points": 1
         }
       ],
-      "evidence_count": 3
+      "evidence_count": 3,
+      "daily_turnover_to_market_cap_ratio": 0.01,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "3915",
@@ -755,7 +796,10 @@
           "points": 1
         }
       ],
-      "evidence_count": 3
+      "evidence_count": 3,
+      "daily_turnover_to_market_cap_ratio": 0.009,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "3091",
@@ -831,7 +875,10 @@
           "points": 1
         }
       ],
-      "evidence_count": 3
+      "evidence_count": 3,
+      "daily_turnover_to_market_cap_ratio": 0.003,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "6521",
@@ -897,7 +944,10 @@
           "points": 1
         }
       ],
-      "evidence_count": 2
+      "evidence_count": 2,
+      "daily_turnover_to_market_cap_ratio": 0.021,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "4973",
@@ -963,7 +1013,10 @@
           "points": 1
         }
       ],
-      "evidence_count": 2
+      "evidence_count": 2,
+      "daily_turnover_to_market_cap_ratio": 0.008,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "2664",
@@ -1035,7 +1088,10 @@
           "points": 1
         }
       ],
-      "evidence_count": 2
+      "evidence_count": 2,
+      "daily_turnover_to_market_cap_ratio": 0.002,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "5574",
@@ -1084,7 +1140,10 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2
+      "evidence_count": 2,
+      "daily_turnover_to_market_cap_ratio": 0.013,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "2168",
@@ -1139,7 +1198,10 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2
+      "evidence_count": 2,
+      "daily_turnover_to_market_cap_ratio": 0.005,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "6522",
@@ -1200,7 +1262,10 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2
+      "evidence_count": 2,
+      "daily_turnover_to_market_cap_ratio": 0.027,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "2972",
@@ -1249,7 +1314,10 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2
+      "evidence_count": 2,
+      "daily_turnover_to_market_cap_ratio": 0.008,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "3492",
@@ -1298,7 +1366,10 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2
+      "evidence_count": 2,
+      "daily_turnover_to_market_cap_ratio": 0.006,
+      "quality_flags": [],
+      "quality_review_required": false
     }
   ],
   "count": 20,
@@ -1311,5 +1382,7 @@
     "market_analyst_estimates": 9,
     "historical_scheduled_event_reactions": 0,
     "news_links": 20
-  }
+  },
+  "quality_review_count": 4,
+  "quality_rule": "Heuristic only. Large turnover/volume/returns are not proof of bad data, good earnings or stock-split."
 }

@@ -42,7 +42,7 @@ function item(r,rank){
  const company=`${esc(r.name||'名称なし')}（${esc(r.code)}）`;
  const signals=(r.signals||[]).filter(v=>!String(v.label).includes('アナリスト')||Object.keys(a).length).map(v=>`<span class="pill">+${esc(v.points)} ${esc(v.label)}</span>`).join('')||'<span class="research-sub">検証済みの加点要素なし</span>';
  const safeScore=(r.signals||[]).filter(v=>!String(v.label).includes('アナリスト')||Object.keys(a).length).reduce((n,v)=>n+(Number(v.points)||0),0);
- const missing=[!r.financials?'業績実績':null,!Object.keys(a).length?'市場予想':null,!pr.length?'過去の決算反応':null].filter(Boolean);
+ const missing=[!r.financials||r.financials.period_type==='ttm'?'四半期・通期業績実績':null,!Object.keys(a).length?'市場予想':null,!pr.length?'過去の決算反応':null].filter(Boolean);
  const coverage=`<p class="flag">${missing.length?'要確認：'+esc(missing.join('・'))+'が未取得':'基礎項目の取得あり（内容精査が必要）'}</p>`;
  const period=f.period_type==='ttm'?'過去12か月(TTM)':f.period_type==='yearly'?'通期':'四半期';
  const fund=`<div class="research-facts">${fact(period+'売上高・前年同期比',pct(f.revenue_yoy_pct))}${fact(period+'営業利益・前年同期比',pct(f.operating_income_yoy_pct))}${fact('売上高（直近'+period+'）',f.revenue_yen==null?'未取得':num(f.revenue_yen/1e8)+'億円')}${fact('業績基準日',f.latest_period||'未取得')}</div>`;
@@ -51,7 +51,7 @@ function item(r,rank){
  const nl=news.length?news.map(n=>`<div>${link(n.url,n.title)}<span class="research-sub">${esc(n.source||'配信元不明')} ／ ${esc(n.published_at||'日時不明')}</span></div>`).join(''):'最近のニュースは取得できず';
  return `<article class="research-card"><h3>${rank?rank+'. ':''}${company}</h3><p><span class="pill">決算予定 ${esc(r.earnings_date)}</span><span class="pill">時価総額 ${esc(num((r.market_cap_yen||0)/1e8))}億円</span><span class="pill">需給確認点 ${esc(safeScore)}点</span></p>
  <p class="research-sub">データ基準日 ${esc(r.price_date||'不明')} ／ 終値 ${esc(num(r.close))}円 ／ 概算売買代金 ${esc(num(r.turnover_oku))}億円</p>
- <p>${signals}</p>${coverage}<details ${rank&&rank<=2?'open':''}><summary>直近業績と市場予想</summary>${fund}<p class="research-sub">実績値はYahoo Finance掲載値であり、会社IR原本との照合は未実施。次回の会社業績予想ではありません。</p>${ex}<p class="research-links">${link(s.fundamentals,'業績データの出典（Yahoo Finance）')} ${link(s.estimates,'アナリスト予想の出典（Yahoo Finance）')}</p></details>
+ <p>${signals}</p>${coverage}<details ${rank&&rank<=2?'open':''}><summary>直近業績と市場予想</summary>${fund}<p class="research-sub">TTMは過去12か月の参考値です。会社IR原本とは未照合で、次回の決算予想ではありません。</p>${ex}<p class="research-links">${link(s.fundamentals,'業績データの出典（Yahoo Finance）')} ${link(s.estimates,'アナリスト予想の出典（Yahoo Finance）')}</p></details>
  <details><summary>過去の決算日付近の値動き（${pr.length}件）</summary>${p}<p class="research-sub">発表時刻は未調整の終値ベース。過去の結果は今回の上昇確率ではありません。</p></details>
  <details><summary>直近の関連ニュース（${news.length}件）</summary><div class="research-links">${nl}</div><p class="research-sub">ニュースのタイトルとリンクのみ取得。見出しの正確性・方向性は未判定。</p></details>
  <p class="research-links">${link(r.earnings_source,'JPX決算予定の出典')}　${link('https://finance.yahoo.com/quote/'+encodeURIComponent(String(r.code||'')+'.T')+'/','企業データ')}</p></article>`}
@@ -61,7 +61,7 @@ async function loadResearch(){let s=$('researchstatus');s.textContent='決算分
  const rows=data.records.slice().sort((a,b)=>{const score=r=>(r.signals||[]).filter(v=>!String(v.label).includes('アナリスト')||Number((r.analyst_consensus||{}).analyst_count)>=1).reduce((n,v)=>n+(Number(v.points)||0),0);return score(b)-score(a)||String(a.earnings_date).localeCompare(String(b.earnings_date))||Number(b.turnover_oku||0)-Number(a.turnover_oku||0)});
  const generated=data.generated_at?new Date(data.generated_at):null;
  const stale=!generated||Number.isNaN(generated.getTime())||Date.now()-generated.getTime()>36*3600*1000;
- s.textContent='調査資料 '+rows.length+'件 ／ 会社の決算数値 '+rows.filter(r=>r.financials).length+'件 ／ 過去決算反応 '+rows.filter(r=>(r.prior_reactions||[]).length).length+'件 ／ 更新 '+(generated?generated.toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'}):'不明')+(stale?' ／ 更新から36時間超・情報の鮮度に注意':'');
+ s.textContent='調査資料 '+rows.length+'件 ／ 会社IR確認済み 0件 ／ Yahoo四半期・通期参考 '+rows.filter(r=>['quarterly','yearly'].includes((r.financials||{}).period_type)).length+'件 ／ TTM参考値 '+rows.filter(r=>(r.financials||{}).period_type==='ttm').length+'件 ／ 過去予定日付近の株価反応 '+rows.filter(r=>(r.prior_reactions||[]).length).length+'件 ／ 更新 '+(generated?generated.toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'}):'不明')+(stale?' ／ 更新から36時間超・情報の鮮度に注意':'');
  $('researchtop').innerHTML=rows.slice(0,2).map((r,i)=>item(r,i+1)).join('')||'調査可能な銘柄なし';
  $('researchother').innerHTML=rows.length>2?`<details><summary>その他${rows.length-2}銘柄を表示</summary>`+rows.slice(2).map(r=>item(r,0)).join('')+'</details>':'該当なし';
  }catch(e){s.textContent='分析未反映：'+e.message;$('researchtop').textContent='分析データの更新待ち';$('researchother').textContent='';}}

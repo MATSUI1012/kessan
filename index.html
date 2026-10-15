@@ -80,4 +80,26 @@ document.getElementById('preRiskList').innerHTML=x.records.map(r=>'<details clas
 }catch(e){document.getElementById('preRiskStatus').textContent='取得失敗：'+e.message;}
 })();
 </script>
+<!-- EARNINGS_REACTIONS_V1 -->
+<section class="panel" id="earningsReactionPanel">
+<h2>⑦ 過去の決算日付近の株価反応</h2>
+<p class="muted">JPXの発表予定日またはYahoo決算カレンダー日付を使用。発表時刻は未確認。前営業日終値から、その日付より後の1・3・5営業日終値までを比較します。株価変動の原因や将来の上昇確率を示すものではありません。</p>
+<p id="erStatus">取得中…</p><div id="erCards"></div>
+</section>
+<script>
+(async()=>{'use strict';
+const e=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const p=x=>Number.isFinite(Number(x))?(Number(x)>0?'+':'')+Number(x).toFixed(2)+'%':'未取得';
+try{
+ const res=await fetch('./data/earnings-reactions.json',{cache:'no-store'});
+ if(!res.ok)throw Error('データ未公開');
+ const d=await res.json();if(!Array.isArray(d.records))throw Error('データ形式不正');
+ const present=d.records.filter(r=>(r.reactions||[]).length);
+ document.getElementById('erStatus').textContent='反応データあり '+present.length+' / '+d.records.length+'銘柄（未取得は0件のまま表示）';
+ const render=r=>'<details class="item"><summary>'+e(r.name)+'（'+e(r.code)+'） ／ '+(r.reactions||[]).length+'件</summary>'+
+ ((r.reactions||[]).length?r.reactions.map(x=>'<p>'+e(x.event_date)+' ／ '+e(x.date_kind)+'<br>翌営業日 '+p(x.after_1d_pct)+' ／ 3営業日 '+p(x.after_3d_pct)+' ／ 5営業日 '+p(x.after_5d_pct)+'<br><span class="muted small">比較基準 '+e(x.baseline_date)+'　'+(String(x.source_url||'').startsWith('https://')?'<a href="'+e(x.source_url)+'" target="_blank" rel="noopener noreferrer">日付の出典</a>':'出典URL未取得')+'</span></p>').join(''):'反応計算に必要な過去決算日か、その後の5営業日分の株価が未取得')+'</details>';
+ document.getElementById('erCards').innerHTML=d.records.map(render).join('');
+}catch(err){document.getElementById('erStatus').textContent='反応データ取得失敗：'+err.message;}
+})();
+</script>
 </body></html>

@@ -1,0 +1,207 @@
+name: Next-day earnings reaction tracker
+'on':
+  workflow_dispatch: {}
+  push:
+    paths:
+      - '.github/workflows/earnings-nextday-tracker.yml'
+  schedule:
+    - cron: '50 14 * * 1-5'
+permissions:
+  contents: write
+concurrency:
+  group: earnings-nextday-tracker
+  cancel-in-progress: false
+jobs:
+  nextday:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install public price client
+        run: python -m pip install -q requests
+      - name: Track one-day OHLC and close reactions
+        shell: python {0}
+        run: |
+          import json, math, time
+          from pathlib import Path
+          from datetime import date, datetime, timedelta, timezone
+          from collections import defaultdict
+          import requests
+          
+          D=Path('data'); JST=timezone(timedelta(hours=9)); today=datetime.now(JST).date()
+          events=json.loads((D/'earnings-calendar-history.json').read_text(encoding='utf-8'))['events']
+          names=json.loads((D/'earnings.json').read_text(encoding='utf-8'))
+          caps=json.loads((D/'market-caps.json').read_text(encoding='utf-8'))
+          prices=json.loads((D/'prices.json').read_text(encoding='utf-8'))
+          assert isinstance(events,list) and isinstance(names,list) and isinstance(prices,list)
+          name_map={str(r['code']):str(r.get('name') or '') for r in names}
+          cap_map={str(r['code']):float(r['market_cap_yen']) for r in caps if r.get('market_cap_yen') is not None and float(r['market_cap_yen'])>0}
+          # Original daily repository data: close and volume only. Never label as OHLC.
+          close_map=defaultdict(dict)
+          for p in prices:
+              try:
+                  code=str(p['code']); day=date.fromisoformat(str(p['date'])[:10]); close=float(p['close']); vol=float(p.get('volume') or 0)
+                  if math.isfinite(close) and close>0 and day<=today:
+                      close_map[code][day]={'date':day.isoformat(),'close':close,'volume':vol if math.isfinite(vol) and vol>=0 else None,
+                                             'open':None,'high':None,'low':None,'price_source':'保存済み日足（終値・出来高）'}
+              except (KeyError,ValueError,TypeError,OverflowError): continue
+          
+          # Keep prior verified records so refresh failure does not erase real observations.
+          output=D/'earnings-nextday-reactions.json'; previous={}
+          if output.exists():
+              try:previous=json.loads(output.read_text(encoding='utf-8'))
+              except (ValueError,OSError):pass
+          older={(str(x['code']),str(x['scheduled_date'])):x for x in previous.get('records',[])}
+          selected={}
+          for ev in events:
+              try:
+                  code=str(ev['code']); day=date.fromisoformat(str(ev['scheduled_date'])[:10]); source=str(ev.get('source_url') or '')
+                  cap=cap_map.get(code)
+                  if day>=today or day<today-timedelta(days=35):continue
+                  if cap is None or not (8_000_000_000<=cap<100_000_000_000):continue
+                  if not source.startswith('https://www.jpx.co.jp/'):continue
+                  selected[(code,day.isoformat())]={'code':code,'day':day,'source':source,'cap':cap}
+              except (KeyError,TypeError,ValueError):continue
+          
+          # Yahoo public chart is optional. If unavailable, valid close/volume remains useful.
+          # Restrict remote calls to codes with a recent event; cache by ticker within run.
+          session=requests.Session();session.headers.update({'User-Agent':'Mozilla/5.0 (compatible; earnings-reactions/1.0)'})
+          chart_cache={}; source_status=defaultdict(int)
+          for code in sorted({v['code'] for v in selected.values()}):
+              chart={}
+              try:
+                  # Public free quote-chart service; no key or paid subscription.
+                  end=int((datetime.now(timezone.utc)+timedelta(days=2)).timestamp())
+                  start=end-55*86400
+                  resp=session.get('https://query1.finance.yahoo.com/v8/finance/chart/'+code+'.T',
+                    params={'period1':start,'period2':end,'interval':'1d','events':'history'},timeout=12)
+                  resp.raise_for_status()
+                  payload=resp.json()['chart']['result'][0]
+                  stamps=payload.get('timestamp') or []
+                  q=payload['indicators']['quote'][0]
+                  tz=timezone(timedelta(hours=9))
+                  for i,stamp in enumerate(stamps):
+                      d=datetime.fromtimestamp(stamp,tz).date(); row={'date':d.isoformat(),'price_source':'Yahoo Finance 日足'}
+                      for field in ('open','high','low','close','volume'):
+                          arr=q.get(field) or []; val=arr[i] if i<len(arr) else None
+                          try:val=float(val) if val is not None and math.isfinite(float(val)) else None
+                          except (ValueError,TypeError):val=None
+                          row[field]=val
+                      if row['close'] is not None and row['close']>0:chart[d]=row
+                  source_status['yahoo_ok']+=1
+              except (requests.RequestException,KeyError,IndexError,ValueError,TypeError) as exc:
+                  source_status['yahoo_unavailable']+=1
+                  print('Yahoo OHLC unavailable',code,type(exc).__name__)
+              chart_cache[code]=chart
+              time.sleep(.08)
+          
+          def percent(x,y):return round((x/y-1)*100,2) if x is not None and y and y>0 else None
+          
+          rows=[]; incomplete=defaultdict(int)
+          for (code,dt),e in sorted(selected.items(),key=lambda item:item[0][1],reverse=True):
+              day=e['day']
+              series=dict(close_map[code]);series.update(chart_cache[code])
+              days=sorted(d for d,v in series.items() if d<=today and v.get('close') is not None and v['close']>0)
+              before=[d for d in days if d<day]; after=[d for d in days if d>day]
+              if not before or not after:
+                  incomplete['missing_pre_or_post_close']+=1
+                  continue
+              pre=before[-1]; first=after[0]
+              if (day-pre).days>7 or (first-day).days>7:
+                  incomplete['large_trading_gap']+=1;continue
+              base=series[pre]['close']; nxt=series[first]
+              # Intraday high/low/volume reported only when present from actual daily quote.
+              row={'code':code,'name':name_map.get(code) or '', 'scheduled_date':dt,
+                'date_kind':'JPX決算発表予定日（発表時刻未確認）','source_url':e['source'],
+                'market_cap_oku':round(e['cap']/1e8,2),
+                'baseline_date':pre.isoformat(),'baseline_close':base,
+                'next_session_date':first.isoformat(),
+                'next_open':nxt.get('open'),'next_high':nxt.get('high'),'next_low':nxt.get('low'),
+                'next_close':nxt['close'],'next_volume':nxt.get('volume'),
+                'gap_open_pct':percent(nxt.get('open'),base),
+                'high_pct':percent(nxt.get('high'),base),
+                'low_pct':percent(nxt.get('low'),base),
+                'next_close_pct':percent(nxt['close'],base),
+                'intraday_open_to_close_pct':percent(nxt['close'],nxt.get('open')),
+                'after_3d_pct':percent(series[after[2]]['close'],base) if len(after)>=3 and (after[2]-day).days<=10 else None,
+                'after_5d_pct':percent(series[after[4]]['close'],base) if len(after)>=5 and (after[4]-day).days<=15 else None,
+                'price_source':nxt['price_source'],
+                'ohlc_complete':all(nxt.get(k) is not None for k in ('open','high','low'))}
+              prev=older.get((code,dt))
+              # Never overwrite an existing full OHLC record with degraded close-only data.
+              if prev and prev.get('ohlc_complete') and not row['ohlc_complete']:
+                  for key in ('next_open','next_high','next_low','gap_open_pct','high_pct','low_pct','intraday_open_to_close_pct','ohlc_complete'):
+                      row[key]=prev.get(key)
+                  row['price_source']=prev.get('price_source',row['price_source'])
+              rows.append(row)
+          
+          # Retain older verified events as rolling history, not just the current shortlist.
+          existing_keys={(x['code'],x['scheduled_date']) for x in rows}
+          for key,record in older.items():
+              if key not in existing_keys:rows.append(record)
+          rows.sort(key=lambda x:(x['scheduled_date'],x['code']),reverse=True)
+          assert len({(x['code'],x['scheduled_date']) for x in rows})==len(rows)
+          assert all(x['baseline_date']<x['scheduled_date']<x['next_session_date'] for x in rows)
+          result={'schema':1,'description':'JPX決算発表予定日を基準にした翌営業日の日足反応。実際の発表時刻は未確認。売買推奨・翌営業日の予測ではない。',
+           'screening':{'market_cap_min_oku':80,'market_cap_max_exclusive_oku':1000,'minimum_turnover_oku':0},
+           'coverage':{'events_recent_eligible':len(selected),'nextday_available':len(rows),
+                       'ohlc_complete':sum(bool(x['ohlc_complete']) for x in rows),
+                       'close_only':sum(not x['ohlc_complete'] for x in rows),
+                       'fetch':dict(source_status),'missing':dict(incomplete)},
+           'records':rows}
+          comp=lambda x:{k:v for k,v in x.items() if k!='generated_at'}
+          if not previous or comp(previous)!=result:
+              result['generated_at']=datetime.now(JST).isoformat(timespec='seconds')
+              output.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print('NEXT DAY REACTIONS:',json.dumps(result['coverage'],ensure_ascii=False))
+          
+          html_path=Path('index.html');html=html_path.read_text(encoding='utf-8')
+          marker='<!-- NEXTDAY_REACTION_V1 -->'
+          if marker not in html:
+              fragment=r"""<!-- NEXTDAY_REACTION_V1 -->
+          <section class="panel" id="nextdayReactionPanel">
+          <h2>⑨ 決算予定日の翌営業日・値動き記録</h2>
+          <p class="muted">JPXの決算「予定日」に対する翌営業日の株価反応。実際の発表時刻を確認したものではありません。始値・高値・安値はYahoo日足から取得できた場合のみ表示。時価総額80億円以上・1,000億円未満、売買代金の制限なし。</p>
+          <p id="ndStatus">データ読込中…</p><div id="ndRecords"></div>
+          </section>
+          <script>
+          (async()=>{'use strict';
+          const $=id=>document.getElementById(id);
+          const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+          const number=x=>x===null||x===undefined||!Number.isFinite(Number(x))?'未取得':Number(x).toLocaleString('ja-JP',{maximumFractionDigits:2});
+          const pct=x=>x===null||x===undefined||!Number.isFinite(Number(x))?'未取得':(Number(x)>0?'+':'')+Number(x).toFixed(2)+'%';
+          try{
+           const resp=await fetch('./data/earnings-nextday-reactions.json',{cache:'no-store'});
+           if(!resp.ok)throw Error('データ未公開');
+           const d=await resp.json();if(!Array.isArray(d.records))throw Error('データ形式不正');
+           const complete=d.records.filter(x=>x.ohlc_complete).length;
+           $('ndStatus').textContent='翌営業日の反応あり '+d.records.length+'件 ／ 4本値取得 '+complete+'件（未取得は推測せず空欄）';
+           $('ndRecords').innerHTML=d.records.slice(0,60).map(x=>'<details class="item"><summary>'+esc(x.name)+'（'+esc(x.code)+'）／ '+esc(x.scheduled_date)+' ／ 翌終値 '+pct(x.next_close_pct)+'</summary><p>予定日 '+esc(x.scheduled_date)+' → 翌営業日 '+esc(x.next_session_date)+'</p><p>前日終値 '+number(x.baseline_close)+'円 ／ 翌日始値 '+number(x.next_open)+'円 ／ 高値 '+number(x.next_high)+'円 ／ 安値 '+number(x.next_low)+'円 ／ 終値 '+number(x.next_close)+'円</p><p>寄り付き '+pct(x.gap_open_pct)+' ／ 高値 '+pct(x.high_pct)+' ／ 安値 '+pct(x.low_pct)+' ／ 引け '+pct(x.next_close_pct)+' ／ 寄り→引け '+pct(x.intraday_open_to_close_pct)+'</p><p>出来高 '+number(x.next_volume)+'株 ／ 3営業日 '+pct(x.after_3d_pct)+' ／ 5営業日 '+pct(x.after_5d_pct)+'</p><p class="small muted">株価：'+esc(x.price_source)+' ／ <a href="'+esc(x.source_url)+'" target="_blank" rel="noopener noreferrer">予定日の出典（JPX）</a></p></details>').join('')||'まだ翌営業日の株価が揃った対象はありません';
+          }catch(e){$('ndStatus').textContent='反応データ取得失敗：'+e.message;}
+          })();
+          </script>
+          """
+              if '</body>' not in html:raise SystemExit('No closing body tag, refuse edit')
+              html=html.replace('</body>',fragment+'</body>',1)
+              html_path.write_text(html,encoding='utf-8')
+          assert html.count(marker)==1
+      - name: Commit sourced observations only
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/earnings-nextday-reactions.json index.html
+          if git diff --cached --quiet; then echo 'No new price observations'; exit 0; fi
+          git commit -m 'Track next trading session after scheduled earnings'
+          for n in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; exit 1; }
+            if git push origin HEAD:main; then exit 0; fi
+            sleep $((n*5))
+          done
+          exit 1

@@ -1,0 +1,145 @@
+name: Expand sourced own earnings history by quarter
+'on':
+  workflow_dispatch: {}
+  push:
+    paths:
+    - .github/workflows/earnings-own-history-expand.yml
+  schedule:
+  - cron: 20 16 * * 1-5
+permissions:
+  contents: write
+concurrency:
+  group: earnings-own-history-expand
+  cancel-in-progress: false
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: true
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - name: Install free market data clients
+      run: python -m pip install -q requests "yfinance>=0.2.60,<1"
+    - name: Find sourced past earnings dates and measure own reaction
+      shell: python {0}
+      run: "from datetime import date,datetime,timedelta,timezone\nfrom pathlib import Path\nfrom collections\
+        \ import defaultdict\nfrom concurrent.futures import ThreadPoolExecutor,as_completed\nfrom email.utils\
+        \ import parsedate_to_datetime\nfrom urllib.parse import quote\nfrom calendar import monthrange\nimport\
+        \ json,math,re,requests,time,xml.etree.ElementTree as ET\n\nJST=timezone(timedelta(hours=9)); now=datetime.now(JST);\
+        \ today=now.date()\nDATA=Path('data')\nranking_path=DATA/'earnings-four-factor-ranking.json'\nresearch=json.loads((DATA/'research.json').read_text(encoding='utf-8'))\n\
+        ranking=json.loads(ranking_path.read_text(encoding='utf-8'))\nassert research['screening']['market_cap_min_yen_inclusive']==8_000_000_000\n\
+        assert research['screening']['market_cap_max_yen_exclusive']==100_000_000_000\nassert research['screening']['min_latest_turnover_oku']==0\n\
+        assert isinstance(ranking['records'],list)\n\nsaved_path=DATA/'own-earnings-history.json'\ntry: old=json.loads(saved_path.read_text(encoding='utf-8'))\n\
+        except (OSError,ValueError):old={}\nold_by={str(x.get('code')):x for x in old.get('records',[]) if\
+        \ isinstance(x,dict)}\ncalendar=json.loads((DATA/'earnings-calendar-history.json').read_text(encoding='utf-8'))\n\
+        known_dates=defaultdict(list)\nfor x in calendar.get('events',[]):\n    if x.get('code') and x.get('scheduled_date')\
+        \ and x.get('source_url'):\n        known_dates[str(x['code'])].append({'event_date':str(x['scheduled_date'])[:10],\n\
+        \            'date_kind':'JPX決算予定日（発表時刻未確認）','source_url':x['source_url']})\n\nsession=requests.Session();session.headers.update({'User-Agent':'Mozilla/5.0\
+        \ EarningsHistoryResearch/1.0'})\ndef extract_disclosure_day(title):\n    # Prefer the date written\
+        \ as the disclosure date, never an unrelated financial period.\n    patterns=[r'(20\\d{2})年\\s*(0?[1-9]|1[0-2])月\\\
+        s*([0-3]?\\d)日\\s*\\(適時開示\\)',\n              r'(?:公表|発表|開示)[：: ]*(20\\d{2})[/-](0?[1-9]|1[0-2])[/-]([0-3]?\\\
+        d)']\n    for pat in patterns:\n        m=re.search(pat,title)\n        if m:\n            try:return\
+        \ date(*map(int,m.groups()))\n            except ValueError:continue\n    return None\n\ndef company_matched(title,code,name):\n\
+        \    has_code=bool(re.search(r'(?<![0-9A-Z])'+re.escape(code)+r'(?![0-9A-Z])',title,re.I))\n    has_name=bool(name\
+        \ and len(name)>=3 and name.replace('　','').replace(' ','') in title.replace('　','').replace(' ',''))\n\
+        \    return has_code or has_name\n\ndef get_dates_from_rss(code,name,limit_date):\n    # Separate focused\
+        \ searches by prior quarter. Google News usually won't return\n    # full 540-day history from one\
+        \ generic query.\n    queries=[f'\"{code}\" \"決算短信\" when:540d',\n             f'\"{name}\" \"決算短信\"\
+        \ when:540d']\n    for months in (3,6,9,12,15):\n        anchor=today-timedelta(days=months*30)\n \
+        \       queries.append(f'\"{code}\" \"決算短信\" after:{(anchor-timedelta(days=48)).isoformat()} before:{(anchor+timedelta(days=48)).isoformat()}')\n\
+        \    result={}\n    for q in queries:\n        url='https://news.google.com/rss/search?q='+quote(q)+'&hl=ja&gl=JP&ceid=JP:ja'\n\
+        \        try:\n            res=session.get(url,timeout=13);res.raise_for_status()\n            root=ET.fromstring(res.content)\n\
+        \            for item in root.findall('.//item')[:100]:\n                title=(item.findtext('title')\
+        \ or '').strip()\n                link=(item.findtext('link') or '').strip()\n                if not\
+        \ ('決算短信' in title and company_matched(title,code,name) and link.startswith('https://')):continue\n\
+        \                if any(bad in title for bad in ('訂正','再訂正','決算短信の一部','発表予定','決算短信の開示延期')):continue\n\
+        \                published=item.findtext('pubDate')\n                try:\n                    t=parsedate_to_datetime(published)\n\
+        \                    if t.tzinfo is None:t=t.replace(tzinfo=timezone.utc)\n                    news_day=t.astimezone(JST).date()\n\
+        \                except (ValueError,TypeError,OverflowError):continue\n                disclosed=extract_disclosure_day(title)\n\
+        \                if disclosed:\n                    day=disclosed\n                    if abs((news_day-day).days)>14:continue\n\
+        \                    kind='決算短信の見出しに記載された適時開示日（発表時刻未確認）'\n                else:\n                 \
+        \   # Published date alone is not proof of the actual earnings date.\n                    # Preserve\
+        \ existing dated records, but do not create new unverified events.\n                    continue\n\
+        \                if not (today-timedelta(days=535)<=day<limit_date):continue\n                key=(day.isoformat(),link)\n\
+        \                result[key]={'event_date':day.isoformat(),'date_kind':kind,\n                    'source_url':link,'headline':title}\n\
+        \        except Exception as exc:print('RSS_UNAVAILABLE',code,type(exc).__name__)\n    return list(result.values())\n\
+        \ndef yahoo_earnings_calendar(code,limit_date):\n    try:\n        import yfinance as yf\n        frame=yf.Ticker(code+'.T').get_earnings_dates(limit=20)\n\
+        \        if frame is None or getattr(frame,'empty',True):return []\n        out=[]\n        for stamp\
+        \ in frame.index:\n            try:d=stamp.date()\n            except (TypeError,AttributeError):continue\n\
+        \            if today-timedelta(days=535)<=d<limit_date:\n                out.append({'event_date':d.isoformat(),'date_kind':'Yahoo決算カレンダー日（発表時刻未確認）',\n\
+        \                    'source_url':f'https://finance.yahoo.com/quote/{code}.T/analysis/'})\n       \
+        \ return out\n    except Exception as exc:\n        print('YAHOO_EARNINGS_DATES_UNAVAILABLE',code,type(exc).__name__)\n\
+        \        return []\n\ndef prices_for(code):\n    # One request per candidate, daily closes; no fabricated\
+        \ prices.\n    end=int((datetime.now(timezone.utc)+timedelta(days=2)).timestamp())\n    start=int((datetime.now(timezone.utc)-timedelta(days=560)).timestamp())\n\
+        \    url='https://query1.finance.yahoo.com/v8/finance/chart/'+quote(code+'.T')\n    try:\n        r=session.get(url,params={'period1':start,'period2':end,'interval':'1d'},timeout=17)\n\
+        \        r.raise_for_status()\n        data=r.json()['chart']['result'][0]\n        closes=data['indicators']['quote'][0]['close']\n\
+        \        result={}\n        for ts,v in zip(data.get('timestamp') or [],closes):\n            try:\n\
+        \                n=float(v);d=datetime.fromtimestamp(ts,JST).date()\n                if math.isfinite(n)\
+        \ and n>0 and d<=today:result[d]=n\n            except (ValueError,TypeError,OverflowError):continue\n\
+        \        return result\n    except Exception as exc:\n        print('YAHOO_PRICE_UNAVAILABLE',code,type(exc).__name__);return\
+        \ {}\n\ndef compute(event,prices):\n    try:day=date.fromisoformat(event['event_date'])\n    except\
+        \ (KeyError,ValueError,TypeError):return None\n    before=sorted(d for d in prices if d<day)\n    after=sorted(d\
+        \ for d in prices if d>day)\n    if not before or not after or (day-before[-1]).days>7 or (after[0]-day).days>7:return\
+        \ None\n    base=prices[before[-1]]\n    result=dict(event)\n    result.update({'baseline_date':before[-1].isoformat(),'baseline_close':round(base,4),\n\
+        \        'next_session_date':after[0].isoformat(),\n        'next_close_pct':round((prices[after[0]]/base-1)*100,2),\n\
+        \        'after_3d_pct':round((prices[after[2]]/base-1)*100,2) if len(after)>=3 else None,\n      \
+        \  'after_5d_pct':round((prices[after[4]]/base-1)*100,2) if len(after)>=5 else None,\n        'price_source':'Yahoo\
+        \ Finance 日足'})\n    return result\n\ndef find_one(item):\n    code=str(item['code']);name=str(item.get('name')\
+        \ or '')\n    upcoming=date.fromisoformat(str(item['earnings_date'])[:10])\n    cutoff=min(upcoming-timedelta(days=7),today-timedelta(days=3))\n\
+        \    found=[]\n    # Previously recorded verified source links must be retained across temporary API\
+        \ outages.\n    for old_event in old_by.get(code,{}).get('events',[]):\n        if old_event.get('event_date')\
+        \ and str(old_event.get('source_url','')).startswith('https://'):\n            found.append(old_event)\n\
+        \    for event in known_dates[code]:\n        if event['event_date']<cutoff.isoformat():found.append(event)\n\
+        \    found.extend(get_dates_from_rss(code,name,cutoff))\n    found.extend(yahoo_earnings_calendar(code,cutoff))\n\
+        \    # JPX calendar and actual disclosure headline take precedence over the Yahoo calendar.\n    def\
+        \ priority(e):\n        kind=e.get('date_kind','')\n        return 4 if '適時開示日' in kind else 3 if kind.startswith('JPX')\
+        \ else 2 if kind.startswith('Yahoo') else 1\n    by_date={}\n    for e in found:\n        try:d=date.fromisoformat(e['event_date'])\n\
+        \        except (ValueError,TypeError,KeyError):continue\n        if not (today-timedelta(days=535)<=d<cutoff):continue\n\
+        \        if not str(e.get('source_url','')).startswith('https://'):continue\n        if e['event_date']\
+        \ not in by_date or priority(e)>priority(by_date[e['event_date']]):by_date[e['event_date']]=e\n   \
+        \ # One earnings release can appear on adjacent news days. Keep highest-quality record.\n    merged=[]\n\
+        \    for event in sorted(by_date.values(),key=lambda z:(-priority(z),z['event_date'])):\n        if\
+        \ any(abs((date.fromisoformat(event['event_date'])-date.fromisoformat(z['event_date'])).days)<=1 for\
+        \ z in merged):continue\n        merged.append(event)\n    prices=prices_for(code)\n    # Preserve\
+        \ earlier sourced closes if current Yahoo access fails, flagged as prior snapshot.\n    out=[]\n  \
+        \  for event in merged:\n        calculated=compute(event,prices)\n        if calculated:out.append(calculated)\n\
+        \        elif event.get('next_close_pct') is not None and event.get('baseline_date') and event.get('next_session_date'):\n\
+        \            out.append(event)\n    out.sort(key=lambda x:x['event_date'],reverse=True)\n    return\
+        \ {'code':code,'name':name,'events':out[:8],\n        'status':'過去日付と翌営業日の終値を照合' if out else '過去発表日または対応する株価が未取得'}\n\
+        \ncandidates=[{'code':str(r['code']),'name':r.get('name'),'earnings_date':str(r['earnings_date'])}\
+        \ for r in research['records']]\nfound={}\nwith ThreadPoolExecutor(max_workers=3) as pool:\n    futures={pool.submit(find_one,r):r['code']\
+        \ for r in candidates}\n    for f in as_completed(futures):\n        code=futures[f]\n        try:found[code]=f.result()\n\
+        \        except Exception as exc:\n            print('STOCK_UNAVAILABLE',code,type(exc).__name__)\n\
+        \            found[code]=old_by.get(code,{'code':code,'name':'','events':[],'status':'取得不可'})\n\n#\
+        \ Update only own-history component, retaining peer data, volume, 61-day revisions.\nfor row in ranking['records']:\n\
+        \    code=str(row['code'])\n    own=found.get(code,{}).get('events') or []\n    events=[e for e in\
+        \ own if e.get('next_close_pct') is not None and e.get('event_date')<str(row['earnings_date'])][:4]\n\
+        \    positive=sum(float(e['next_close_pct'])>0 for e in events)\n    score=3 if len(events)>=3 and\
+        \ positive/len(events)>=.75 else 2 if len(events)>=2 and positive/len(events)>=.6 else 1 if len(events)==1\
+        \ and positive else 0\n    row['self_history_count']=len(events)\n    row['self_history_positive']=positive\n\
+        \    row['self_history_events']=[{'date':e['event_date'],'next_close_pct':e['next_close_pct'],\n  \
+        \        'date_kind':e.get('date_kind'),'source_url':e.get('source_url')} for e in events]\n    row['score_components']['own_earnings_reaction']=score\n\
+        \    row['score_total']=sum(row['score_components'].values())\n    row.setdefault('data_coverage',{})['self_history']=bool(events)\n\
+        assert all(r['score_total']==sum(r['score_components'].values()) and 0<=r['score_total']<=12 for r\
+        \ in ranking['records'])\nranking['records'].sort(key=lambda r:(-r['score_total'],-sum(bool(v) for\
+        \ v in r.get('data_coverage',{}).values()),r['earnings_date'],r['code']))\nranking['coverage']['own_history']=sum(r['self_history_count']>0\
+        \ for r in ranking['records'])\nranking['generated_at']=now.isoformat(timespec='seconds')\nranking['own_history_source']='Yahoo\
+        \ Finance 決算カレンダー、JPX記録、または決算短信ニュース掲載日。発表時刻未確認、掲載日と発表日が異なる可能性あり。'\nranking['description']='4項目の調査順位。本人の過去決算反応は出典のある発表予定日・カレンダー日・記事掲載日付近の株価変化。実際の発表時刻・変動原因は未確認。未取得0点は悪材料ではない。'\n\
+        new={'schema':1,'updated_at':now.isoformat(timespec='seconds'),'method':'JPX予定日・Yahoo決算カレンダー・決算短信見出し内の適時開示日から本人の過去実績を取得。記事発信日をそのまま開示日として推定しない。',\n\
+        \     'coverage':{'candidates':len(candidates),'with_history':sum(bool(x['events']) for x in found.values()),\n\
+        \           'events':sum(len(x['events']) for x in found.values())},\n     'records':[found[str(r['code'])]\
+        \ for r in candidates]}\nsaved_path.write_text(json.dumps(new,ensure_ascii=False,indent=2)+'\\n',encoding='utf-8')\n\
+        ranking_path.write_text(json.dumps(ranking,ensure_ascii=False,indent=2)+'\\n',encoding='utf-8')\nprint('OWN_HISTORY_COVERAGE',json.dumps(new['coverage'],ensure_ascii=False))\n\
+        print('TOP5',[(r['code'],r['score_total'],r['self_history_count']) for r in ranking['records'][:5]])\n"
+    - name: Commit sourced history and update ranking
+      shell: bash
+      run: "set -e\n git config user.name 'github-actions[bot]'\n git config user.email '41898282+github-actions[bot]@users.noreply.github.com'\n\
+        \ git add data/own-earnings-history.json data/earnings-four-factor-ranking.json\n if git diff --cached\
+        \ --quiet; then echo 'No changes'; exit 0; fi\n git commit -m 'Add sourced prior earnings reactions\
+        \ for candidate companies'\n for i in 1 2 3; do\n   git fetch origin main\n   git rebase origin/main\
+        \ || { git rebase --abort; exit 1; }\n   if git push origin HEAD:main; then echo 'PUBLISHED'; exit\
+        \ 0; fi\n   sleep $((i*5))\n done\n exit 1"

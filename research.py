@@ -22,7 +22,6 @@ JST = timezone(timedelta(hours=9))
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
 MAX_CAP = 1000 * 100_000_000
-MIN_CAP = 80 * 100_000_000
 
 
 def utc_now() -> datetime:
@@ -78,7 +77,7 @@ def prepare(earnings, prices, caps, now=None, max_count=20, duration=14):
         if not 0 <= (event-day).days <= duration:
             continue
         cap=caps_map.get(code)
-        if cap is None or cap < MIN_CAP or cap >= MAX_CAP:
+        if cap is None or cap <= 0 or cap >= MAX_CAP:
             continue
         series=bycode.get(code,[])
         if not series:
@@ -93,7 +92,8 @@ def prepare(earnings, prices, caps, now=None, max_count=20, duration=14):
         c=as_num(last.get('close'))
         vol=as_num(last.get('volume'))
         t=(c or 0)*(vol or 0)/1e8
-        # No minimum turnover: keep liquidity metrics for information only.
+        if t<2:
+            continue
         tail=series[-20:]
         totals=[float(x['close'])*float(x['volume'])/1e8 for x in tail if as_num(x.get('close')) is not None and as_num(x.get('volume')) is not None]
         avgturn=round(sum(totals)/len(totals),2) if totals else None
@@ -261,34 +261,8 @@ def yahoo_research(code,series,now=None,finance_module=None):
                 result['financials']=annual
         except Exception:
             pass
-    # EARNINGS_EVIDENCE_REPAIR_V1
-    # Japanese equities are often missing quarterly statements and earnings
-    # dates on Yahoo Finance. Use summary data only with explicit TTM labels.
-    if not result['financials']:
-        try:
-            information = ticker.get_info()
-            if isinstance(information, dict):
-                revenue = as_num(information.get('totalRevenue'))
-                if revenue is not None and revenue > 0:
-                    result['financials'] = {
-                        'revenue_yen': int(revenue),
-                        'period_type': 'ttm',
-                        'latest_period': None,
-                        'data_source': 'Yahoo Finance TTM summary, not company IR',
-                        'revenue_yoy_pct': None,
-                        'operating_income_yoy_pct': None,
-                    }
-        except Exception as exc:
-            result['fundamental_error_type'] = type(exc).__name__
     result['analyst_consensus']=analyst_forecasts(ticker)
     result['prior_reactions']=event_reactions(ticker,series,now=now)
-    result['missing_data']=[]
-    if not result['financials']:
-        result['missing_data'].append('Financial results unavailable: company IR not verified')
-    elif result['financials'].get('period_type') == 'ttm':
-        result['missing_data'].append('Only TTM revenue available; quarterly year-on-year change unknown')
-    if not result['prior_reactions']:
-        result['missing_data'].append('Historical earnings dates or surrounding daily price data unavailable')
     return result
 
 
@@ -339,7 +313,7 @@ def build_snapshot(earnings,prices,caps,now=None,limit=20,finance_module=None,re
             time.sleep(sleep)
     records.sort(key=lambda x:(-x['research_priority_score'],-x['evidence_count'],x['earnings_date'],-x['turnover_oku']))
     return {'generated_at':now.isoformat(timespec='seconds'),
-            'schema':1,'screening':{'days_ahead':14,'market_cap_min_yen_inclusive':MIN_CAP,'market_cap_max_yen_exclusive':MAX_CAP,'min_latest_turnover_oku':0},
+            'schema':1,'screening':{'days_ahead':14,'market_cap_max_yen_exclusive':MAX_CAP,'min_latest_turnover_oku':2},
             'records':records,'count':len(records),
             'method':'調査優先度は公開価格・出来高・取得できた四半期業績等のみ。買い推奨や決算予測確率ではありません。'}
 

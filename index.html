@@ -9,16 +9,16 @@
 </style></head><body><main>
 <h1>📈 決算ギャンブルAI v12.1</h1><p class="muted">決算直前の一次候補・業績・市場予想・過去の値動き・ニュースを照合</p>
 <section class="panel"><h2>データ接続</h2><p id="status">読み込み中</p><button id="reload">公開データを更新</button><p class="muted small">出典の正確性は別途確認。ニュース・会社業績・市場期待は自動判定しません。</p></section>
-<section class="panel"><h2>① 抽出条件</h2><div class="row"><div><label>時価総額上限（億円・以上は除外）</label><input id="cap" type="number" min="81" value="1000"></div><div><label>時価総額下限（億円）</label><input id="mincap" type="number" min="0" value="80"></div><div><span class="muted small">売買代金の下限なし</span></div><div><label>決算まで</label><select id="days"><option value="7">7日</option><option value="14" selected>14日</option><option value="30">30日</option><option value="60">60日</option><option value="all">全期間（過去含む）</option></select></div><div><label>並び順</label><select id="sort"><option value="date">決算日が近い順</option><option value="turn">売買代金が多い順</option><option value="cap">時価総額が小さい順</option></select></div></div><button id="analyze">候補を抽出</button></section>
+<section class="panel"><h2>① 抽出条件</h2><div class="row"><div><label>時価総額上限（億円・以上は除外）</label><input id="cap" type="number" min="1" value="1000"></div><div><label>最低概算売買代金（億円）</label><input id="turn" type="number" min="0" step="0.5" value="2"></div><div><label>決算まで</label><select id="days"><option value="7">7日</option><option value="14" selected>14日</option><option value="30">30日</option><option value="60">60日</option><option value="all">全期間（過去含む）</option></select></div><div><label>並び順</label><select id="sort"><option value="date">決算日が近い順</option><option value="turn">売買代金が多い順</option><option value="cap">時価総額が小さい順</option></select></div></div><button id="analyze">候補を抽出</button></section>
 <section class="panel"><h2>② 集計</h2><div class="grid"><div class="metric"><b id="scope">0</b>期間内</div><div class="metric"><b id="excluded">0</b>時価総額で除外</div><div class="metric"><b id="candidates">0</b>一次候補</div><div class="metric"><b id="pending">0</b>保留</div></div><p id="summary" class="muted"></p></section>
-<section class="panel"><h2>③ 一次候補（上位30件）</h2><p class="muted">時価総額と決算日による抽出。買い推奨ではありません。決算時刻・業績予想・ニュースは必ず別途確認。</p><div id="results">読み込み中</div></section>
+<section class="panel"><h2>③ 一次候補（上位30件）</h2><p class="muted">流動性と決算日による抽出。買い推奨ではありません。決算時刻・業績予想・ニュースは必ず別途確認。</p><div id="results">読み込み中</div></section>
 <section class="panel research-section" id="researchpanel"><h2>④ 決算前の調査資料</h2>
 <p class="muted">上位2銘柄は主に出来高と株価の動きによる確認順です。業績・会社予想・決算後反応が取得できない場合、決算の有望度は判定しません。数値0の市場予想は、担当アナリスト数が確認できなければ未取得扱いです。</p>
 <p id="researchstatus" class="muted">分析データ確認中…</p><button id="researchreload">分析データを更新</button>
 <h3>需給情報で確認する2銘柄（決算予測ではありません）</h3><div id="researchtop">読み込み中</div>
 <h3>その他の調査対象</h3><div id="researchother">読み込み中</div></section>
 <section class="panel"><h2>⑤ 保留（先頭20件）</h2><div id="held">読み込み中</div></section>
-<section class="panel"><h2>データの注意点</h2><p>時価総額が80億円未満または1,000億円以上の銘柄は除外。時価総額が不明の銘柄や日足が15日以上古い銘柄は保留。売買代金は終値×出来高の概算です。前回決算後の動きやニュースを確認したという意味ではありません。</p></section></main><script>
+<section class="panel"><h2>データの注意点</h2><p>時価総額が1,000億円以上の銘柄は除外。時価総額が不明の銘柄や日足が15日以上古い銘柄は保留。売買代金は終値×出来高の概算です。前回決算後の動きやニュースを確認したという意味ではありません。</p></section></main><script>
 (()=>{'use strict';const $=id=>document.getElementById(id);let earnings=[],prices=[],caps=[],loaded=false;
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const num=x=>x===undefined||x===null||x===''?NaN:Number(x);
@@ -28,8 +28,8 @@ const fmt=x=>Number.isFinite(x)?x.toLocaleString('ja-JP',{maximumFractionDigits:
 function latestPrices(){let m=new Map;for(let p of prices){let code=String(p.code),old=m.get(code);if(Number.isFinite(num(p.close))&&num(p.close)>0&&Number.isFinite(num(p.volume))&&(!old||String(p.date)>String(old.date)))m.set(code,p)}return m}
 function capMap(){let m=new Map;for(let c of caps)if(num(c.market_cap_yen)>0)m.set(String(c.code),num(c.market_cap_yen));return m}
 function item(x){let e=x.e,src=String(e.source_url||'');return `<div class="item"><b>${esc(e.name)}（${esc(e.code)}）</b><p><span class="pill">決算日 ${esc(e.earnings_date)}</span><span class="pill">時価総額 ${fmt(x.cap/1e8)}億円</span></p><p>株価基準日 ${esc(x.p.date)} ／ 終値 ${fmt(num(x.p.close))}円 ／ 出来高 ${fmt(num(x.p.volume))}株 ／ 概算売買代金 ${fmt(x.turn)}億円</p><p class="muted small">これは一次候補。決算内容、会社IR、ニュースは未評価。</p>${/^https:\/\//.test(src)?`<a href="${esc(src)}" target="_blank" rel="noopener noreferrer">決算予定の出典</a>`:''}</div>`}
-function analyze(){if(!loaded)return;let pmap=latestPrices(),cmap=capMap(),caplimit=num($('cap').value)*1e8,capfloor=num($('mincap').value)*1e8,min=0,days=$('days').value;let scope=earnings.filter(e=>{let d=String(e.earnings_date||'').slice(0,10);if(!/^\d{4}-\d\d-\d\d$/.test(d))return false;let delta=daydiff(d,today());return days==='all'||delta>=0&&delta<=Number(days)});let excluded=0,passed=[],held=[];for(let e of scope){let cap=cmap.get(String(e.code));if(Number.isFinite(cap)&&(cap>=caplimit||cap<capfloor)){excluded++;continue}let p=pmap.get(String(e.code)),reasons=[];if(!Number.isFinite(cap))reasons.push('時価総額不明');if(!p)reasons.push('株価データなし');let turn=NaN;if(p){turn=num(p.close)*num(p.volume)/1e8;if(Math.abs(daydiff(String(p.date).slice(0,10),today()))>15)reasons.push('株価更新が古い');if(!Number.isFinite(turn)||turn<min)reasons.push('売買代金が基準未満・不明')}if(!/^https:\/\//.test(String(e.source_url||'')))reasons.push('決算日出典なし');if(reasons.length)held.push({e,reasons});else passed.push({e,p,cap,turn})}let sort=$('sort').value;passed.sort((a,b)=>sort==='turn'?b.turn-a.turn:sort==='cap'?a.cap-b.cap:String(a.e.earnings_date).localeCompare(String(b.e.earnings_date))||b.turn-a.turn);$('scope').textContent=scope.length;$('excluded').textContent=excluded;$('candidates').textContent=passed.length;$('pending').textContent=held.length;$('summary').textContent='期間内 '+scope.length+'件 ／ 除外 '+excluded+'件 ／ 一次候補 '+passed.length+'件 ／ 保留 '+held.length+'件';$('results').innerHTML=passed.slice(0,30).map(item).join('')||'一次候補なし。決算日や時価総額の条件を変更してください。';$('held').innerHTML=held.slice(0,20).map(x=>`<div class="item"><b>${esc(x.e.name)}（${esc(x.e.code)}）</b><p class="flag">${esc(x.reasons.join(' ／ '))}</p></div>`).join('')||'保留なし'}
-async function load(){loaded=false;$('status').textContent='データ取得中…';try{let rr=await Promise.all(['earnings','prices','market-caps'].map(n=>fetch('./data/'+n+'.json',{cache:'no-store'})));if(rr.some(r=>!r.ok))throw Error('公開データの取得失敗');let a=await Promise.all(rr.map(r=>r.json()));if(a.some(x=>!Array.isArray(x)))throw Error('JSON形式不正');[earnings,prices,caps]=a;loaded=true;$('status').textContent='接続済み：決算 '+earnings.length+'件 ／ 株価 '+prices.length+'行 ／ 時価総額 '+caps.filter(c=>num(c.market_cap_yen)>0).length+'件';analyze()}catch(e){$('status').textContent='取得失敗：'+e.message;$('results').textContent='データ更新状態を確認してください'}}$('reload').onclick=load;$('analyze').onclick=analyze;['cap','mincap','days','sort'].forEach(x=>$(x).onchange=analyze);load();
+function analyze(){if(!loaded)return;let pmap=latestPrices(),cmap=capMap(),caplimit=num($('cap').value)*1e8,min=num($('turn').value),days=$('days').value;let scope=earnings.filter(e=>{let d=String(e.earnings_date||'').slice(0,10);if(!/^\d{4}-\d\d-\d\d$/.test(d))return false;let delta=daydiff(d,today());return days==='all'||delta>=0&&delta<=Number(days)});let excluded=0,passed=[],held=[];for(let e of scope){let cap=cmap.get(String(e.code));if(Number.isFinite(cap)&&cap>=caplimit){excluded++;continue}let p=pmap.get(String(e.code)),reasons=[];if(!Number.isFinite(cap))reasons.push('時価総額不明');if(!p)reasons.push('株価データなし');let turn=NaN;if(p){turn=num(p.close)*num(p.volume)/1e8;if(Math.abs(daydiff(String(p.date).slice(0,10),today()))>15)reasons.push('株価更新が古い');if(!Number.isFinite(turn)||turn<min)reasons.push('売買代金が基準未満・不明')}if(!/^https:\/\//.test(String(e.source_url||'')))reasons.push('決算日出典なし');if(reasons.length)held.push({e,reasons});else passed.push({e,p,cap,turn})}let sort=$('sort').value;passed.sort((a,b)=>sort==='turn'?b.turn-a.turn:sort==='cap'?a.cap-b.cap:String(a.e.earnings_date).localeCompare(String(b.e.earnings_date))||b.turn-a.turn);$('scope').textContent=scope.length;$('excluded').textContent=excluded;$('candidates').textContent=passed.length;$('pending').textContent=held.length;$('summary').textContent='期間内 '+scope.length+'件 ／ 除外 '+excluded+'件 ／ 一次候補 '+passed.length+'件 ／ 保留 '+held.length+'件';$('results').innerHTML=passed.slice(0,30).map(item).join('')||'一次候補なし。期間や売買代金の条件を変更してください。';$('held').innerHTML=held.slice(0,20).map(x=>`<div class="item"><b>${esc(x.e.name)}（${esc(x.e.code)}）</b><p class="flag">${esc(x.reasons.join(' ／ '))}</p></div>`).join('')||'保留なし'}
+async function load(){loaded=false;$('status').textContent='データ取得中…';try{let rr=await Promise.all(['earnings','prices','market-caps'].map(n=>fetch('./data/'+n+'.json',{cache:'no-store'})));if(rr.some(r=>!r.ok))throw Error('公開データの取得失敗');let a=await Promise.all(rr.map(r=>r.json()));if(a.some(x=>!Array.isArray(x)))throw Error('JSON形式不正');[earnings,prices,caps]=a;loaded=true;$('status').textContent='接続済み：決算 '+earnings.length+'件 ／ 株価 '+prices.length+'行 ／ 時価総額 '+caps.filter(c=>num(c.market_cap_yen)>0).length+'件';analyze()}catch(e){$('status').textContent='取得失敗：'+e.message;$('results').textContent='データ更新状態を確認してください'}}$('reload').onclick=load;$('analyze').onclick=analyze;['cap','turn','days','sort'].forEach(x=>$(x).onchange=analyze);load();
 })();</script><script>
 (()=>{'use strict';const $=id=>document.getElementById(id);
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -42,162 +42,28 @@ function item(r,rank){
  const company=`${esc(r.name||'名称なし')}（${esc(r.code)}）`;
  const signals=(r.signals||[]).filter(v=>!String(v.label).includes('アナリスト')||Object.keys(a).length).map(v=>`<span class="pill">+${esc(v.points)} ${esc(v.label)}</span>`).join('')||'<span class="research-sub">検証済みの加点要素なし</span>';
  const safeScore=(r.signals||[]).filter(v=>!String(v.label).includes('アナリスト')||Object.keys(a).length).reduce((n,v)=>n+(Number(v.points)||0),0);
- const missing=[!r.financials||r.financials.period_type==='ttm'?'四半期・通期業績実績':null,!Object.keys(a).length?'市場予想':null,!pr.length?'過去の決算反応':null].filter(Boolean);
- const qualityNotes=Array.isArray(r.quality_flags)?r.quality_flags:[];
+ const missing=[!r.financials?'業績実績':null,!Object.keys(a).length?'市場予想':null,!pr.length?'過去の決算反応':null].filter(Boolean);
  const coverage=`<p class="flag">${missing.length?'要確認：'+esc(missing.join('・'))+'が未取得':'基礎項目の取得あり（内容精査が必要）'}</p>`;
- const period=f.period_type==='ttm'?'過去12か月(TTM)':f.period_type==='yearly'?'通期':'四半期';
+ const period=f.period_type==='yearly'?'通期':'四半期';
  const fund=`<div class="research-facts">${fact(period+'売上高・前年同期比',pct(f.revenue_yoy_pct))}${fact(period+'営業利益・前年同期比',pct(f.operating_income_yoy_pct))}${fact('売上高（直近'+period+'）',f.revenue_yen==null?'未取得':num(f.revenue_yen/1e8)+'億円')}${fact('業績基準日',f.latest_period||'未取得')}</div>`;
  const ex=`<div class="research-facts">${fact('アナリスト予想EPS',a.eps_mean==null?'未取得':num(a.eps_mean)+'円')}${fact('アナリスト予想売上高',a.revenue_mean_yen==null?'未取得':num(a.revenue_mean_yen/1e8)+'億円')}${fact('過去20営業日騰落率',pct(r.return_20d))}${fact('5日/前20日出来高倍率',r.volume_ratio_5_20==null?'未取得':num(r.volume_ratio_5_20)+'倍')}</div>`;
  const p=pr.length?pr.map(v=>`<p>${esc(v.event_date)}：翌営業日 ${esc(pct(v.after_1d_pct))} ／ 3営業日 ${esc(pct(v.after_3d_pct))} ／ 5営業日 ${esc(pct(v.after_5d_pct))} ／ EPS予想比 ${esc(pct(v.eps_surprise_pct))}</p>`).join(''):'過去の決算日付近の株価反応は取得できず';
  const nl=news.length?news.map(n=>`<div>${link(n.url,n.title)}<span class="research-sub">${esc(n.source||'配信元不明')} ／ ${esc(n.published_at||'日時不明')}</span></div>`).join(''):'最近のニュースは取得できず';
  return `<article class="research-card"><h3>${rank?rank+'. ':''}${company}</h3><p><span class="pill">決算予定 ${esc(r.earnings_date)}</span><span class="pill">時価総額 ${esc(num((r.market_cap_yen||0)/1e8))}億円</span><span class="pill">需給確認点 ${esc(safeScore)}点</span></p>
  <p class="research-sub">データ基準日 ${esc(r.price_date||'不明')} ／ 終値 ${esc(num(r.close))}円 ／ 概算売買代金 ${esc(num(r.turnover_oku))}億円</p>
- <p>${signals}</p>${coverage}${qualityNotes.length?'<p class="flag">需給の要再確認：'+qualityNotes.map(esc).join('／')+'</p>':''}<details ${rank&&rank<=2?'open':''}><summary>直近業績と市場予想</summary>${fund}<p class="research-sub">TTMは過去12か月の参考値です。会社IR原本とは未照合で、次回の決算予想ではありません。</p>${ex}<p class="research-links">${link(s.fundamentals,'業績データの出典（Yahoo Finance）')} ${link(s.estimates,'アナリスト予想の出典（Yahoo Finance）')}</p></details>
+ <p>${signals}</p>${coverage}<details ${rank&&rank<=2?'open':''}><summary>直近業績と市場予想</summary>${fund}<p class="research-sub">実績値はYahoo Finance掲載値であり、会社IR原本との照合は未実施。次回の会社業績予想ではありません。</p>${ex}<p class="research-links">${link(s.fundamentals,'業績データの出典（Yahoo Finance）')} ${link(s.estimates,'アナリスト予想の出典（Yahoo Finance）')}</p></details>
  <details><summary>過去の決算日付近の値動き（${pr.length}件）</summary>${p}<p class="research-sub">発表時刻は未調整の終値ベース。過去の結果は今回の上昇確率ではありません。</p></details>
  <details><summary>直近の関連ニュース（${news.length}件）</summary><div class="research-links">${nl}</div><p class="research-sub">ニュースのタイトルとリンクのみ取得。見出しの正確性・方向性は未判定。</p></details>
  <p class="research-links">${link(r.earnings_source,'JPX決算予定の出典')}　${link('https://finance.yahoo.com/quote/'+encodeURIComponent(String(r.code||'')+'.T')+'/','企業データ')}</p></article>`}
 async function loadResearch(){let s=$('researchstatus');s.textContent='決算分析データ取得中…';try{
  const res=await fetch('./data/research.json',{cache:'no-store'});if(!res.ok)throw Error('分析データはまだ公開されていません');
  const data=await res.json();if(!Array.isArray(data.records))throw Error('分析ファイルの形式が不正');
- const rows=data.records.slice().sort((a,b)=>{const score=r=>(r.signals||[]).filter(v=>!String(v.label).includes('アナリスト')||Number((r.analyst_consensus||{}).analyst_count)>=1).reduce((n,v)=>n+(Number(v.points)||0),0);return Number(!!a.quality_review_required)-Number(!!b.quality_review_required)||score(b)-score(a)||String(a.earnings_date).localeCompare(String(b.earnings_date))||Number(b.turnover_oku||0)-Number(a.turnover_oku||0)});
+ const rows=data.records.slice().sort((a,b)=>{const score=r=>(r.signals||[]).filter(v=>!String(v.label).includes('アナリスト')||Number((r.analyst_consensus||{}).analyst_count)>=1).reduce((n,v)=>n+(Number(v.points)||0),0);return score(b)-score(a)||String(a.earnings_date).localeCompare(String(b.earnings_date))||Number(b.turnover_oku||0)-Number(a.turnover_oku||0)});
  const generated=data.generated_at?new Date(data.generated_at):null;
  const stale=!generated||Number.isNaN(generated.getTime())||Date.now()-generated.getTime()>36*3600*1000;
- s.textContent='調査資料 '+rows.length+'件 ／ 会社IR確認済み 0件 ／ Yahoo四半期・通期参考 '+rows.filter(r=>['quarterly','yearly'].includes((r.financials||{}).period_type)).length+'件 ／ TTM参考値 '+rows.filter(r=>(r.financials||{}).period_type==='ttm').length+'件 ／ 過去予定日付近の株価反応 '+rows.filter(r=>(r.prior_reactions||[]).length).length+'件 ／ 更新 '+(generated?generated.toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'}):'不明')+(stale?' ／ 更新から36時間超・情報の鮮度に注意':'');
+ s.textContent='調査資料 '+rows.length+'件 ／ 会社の決算数値 '+rows.filter(r=>r.financials).length+'件 ／ 過去決算反応 '+rows.filter(r=>(r.prior_reactions||[]).length).length+'件 ／ 更新 '+(generated?generated.toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'}):'不明')+(stale?' ／ 更新から36時間超・情報の鮮度に注意':'');
  $('researchtop').innerHTML=rows.slice(0,2).map((r,i)=>item(r,i+1)).join('')||'調査可能な銘柄なし';
  $('researchother').innerHTML=rows.length>2?`<details><summary>その他${rows.length-2}銘柄を表示</summary>`+rows.slice(2).map(r=>item(r,0)).join('')+'</details>':'該当なし';
  }catch(e){s.textContent='分析未反映：'+e.message;$('researchtop').textContent='分析データの更新待ち';$('researchother').textContent='';}}
 $('researchreload').onclick=loadResearch;loadResearch();
-})();</script><!-- PRE_EARNINGS_RISK_PANEL_V1 -->
-<section class="panel"><h2>⑥ 決算前の値動きリスク（過去データ）</h2>
-<p class="muted">年率換算の20日変動率・直前20日の騰落率を確認できます。値動きの大きさは上昇確率ではありません。元の日足は決算予定日前のみ使用。</p>
-<div id="preRiskStatus">読み込み中</div><div id="preRiskList"></div>
-</section>
-<script>
-(async()=>{const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-try{let resp=await fetch('./data/pre-earnings-risk.json',{cache:'no-store'});if(!resp.ok)throw Error('リスクデータ未公開');let x=await resp.json();
-let valid=x.records.filter(r=>r.status==='計算済み');document.getElementById('preRiskStatus').textContent='計算済み '+valid.length+'/'+x.records.length+'銘柄 ／ データ更新 '+new Date(x.generated_at).toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'});
-document.getElementById('preRiskList').innerHTML=x.records.map(r=>'<details class="item"><summary>'+esc(r.name)+'（'+esc(r.code)+'） ／ '+esc(r.earnings_date)+'</summary><p>'+ (r.status==='計算済み'?'20日騰落率 '+esc(r.return_20d_pct)+'% ／ 20日変動率（年率） '+esc(r.annualized_volatility_20d_pct)+'% ／ 出来高倍率 '+esc(r.volume_ratio_5_vs_previous20)+'倍 ／ 直近日足 '+esc(r.last_price_date):esc(r.status))+'</p>'+((r.quality_flags||[]).length?'<p class="flag">要確認：'+r.quality_flags.map(esc).join('／')+'</p>':'')+'</details>').join('');
-}catch(e){document.getElementById('preRiskStatus').textContent='取得失敗：'+e.message;}
-})();
-</script>
-<!-- EARNINGS_REACTIONS_V1 -->
-<section class="panel" id="earningsReactionPanel">
-<h2>⑦ 過去の決算日付近の株価反応</h2>
-<p class="muted">JPXの発表予定日またはYahoo決算カレンダー日付を使用。発表時刻は未確認。前営業日終値から、その日付より後の1・3・5営業日終値までを比較します。株価変動の原因や将来の上昇確率を示すものではありません。</p>
-<p id="erStatus">取得中…</p><div id="erCards"></div>
-</section>
-<script>
-(async()=>{'use strict';
-const e=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const p=x=>Number.isFinite(Number(x))?(Number(x)>0?'+':'')+Number(x).toFixed(2)+'%':'未取得';
-try{
- const res=await fetch('./data/earnings-reactions.json',{cache:'no-store'});
- if(!res.ok)throw Error('データ未公開');
- const d=await res.json();if(!Array.isArray(d.records))throw Error('データ形式不正');
- const present=d.records.filter(r=>(r.reactions||[]).length);
- document.getElementById('erStatus').textContent='反応データあり '+present.length+' / '+d.records.length+'銘柄（未取得は0件のまま表示）';
- const render=r=>'<details class="item"><summary>'+e(r.name)+'（'+e(r.code)+'） ／ '+(r.reactions||[]).length+'件</summary>'+
- ((r.reactions||[]).length?r.reactions.map(x=>'<p>'+e(x.event_date)+' ／ '+e(x.date_kind)+'<br>翌営業日 '+p(x.after_1d_pct)+' ／ 3営業日 '+p(x.after_3d_pct)+' ／ 5営業日 '+p(x.after_5d_pct)+'<br><span class="muted small">比較基準 '+e(x.baseline_date)+'　'+(String(x.source_url||'').startsWith('https://')?'<a href="'+e(x.source_url)+'" target="_blank" rel="noopener noreferrer">日付の出典</a>':'出典URL未取得')+'</span></p>').join(''):'反応計算に必要な過去決算日か、その後の5営業日分の株価が未取得')+'</details>';
- document.getElementById('erCards').innerHTML=d.records.map(render).join('');
-}catch(err){document.getElementById('erStatus').textContent='反応データ取得失敗：'+err.message;}
-})();
-</script>
-<!-- JPX_COMPARISON_REACTIONS_V1 -->
-<section class="panel" id="jpxComparisonReactions">
-<h2>⑧ JPX予定日付近の株価反応（他銘柄を含む）</h2>
-<p class="muted">JPX決算発表予定日と日足を照合した履歴。実際の開示日時は未確認で、今回の20銘柄自身の過去決算反応や上昇確率ではありません。</p>
-<div class="row"><div><label for="jpxCap">時価総額上限（億円）</label><input id="jpxCap" type="number" value="1000" min="81"></div>
-<div><label for="jpxMinCap">時価総額下限（億円）</label><input id="jpxMinCap" type="number" value="80" min="0"></div></div>
-<p id="jpxSummary">比較履歴を取得中…</p><div id="jpxRows"></div>
-</section>
-<script>
-(async()=>{
- const $=id=>document.getElementById(id);
- const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- const fmt=n=>typeof n==='number'&&Number.isFinite(n)?(n>0?'+':'')+n.toFixed(2)+'%':'未取得';
- try{
-  const res=await fetch('./data/earnings-reactions-universe.json',{cache:'no-store'});
-  if(!res.ok)throw Error('履歴未公開');const doc=await res.json();
-  if(!Array.isArray(doc.records))throw Error('形式不正');
-  function redraw(){
-   const cap=Number($('jpxCap').value),floor=Number($('jpxMinCap').value);
-   const samples=doc.records.filter(x=>x.current_market_cap_oku!==null&&Number.isFinite(Number(x.current_market_cap_oku))&&Number(x.current_market_cap_oku)>=floor&&Number(x.current_market_cap_oku)<cap);
-   const plus=samples.filter(x=>x.after_1d_pct>0).length;
-   $('jpxSummary').textContent='条件該当 '+samples.length+'件 ／ 集計可能 '+doc.records.length+'件 ／ 翌営業日プラス '+(samples.length?(100*plus/samples.length).toFixed(1)+'%':'集計不可')+'（予定日付近の単純集計・標本の偏りあり）';
-   $('jpxRows').innerHTML=samples.slice(0,30).map(x=>'<div class="item"><b>'+esc(x.name)+'（'+esc(x.code)+'）</b><p>JPX予定日 '+esc(x.scheduled_date)+' ／ 比較基準 '+esc(x.baseline_date)+'</p><p>1営業日 '+fmt(x.after_1d_pct)+' ／ 3営業日 '+fmt(x.after_3d_pct)+' ／ 5営業日 '+fmt(x.after_5d_pct)+'</p><p class="small muted">時価総額は現在値。<a href="'+esc(x.source_url)+'" target="_blank" rel="noopener noreferrer">JPXの予定日出典</a></p></div>').join('')||'該当データなし';
-  }
-  $('jpxCap').addEventListener('change',redraw);$('jpxMinCap').addEventListener('change',redraw);redraw();
- }catch(e){$('jpxSummary').textContent='取得失敗：'+e.message;}
-})();
-</script>
-<!-- NEXTDAY_REACTION_V1 -->
-<section class="panel" id="nextdayReactionPanel">
-<h2>⑨ 決算予定日の翌営業日・値動き記録</h2>
-<p class="muted">JPXの決算「予定日」に対する翌営業日の株価反応。実際の発表時刻を確認したものではありません。始値・高値・安値はYahoo日足から取得できた場合のみ表示。時価総額80億円以上・1,000億円未満、売買代金の制限なし。</p>
-<p id="ndStatus">データ読込中…</p><div id="ndRecords"></div>
-</section>
-<script>
-(async()=>{'use strict';
-const $=id=>document.getElementById(id);
-const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const number=x=>x===null||x===undefined||!Number.isFinite(Number(x))?'未取得':Number(x).toLocaleString('ja-JP',{maximumFractionDigits:2});
-const pct=x=>x===null||x===undefined||!Number.isFinite(Number(x))?'未取得':(Number(x)>0?'+':'')+Number(x).toFixed(2)+'%';
-try{
- const resp=await fetch('./data/earnings-nextday-reactions.json',{cache:'no-store'});
- if(!resp.ok)throw Error('データ未公開');
- const d=await resp.json();if(!Array.isArray(d.records))throw Error('データ形式不正');
- const complete=d.records.filter(x=>x.ohlc_complete).length;
- $('ndStatus').textContent='翌営業日の反応あり '+d.records.length+'件 ／ 4本値取得 '+complete+'件（未取得は推測せず空欄）';
- $('ndRecords').innerHTML=d.records.slice(0,60).map(x=>'<details class="item"><summary>'+esc(x.name)+'（'+esc(x.code)+'）／ '+esc(x.scheduled_date)+' ／ 翌終値 '+pct(x.next_close_pct)+'</summary><p>予定日 '+esc(x.scheduled_date)+' → 翌営業日 '+esc(x.next_session_date)+'</p><p>前日終値 '+number(x.baseline_close)+'円 ／ 翌日始値 '+number(x.next_open)+'円 ／ 高値 '+number(x.next_high)+'円 ／ 安値 '+number(x.next_low)+'円 ／ 終値 '+number(x.next_close)+'円</p><p>寄り付き '+pct(x.gap_open_pct)+' ／ 高値 '+pct(x.high_pct)+' ／ 安値 '+pct(x.low_pct)+' ／ 引け '+pct(x.next_close_pct)+' ／ 寄り→引け '+pct(x.intraday_open_to_close_pct)+'</p><p>出来高 '+number(x.next_volume)+'株 ／ 3営業日 '+pct(x.after_3d_pct)+' ／ 5営業日 '+pct(x.after_5d_pct)+'</p><p class="small muted">株価：'+esc(x.price_source)+' ／ <a href="'+esc(x.source_url)+'" target="_blank" rel="noopener noreferrer">予定日の出典（JPX）</a></p></details>').join('')||'まだ翌営業日の株価が揃った対象はありません';
-}catch(e){$('ndStatus').textContent='反応データ取得失敗：'+e.message;}
-})();
-</script>
- <!-- ANALYST_UPGRADE_RANKING_V1 -->
-<section class="panel" id="upgradeRankingPanel"><h2>⑩ 直近2か月の市場予想・レーティング上方修正</h2>
-<p class="muted">対象：現在の決算候補20銘柄。見出しでコンセンサス上方修正または投資判断引き上げを確認できた場合、各＋2点（最大4点）。根拠のない推測は加点しません。記事見出しは一次資料で未照合のため暫定評価です。</p><p id="upgradeStatus">確認中…</p><div id="upgradeResults"></div></section>
-<script>
-(async()=>{'use strict';
-const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-try{
- const [rr,uu]=await Promise.all([fetch('./data/research.json',{cache:'no-store'}),fetch('./data/analyst-upgrades.json',{cache:'no-store'})]);
- if(!rr.ok||!uu.ok)throw Error('データ未公開');
- const r=await rr.json(),u=await uu.json();
- if(!Array.isArray(r.records)||!Array.isArray(u.records))throw Error('データ形式不正');
- const mp=new Map(u.records.map(x=>[String(x.code),x]));
- const rows=r.records.map(x=>{const rev=mp.get(String(x.code))||{};
- const volume=Number(x.volume_ratio_5_20)>=1.5?2:0;
- const score=volume+Number(rev.score||0);
- return {...x,rev,volume,score};}).sort((a,b)=>b.score-a.score||String(a.earnings_date).localeCompare(String(b.earnings_date))||String(a.code).localeCompare(String(b.code)));
- const raised=rows.filter(x=>x.rev.score>0).length;
- document.getElementById('upgradeStatus').textContent='見出しで上方修正・格上げが見つかった候補 '+raised+' / '+rows.length+'銘柄 ／ 記事未確認は0点（上方修正なしとは限りません）';
- document.getElementById('upgradeResults').innerHTML=rows.map((x,i)=>'<details class="item"><summary>'+esc(i+1)+'位 '+esc(x.name)+'（'+esc(x.code)+'） ／ 暫定 '+esc(x.score)+'点</summary><p>出来高変化 '+esc(x.volume)+'点 ／ 直近2か月のコンセンサス修正 '+esc(x.rev.consensus_revision_points||0)+'点 ／ レーティング '+esc(x.rev.rating_upgrade_points||0)+'点</p><p class="muted small">候補自身の過去決算反応・同業の直近決算反応は、この暫定順位にはまだ加点していません。</p>'+((x.rev.events||[]).map(z=>'<p>'+esc(z.date)+'：'+esc(z.title)+'　<a href="'+esc(z.source_url)+'" target="_blank" rel="noopener noreferrer">記事</a></p>').join('')||'<p>直近2か月の該当ニュースは未確認</p>')+'</details>').join('');
-}catch(e){document.getElementById('upgradeStatus').textContent='取得失敗：'+e.message;}
-})();
-</script>
-<!-- FOUR_FACTOR_RANKING_V1 -->
-<section class="panel" id="fourFactorRankingPanel">
-<h2>⑪ 決算ギャンブル候補の4項目総合順位</h2>
-<p class="muted">本人の過去決算翌日の反応（最大3点）、出来高・需給（3点）、同業の直近決算反応（2点）、2か月以内の市場予想・レーティング引き上げ（4点）。未取得は0点であり、上昇しないという意味ではありません。順位は調査優先度であり、翌日の上昇確率ではありません。</p>
-<p id="f4status">データ取得中…</p><div id="f4list"></div>
-</section><script>
-(async()=>{'use strict';
-const e=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const pct=v=>typeof v==='number'?((v>0?'+':'')+v.toFixed(2)+'%'):'未取得';
-try{
- const response=await fetch('./data/earnings-four-factor-ranking.json',{cache:'no-store'});
- if(!response.ok)throw Error('データ未公開');
- const d=await response.json();if(!Array.isArray(d.records))throw Error('形式不正');
- const c=d.coverage||{};
- document.getElementById('f4status').textContent='候補 '+d.records.length+'件 ／ 本人の履歴あり '+(c.own_history||0)+'件 ／ 同業反応あり '+(c.peer_reactions||0)+'件 ／ 上方修正の見出し確認 '+(c.upgrades||0)+'件';
- document.getElementById('f4list').innerHTML=d.records.map((x,i)=>{
-  const s=x.score_components||{}, cov=x.data_coverage||{};
-  const his=(x.self_history_events||[]).map(h=>'<p>'+e(h.date)+'：翌終値 '+pct(h.next_close_pct)+'</p>').join('')||'<p>同銘柄の過去決算翌日データ未取得</p>';
-  const peers=(x.peer_events||[]).map(h=>'<p>'+e(h.name||h.code)+'（'+e(h.code)+'）：'+e(h.date)+' 翌終値 '+pct(h.next_close_pct)+'</p>').join('')||'<p>業種一致の直近決算反応なし／業種未取得</p>';
-  const upgrades=(x.upgrade_events||[]).map(h=>'<p>'+e(h.date)+'：'+e(h.title)+'</p>').join('')||'<p>上方修正の確認できる見出しなし</p>';
-  return '<details class="item"><summary>'+e(i+1)+'位 '+e(x.name)+'（'+e(x.code)+'） '+e(x.score_total)+'/12点</summary>'+ 
-   '<p>本人の決算反応 '+e(s.own_earnings_reaction||0)+'/3 ／ 出来高 '+e(s.volume_supply_demand||0)+'/3 ／ 同業 '+e(s.recent_industry_peers||0)+'/2 ／ 上方修正 '+e(s.analyst_upgrades_61d||0)+'/4</p>'+
-   '<p class="small muted">時価総額 '+e(x.market_cap_oku)+'億円 ／ 業種 '+e(x.industry||'未取得')+' ／ データ不足は加点なし</p><h3>本人の過去決算反応</h3>'+his+'<h3>同業他社の直近決算反応</h3>'+peers+'<h3>上方修正・格上げ</h3>'+upgrades+'</details>';
- }).join('')||'現在の対象銘柄なし';
-}catch(ex){document.getElementById('f4status').textContent='データ取得失敗：'+ex.message;}
-})();</script>
-</body></html>
+})();</script></body></html>

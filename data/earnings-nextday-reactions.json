@@ -7,14 +7,16 @@
     "minimum_turnover_oku": 0
   },
   "coverage": {
-    "events_recent_eligible": 119,
+    "events_recent_eligible": 166,
     "nextday_available": 119,
     "ohlc_complete": 119,
     "close_only": 0,
     "fetch": {
-      "yahoo_ok": 119
+      "yahoo_ok": 166
     },
-    "missing": {}
+    "missing": {
+      "missing_pre_or_post_close": 83
+    }
   },
   "records": [
     {
@@ -1487,7 +1489,7 @@
       "low_pct": -4.15,
       "next_close_pct": -0.9,
       "intraday_open_to_close_pct": 3.39,
-      "after_3d_pct": 1.37,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -1512,7 +1514,7 @@
       "low_pct": -4.03,
       "next_close_pct": -2.4,
       "intraday_open_to_close_pct": 0.28,
-      "after_3d_pct": -1.2,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -1537,7 +1539,7 @@
       "low_pct": 0.69,
       "next_close_pct": 2.91,
       "intraday_open_to_close_pct": 1.55,
-      "after_3d_pct": 3.32,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -1562,7 +1564,7 @@
       "low_pct": -4.29,
       "next_close_pct": -0.54,
       "intraday_open_to_close_pct": -0.92,
-      "after_3d_pct": 10.38,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -1587,7 +1589,7 @@
       "low_pct": 1.86,
       "next_close_pct": 3.38,
       "intraday_open_to_close_pct": 1.49,
-      "after_3d_pct": 1.98,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -1612,7 +1614,7 @@
       "low_pct": -1.0,
       "next_close_pct": 0.79,
       "intraday_open_to_close_pct": 1.43,
-      "after_3d_pct": -1.85,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -1637,7 +1639,7 @@
       "low_pct": 1.49,
       "next_close_pct": 3.94,
       "intraday_open_to_close_pct": 1.76,
-      "after_3d_pct": 4.86,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -1662,7 +1664,7 @@
       "low_pct": 2.8,
       "next_close_pct": 4.8,
       "intraday_open_to_close_pct": 1.35,
-      "after_3d_pct": 3.0,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -1687,7 +1689,7 @@
       "low_pct": -3.11,
       "next_close_pct": -3.11,
       "intraday_open_to_close_pct": -4.03,
-      "after_3d_pct": -3.4,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -1712,7 +1714,7 @@
       "low_pct": -6.94,
       "next_close_pct": -4.59,
       "intraday_open_to_close_pct": 2.03,
-      "after_3d_pct": -9.17,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -1737,7 +1739,7 @@
       "low_pct": 23.08,
       "next_close_pct": 27.69,
       "intraday_open_to_close_pct": -2.35,
-      "after_3d_pct": 32.12,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -1762,7 +1764,7 @@
       "low_pct": 1.42,
       "next_close_pct": 4.91,
       "intraday_open_to_close_pct": 1.03,
-      "after_3d_pct": 2.9,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -1787,7 +1789,7 @@
       "low_pct": 20.82,
       "next_close_pct": 20.82,
       "intraday_open_to_close_pct": 0.0,
-      "after_3d_pct": 8.8,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -1812,7 +1814,7 @@
       "low_pct": 1.5,
       "next_close_pct": 2.43,
       "intraday_open_to_close_pct": -0.8,
-      "after_3d_pct": 3.98,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -1837,7 +1839,7 @@
       "low_pct": 1.49,
       "next_close_pct": 9.17,
       "intraday_open_to_close_pct": 3.13,
-      "after_3d_pct": -4.99,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -1862,7 +1864,7 @@
       "low_pct": -1.61,
       "next_close_pct": -1.11,
       "intraday_open_to_close_pct": -0.12,
-      "after_3d_pct": -1.73,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -1887,7 +1889,7 @@
       "low_pct": -7.75,
       "next_close_pct": -2.84,
       "intraday_open_to_close_pct": 4.97,
-      "after_3d_pct": -11.57,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -1912,7 +1914,7 @@
       "low_pct": -0.81,
       "next_close_pct": -0.06,
       "intraday_open_to_close_pct": -0.52,
-      "after_3d_pct": -1.68,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -1937,7 +1939,7 @@
       "low_pct": -3.77,
       "next_close_pct": -1.11,
       "intraday_open_to_close_pct": -0.52,
-      "after_3d_pct": -2.49,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -1962,7 +1964,7 @@
       "low_pct": -0.79,
       "next_close_pct": 0.16,
       "intraday_open_to_close_pct": 0.72,
-      "after_3d_pct": -1.03,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -1987,7 +1989,7 @@
       "low_pct": 0.07,
       "next_close_pct": 0.36,
       "intraday_open_to_close_pct": 0.29,
-      "after_3d_pct": -0.32,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -2012,7 +2014,7 @@
       "low_pct": -1.08,
       "next_close_pct": -0.81,
       "intraday_open_to_close_pct": -0.18,
-      "after_3d_pct": -3.16,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -2037,7 +2039,7 @@
       "low_pct": 4.47,
       "next_close_pct": 6.15,
       "intraday_open_to_close_pct": 1.06,
-      "after_3d_pct": 6.7,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -2062,7 +2064,7 @@
       "low_pct": -1.4,
       "next_close_pct": -0.78,
       "intraday_open_to_close_pct": -0.31,
-      "after_3d_pct": -2.02,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -2087,7 +2089,7 @@
       "low_pct": -0.51,
       "next_close_pct": -0.13,
       "intraday_open_to_close_pct": -0.51,
-      "after_3d_pct": -0.13,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -2112,7 +2114,7 @@
       "low_pct": -3.15,
       "next_close_pct": -2.95,
       "intraday_open_to_close_pct": -3.44,
-      "after_3d_pct": -4.27,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -2137,7 +2139,7 @@
       "low_pct": -4.43,
       "next_close_pct": -2.33,
       "intraday_open_to_close_pct": -1.64,
-      "after_3d_pct": -1.63,
+      "after_3d_pct": null,
       "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
@@ -2363,7 +2365,7 @@
       "next_close_pct": -1.02,
       "intraday_open_to_close_pct": -0.82,
       "after_3d_pct": -0.61,
-      "after_5d_pct": -1.43,
+      "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
     },
@@ -2388,7 +2390,7 @@
       "next_close_pct": -8.02,
       "intraday_open_to_close_pct": -3.27,
       "after_3d_pct": -10.61,
-      "after_5d_pct": -14.88,
+      "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
     },
@@ -2413,7 +2415,7 @@
       "next_close_pct": 14.62,
       "intraday_open_to_close_pct": 4.29,
       "after_3d_pct": 18.71,
-      "after_5d_pct": 17.14,
+      "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
     },
@@ -2438,7 +2440,7 @@
       "next_close_pct": -5.07,
       "intraday_open_to_close_pct": 1.41,
       "after_3d_pct": -0.87,
-      "after_5d_pct": -0.83,
+      "after_5d_pct": null,
       "price_source": "Yahoo Finance 日足",
       "ohlc_complete": true
     },
@@ -2993,5 +2995,5 @@
       "ohlc_complete": true
     }
   ],
-  "generated_at": "2026-10-15T17:37:03+09:00"
+  "generated_at": "2026-10-16T00:19:32+09:00"
 }

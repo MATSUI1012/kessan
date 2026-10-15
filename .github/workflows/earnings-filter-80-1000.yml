@@ -1,0 +1,100 @@
+name: Maintain 80-1000 oku yen screening without turnover floor
+'on':
+  workflow_dispatch: {}
+  push:
+    paths:
+      - '.github/workflows/earnings-filter-80-1000.yml'
+  schedule:
+    - cron: '15 14 * * 1-5'
+permissions:
+  contents: write
+concurrency:
+  group: earnings-cap-filter-fix
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Apply consistent screening rules to app and analysis
+        shell: python {0}
+        run: |
+          from pathlib import Path
+          import re
+          
+          html_file=Path('index.html')
+          py_file=Path('research.py')
+          html=html_file.read_text(encoding='utf-8')
+          py=py_file.read_text(encoding='utf-8')
+          
+          def replace_once(text, old, new, key):
+              if old not in text:
+                  if new in text:
+                      return text
+                  raise RuntimeError('HTML/source missing '+key)
+              return text.replace(old,new,1)
+          
+          # Primary short-term shortlist, no turnover exclusion.
+          html=replace_once(html,'<input id="cap" type="number" min="1" value="1000">',
+              '<input id="cap" type="number" min="81" value="1000">','cap upper input')
+          old='<div><label>最低概算売買代金（億円）</label><input id="turn" type="number" min="0" step="0.5" value="2"></div>'
+          new='<div><label>時価総額下限（億円）</label><input id="mincap" type="number" min="0" value="80"></div><div><span class="muted small">売買代金の下限なし</span></div>'
+          html=replace_once(html,old,new,'primary cap lower input')
+          html=replace_once(html,'caplimit=num($(\'cap\').value)*1e8,min=num($(\'turn\').value),days=',
+             'caplimit=num($(\'cap\').value)*1e8,capfloor=num($(\'mincap\').value)*1e8,min=0,days=', 'primary JS cap floor')
+          html=replace_once(html,'if(Number.isFinite(cap)&&cap>=caplimit){excluded++;continue}',
+              'if(Number.isFinite(cap)&&(cap>=caplimit||cap<capfloor)){excluded++;continue}', 'primary JS cap bounds')
+          html=replace_once(html,"['cap','turn','days','sort'].forEach", "['cap','mincap','days','sort'].forEach", 'primary event listeners')
+          html=html.replace('一次候補なし。期間や売買代金の条件を変更してください。', '一次候補なし。決算日や時価総額の条件を変更してください。')
+          html=html.replace('流動性と決算日による抽出。', '時価総額と決算日による抽出。')
+          html=html.replace('時価総額が1,000億円以上の銘柄は除外。', '時価総額が80億円未満または1,000億円以上の銘柄は除外。')
+          
+          # Historical comparison uses same bounds; no turnover criterion.
+          old='<div class="row"><div><label for="jpxCap">時価総額上限（億円）</label><input id="jpxCap" type="number" value="1000" min="1"></div>\n<div><label for="jpxTurn">前日概算売買代金の下限（億円）</label><input id="jpxTurn" type="number" value="2" min="0"></div></div>'
+          new='<div class="row"><div><label for="jpxCap">時価総額上限（億円）</label><input id="jpxCap" type="number" value="1000" min="81"></div>\n<div><label for="jpxMinCap">時価総額下限（億円）</label><input id="jpxMinCap" type="number" value="80" min="0"></div></div>'
+          html=replace_once(html,old,new,'historical filter inputs')
+          html=replace_once(html,"const cap=Number($('jpxCap').value),turn=Number($('jpxTurn').value);",
+               "const cap=Number($('jpxCap').value),floor=Number($('jpxMinCap').value);",'historical filter JS variables')
+          html=replace_once(html,'Number(x.current_market_cap_oku)<cap&&Number(x.turnover_oku_before)>=turn',
+              'Number(x.current_market_cap_oku)>=floor&&Number(x.current_market_cap_oku)<cap', 'historical comparison filter')
+          html=replace_once(html,"$('jpxTurn').addEventListener('change',redraw)",
+              "$('jpxMinCap').addEventListener('change',redraw)",'historical event listener')
+          
+          # Backend research shortlist; don't drop small turnover companies.
+          py=replace_once(py, 'MAX_CAP = 1000 * 100_000_000',
+              'MAX_CAP = 1000 * 100_000_000\nMIN_CAP = 80 * 100_000_000', 'backend min cap constant')
+          py=replace_once(py, 'if cap is None or cap <= 0 or cap >= MAX_CAP:',
+              'if cap is None or cap < MIN_CAP or cap >= MAX_CAP:', 'backend cap check')
+          py=replace_once(py, '        if t<2:\n            continue\n',
+              '        # No minimum turnover: keep liquidity metrics for information only.\n', 'backend turnover exclusion')
+          py=replace_once(py, "'market_cap_max_yen_exclusive':MAX_CAP,'min_latest_turnover_oku':2",
+              "'market_cap_min_yen_inclusive':MIN_CAP,'market_cap_max_yen_exclusive':MAX_CAP,'min_latest_turnover_oku':0", 'backend screening metadata')
+          
+          assert 'id="mincap"' in html and 'id="jpxMinCap"' in html
+          assert "capfloor=num($('mincap').value)*1e8,min=0" in html
+          assert "Number(x.current_market_cap_oku)>=floor" in html
+          assert 'if t<2:' not in py
+          assert 'if cap is None or cap < MIN_CAP or cap >= MAX_CAP' in py
+          if html!=html_file.read_text(encoding='utf-8'):
+              html_file.write_text(html,encoding='utf-8')
+          if py!=py_file.read_text(encoding='utf-8'):
+              py_file.write_text(py,encoding='utf-8')
+          print('FILTER PATCH VERIFIED: 80億〜1000億円未満、売買代金条件なし（画面・履歴・分析）')
+      - name: Commit updated filters
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html research.py
+          if git diff --cached --quiet; then echo 'Filter already correct'; exit 0; fi
+          git commit -m 'Apply 80-1000 oku market cap screen with no liquidity floor'
+          for n in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; exit 1; }
+            if git push origin HEAD:main; then exit 0; fi
+            sleep $((n*5))
+          done
+          exit 1

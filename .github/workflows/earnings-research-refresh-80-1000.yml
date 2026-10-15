@@ -1,0 +1,77 @@
+name: Refresh earnings research with 80-1000 oku cap
+'on':
+  workflow_dispatch: {}
+  push:
+    paths:
+      - '.github/workflows/earnings-research-refresh-80-1000.yml'
+  schedule:
+    - cron: '35 14 * * 1-5'
+permissions:
+  contents: write
+concurrency:
+  group: earnings-research-refresh-new-screen
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout current sources without replacing app
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify current filter, do not use legacy turnover rules
+        shell: python {0}
+        run: |
+          from pathlib import Path
+          source = Path('research.py').read_text(encoding='utf-8')
+          assert 'MIN_CAP = 80 * 100_000_000' in source, '80億円 lower bound missing'
+          assert 'MAX_CAP = 1000 * 100_000_000' in source, '1000億円 upper bound missing'
+          assert 'if cap is None or cap < MIN_CAP or cap >= MAX_CAP:' in source, 'Unexpected cap filter'
+          assert 'if t<2:' not in source and 'if t < 2:' not in source, 'Old liquidity exclusion remains'
+          print('NEW SCREEN VERIFIED: 80億以上1000億未満、売買代金下限なし')
+      - name: Install existing research dependencies
+        run: python -m pip install -q 'requests>=2.31,<3' 'yfinance>=0.2.60,<1' 'pandas>=2,<3'
+      - name: Refresh candidates using current code
+        run: python research.py --limit 20
+      - name: Verify actual refreshed candidates
+        shell: python {0}
+        run: |
+          import json
+          from pathlib import Path
+          doc = json.loads(Path('data/research.json').read_text(encoding='utf-8'))
+          rows = doc['records']
+          rule = doc['screening']
+          assert rule['market_cap_min_yen_inclusive'] == 8_000_000_000
+          assert rule['market_cap_max_yen_exclusive'] == 100_000_000_000
+          assert rule['min_latest_turnover_oku'] == 0
+          assert len(rows) == doc['count'] and 0 <= len(rows) <= 20
+          assert len({str(r['code']) for r in rows}) == len(rows)
+          assert all(8_000_000_000 <= r['market_cap_yen'] < 100_000_000_000 for r in rows)
+          print('RESULT:', len(rows), 'candidates')
+          print('LOW TURNOVER KEPT:', sum(r.get('turnover_oku', 0) < 2 for r in rows), 'of', len(rows))
+      - name: Publish new research snapshot only
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/research.json
+          if git diff --cached --quiet; then
+            echo 'No snapshot changes'
+            exit 0
+          fi
+          git commit -m 'Refresh research with 80-1000 oku cap and no turnover floor'
+          for n in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; exit 1; }
+            if git push origin HEAD:main; then
+              echo 'PUBLISHED new screen results'
+              exit 0
+            fi
+            sleep $((n*5))
+          done
+          exit 1

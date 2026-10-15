@@ -174,4 +174,30 @@ try{
 }catch(e){document.getElementById('upgradeStatus').textContent='取得失敗：'+e.message;}
 })();
 </script>
+<!-- FOUR_FACTOR_RANKING_V1 -->
+<section class="panel" id="fourFactorRankingPanel">
+<h2>⑪ 決算ギャンブル候補の4項目総合順位</h2>
+<p class="muted">本人の過去決算翌日の反応（最大3点）、出来高・需給（3点）、同業の直近決算反応（2点）、2か月以内の市場予想・レーティング引き上げ（4点）。未取得は0点であり、上昇しないという意味ではありません。順位は調査優先度であり、翌日の上昇確率ではありません。</p>
+<p id="f4status">データ取得中…</p><div id="f4list"></div>
+</section><script>
+(async()=>{'use strict';
+const e=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const pct=v=>typeof v==='number'?((v>0?'+':'')+v.toFixed(2)+'%'):'未取得';
+try{
+ const response=await fetch('./data/earnings-four-factor-ranking.json',{cache:'no-store'});
+ if(!response.ok)throw Error('データ未公開');
+ const d=await response.json();if(!Array.isArray(d.records))throw Error('形式不正');
+ const c=d.coverage||{};
+ document.getElementById('f4status').textContent='候補 '+d.records.length+'件 ／ 本人の履歴あり '+(c.own_history||0)+'件 ／ 同業反応あり '+(c.peer_reactions||0)+'件 ／ 上方修正の見出し確認 '+(c.upgrades||0)+'件';
+ document.getElementById('f4list').innerHTML=d.records.map((x,i)=>{
+  const s=x.score_components||{}, cov=x.data_coverage||{};
+  const his=(x.self_history_events||[]).map(h=>'<p>'+e(h.date)+'：翌終値 '+pct(h.next_close_pct)+'</p>').join('')||'<p>同銘柄の過去決算翌日データ未取得</p>';
+  const peers=(x.peer_events||[]).map(h=>'<p>'+e(h.name||h.code)+'（'+e(h.code)+'）：'+e(h.date)+' 翌終値 '+pct(h.next_close_pct)+'</p>').join('')||'<p>業種一致の直近決算反応なし／業種未取得</p>';
+  const upgrades=(x.upgrade_events||[]).map(h=>'<p>'+e(h.date)+'：'+e(h.title)+'</p>').join('')||'<p>上方修正の確認できる見出しなし</p>';
+  return '<details class="item"><summary>'+e(i+1)+'位 '+e(x.name)+'（'+e(x.code)+'） '+e(x.score_total)+'/12点</summary>'+ 
+   '<p>本人の決算反応 '+e(s.own_earnings_reaction||0)+'/3 ／ 出来高 '+e(s.volume_supply_demand||0)+'/3 ／ 同業 '+e(s.recent_industry_peers||0)+'/2 ／ 上方修正 '+e(s.analyst_upgrades_61d||0)+'/4</p>'+
+   '<p class="small muted">時価総額 '+e(x.market_cap_oku)+'億円 ／ 業種 '+e(x.industry||'未取得')+' ／ データ不足は加点なし</p><h3>本人の過去決算反応</h3>'+his+'<h3>同業他社の直近決算反応</h3>'+peers+'<h3>上方修正・格上げ</h3>'+upgrades+'</details>';
+ }).join('')||'現在の対象銘柄なし';
+}catch(ex){document.getElementById('f4status').textContent='データ取得失敗：'+ex.message;}
+})();</script>
 </body></html>

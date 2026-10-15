@@ -1,0 +1,115 @@
+name: Earnings liquidity anomaly checks
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/earnings-liquidity-check.yml'
+  schedule:
+    - cron: '25 11 * * 1-5'
+permissions:
+  contents: write
+concurrency:
+  group: earnings-liquidity-quality
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Check high-turnover and volume outliers
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path('data')
+          path = root / 'research.json'
+          report = json.loads(path.read_text(encoding='utf-8'))
+          records = report.get('records')
+          if not isinstance(records, list):
+              raise SystemExit('research records missing; refusing to publish')
+
+          def num(value):
+              if isinstance(value, bool) or value is None:
+                  return None
+              try:
+                  f = float(value)
+                  return f if f == f and abs(f) != float('inf') else None
+              except (ValueError, TypeError, OverflowError):
+                  return None
+
+          flagged = 0
+          for r in records:
+              flags = []
+              cap = num(r.get('market_cap_yen'))
+              turn = num(r.get('turnover_oku'))
+              multiple = num(r.get('volume_ratio_5_20'))
+              ret20 = num(r.get('return_20d'))
+              if cap and cap > 0 and turn is not None and turn >= 0:
+                  ratio = round(turn * 1e8 / cap, 3)
+                  r['daily_turnover_to_market_cap_ratio'] = ratio
+                  if ratio >= 0.5:
+                      flags.append('1日概算売買代金が時価総額の50%以上。単位・重複・株式分割を確認')
+              if multiple is not None and multiple > 10:
+                  flags.append('5日平均出来高が前20日平均の10倍超。急増理由・企業行動を確認')
+              if ret20 is not None and abs(ret20) >= 40:
+                  flags.append('20営業日株価変動が40%以上。材料・分割などを確認')
+              r['quality_flags'] = flags
+              r['quality_review_required'] = bool(flags)
+              flagged += bool(flags)
+          report['quality_review_count'] = flagged
+          report['quality_rule'] = 'Heuristic only. Large turnover/volume/returns are not proof of bad data, good earnings or stock-split.'
+          path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
+
+          index = Path('index.html')
+          html = index.read_text(encoding='utf-8')
+          old_sort = 'return score(b)-score(a)||'
+          new_sort = 'return Number(!!a.quality_review_required)-Number(!!b.quality_review_required)||score(b)-score(a)||'
+          if new_sort not in html:
+              if html.count(old_sort) != 1:
+                  raise SystemExit('Sorting source changed, refusing unsafe UI patch')
+              html = html.replace(old_sort, new_sort, 1)
+          old_cov = " const coverage=`<p class=\"flag\">"
+          # The UI code is source HTML containing ordinary unescaped double quotes.
+          old_cov = ' const coverage=`<p class="flag">'
+          new_cov = ' const qualityNotes=Array.isArray(r.quality_flags)?r.quality_flags:[];\n const coverage=`<p class="flag">'
+          # no replacement needed
+          if 'const qualityNotes=Array.isArray(r.quality_flags)' not in html:
+              if html.count(old_cov) != 1:
+                  raise SystemExit('Card source changed, refusing unsafe UI patch')
+              html = html.replace(old_cov, new_cov, 1)
+          old_card = '<p>${signals}</p>${coverage}<details'
+          new_card = "<p>${signals}</p>${coverage}${qualityNotes.length?'<p class=\"flag\">需給の要再確認：'+qualityNotes.map(esc).join('／')+'</p>':''}<details"
+          # no replacement needed
+          if new_card not in html:
+              if html.count(old_card) != 1:
+                  raise SystemExit('Card template changed, refusing unsafe UI patch')
+              html = html.replace(old_card, new_card, 1)
+          index.write_text(html, encoding='utf-8')
+          assert 'quality_review_required' in html and '需給の要再確認' in html
+          assert all('quality_flags' in r for r in records)
+          print(f'QUALITY CHECK PASS: {len(records)} records, {flagged} require verification')
+          PY
+      - name: Publish reviewed quality data
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html data/research.json
+          if git diff --cached --quiet; then
+            echo 'No new changes'; exit 0
+          fi
+          git commit -m 'Flag extreme market-data values without treating them as earnings predictions'
+          for n in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; exit 1; }
+            if git push origin HEAD:main; then
+              echo 'PUBLISHED quality safeguards'; exit 0
+            fi
+            sleep $((n*5))
+          done
+          exit 1

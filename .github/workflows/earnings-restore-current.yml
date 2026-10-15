@@ -1,0 +1,117 @@
+name: Restore current earnings screening and ranking screen
+'on':
+  workflow_dispatch: {}
+  push:
+    paths:
+      - '.github/workflows/earnings-restore-current.yml'
+permissions:
+  contents: write
+concurrency:
+  group: earnings-restore-current
+  cancel-in-progress: false
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout full repo history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Restore previously verified UI and analysis source
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Verified, previously published commit from before the legacy scheduled rollback.
+          KNOWN_GOOD=d18383203866
+          git cat-file -e "$KNOWN_GOOD^{commit}"
+          git show "$KNOWN_GOOD:index.html" > /tmp/kessan-known-good-index.html
+          git show "$KNOWN_GOOD:research.py" > /tmp/kessan-known-good-research.py
+          python - <<'PY'
+          from pathlib import Path
+          old=Path('/tmp/kessan-known-good-index.html').read_text(encoding='utf-8')
+          py=Path('/tmp/kessan-known-good-research.py').read_text(encoding='utf-8')
+          assert 'id="mincap"' in old and 'id="jpxMinCap"' in old
+          assert all(x in old for x in (
+              '<!-- EARNINGS_REACTIONS_V1 -->',
+              '<!-- JPX_COMPARISON_REACTIONS_V1 -->',
+              '<!-- NEXTDAY_REACTION_V1 -->',
+              '<!-- ANALYST_UPGRADE_RANKING_V1 -->',
+              '<!-- FOUR_FACTOR_RANKING_V1 -->',
+          ))
+          assert 'MIN_CAP = 80 * 100_000_000' in py
+          assert 'MAX_CAP = 1000 * 100_000_000' in py
+          assert 'if cap is None or cap < MIN_CAP or cap >= MAX_CAP:' in py
+          assert 'if t<2:' not in py
+          assert "'min_latest_turnover_oku':0" in py
+          # Preserve any newer risk panel if one exists and differs from the archive.
+          current=Path('index.html').read_text(encoding='utf-8')
+          marker='<!-- PRE_EARNINGS_RISK_PANEL_V1 -->'
+          end_marker='<!-- EARNINGS_REACTIONS_V1 -->'
+          if marker in current and marker in old and end_marker in old:
+              newer=current[current.index(marker):]
+              # The risk panel is a single section and script preceding any other marker.
+              cutoff=min([v for v in (newer.find('<!-- EARNINGS_REACTIONS_V1 -->'),newer.find('<!-- JPX_COMPARISON_REACTIONS_V1 -->'),newer.find('<!-- NEXTDAY_REACTION_V1 -->')) if v>=0], default=-1)
+              if cutoff>=0:
+                  newer=newer[:cutoff]
+              else:
+                  tail=newer.find('</script>')
+                  if tail>=0: newer=newer[:tail+len('</script>')]
+              archived_start=old.index(marker)
+              archived_end=old.index(end_marker,archived_start)
+              if '<section ' in newer and '</script>' in newer:
+                  old=old[:archived_start]+newer.rstrip()+'\n'+old[archived_end:]
+          assert old.count('<!-- FOUR_FACTOR_RANKING_V1 -->')==1
+          assert old.count('</body>')==1
+          Path('index.html').write_text(old,encoding='utf-8')
+          Path('research.py').write_text(py,encoding='utf-8')
+          print('RESTORED: 80-1000 oku, no turnover floor, all six panels')
+          PY
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify syntax and regenerate current shortlist
+        shell: bash
+        run: |
+          python -m py_compile research.py
+          python -m pip install -q 'requests>=2.31,<3' 'yfinance>=0.2.60,<1' 'pandas>=2,<3'
+          python research.py --limit 20
+      - name: Verify screening before publication
+        shell: python {0}
+        run: |
+          import json
+          from pathlib import Path
+          d=json.loads(Path('data/research.json').read_text(encoding='utf-8'))
+          s=d['screening']; rows=d['records']
+          assert s['market_cap_min_yen_inclusive']==8_000_000_000
+          assert s['market_cap_max_yen_exclusive']==100_000_000_000
+          assert s['min_latest_turnover_oku']==0
+          assert all(8_000_000_000<=x['market_cap_yen']<100_000_000_000 for x in rows)
+          assert len(rows)<=20
+          h=Path('index.html').read_text(encoding='utf-8')
+          assert 'id="mincap"' in h and 'id="fourFactorRankingPanel"' in h
+          print('VERIFIED: candidates',len(rows),'and all ranking panels restored')
+      - name: Publish restored current configuration
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html research.py data/research.json
+          if git diff --cached --quiet; then
+            echo 'Already restored'
+            exit 0
+          fi
+          git commit -m 'Restore current 80-1000 oku screen and ranking panels'
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; exit 1; }
+            if git push origin HEAD:main; then
+              echo 'RESTORED_AND_PUBLISHED'
+              exit 0
+            fi
+            sleep $((attempt*5))
+          done
+          exit 1

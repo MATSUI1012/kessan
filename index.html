@@ -130,4 +130,26 @@ try{
  }catch(e){$('jpxSummary').textContent='取得失敗：'+e.message;}
 })();
 </script>
+<!-- NEXTDAY_REACTION_V1 -->
+<section class="panel" id="nextdayReactionPanel">
+<h2>⑨ 決算予定日の翌営業日・値動き記録</h2>
+<p class="muted">JPXの決算「予定日」に対する翌営業日の株価反応。実際の発表時刻を確認したものではありません。始値・高値・安値はYahoo日足から取得できた場合のみ表示。時価総額80億円以上・1,000億円未満、売買代金の制限なし。</p>
+<p id="ndStatus">データ読込中…</p><div id="ndRecords"></div>
+</section>
+<script>
+(async()=>{'use strict';
+const $=id=>document.getElementById(id);
+const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const number=x=>x===null||x===undefined||!Number.isFinite(Number(x))?'未取得':Number(x).toLocaleString('ja-JP',{maximumFractionDigits:2});
+const pct=x=>x===null||x===undefined||!Number.isFinite(Number(x))?'未取得':(Number(x)>0?'+':'')+Number(x).toFixed(2)+'%';
+try{
+ const resp=await fetch('./data/earnings-nextday-reactions.json',{cache:'no-store'});
+ if(!resp.ok)throw Error('データ未公開');
+ const d=await resp.json();if(!Array.isArray(d.records))throw Error('データ形式不正');
+ const complete=d.records.filter(x=>x.ohlc_complete).length;
+ $('ndStatus').textContent='翌営業日の反応あり '+d.records.length+'件 ／ 4本値取得 '+complete+'件（未取得は推測せず空欄）';
+ $('ndRecords').innerHTML=d.records.slice(0,60).map(x=>'<details class="item"><summary>'+esc(x.name)+'（'+esc(x.code)+'）／ '+esc(x.scheduled_date)+' ／ 翌終値 '+pct(x.next_close_pct)+'</summary><p>予定日 '+esc(x.scheduled_date)+' → 翌営業日 '+esc(x.next_session_date)+'</p><p>前日終値 '+number(x.baseline_close)+'円 ／ 翌日始値 '+number(x.next_open)+'円 ／ 高値 '+number(x.next_high)+'円 ／ 安値 '+number(x.next_low)+'円 ／ 終値 '+number(x.next_close)+'円</p><p>寄り付き '+pct(x.gap_open_pct)+' ／ 高値 '+pct(x.high_pct)+' ／ 安値 '+pct(x.low_pct)+' ／ 引け '+pct(x.next_close_pct)+' ／ 寄り→引け '+pct(x.intraday_open_to_close_pct)+'</p><p>出来高 '+number(x.next_volume)+'株 ／ 3営業日 '+pct(x.after_3d_pct)+' ／ 5営業日 '+pct(x.after_5d_pct)+'</p><p class="small muted">株価：'+esc(x.price_source)+' ／ <a href="'+esc(x.source_url)+'" target="_blank" rel="noopener noreferrer">予定日の出典（JPX）</a></p></details>').join('')||'まだ翌営業日の株価が揃った対象はありません';
+}catch(e){$('ndStatus').textContent='反応データ取得失敗：'+e.message;}
+})();
+</script>
 </body></html>

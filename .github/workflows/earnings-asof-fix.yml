@@ -1,0 +1,127 @@
+name: Correct earnings risk freshness date
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/earnings-asof-fix.yml'
+  schedule:
+    - cron: '55 11 * * 1-5'
+permissions:
+  contents: write
+concurrency:
+  group: earnings-asof-fix
+  cancel-in-progress: false
+jobs:
+  correct:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Recalculate risk using actual data freshness at run date
+        shell: bash
+        run: |
+          import json
+          import math
+          import statistics
+          from collections import defaultdict
+          from datetime import datetime, timezone, timedelta
+          from pathlib import Path
+          
+          JST = timezone(timedelta(hours=9))
+          DATA = Path('data')
+          report = json.loads((DATA/'research.json').read_text(encoding='utf-8'))
+          prices = json.loads((DATA/'prices.json').read_text(encoding='utf-8'))
+          assert isinstance(report.get('records'), list) and isinstance(prices, list)
+          today = datetime.now(JST).date()
+          codes = {str(r['code']) for r in report['records']}
+          bycode = defaultdict(dict)
+          for p in prices:
+              code = str(p.get('code',''))
+              if code not in codes:
+                  continue
+              try:
+                  day = datetime.strptime(str(p['date'])[:10], '%Y-%m-%d').date()
+                  close = float(p['close'])
+                  volume = float(p['volume'])
+                  if not (math.isfinite(close) and close > 0 and math.isfinite(volume) and volume >= 0):
+                      continue
+                  if day > today:
+                      continue
+                  bycode[code][day] = (close,volume)
+              except (TypeError, ValueError, KeyError):
+                  continue
+          
+          def calc(row):
+              event = datetime.strptime(str(row['earnings_date']), '%Y-%m-%d').date()
+              # Only use observations actually available by TODAY. For the earnings day,
+              # exclude that day's close because it can contain the price reaction.
+              obs = sorted((d, *v) for d,v in bycode[str(row['code'])].items()
+                           if d <= today and d < event)
+              result = {'n':len(obs), 'status':'履歴不足'}
+              if len(obs) < 22:
+                  result['reason'] = '決算前の日足が22本未満'
+                  return result
+              dates, closes, volumes = zip(*obs)
+              last = dates[-1]
+              # CRITICAL: freshness is measured against TODAY, not future earnings date.
+              # For a historical event, measure against event date instead.
+              asof = min(today, event)
+              age = (asof - last).days
+              if age > 7:
+                  return {'n':len(obs),'status':'株価が古い',
+                          'last_price_date':last.isoformat(), 'age_days':age,
+                          'freshness_asof':asof.isoformat()}
+              recent_returns = [math.log(closes[i]/closes[i-1]) for i in range(len(closes)-20,len(closes))]
+              volatility = round(statistics.stdev(recent_returns) * math.sqrt(252)*100,2)
+              p5 = round((closes[-1]/closes[-6]-1)*100,2)
+              p20 = round((closes[-1]/closes[-21]-1)*100,2)
+              recent = volumes[-5:]
+              prior = volumes[-25:-5]
+              ratio = round(statistics.mean(recent)/statistics.mean(prior),2) if len(prior)==20 and statistics.mean(prior)>0 else None
+              turnover = round(closes[-1]*volumes[-1]/1e8,2)
+              cap = row.get('market_cap_yen')
+              capratio = round(turnover*1e8/cap,3) if isinstance(cap,(int,float)) and cap>0 else None
+              flags=[]
+              if volatility >= 100: flags.append('年率換算20日変動率100%以上')
+              if abs(p20) >= 40: flags.append('20日騰落率±40%以上')
+              if ratio is not None and ratio>10: flags.append('出来高倍率10超')
+              if capratio is not None and capratio>=0.5: flags.append('売買代金/時価総額50%以上')
+              return {'n':len(obs),'status':'計算済み','last_price_date':last.isoformat(),
+                      'freshness_asof':asof.isoformat(),'age_days':age,
+                      'return_5d_pct':p5,'return_20d_pct':p20,
+                      'annualized_volatility_20d_pct':volatility,
+                      'volume_ratio_5_vs_previous20':ratio,
+                      'latest_turnover_oku':turnover,
+                      'turnover_to_market_cap_ratio':capratio,'quality_flags':flags,
+                      'method':'決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。'}
+          
+          output = {'schema':2,'generated_at':datetime.now(JST).isoformat(timespec='seconds'),
+              'source_research_at':report.get('generated_at'),
+              'description':'決算前の価格変動。株価の鮮度は今日基準で測定し、将来の決算日を使わない。',
+              'records':[]}
+          for row in report['records']:
+              entry = {'code':str(row['code']),'name':row['name'],'earnings_date':row['earnings_date']}
+              entry.update(calc(row))
+              output['records'].append(entry)
+          assert len(output['records'])==len(report['records'])
+          assert all(x['last_price_date']<x['earnings_date'] for x in output['records'] if x['status']=='計算済み')
+          assert all(x['age_days']<=7 for x in output['records'] if x['status']=='計算済み')
+          (DATA/'pre-earnings-risk.json').write_text(json.dumps(output,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print('ASOF FIX:',sum(x['status']=='計算済み' for x in output['records']), '/',len(output['records']))
+      - name: Commit corrected risk table
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/pre-earnings-risk.json
+          if git diff --cached --quiet; then echo 'No changes'; exit 0; fi
+          git commit -m 'Fix future earnings dates falsely marking current prices stale'
+          for n in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; exit 1; }
+            if git push origin HEAD:main; then echo 'PUBLISHED CORRECT RISK'; exit 0; fi
+            sleep $((n*5))
+          done
+          exit 1

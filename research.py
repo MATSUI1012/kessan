@@ -22,6 +22,7 @@ JST = timezone(timedelta(hours=9))
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
 MAX_CAP = 1000 * 100_000_000
+MIN_CAP = 80 * 100_000_000
 
 
 def utc_now() -> datetime:
@@ -77,7 +78,7 @@ def prepare(earnings, prices, caps, now=None, max_count=20, duration=14):
         if not 0 <= (event-day).days <= duration:
             continue
         cap=caps_map.get(code)
-        if cap is None or cap <= 0 or cap >= MAX_CAP:
+        if cap is None or cap < MIN_CAP or cap >= MAX_CAP:
             continue
         series=bycode.get(code,[])
         if not series:
@@ -92,8 +93,7 @@ def prepare(earnings, prices, caps, now=None, max_count=20, duration=14):
         c=as_num(last.get('close'))
         vol=as_num(last.get('volume'))
         t=(c or 0)*(vol or 0)/1e8
-        if t<2:
-            continue
+        # No minimum turnover: keep liquidity metrics for information only.
         tail=series[-20:]
         totals=[float(x['close'])*float(x['volume'])/1e8 for x in tail if as_num(x.get('close')) is not None and as_num(x.get('volume')) is not None]
         avgturn=round(sum(totals)/len(totals),2) if totals else None
@@ -339,7 +339,7 @@ def build_snapshot(earnings,prices,caps,now=None,limit=20,finance_module=None,re
             time.sleep(sleep)
     records.sort(key=lambda x:(-x['research_priority_score'],-x['evidence_count'],x['earnings_date'],-x['turnover_oku']))
     return {'generated_at':now.isoformat(timespec='seconds'),
-            'schema':1,'screening':{'days_ahead':14,'market_cap_max_yen_exclusive':MAX_CAP,'min_latest_turnover_oku':2},
+            'schema':1,'screening':{'days_ahead':14,'market_cap_min_yen_inclusive':MIN_CAP,'market_cap_max_yen_exclusive':MAX_CAP,'min_latest_turnover_oku':0},
             'records':records,'count':len(records),
             'method':'調査優先度は公開価格・出来高・取得できた四半期業績等のみ。買い推奨や決算予測確率ではありません。'}
 

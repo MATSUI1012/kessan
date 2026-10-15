@@ -1,0 +1,93 @@
+name: Pre earnings price risk dashboard
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/pre-earnings-risk.yml'
+  schedule:
+    - cron: '40 11 * * 1-5'
+permissions:
+  contents: write
+concurrency:
+  group: pre-earnings-risk
+  cancel-in-progress: false
+jobs:
+  risk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: true
+    - name: Compute verified pre-earnings volatility and publish in app
+      shell: bash
+      run: "python - <<'PY'\nimport json, math, statistics\nfrom collections import defaultdict\nfrom pathlib import Path\n\
+        from datetime import datetime, timezone, timedelta\n\nDATA=Path('data')\nresearch=DATA/'research.json'\nprices_file=DATA/'prices.json'\n\
+        html_file=Path('index.html')\nrows=json.loads(research.read_text(encoding='utf-8'))\nprices=json.loads(prices_file.read_text(encoding='utf-8'))\n\
+        assert isinstance(rows.get('records'),list) and isinstance(prices,list)\nbycode=defaultdict(dict)\nvalid_codes={str(r['code'])\
+        \ for r in rows['records']}\nfor p in prices:\n    code=str(p.get('code',''))\n    if code not in valid_codes: continue\n\
+        \    try:\n        close=float(p['close']); vol=float(p['volume']); d=str(p['date'])[:10]\n        datetime.strptime(d,'%Y-%m-%d')\n\
+        \        if not (math.isfinite(close) and close>0 and math.isfinite(vol) and vol>=0): continue\n    except (TypeError,\
+        \ ValueError, KeyError): continue\n    bycode[code][d]=(close,vol)\n\ndef pct(new,old):\n    return round((new/old-1)*100,2)\
+        \ if old else None\n\ndef calc(r):\n    series=sorted(bycode[str(r['code'])].items())\n    # No future price or same-day\
+        \ earnings close: screen is preannouncement only.\n    event=r['earnings_date']\n    series=[(d,c,v) for d,(c,v) in\
+        \ series if d<event]\n    if len(series)<22:\n        return {'n':len(series),'status':'履歴不足','reason':'決算前の日足が22本未満'}\n\
+        \    dates=[x[0] for x in series]; closes=[x[1] for x in series]; vols=[x[2] for x in series]\n    # Reject stale\
+        \ data before scoring; last day's close must be close to calendar date.\n    last=datetime.strptime(dates[-1],'%Y-%m-%d').date()\n\
+        \    ev=datetime.strptime(event,'%Y-%m-%d').date()\n    gap=(ev-last).days\n    if gap>12:\n        return {'n':len(series),'status':'株価が古い','last_price_date':dates[-1],'gap_days':gap}\n\
+        \    daily=[math.log(closes[i]/closes[i-1]) for i in range(len(closes)-20,len(closes))]\n    vol20=round(statistics.stdev(daily)*math.sqrt(252)*100,2)\n\
+        \    r5=pct(closes[-1],closes[-6]); r20=pct(closes[-1],closes[-21])\n    recent_vol=vols[-5:]; prior_vol=vols[-25:-5]\n\
+        \    ratio=round(statistics.mean(recent_vol)/statistics.mean(prior_vol),2) if len(prior_vol)==20 and statistics.mean(prior_vol)>0\
+        \ else None\n    tr=round(closes[-1]*vols[-1]/1e8,2)\n    cap=r.get('market_cap_yen')\n    capratio=round(tr*1e8/cap,3)\
+        \ if isinstance(cap,(int,float)) and cap>0 else None\n    flags=[]\n    if vol20>=100: flags.append('年率換算20日変動率100%以上')\n\
+        \    if abs(r20)>=40: flags.append('20日騰落率±40%以上')\n    if ratio is not None and ratio>10: flags.append('出来高倍率10超')\n\
+        \    if capratio is not None and capratio>=0.5: flags.append('売買代金/時価総額50%以上')\n    return {'n':len(series),'status':'計算済み','last_price_date':dates[-1],\n\
+        \       'return_5d_pct':r5,'return_20d_pct':r20,'annualized_volatility_20d_pct':vol20,\n       'volume_ratio_5_vs_previous20':ratio,'latest_turnover_oku':tr,\n\
+        \       'turnover_to_market_cap_ratio':capratio,'quality_flags':flags,\n       'method':'決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。'}\n\
+        \nresult={'schema':1,'generated_at':datetime.now(timezone(timedelta(hours=9))).isoformat(timespec='seconds'),\n 'source':'Repository\
+        \ data/prices.json + data/research.json; JPX scheduled earnings dates',\n 'source_research_at':rows.get('generated_at'),\n\
+        \ 'description':'決算前の価格変動の統計。発表日・発表時刻や会社IRの実績を検証したものではない。',\n 'records':[]}\nfor r in rows['records']:\n    entry={'code':str(r['code']),'name':r['name'],'earnings_date':r['earnings_date']}\n\
+        \    entry.update(calc(r)); result['records'].append(entry)\nDATA.mkdir(parents=True,exist_ok=True)\n(DATA/'pre-earnings-risk.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\\\
+        n',encoding='utf-8')\n\n# Add an accessible, readable summary directly in the existing app.\ns=html_file.read_text(encoding='utf-8')\n\
+        marker='<!-- PRE_EARNINGS_RISK_PANEL_V1 -->'\nif marker not in s:\n    insert='''<!-- PRE_EARNINGS_RISK_PANEL_V1 -->\n\
+        <section class=\"panel\"><h2>⑥ 決算前の値動きリスク（過去データ）</h2>\n<p class=\"muted\">年率換算の20日変動率・直前20日の騰落率を確認できます。値動きの大きさは上昇確率ではありません。元の日足は決算予定日前のみ使用。</p>\n\
+        <div id=\"preRiskStatus\">読み込み中</div><div id=\"preRiskList\"></div>\n</section>\n<script>\n(async()=>{const esc=x=>String(x??'').replace(/[&<>\"\
+        ']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',\"'\":'&#39;'}[c]));\ntry{let resp=await fetch('./data/pre-earnings-risk.json',{cache:'no-store'});if(!resp.ok)throw\
+        \ Error('リスクデータ未公開');let x=await resp.json();\nlet valid=x.records.filter(r=>r.status==='計算済み');document.getElementById('preRiskStatus').textContent='計算済み\
+        \ '+valid.length+'/'+x.records.length+'銘柄 ／ データ更新 '+new Date(x.generated_at).toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'});\n\
+        document.getElementById('preRiskList').innerHTML=x.records.map(r=>'<details class=\"item\"><summary>'+esc(r.name)+'（'+esc(r.code)+'）\
+        \ ／ '+esc(r.earnings_date)+'</summary><p>'+ (r.status==='計算済み'?'20日騰落率 '+esc(r.return_20d_pct)+'% ／ 20日変動率（年率） '+esc(r.annualized_volatility_20d_pct)+'%\
+        \ ／ 出来高倍率 '+esc(r.volume_ratio_5_vs_previous20)+'倍 ／ 直近日足 '+esc(r.last_price_date):esc(r.status))+'</p>'+((r.quality_flags||[]).length?'<p\
+        \ class=\"flag\">要確認：'+r.quality_flags.map(esc).join('／')+'</p>':'')+'</details>').join('');\n}catch(e){document.getElementById('preRiskStatus').textContent='取得失敗：'+e.message;}\n\
+        })();\n</script>\n'''\n    # Keep script in body, not nested in the previous analysis script.\n    if '</body>' not\
+        \ in s: raise SystemExit('HTML body missing; do not publish')\n    s=s.replace('</body>',insert+'</body>',1)\n   \
+        \ html_file.write_text(s,encoding='utf-8')\nassert s.count(marker)==1\nassert len(result['records'])==len(rows['records'])\n\
+        print('PRE-EARNINGS VALIDATION',len(result['records']), 'calculated',sum(x['status']=='計算済み' for x in result['records']))\n\
+        \nPY"
+    - name: Validate generated metrics
+      shell: bash
+      run: 'python - <<''PY''
+
+        import json
+
+        from pathlib import Path
+
+        j=json.loads(Path(''data/pre-earnings-risk.json'').read_text(encoding=''utf-8''))
+
+        assert isinstance(j[''records''],list) and len(j[''records''])<=40
+
+        assert all((r[''status'']!=''計算済み'' or (0<=r[''annualized_volatility_20d_pct'']<100000 and r[''last_price_date'']<r[''earnings_date'']))
+        for r in j[''records''])
+
+        assert Path(''index.html'').read_text(encoding=''utf-8'').count(''<!-- PRE_EARNINGS_RISK_PANEL_V1 -->'')==1
+
+        print(''PASS verified nonfuture prices:'',len(j[''records'']))
+
+        PY'
+    - name: Commit reviewed risk table
+      shell: bash
+      run: "git config user.name 'github-actions[bot]'\ngit config user.email '41898282+github-actions[bot]@users.noreply.github.com'\n\
+        git add index.html data/pre-earnings-risk.json\nif git diff --cached --quiet; then echo 'No changes'; exit 0; fi\n\
+        git commit -m 'Add historical pre-earnings volatility metrics without predictive claims'\nfor n in 1 2 3; do\n  git\
+        \ fetch origin main\n  git rebase origin/main || { git rebase --abort; exit 1; }\n  if git push origin HEAD:main;\
+        \ then exit 0; fi\n  sleep $((n*5))\ndone\nexit 1"

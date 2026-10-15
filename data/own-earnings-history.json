@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated_at": "2026-10-15T18:41:03+09:00",
-  "method": "候補自身の出典のある過去決算日付とYahoo日足を照合。記事掲載日は実際の発表日と異なる場合がある。",
+  "updated_at": "2026-10-15T18:48:20+09:00",
+  "method": "JPX予定日・Yahoo決算カレンダー・決算短信見出し内の適時開示日から本人の過去実績を取得。記事発信日をそのまま開示日として推定しない。",
   "coverage": {
     "candidates": 20,
     "with_history": 6,
-    "events": 6
+    "events": 7
   },
   "records": [
     {
@@ -32,7 +32,7 @@
       "events": [
         {
           "event_date": "2026-04-14",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5UNjZSc0pPWTRMcThlZ2lSZDJMZUtsNlFhakJGZHAyN2VSZHZmMFZVWW1zTEZfTjRSbG0xTTczNU5YbGMtZG5HUmdYU25Kc0QyMzY2emU1c1hFRFVVUlZPaExqcm9JdlV6MGc?oc=5",
           "headline": "ボードルア[4413]：2026年２月期 決算短信〔ＩＦＲＳ〕(連結) 2026年4月14日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-04-13",
@@ -64,7 +64,7 @@
       "events": [
         {
           "event_date": "2026-04-14",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBCZUEtTmV1NWszbVJaWkcwLXJvSTdMQmQ3c0c4U2MzQ2NqNlNzZW5Va20yQzBaTVg1bFh3aVhOblJScFU5NWhMdkQ3TV9zVWstcFRwTm9udmV3ZUptOHBZRXNaMmpFN1g5UXc?oc=5",
           "headline": "テラスカイ[3915]：2026年２月期 決算短信〔日本基準〕（連結） 2026年4月14日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-04-13",
@@ -101,8 +101,21 @@
       "name": "オキサイド",
       "events": [
         {
+          "event_date": "2026-07-14",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1KeWtOd0lHcU9EcV9tV0x3WXkzT3U0TVJoRWpOQS0taXc0eEsyU3ZhM01BOEVOSWtGTmJDUGtHT2xQSW9XcENUbWpXUkdtQ2NLN1F4ZmZPSlVCUndFelg2NVJwbTd5V3R5ekE?oc=5",
+          "headline": "オキサイド[6521]：2027年２月期 第１四半期決算短信〔日本基準〕（連結） 2026年7月14日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-07-13",
+          "baseline_close": 4185.0,
+          "next_session_date": "2026-07-15",
+          "next_close_pct": -5.62,
+          "after_3d_pct": -19.12,
+          "after_5d_pct": -20.19,
+          "price_source": "Yahoo Finance 日足"
+        },
+        {
           "event_date": "2026-04-14",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE93MUtaZ0V3d21wWkZueUkxWmhfaWdtMG5Ia0tBMy1rdG1Sd3QzSUVhQzdKRzdUdjNTT2N4OWhKRVZ1QkNlNExjNmF3VUtEU2pNY3YyN3Q4czFkZThGSWNfa0lCS21NSEVNa2c?oc=5",
           "headline": "オキサイド[6521]：2026年2月期 決算短信〔日本基準〕（連結） 2026年4月14日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-04-13",
@@ -134,7 +147,7 @@
       "events": [
         {
           "event_date": "2026-07-15",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5sckcyZFFCUmZGQUN3cHJQMjBjNTlrVmdfTFA5cTl1STFtaWNvcjgxNUxYSExJSWx6UVZrdnozZ1Q1OUpFVUpKYmtiY3dTRzliLUZUaGtjcEQ5akotWXZVWU5oODEzWTlWaXc?oc=5",
           "headline": "ＡＢＥＪＡ[5574]：2026年８月期 第３四半期決算短信〔日本基準〕（非連結） 2026年7月15日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-07-14",
@@ -154,7 +167,7 @@
       "events": [
         {
           "event_date": "2026-07-15",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9oZWxoSGlnZlRSVjM5VE9iR3BVWHJTMVN5NnROeGF4eU0zTDh2MmFOSW9yNUVfakEyVmxqLWpjbnlMdlN0RE1JcFJ6MTVYQS04ZDlLdE1naGtibmNzUHBjX2ExNFdjdDNNY1E?oc=5",
           "headline": "パソナグループ[2168]：2026年５月期 決算短信[日本基準](連結) 2026年7月15日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-07-14",
@@ -192,7 +205,7 @@
       "events": [
         {
           "event_date": "2026-07-15",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFByTTdmakx4YVc1ODFRVkZiMWF3cy1SRFM1enNfVnlfeDFOS3oyTERZU1FLMHlDTWt2a0hwNTVibDJnU0o4dVVXQnZRQXVrekFIQjFuNHhEbTJqTDV4SU9WUm1aVGx2SXZTUGc?oc=5",
           "headline": "サイバーステップホールディングス[3810]：2026年５月期 決算短信〔日本基準〕（連結） 2026年7月15日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-07-14",

@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated_at": "2026-10-16T01:13:21+09:00",
-  "method": "候補自身の出典のある過去決算日付とYahoo日足を照合。記事掲載日は実際の発表日と異なる場合がある。",
+  "updated_at": "2026-10-16T01:47:44+09:00",
+  "method": "JPX予定日・Yahoo決算カレンダー・決算短信見出し内の適時開示日から本人の過去実績を取得。記事発信日をそのまま開示日として推定しない。",
   "coverage": {
     "candidates": 20,
-    "with_history": 0,
-    "events": 0
+    "with_history": 2,
+    "events": 2
   },
   "records": [
     {
@@ -41,8 +41,22 @@
     {
       "code": "3091",
       "name": "ブロンコビリー",
-      "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "events": [
+        {
+          "event_date": "2026-01-20",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5sc3RNS3JkaXlEUldfNVZiQ3M2eGVZZXJYei1SOHpoYWJ3WjNwejJUOGNQal9haUZRZ2tDMFdTd2RpS1Nrc2poVXVwZjBSbEEwRVN2amZOaW1DaERMMm9MVjJ5Y1hqVTE4a0E?oc=5",
+          "headline": "ブロンコビリー[3091]：2025年12月期 決算短信〔日本基準〕（連結） 2026年1月20日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-01-19",
+          "baseline_close": 1962.5,
+          "next_session_date": "2026-01-21",
+          "next_close_pct": -2.55,
+          "after_3d_pct": -0.89,
+          "after_5d_pct": -3.69,
+          "price_source": "Yahoo Finance 日足"
+        }
+      ],
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "7931",
@@ -107,8 +121,22 @@
     {
       "code": "4765",
       "name": "ＳＢＩグローバルアセットマネジメント",
-      "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "events": [
+        {
+          "event_date": "2026-07-27",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE84SS1fS1FBOXVYdXA0SWs2emtTdnVQV2xuLVpRYUdlekw5YzRMVUdzUXBnRVNHQm9vdUNLNTZPN01wWTd2SjIzSzFXUTNvTm9NZ2NrSG9TX0JnbGgwQi1zRTN1Q0hlUFRDLWc?oc=5",
+          "headline": "ＳＢＩグローバルアセットマネジメント[4765]：2027年３月期 第１四半期決算短信〔日本基準〕（連結） 2026年7月27日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-07-24",
+          "baseline_close": 567.0,
+          "next_session_date": "2026-07-28",
+          "next_close_pct": 3.7,
+          "after_3d_pct": 11.29,
+          "after_5d_pct": 7.76,
+          "price_source": "Yahoo Finance 日足"
+        }
+      ],
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "7102",

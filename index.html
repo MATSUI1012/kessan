@@ -152,4 +152,26 @@ try{
 }catch(e){$('ndStatus').textContent='反応データ取得失敗：'+e.message;}
 })();
 </script>
+ <!-- ANALYST_UPGRADE_RANKING_V1 -->
+<section class="panel" id="upgradeRankingPanel"><h2>⑩ 直近2か月の市場予想・レーティング上方修正</h2>
+<p class="muted">対象：現在の決算候補20銘柄。見出しでコンセンサス上方修正または投資判断引き上げを確認できた場合、各＋2点（最大4点）。根拠のない推測は加点しません。記事見出しは一次資料で未照合のため暫定評価です。</p><p id="upgradeStatus">確認中…</p><div id="upgradeResults"></div></section>
+<script>
+(async()=>{'use strict';
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+try{
+ const [rr,uu]=await Promise.all([fetch('./data/research.json',{cache:'no-store'}),fetch('./data/analyst-upgrades.json',{cache:'no-store'})]);
+ if(!rr.ok||!uu.ok)throw Error('データ未公開');
+ const r=await rr.json(),u=await uu.json();
+ if(!Array.isArray(r.records)||!Array.isArray(u.records))throw Error('データ形式不正');
+ const mp=new Map(u.records.map(x=>[String(x.code),x]));
+ const rows=r.records.map(x=>{const rev=mp.get(String(x.code))||{};
+ const volume=Number(x.volume_ratio_5_20)>=1.5?2:0;
+ const score=volume+Number(rev.score||0);
+ return {...x,rev,volume,score};}).sort((a,b)=>b.score-a.score||String(a.earnings_date).localeCompare(String(b.earnings_date))||String(a.code).localeCompare(String(b.code)));
+ const raised=rows.filter(x=>x.rev.score>0).length;
+ document.getElementById('upgradeStatus').textContent='見出しで上方修正・格上げが見つかった候補 '+raised+' / '+rows.length+'銘柄 ／ 記事未確認は0点（上方修正なしとは限りません）';
+ document.getElementById('upgradeResults').innerHTML=rows.map((x,i)=>'<details class="item"><summary>'+esc(i+1)+'位 '+esc(x.name)+'（'+esc(x.code)+'） ／ 暫定 '+esc(x.score)+'点</summary><p>出来高変化 '+esc(x.volume)+'点 ／ 直近2か月のコンセンサス修正 '+esc(x.rev.consensus_revision_points||0)+'点 ／ レーティング '+esc(x.rev.rating_upgrade_points||0)+'点</p><p class="muted small">候補自身の過去決算反応・同業の直近決算反応は、この暫定順位にはまだ加点していません。</p>'+((x.rev.events||[]).map(z=>'<p>'+esc(z.date)+'：'+esc(z.title)+'　<a href="'+esc(z.source_url)+'" target="_blank" rel="noopener noreferrer">記事</a></p>').join('')||'<p>直近2か月の該当ニュースは未確認</p>')+'</details>').join('');
+}catch(e){document.getElementById('upgradeStatus').textContent='取得失敗：'+e.message;}
+})();
+</script>
 </body></html>

@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "description": "決算カレンダー日付付近の終値反応。実際の発表時刻未検証であり、決算による因果効果・上昇確率ではありません。",
+  "sources": [
+    "JPX保存済み発表予定日",
+    "Yahoo Finance決算カレンダー日付（取得可能な銘柄のみ）"
+  ],
+  "event_date_count": 11,
+  "with_reactions": 0,
+  "records": [
+    {
+      "code": "7352",
+      "name": "ＴＷＯＳＴＯＮＥ＆Ｓｏｎｓ",
+      "reactions": []
+    },
+    {
+      "code": "4498",
+      "name": "サイバートラスト",
+      "reactions": []
+    },
+    {
+      "code": "3911",
+      "name": "Ａｉｍｉｎｇ",
+      "reactions": []
+    },
+    {
+      "code": "6058",
+      "name": "ベクトル",
+      "reactions": []
+    },
+    {
+      "code": "4413",
+      "name": "ボードルア",
+      "reactions": []
+    },
+    {
+      "code": "6999",
+      "name": "ＫＯＡ",
+      "reactions": []
+    },
+    {
+      "code": "6023",
+      "name": "ダイハツインフィニアース",
+      "reactions": []
+    },
+    {
+      "code": "9250",
+      "name": "ＧＲＣＳ",
+      "reactions": []
+    },
+    {
+      "code": "5817",
+      "name": "ＪＭＡＣＳ",
+      "reactions": []
+    },
+    {
+      "code": "1407",
+      "name": "ウエストホールディングス",
+      "reactions": []
+    },
+    {
+      "code": "3915",
+      "name": "テラスカイ",
+      "reactions": []
+    },
+    {
+      "code": "3091",
+      "name": "ブロンコビリー",
+      "reactions": []
+    },
+    {
+      "code": "6521",
+      "name": "オキサイド",
+      "reactions": []
+    },
+    {
+      "code": "4973",
+      "name": "日本高純度化学",
+      "reactions": []
+    },
+    {
+      "code": "2664",
+      "name": "カワチ薬品",
+      "reactions": []
+    },
+    {
+      "code": "5574",
+      "name": "ＡＢＥＪＡ",
+      "reactions": []
+    },
+    {
+      "code": "2168",
+      "name": "パソナグループ",
+      "reactions": []
+    },
+    {
+      "code": "6522",
+      "name": "アスタリスク",
+      "reactions": []
+    },
+    {
+      "code": "2972",
+      "name": "サンケイリアルエステート投資法人",
+      "reactions": []
+    },
+    {
+      "code": "3492",
+      "name": "ＭＩＲＡＲＴＨ不動産投資法人",
+      "reactions": []
+    }
+  ],
+  "generated_at": "2026-10-15T12:49:44+09:00"
+}

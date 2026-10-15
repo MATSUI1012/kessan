@@ -102,4 +102,32 @@ try{
 }catch(err){document.getElementById('erStatus').textContent='反応データ取得失敗：'+err.message;}
 })();
 </script>
+<!-- JPX_COMPARISON_REACTIONS_V1 -->
+<section class="panel" id="jpxComparisonReactions">
+<h2>⑧ JPX予定日付近の株価反応（他銘柄を含む）</h2>
+<p class="muted">JPX決算発表予定日と日足を照合した履歴。実際の開示日時は未確認で、今回の20銘柄自身の過去決算反応や上昇確率ではありません。</p>
+<div class="row"><div><label for="jpxCap">時価総額上限（億円）</label><input id="jpxCap" type="number" value="1000" min="1"></div>
+<div><label for="jpxTurn">前日概算売買代金の下限（億円）</label><input id="jpxTurn" type="number" value="2" min="0"></div></div>
+<p id="jpxSummary">比較履歴を取得中…</p><div id="jpxRows"></div>
+</section>
+<script>
+(async()=>{
+ const $=id=>document.getElementById(id);
+ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const fmt=n=>typeof n==='number'&&Number.isFinite(n)?(n>0?'+':'')+n.toFixed(2)+'%':'未取得';
+ try{
+  const res=await fetch('./data/earnings-reactions-universe.json',{cache:'no-store'});
+  if(!res.ok)throw Error('履歴未公開');const doc=await res.json();
+  if(!Array.isArray(doc.records))throw Error('形式不正');
+  function redraw(){
+   const cap=Number($('jpxCap').value),turn=Number($('jpxTurn').value);
+   const samples=doc.records.filter(x=>x.current_market_cap_oku!==null&&Number.isFinite(Number(x.current_market_cap_oku))&&Number(x.current_market_cap_oku)<cap&&Number(x.turnover_oku_before)>=turn);
+   const plus=samples.filter(x=>x.after_1d_pct>0).length;
+   $('jpxSummary').textContent='条件該当 '+samples.length+'件 ／ 集計可能 '+doc.records.length+'件 ／ 翌営業日プラス '+(samples.length?(100*plus/samples.length).toFixed(1)+'%':'集計不可')+'（予定日付近の単純集計・標本の偏りあり）';
+   $('jpxRows').innerHTML=samples.slice(0,30).map(x=>'<div class="item"><b>'+esc(x.name)+'（'+esc(x.code)+'）</b><p>JPX予定日 '+esc(x.scheduled_date)+' ／ 比較基準 '+esc(x.baseline_date)+'</p><p>1営業日 '+fmt(x.after_1d_pct)+' ／ 3営業日 '+fmt(x.after_3d_pct)+' ／ 5営業日 '+fmt(x.after_5d_pct)+'</p><p class="small muted">時価総額は現在値。<a href="'+esc(x.source_url)+'" target="_blank" rel="noopener noreferrer">JPXの予定日出典</a></p></div>').join('')||'該当データなし';
+  }
+  $('jpxCap').addEventListener('change',redraw);$('jpxTurn').addEventListener('change',redraw);redraw();
+ }catch(e){$('jpxSummary').textContent='取得失敗：'+e.message;}
+})();
+</script>
 </body></html>

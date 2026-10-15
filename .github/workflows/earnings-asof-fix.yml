@@ -20,7 +20,7 @@ jobs:
         with:
           persist-credentials: true
       - name: Recalculate risk using actual data freshness at run date
-        shell: bash
+        shell: python {0}
         run: |
           import json
           import math

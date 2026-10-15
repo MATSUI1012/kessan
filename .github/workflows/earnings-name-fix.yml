@@ -1,0 +1,82 @@
+name: Fill historical reaction stock names
+'on':
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/earnings-name-fix.yml'
+  schedule:
+    # Run after the 13:05 UTC JPX comparison job.
+    - cron: '20 13 * * 1-5'
+permissions:
+  contents: write
+concurrency:
+  group: earnings-name-fix
+  cancel-in-progress: false
+jobs:
+  fill_names:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Join verified JPX stock names to dated historical results
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          data=Path('data')
+          source=json.loads((data/'earnings.json').read_text(encoding='utf-8'))
+          target=data/'earnings-reactions-universe.json'
+          comparison=json.loads(target.read_text(encoding='utf-8'))
+          assert isinstance(source,list) and isinstance(comparison.get('records'),list)
+          by_pair={}
+          by_code={}
+          for entry in source:
+              if not isinstance(entry,dict):continue
+              code=str(entry.get('code') or '').strip()
+              date=str(entry.get('earnings_date') or '')[:10]
+              name=str(entry.get('name') or '').strip()
+              if code and date and name:
+                  by_pair[(code,date)]=name
+                  by_code.setdefault(code,set()).add(name)
+
+          amended=0
+          unknown=[]
+          for row in comparison['records']:
+              code=str(row.get('code') or '')
+              day=str(row.get('scheduled_date') or '')[:10]
+              name=by_pair.get((code,day))
+              if not name and len(by_code.get(code,()))==1:
+                  name=next(iter(by_code[code]))
+              if name:
+                  if row.get('name')!=name:
+                      row['name']=name
+                      amended+=1
+              elif not row.get('name'):
+                  unknown.append(code)
+          comparison['name_match_source']='data/earnings.json (JPX earnings calendar; match code/date, or uniquely named code)'
+          comparison['name_missing_count']=len(unknown)
+          comparison['name_matched_count']=len(comparison['records'])-len(unknown)
+          assert comparison['name_matched_count']+comparison['name_missing_count']==len(comparison['records'])
+          target.write_text(json.dumps(comparison,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print('Name fixes:',amended,'known',comparison['name_matched_count'],
+                'missing',len(unknown),'missing codes',unknown[:15])
+          PY
+      - name: Commit sourced names
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/earnings-reactions-universe.json
+          if git diff --cached --quiet; then echo 'No changes'; exit 0; fi
+          git commit -m 'Fill JPX stock names in historical reaction comparison'
+          for n in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; exit 1; }
+            if git push origin HEAD:main; then exit 0; fi
+            sleep $((n*5))
+          done
+          exit 1

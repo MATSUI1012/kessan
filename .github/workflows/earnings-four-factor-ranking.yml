@@ -1,0 +1,118 @@
+name: Four-factor earnings candidate ranking
+'on':
+  workflow_dispatch: {}
+  push:
+    paths:
+    - .github/workflows/earnings-four-factor-ranking.yml
+  schedule:
+  - cron: 15 15 * * 1-5
+permissions:
+  contents: write
+concurrency:
+  group: earnings-four-factor-ranking
+  cancel-in-progress: false
+jobs:
+  rank:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: true
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - name: Install classification client
+      run: python -m pip install -q yfinance
+    - name: Rank only source-linked signals
+      shell: python {0}
+      run: "from pathlib import Path\nfrom datetime import datetime, timedelta, timezone\nfrom concurrent.futures\
+        \ import ThreadPoolExecutor, as_completed\nfrom collections import defaultdict\nimport json, math\n\nROOT=Path('data')\n\
+        JST=timezone(timedelta(hours=9))\nnow=datetime.now(JST)\nresearch=json.loads((ROOT/'research.json').read_text(encoding='utf-8'))\n\
+        reactions=json.loads((ROOT/'earnings-nextday-reactions.json').read_text(encoding='utf-8'))\nupgrades=json.loads((ROOT/'analyst-upgrades.json').read_text(encoding='utf-8'))\n\
+        assert research['screening']['market_cap_min_yen_inclusive']==8_000_000_000\nassert research['screening']['market_cap_max_yen_exclusive']==100_000_000_000\n\
+        assert research['screening']['min_latest_turnover_oku']==0\nassert isinstance(research['records'],list)\
+        \ and isinstance(reactions['records'],list) and isinstance(upgrades['records'],list)\n\ntry:\n    old=json.loads((ROOT/'industry-classification.json').read_text(encoding='utf-8'))\n\
+        except (OSError,ValueError):\n    old={}\ncache=old.get('codes',{}) if isinstance(old.get('codes',{}),dict)\
+        \ else {}\nallcodes={str(r['code']) for r in research['records']} | {str(r['code']) for r in reactions['records']}\n\
+        # Never count an unnamed Yahoo category or inferred industry as a verified match.\nimport yfinance as yf\n\
+        \ndef industry_one(code):\n    try:\n        info=yf.Ticker(code+'.T').get_info()\n        sector=str(info.get('sector')\
+        \ or '').strip() if isinstance(info,dict) else ''\n        industry=str(info.get('industry') or '').strip()\
+        \ if isinstance(info,dict) else ''\n        return code,{'sector':sector,'industry':industry,'observed_at':now.date().isoformat(),\
+        \ 'source':'Yahoo Finance company profile'} if sector and industry else None\n    except Exception as e:\n\
+        \        return code,None\n\nrefresh=[]\nfor code in sorted(allcodes):\n    v=cache.get(code)\n    try:\n\
+        \        d=datetime.strptime(str(v['observed_at']),'%Y-%m-%d').date()\n        if v.get('sector') and v.get('industry')\
+        \ and (now.date()-d).days<=30: continue\n    except (KeyError,TypeError,ValueError,AttributeError):\n  \
+        \      pass\n    refresh.append(code)\nif refresh:\n    with ThreadPoolExecutor(max_workers=6) as pool:\n\
+        \        for code,result in pool.map(industry_one,refresh):\n            if result: cache[code]=result\n\
+        \            else: print('INDUSTRY_UNAVAILABLE',code)\ncache={key:val for key,val in cache.items() if key\
+        \ in allcodes}\n\nupgrade_by={str(x['code']):x for x in upgrades['records']}\nhistory=defaultdict(list)\n\
+        for row in reactions['records']:\n    if row.get('next_close_pct') is not None and row.get('scheduled_date')\
+        \ and row.get('code'):\n        history[str(row['code'])].append(row)\n\nresults=[]\nfor x in research['records']:\n\
+        \    code=str(x['code']); name=x.get('name') or code\n    date=str(x.get('earnings_date') or '')[:10]\n\
+        \    if not date: continue\n    cap=x.get('market_cap_yen')\n    if not (isinstance(cap,(int,float)) and\
+        \ 8_000_000_000<=cap<100_000_000_000):continue\n    # Only past scheduled days, never the candidate's own\
+        \ current/future earnings.\n    own=sorted([r for r in history.get(code,[]) if r['scheduled_date']<date],key=lambda\
+        \ y:y['scheduled_date'],reverse=True)[:4]\n    own_pos=sum((r['next_close_pct'] or 0)>0 for r in own)\n\
+        \    # Own history: single positive instance +1, >=2 instances and >=60% up +2,\n    # >=3 instances and\
+        \ >=75% up +3. Missing data is no evidence, not negative.\n    own_score=3 if len(own)>=3 and own_pos/len(own)>=.75\
+        \ else (2 if len(own)>=2 and own_pos/len(own)>=.6 else (1 if len(own)==1 and own_pos==1 else 0))\n    vr=x.get('volume_ratio_5_20')\n\
+        \    v=float(vr) if isinstance(vr,(float,int)) and math.isfinite(float(vr)) else None\n    volume_score=3\
+        \ if v is not None and v>=3 else 2 if v is not None and v>=1.5 else 1 if v is not None and v>=1.2 else 0\n\
+        \    industry=cache.get(code) or {}\n    group=(industry.get('sector'),industry.get('industry')) if industry.get('sector')\
+        \ and industry.get('industry') else None\n    peers=[]\n    if group:\n        for peer_code,records in\
+        \ history.items():\n            if peer_code==code: continue\n            cl=cache.get(peer_code) or {}\n\
+        \            if (cl.get('sector'),cl.get('industry'))!=group:continue\n            for reaction in records:\n\
+        \                # Only the current earnings season; no future knowledge.\n                if reaction['scheduled_date']<date\
+        \ and reaction['scheduled_date']>=(datetime.fromisoformat(date).date()-timedelta(days=45)).isoformat():\n\
+        \                    peers.append(reaction)\n    peers.sort(key=lambda r:r['scheduled_date'],reverse=True)\n\
+        \    peer_pos=sum((p['next_close_pct'] or 0)>0 for p in peers)\n    peer_score=2 if len(peers)>=2 and peer_pos/len(peers)>=.6\
+        \ else 1 if len(peers)==1 and peer_pos==1 else 0\n    upgrade=upgrade_by.get(code) or {}\n    news_score=int(upgrade.get('score')\
+        \ or 0)\n    news_score=max(0,min(news_score,4))\n    scores={'own_earnings_reaction':own_score,'volume_supply_demand':volume_score,'recent_industry_peers':peer_score,'analyst_upgrades_61d':news_score}\n\
+        \    results.append({'code':code,'name':name,'earnings_date':date,'market_cap_oku':round(cap/1e8,2),\n \
+        \       'score_total':sum(scores.values()),'score_components':scores,\n        'self_history_count':len(own),'self_history_positive':own_pos,\n\
+        \        'self_history_events':[{'date':r['scheduled_date'],'next_close_pct':r['next_close_pct'],'source_url':r.get('source_url')}\
+        \ for r in own],\n        'industry':industry.get('industry') or None,'sector':industry.get('sector') or\
+        \ None,\n        'industry_source':industry.get('source') if group else None,\n        'peer_reaction_count':len(peers),'peer_positive_count':peer_pos,\n\
+        \        'peer_events':[{'code':r['code'],'name':r.get('name'),'date':r['scheduled_date'],'next_close_pct':r['next_close_pct']}\
+        \ for r in peers[:6]],\n        'volume_ratio':v,\n        'upgrade_events':upgrade.get('events') or [],\n\
+        \        'data_coverage':{'self_history':bool(own),'industry_peer_reactions':bool(peers),'industry_identified':bool(group),\n\
+        \                         'volume_ratio':v is not None,'upgrade_news_checked':code in upgrade_by}})\n\n\
+        results.sort(key=lambda r:(-r['score_total'],-sum(bool(v) for v in r['data_coverage'].values()),r['earnings_date'],r['code']))\n\
+        assert all(80<=x['market_cap_oku']<1000 for x in results)\nassert all(0<=x['score_total']<=12 for x in results)\n\
+        ranking={'schema':1,'generated_at':now.isoformat(timespec='seconds'),\n 'description':'4項目の調査優先順位。未確認は0点であり悪材料を意味しない。JPX予定日ベースの株価反応は実際の決算発表時刻未確認。業種はYahoo掲載分類。確率・買い推奨ではない。',\n\
+        \ 'weights':{'own_earnings_reaction':3,'volume_supply_demand':3,'recent_industry_peers':2,'analyst_upgrades_61d':4},\n\
+        \ 'coverage':{'total':len(results),'own_history':sum(bool(x['self_history_count']) for x in results),\n\
+        \  'industry_identified':sum(bool(x['industry']) for x in results),\n  'peer_reactions':sum(bool(x['peer_reaction_count'])\
+        \ for x in results),\n  'upgrades':sum(x['score_components']['analyst_upgrades_61d']>0 for x in results)},\n\
+        \ 'records':results}\nreport_path=ROOT/'earnings-four-factor-ranking.json'\nreport_path.write_text(json.dumps(ranking,ensure_ascii=False,indent=2)+'\\\
+        n',encoding='utf-8')\n(ROOT/'industry-classification.json').write_text(json.dumps({'schema':1,'codes':cache},ensure_ascii=False,indent=2)+'\\\
+        n',encoding='utf-8')\nprint('RANKING',json.dumps(ranking['coverage'],ensure_ascii=False))\n\nhtmlfile=Path('index.html')\n\
+        html=htmlfile.read_text(encoding='utf-8')\nmarker='<!-- FOUR_FACTOR_RANKING_V1 -->'\nif marker not in html:\n\
+        \    section=r'''<!-- FOUR_FACTOR_RANKING_V1 -->\n<section class=\"panel\" id=\"fourFactorRankingPanel\"\
+        >\n<h2>⑪ 決算ギャンブル候補の4項目総合順位</h2>\n<p class=\"muted\">本人の過去決算翌日の反応（最大3点）、出来高・需給（3点）、同業の直近決算反応（2点）、2か月以内の市場予想・レーティング引き上げ（4点）。未取得は0点であり、上昇しないという意味ではありません。順位は調査優先度であり、翌日の上昇確率ではありません。</p>\n\
+        <p id=\"f4status\">データ取得中…</p><div id=\"f4list\"></div>\n</section><script>\n(async()=>{'use strict';\n\
+        const e=x=>String(x??'').replace(/[&<>\"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',\"'\"\
+        :'&#39;'}[c]));\nconst pct=v=>typeof v==='number'?((v>0?'+':'')+v.toFixed(2)+'%'):'未取得';\ntry{\n const response=await\
+        \ fetch('./data/earnings-four-factor-ranking.json',{cache:'no-store'});\n if(!response.ok)throw Error('データ未公開');\n\
+        \ const d=await response.json();if(!Array.isArray(d.records))throw Error('形式不正');\n const c=d.coverage||{};\n\
+        \ document.getElementById('f4status').textContent='候補 '+d.records.length+'件 ／ 本人の履歴あり '+(c.own_history||0)+'件\
+        \ ／ 同業反応あり '+(c.peer_reactions||0)+'件 ／ 上方修正の見出し確認 '+(c.upgrades||0)+'件';\n document.getElementById('f4list').innerHTML=d.records.map((x,i)=>{\n\
+        \  const s=x.score_components||{}, cov=x.data_coverage||{};\n  const his=(x.self_history_events||[]).map(h=>'<p>'+e(h.date)+'：翌終値\
+        \ '+pct(h.next_close_pct)+'</p>').join('')||'<p>同銘柄の過去決算翌日データ未取得</p>';\n  const peers=(x.peer_events||[]).map(h=>'<p>'+e(h.name||h.code)+'（'+e(h.code)+'）：'+e(h.date)+'\
+        \ 翌終値 '+pct(h.next_close_pct)+'</p>').join('')||'<p>業種一致の直近決算反応なし／業種未取得</p>';\n  const upgrades=(x.upgrade_events||[]).map(h=>'<p>'+e(h.date)+'：'+e(h.title)+'</p>').join('')||'<p>上方修正の確認できる見出しなし</p>';\n\
+        \  return '<details class=\"item\"><summary>'+e(i+1)+'位 '+e(x.name)+'（'+e(x.code)+'） '+e(x.score_total)+'/12点</summary>'+\
+        \ \n   '<p>本人の決算反応 '+e(s.own_earnings_reaction||0)+'/3 ／ 出来高 '+e(s.volume_supply_demand||0)+'/3 ／ 同業 '+e(s.recent_industry_peers||0)+'/2\
+        \ ／ 上方修正 '+e(s.analyst_upgrades_61d||0)+'/4</p>'+\n   '<p class=\"small muted\">時価総額 '+e(x.market_cap_oku)+'億円\
+        \ ／ 業種 '+e(x.industry||'未取得')+' ／ データ不足は加点なし</p><h3>本人の過去決算反応</h3>'+his+'<h3>同業他社の直近決算反応</h3>'+peers+'<h3>上方修正・格上げ</h3>'+upgrades+'</details>';\n\
+        \ }).join('')||'現在の対象銘柄なし';\n}catch(ex){document.getElementById('f4status').textContent='データ取得失敗：'+ex.message;}\n\
+        })();</script>\n'''\n    if html.count('</body>')!=1: raise RuntimeError('Cannot safely insert panel')\n\
+        \    html=html.replace('</body>',section+'</body>',1)\n    htmlfile.write_text(html,encoding='utf-8')\n\
+        assert html.count(marker)==1\n"
+    - name: Publish ranked data and independent section
+      shell: bash
+      run: "git config user.name 'github-actions[bot]'\ngit config user.email '41898282+github-actions[bot]@users.noreply.github.com'\n\
+        git add data/earnings-four-factor-ranking.json data/industry-classification.json index.html\nif git diff\
+        \ --cached --quiet; then echo 'No change'; exit 0; fi\ngit commit -m 'Rank earnings candidates by four source-linked\
+        \ factors'\nfor n in 1 2 3; do\n  git fetch origin main\n  git rebase origin/main || { git rebase --abort;\
+        \ exit 1; }\n  if git push origin HEAD:main; then exit 0; fi\n  sleep $((n*5))\ndone\nexit 1"

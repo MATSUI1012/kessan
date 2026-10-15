@@ -1,0 +1,93 @@
+name: Historical earnings date price reactions
+'on':
+  workflow_dispatch: {}
+  push:
+    paths:
+    - .github/workflows/earnings-reactions-history.yml
+  schedule:
+  - cron: 15 12 * * 1-5
+permissions:
+  contents: write
+concurrency:
+  group: earnings-reactions-history
+  cancel-in-progress: false
+jobs:
+  history:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - name: Install Yahoo history reader
+      run: python -m pip install -q yfinance pandas
+    - name: Calculate sourced historical close reactions
+      shell: bash
+      run: "python - <<'PY'\nimport json, math\nfrom datetime import datetime, date, timedelta, timezone\nfrom pathlib import\
+        \ Path\nfrom collections import defaultdict\n\nDATA = Path('data')\nJST = timezone(timedelta(hours=9))\ntoday = datetime.now(JST).date()\n\
+        research = json.loads((DATA/'research.json').read_text(encoding='utf-8'))\ncalendar = json.loads((DATA/'earnings-calendar-history.json').read_text(encoding='utf-8'))\n\
+        price_rows = json.loads((DATA/'prices.json').read_text(encoding='utf-8'))\nassert isinstance(research.get('records'),\
+        \ list)\nassert isinstance(calendar.get('events'), list)\nassert isinstance(price_rows, list)\n\ncodes = {str(r['code'])\
+        \ for r in research['records']}\nprice_map = defaultdict(dict)\nfor p in price_rows:\n    code = str(p.get('code',\
+        \ ''))\n    if code not in codes:\n        continue\n    try:\n        day = date.fromisoformat(str(p['date'])[:10])\n\
+        \        close = float(p['close'])\n        if math.isfinite(close) and close > 0 and day <= today:\n            price_map[code][day]\
+        \ = close\n    except (KeyError, TypeError, ValueError):\n        continue\n\n# Collect already archived JPX *scheduled*\
+        \ dates, not authenticated announcement times.\nevents = defaultdict(dict)\nfor row in calendar['events']:\n    code\
+        \ = str(row.get('code', ''))\n    if code not in codes:\n        continue\n    try:\n        day = date.fromisoformat(str(row['scheduled_date'])[:10])\n\
+        \    except (ValueError, TypeError):\n        continue\n    if day <= today:\n        events[code][day] = {'date':\
+        \ day, 'date_kind': 'JPX発表予定日（実際の発表時刻未確認）',\n                             'source': str(row.get('source_url') or '')}\n\
+        \n# The Yahoo Finance earnings calendar may lack historical dates for Japanese listings.\n# A source returning none\
+        \ is not a success claim. Do not create synthetic events.\ntry:\n    import yfinance as yf\nexcept ImportError:\n\
+        \    yf = None\nif yf:\n    for code in sorted(codes):\n        try:\n            frame = yf.Ticker(f'{code}.T').get_earnings_dates(limit=16)\n\
+        \            if frame is None or frame.empty:\n                continue\n            for stamp in frame.index:\n \
+        \               d = stamp.date()\n                if d > today or d < today-timedelta(days=390):\n               \
+        \     continue\n                # Yahoo's event date is NOT a verified after-hours disclosure timestamp.\n       \
+        \         events[code][d] = {'date': d, 'date_kind': 'Yahoo決算カレンダー日付（発表時刻未確認）',\n                                \
+        \    'source': f'https://finance.yahoo.com/quote/{code}.T/analysis/'}\n        except Exception as exc:\n        \
+        \    print('Yahoo earnings dates unavailable', code, type(exc).__name__)\n\n# Calculate only when enough actual trading\
+        \ sessions FOLLOW a historical event.\n# Baseline is the last close strictly preceding calendar date; 1/3/5 are the\n\
+        # first, third and fifth closes strictly AFTER date (not calendar days).\ndef pct(a, b):\n    return round((a/b-1)*100,\
+        \ 2)\n\nout=[]\nfor r in research['records']:\n    code=str(r['code'])\n    prices=sorted(price_map[code].items())\n\
+        \    reactions=[]\n    for event_day, event_info in sorted(events[code].items(), reverse=True):\n        before=[(d,c)\
+        \ for d,c in prices if d < event_day]\n        after=[(d,c) for d,c in prices if d > event_day]\n        if not before\
+        \ or len(after)<5:\n            continue\n        baseline=before[-1]\n        reactions.append({\n            'event_date':\
+        \ event_day.isoformat(),\n            'date_kind': event_info['date_kind'],\n            'source_url': event_info['source'],\n\
+        \            'baseline_date': baseline[0].isoformat(),\n            'baseline_close': baseline[1],\n            'after_1d_date':\
+        \ after[0][0].isoformat(),\n            'after_1d_pct': pct(after[0][1],baseline[1]),\n            'after_3d_pct':\
+        \ pct(after[2][1],baseline[1]),\n            'after_5d_pct': pct(after[4][1],baseline[1]),\n            'method':\
+        \ '予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。',\n        })\n        if len(reactions) >= 8:\n   \
+        \         break\n    out.append({'code': code, 'name': r.get('name',''), 'reactions': reactions})\n\nexisting_path=DATA/'earnings-reactions.json'\n\
+        new_doc={\n 'schema':1,\n 'description':'決算カレンダー日付付近の終値反応。実際の発表時刻未検証であり、決算による因果効果・上昇確率ではありません。',\n 'sources':['JPX保存済み発表予定日',\
+        \ 'Yahoo Finance決算カレンダー日付（取得可能な銘柄のみ）'],\n 'event_date_count':sum(len(x) for x in events.values()),\n 'with_reactions':sum(bool(x['reactions'])\
+        \ for x in out),\n 'records':out,\n}\n# Do not write on every run if observations are unchanged. Preserve timestamp\
+        \ of latest actual change.\nprior=None\nif existing_path.exists():\n    try: prior=json.loads(existing_path.read_text(encoding='utf-8'))\n\
+        \    except ValueError: pass\nif prior:\n    comparable=lambda x: {k:v for k,v in x.items() if k!='generated_at'}\n\
+        \    if comparable(prior)==new_doc:\n        print('No new reactions; unchanged',new_doc['with_reactions'])\n    else:\n\
+        \        new_doc['generated_at']=datetime.now(JST).isoformat(timespec='seconds')\n        existing_path.write_text(json.dumps(new_doc,ensure_ascii=False,indent=2)+'\\\
+        n', encoding='utf-8')\nelse:\n    new_doc['generated_at']=datetime.now(JST).isoformat(timespec='seconds')\n    existing_path.write_text(json.dumps(new_doc,ensure_ascii=False,indent=2)+'\\\
+        n', encoding='utf-8')\n\nhtml_file=Path('index.html')\nhtml=html_file.read_text(encoding='utf-8')\nmarker='<!-- EARNINGS_REACTIONS_V1\
+        \ -->'\nif marker not in html:\n    panel=r'''<!-- EARNINGS_REACTIONS_V1 -->\n<section class=\"panel\" id=\"earningsReactionPanel\"\
+        >\n<h2>⑦ 過去の決算日付近の株価反応</h2>\n<p class=\"muted\">JPXの発表予定日またはYahoo決算カレンダー日付を使用。発表時刻は未確認。前営業日終値から、その日付より後の1・3・5営業日終値までを比較します。株価変動の原因や将来の上昇確率を示すものではありません。</p>\n\
+        <p id=\"erStatus\">取得中…</p><div id=\"erCards\"></div>\n</section>\n<script>\n(async()=>{'use strict';\nconst e=x=>String(x??'').replace(/[&<>\"\
+        ']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',\"'\":'&#39;'}[c]));\nconst p=x=>Number.isFinite(Number(x))?(Number(x)>0?'+':'')+Number(x).toFixed(2)+'%':'未取得';\n\
+        try{\n const res=await fetch('./data/earnings-reactions.json',{cache:'no-store'});\n if(!res.ok)throw Error('データ未公開');\n\
+        \ const d=await res.json();if(!Array.isArray(d.records))throw Error('データ形式不正');\n const present=d.records.filter(r=>(r.reactions||[]).length);\n\
+        \ document.getElementById('erStatus').textContent='反応データあり '+present.length+' / '+d.records.length+'銘柄（未取得は0件のまま表示）';\n\
+        \ const render=r=>'<details class=\"item\"><summary>'+e(r.name)+'（'+e(r.code)+'） ／ '+(r.reactions||[]).length+'件</summary>'+\n\
+        \ ((r.reactions||[]).length?r.reactions.map(x=>'<p>'+e(x.event_date)+' ／ '+e(x.date_kind)+'<br>翌営業日 '+p(x.after_1d_pct)+'\
+        \ ／ 3営業日 '+p(x.after_3d_pct)+' ／ 5営業日 '+p(x.after_5d_pct)+'<br><span class=\"muted small\">比較基準 '+e(x.baseline_date)+'　'+(String(x.source_url||'').startsWith('https://')?'<a\
+        \ href=\"'+e(x.source_url)+'\" target=\"_blank\" rel=\"noopener noreferrer\">日付の出典</a>':'出典URL未取得')+'</span></p>').join(''):'反応計算に必要な過去決算日か、その後の5営業日分の株価が未取得')+'</details>';\n\
+        \ document.getElementById('erCards').innerHTML=d.records.map(render).join('');\n}catch(err){document.getElementById('erStatus').textContent='反応データ取得失敗：'+err.message;}\n\
+        })();\n</script>\n'''\n    if '</body>' not in html:\n        raise SystemExit('Cannot locate </body>; refusing to\
+        \ modify UI')\n    html=html.replace('</body>',panel+'</body>',1)\n    html_file.write_text(html,encoding='utf-8')\n\
+        assert html.count(marker)==1\nassert all(x['event_date'] < x['after_1d_date'] for row in out for x in row['reactions'])\n\
+        print('Reaction history:', sum(len(r['reactions']) for r in out),'events across',new_doc['with_reactions'],'stocks')\n\
+        \nPY"
+    - name: Commit verified reactions and app panel
+      shell: bash
+      run: "git config user.name 'github-actions[bot]'\ngit config user.email '41898282+github-actions[bot]@users.noreply.github.com'\n\
+        git add data/earnings-reactions.json index.html\nif git diff --cached --quiet; then echo 'No change'; exit 0; fi\n\
+        git commit -m 'Add sourced historical earnings-date price reactions'\nfor n in 1 2 3; do\n  git fetch origin main\n\
+        \  git rebase origin/main || { git rebase --abort; exit 1; }\n  if git push origin HEAD:main; then echo 'PUBLISHED';\
+        \ exit 0; fi\n  sleep $((n*5))\ndone\nexit 1"

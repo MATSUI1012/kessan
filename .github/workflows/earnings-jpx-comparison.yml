@@ -1,0 +1,158 @@
+name: JPX historical reaction comparison
+'on':
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/earnings-jpx-comparison.yml'
+  schedule:
+    - cron: '5 13 * * 1-5'
+permissions:
+  contents: write
+concurrency:
+  group: earnings-jpx-comparison
+  cancel-in-progress: false
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Calculate JPX scheduled-date comparison
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, math
+          from collections import defaultdict
+          from datetime import datetime, timedelta, timezone
+          from pathlib import Path
+          DATA=Path('data')
+          JST=timezone(timedelta(hours=9))
+          today=datetime.now(JST).date()
+          cal=json.loads((DATA/'earnings-calendar-history.json').read_text(encoding='utf-8'))
+          prices=json.loads((DATA/'prices.json').read_text(encoding='utf-8'))
+          caps=json.loads((DATA/'market-caps.json').read_text(encoding='utf-8'))
+          assert isinstance(cal['events'],list) and isinstance(prices,list) and isinstance(caps,list)
+          capmap={}
+          for c in caps:
+              try:
+                  v=float(c['market_cap_yen'])
+                  if math.isfinite(v) and v>0:capmap[str(c['code'])]=v
+              except (KeyError,ValueError,TypeError,OverflowError):pass
+          pmap=defaultdict(dict)
+          for p in prices:
+              try:
+                  d=str(p['date'])[:10]
+                  dt=datetime.strptime(d,'%Y-%m-%d').date()
+                  close=float(p['close']);vol=float(p['volume'])
+                  if dt<=today and math.isfinite(close) and close>0 and math.isfinite(vol) and vol>=0:
+                      pmap[str(p['code'])][d]=(close,vol)
+              except (KeyError,ValueError,TypeError,OverflowError):continue
+          events={}
+          for e in cal['events']:
+              try:
+                  code=str(e['code']);date=str(e['scheduled_date'])[:10]
+                  d=datetime.strptime(date,'%Y-%m-%d').date()
+                  src=str(e.get('source_url') or '')
+                  if d>=today or not src.startswith('https://www.jpx.co.jp/'):continue
+                  events[(code,date)]={'code':code,'date':date,'name':str(e.get('name') or ''),'source_url':src}
+              except (KeyError,ValueError,TypeError):continue
+          out=[];reasons=defaultdict(int)
+          for e in events.values():
+              code=e['code'];day=e['date']
+              series=sorted(pmap[code].items())
+              before=[(d,v) for d,v in series if d<day]
+              after=[(d,v) for d,v in series if d>day]
+              if not before:
+                  reasons['no_pre_event_close']+=1;continue
+              if len(after)<5:
+                  reasons['fewer_than_five_post_sessions']+=1;continue
+              basedate,(base,basevolume)=before[-1]
+              eventdate=datetime.strptime(day,'%Y-%m-%d').date()
+              if (eventdate-datetime.strptime(basedate,'%Y-%m-%d').date()).days>7:
+                  reasons['stale_pre_event_close']+=1;continue
+              if (datetime.strptime(after[4][0],'%Y-%m-%d').date()-eventdate).days>15:
+                  reasons['large_gap_after_event']+=1;continue
+              cap=capmap.get(code)
+              out.append({'code':code,'name':e['name'],'scheduled_date':day,
+                  'date_kind':'JPX決算発表予定日（実際の発表日時は未確認）',
+                  'source_url':e['source_url'],'baseline_date':basedate,
+                  'after_1d_date':after[0][0],'after_3d_date':after[2][0],
+                  'after_5d_date':after[4][0],
+                  'after_1d_pct':round((after[0][1][0]/base-1)*100,2),
+                  'after_3d_pct':round((after[2][1][0]/base-1)*100,2),
+                  'after_5d_pct':round((after[4][1][0]/base-1)*100,2),
+                  'turnover_oku_before':round(basevolume*base/1e8,2),
+                  'current_market_cap_oku':round(cap/1e8,2) if cap else None})
+          out.sort(key=lambda x:(x['scheduled_date'],x['code']),reverse=True)
+          assert len({(x['code'],x['scheduled_date']) for x in out})==len(out)
+          assert all(x['baseline_date']<x['scheduled_date']<x['after_1d_date']<x['after_3d_date']<x['after_5d_date'] for x in out)
+          assert all(x['source_url'].startswith('https://www.jpx.co.jp/') for x in out)
+          new={'schema':1,'description':'JPXの決算発表予定日の前後の株価変化。実際の決算発表日時や因果関係は未確認。今回の20銘柄自身の過去決算成績ではない。',
+            'source':'JPX archived scheduled dates + repository daily stock closes',
+            'events_available':len(events),'samples':len(out),'missing_reason_counts':dict(reasons),'records':out}
+          path=DATA/'earnings-reactions-universe.json'
+          old=None
+          if path.exists():
+              try:old=json.loads(path.read_text(encoding='utf-8'))
+              except (ValueError,OSError):pass
+          ignore_time=lambda x:{k:v for k,v in x.items() if k!='generated_at'}
+          if old and ignore_time(old)==new:
+              print('Unchanged historical comparison',len(out))
+          else:
+              new['generated_at']=datetime.now(JST).isoformat(timespec='seconds')
+              path.write_text(json.dumps(new,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print('JPX historical comparisons:',len(out),'from',len(events),'past dated events;',dict(reasons))
+          html_path=Path('index.html');html=html_path.read_text(encoding='utf-8')
+          marker='<!-- JPX_COMPARISON_REACTIONS_V1 -->'
+          if marker not in html:
+              panel = """<!-- JPX_COMPARISON_REACTIONS_V1 -->
+          <section class="panel" id="jpxComparisonReactions">
+          <h2>⑧ JPX予定日付近の株価反応（他銘柄を含む）</h2>
+          <p class="muted">JPX決算発表予定日と日足を照合した履歴。実際の開示日時は未確認で、今回の20銘柄自身の過去決算反応や上昇確率ではありません。</p>
+          <div class="row"><div><label for="jpxCap">時価総額上限（億円）</label><input id="jpxCap" type="number" value="1000" min="1"></div>
+          <div><label for="jpxTurn">前日概算売買代金の下限（億円）</label><input id="jpxTurn" type="number" value="2" min="0"></div></div>
+          <p id="jpxSummary">比較履歴を取得中…</p><div id="jpxRows"></div>
+          </section>
+          <script>
+          (async()=>{
+           const $=id=>document.getElementById(id);
+           const esc=s=>String(s??'').replace(/[&<>\"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',"'":'&#39;'}[c]));
+           const fmt=n=>typeof n==='number'&&Number.isFinite(n)?(n>0?'+':'')+n.toFixed(2)+'%':'未取得';
+           try{
+            const res=await fetch('./data/earnings-reactions-universe.json',{cache:'no-store'});
+            if(!res.ok)throw Error('履歴未公開');const doc=await res.json();
+            if(!Array.isArray(doc.records))throw Error('形式不正');
+            function redraw(){
+             const cap=Number($('jpxCap').value),turn=Number($('jpxTurn').value);
+             const samples=doc.records.filter(x=>x.current_market_cap_oku!==null&&Number.isFinite(Number(x.current_market_cap_oku))&&Number(x.current_market_cap_oku)<cap&&Number(x.turnover_oku_before)>=turn);
+             const plus=samples.filter(x=>x.after_1d_pct>0).length;
+             $('jpxSummary').textContent='条件該当 '+samples.length+'件 ／ 集計可能 '+doc.records.length+'件 ／ 翌営業日プラス '+(samples.length?(100*plus/samples.length).toFixed(1)+'%':'集計不可')+'（予定日付近の単純集計・標本の偏りあり）';
+             $('jpxRows').innerHTML=samples.slice(0,30).map(x=>'<div class="item"><b>'+esc(x.name)+'（'+esc(x.code)+'）</b><p>JPX予定日 '+esc(x.scheduled_date)+' ／ 比較基準 '+esc(x.baseline_date)+'</p><p>1営業日 '+fmt(x.after_1d_pct)+' ／ 3営業日 '+fmt(x.after_3d_pct)+' ／ 5営業日 '+fmt(x.after_5d_pct)+'</p><p class="small muted">時価総額は現在値。<a href="'+esc(x.source_url)+'" target="_blank" rel="noopener noreferrer">JPXの予定日出典</a></p></div>').join('')||'該当データなし';
+            }
+            $('jpxCap').addEventListener('change',redraw);$('jpxTurn').addEventListener('change',redraw);redraw();
+           }catch(e){$('jpxSummary').textContent='取得失敗：'+e.message;}
+          })();
+          </script>
+          """
+              if '</body>' not in html:raise SystemExit('HTML body not found')
+              html=html.replace('</body>',panel+'</body>',1)
+              html_path.write_text(html,encoding='utf-8')
+          assert html.count(marker)==1
+          PY
+      - name: Commit source-linked comparison to app
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/earnings-reactions-universe.json index.html
+          if git diff --cached --quiet; then echo 'No changed validated samples'; exit 0; fi
+          git commit -m 'Add JPX scheduled-day historical reaction comparisons'
+          for n in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; exit 1; }
+            if git push origin HEAD:main; then exit 0; fi
+            sleep $((n*5))
+          done
+          exit 1

@@ -67,4 +67,17 @@ async function loadResearch(){let s=$('researchstatus');s.textContent='決算分
  $('researchother').innerHTML=rows.length>2?`<details><summary>その他${rows.length-2}銘柄を表示</summary>`+rows.slice(2).map(r=>item(r,0)).join('')+'</details>':'該当なし';
  }catch(e){s.textContent='分析未反映：'+e.message;$('researchtop').textContent='分析データの更新待ち';$('researchother').textContent='';}}
 $('researchreload').onclick=loadResearch;loadResearch();
-})();</script></body></html>
+})();</script><!-- PRE_EARNINGS_RISK_PANEL_V1 -->
+<section class="panel"><h2>⑥ 決算前の値動きリスク（過去データ）</h2>
+<p class="muted">年率換算の20日変動率・直前20日の騰落率を確認できます。値動きの大きさは上昇確率ではありません。元の日足は決算予定日前のみ使用。</p>
+<div id="preRiskStatus">読み込み中</div><div id="preRiskList"></div>
+</section>
+<script>
+(async()=>{const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+try{let resp=await fetch('./data/pre-earnings-risk.json',{cache:'no-store'});if(!resp.ok)throw Error('リスクデータ未公開');let x=await resp.json();
+let valid=x.records.filter(r=>r.status==='計算済み');document.getElementById('preRiskStatus').textContent='計算済み '+valid.length+'/'+x.records.length+'銘柄 ／ データ更新 '+new Date(x.generated_at).toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'});
+document.getElementById('preRiskList').innerHTML=x.records.map(r=>'<details class="item"><summary>'+esc(r.name)+'（'+esc(r.code)+'） ／ '+esc(r.earnings_date)+'</summary><p>'+ (r.status==='計算済み'?'20日騰落率 '+esc(r.return_20d_pct)+'% ／ 20日変動率（年率） '+esc(r.annualized_volatility_20d_pct)+'% ／ 出来高倍率 '+esc(r.volume_ratio_5_vs_previous20)+'倍 ／ 直近日足 '+esc(r.last_price_date):esc(r.status))+'</p>'+((r.quality_flags||[]).length?'<p class="flag">要確認：'+r.quality_flags.map(esc).join('／')+'</p>':'')+'</details>').join('');
+}catch(e){document.getElementById('preRiskStatus').textContent='取得失敗：'+e.message;}
+})();
+</script>
+</body></html>

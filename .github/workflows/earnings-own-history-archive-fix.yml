@@ -1,0 +1,192 @@
+name: Retry structured earnings archive safely
+'on':
+  workflow_dispatch: {}
+  push:
+    paths:
+      - '.github/workflows/earnings-own-history-archive-fix.yml'
+  schedule:
+    - cron: '25 18 * * 1-5'
+permissions:
+  contents: write
+concurrency:
+  group: earnings-own-history-archive-fix
+  cancel-in-progress: false
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install HTML reader
+        run: python -m pip install -q requests beautifulsoup4
+      - name: Read archive, retain observations, update ranking
+        shell: bash
+        run: |
+          python - <<'PY'
+          from __future__ import annotations
+          import json, math, re
+          from concurrent.futures import ThreadPoolExecutor, as_completed
+          from datetime import date, datetime, timedelta, timezone
+          from pathlib import Path
+          from urllib.parse import urljoin, urlparse
+          import requests
+          from bs4 import BeautifulSoup
+
+          JST = timezone(timedelta(hours=9))
+          now = datetime.now(JST)
+          today = now.date()
+          data = Path('data')
+          research = json.loads((data/'research.json').read_text(encoding='utf-8'))
+          rank_path = data/'earnings-four-factor-ranking.json'
+          history_path = data/'own-earnings-history.json'
+          ranking = json.loads(rank_path.read_text(encoding='utf-8'))
+          old = json.loads(history_path.read_text(encoding='utf-8'))
+          assert research['screening']['market_cap_min_yen_inclusive'] == 8_000_000_000
+          assert research['screening']['market_cap_max_yen_exclusive'] == 100_000_000_000
+          assert research['screening']['min_latest_turnover_oku'] == 0
+          assert isinstance(ranking.get('records'), list)
+          old_by = {str(r['code']):r for r in old['records']}
+          candidates = [{'code':str(r['code']), 'name':r.get('name',''), 'earnings_date':str(r['earnings_date'])[:10]} for r in research['records']]
+          assert len(candidates) == len({r['code'] for r in candidates}) == len(ranking['records'])
+
+          DATE_RE = re.compile(r'(20(?:1[5-9]|2\d))[年/.-]\s*(0?[1-9]|1[0-2])[月/.-]\s*([0-3]?\d)日?')
+          BAN = ('訂正','決算説明','説明資料','開示延期','発表予定','業績予想','一部訂正')
+
+          def dated(s):
+              for m in DATE_RE.finditer(str(s)):
+                  try:return date(*(int(v) for v in m.groups()))
+                  except ValueError:pass
+              return None
+
+          def clean_old(item):
+              return [e for e in item.get('events',[]) if isinstance(e,dict) and e.get('event_date') and isinstance(e.get('next_close_pct'),(int,float)) and e.get('baseline_date') and e.get('next_session_date') and str(e.get('source_url','')).startswith('https://')]
+
+          def archive_events(code, cutoff):
+              events = []
+              diagnostics=[]
+              for url in (f'https://irbank.net/{code}/ir', f'https://irbank.net/{code}'):
+                  try:
+                      res=requests.get(url,timeout=14,headers={'User-Agent':'Mozilla/5.0'})
+                      diagnostics.append(f'{url}: HTTP {res.status_code}')
+                      if res.status_code!=200:continue
+                      soup=BeautifulSoup(res.text,'html.parser')
+                      title=soup.title.get_text(' ',strip=True) if soup.title else ''
+                      if not re.search(r'(?<![0-9])'+re.escape(code)+r'(?![0-9])',title):
+                          diagnostics.append('銘柄コード不一致');continue
+                      for a in soup.find_all('a',href=True):
+                          head=a.get_text(' ',strip=True)
+                          if '決算短信' not in head or any(b in head for b in BAN):continue
+                          parent=a.find_parent(['tr','li','article']) or a.parent
+                          context=parent.get_text(' ',strip=True)[:500] if parent else ''
+                          before=context.split(head,1)[0] if head in context else ''
+                          d=dated(before) or dated(context)
+                          if not d or not(today-timedelta(days=730)<=d<cutoff):continue
+                          target=urljoin(url,a['href'])
+                          host=urlparse(target)
+                          if host.scheme!='https' or not (host.hostname=='irbank.net' or (host.hostname or '').endswith('.irbank.net')):continue
+                          events.append({'event_date':d.isoformat(),'date_kind':'IR BANK決算短信一覧記載日（開示時刻未確認）','source_url':target,'headline':head[:180]})
+                      if events:break
+                  except requests.RequestException as ex:
+                      diagnostics.append(type(ex).__name__)
+              return events,diagnostics
+
+          def prices_for(code):
+              start=int((datetime.now(timezone.utc)-timedelta(days=760)).timestamp())
+              end=int((datetime.now(timezone.utc)+timedelta(days=2)).timestamp())
+              resp=requests.get(f'https://query1.finance.yahoo.com/v8/finance/chart/{code}.T',params={'period1':start,'period2':end,'interval':'1d'},timeout=15,headers={'User-Agent':'Mozilla/5.0'})
+              resp.raise_for_status()
+              d=resp.json()['chart']['result'][0]
+              result={}
+              for ts,v in zip(d.get('timestamp') or [],d['indicators']['quote'][0]['close']):
+                  try:
+                      day=datetime.fromtimestamp(ts,JST).date()
+                      n=float(v)
+                      if math.isfinite(n) and n>0 and day<=today:result[day]=n
+                  except (TypeError,ValueError,OverflowError):pass
+              return result
+
+          def reaction(event, prices):
+              d=date.fromisoformat(event['event_date'])
+              days=sorted(prices)
+              pre=[p for p in days if p<d]
+              post=[p for p in days if p>d]
+              if not pre or not post or (d-pre[-1]).days>7 or (post[0]-d).days>7:return None
+              base=prices[pre[-1]]
+              pc=lambda dt:round((prices[dt]/base-1)*100,2)
+              return {**event,'baseline_date':pre[-1].isoformat(),'baseline_close':round(base,4),'next_session_date':post[0].isoformat(),'next_close_pct':pc(post[0]),'after_3d_pct':pc(post[2]) if len(post)>=3 else None,'after_5d_pct':pc(post[4]) if len(post)>=5 else None,'price_source':'Yahoo Finance 日足'}
+
+          def work(candidate):
+              code=candidate['code']
+              stored=clean_old(old_by.get(code,{}))
+              by_date={x['event_date']:x for x in stored}
+              cutoff=min(today-timedelta(days=3),date.fromisoformat(candidate['earnings_date'])-timedelta(days=7))
+              entries,diagnostics=archive_events(code,cutoff)
+              pending=[e for e in entries if not any(abs((date.fromisoformat(e['event_date'])-date.fromisoformat(d)).days)<=2 for d in by_date)]
+              if pending:
+                  try:
+                      series=prices_for(code)
+                      for item in pending:
+                          calc=reaction(item,series)
+                          if calc:by_date[item['event_date']]=calc
+                  except (requests.RequestException, KeyError, ValueError, IndexError, TypeError) as ex:
+                      diagnostics.append('prices_'+type(ex).__name__)
+              records=sorted(by_date.values(),key=lambda x:x['event_date'],reverse=True)[:12]
+              return {'code':code,'name':candidate['name'],'events':records,'archive_diagnostics':diagnostics,'new_events':max(0,len(records)-len(stored))}
+
+          results={}
+          with ThreadPoolExecutor(max_workers=3) as pool:
+              futures={pool.submit(work,c):c for c in candidates}
+              for f in as_completed(futures):
+                  c=futures[f]
+                  try:results[c['code']]=f.result()
+                  except Exception as ex:
+                      print('FETCH_ERROR',c['code'],repr(ex))
+                      results[c['code']]={'code':c['code'],'name':c['name'],'events':clean_old(old_by.get(c['code'],{})),'new_events':0,'archive_diagnostics':[type(ex).__name__]}
+
+          prior_events=sum(len(clean_old(old_by.get(c['code'],{}))) for c in candidates)
+          current_events=sum(len(results[c['code']]['events']) for c in candidates)
+          assert current_events>=prior_events, 'Historical observations must not be lost'
+
+          for r in ranking['records']:
+              code=str(r['code'])
+              own=[x for x in results[code]['events'] if x['event_date']<r['earnings_date']][:4]
+              pos=sum(x['next_close_pct']>0 for x in own)
+              own_points=3 if len(own)>=3 and pos/len(own)>=.75 else 2 if len(own)>=2 and pos/len(own)>=.6 else 1 if len(own)==1 and pos else 0
+              r['self_history_count']=len(own)
+              r['self_history_positive']=pos
+              r['self_history_events']=[{'date':x['event_date'],'next_close_pct':x['next_close_pct'],'date_kind':x.get('date_kind'),'source_url':x.get('source_url')} for x in own]
+              r['score_components']['own_earnings_reaction']=own_points
+              r['score_total']=sum(r['score_components'].values())
+              r.setdefault('data_coverage',{})['self_history']=bool(own)
+              assert 0<=r['score_total']<=12
+          ranking['records'].sort(key=lambda x:(-x['score_total'],x['earnings_date'],x['code']))
+          ranking['coverage']['own_history']=sum(r['self_history_count']>0 for r in ranking['records'])
+          ranking['generated_at']=now.isoformat(timespec='seconds')
+          ranking['own_history_source']='IR BANK上の決算短信掲載日（確認できた日付のみ）と保存済み履歴。実際の発表時刻は未確認。'
+
+          coverage={'candidates':len(candidates),'with_history':sum(bool(results[c['code']]['events']) for c in candidates),'events':current_events,'new_events':current_events-prior_events}
+          output={'schema':4,'updated_at':now.isoformat(timespec='seconds'),'coverage':coverage,'method':'IR BANK決算短信の開示履歴に明記された日付とYahoo日足を照合。未確認は推測しない。','records':[results[c['code']] for c in candidates]}
+          history_path.write_text(json.dumps(output,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          rank_path.write_text(json.dumps(ranking,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print('RESULT',json.dumps(coverage,ensure_ascii=False))
+          print('ARCHIVE_DIAGNOSTICS',json.dumps({x['code']:results[x['code']]['archive_diagnostics'] for x in candidates},ensure_ascii=False))
+          PY
+      - name: Commit verified results
+        shell: bash
+        run: |
+          set -e
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/own-earnings-history.json data/earnings-four-factor-ranking.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Safely retry archival earnings history'
+          for n in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; exit 1; }
+            if git push origin HEAD:main; then exit 0; fi
+            sleep $((n*5))
+          done
+          exit 1

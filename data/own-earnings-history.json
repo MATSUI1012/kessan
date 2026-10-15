@@ -1,309 +1,132 @@
 {
-  "schema": 2,
-  "updated_at": "2026-10-15T19:10:43+09:00",
-  "method": "複数のニュースRSS、JPX決算予定日、Yahoo決算カレンダーの出典日付を株価と照合。単なる記事配信日から開示日を推定しない。",
+  "schema": 1,
+  "updated_at": "2026-10-16T01:13:21+09:00",
+  "method": "候補自身の出典のある過去決算日付とYahoo日足を照合。記事掲載日は実際の発表日と異なる場合がある。",
   "coverage": {
     "candidates": 20,
-    "with_history": 6,
-    "events": 7
+    "with_history": 0,
+    "events": 0
   },
   "records": [
     {
-      "code": "4434",
-      "name": "サーバーワークス",
+      "code": "3911",
+      "name": "Ａｉｍｉｎｇ",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
-      "code": "7352",
-      "name": "ＴＷＯＳＴＯＮＥ＆Ｓｏｎｓ",
+      "code": "6629",
+      "name": "テクノホライゾン",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
-      "code": "6058",
-      "name": "ベクトル",
+      "code": "9029",
+      "name": "ヒガシホールディングス",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
-      "code": "4413",
-      "name": "ボードルア",
-      "events": [
-        {
-          "event_date": "2026-04-14",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5UNjZSc0pPWTRMcThlZ2lSZDJMZUtsNlFhakJGZHAyN2VSZHZmMFZVWW1zTEZfTjRSbG0xTTczNU5YbGMtZG5HUmdYU25Kc0QyMzY2emU1c1hFRFVVUlZPaExqcm9JdlV6MGc?oc=5",
-          "headline": "ボードルア[4413]：2026年２月期 決算短信〔ＩＦＲＳ〕(連結) 2026年4月14日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "baseline_date": "2026-04-13",
-          "baseline_close": 1951.0,
-          "next_session_date": "2026-04-15",
-          "next_close_pct": 16.71,
-          "after_3d_pct": 16.25,
-          "after_5d_pct": 13.48,
-          "price_source": "Yahoo Finance 日足"
-        }
-      ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 3,
-        "rss_failures": 0
-      }
-    },
-    {
-      "code": "7818",
-      "name": "トランザクション",
+      "code": "6999",
+      "name": "ＫＯＡ",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
-      "code": "1407",
-      "name": "ウエストホールディングス",
+      "code": "6337",
+      "name": "テセック",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
-      "code": "3915",
-      "name": "テラスカイ",
-      "events": [
-        {
-          "event_date": "2026-04-14",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBCZUEtTmV1NWszbVJaWkcwLXJvSTdMQmQ3c0c4U2MzQ2NqNlNzZW5Va20yQzBaTVg1bFh3aVhOblJScFU5NWhMdkQ3TV9zVWstcFRwTm9udmV3ZUptOHBZRXNaMmpFN1g5UXc?oc=5",
-          "headline": "テラスカイ[3915]：2026年２月期 決算短信〔日本基準〕（連結） 2026年4月14日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "baseline_date": "2026-04-13",
-          "baseline_close": 1668.0,
-          "next_session_date": "2026-04-15",
-          "next_close_pct": 9.47,
-          "after_3d_pct": 13.73,
-          "after_5d_pct": 10.55,
-          "price_source": "Yahoo Finance 日足"
-        }
-      ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 3,
-        "rss_failures": 0
-      }
-    },
-    {
-      "code": "3479",
-      "name": "ＴＫＰ",
+      "code": "3091",
+      "name": "ブロンコビリー",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
-      "code": "7388",
-      "name": "ＦＰパートナー",
+      "code": "7931",
+      "name": "未来工業",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
-      "code": "3548",
-      "name": "バロックジャパンリミテッド",
+      "code": "3290",
+      "name": "Ｏｎｅリート投資法人",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
-      "code": "6521",
-      "name": "オキサイド",
-      "events": [
-        {
-          "event_date": "2026-07-14",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1KeWtOd0lHcU9EcV9tV0x3WXkzT3U0TVJoRWpOQS0taXc0eEsyU3ZhM01BOEVOSWtGTmJDUGtHT2xQSW9XcENUbWpXUkdtQ2NLN1F4ZmZPSlVCUndFelg2NVJwbTd5V3R5ekE?oc=5",
-          "headline": "オキサイド[6521]：2027年２月期 第１四半期決算短信〔日本基準〕（連結） 2026年7月14日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "baseline_date": "2026-07-13",
-          "baseline_close": 4185.0,
-          "next_session_date": "2026-07-15",
-          "next_close_pct": -5.62,
-          "after_3d_pct": -19.12,
-          "after_5d_pct": -20.19,
-          "price_source": "Yahoo Finance 日足"
-        },
-        {
-          "event_date": "2026-04-14",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE93MUtaZ0V3d21wWkZueUkxWmhfaWdtMG5Ia0tBMy1rdG1Sd3QzSUVhQzdKRzdUdjNTT2N4OWhKRVZ1QkNlNExjNmF3VUtEU2pNY3YyN3Q4czFkZThGSWNfa0lCS21NSEVNa2c?oc=5",
-          "headline": "オキサイド[6521]：2026年2月期 決算短信〔日本基準〕（連結） 2026年4月14日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "baseline_date": "2026-04-13",
-          "baseline_close": 5050.0,
-          "next_session_date": "2026-04-15",
-          "next_close_pct": -13.86,
-          "after_3d_pct": -19.8,
-          "after_5d_pct": 0.79,
-          "price_source": "Yahoo Finance 日足"
-        }
-      ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 3,
-        "rss_failures": 0
-      }
-    },
-    {
-      "code": "9628",
-      "name": "燦ホールディングス",
+      "code": "2804",
+      "name": "ブルドックソース",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
-      "code": "8167",
-      "name": "リテールパートナーズ",
+      "code": "2211",
+      "name": "不二家",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
-      "code": "5574",
-      "name": "ＡＢＥＪＡ",
-      "events": [
-        {
-          "event_date": "2026-07-15",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5sckcyZFFCUmZGQUN3cHJQMjBjNTlrVmdfTFA5cTl1STFtaWNvcjgxNUxYSExJSWx6UVZrdnozZ1Q1OUpFVUpKYmtiY3dTRzliLUZUaGtjcEQ5akotWXZVWU5oODEzWTlWaXc?oc=5",
-          "headline": "ＡＢＥＪＡ[5574]：2026年８月期 第３四半期決算短信〔日本基準〕（非連結） 2026年7月15日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "baseline_date": "2026-07-14",
-          "baseline_close": 2415.0,
-          "next_session_date": "2026-07-16",
-          "next_close_pct": -0.75,
-          "after_3d_pct": -4.31,
-          "after_5d_pct": -1.04,
-          "price_source": "Yahoo Finance 日足"
-        }
-      ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 3,
-        "rss_failures": 0
-      }
-    },
-    {
-      "code": "2168",
-      "name": "パソナグループ",
-      "events": [
-        {
-          "event_date": "2026-07-15",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9oZWxoSGlnZlRSVjM5VE9iR3BVWHJTMVN5NnROeGF4eU0zTDh2MmFOSW9yNUVfakEyVmxqLWpjbnlMdlN0RE1JcFJ6MTVYQS04ZDlLdE1naGtibmNzUHBjX2ExNFdjdDNNY1E?oc=5",
-          "headline": "パソナグループ[2168]：2026年５月期 決算短信[日本基準](連結) 2026年7月15日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "baseline_date": "2026-07-14",
-          "baseline_close": 1544.0,
-          "next_session_date": "2026-07-16",
-          "next_close_pct": 0.26,
-          "after_3d_pct": 2.98,
-          "after_5d_pct": 1.55,
-          "price_source": "Yahoo Finance 日足"
-        }
-      ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 3,
-        "rss_failures": 0
-      }
-    },
-    {
-      "code": "6522",
-      "name": "アスタリスク",
+      "code": "4973",
+      "name": "日本高純度化学",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
-      "code": "3558",
-      "name": "ジェイドグループ",
+      "code": "3488",
+      "name": "セントラル・リート投資法人",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
-      "code": "1887",
-      "name": "日本国土開発",
+      "code": "2972",
+      "name": "サンケイリアルエステート投資法人",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
-      "code": "3810",
-      "name": "サイバーステップホールディングス",
-      "events": [
-        {
-          "event_date": "2026-07-15",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFByTTdmakx4YVc1ODFRVkZiMWF3cy1SRFM1enNfVnlfeDFOS3oyTERZU1FLMHlDTWt2a0hwNTVibDJnU0o4dVVXQnZRQXVrekFIQjFuNHhEbTJqTDV4SU9WUm1aVGx2SXZTUGc?oc=5",
-          "headline": "サイバーステップホールディングス[3810]：2026年５月期 決算短信〔日本基準〕（連結） 2026年7月15日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "baseline_date": "2026-07-14",
-          "baseline_close": 219.0,
-          "next_session_date": "2026-07-16",
-          "next_close_pct": -23.74,
-          "after_3d_pct": -27.4,
-          "after_5d_pct": -30.59,
-          "price_source": "Yahoo Finance 日足"
-        }
-      ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 3,
-        "rss_failures": 0
-      }
-    },
-    {
-      "code": "9979",
-      "name": "大庄",
+      "code": "5933",
+      "name": "アルインコ",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "2268",
+      "name": "Ｂ－Ｒ　サーティワン　アイスクリーム",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "6230",
+      "name": "ＳＡＮＥＩ",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "4765",
+      "name": "ＳＢＩグローバルアセットマネジメント",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "7102",
+      "name": "日本車輌製造",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "5204",
+      "name": "石塚硝子",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "3492",
+      "name": "ＭＩＲＡＲＴＨ不動産投資法人",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
     }
   ]
 }

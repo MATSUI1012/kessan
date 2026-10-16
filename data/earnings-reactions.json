@@ -1,21 +1,21 @@
 {
-  "schema": 2,
-  "description": "TDnet決算短信の掲載日付近の終値反応。開示時刻未確認、決算による因果効果や上昇確率は示さない。",
+  "schema": 1,
+  "description": "決算カレンダー日付付近の終値反応。実際の発表時刻未検証であり、決算による因果効果・上昇確率ではありません。",
   "sources": [
-    "TDnet決算短信開示一覧（掲載日）",
-    "既存の出典付き履歴"
+    "JPX保存済み発表予定日",
+    "Yahoo Finance決算カレンダー日付（取得可能な銘柄のみ）"
   ],
-  "event_date_count": 11,
+  "event_date_count": 1,
   "with_reactions": 0,
   "records": [
     {
-      "code": "7352",
-      "name": "ＴＷＯＳＴＯＮＥ＆Ｓｏｎｓ",
+      "code": "6337",
+      "name": "テセック",
       "reactions": []
     },
     {
-      "code": "4498",
-      "name": "サイバートラスト",
+      "code": "7102",
+      "name": "日本車輌製造",
       "reactions": []
     },
     {
@@ -24,43 +24,8 @@
       "reactions": []
     },
     {
-      "code": "6058",
-      "name": "ベクトル",
-      "reactions": []
-    },
-    {
-      "code": "4413",
-      "name": "ボードルア",
-      "reactions": []
-    },
-    {
-      "code": "6999",
-      "name": "ＫＯＡ",
-      "reactions": []
-    },
-    {
-      "code": "6023",
-      "name": "ダイハツインフィニアース",
-      "reactions": []
-    },
-    {
-      "code": "9250",
-      "name": "ＧＲＣＳ",
-      "reactions": []
-    },
-    {
-      "code": "5817",
-      "name": "ＪＭＡＣＳ",
-      "reactions": []
-    },
-    {
-      "code": "1407",
-      "name": "ウエストホールディングス",
-      "reactions": []
-    },
-    {
-      "code": "3915",
-      "name": "テラスカイ",
+      "code": "9029",
+      "name": "ヒガシホールディングス",
       "reactions": []
     },
     {
@@ -69,33 +34,13 @@
       "reactions": []
     },
     {
-      "code": "6521",
-      "name": "オキサイド",
+      "code": "6999",
+      "name": "ＫＯＡ",
       "reactions": []
     },
     {
-      "code": "4973",
-      "name": "日本高純度化学",
-      "reactions": []
-    },
-    {
-      "code": "2664",
-      "name": "カワチ薬品",
-      "reactions": []
-    },
-    {
-      "code": "5574",
-      "name": "ＡＢＥＪＡ",
-      "reactions": []
-    },
-    {
-      "code": "2168",
-      "name": "パソナグループ",
-      "reactions": []
-    },
-    {
-      "code": "6522",
-      "name": "アスタリスク",
+      "code": "7931",
+      "name": "未来工業",
       "reactions": []
     },
     {
@@ -104,17 +49,65 @@
       "reactions": []
     },
     {
+      "code": "3290",
+      "name": "Ｏｎｅリート投資法人",
+      "reactions": []
+    },
+    {
+      "code": "6629",
+      "name": "テクノホライゾン",
+      "reactions": []
+    },
+    {
+      "code": "2804",
+      "name": "ブルドックソース",
+      "reactions": []
+    },
+    {
+      "code": "2211",
+      "name": "不二家",
+      "reactions": []
+    },
+    {
+      "code": "3488",
+      "name": "セントラル・リート投資法人",
+      "reactions": []
+    },
+    {
+      "code": "5933",
+      "name": "アルインコ",
+      "reactions": []
+    },
+    {
+      "code": "5204",
+      "name": "石塚硝子",
+      "reactions": []
+    },
+    {
+      "code": "2268",
+      "name": "Ｂ－Ｒ　サーティワン　アイスクリーム",
+      "reactions": []
+    },
+    {
+      "code": "4973",
+      "name": "日本高純度化学",
+      "reactions": []
+    },
+    {
+      "code": "4765",
+      "name": "ＳＢＩグローバルアセットマネジメント",
+      "reactions": []
+    },
+    {
       "code": "3492",
       "name": "ＭＩＲＡＲＴＨ不動産投資法人",
       "reactions": []
+    },
+    {
+      "code": "6230",
+      "name": "ＳＡＮＥＩ",
+      "reactions": []
     }
   ],
-  "generated_at": "2026-10-15T22:22:26+09:00",
-  "tdnet_days_requested": 176,
-  "tdnet_days_parsed": 0,
-  "tdnet_events_found": 0,
-  "tdnet_scan_diagnostics": {
-    "missing": 176,
-    "parsed": 0
-  }
+  "generated_at": "2026-10-16T21:51:07+09:00"
 }

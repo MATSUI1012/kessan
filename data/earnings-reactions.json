@@ -1,9 +1,9 @@
 {
-  "schema": 1,
-  "description": "決算カレンダー日付付近の終値反応。実際の発表時刻未検証であり、決算による因果効果・上昇確率ではありません。",
+  "schema": 2,
+  "description": "TDnet決算短信の掲載日付近の終値反応。開示時刻未確認、決算による因果効果や上昇確率は示さない。",
   "sources": [
-    "JPX保存済み発表予定日",
-    "Yahoo Finance決算カレンダー日付（取得可能な銘柄のみ）"
+    "TDnet決算短信開示一覧（掲載日）",
+    "既存の出典付き履歴"
   ],
   "event_date_count": 1,
   "with_reactions": 0,
@@ -109,5 +109,12 @@
       "reactions": []
     }
   ],
-  "generated_at": "2026-10-16T21:51:07+09:00"
+  "generated_at": "2026-10-16T22:20:40+09:00",
+  "tdnet_days_requested": 168,
+  "tdnet_days_parsed": 0,
+  "tdnet_events_found": 0,
+  "tdnet_scan_diagnostics": {
+    "missing": 168,
+    "parsed": 0
+  }
 }

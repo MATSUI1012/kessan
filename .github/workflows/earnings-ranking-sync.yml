@@ -1,0 +1,258 @@
+name: Sync current earnings candidates and retain own history
+'on':
+  workflow_dispatch: {}
+  push:
+    paths:
+      - '.github/workflows/earnings-ranking-sync.yml'
+  schedule:
+    # After the existing legacy history jobs (UTC 15:45-18:25).
+    - cron: '10 19 * * 1-5'
+permissions:
+  contents: write
+concurrency:
+  group: earnings-ranking-sync
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository and history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Rebuild ranking from current candidates and preserve sourced prior events
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, math, subprocess
+          from collections import defaultdict
+          from datetime import date, datetime, timedelta, timezone
+          from pathlib import Path
+
+          DATA = Path('data')
+          JST = timezone(timedelta(hours=9))
+          now = datetime.now(JST)
+          today = now.date()
+
+          def load(name, default=None):
+              try:
+                  return json.loads((DATA/name).read_text(encoding='utf-8'))
+              except (FileNotFoundError, ValueError):
+                  if default is not None:
+                      return default
+                  raise
+
+          research = load('research.json')
+          screening = research.get('screening') or {}
+          assert screening.get('market_cap_min_yen_inclusive') == 8_000_000_000, '80億円下限が維持されていません'
+          assert screening.get('market_cap_max_yen_exclusive') == 100_000_000_000, '1000億円上限が維持されていません'
+          assert screening.get('min_latest_turnover_oku') == 0, '売買代金の下限が復活しています'
+          candidates = research.get('records') or []
+          assert len(candidates) == len({str(x['code']) for x in candidates}) and len(candidates) <= 20
+          assert all(8_000_000_000 <= x['market_cap_yen'] < 100_000_000_000 for x in candidates)
+          assert candidates, '候補が0件。以前のランキングを保持します'
+          candidate_codes = {str(x['code']) for x in candidates}
+
+          existing_ranking = load('earnings-four-factor-ranking.json', {'records': []})
+          own = load('own-earnings-history.json', {'records': []})
+          past_archive = load('own-earnings-history-archive.json', {'records': []})
+          nextday = load('earnings-nextday-reactions.json', {'records': []})
+          upgrades = load('analyst-upgrades.json', {'records': []})
+          industry = load('industry-classification.json', {'codes': {}}).get('codes', {})
+
+          # Restore previously sourced observations from a known historical commit.
+          # This is a one-time historical recovery, NOT a previous screen/score rollback.
+          historical = []
+          archive_commit = 'dbbd3f5197f9'
+          p = subprocess.run(['git', 'show', archive_commit+':data/own-earnings-history.json'],
+                             capture_output=True, text=True, check=False)
+          if p.returncode == 0:
+              try:
+                  historical = json.loads(p.stdout).get('records', [])
+              except ValueError:
+                  pass
+
+          by_event = defaultdict(dict)
+          def valid_pct(x):
+              return isinstance(x, (int, float)) and not isinstance(x, bool) and math.isfinite(x)
+
+          def ingest(code, e):
+              if not isinstance(e, dict):
+                  return
+              day = str(e.get('event_date') or e.get('date') or e.get('scheduled_date') or '')[:10]
+              source = str(e.get('source_url') or '')
+              pct = e.get('next_close_pct')
+              try:
+                  parsed = date.fromisoformat(day)
+              except ValueError:
+                  return
+              if not valid_pct(pct) or parsed > today or not source.startswith('https://'):
+                  return
+              key = day
+              old = by_event[code].get(key)
+              entry = {
+                  'event_date': day,
+                  'next_close_pct': round(float(pct), 2),
+                  'source_url': source,
+                  'date_kind': str(e.get('date_kind') or '出典の日付（発表時刻未確認）'),
+                  'baseline_date': e.get('baseline_date'),
+                  'next_session_date': e.get('next_session_date'),
+                  'price_source': e.get('price_source') or 'Yahoo Finance / 保存済み日足',
+              }
+              # Prefer dated disclosure headlines, then existing archive, then JPX scheduled dates.
+              def quality(x):
+                  kind = x.get('date_kind', '')
+                  return (3 if ('適時開示' in kind or '決算短信' in kind) else
+                          2 if 'JPX' in kind else 1)
+              if old is None or quality(entry) > quality(old):
+                  by_event[code][key] = entry
+
+          for doc in (historical, past_archive.get('records', []), own.get('records', [])):
+              for company in doc:
+                  if not isinstance(company, dict) or not company.get('code'):
+                      continue
+                  code = str(company['code'])
+                  for e in company.get('events', []):
+                      ingest(code, e)
+          for company in existing_ranking.get('records', []):
+              code = str(company.get('code', ''))
+              for e in company.get('self_history_events', []):
+                  ingest(code, e)
+          for e in nextday.get('records', []):
+              code = str(e.get('code', ''))
+              if code and e.get('scheduled_date') and e.get('source_url'):
+                  ingest(code, e)
+
+          # Archive ALL stock histories, not merely the latest 20 candidates.
+          names = {str(r['code']): str(r.get('name') or r['code']) for r in candidates}
+          for doc in (historical, past_archive.get('records', []), own.get('records', [])):
+              for r in doc:
+                  if isinstance(r, dict) and r.get('code') and r.get('name'):
+                      names.setdefault(str(r['code']), str(r['name']))
+          for r in nextday.get('records', []):
+              if r.get('code') and r.get('name'):
+                  names.setdefault(str(r['code']), str(r['name']))
+          archive_rows = [
+              {'code': code, 'name': names.get(code, code),
+               'events': sorted(events.values(), key=lambda z: z['event_date'], reverse=True)}
+              for code, events in sorted(by_event.items()) if events
+          ]
+          archive = {
+              'schema': 1,
+              'updated_at': now.isoformat(timespec='seconds'),
+              'method': '過去の出典付き本人決算履歴とJPX予定日を日付別に蓄積。実際の決算発表時刻は未確認。',
+              'coverage': {'companies': len(archive_rows), 'events': sum(len(x['events']) for x in archive_rows)},
+              'records': archive_rows,
+          }
+          assert archive['coverage']['events'] >= sum(len(r.get('events', [])) for r in past_archive.get('records', []))
+
+          revision_by_code = {str(x['code']): x for x in upgrades.get('records', []) if x.get('code')}
+          industry_by_code = industry if isinstance(industry, dict) else {}
+          current_rows = []
+          for c in candidates:
+              code = str(c['code'])
+              event_date = date.fromisoformat(str(c['earnings_date'])[:10])
+              eligible_own = [x for x in by_event.get(code, {}).values() if x['event_date'] < event_date.isoformat()]
+              own_events = sorted(eligible_own, key=lambda e: e['event_date'], reverse=True)[:4]
+              own_pos = sum(e['next_close_pct'] > 0 for e in own_events)
+              own_score = (3 if len(own_events) >= 3 and own_pos / len(own_events) >= 0.75 else
+                           2 if len(own_events) >= 2 and own_pos / len(own_events) >= 0.6 else
+                           1 if len(own_events) == 1 and own_pos == 1 else 0)
+
+              vr = c.get('volume_ratio_5_20')
+              vr = float(vr) if valid_pct(vr) else None
+              volume_score = 3 if vr is not None and vr >= 3 else 2 if vr is not None and vr >= 1.5 else 1 if vr is not None and vr >= 1.2 else 0
+
+              own_category = industry_by_code.get(code) or {}
+              group = (own_category.get('sector'), own_category.get('industry'))
+              has_group = bool(all(group))
+              peers = []
+              if has_group:
+                  for other, events in by_event.items():
+                      if other == code:
+                          continue
+                      other_category = industry_by_code.get(other) or {}
+                      if (other_category.get('sector'), other_category.get('industry')) != group:
+                          continue
+                      for e in events.values():
+                          d = date.fromisoformat(e['event_date'])
+                          if event_date - timedelta(days=45) <= d < event_date:
+                              peers.append({'code': other, 'name': names.get(other, other),
+                                            'date': e['event_date'], 'next_close_pct': e['next_close_pct']})
+              peers.sort(key=lambda e: (e['date'], e['code']), reverse=True)
+              peer_positive = sum(e['next_close_pct'] > 0 for e in peers)
+              peer_score = 2 if len(peers) >= 2 and peer_positive / len(peers) >= 0.6 else 1 if len(peers) == 1 and peer_positive == 1 else 0
+
+              revision = revision_by_code.get(code) or {}
+              news_events = [e for e in revision.get('events', []) if isinstance(e, dict) and
+                             str(e.get('source_url', '')).startswith('https://') and
+                             e.get('kind') in ('rating_upgrade', 'consensus_up_revision') and
+                             isinstance(e.get('date'), str) and
+                             (today - timedelta(days=61)).isoformat() <= e['date'] <= today.isoformat()]
+              news_kinds = {e['kind'] for e in news_events}
+              news_score = 2 * int('rating_upgrade' in news_kinds) + 2 * int('consensus_up_revision' in news_kinds)
+              scores = {'own_earnings_reaction': own_score,
+                        'volume_supply_demand': volume_score,
+                        'recent_industry_peers': peer_score,
+                        'analyst_upgrades_61d': news_score}
+              current_rows.append({
+                  'code': code, 'name': c.get('name') or code,
+                  'earnings_date': c['earnings_date'],
+                  'market_cap_oku': round(c['market_cap_yen']/1e8, 2),
+                  'score_total': sum(scores.values()), 'score_components': scores,
+                  'self_history_count': len(own_events), 'self_history_positive': own_pos,
+                  'self_history_events': [{'date':e['event_date'], 'next_close_pct':e['next_close_pct'],
+                                           'date_kind':e['date_kind'], 'source_url':e['source_url']} for e in own_events],
+                  'industry': group[1] if has_group else None,
+                  'sector': group[0] if has_group else None,
+                  'industry_source': own_category.get('source') if has_group else None,
+                  'peer_reaction_count': len(peers), 'peer_positive_count': peer_positive,
+                  'peer_events': peers[:6],
+                  'volume_ratio': vr, 'upgrade_events': news_events,
+                  'data_coverage': {'self_history': bool(own_events), 'industry_peer_reactions': bool(peers),
+                                    'industry_identified': has_group, 'volume_ratio': vr is not None,
+                                    'upgrade_news_checked': code in revision_by_code},
+              })
+
+          current_rows.sort(key=lambda r: (-r['score_total'], -sum(bool(v) for v in r['data_coverage'].values()),
+                                           r['earnings_date'], r['code']))
+          assert {r['code'] for r in current_rows} == candidate_codes
+          assert all(0 <= r['score_total'] <= 12 and 80 <= r['market_cap_oku'] < 1000 for r in current_rows)
+          ranking = {
+              'schema': 1, 'generated_at': now.isoformat(timespec='seconds'),
+              'description': '現在の20候補に基づく4項目順位。本人の過去決算反応は出典付き日付で計算、実際の発表時刻未確認。未取得は0点。',
+              'weights': {'own_earnings_reaction': 3, 'volume_supply_demand': 3,
+                          'recent_industry_peers': 2, 'analyst_upgrades_61d': 4},
+              'coverage': {'total': len(current_rows), 'own_history': sum(r['self_history_count'] > 0 for r in current_rows),
+                           'industry_identified': sum(bool(r['industry']) for r in current_rows),
+                           'peer_reactions': sum(r['peer_reaction_count'] > 0 for r in current_rows),
+                           'upgrades': sum(r['score_components']['analyst_upgrades_61d'] > 0 for r in current_rows)},
+              'research_generated_at': research.get('generated_at'),
+              'own_history_source': '保存済み出典付きの本人決算日、JPX予定日付近の終値反応。発表時刻未確認。',
+              'records': current_rows,
+          }
+          for fname, doc in (('own-earnings-history-archive.json', archive),
+                             ('earnings-four-factor-ranking.json', ranking)):
+              (DATA/fname).write_text(json.dumps(doc, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+          print('RANKING_REBUILT', json.dumps(ranking['coverage'], ensure_ascii=False))
+          print('OWN_HISTORY_ARCHIVE', json.dumps(archive['coverage'], ensure_ascii=False))
+          print('TOP5', [(r['code'], r['score_total']) for r in current_rows[:5]])
+          PY
+      - name: Commit only ranked data and durable history
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/earnings-four-factor-ranking.json data/own-earnings-history-archive.json
+          if git diff --cached --quiet; then echo 'No changes'; exit 0; fi
+          git commit -m 'Sync four-factor ranking to latest candidates and preserve own histories'
+          for n in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; exit 1; }
+            if git push origin HEAD:main; then echo 'PUBLISHED'; exit 0; fi
+            sleep $((n*5))
+          done
+          exit 1

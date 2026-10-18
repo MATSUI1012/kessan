@@ -1,0 +1,208 @@
+name: Capture historical analyst EPS trends and broker rating actions
+'on':
+  workflow_dispatch: {}
+  push:
+    paths:
+    - .github/workflows/earnings-analyst-history.yml
+  schedule:
+  - cron: 45 20 * * 1-5
+permissions:
+  contents: write
+concurrency:
+  group: earnings-analyst-history
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: true
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - name: Install market data client
+      run: python -m pip install -q "yfinance>=0.2.60,<1" "pandas>=2,<3"
+    - name: Save EPS 60-day trend, dated rating actions and strictly verified ranking
+      shell: bash
+      run: "python - <<'PYCODE'\nfrom __future__ import annotations\n\nimport json\nimport math\nimport\
+        \ re\nfrom collections import defaultdict\nfrom datetime import date, datetime, timedelta, timezone\n\
+        from pathlib import Path\nfrom concurrent.futures import ThreadPoolExecutor, as_completed\n\n\
+        import yfinance as yf\n\nJST = timezone(timedelta(hours=9))\nNOW = datetime.now(JST)\nTODAY =\
+        \ NOW.date()\nCUTOFF = TODAY - timedelta(days=61)\nD = Path('data')\n\n\ndef load(name, fallback=None):\n\
+        \    try:\n        return json.loads((D / name).read_text(encoding='utf-8'))\n    except (OSError,\
+        \ ValueError):\n        if fallback is not None:\n            return fallback\n        raise\n\
+        \n\ndef save(name, data):\n    destination = D / name\n    tmp = destination.with_suffix(destination.suffix\
+        \ + '.tmp')\n    tmp.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\\n', encoding='utf-8')\n\
+        \    tmp.replace(destination)\n\n\ndef number(v):\n    if isinstance(v, bool):\n        return\
+        \ None\n    try:\n        n = float(v)\n        return n if math.isfinite(n) else None\n    except\
+        \ (TypeError, ValueError):\n        return None\n\n\ndef field_name(s):\n    return re.sub(r'[^a-z0-9]',\
+        \ '',str(s).lower())\n\n\ndef table_row(frame, name='0q'):\n    if frame is None or getattr(frame,\
+        \ 'empty', True):\n        return {}\n    try:\n        for k in frame.index:\n            if\
+        \ field_name(k) == field_name(name):\n                row = frame.loc[k]\n                if hasattr(row,\
+        \ 'to_dict'):\n                    return {field_name(key): value for key, value in row.to_dict().items()}\n\
+        \    except (KeyError, AttributeError, TypeError, ValueError):\n        pass\n    return {}\n\n\
+        \ndef metric(row, *candidates):\n    for c in candidates:\n        v = number(row.get(field_name(c)))\n\
+        \        if v is not None:\n            return v\n    return None\n\n\ndef get_table(ticker, name):\n\
+        \    method = getattr(ticker, 'get_' + name, None)\n    try:\n        if callable(method):\n \
+        \           return method(), None\n        return getattr(ticker, name), None\n    except Exception\
+        \ as exc:\n        return None, type(exc).__name__\n\n\ndef grade_actions(frame, code):\n    if\
+        \ frame is None or getattr(frame, 'empty', True):\n        return [], False\n    out = []\n  \
+        \  for key, row in frame.iterrows():\n        try:\n            stamp = key.to_pydatetime() if\
+        \ hasattr(key, 'to_pydatetime') else key\n            if isinstance(stamp, datetime):\n      \
+        \          stamp = stamp.astimezone(JST).date() if stamp.tzinfo else stamp.date()\n          \
+        \  elif not isinstance(stamp, date):\n                stamp = date.fromisoformat(str(stamp)[:10])\n\
+        \        except (ValueError, TypeError, OverflowError):\n            continue\n        if not\
+        \ CUTOFF <= stamp <= TODAY:\n            continue\n        data = {field_name(k): v for k, v in\
+        \ row.to_dict().items()}\n        action = str(data.get('action') or '').strip().lower()\n   \
+        \     if action not in ('up', 'down', 'main', 'init', 'reit'):\n            continue\n       \
+        \ firm = str(data.get('firm') or '').strip()\n        before = str(data.get('fromgrade') or '').strip()\n\
+        \        after = str(data.get('tograde') or '').strip()\n        if action == 'up' and firm and\
+        \ before and after and before.lower() != after.lower():\n            out.append({'date':stamp.isoformat(),\
+        \ 'kind':'rating_upgrade',\n                        'firm':firm, 'before_rating':before, 'after_rating':after,\n\
+        \                        'source_url':f'https://finance.yahoo.com/quote/{code}.T/analysis/',\n\
+        \                        'source_type':'Yahoo Finance dated broker-action history',\n        \
+        \                'original_broker_source_verified':False})\n    # A nonempty historical table\
+        \ provides a dated broker-action feed.\n    return out, True\n\n\ndef collect_candidate(candidate):\n\
+        \    code = str(candidate['code'])\n    company = str(candidate.get('name') or code)\n    earnings_date\
+        \ = str(candidate['earnings_date'])[:10]\n    errors = {}\n    ticker = yf.Ticker(code + '.T')\n\
+        \    eps_table, err = get_table(ticker, 'eps_trend')\n    if err:\n        errors['eps_trend']\
+        \ = err\n    eps_row = table_row(eps_table)\n    eps_current = metric(eps_row, 'current')\n  \
+        \  eps_60d = metric(eps_row, '60daysAgo')\n    eps_30d = metric(eps_row, '30daysAgo')\n    eps_ready\
+        \ = eps_current is not None and eps_60d is not None\n    eps_up = eps_ready and eps_current >\
+        \ eps_60d\n    eps_records = []\n    if eps_ready:\n        eps_records.append({'kind':'consensus_up_revision'\
+        \ if eps_up else 'consensus_no_net_increase',\n                            'period':'0q', 'earnings_date':\
+        \ earnings_date,\n                            'value_60d_ago':eps_60d, 'value_current':eps_current,\n\
+        \                            'field':'EPS consensus estimate',\n                            'comparison_window_days':60,\n\
+        \                            'source_url':f'https://finance.yahoo.com/quote/{code}.T/analysis/',\n\
+        \                            'source_type':'Yahoo Finance EPS trend 60daysAgo vs current',\n \
+        \                           'exact_revision_date_known':False})\n\n    revenue_table, err = get_table(ticker,\
+        \ 'revenue_estimate')\n    if err:\n        errors['revenue_estimate'] = err\n    revenue_current\
+        \ = metric(table_row(revenue_table), 'avg', 'average')\n\n    grade_table, err = get_table(ticker,\
+        \ 'upgrades_downgrades')\n    if err:\n        errors['upgrades_downgrades'] = err\n    grades,\
+        \ grade_history_available = grade_actions(grade_table, code)\n    # Empty results are unknown,\
+        \ not evidence of no upgrades.\n    analyst_complete = bool(eps_ready and grade_history_available)\n\
+        \    positive = [x for x in eps_records if x['kind'] == 'consensus_up_revision'] + grades\n  \
+        \  return {\n        'code':code, 'name':company, 'earnings_date':earnings_date,\n        'observed_at':\
+        \ NOW.isoformat(timespec='seconds'),\n        'eps_consensus':{'period':'0q','current':eps_current,'days_30_ago':eps_30d,\n\
+        \                         'days_60_ago':eps_60d, 'available':bool(eps_ready),\n              \
+        \           'increased_last_60_days':bool(eps_up) if eps_ready else None},\n        'revenue_mean_current':revenue_current,\n\
+        \        'broker_history_available':bool(grade_history_available),\n        'broker_upgrades_61d':grades,\n\
+        \        'evidence_complete':analyst_complete,\n        'supported_positive_signals':positive,\n\
+        \        'diagnostics':errors,\n    }\n\n\ndef main():\n    research = load('research.json')\n\
+        \    screen = research['screening']\n    assert screen['market_cap_min_yen_inclusive'] == 8_000_000_000\n\
+        \    assert screen['market_cap_max_yen_exclusive'] == 100_000_000_000\n    assert screen['min_latest_turnover_oku']\
+        \ == 0\n    candidates = research['records']\n    assert 0 < len(candidates) <= 20\n    assert\
+        \ len(candidates) == len({str(x['code']) for x in candidates})\n    assert all(8_000_000_000 <=\
+        \ x['market_cap_yen'] < 100_000_000_000 for x in candidates)\n\n    previous = load('analyst-evidence-ledger.json',{'records':[]})\n\
+        \    prior = {str(x['code']):x for x in previous['records'] if x.get('code')}\n    snapshot =\
+        \ {}\n    with ThreadPoolExecutor(max_workers=3) as pool:\n        futures = {pool.submit(collect_candidate,c):c\
+        \ for c in candidates}\n        for future in as_completed(futures):\n            c = futures[future]\n\
+        \            code = str(c['code'])\n            try:\n                snapshot[code] = future.result()\n\
+        \            except Exception as exc:\n                snapshot[code] = {'code':code,'name':c.get('name'),\n\
+        \                                  'earnings_date':c['earnings_date'],\n                     \
+        \             'observed_at':NOW.isoformat(timespec='seconds'),\n                             \
+        \     'eps_consensus':{'available':False},\n                                  'revenue_mean_current':None,\n\
+        \                                  'broker_history_available':False,\n                       \
+        \           'broker_upgrades_61d':[],\n                                  'evidence_complete':False,\n\
+        \                                  'supported_positive_signals':[],\n                        \
+        \          'diagnostics':{'unexpected':type(exc).__name__}}\n\n    # Keep historical observations\
+        \ for companies that leave the current shortlist.\n    merged = dict(prior)\n    for code, row\
+        \ in snapshot.items():\n        old = merged.get(code, {})\n        old_snapshots = old.get('snapshots',\
+        \ [])\n        new_observation = {\n            'date':TODAY.isoformat(),\n            'earnings_date':row.get('earnings_date'),\n\
+        \            'eps_estimate_current':row.get('eps_consensus',{}).get('current'),\n            'revenue_mean_current':row.get('revenue_mean_current'),\n\
+        \        }\n        # Preserve a day even on provider failure, but never turn missing into 0.\n\
+        \        series = [x for x in old_snapshots if isinstance(x,dict) and\n                  (x.get('date'),x.get('earnings_date'))\
+        \ !=\n                  (new_observation['date'],new_observation['earnings_date'])]\n        series.append(new_observation)\n\
+        \        series.sort(key=lambda x:(x['date'],x['earnings_date'] or ''))\n        series = series[-400:]\n\
+        \        previous_grades = {tuple(x.get(y) for y in ('date','firm','before_rating','after_rating')):x\n\
+        \                           for x in old.get('broker_upgrades_history',[])\n                 \
+        \          if isinstance(x,dict)}\n        for x in row.get('broker_upgrades_61d', []):\n    \
+        \        previous_grades[tuple(x.get(y) for y in ('date','firm','before_rating','after_rating'))]=x\n\
+        \        # Recovery from snapshots: require the same earnings target, and source values on two\
+        \ distinct days.\n        valid_observations=[x for x in series if x.get('earnings_date')==row.get('earnings_date')\
+        \ and\n                            CUTOFF.isoformat() <= x.get('date','')<=TODAY.isoformat()]\n\
+        \        valid_observations=[x for x in valid_observations if number(x.get('eps_estimate_current'))\
+        \ is not None]\n        observed_revision=[]\n        if len(valid_observations)>=2:\n       \
+        \     first=valid_observations[0]\n            last=valid_observations[-1]\n            if first['date']\
+        \ != last['date'] and last['eps_estimate_current'] > first['eps_estimate_current']:\n        \
+        \        observed_revision=[{'kind':'consensus_up_revision','field':'EPS consensus estimate',\n\
+        \                                    'first_observed_date':first['date'],'last_observed_date':last['date'],\n\
+        \                                    'before_value':first['eps_estimate_current'],\n         \
+        \                           'after_value':last['eps_estimate_current'],\n                    \
+        \                'earnings_date':row['earnings_date'],\n                                    'source_type':'Saved\
+        \ daily Yahoo Finance snapshots',\n                                    'source_url':f'https://finance.yahoo.com/quote/{code}.T/analysis/',\n\
+        \                                    'exact_revision_date_known':False}]\n        row['observed_consensus_up_revision']\
+        \ = observed_revision\n        merged[code] = {**row,'snapshots':series,\n                   \
+        \     'broker_upgrades_history':sorted(previous_grades.values(), key=lambda x:x['date'], reverse=True)}\n\
+        \n    archive = load('own-earnings-history-archive.json',{'records':[]})\n    historical = {str(x['code']):\
+        \ x.get('events',[]) for x in archive.get('records',[]) if x.get('code')}\n    industries = load('industry-classification.json',{'codes':{}}).get('codes',{})\n\
+        \    audit=[]\n    approved=[]\n    for c in candidates:\n        code = str(c['code'])\n    \
+        \    facts = merged[code]\n        earnings = str(c['earnings_date'])[:10]\n        own = [x for\
+        \ x in historical.get(code,[]) if x.get('event_date','')<earnings and\n               number(x.get('next_close_pct'))\
+        \ is not None and str(x.get('source_url','')).startswith('https://')]\n        own.sort(key=lambda\
+        \ x:x['event_date'],reverse=True)\n        own = own[:4]\n        volume_ratio = number(c.get('volume_ratio_5_20'))\n\
+        \        category = industries.get(code) or {}\n        sector,group = category.get('sector'),category.get('industry')\n\
+        \        peers=[]\n        if sector and group:\n            for peer, events in historical.items():\n\
+        \                if peer == code:\n                    continue\n                peer_cat=industries.get(peer)\
+        \ or {}\n                if (peer_cat.get('sector'),peer_cat.get('industry'))!=(sector,group):\n\
+        \                    continue\n                for x in events:\n                    day = str(x.get('event_date')\
+        \ or '')[:10]\n                    if (date.fromisoformat(earnings)-timedelta(days=45)).isoformat()<=day<earnings\
+        \ and number(x.get('next_close_pct')) is not None:\n                        peers.append(x)\n\
+        \        eps_available=facts.get('eps_consensus',{}).get('available',False)\n        broker_available=facts.get('broker_history_available',False)\n\
+        \        up_eps=bool(facts.get('eps_consensus',{}).get('increased_last_60_days')) or bool(facts.get('observed_consensus_up_revision'))\n\
+        \        up_broker=bool(facts.get('broker_upgrades_61d'))\n        ready={'own_earnings_reaction':bool(own),\n\
+        \               'volume_supply_demand':volume_ratio is not None,\n               'recent_industry_peers':bool(peers),\n\
+        \               'analyst_upgrades_61d':bool(eps_available and broker_available)}\n        audit.append({'code':code,'name':c.get('name'),\n\
+        \                      'covered':ready,'own_events':len(own),'peer_events':len(peers),\n     \
+        \                 'eps_60d_available':bool(eps_available),\n                      'broker_history_available':bool(broker_available),\n\
+        \                      'eps_up':bool(up_eps) if eps_available else None,\n                   \
+        \   'broker_upgrades':len(facts.get('broker_upgrades_61d',[])),\n                      'diagnostics':facts.get('diagnostics',{})})\n\
+        \        if not all(ready.values()):\n            continue\n        own_pos=sum(x['next_close_pct']>0\
+        \ for x in own)\n        own_score=(3 if len(own)>=3 and own_pos/len(own)>=0.75 else\n       \
+        \            2 if len(own)>=2 and own_pos/len(own)>=0.6 else\n                   1 if len(own)==1\
+        \ and own_pos else 0)\n        peer_pos=sum(x['next_close_pct']>0 for x in peers)\n        peer_score=(2\
+        \ if len(peers)>=2 and peer_pos/len(peers)>=0.6 else\n                    1 if len(peers)==1 and\
+        \ peer_pos else 0)\n        volume_score=3 if volume_ratio>=3 else 2 if volume_ratio>=1.5 else\
+        \ 1 if volume_ratio>=1.2 else 0\n        upgrade_score=2*int(up_eps)+2*int(up_broker)\n      \
+        \  scores={'own_earnings_reaction':own_score,\n                'volume_supply_demand':volume_score,\n\
+        \                'recent_industry_peers':peer_score,\n                'analyst_upgrades_61d':upgrade_score}\n\
+        \        approved.append({'code':code,'name':c.get('name'),\n                         'earnings_date':earnings,\n\
+        \                         'score_total':sum(scores.values()),\n                         'score_components':scores,\n\
+        \                         'evidence':{'own_event_dates':[x['event_date'] for x in own],\n    \
+        \                                 'peer_event_count':len(peers),\n                           \
+        \          'eps_60days_ago':facts['eps_consensus']['days_60_ago'],\n                         \
+        \            'eps_current':facts['eps_consensus']['current'],\n                              \
+        \       'broker_upgrades':facts.get('broker_upgrades_61d',[])}})\n    approved.sort(key=lambda\
+        \ x:(-x['score_total'],x['earnings_date'],x['code']))\n    ledger={'schema':1,'updated_at':NOW.isoformat(timespec='seconds'),\n\
+        \            'description':'Yahoo Finance EPS 60日トレンドと証券会社の格付け履歴。値がない場合は未確認。EPSの変化日は特定できない。原本の証券会社発表は未照合。',\n\
+        \            'coverage':{'current_candidates':len(candidates),\n                        'eps_trend_60d_available':sum(x.get('eps_consensus',{}).get('available',False)\
+        \ for x in snapshot.values()),\n                        'broker_history_available':sum(x.get('broker_history_available',False)\
+        \ for x in snapshot.values()),\n                        'consensus_increase':sum(x.get('eps_consensus',{}).get('increased_last_60_days',False)\
+        \ is True for x in snapshot.values()),\n                        'dated_broker_upgrades':sum(bool(x.get('broker_upgrades_61d'))\
+        \ for x in snapshot.values())},\n            'records':[merged[k] for k in sorted(merged)]}\n\
+        \    ranked={'schema':2,'generated_at':NOW.isoformat(timespec='seconds'),\n            'description':'本人過去決算反応、出来高、同業反応、Yahoo\
+        \ EPS60日前比較および証券会社格付け履歴が揃った銘柄だけ表示。取れない項目を0点にしない。Yahooは二次データで証券会社原本未照合。',\n            'research_generated_at':research['generated_at'],\n\
+        \            'coverage':{'screened':len(candidates),'formally_ranked':len(approved),\n       \
+        \                 'own_history_available':sum(x['covered']['own_earnings_reaction'] for x in audit),\n\
+        \                        'volume_available':sum(x['covered']['volume_supply_demand'] for x in\
+        \ audit),\n                        'peers_available':sum(x['covered']['recent_industry_peers']\
+        \ for x in audit),\n                        'analyst_revision_verified':sum(x['covered']['analyst_upgrades_61d']\
+        \ for x in audit),\n                        'eps_trend_60d_available':ledger['coverage']['eps_trend_60d_available'],\n\
+        \                        'broker_history_available':ledger['coverage']['broker_history_available']},\n\
+        \            'records':approved,'audits':audit}\n    assert all(x['score_total']==sum(x['score_components'].values())\
+        \ and 0<=x['score_total']<=12 for x in approved)\n    assert all(set(x['code'] for x in approved)<=set(str(x['code'])\
+        \ for x in candidates) for _ in [0])\n    D.mkdir(parents=True,exist_ok=True)\n    save('analyst-evidence-ledger.json',ledger)\n\
+        \    save('earnings-strict-ranking.json',ranked)\n    print('ANALYST_HISTORY_COVERAGE', json.dumps(ledger['coverage'],ensure_ascii=False))\n\
+        \    print('STRICT_RANKING_COVERAGE', json.dumps(ranked['coverage'],ensure_ascii=False))\n   \
+        \ print('TOP_RESULTS', [(x['code'],x['score_total']) for x in approved[:8]])\n\n\nif __name__\
+        \ == '__main__':\n    main()\nPYCODE\n"
+    - name: Commit evidence ledger and verified-only ranking
+      shell: bash
+      run: "set -euo pipefail\ngit config user.name 'github-actions[bot]'\ngit config user.email '41898282+github-actions[bot]@users.noreply.github.com'\n\
+        git add data/analyst-evidence-ledger.json data/earnings-strict-ranking.json\nif git diff --cached\
+        \ --quiet; then echo 'No changes'; exit 0; fi\ngit commit -m 'Record evidence-backed 60-day analyst\
+        \ estimate and rating history'\nfor n in 1 2 3; do\n  git fetch origin main\n  git rebase origin/main\
+        \ || { git rebase --abort; exit 1; }\n  if git push origin HEAD:main; then echo 'PUBLISHED'; exit\
+        \ 0; fi\n  sleep $((n*5))\ndone\nexit 1"

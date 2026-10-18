@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-17T03:57:29+09:00",
-  "description": "4項目の調査順位。本人の過去決算反応は出典のある発表予定日・カレンダー日・記事掲載日付近の株価変化。実際の発表時刻・変動原因は未確認。未取得0点は悪材料ではない。",
+  "generated_at": "2026-10-18T20:25:09+09:00",
+  "description": "現在の20候補に基づく4項目順位。本人の過去決算反応は出典付き日付で計算、実際の発表時刻未確認。未取得は0点。",
   "weights": {
     "own_earnings_reaction": 3,
     "volume_supply_demand": 3,
@@ -15,6 +15,8 @@
     "peer_reactions": 13,
     "upgrades": 0
   },
+  "research_generated_at": "2026-10-17T00:02:30+09:00",
+  "own_history_source": "保存済み出典付きの本人決算日、JPX予定日付近の終値反応。発表時刻未確認。",
   "records": [
     {
       "code": "6230",
@@ -105,50 +107,6 @@
       }
     },
     {
-      "code": "9029",
-      "name": "ヒガシホールディングス",
-      "earnings_date": "2026-10-23",
-      "market_cap_oku": 253.65,
-      "score_total": 2,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 2,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Integrated Freight & Logistics",
-      "sector": "Industrials",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 2,
-      "peer_positive_count": 1,
-      "peer_events": [
-        {
-          "code": "9381",
-          "name": "エーアイテイー",
-          "date": "2026-10-09",
-          "next_close_pct": 2.91
-        },
-        {
-          "code": "9369",
-          "name": "キユーソー流通システム",
-          "date": "2026-09-30",
-          "next_close_pct": -0.69
-        }
-      ],
-      "volume_ratio": 1.65,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
       "code": "4765",
       "name": "ＳＢＩグローバルアセットマネジメント",
       "earnings_date": "2026-10-27",
@@ -187,6 +145,50 @@
       "upgrade_events": [],
       "data_coverage": {
         "self_history": true,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "9029",
+      "name": "ヒガシホールディングス",
+      "earnings_date": "2026-10-23",
+      "market_cap_oku": 253.65,
+      "score_total": 2,
+      "score_components": {
+        "own_earnings_reaction": 0,
+        "volume_supply_demand": 2,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 0,
+      "self_history_positive": 0,
+      "self_history_events": [],
+      "industry": "Integrated Freight & Logistics",
+      "sector": "Industrials",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 2,
+      "peer_positive_count": 1,
+      "peer_events": [
+        {
+          "code": "9381",
+          "name": "エーアイテイー",
+          "date": "2026-10-09",
+          "next_close_pct": 2.91
+        },
+        {
+          "code": "9369",
+          "name": "キユーソー流通システム",
+          "date": "2026-09-30",
+          "next_close_pct": -0.69
+        }
+      ],
+      "volume_ratio": 1.65,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": false,
         "industry_peer_reactions": true,
         "industry_identified": true,
         "volume_ratio": true,
@@ -564,6 +566,112 @@
       }
     },
     {
+      "code": "2268",
+      "name": "Ｂ－Ｒ　サーティワン　アイスクリーム",
+      "earnings_date": "2026-10-23",
+      "market_cap_oku": 390.73,
+      "score_total": 0,
+      "score_components": {
+        "own_earnings_reaction": 0,
+        "volume_supply_demand": 0,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 0,
+      "self_history_positive": 0,
+      "self_history_events": [],
+      "industry": "Food Distribution",
+      "sector": "Consumer Defensive",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 1,
+      "peer_positive_count": 0,
+      "peer_events": [
+        {
+          "code": "7520",
+          "name": "エコス",
+          "date": "2026-10-13",
+          "next_close_pct": -3.97
+        }
+      ],
+      "volume_ratio": 0.42,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": false,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "2804",
+      "name": "ブルドックソース",
+      "earnings_date": "2026-10-23",
+      "market_cap_oku": 228.02,
+      "score_total": 0,
+      "score_components": {
+        "own_earnings_reaction": 0,
+        "volume_supply_demand": 0,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 0,
+      "self_history_positive": 0,
+      "self_history_events": [],
+      "industry": "Packaged Foods",
+      "sector": "Consumer Defensive",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 7,
+      "peer_positive_count": 3,
+      "peer_events": [
+        {
+          "code": "2936",
+          "name": "ベースフード",
+          "date": "2026-10-15",
+          "next_close_pct": -2.17
+        },
+        {
+          "code": "2927",
+          "name": "ＡＦＣ－ＨＤアムスライフサイエンス",
+          "date": "2026-10-15",
+          "next_close_pct": 3.43
+        },
+        {
+          "code": "2884",
+          "name": "ヨシムラ・フード・ホールディングス",
+          "date": "2026-10-15",
+          "next_close_pct": 4.9
+        },
+        {
+          "code": "3139",
+          "name": "ラクト・ジャパン",
+          "date": "2026-10-14",
+          "next_close_pct": 2.16
+        },
+        {
+          "code": "2669",
+          "name": "カネ美食品",
+          "date": "2026-10-09",
+          "next_close_pct": -0.13
+        },
+        {
+          "code": "2918",
+          "name": "わらべや日洋ホールディングス",
+          "date": "2026-10-07",
+          "next_close_pct": -5.07
+        }
+      ],
+      "volume_ratio": 1.02,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": false,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
       "code": "3488",
       "name": "セントラル・リート投資法人",
       "earnings_date": "2026-10-19",
@@ -688,112 +796,6 @@
       }
     },
     {
-      "code": "2268",
-      "name": "Ｂ－Ｒ　サーティワン　アイスクリーム",
-      "earnings_date": "2026-10-23",
-      "market_cap_oku": 390.73,
-      "score_total": 0,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 0,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Food Distribution",
-      "sector": "Consumer Defensive",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 1,
-      "peer_positive_count": 0,
-      "peer_events": [
-        {
-          "code": "7520",
-          "name": "エコス",
-          "date": "2026-10-13",
-          "next_close_pct": -3.97
-        }
-      ],
-      "volume_ratio": 0.42,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
-      "code": "2804",
-      "name": "ブルドックソース",
-      "earnings_date": "2026-10-23",
-      "market_cap_oku": 228.02,
-      "score_total": 0,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 0,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Packaged Foods",
-      "sector": "Consumer Defensive",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 7,
-      "peer_positive_count": 3,
-      "peer_events": [
-        {
-          "code": "2936",
-          "name": "ベースフード",
-          "date": "2026-10-15",
-          "next_close_pct": -2.17
-        },
-        {
-          "code": "2927",
-          "name": "ＡＦＣ－ＨＤアムスライフサイエンス",
-          "date": "2026-10-15",
-          "next_close_pct": 3.43
-        },
-        {
-          "code": "2884",
-          "name": "ヨシムラ・フード・ホールディングス",
-          "date": "2026-10-15",
-          "next_close_pct": 4.9
-        },
-        {
-          "code": "3139",
-          "name": "ラクト・ジャパン",
-          "date": "2026-10-14",
-          "next_close_pct": 2.16
-        },
-        {
-          "code": "2669",
-          "name": "カネ美食品",
-          "date": "2026-10-09",
-          "next_close_pct": -0.13
-        },
-        {
-          "code": "2918",
-          "name": "わらべや日洋ホールディングス",
-          "date": "2026-10-07",
-          "next_close_pct": -5.07
-        }
-      ],
-      "volume_ratio": 1.02,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
       "code": "3492",
       "name": "ＭＩＲＡＲＴＨ不動産投資法人",
       "earnings_date": "2026-10-23",
@@ -855,6 +857,5 @@
         "upgrade_news_checked": true
       }
     }
-  ],
-  "own_history_source": "IR BANK上の決算短信掲載日（確認できた日付のみ）と保存済み履歴。実際の発表時刻は未確認。"
+  ]
 }

@@ -1,0 +1,151 @@
+name: Verify complete evidence before ranking earnings candidates
+'on':
+  workflow_dispatch: {}
+  push:
+    paths:
+    - .github/workflows/earnings-strict-evidence.yml
+  schedule:
+  - cron: 30 20 * * 1-5
+permissions:
+  contents: write
+concurrency:
+  group: earnings-strict-evidence
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - name: Install free clients
+      run: python -m pip install -q requests yfinance
+    - name: Collect source-linked history and strictly gate four-factor ranking
+      shell: bash
+      run: "python - <<'PY'\nfrom __future__ import annotations\nimport json, math, re, sys\nfrom collections import defaultdict\n\
+        from concurrent.futures import ThreadPoolExecutor, as_completed\nfrom datetime import date, datetime, timedelta, timezone\n\
+        from email.utils import parsedate_to_datetime\nfrom pathlib import Path\nfrom urllib.parse import quote\nimport xml.etree.ElementTree\
+        \ as ET\nimport requests\n\nD=Path('data'); JST=timezone(timedelta(hours=9)); today=datetime.now(JST).date()\ndef\
+        \ load(name, fallback=None):\n    try:return json.loads((D/name).read_text(encoding='utf-8'))\n    except (OSError,ValueError):\n\
+        \        if fallback is not None:return fallback\n        raise\nresearch=load('research.json'); old=load('own-earnings-history-archive.json',{'records':[]})\n\
+        industry=load('industry-classification.json',{'codes':{}}).get('codes',{})\nverified_revisions=load('analyst-revisions-verified.json',{'records':[]})\n\
+        base_reactions=load('earnings-nextday-reactions.json',{'records':[]})\nassert research['screening']['market_cap_min_yen_inclusive']==8_000_000_000\n\
+        assert research['screening']['market_cap_max_yen_exclusive']==100_000_000_000\nassert research['screening']['min_latest_turnover_oku']==0\n\
+        candidates=research['records']; assert len(candidates)<=20 and candidates\n\n# Preserve all observations: archive\
+        \ is not constrained to the current shortlist.\nhistory=defaultdict(dict)\ndef add_event(code,e):\n    d=str(e.get('event_date')\
+        \ or e.get('scheduled_date') or '')[:10]\n    pct=e.get('next_close_pct'); source=e.get('source_url')\n    try:date.fromisoformat(d)\n\
+        \    except (ValueError,TypeError):return\n    if not isinstance(pct,(int,float)) or not math.isfinite(pct) or not\
+        \ isinstance(source,str) or not source.startswith('https://'):return\n    row={'event_date':d,'next_close_pct':round(float(pct),2),'source_url':source,\n\
+        \         'date_kind':e.get('date_kind') or '出典の日付（実際の開示時刻未確認）'}\n    existing=history[str(code)].get(d)\n    if existing\
+        \ is None or ('決算短信' in row['date_kind'] and '決算短信' not in existing['date_kind']):history[str(code)][d]=row\nfor c\
+        \ in old.get('records',[]):\n    for ev in c.get('events',[]):add_event(c['code'],ev)\nfor ev in base_reactions.get('records',[]):add_event(ev['code'],ev)\n\
+        \nsession=requests.Session();session.headers.update({'User-Agent':'Mozilla/5.0 (compatible; earnings-evidence-review/1.0)'})\n\
+        def rss(code,query):\n    url='https://news.google.com/rss/search?q='+quote(query)+'&hl=ja&gl=JP&ceid=JP:ja'\n   \
+        \ try:\n        r=session.get(url,timeout=12);r.raise_for_status()\n        items=ET.fromstring(r.content).findall('.//item')\n\
+        \        return [(str(e.findtext('title') or ''),str(e.findtext('link') or ''),str(e.findtext('pubDate') or '')) for\
+        \ e in items[:80]],None\n    except Exception as exc:return [],type(exc).__name__\n\ndef get_chart(code):\n    lo=int((datetime.now(timezone.utc)-timedelta(days=790)).timestamp())\n\
+        \    hi=int((datetime.now(timezone.utc)+timedelta(days=2)).timestamp())\n    try:\n        r=session.get(f'https://query1.finance.yahoo.com/v8/finance/chart/{code}.T',params={'period1':lo,'period2':hi,'interval':'1d'},timeout=17)\n\
+        \        r.raise_for_status();d=r.json()['chart']['result'][0]\n        prices={}\n        for t,v in zip(d.get('timestamp')\
+        \ or [],d['indicators']['quote'][0]['close']):\n            try:\n                dt=datetime.fromtimestamp(t,JST).date();p=float(v)\n\
+        \                if math.isfinite(p) and p>0:prices[dt]=p\n            except (TypeError,ValueError,OverflowError):pass\n\
+        \        return prices,None\n    except Exception as ex:return {},type(ex).__name__\n\ndef news_date(head,pub):\n\
+        \    # Require a printed disclosure date, not only the feed publication date.\n    m=re.search(r'(20\\d{2})年\\s*(0?[1-9]|1[0-2])月\\\
+        s*([0-3]?\\d)日\\s*[（(]適時開示[）)]',head)\n    if not m:return None\n    try:\n        d=date(*map(int,m.groups()));pub_d=parsedate_to_datetime(pub).astimezone(JST).date()\n\
+        \        if abs((pub_d-d).days)>21:return None\n        return d\n    except (ValueError,TypeError,OverflowError):return\
+        \ None\n\ndef obtain(c):\n    code=str(c['code']);name=str(c.get('name') or '')\n    future=date.fromisoformat(c['earnings_date'])\n\
+        \    results=[]; diagnostics=[]\n    for q in (f'\"{code}\" \"決算短信\" \"適時開示\" when:730d',f'\"{code}\" \"決算短信\" after:{today.year-1}-01-01\
+        \ before:{today.year}-12-31'):\n        a,error=rss(code,q)\n        if error:diagnostics.append('news_'+error)\n\
+        \        for title,link,published in a:\n            if not re.search(r'(?<![0-9A-Z])'+re.escape(code)+r'(?![0-9A-Z])',title,re.I):continue\n\
+        \            if '決算短信' not in title or any(t in title for t in ('訂正','説明資料','発表予定','業績予想')):continue\n           \
+        \ d=news_date(title,published)\n            if d and today-timedelta(days=730)<=d<future-timedelta(days=7) and link.startswith('https://'):\n\
+        \                results.append((d,link))\n    # Yahoo calendar provides dated historical events when its service\
+        \ supports the stock.\n    try:\n        import yfinance as yf\n        frame=yf.Ticker(code+'.T').get_earnings_dates(limit=20)\n\
+        \        if frame is not None and not frame.empty:\n            for index in frame.index:\n                d=index.date()\n\
+        \                if today-timedelta(days=730)<=d<future-timedelta(days=7):\n                    results.append((d,f'https://finance.yahoo.com/quote/{code}.T/analysis/'))\n\
+        \    except Exception as ex:diagnostics.append('calendar_'+type(ex).__name__)\n    prices,err=get_chart(code)\n  \
+        \  if err:diagnostics.append('prices_'+err)\n    added=[]\n    for day,url in results:\n        d=day.isoformat()\n\
+        \        if any(abs((date.fromisoformat(z)-day).days)<=2 for z in history[code]):continue\n        earlier=sorted(k\
+        \ for k in prices if k<day)\n        later=sorted(k for k in prices if k>day)\n        if not earlier or not later\
+        \ or (day-earlier[-1]).days>7 or (later[0]-day).days>7:continue\n        base=prices[earlier[-1]]\n        kind='Yahoo決算カレンダー日付（時刻未確認）'\
+        \ if 'finance.yahoo.com' in url else '決算短信の見出しに明記された適時開示日（時刻未確認）'\n        added.append({'event_date':d,'next_close_pct':round((prices[later[0]]/base-1)*100,2),'source_url':url,'date_kind':kind})\n\
+        \    return code,added,diagnostics\n\nfetched={};errors={}\nwith ThreadPoolExecutor(max_workers=3) as executor:\n\
+        \    fs={executor.submit(obtain,c):c['code'] for c in candidates}\n    for future in as_completed(fs):\n        code=str(fs[future])\n\
+        \        try:\n            _,events,diagnostics=future.result();fetched[code]=len(events);errors[code]=diagnostics\n\
+        \            for e in events:add_event(code,e)\n        except Exception as e:errors[code]=[type(e).__name__];fetched[code]=0\n\
+        \n# Headline search can establish a positive indication, but not a comprehensive\n# negative ('no changes') nor a\
+        \ verified broker/consensus revision timeline.\nnews={}\nfor c in candidates:\n    code=str(c['code']);found=[]\n\
+        \    for q in (f'\"{code}\" \"レーティング\" \"引き上げ\" when:61d',f'\"{code}\" \"コンセンサス\" \"上方修正\" when:61d'):\n        items,err=rss(code,q)\n\
+        \        if err:errors.setdefault(code,[]).append('analyst_news_'+err)\n        for title,link,pub in items:\n   \
+        \         if not link.startswith('https://') or not re.search(r'(?<![0-9A-Z])'+re.escape(code)+r'(?![0-9A-Z])',title,re.I):continue\n\
+        \            is_rating=bool(re.search(r'(?:レーティング|投資判断).{0,30}(?:格上げ|引き上げ)',title))\n            is_consensus=bool(re.search(r'(?:コンセンサス|市場予想|アナリスト予想).{0,35}(?:引き上げ|上方修正|上方改定)',title))\n\
+        \            if not(is_rating or is_consensus):continue\n            try:d=parsedate_to_datetime(pub).astimezone(JST).date()\n\
+        \            except Exception:continue\n            if today-timedelta(days=61)<=d<=today:\n                found.append({'date':d.isoformat(),'kind':'rating_upgrade'\
+        \ if is_rating else 'consensus_up_revision','title':title,'source_url':link,'quality':'ニュース見出しのみ・原文未検証'})\n    news[code]=list({(x['date'],x['kind'],x['title']):x\
+        \ for x in found}.values())[:12]\n\narchive={'schema':2,'updated_at':datetime.now(JST).isoformat(timespec='seconds'),\n\
+        \         'coverage':{'companies':sum(bool(v) for v in history.values()),'events':sum(map(len,history.values()))},\n\
+        \         'records':[{'code':code,'events':sorted(v.values(),key=lambda x:x['event_date'],reverse=True)} for code,v\
+        \ in sorted(history.items()) if v]}\n# We never assert that incomplete news searches establish no analyst changes.\n\
+        ranking=[];inspections=[]\nfor c in candidates:\n    code=str(c['code']);cutoff=c['earnings_date']\n    own=sorted([x\
+        \ for x in history.get(code,{}).values() if x['event_date']<cutoff],key=lambda x:x['event_date'],reverse=True)\n \
+        \   cls=industry.get(code) or {};sector=cls.get('sector');group=cls.get('industry')\n    peers=[]\n    if sector and\
+        \ group:\n        for peer,past in history.items():\n            if peer==code:continue\n            cl=industry.get(peer)\
+        \ or {}\n            if cl.get('sector')==sector and cl.get('industry')==group:\n                peers.extend(x for\
+        \ x in past.values() if (date.fromisoformat(cutoff)-timedelta(days=45)).isoformat()<=x['event_date']<cutoff)\n   \
+        \ vr=c.get('volume_ratio_5_20');volume_ready=isinstance(vr,(int,float)) and math.isfinite(vr)\n    # Strict: no verified\
+        \ negative revision timeline exists in the current free source.\n    # Only explicit before/after figures or ratings\
+        \ with a dated original-source URL.\n    revisions=[r for r in verified_revisions.get('records',[]) if str(r.get('code'))==code]\n\
+        \    analyst_verified=any(str(r.get('source_url','')).startswith('https://') and r.get('original_source_verified')\
+        \ is True and (today-timedelta(days=61)).isoformat()<=str(r.get('date',''))<=today.isoformat() and ((r.get('kind')=='rating_upgrade'\
+        \ and r.get('before_rating') and r.get('after_rating')) or (r.get('kind')=='consensus_up_revision' and isinstance(r.get('before_value'),(int,float))\
+        \ and isinstance(r.get('after_value'),(int,float)) and r['after_value']>r['before_value'])) for r in revisions)\n\
+        \    ready={'own_earnings_reaction':bool(own),'volume_supply_demand':volume_ready,\n           'recent_industry_peers':bool(peers),'analyst_upgrades_61d':analyst_verified}\n\
+        \    inspections.append({'code':code,'name':c.get('name'),'earnings_date':cutoff,\n       'covered':ready,'own_events':len(own),'peer_events':len(peers),'analyst_headline_indications':news[code],\n\
+        \       'newly_collected_own_events':fetched.get(code,0),'fetch_diagnostics':errors.get(code,[])})\n    if not all(ready.values()):continue\n\
+        \    # Guard remains even if future sources add validated revision tracking.\n    positives=sum(x['next_close_pct']>0\
+        \ for x in own[:4]);n=min(len(own),4)\n    own_score=3 if n>=3 and positives/n>=.75 else 2 if n>=2 and positives/n>=.6\
+        \ else 1 if n==1 and positives else 0\n    peer_pos=sum(x['next_close_pct']>0 for x in peers)\n    peer_score=2 if\
+        \ len(peers)>=2 and peer_pos/len(peers)>=.6 else 1 if len(peers)==1 and peer_pos else 0\n    vol_score=3 if vr>=3\
+        \ else 2 if vr>=1.5 else 1 if vr>=1.2 else 0\n    revision_kinds={r.get('kind') for r in revisions if r.get('original_source_verified')\
+        \ is True}\n    rev_score=2*int('rating_upgrade' in revision_kinds)+2*int('consensus_up_revision' in revision_kinds)\n\
+        \    ranking.append({'code':code,'name':c.get('name'),'score_total':own_score+peer_score+vol_score+rev_score,\n  \
+        \                  'score_components':{'own_earnings_reaction':own_score,'volume_supply_demand':vol_score,'recent_industry_peers':peer_score,'analyst_upgrades_61d':rev_score}})\n\
+        ranking.sort(key=lambda r:(-r['score_total'],r['code']))\nresult={'schema':1,'generated_at':datetime.now(JST).isoformat(timespec='seconds'),\n\
+        \ 'description':'4項目すべての根拠が確認できた銘柄だけ正式に採点。未取得を0点扱いしない。ニュース見出しのみではレーティング変更なしと認定しない。',\n 'research_generated_at':research['generated_at'],\n\
+        \ 'coverage':{'screened':len(candidates),'formally_ranked':len(ranking),'own_history_available':sum(x['covered']['own_earnings_reaction']\
+        \ for x in inspections),\n 'volume_available':sum(x['covered']['volume_supply_demand'] for x in inspections),\n 'peers_available':sum(x['covered']['recent_industry_peers']\
+        \ for x in inspections),\n 'analyst_revision_verified':sum(x['covered']['analyst_upgrades_61d'] for x in inspections),'new_own_events':sum(fetched.values())},\n\
+        \ 'records':ranking,'audits':inspections}\n(D/'earnings-strict-ranking.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\\\
+        n',encoding='utf-8')\n(D/'own-earnings-history-archive.json').write_text(json.dumps(archive,ensure_ascii=False,indent=2)+'\\\
+        n',encoding='utf-8')\nprint('STRICT_RANKING',json.dumps(result['coverage'],ensure_ascii=False));print('ARCHIVE',archive['coverage'])\n\
+        \n# Replace the previous misleading ranked panel with one which reads only the\n# fully verified strict output. Existing\
+        \ data are retained for investigation.\nhtml_path=Path('index.html');html=html_path.read_text(encoding='utf-8')\n\
+        start='<!-- FOUR_FACTOR_RANKING_V1 -->';begin=html.find(start)\nif begin<0:raise RuntimeError('Expected ranking panel\
+        \ marker absent: refusing unsafe edit')\nend=html.find('</script>',begin)\nif end<0:raise RuntimeError('Ranking closing\
+        \ script absent')\nend+=len('</script>')\nnew_panel=\"\"\"<!-- FOUR_FACTOR_RANKING_V1 -->\n<section class=\"panel\"\
+        \ id=\"fourFactorRankingPanel\"><h2>⑪ 検証済み・正式な決算候補ランキング</h2>\n<p class=\"muted\">本人の過去決算反応・出来高需給・同業他社の直近決算反応・過去61日のコンセンサス／レーティング変更状況の4項目がすべて検証できた場合だけ表示。未取得を0点にしません。</p>\n\
+        <p id=\"f4status\">検証状況を確認中…</p><div id=\"f4list\"></div></section>\n<script>(async()=>{'use strict';const e=v=>String(v??'').replace(/[&<>\"\
+        ']/g,s=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',\"'\":'&#39;'}[s]));try{\nconst r=await fetch('./data/earnings-strict-ranking.json',{cache:'no-store'});if(!r.ok)throw\
+        \ Error('検証データ未取得');const d=await r.json(),c=d.coverage||{};\ndocument.getElementById('f4status').textContent='正式候補\
+        \ '+(c.formally_ranked||0)+'件／調査対象 '+(c.screened||0)+'件。本人履歴 '+(c.own_history_available||0)+'件・同業反応 '+(c.peers_available||0)+'件・レーティング等の変更状況確認\
+        \ '+(c.analyst_revision_verified||0)+'件。';\ndocument.getElementById('f4list').innerHTML=(d.records||[]).length?(d.records||[]).map((x,i)=>'<p>'+(i+1)+'位\
+        \ '+e(x.name)+'（'+e(x.code)+'） '+e(x.score_total)+'/12点</p>').join(''):'4項目を検証できた候補は現在ありません。未検証銘柄に仮の点数や順位は付けません。';\n\
+        }catch(err){document.getElementById('f4status').textContent='ランキングの検証失敗：'+e(err.message)}})();</script>\"\"\"\nhtml=html[:begin]+new_panel+html[end:]\n\
+        # Remove the misleading provisional ranking display while retaining its data for auditing.\nhtml=html.replace('<section\
+        \ class=\"panel\" id=\"upgradeRankingPanel\">','<section class=\"panel\" id=\"upgradeRankingPanel\" style=\"display:none\"\
+        >',1)\n# Original ⑤ research ranking is not a verified candidate ranking.\nhtml=html.replace('<section class=\"panel\
+        \ research-section\" id=\"researchpanel\">','<section class=\"panel research-section\" id=\"researchpanel\" style=\"\
+        display:none\">',1)\n# The first-stage company list is an unscored universe, and must not be presented as a ranked\
+        \ buy shortlist.\nhtml=html.replace('③ 一次候補（上位30件）','③ 未採点データ（正式候補ではありません）',1)\nhtml=html.replace('<div id=\"results\"\
+        >読み込み中</div>', '<div id=\"results\" style=\"display:none\">読み込み中</div><p>根拠確認が終わるまで、未採点の銘柄一覧は表示しません。</p>',1)\nhtml_path.write_text(html,encoding='utf-8')\n\
+        assert html.count(start)==1 and 'earnings-strict-ranking.json' in html\n\nPY"
+    - name: Save validated report
+      shell: bash
+      run: "set -euo pipefail\ngit config user.name 'github-actions[bot]'\ngit config user.email '41898282+github-actions[bot]@users.noreply.github.com'\n\
+        git add index.html data/earnings-strict-ranking.json data/own-earnings-history-archive.json\nif git diff --cached\
+        \ --quiet; then exit 0; fi\ngit commit -m 'Require complete source evidence for formal earnings ranking'\nfor n in\
+        \ 1 2 3; do\n git fetch origin main\n git rebase origin/main || { git rebase --abort; exit 1; }\n if git push origin\
+        \ HEAD:main; then exit 0; fi\n sleep $((n*4))\ndone\nexit 1"

@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "updated_at": "2026-10-17T00:16:26+09:00",
-  "window_start": "2026-08-17",
-  "window_end": "2026-10-17",
+  "updated_at": "2026-10-20T00:23:41+09:00",
+  "window_start": "2026-08-20",
+  "window_end": "2026-10-20",
   "description": "ニュース見出しを用いた暫定検出。原文の格付け変更・コンセンサス時系列を検証したものではない。目標株価の引き上げ単独では加点しない。",
   "records": [
     {
@@ -24,15 +24,6 @@
       "status": "確認できる上方修正記事なし"
     },
     {
-      "code": "3911",
-      "name": "Ａｉｍｉｎｇ",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
       "code": "9029",
       "name": "ヒガシホールディングス",
       "events": [],
@@ -44,6 +35,15 @@
     {
       "code": "3091",
       "name": "ブロンコビリー",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
+      "code": "3911",
+      "name": "Ａｉｍｉｎｇ",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,
@@ -87,33 +87,6 @@
       "status": "確認できる上方修正記事なし"
     },
     {
-      "code": "2804",
-      "name": "ブルドックソース",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
-      "code": "2211",
-      "name": "不二家",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
-      "code": "3488",
-      "name": "セントラル・リート投資法人",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
       "code": "5933",
       "name": "アルインコ",
       "events": [],
@@ -141,8 +114,26 @@
       "status": "確認できる上方修正記事なし"
     },
     {
+      "code": "2804",
+      "name": "ブルドックソース",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
       "code": "2268",
       "name": "Ｂ－Ｒ　サーティワン　アイスクリーム",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
+      "code": "2211",
+      "name": "不二家",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,
@@ -161,6 +152,15 @@
     {
       "code": "4765",
       "name": "ＳＢＩグローバルアセットマネジメント",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
+      "code": "5532",
+      "name": "リアルゲイト",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,

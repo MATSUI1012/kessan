@@ -1183,13 +1183,14 @@
     }
   ],
   "count": 20,
-  "method": "調査優先度は公開価格・出来高・取得できた四半期業績等のみ。買い推奨や決算予測確率ではありません。",
+  "method": "Research PRIORITY only; no probability of an earnings beat. TTM revenue is not quarterly results. Prior reactions, if any, are based on historical JPX scheduled dates, not verified disclosure times.",
   "coverage": {
     "screened": 20,
-    "financials_any": 20,
-    "quarterly_or_annual": 0,
-    "ttm_only": 20,
-    "earnings_reaction_history": 0,
-    "analyst_estimates": 4
+    "official_ir_verified": 0,
+    "quarterly_or_annual_yahoo": 0,
+    "ttm_reference_only": 20,
+    "market_analyst_estimates": 4,
+    "historical_scheduled_event_reactions": 0,
+    "news_links": 18
   }
 }

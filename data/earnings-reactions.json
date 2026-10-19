@@ -1,9 +1,9 @@
 {
-  "schema": 2,
-  "description": "TDnet決算短信の掲載日付近の終値反応。開示時刻未確認、決算による因果効果や上昇確率は示さない。",
+  "schema": 1,
+  "description": "決算カレンダー日付付近の終値反応。実際の発表時刻未検証であり、決算による因果効果・上昇確率ではありません。",
   "sources": [
-    "TDnet決算短信開示一覧（掲載日）",
-    "既存の出典付き履歴"
+    "JPX保存済み発表予定日",
+    "Yahoo Finance決算カレンダー日付（取得可能な銘柄のみ）"
   ],
   "event_date_count": 1,
   "with_reactions": 0,
@@ -19,11 +19,6 @@
       "reactions": []
     },
     {
-      "code": "3911",
-      "name": "Ａｉｍｉｎｇ",
-      "reactions": []
-    },
-    {
       "code": "9029",
       "name": "ヒガシホールディングス",
       "reactions": []
@@ -31,6 +26,11 @@
     {
       "code": "3091",
       "name": "ブロンコビリー",
+      "reactions": []
+    },
+    {
+      "code": "3911",
+      "name": "Ａｉｍｉｎｇ",
       "reactions": []
     },
     {
@@ -44,11 +44,6 @@
       "reactions": []
     },
     {
-      "code": "2972",
-      "name": "サンケイリアルエステート投資法人",
-      "reactions": []
-    },
-    {
       "code": "3290",
       "name": "Ｏｎｅリート投資法人",
       "reactions": []
@@ -56,16 +51,6 @@
     {
       "code": "6629",
       "name": "テクノホライゾン",
-      "reactions": []
-    },
-    {
-      "code": "2804",
-      "name": "ブルドックソース",
-      "reactions": []
-    },
-    {
-      "code": "2211",
-      "name": "不二家",
       "reactions": []
     },
     {
@@ -84,8 +69,23 @@
       "reactions": []
     },
     {
+      "code": "3492",
+      "name": "ＭＩＲＡＲＴＨ不動産投資法人",
+      "reactions": []
+    },
+    {
+      "code": "2804",
+      "name": "ブルドックソース",
+      "reactions": []
+    },
+    {
       "code": "2268",
       "name": "Ｂ－Ｒ　サーティワン　アイスクリーム",
+      "reactions": []
+    },
+    {
+      "code": "2211",
+      "name": "不二家",
       "reactions": []
     },
     {
@@ -99,8 +99,8 @@
       "reactions": []
     },
     {
-      "code": "3492",
-      "name": "ＭＩＲＡＲＴＨ不動産投資法人",
+      "code": "9782",
+      "name": "ディーエムエス",
       "reactions": []
     },
     {
@@ -109,12 +109,5 @@
       "reactions": []
     }
   ],
-  "generated_at": "2026-10-16T22:20:40+09:00",
-  "tdnet_days_requested": 168,
-  "tdnet_days_parsed": 0,
-  "tdnet_events_found": 0,
-  "tdnet_scan_diagnostics": {
-    "missing": 168,
-    "parsed": 0
-  }
+  "generated_at": "2026-10-19T21:51:24+09:00"
 }

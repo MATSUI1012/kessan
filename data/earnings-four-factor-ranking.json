@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-21T00:39:58+09:00",
-  "description": "4項目の調査優先順位。未確認は0点であり悪材料を意味しない。JPX予定日ベースの株価反応は実際の決算発表時刻未確認。業種はYahoo掲載分類。確率・買い推奨ではない。",
+  "generated_at": "2026-10-21T01:17:31+09:00",
+  "description": "4項目の調査順位。本人の過去決算反応は出典のある発表予定日・カレンダー日・記事掲載日付近の株価変化。実際の発表時刻・変動原因は未確認。未取得0点は悪材料ではない。",
   "weights": {
     "own_earnings_reaction": 3,
     "volume_supply_demand": 3,
@@ -10,7 +10,7 @@
   },
   "coverage": {
     "total": 20,
-    "own_history": 0,
+    "own_history": 5,
     "industry_identified": 20,
     "peer_reactions": 16,
     "upgrades": 0
@@ -28,9 +28,16 @@
         "recent_industry_peers": 0,
         "analyst_upgrades_61d": 0
       },
-      "self_history_count": 0,
+      "self_history_count": 1,
       "self_history_positive": 0,
-      "self_history_events": [],
+      "self_history_events": [
+        {
+          "date": "2026-01-20",
+          "next_close_pct": -2.55,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5sc3RNS3JkaXlEUldfNVZiQ3M2eGVZZXJYei1SOHpoYWJ3WjNwejJUOGNQal9haUZRZ2tDMFdTd2RpS1Nrc2poVXVwZjBSbEEwRVN2amZOaW1DaERMMm9MVjJ5Y1hqVTE4a0E?oc=5"
+        }
+      ],
       "industry": "Restaurants",
       "sector": "Consumer Cyclical",
       "industry_source": "Yahoo Finance company profile",
@@ -77,7 +84,160 @@
       "volume_ratio": 1.54,
       "upgrade_events": [],
       "data_coverage": {
-        "self_history": false,
+        "self_history": true,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "6230",
+      "name": "ＳＡＮＥＩ",
+      "earnings_date": "2026-10-26",
+      "market_cap_oku": 98.42,
+      "score_total": 2,
+      "score_components": {
+        "own_earnings_reaction": 0,
+        "volume_supply_demand": 0,
+        "recent_industry_peers": 2,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 1,
+      "self_history_positive": 0,
+      "self_history_events": [
+        {
+          "date": "2026-07-27",
+          "next_close_pct": -6.45,
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9WX0tFNmJhSk9XclJfZldNV19FVm8zRmtOc2hFazkwaW05M1pZcG9mQ1lYUi12MVJ3aFZROXBub2NNMTFaOE5kQlkydGNhMDJMMDZXZGJmYkpFUlpHeXJnUENVeC1BSG9xS0E?oc=5"
+        }
+      ],
+      "industry": "Building Products & Equipment",
+      "sector": "Industrials",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 3,
+      "peer_positive_count": 3,
+      "peer_events": [
+        {
+          "code": "7879",
+          "name": "ノダ",
+          "date": "2026-10-14",
+          "next_close_pct": 1.95
+        },
+        {
+          "code": "5932",
+          "name": "三協立山",
+          "date": "2026-10-07",
+          "next_close_pct": 14.62
+        },
+        {
+          "code": "9872",
+          "name": "北恵",
+          "date": "2026-10-02",
+          "next_close_pct": 0.52
+        }
+      ],
+      "volume_ratio": 1.15,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": true,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "4765",
+      "name": "ＳＢＩグローバルアセットマネジメント",
+      "earnings_date": "2026-10-27",
+      "market_cap_oku": 822.87,
+      "score_total": 2,
+      "score_components": {
+        "own_earnings_reaction": 1,
+        "volume_supply_demand": 0,
+        "recent_industry_peers": 1,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 1,
+      "self_history_positive": 1,
+      "self_history_events": [
+        {
+          "date": "2026-07-27",
+          "next_close_pct": 3.7,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE84SS1fS1FBOXVYdXA0SWs2emtTdnVQV2xuLVpRYUdlekw5YzRMVUdzUXBnRVNHQm9vdUNLNTZPN01wWTd2SjIzSzFXUTNvTm9NZ2NrSG9TX0JnbGgwQi1zRTN1Q0hlUFRDLWc?oc=5"
+        }
+      ],
+      "industry": "Asset Management",
+      "sector": "Financial Services",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 1,
+      "peer_positive_count": 1,
+      "peer_events": [
+        {
+          "code": "3454",
+          "name": "ファーストブラザーズ",
+          "date": "2026-10-09",
+          "next_close_pct": 0.16
+        }
+      ],
+      "volume_ratio": 1.0,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": true,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "4973",
+      "name": "日本高純度化学",
+      "earnings_date": "2026-10-27",
+      "market_cap_oku": 255.34,
+      "score_total": 2,
+      "score_components": {
+        "own_earnings_reaction": 0,
+        "volume_supply_demand": 0,
+        "recent_industry_peers": 2,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 1,
+      "self_history_positive": 0,
+      "self_history_events": [
+        {
+          "date": "2026-07-24",
+          "next_close_pct": -13.13,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9aYS03amY5RWtrUzdEMnRjSmtaem8zbEtkR1dqMmtGcGtVZzNkRnZ6VkRTWVE2TVp6QUx1UUU3bmxCUzJXRUVpOFR5cUxJV0liOEEzUXgtbkFmajhyZG1aR0tIRHVXNl9TM3c?oc=5"
+        }
+      ],
+      "industry": "Specialty Chemicals",
+      "sector": "Basic Materials",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 2,
+      "peer_positive_count": 2,
+      "peer_events": [
+        {
+          "code": "5018",
+          "name": "ＭＯＲＥＳＣＯ",
+          "date": "2026-10-15",
+          "next_close_pct": 15.44
+        },
+        {
+          "code": "4187",
+          "name": "大阪有機化学工業",
+          "date": "2026-10-09",
+          "next_close_pct": 10.13
+        }
+      ],
+      "volume_ratio": 1.17,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": true,
         "industry_peer_reactions": true,
         "industry_identified": true,
         "volume_ratio": true,
@@ -175,100 +335,6 @@
         }
       ],
       "volume_ratio": 1.89,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
-      "code": "6230",
-      "name": "ＳＡＮＥＩ",
-      "earnings_date": "2026-10-26",
-      "market_cap_oku": 98.42,
-      "score_total": 2,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 0,
-        "recent_industry_peers": 2,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Building Products & Equipment",
-      "sector": "Industrials",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 3,
-      "peer_positive_count": 3,
-      "peer_events": [
-        {
-          "code": "7879",
-          "name": "ノダ",
-          "date": "2026-10-14",
-          "next_close_pct": 1.95
-        },
-        {
-          "code": "5932",
-          "name": "三協立山",
-          "date": "2026-10-07",
-          "next_close_pct": 14.62
-        },
-        {
-          "code": "9872",
-          "name": "北恵",
-          "date": "2026-10-02",
-          "next_close_pct": 0.52
-        }
-      ],
-      "volume_ratio": 1.15,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
-      "code": "4973",
-      "name": "日本高純度化学",
-      "earnings_date": "2026-10-27",
-      "market_cap_oku": 255.34,
-      "score_total": 2,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 0,
-        "recent_industry_peers": 2,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Specialty Chemicals",
-      "sector": "Basic Materials",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 2,
-      "peer_positive_count": 2,
-      "peer_events": [
-        {
-          "code": "5018",
-          "name": "ＭＯＲＥＳＣＯ",
-          "date": "2026-10-15",
-          "next_close_pct": 15.44
-        },
-        {
-          "code": "4187",
-          "name": "大阪有機化学工業",
-          "date": "2026-10-09",
-          "next_close_pct": 10.13
-        }
-      ],
-      "volume_ratio": 1.17,
       "upgrade_events": [],
       "data_coverage": {
         "self_history": false,
@@ -501,44 +567,6 @@
         }
       ],
       "volume_ratio": 1.44,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
-      "code": "4765",
-      "name": "ＳＢＩグローバルアセットマネジメント",
-      "earnings_date": "2026-10-27",
-      "market_cap_oku": 822.87,
-      "score_total": 1,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 0,
-        "recent_industry_peers": 1,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Asset Management",
-      "sector": "Financial Services",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 1,
-      "peer_positive_count": 1,
-      "peer_events": [
-        {
-          "code": "3454",
-          "name": "ファーストブラザーズ",
-          "date": "2026-10-09",
-          "next_close_pct": 0.16
-        }
-      ],
-      "volume_ratio": 1.0,
       "upgrade_events": [],
       "data_coverage": {
         "self_history": false,
@@ -879,9 +907,16 @@
         "recent_industry_peers": 0,
         "analyst_upgrades_61d": 0
       },
-      "self_history_count": 0,
+      "self_history_count": 1,
       "self_history_positive": 0,
-      "self_history_events": [],
+      "self_history_events": [
+        {
+          "date": "2026-02-10",
+          "next_close_pct": -1.25,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4wanU2NVROdzhONVpDRUpLZUFOVVE1RTVLSnFWLWlvM2EzaXZ2aUU2TXlQMjl6ZG1xdmVUWTRsaXpoQk5SUzV2VnBkUXhBZVE1LUd2UjI5dkZsTmV1ZkVUbEIyOEdWSW1PRVE?oc=5"
+        }
+      ],
       "industry": "Confectioners",
       "sector": "Consumer Defensive",
       "industry_source": "Yahoo Finance company profile",
@@ -891,12 +926,13 @@
       "volume_ratio": 1.06,
       "upgrade_events": [],
       "data_coverage": {
-        "self_history": false,
+        "self_history": true,
         "industry_peer_reactions": false,
         "industry_identified": true,
         "volume_ratio": true,
         "upgrade_news_checked": true
       }
     }
-  ]
+  ],
+  "own_history_source": "Yahoo Finance 決算カレンダー、JPX記録、または決算短信ニュース掲載日。発表時刻未確認、掲載日と発表日が異なる可能性あり。"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T20:13:06+09:00",
+  "generated_at": "2026-10-21T00:07:13+09:00",
   "schema": 1,
   "screening": {
     "days_ahead": 14,
@@ -90,10 +90,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 3,
-      "daily_turnover_to_market_cap_ratio": 0.004,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "6999",
@@ -173,10 +170,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 3,
-      "daily_turnover_to_market_cap_ratio": 0.021,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "6337",
@@ -232,10 +226,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 3,
-      "daily_turnover_to_market_cap_ratio": 0.017,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "7102",
@@ -299,10 +290,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.002,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "9029",
@@ -347,85 +335,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 1,
-      "daily_turnover_to_market_cap_ratio": 0.0,
-      "quality_flags": [],
-      "quality_review_required": false
-    },
-    {
-      "code": "5933",
-      "name": "アルインコ",
-      "earnings_date": "2026-10-20",
-      "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1016.xlsx",
-      "market_cap_yen": 20615115412,
-      "price_date": "2026-10-20",
-      "close": 1061.0,
-      "turnover_oku": 1.64,
-      "avg_turnover_20_oku": 0.49,
-      "volume_ratio_5_20": 1.63,
-      "return_5d": -1.12,
-      "return_20d": -5.52,
-      "financials": {
-        "revenue_yen": 63611809792,
-        "period_type": "ttm",
-        "latest_period": null,
-        "data_source": "Yahoo Finance TTM summary, not company IR",
-        "revenue_yoy_pct": null,
-        "operating_income_yoy_pct": null
-      },
-      "analyst_consensus": null,
-      "prior_reactions": [],
-      "sources": {
-        "fundamentals": "https://finance.yahoo.com/quote/5933.T/financials/",
-        "estimates": "https://finance.yahoo.com/quote/5933.T/analysis/"
-      },
-      "missing_data": [
-        "Only TTM revenue available; quarterly year-on-year change unknown",
-        "Historical earnings dates or surrounding daily price data unavailable"
-      ],
-      "news": [
-        {
-          "title": "【決算速報】アルインコ---27年3月期2Qは減益、経常利益は7.4％減(フィスコ) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNOHRnaWJnLTdjTmQ2WTdZQ1VZVXVKVlJNZW5iRU5SRXJRTUNtWU5MaVlVMTJKbHFySndla1hmck0tSkhOMjBmTkJYYTZFRzFvbkZkQ1FaOGpfZ0dzLVVuLXNVUDJqa1YydjBaRThFWlF0SkRPdWpmUmd5X3A1MW1udXp5eUgwMlU?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-20T18:16+09:00"
-        },
-        {
-          "title": "アルインコ、上期経常は一転7％減益で下振れ着地 - 株探",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE95RVdSSXIzRFVRVFZaTjZRNmJVaE9RRWxOYU1YVWpZMmFMTTk3WFc3OUFsSDRaak96OVJBQnBMbVpjZjN1ZjZhX3MwWWk4QXhFUlE?oc=5",
-          "source": "株探",
-          "published_at": "2026-10-20T15:30+09:00"
-        },
-        {
-          "title": "【決算速報】アルインコ、上期経常は一転7％減益で下振れ着地(株探ニュース) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPYXdXSkpFMkl3NnJ5UDVPZ3V1WW42MDdIZUpTQllpTE95eFNYRHROcXJnZ2V2TlU5VHk3VkhTVzIwN2pwYWFhbEljdmRLX3ptRDg4ZHQ3TnQzRFkzc3IwM1RvYzZfcy1ndVlYQUNSMm1hSHg1WlBCek43cjJjbVkxblBFcXp4S2s?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-20T15:31+09:00"
-        },
-        {
-          "title": "10月20日に業績・配当予想を修正した会社はこちら - 四季報オンライン",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE0tYURLSGxNbXgtd2lfQkxHZlYwNXRGeFpvemo1N1lQclNOOWtaV29MQlEtRHFXdDF1dFdyOUdXRVltNmRJY2tBWXVabEEzRjFfZFM5aDZJOA?oc=5",
-          "source": "四季報オンライン",
-          "published_at": "2026-10-20T16:30+09:00"
-        },
-        {
-          "title": "日経平均21日前引け＝3日ぶり反発、1114円高の6万5255円 半導体製造装置関連株は強弱感錯綜、ＳＯＸ指数下げ止まりで目先リバウンド局面か 今村証券は年初来高値更新、４～６月期決算速報値を好感 アルインコ4日ぶり急反発、新型足場好調で第1四半期営業益22%増 - Moomoo",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1Qa1d0dmpnb2c2dThvVkZqZHEzdVdqMFlZT3VJZUVWV1p1LWltS1A2MU05VTEzNG9HTWRkczNkZUdGNzliY0o2NUlDMENaaDU3d1VN?oc=5",
-          "source": "Moomoo",
-          "published_at": "2026-10-16T16:00+09:00"
-        }
-      ],
-      "research_priority_score": 2,
-      "signals": [
-        {
-          "label": "直近出来高が増加（5日平均/前20日平均）",
-          "points": 2
-        }
-      ],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.008,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 1
     },
     {
       "code": "8707",
@@ -497,10 +407,7 @@
           "points": 2
         }
       ],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.012,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "7931",
@@ -576,10 +483,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 3,
-      "daily_turnover_to_market_cap_ratio": 0.001,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "2268",
@@ -633,10 +537,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.0,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "2211",
@@ -677,6 +578,12 @@
           "published_at": "2026-10-16T17:12+09:00"
         },
         {
+          "title": "(株)不二家【2211】：株つぶやき - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1KUUdZSXp6ZUt5Q1FZTURjSWxBeWhRaGtwYldvaE55Z0lLbEltQ3hscjl5MXpHREp3WVRVRFhkVnowVWhEbGFTdVNjQmtieF9PS0EzdVVQWkg?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-10-17T08:38+09:00"
+        },
+        {
           "title": "不二家×赤城乳業がコラボ♡「ガツン、と濃いぶどうグミ」が登場！シャリシャリ食感に注目 - ライブドアニュース",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4zRDdOek9xZGpEQ2tKSTNsc0EwTmFqbUhRY2NpT2NWcW1Hb0NjMWw5VThIejVpbC1WMG5UVUlWbWNmdWMySWtZaGd3RmEzdmROTDRlTlBwWk93c0tPZ1VN?oc=5",
           "source": "ライブドアニュース",
@@ -690,10 +597,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.001,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "3290",
@@ -736,10 +640,7 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.003,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "5204",
@@ -794,10 +695,7 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.002,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "3492",
@@ -840,10 +738,7 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.007,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "6629",
@@ -878,16 +773,16 @@
       ],
       "news": [
         {
+          "title": "テクノホライゾン(株)【6629】：株価・株式情報（夜間PTS含む） - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1Rajk2UFQzejZ5ZVY1bklKQWNVWS1hdnI1aWxYb2ZpM3RqclhPMUJXQ0ptZmlOWUtLekNnZVRyVWZHcVZmUjVPbFRLdWYzQmVoRWc?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-10-20T21:20+09:00"
+        },
+        {
           "title": "Ｔホライゾン - 日本経済新聞",
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPaFctUmZsZ0VOd0QyUVZfeWR0bk5ncjBJT3E1UE5Jblo4UFNWRFlFZFUtRjc3RTY3S2JaVlVRQ0d2Y09ZTEZWd0ktTnMwQWdqZk5MbUM0d3RBcnVOUTNDT1JPVm4xeVRITktycVRhV3gwTkluMHJHRzBFNkVEenVjMlc4OXRrOE8wYWZsY1dHWEkzMktJb2J5MkVFdjM5cjlsbnlwckE4dnVVVXMzWXd1S0d3V0xlLWcwVE9Gem1VTGRiRW95cHZ1bi1ZUks?oc=5",
           "source": "日本経済新聞",
           "published_at": "2026-10-16T16:00+09:00"
-        },
-        {
-          "title": "テクノホライゾン・ホールディングス(株)【6629】：今の株価の理由は？値動きの背景をAIが解説 - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBRQmZyRHpjUmRsY3UzV3BaeDJudU5MZTRaR2RsTWJoYkwtOU1NdHM3VE9maHRDTzRjQUF6STVFYWV0ZE1qSVhIWTBJT2RSeTNOZ3hMUFo2bHBVT3d2MHgw?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-16T16:07+09:00"
         },
         {
           "title": "10月19～23日に決算発表を予定している企業リスト - 四季報オンライン",
@@ -902,18 +797,15 @@
           "published_at": "2026-10-20T16:03+09:00"
         },
         {
-          "title": "【決算発表予定】2026年10月19日(月)～23日(金)の個人的注目決算予定銘柄 - かりんの株レポ",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5SRGpDM0NmQVJpOWhwc29Qc2o3T1BBV2lad1hMd1NqeS0tOGY2elRZRmpNb3UzRnM1VGMyYmpqaHdMYnllSkpRS01xQQ?oc=5",
-          "source": "かりんの株レポ",
-          "published_at": "2026-10-16T20:05+09:00"
+          "title": "テクノホライゾン・ホールディングス(株)【6629】：今の株価の理由は？値動きの背景をAIが解説 - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBRQmZyRHpjUmRsY3UzV3BaeDJudU5MZTRaR2RsTWJoYkwtOU1NdHM3VE9maHRDTzRjQUF6STVFYWV0ZE1qSVhIWTBJT2RSeTNOZ3hMUFo2bHBVT3d2MHgw?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-10-16T16:07+09:00"
         }
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.015,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "2804",
@@ -970,14 +862,17 @@
           "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZEJYVXJmNmtieFdyaTdWSjc2dFNwaWVyWHdfMEVHaGc3T1oyWkRpTmlDU3puVzgyZi1HV3FDSFREM0J2UTVmZXJuNlBkcFo1bDdLdFF2bFdjRnhKX1RBbkFJOFFUZ1k5ZTVtd0FWWXNneTliQWdzWmVoYTgwZjIxQnhlU2FFbUU?oc=5",
           "source": "Yahoo!ファイナンス",
           "published_at": "2026-10-15T16:00+09:00"
+        },
+        {
+          "title": "エバラ食品工業(株)【2819】：株価・株式情報（夜間PTS含む） - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB5VHdRRTdVdGwzQk10WUR6dFBCc1VRcDNGR0xXd3ZFeXp0NDRFWVBQYnlyZXRzSTFkSDZDYzEzYnRTUWJ6Ukg3Snoyem1rRDgzanc?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-10-20T20:13+09:00"
         }
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.002,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "4973",
@@ -1020,10 +915,7 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.018,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "3911",
@@ -1076,24 +968,21 @@
           "published_at": "2026-10-09T15:32+09:00"
         },
         {
-          "title": "【おはようgamebiz(10/13)】コロプラがKカルチャーのエンタメ会社設立、『Japanese Ramen Simulator』好スタート、『ホロライブ麻雀』事前登録開始 - gamebiz【ゲームビズ】",
-          "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTFA5Vm94Qm1LazlOeFU1U2dHWDBsS2dKSnhoMzFQLURxbFB1VHVQbGJhdWsyblRZOW9xZ09Hb0RJR25rR0pf?oc=5",
-          "source": "gamebiz【ゲームビズ】",
-          "published_at": "2026-10-13T08:30+09:00"
-        },
-        {
           "title": "AimingとENVALITHが提携し、次世代の株式リサーチを世界に発信する取り組み - ニュースメディアVOIX",
           "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5fNHJYLXRpd0poYWNLSEVaMnUzYV9GTnZQSkY2c3JIbmFsSTF5S29neXdBeHFqbjZwTnJUZDFUejNsU2d0Zzhxcw?oc=5",
           "source": "ニュースメディアVOIX",
           "published_at": "2026-10-13T09:53+09:00"
+        },
+        {
+          "title": "【おはようgamebiz(10/13)】コロプラがKカルチャーのエンタメ会社設立、『Japanese Ramen Simulator』好スタート、『ホロライブ麻雀』事前登録開始 - gamebiz【ゲームビズ】",
+          "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTFA5Vm94Qm1LazlOeFU1U2dHWDBsS2dKSnhoMzFQLURxbFB1VHVQbGJhdWsyblRZOW9xZ09Hb0RJR25rR0pf?oc=5",
+          "source": "gamebiz【ゲームビズ】",
+          "published_at": "2026-10-13T08:30+09:00"
         }
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.024,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "4765",
@@ -1140,6 +1029,12 @@
           "published_at": "2026-10-20T18:45+09:00"
         },
         {
+          "title": "ＳＢＩグローバルアセットマネジメント[4765]：『ＳＢＩ地方創生・日本高配当株式ファンド（年４回決算型）』 初回分配金50円のお知らせ 2026年10月20日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9HYjRoYmxRems3X0V3X1VLZ29ianVhUDFoNFRTTTRRSEZ1Q1JkYzFSQVRUbFM3VWtIdDR3V2kyUHMxdGM3RVJ0cVdfa1BYWHEtR1ZnZ0t2bFdfZy1xYnA4elZiR3g1SG1jMWc?oc=5",
+          "source": "日本経済新聞",
+          "published_at": "2026-10-20T18:45+09:00"
+        },
+        {
           "title": "ＳＢＩグローバルアセットマネジメント[4765]：『ＳＢＩ日本高配当株式（分配）ファンド（年４回決算型）』第11回分配金150円のお知らせ 2026年10月13日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5aa1BLUXNiYnNNMzdCcDZfb3Jwalk4OE8tRjZ5dlRSNnlUaHFDSm9yN0JWeDFDVmFfUHBUUTB6TEFuVHYzNXVvMHhOYXNMNFVMeF9DOHlERUlkMWdsYzNZVEJ1Qk5rMGhZbkE?oc=5",
           "source": "日本経済新聞",
@@ -1154,10 +1049,50 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.002,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
+    },
+    {
+      "code": "5532",
+      "name": "リアルゲイト",
+      "earnings_date": "2026-10-27",
+      "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1016.xlsx",
+      "market_cap_yen": 21637440900,
+      "price_date": "2026-10-20",
+      "close": 3330.0,
+      "turnover_oku": 1.01,
+      "avg_turnover_20_oku": 0.6,
+      "volume_ratio_5_20": 1.25,
+      "return_5d": -2.77,
+      "return_20d": -2.92,
+      "financials": {
+        "revenue_yen": 9340000256,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
+      "analyst_consensus": null,
+      "prior_reactions": [],
+      "sources": {
+        "fundamentals": "https://finance.yahoo.com/quote/5532.T/financials/",
+        "estimates": "https://finance.yahoo.com/quote/5532.T/analysis/"
+      },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
+      "news": [
+        {
+          "title": "ビーロット---東京都・京都府の収益用1棟マンション2物件を取得 - 株探",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5pQVNXQ0I4NG41YXU0RmZSaEZWSXJmSDNQMFZZcW0ySVVNTEtVWUNUaWxSRUNnVHJtNTNQUnhDQU0yMzUzQnMwMjFoWVNxXzNYem9Odkdqa1lTeGxWRjZpOUJBRGZ0dw?oc=5",
+          "source": "株探",
+          "published_at": "2026-10-07T13:10+09:00"
+        }
+      ],
+      "research_priority_score": 0,
+      "signals": [],
+      "evidence_count": 2
     },
     {
       "code": "9782",
@@ -1200,10 +1135,7 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.005,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "6230",
@@ -1239,23 +1171,9 @@
       "news": [],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 1,
-      "daily_turnover_to_market_cap_ratio": 0.0,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 1
     }
   ],
   "count": 20,
-  "method": "Research PRIORITY only; no probability of an earnings beat. TTM revenue is not quarterly results. Prior reactions, if any, are based on historical JPX scheduled dates, not verified disclosure times.",
-  "coverage": {
-    "screened": 20,
-    "official_ir_verified": 0,
-    "quarterly_or_annual_yahoo": 0,
-    "ttm_reference_only": 20,
-    "market_analyst_estimates": 4,
-    "historical_scheduled_event_reactions": 0,
-    "news_links": 18
-  },
-  "quality_review_count": 0,
-  "quality_rule": "Heuristic only. Large turnover/volume/returns are not proof of bad data, good earnings or stock-split."
+  "method": "調査優先度は公開価格・出来高・取得できた四半期業績等のみ。買い推奨や決算予測確率ではありません。"
 }

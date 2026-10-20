@@ -1,10 +1,28 @@
 {
   "schema": 1,
-  "updated_at": "2026-10-20T00:23:41+09:00",
-  "window_start": "2026-08-20",
-  "window_end": "2026-10-20",
+  "updated_at": "2026-10-21T00:21:01+09:00",
+  "window_start": "2026-08-21",
+  "window_end": "2026-10-21",
   "description": "ニュース見出しを用いた暫定検出。原文の格付け変更・コンセンサス時系列を検証したものではない。目標株価の引き上げ単独では加点しない。",
   "records": [
+    {
+      "code": "3091",
+      "name": "ブロンコビリー",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
+      "code": "6999",
+      "name": "ＫＯＡ",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
     {
       "code": "6337",
       "name": "テセック",
@@ -33,26 +51,8 @@
       "status": "確認できる上方修正記事なし"
     },
     {
-      "code": "3091",
-      "name": "ブロンコビリー",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
-      "code": "3911",
-      "name": "Ａｉｍｉｎｇ",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
-      "code": "6999",
-      "name": "ＫＯＡ",
+      "code": "8707",
+      "name": "岩井コスモホールディングス",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,
@@ -62,60 +62,6 @@
     {
       "code": "7931",
       "name": "未来工業",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
-      "code": "3290",
-      "name": "Ｏｎｅリート投資法人",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
-      "code": "6629",
-      "name": "テクノホライゾン",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
-      "code": "5933",
-      "name": "アルインコ",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
-      "code": "5204",
-      "name": "石塚硝子",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
-      "code": "3492",
-      "name": "ＭＩＲＡＲＴＨ不動産投資法人",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
-      "code": "2804",
-      "name": "ブルドックソース",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,
@@ -141,8 +87,62 @@
       "status": "確認できる上方修正記事なし"
     },
     {
+      "code": "3290",
+      "name": "Ｏｎｅリート投資法人",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
+      "code": "5204",
+      "name": "石塚硝子",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
+      "code": "3492",
+      "name": "ＭＩＲＡＲＴＨ不動産投資法人",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
+      "code": "6629",
+      "name": "テクノホライゾン",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
+      "code": "2804",
+      "name": "ブルドックソース",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
       "code": "4973",
       "name": "日本高純度化学",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
+      "code": "3911",
+      "name": "Ａｉｍｉｎｇ",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,

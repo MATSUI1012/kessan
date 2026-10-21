@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-10-21T06:11:31+09:00",
+  "updated_at": "2026-10-22T06:11:03+09:00",
   "description": "Yahoo Finance EPS 60日トレンドと証券会社の格付け履歴。値がない場合は未確認。EPSの変化日は特定できない。原本の証券会社発表は未照合。",
   "coverage": {
     "current_candidates": 20,
@@ -14,7 +14,7 @@
       "code": "2211",
       "name": "不二家",
       "earnings_date": "2026-10-26",
-      "observed_at": "2026-10-21T06:11:31+09:00",
+      "observed_at": "2026-10-22T06:11:03+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -45,6 +45,12 @@
         },
         {
           "date": "2026-10-21",
+          "earnings_date": "2026-10-26",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
+        },
+        {
+          "date": "2026-10-22",
           "earnings_date": "2026-10-26",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
@@ -56,7 +62,7 @@
       "code": "2268",
       "name": "Ｂ－Ｒ　サーティワン　アイスクリーム",
       "earnings_date": "2026-10-23",
-      "observed_at": "2026-10-21T06:11:31+09:00",
+      "observed_at": "2026-10-22T06:11:03+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -87,6 +93,12 @@
         },
         {
           "date": "2026-10-21",
+          "earnings_date": "2026-10-23",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
+        },
+        {
+          "date": "2026-10-22",
           "earnings_date": "2026-10-23",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
@@ -98,7 +110,7 @@
       "code": "2804",
       "name": "ブルドックソース",
       "earnings_date": "2026-10-23",
-      "observed_at": "2026-10-21T06:11:31+09:00",
+      "observed_at": "2026-10-22T06:11:03+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -132,6 +144,12 @@
           "earnings_date": "2026-10-23",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
+        },
+        {
+          "date": "2026-10-22",
+          "earnings_date": "2026-10-23",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
         }
       ],
       "broker_upgrades_history": []
@@ -140,7 +158,7 @@
       "code": "3091",
       "name": "ブロンコビリー",
       "earnings_date": "2026-10-22",
-      "observed_at": "2026-10-21T06:11:31+09:00",
+      "observed_at": "2026-10-22T06:11:03+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -171,6 +189,12 @@
         },
         {
           "date": "2026-10-21",
+          "earnings_date": "2026-10-22",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 8776000000.0
+        },
+        {
+          "date": "2026-10-22",
           "earnings_date": "2026-10-22",
           "eps_estimate_current": null,
           "revenue_mean_current": 8776000000.0
@@ -254,7 +278,7 @@
       "code": "3492",
       "name": "ＭＩＲＡＲＴＨ不動産投資法人",
       "earnings_date": "2026-10-23",
-      "observed_at": "2026-10-21T06:11:31+09:00",
+      "observed_at": "2026-10-22T06:11:03+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -285,6 +309,12 @@
         },
         {
           "date": "2026-10-21",
+          "earnings_date": "2026-10-23",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
+        },
+        {
+          "date": "2026-10-22",
           "earnings_date": "2026-10-23",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
@@ -296,7 +326,7 @@
       "code": "3911",
       "name": "Ａｉｍｉｎｇ",
       "earnings_date": "2026-10-27",
-      "observed_at": "2026-10-21T06:11:31+09:00",
+      "observed_at": "2026-10-22T06:11:03+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -327,6 +357,12 @@
         },
         {
           "date": "2026-10-21",
+          "earnings_date": "2026-10-27",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
+        },
+        {
+          "date": "2026-10-22",
           "earnings_date": "2026-10-27",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
@@ -338,7 +374,7 @@
       "code": "4765",
       "name": "ＳＢＩグローバルアセットマネジメント",
       "earnings_date": "2026-10-27",
-      "observed_at": "2026-10-21T06:11:31+09:00",
+      "observed_at": "2026-10-22T06:11:03+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -369,6 +405,12 @@
         },
         {
           "date": "2026-10-21",
+          "earnings_date": "2026-10-27",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
+        },
+        {
+          "date": "2026-10-22",
           "earnings_date": "2026-10-27",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
@@ -380,7 +422,7 @@
       "code": "4973",
       "name": "日本高純度化学",
       "earnings_date": "2026-10-27",
-      "observed_at": "2026-10-21T06:11:31+09:00",
+      "observed_at": "2026-10-22T06:11:03+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -411,6 +453,12 @@
         },
         {
           "date": "2026-10-21",
+          "earnings_date": "2026-10-27",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
+        },
+        {
+          "date": "2026-10-22",
           "earnings_date": "2026-10-27",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
@@ -422,7 +470,7 @@
       "code": "5204",
       "name": "石塚硝子",
       "earnings_date": "2026-10-22",
-      "observed_at": "2026-10-21T06:11:31+09:00",
+      "observed_at": "2026-10-22T06:11:03+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -456,6 +504,12 @@
           "earnings_date": "2026-10-22",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
+        },
+        {
+          "date": "2026-10-22",
+          "earnings_date": "2026-10-22",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
         }
       ],
       "broker_upgrades_history": []
@@ -464,7 +518,7 @@
       "code": "5532",
       "name": "リアルゲイト",
       "earnings_date": "2026-10-27",
-      "observed_at": "2026-10-21T06:11:31+09:00",
+      "observed_at": "2026-10-22T06:11:03+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -489,6 +543,12 @@
         },
         {
           "date": "2026-10-21",
+          "earnings_date": "2026-10-27",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
+        },
+        {
+          "date": "2026-10-22",
           "earnings_date": "2026-10-27",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
@@ -536,7 +596,7 @@
       "code": "6230",
       "name": "ＳＡＮＥＩ",
       "earnings_date": "2026-10-26",
-      "observed_at": "2026-10-21T06:11:31+09:00",
+      "observed_at": "2026-10-22T06:11:03+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -570,6 +630,12 @@
           "earnings_date": "2026-10-26",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
+        },
+        {
+          "date": "2026-10-22",
+          "earnings_date": "2026-10-26",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
         }
       ],
       "broker_upgrades_history": []
@@ -578,7 +644,7 @@
       "code": "6337",
       "name": "テセック",
       "earnings_date": "2026-10-27",
-      "observed_at": "2026-10-21T06:11:31+09:00",
+      "observed_at": "2026-10-22T06:11:03+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -612,6 +678,12 @@
           "earnings_date": "2026-10-27",
           "eps_estimate_current": null,
           "revenue_mean_current": 1788000000.0
+        },
+        {
+          "date": "2026-10-22",
+          "earnings_date": "2026-10-27",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 1788000000.0
         }
       ],
       "broker_upgrades_history": []
@@ -620,7 +692,7 @@
       "code": "6629",
       "name": "テクノホライゾン",
       "earnings_date": "2026-10-23",
-      "observed_at": "2026-10-21T06:11:31+09:00",
+      "observed_at": "2026-10-22T06:11:03+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -654,6 +726,12 @@
           "earnings_date": "2026-10-23",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
+        },
+        {
+          "date": "2026-10-22",
+          "earnings_date": "2026-10-23",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
         }
       ],
       "broker_upgrades_history": []
@@ -662,7 +740,7 @@
       "code": "6999",
       "name": "ＫＯＡ",
       "earnings_date": "2026-10-23",
-      "observed_at": "2026-10-21T06:11:31+09:00",
+      "observed_at": "2026-10-22T06:11:03+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -696,6 +774,12 @@
           "earnings_date": "2026-10-23",
           "eps_estimate_current": null,
           "revenue_mean_current": 23120000000.0
+        },
+        {
+          "date": "2026-10-22",
+          "earnings_date": "2026-10-23",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 23120000000.0
         }
       ],
       "broker_upgrades_history": []
@@ -704,7 +788,7 @@
       "code": "7102",
       "name": "日本車輌製造",
       "earnings_date": "2026-10-27",
-      "observed_at": "2026-10-21T06:11:31+09:00",
+      "observed_at": "2026-10-22T06:11:03+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -738,6 +822,12 @@
           "earnings_date": "2026-10-27",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
+        },
+        {
+          "date": "2026-10-22",
+          "earnings_date": "2026-10-27",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
         }
       ],
       "broker_upgrades_history": []
@@ -746,7 +836,7 @@
       "code": "7931",
       "name": "未来工業",
       "earnings_date": "2026-10-23",
-      "observed_at": "2026-10-21T06:11:31+09:00",
+      "observed_at": "2026-10-22T06:11:03+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -780,6 +870,12 @@
           "earnings_date": "2026-10-23",
           "eps_estimate_current": null,
           "revenue_mean_current": 12236000000.0
+        },
+        {
+          "date": "2026-10-22",
+          "earnings_date": "2026-10-23",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 12236000000.0
         }
       ],
       "broker_upgrades_history": []
@@ -788,7 +884,7 @@
       "code": "8707",
       "name": "岩井コスモホールディングス",
       "earnings_date": "2026-10-23",
-      "observed_at": "2026-10-21T06:11:31+09:00",
+      "observed_at": "2026-10-22T06:11:03+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -807,6 +903,12 @@
       "snapshots": [
         {
           "date": "2026-10-21",
+          "earnings_date": "2026-10-23",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
+        },
+        {
+          "date": "2026-10-22",
           "earnings_date": "2026-10-23",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
@@ -818,7 +920,7 @@
       "code": "9029",
       "name": "ヒガシホールディングス",
       "earnings_date": "2026-10-23",
-      "observed_at": "2026-10-21T06:11:31+09:00",
+      "observed_at": "2026-10-22T06:11:03+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -850,6 +952,42 @@
         {
           "date": "2026-10-21",
           "earnings_date": "2026-10-23",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
+        },
+        {
+          "date": "2026-10-22",
+          "earnings_date": "2026-10-23",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
+      "code": "9629",
+      "name": "ピー・シー・エー",
+      "earnings_date": "2026-10-27",
+      "observed_at": "2026-10-22T06:11:03+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 0.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-10-22",
+          "earnings_date": "2026-10-27",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
         }
@@ -860,7 +998,7 @@
       "code": "9782",
       "name": "ディーエムエス",
       "earnings_date": "2026-10-27",
-      "observed_at": "2026-10-21T06:11:31+09:00",
+      "observed_at": "2026-10-22T06:11:03+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -891,6 +1029,12 @@
         },
         {
           "date": "2026-10-21",
+          "earnings_date": "2026-10-27",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
+        },
+        {
+          "date": "2026-10-22",
           "earnings_date": "2026-10-27",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0

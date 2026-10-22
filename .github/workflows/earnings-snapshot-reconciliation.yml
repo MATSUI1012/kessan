@@ -1,0 +1,143 @@
+name: Reconcile frozen earnings snapshots
+'on':
+  workflow_dispatch:
+  schedule:
+    - cron: '20 16 * * 1-5'
+permissions:
+  contents: write
+concurrency:
+  group: earnings-snapshot-reconciliation
+  cancel-in-progress: false
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Reconcile pre-event snapshots with observed next-session returns
+        shell: bash
+        run: |
+          mkdir -p data
+          cat > /tmp/reconcile.py <<'PYCODE'
+          #!/usr/bin/env python3
+          """Join immutable pre-event snapshots and scheduled next-session returns.
+          Never treat date-proxy price changes as evidence of causality or as model forecasts.
+          """
+          import json, math
+          from collections import defaultdict
+          from pathlib import Path
+          from datetime import datetime, date, timedelta, timezone
+
+          JST = timezone(timedelta(hours=9))
+          D = Path(__file__).resolve().parent / 'data'
+
+          def load(name, default):
+              p=D/name
+              try: return json.loads(p.read_text(encoding='utf-8'))
+              except (FileNotFoundError, json.JSONDecodeError): return default
+
+          def iso(value):
+              try: return date.fromisoformat(str(value)[:10])
+              except (ValueError, TypeError): return None
+
+          def real(value):
+              try:
+                  if isinstance(value, bool): return None
+                  x=float(value)
+                  return x if math.isfinite(x) else None
+              except (TypeError, ValueError): return None
+
+          def compute():
+              now=datetime.now(JST)
+              today=now.date()
+              learning=load('season-learning-v2.json',{})
+              observations=load('earnings-nextday-reactions.json',{})
+              snapshots=learning.get('snapshots',[])
+              outcomes=defaultdict(list)
+              for r in observations.get('records',[]):
+                  if not isinstance(r,dict): continue
+                  code=str(r.get('code') or '');event=iso(r.get('scheduled_date'))
+                  nextday=iso(r.get('next_session_date')); n=real(r.get('next_close_pct'))
+                  if code and event and nextday and nextday>event and nextday<=today and n is not None:
+                      outcomes[(code,event)].append(r)
+              valid={}; invalid=[]
+              for s in snapshots:
+                  if not isinstance(s,dict): continue
+                  code=str(s.get('code') or ''); event=iso(s.get('earnings_date'))
+                  captured=iso(s.get('captured_at'))
+                  if not code or not event or not captured or captured>=event:
+                      invalid.append({'code':code,'earnings_date':str(s.get('earnings_date')),'reason':'snapshot absent or not recorded before event date'})
+                      continue
+                  key=(code,event)
+                  # Preserve the first valid pre-event snapshot, to prevent hindsight revision.
+                  if key not in valid or str(s['captured_at']) < str(valid[key]['captured_at']): valid[key]=s
+              matched=[]; pending=[]
+              for key,s in sorted(valid.items(),key=lambda kv:(kv[0][1],kv[0][0])):
+                  choices=outcomes.get(key,[])
+                  if not choices:
+                      if key[1]<today: pending.append({'code':key[0],'earnings_date':key[1].isoformat()})
+                      continue
+                  o=sorted(choices,key=lambda r:(not bool(r.get('ohlc_complete')),str(r.get('next_session_date'))))[0]
+                  matched.append({'code':key[0], 'name':s.get('name'), 'earnings_date':key[1].isoformat(),
+                                  'captured_at':s.get('captured_at'), 'pre_event_factors':s.get('pre_event_factors',{}),
+                                  'next_session_date':o['next_session_date'],'next_close_pct':real(o['next_close_pct']),
+                                  'ohlc_complete':bool(o.get('ohlc_complete')),'source_url':o.get('source_url')})
+              def stats(rows):
+                  x=[r['next_close_pct'] for r in rows]
+                  return {'n':len(x),'up':sum(v>0 for v in x),'down':sum(v<0 for v in x),
+                          'up_rate':round(sum(v>0 for v in x)/len(x),4) if x else None,
+                          'mean_pct':round(sum(x)/len(x),3) if x else None}
+              checks=[]
+              for name,threshold in [('volume_ratio_5_20',1.5),('return_5d_pct',0)]:
+                  usable=[r for r in matched if real(r['pre_event_factors'].get(name)) is not None]
+                  high=[r for r in usable if real(r['pre_event_factors'][name])>=threshold]
+                  low=[r for r in usable if real(r['pre_event_factors'][name])<threshold]
+                  checks.append({'factor':name,'threshold':threshold,'high':stats(high),'low':stats(low),
+                                 'exploratory_sample_ready':len(high)>=10 and len(low)>=10})
+              coverage=learning.get('coverage',{})
+              numerator=coverage.get('elapsed_scheduled_events') or 0
+              denominator=coverage.get('season_eligible_companies') or 0
+              progress=numerator/denominator if denominator else 0
+              milestones=[{'threshold':v,'date_fraction_reached':progress>=v,
+                           'matched_sample_ready':len(matched)>=30,
+                           'group_comparison_ready':any(c['exploratory_sample_ready'] for c in checks),
+                           'may_review_weights':progress>=v and len(matched)>=30 and any(c['exploratory_sample_ready'] for c in checks),
+                           'automatic_weight_change':False} for v in (0.2,0.6)]
+              return {'schema':1,'generated_at':now.isoformat(timespec='seconds'),
+                      'scope':learning.get('scope'), 'coverage':{'frozen_snapshots':len(valid),'invalid_snapshots':len(invalid),
+                      'outcome_keys':len(outcomes),'matched':len(matched),'pending_past_events':len(pending),
+                      'eligible_season':denominator,'elapsed_events':numerator,'progress_fraction':round(progress,4)},
+                      'overall':stats(matched),'checks':checks,'milestones':milestones,
+                      'pending_past_events':pending,'invalid_snapshots':invalid,'matched':matched,
+                      'limitations':['JPX scheduled-date proxy, not verified disclosure timestamp.',
+                                     'Event-window return cannot identify a causal earnings effect.',
+                                     'No backfilled pre-event forecast and no missing-data zero scores.',
+                                     'No automatic model reweighting or buy recommendations.']}
+
+          if __name__=='__main__':
+              D.mkdir(parents=True,exist_ok=True)
+              obj=compute()
+              (D/'season-reconciliation.json').write_text(json.dumps(obj,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+              print('season_reconciliation',json.dumps(obj['coverage'],ensure_ascii=False))
+          PYCODE
+          cp /tmp/reconcile.py ./season_reconcile.py
+          python season_reconcile.py
+      - name: Commit reconciliation safely
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/season-reconciliation.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Update season snapshot reconciliation'
+          for n in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; exit 1; }
+            if git push origin HEAD:main; then exit 0; fi
+            sleep "$((n*3))"
+          done
+          exit 1

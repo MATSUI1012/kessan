@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "total": 0,
+  "reviewed": 0,
+  "correct": 0,
+  "accuracy": null,
+  "by_prediction": {
+    "up": {
+      "n": 0,
+      "correct": 0
+    },
+    "down": {
+      "n": 0,
+      "correct": 0
+    },
+    "neutral": {
+      "n": 0,
+      "correct": 0
+    }
+  },
+  "invalid": [],
+  "awaiting_outcome": [],
+  "comparisons": [],
+  "warnings": [
+    "Next-session price change is not necessarily caused by earnings.",
+    "JPX scheduled dates are not verified disclosure timestamps.",
+    "Missing evidence is not a zero score. Do not optimize on tiny samples."
+  ]
+}

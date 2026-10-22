@@ -1,0 +1,139 @@
+name: Build evidence-checked pre-earnings factor ledger
+'on':
+  workflow_dispatch: {}
+  push:
+    paths:
+      - '.github/workflows/earnings-prescore-evidence.yml'
+  schedule:
+    - cron: '35 12 * * 1-5'
+permissions:
+  contents: write
+concurrency:
+  group: earnings-prescore-evidence
+  cancel-in-progress: false
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Preserve original pre-event snapshots and attach auditable factors
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, math
+          from datetime import date, datetime, timedelta, timezone
+          from collections import defaultdict
+          from pathlib import Path
+          D=Path('data'); JST=timezone(timedelta(hours=9)); now=datetime.now(JST)
+          def load(path,default):
+              try: return json.loads((D/path).read_text(encoding='utf-8'))
+              except (ValueError,OSError): return default
+          def day(s):
+              try: return date.fromisoformat(str(s)[:10])
+              except (ValueError,TypeError): return None
+          def finite(x):
+              return isinstance(x,(float,int)) and not isinstance(x,bool) and math.isfinite(x)
+          learning=load('season-learning-v2.json',{'snapshots':[]})
+          archive=load('own-earnings-history-archive.json',{'records':[]})
+          classes=load('industry-classification.json',{'codes':{}}).get('codes',{})
+          analyst=load('analyst-evidence-ledger.json',{'records':[]})
+          research=load('research.json',{'records':[]})
+          previous=load('pre-earnings-factor-ledger.json',{'records':[]})
+          own={str(r.get('code')):r.get('events',[]) for r in archive.get('records',[]) if isinstance(r,dict)}
+          # Never attach an old analysis of an already completed event as pre-event evidence.
+          prepared={str(r.get('code')):r for r in research.get('records',[]) if isinstance(r,dict)}
+          analystmap={str(r.get('code')):r for r in analyst.get('records',[]) if isinstance(r,dict)}
+          existing={(str(r.get('code')),str(r.get('earnings_date'))):r for r in previous.get('records',[]) if isinstance(r,dict)}
+          result=[]
+          for s in learning.get('snapshots',[]):
+              code=str(s.get('code') or ''); event=day(s.get('earnings_date')); taken=day(s.get('captured_at'))
+              if not(code and event and taken and taken<event):continue
+              key=(code,event.isoformat())
+              if key in existing:
+                  result.append(existing.pop(key));continue # freeze, never rewrite already captured factor values
+              own_events=[]
+              for e in own.get(code,[]):
+                  d=day(e.get('event_date') or e.get('scheduled_date'))
+                  p=e.get('next_close_pct'); link=e.get('source_url')
+                  # archive is not point-in-time versioned. Only count records whose
+                  # event dates clearly precede snapshot's captured date.
+                  if not(d and d<taken and finite(p) and isinstance(link,str) and link.startswith('https://')):continue
+                  own_events.append({'date':d.isoformat(),'return_pct':round(p,2),'url':link,
+                                     'date_kind':e.get('date_kind')})
+              own_events.sort(key=lambda e:e['date'],reverse=True)
+              cls=classes.get(code) or {}
+              sector=cls.get('sector'); industry=cls.get('industry')
+              peers=[]
+              if sector and industry:
+                  for other,events in own.items():
+                      if other==code:continue
+                      cl=classes.get(other) or {}
+                      if cl.get('sector')!=sector or cl.get('industry')!=industry:continue
+                      for e in events:
+                          d=day(e.get('event_date') or e.get('scheduled_date')); p=e.get('next_close_pct')
+                          if d and taken-timedelta(days=45)<=d<taken and finite(p):
+                              peers.append({'code':other,'date':d.isoformat(),'return_pct':round(p,2)})
+              factors=s.get('pre_event_factors') or {}
+              vr=factors.get('volume_ratio_5_20')
+              # Volume is an observation with a real 0-point outcome when observed.
+              vol_score=(3 if vr>=3 else 2 if vr>=1.5 else 1 if vr>=1.2 else 0) if finite(vr) else None
+              self4=own_events[:4]
+              pcount=sum(x['return_pct']>0 for x in self4)
+              n=len(self4)
+              self_score=(3 if n>=3 and pcount/n>=.75 else 2 if n>=2 and pcount/n>=.6 else 1 if n==1 and pcount else 0) if n else None
+              peers_positive=sum(x['return_pct']>0 for x in peers)
+              peer_score=(2 if len(peers)>=2 and peers_positive/len(peers)>=.6 else 1 if len(peers)==1 and peers_positive else 0) if peers else None
+              # Current analyst ledger is NOT necessarily timestamped before this
+              # snapshot. Preserve it as reference only; never use for frozen score.
+              current_analyst=analystmap.get(code,{})
+              current_research=prepared.get(code,{})
+              missing=[]
+              if vol_score is None:missing.append('出来高データ')
+              if self_score is None:missing.append('本人の過去決算反応')
+              if peer_score is None:missing.append('同業他社の直近決算反応')
+              missing.extend(['コンセンサス/レーティングの決算前変更履歴','会社予想・四季報の改定履歴','目標株価の変更履歴','決算前ニュースの検証'])
+              result.append({'code':code,'name':s.get('name'),'earnings_date':event.isoformat(),
+                             'captured_at':s.get('captured_at'),'price_asof':s.get('price_asof'),
+                             'factor_scores':{'volume_supply_demand':vol_score,
+                                              'own_earnings_reaction':self_score,
+                                              'recent_industry_peers':peer_score,
+                                              'analyst_revision':None,
+                                              'guidance_shikiho_targets_news':None},
+                             'self_history_events':self4,'peer_reaction_events':sorted(peers,key=lambda x:x['date'],reverse=True)[:20],
+                             'missing_factors':missing,'total_score':None,
+                             'qualification':'not_rankable_incomplete_evidence',
+                             'diagnostic_reference_only':{'analyst_now_present':bool(current_analyst),
+                               'research_news_count':len(current_research.get('news') or [])},
+                             'note':'個別要因の根拠のみ。決算予定日は発表時刻未確認。アーカイブ自体の保存時刻は追跡されておらず厳密な事前観測としては検証不可。合計採点・ランキングには使用禁止。'})
+          # Keep immutable completed historical assessments.
+          result.extend(existing.values())
+          result.sort(key=lambda r:(r['earnings_date'],r['code']))
+          output={'schema':1,'generated_at':now.isoformat(timespec='seconds'),
+                  'description':'学習用に保存済みの決算前銘柄への要因根拠の紐付け。正式な採点・順位には使わない。',
+                  'coverage':{'snapshots_with_ledger':len(result),
+                              'with_self_history':sum(r['factor_scores']['own_earnings_reaction'] is not None for r in result),
+                              'with_peer_history':sum(r['factor_scores']['recent_industry_peers'] is not None for r in result),
+                              'with_volume':sum(r['factor_scores']['volume_supply_demand'] is not None for r in result),
+                              'rankable':0},'records':result}
+          assert all(r['total_score'] is None and r['qualification']=='not_rankable_incomplete_evidence' for r in result)
+          (D/'pre-earnings-factor-ledger.json').write_text(json.dumps(output,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print('EVIDENCE_COVERAGE',json.dumps(output['coverage'],ensure_ascii=False))
+          PY
+      - name: Commit non-ranked evidence ledger
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/pre-earnings-factor-ledger.json
+          if git diff --cached --quiet; then echo 'No changes'; exit 0; fi
+          git commit -m 'Attach auditable factor evidence without inventing scores'
+          for n in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; exit 1; }
+            if git push origin HEAD:main; then exit 0; fi
+            sleep $((n*4))
+          done
+          exit 1

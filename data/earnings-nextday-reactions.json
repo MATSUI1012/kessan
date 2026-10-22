@@ -7,15 +7,15 @@
     "minimum_turnover_oku": 0
   },
   "coverage": {
-    "events_recent_eligible": 144,
+    "events_recent_eligible": 146,
     "nextday_available": 169,
-    "ohlc_complete": 168,
-    "close_only": 1,
+    "ohlc_complete": 169,
+    "close_only": 0,
     "fetch": {
-      "yahoo_ok": 144
+      "yahoo_ok": 146
     },
     "missing": {
-      "missing_pre_or_post_close": 1
+      "missing_pre_or_post_close": 3
     }
   },
   "records": [
@@ -29,20 +29,20 @@
       "baseline_date": "2026-10-19",
       "baseline_close": 1076.0,
       "next_session_date": "2026-10-21",
-      "next_open": null,
-      "next_high": null,
-      "next_low": null,
+      "next_open": 1022.0,
+      "next_high": 1042.0,
+      "next_low": 1018.0,
       "next_close": 1036.0,
       "next_volume": 159400.0,
-      "gap_open_pct": null,
-      "high_pct": null,
-      "low_pct": null,
+      "gap_open_pct": -5.02,
+      "high_pct": -3.16,
+      "low_pct": -5.39,
       "next_close_pct": -3.72,
-      "intraday_open_to_close_pct": null,
+      "intraday_open_to_close_pct": 1.37,
       "after_3d_pct": null,
       "after_5d_pct": null,
-      "price_source": "保存済み日足（終値・出来高）",
-      "ohlc_complete": false
+      "price_source": "Yahoo Finance 日足",
+      "ohlc_complete": true
     },
     {
       "code": "3488",
@@ -4245,5 +4245,5 @@
       "ohlc_complete": true
     }
   ],
-  "generated_at": "2026-10-22T00:18:03+09:00"
+  "generated_at": "2026-10-23T00:20:36+09:00"
 }

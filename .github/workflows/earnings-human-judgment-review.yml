@@ -1,0 +1,60 @@
+name: Earnings human judgment review
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'audit-human-judgments.py'
+      - 'data/human-judgments.json'
+      - '.github/workflows/earnings-human-judgment-review.yml'
+  schedule:
+    # 00:40 JST Tue-Sat; after the 23:50 JST next-day tracker
+    - cron: '40 15 * * 1-5'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: earnings-human-judgment-review
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Initialize empty human-judgment ledger only if absent
+        run: |
+          mkdir -p data
+          if [ ! -e data/human-judgments.json ]; then
+            printf '{"schema":1,"decisions":[]}\n' > data/human-judgments.json
+          fi
+      - name: Compare pre-earnings judgments with next-session results
+        run: python audit-human-judgments.py
+      - name: Commit audit report and initialized ledger
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/human-judgments.json data/human-judgment-review.json
+          if git diff --cached --quiet; then
+            echo 'No new report to commit'
+            exit 0
+          fi
+          git commit -m 'Update human judgment review'
+          for n in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; exit 1; }
+            if git push origin HEAD:main; then exit 0; fi
+            sleep "$((n * 3))"
+          done
+          exit 1

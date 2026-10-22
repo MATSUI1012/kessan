@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "generated_at": "2026-10-23T00:32:12+09:00",
+  "scope": "時価総額80億円以上1000億円未満。JPX決算予定日2026年10月〜11月。時価総額は現時点値であり過去再現ではない",
+  "coverage": {
+    "frozen_snapshots": 960,
+    "invalid_snapshots": 0,
+    "outcome_keys": 169,
+    "matched": 0,
+    "pending_past_events": 0,
+    "eligible_season": 1407,
+    "elapsed_events": 144,
+    "progress_fraction": 0.1023
+  },
+  "overall": {
+    "n": 0,
+    "up": 0,
+    "down": 0,
+    "up_rate": null,
+    "mean_pct": null
+  },
+  "checks": [
+    {
+      "factor": "volume_ratio_5_20",
+      "threshold": 1.5,
+      "high": {
+        "n": 0,
+        "up": 0,
+        "down": 0,
+        "up_rate": null,
+        "mean_pct": null
+      },
+      "low": {
+        "n": 0,
+        "up": 0,
+        "down": 0,
+        "up_rate": null,
+        "mean_pct": null
+      },
+      "exploratory_sample_ready": false
+    },
+    {
+      "factor": "return_5d_pct",
+      "threshold": 0,
+      "high": {
+        "n": 0,
+        "up": 0,
+        "down": 0,
+        "up_rate": null,
+        "mean_pct": null
+      },
+      "low": {
+        "n": 0,
+        "up": 0,
+        "down": 0,
+        "up_rate": null,
+        "mean_pct": null
+      },
+      "exploratory_sample_ready": false
+    }
+  ],
+  "milestones": [
+    {
+      "threshold": 0.2,
+      "date_fraction_reached": false,
+      "matched_sample_ready": false,
+      "group_comparison_ready": false,
+      "may_review_weights": false,
+      "automatic_weight_change": false
+    },
+    {
+      "threshold": 0.6,
+      "date_fraction_reached": false,
+      "matched_sample_ready": false,
+      "group_comparison_ready": false,
+      "may_review_weights": false,
+      "automatic_weight_change": false
+    }
+  ],
+  "pending_past_events": [],
+  "invalid_snapshots": [],
+  "matched": [],
+  "limitations": [
+    "JPX scheduled-date proxy, not verified disclosure timestamp.",
+    "Event-window return cannot identify a causal earnings effect.",
+    "No backfilled pre-event forecast and no missing-data zero scores.",
+    "No automatic model reweighting or buy recommendations."
+  ]
+}

@@ -1,23 +1,23 @@
 {
-  "schema": 2,
-  "generated_at": "2026-10-23T06:13:05+09:00",
-  "description": "本人過去決算反応、出来高、同業反応、Yahoo EPS60日前比較および証券会社格付け履歴が揃った銘柄だけ表示。取れない項目を0点にしない。Yahooは二次データで証券会社原本未照合。",
-  "research_generated_at": "2026-10-23T00:07:09+09:00",
+  "schema": 1,
+  "generated_at": "2026-10-24T06:00:28+09:00",
+  "description": "4項目すべての根拠が確認できた銘柄だけ正式に採点。未取得を0点扱いしない。ニュース見出しのみではレーティング変更なしと認定しない。",
+  "research_generated_at": "2026-10-24T00:09:04+09:00",
   "coverage": {
     "screened": 20,
     "formally_ranked": 0,
-    "own_history_available": 5,
+    "own_history_available": 9,
     "volume_available": 20,
-    "peers_available": 16,
+    "peers_available": 15,
     "analyst_revision_verified": 0,
-    "eps_trend_60d_available": 0,
-    "broker_history_available": 0
+    "new_own_events": 7
   },
   "records": [],
   "audits": [
     {
       "code": "6337",
       "name": "テセック",
+      "earnings_date": "2026-10-27",
       "covered": {
         "own_earnings_reaction": false,
         "volume_supply_demand": true,
@@ -26,15 +26,30 @@
       },
       "own_events": 0,
       "peer_events": 1,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "6023",
+      "name": "ダイハツインフィニアース",
+      "earnings_date": "2026-10-28",
+      "covered": {
+        "own_earnings_reaction": false,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 0,
+      "peer_events": 11,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
     },
     {
       "code": "9733",
       "name": "ナガセ",
+      "earnings_date": "2026-10-27",
       "covered": {
         "own_earnings_reaction": true,
         "volume_supply_demand": true,
@@ -43,253 +58,14 @@
       },
       "own_events": 1,
       "peer_events": 4,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "6999",
-      "name": "ＫＯＡ",
-      "covered": {
-        "own_earnings_reaction": false,
-        "volume_supply_demand": true,
-        "recent_industry_peers": true,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 0,
-      "peer_events": 4,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "7102",
-      "name": "日本車輌製造",
-      "covered": {
-        "own_earnings_reaction": false,
-        "volume_supply_demand": true,
-        "recent_industry_peers": false,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 0,
-      "peer_events": 0,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "8707",
-      "name": "岩井コスモホールディングス",
-      "covered": {
-        "own_earnings_reaction": false,
-        "volume_supply_demand": true,
-        "recent_industry_peers": false,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 0,
-      "peer_events": 0,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "6629",
-      "name": "テクノホライゾン",
-      "covered": {
-        "own_earnings_reaction": false,
-        "volume_supply_demand": true,
-        "recent_industry_peers": true,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 0,
-      "peer_events": 4,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "7931",
-      "name": "未来工業",
-      "covered": {
-        "own_earnings_reaction": false,
-        "volume_supply_demand": true,
-        "recent_industry_peers": true,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 0,
-      "peer_events": 1,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "2268",
-      "name": "Ｂ－Ｒ　サーティワン　アイスクリーム",
-      "covered": {
-        "own_earnings_reaction": false,
-        "volume_supply_demand": true,
-        "recent_industry_peers": true,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 0,
-      "peer_events": 1,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "5532",
-      "name": "リアルゲイト",
-      "covered": {
-        "own_earnings_reaction": false,
-        "volume_supply_demand": true,
-        "recent_industry_peers": true,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 0,
-      "peer_events": 6,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "9029",
-      "name": "ヒガシホールディングス",
-      "covered": {
-        "own_earnings_reaction": false,
-        "volume_supply_demand": true,
-        "recent_industry_peers": true,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 0,
-      "peer_events": 2,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "3492",
-      "name": "ＭＩＲＡＲＴＨ不動産投資法人",
-      "covered": {
-        "own_earnings_reaction": false,
-        "volume_supply_demand": true,
-        "recent_industry_peers": true,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 0,
-      "peer_events": 1,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "2804",
-      "name": "ブルドックソース",
-      "covered": {
-        "own_earnings_reaction": false,
-        "volume_supply_demand": true,
-        "recent_industry_peers": true,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 0,
-      "peer_events": 7,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "2211",
-      "name": "不二家",
-      "covered": {
-        "own_earnings_reaction": true,
-        "volume_supply_demand": true,
-        "recent_industry_peers": false,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 1,
-      "peer_events": 0,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "4973",
-      "name": "日本高純度化学",
-      "covered": {
-        "own_earnings_reaction": true,
-        "volume_supply_demand": true,
-        "recent_industry_peers": true,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 1,
-      "peer_events": 2,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "4765",
-      "name": "ＳＢＩグローバルアセットマネジメント",
-      "covered": {
-        "own_earnings_reaction": true,
-        "volume_supply_demand": true,
-        "recent_industry_peers": true,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 1,
-      "peer_events": 1,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "3911",
-      "name": "Ａｉｍｉｎｇ",
-      "covered": {
-        "own_earnings_reaction": false,
-        "volume_supply_demand": true,
-        "recent_industry_peers": true,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 0,
-      "peer_events": 1,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
     },
     {
       "code": "7175",
       "name": "今村証券",
+      "earnings_date": "2026-10-27",
       "covered": {
         "own_earnings_reaction": false,
         "volume_supply_demand": true,
@@ -298,15 +74,78 @@
       },
       "own_events": 0,
       "peer_events": 0,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
     },
     {
-      "code": "9782",
-      "name": "ディーエムエス",
+      "code": "8871",
+      "name": "ゴールドクレスト",
+      "earnings_date": "2026-10-28",
+      "covered": {
+        "own_earnings_reaction": true,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 8,
+      "peer_events": 2,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 7,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "7241",
+      "name": "フタバ産業",
+      "earnings_date": "2026-10-28",
+      "covered": {
+        "own_earnings_reaction": true,
+        "volume_supply_demand": true,
+        "recent_industry_peers": false,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 1,
+      "peer_events": 0,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "2211",
+      "name": "不二家",
+      "earnings_date": "2026-10-26",
+      "covered": {
+        "own_earnings_reaction": true,
+        "volume_supply_demand": true,
+        "recent_industry_peers": false,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 1,
+      "peer_events": 0,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "7102",
+      "name": "日本車輌製造",
+      "earnings_date": "2026-10-27",
+      "covered": {
+        "own_earnings_reaction": false,
+        "volume_supply_demand": true,
+        "recent_industry_peers": false,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 0,
+      "peer_events": 0,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "3911",
+      "name": "Ａｉｍｉｎｇ",
+      "earnings_date": "2026-10-27",
       "covered": {
         "own_earnings_reaction": false,
         "volume_supply_demand": true,
@@ -315,15 +154,30 @@
       },
       "own_events": 0,
       "peer_events": 1,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
     },
     {
-      "code": "9629",
-      "name": "ピー・シー・エー",
+      "code": "2664",
+      "name": "カワチ薬品",
+      "earnings_date": "2026-10-28",
+      "covered": {
+        "own_earnings_reaction": true,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 1,
+      "peer_events": 2,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "3771",
+      "name": "システムリサーチ",
+      "earnings_date": "2026-10-28",
       "covered": {
         "own_earnings_reaction": false,
         "volume_supply_demand": true,
@@ -332,15 +186,14 @@
       },
       "own_events": 0,
       "peer_events": 5,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
     },
     {
       "code": "6230",
       "name": "ＳＡＮＥＩ",
+      "earnings_date": "2026-10-26",
       "covered": {
         "own_earnings_reaction": true,
         "volume_supply_demand": true,
@@ -349,11 +202,137 @@
       },
       "own_events": 1,
       "peer_events": 3,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "4973",
+      "name": "日本高純度化学",
+      "earnings_date": "2026-10-27",
+      "covered": {
+        "own_earnings_reaction": true,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 1,
+      "peer_events": 2,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "4765",
+      "name": "ＳＢＩグローバルアセットマネジメント",
+      "earnings_date": "2026-10-27",
+      "covered": {
+        "own_earnings_reaction": true,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 1,
+      "peer_events": 1,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "9782",
+      "name": "ディーエムエス",
+      "earnings_date": "2026-10-27",
+      "covered": {
+        "own_earnings_reaction": false,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 0,
+      "peer_events": 1,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "5532",
+      "name": "リアルゲイト",
+      "earnings_date": "2026-10-27",
+      "covered": {
+        "own_earnings_reaction": false,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 0,
+      "peer_events": 6,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "4479",
+      "name": "マクアケ",
+      "earnings_date": "2026-10-27",
+      "covered": {
+        "own_earnings_reaction": true,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 1,
+      "peer_events": 1,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "9629",
+      "name": "ピー・シー・エー",
+      "earnings_date": "2026-10-27",
+      "covered": {
+        "own_earnings_reaction": false,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 0,
+      "peer_events": 5,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "7299",
+      "name": "フジオーゼックス",
+      "earnings_date": "2026-10-27",
+      "covered": {
+        "own_earnings_reaction": false,
+        "volume_supply_demand": true,
+        "recent_industry_peers": false,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 0,
+      "peer_events": 0,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "7646",
+      "name": "ＰＬＡＮＴ",
+      "earnings_date": "2026-10-27",
+      "covered": {
+        "own_earnings_reaction": false,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 0,
+      "peer_events": 3,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
     }
   ]
 }

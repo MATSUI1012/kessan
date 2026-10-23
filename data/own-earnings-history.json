@@ -1,7 +1,7 @@
 {
-  "schema": 1,
-  "updated_at": "2026-10-24T01:48:43+09:00",
-  "method": "JPX予定日・Yahoo決算カレンダー・決算短信見出し内の適時開示日から本人の過去実績を取得。記事発信日をそのまま開示日として推定しない。",
+  "schema": 2,
+  "updated_at": "2026-10-24T02:37:40+09:00",
+  "method": "複数のニュースRSS、JPX決算予定日、Yahoo決算カレンダーの出典日付を株価と照合。単なる記事配信日から開示日を推定しない。",
   "coverage": {
     "candidates": 20,
     "with_history": 9,
@@ -12,13 +12,21 @@
       "code": "6337",
       "name": "テセック",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "6023",
       "name": "ダイハツインフィニアース",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "9733",
@@ -38,13 +46,21 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "7175",
       "name": "今村証券",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "8871",
@@ -64,7 +80,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "7241",
@@ -84,7 +104,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "2211",
@@ -104,19 +128,31 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "7102",
       "name": "日本車輌製造",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "3911",
       "name": "Ａｉｍｉｎｇ",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "2664",
@@ -136,13 +172,21 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "3771",
       "name": "システムリサーチ",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "6230",
@@ -162,7 +206,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "4973",
@@ -182,7 +230,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "4765",
@@ -202,19 +254,31 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "9782",
       "name": "ディーエムエス",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "5532",
       "name": "リアルゲイト",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "4479",
@@ -234,25 +298,41 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "9629",
       "name": "ピー・シー・エー",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "7299",
       "name": "フジオーゼックス",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "7646",
       "name": "ＰＬＡＮＴ",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     }
   ]
 }

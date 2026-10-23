@@ -1,16 +1,21 @@
 {
-  "schema": 2,
-  "description": "TDnet決算短信の掲載日付近の終値反応。開示時刻未確認、決算による因果効果や上昇確率は示さない。",
+  "schema": 1,
+  "description": "決算カレンダー日付付近の終値反応。実際の発表時刻未検証であり、決算による因果効果・上昇確率ではありません。",
   "sources": [
-    "TDnet決算短信開示一覧（掲載日）",
-    "既存の出典付き履歴"
+    "JPX保存済み発表予定日",
+    "Yahoo Finance決算カレンダー日付（取得可能な銘柄のみ）"
   ],
-  "event_date_count": 2,
+  "event_date_count": 8,
   "with_reactions": 0,
   "records": [
     {
-      "code": "3091",
-      "name": "ブロンコビリー",
+      "code": "6999",
+      "name": "ＫＯＡ",
+      "reactions": []
+    },
+    {
+      "code": "7931",
+      "name": "未来工業",
       "reactions": []
     },
     {
@@ -19,18 +24,13 @@
       "reactions": []
     },
     {
-      "code": "6999",
-      "name": "ＫＯＡ",
+      "code": "9029",
+      "name": "ヒガシホールディングス",
       "reactions": []
     },
     {
-      "code": "7102",
-      "name": "日本車輌製造",
-      "reactions": []
-    },
-    {
-      "code": "5204",
-      "name": "石塚硝子",
+      "code": "9733",
+      "name": "ナガセ",
       "reactions": []
     },
     {
@@ -44,8 +44,8 @@
       "reactions": []
     },
     {
-      "code": "7931",
-      "name": "未来工業",
+      "code": "2804",
+      "name": "ブルドックソース",
       "reactions": []
     },
     {
@@ -54,33 +54,13 @@
       "reactions": []
     },
     {
-      "code": "5532",
-      "name": "リアルゲイト",
-      "reactions": []
-    },
-    {
-      "code": "9029",
-      "name": "ヒガシホールディングス",
-      "reactions": []
-    },
-    {
-      "code": "3492",
-      "name": "ＭＩＲＡＲＴＨ不動産投資法人",
-      "reactions": []
-    },
-    {
-      "code": "2804",
-      "name": "ブルドックソース",
-      "reactions": []
-    },
-    {
       "code": "2211",
       "name": "不二家",
       "reactions": []
     },
     {
-      "code": "4765",
-      "name": "ＳＢＩグローバルアセットマネジメント",
+      "code": "7102",
+      "name": "日本車輌製造",
       "reactions": []
     },
     {
@@ -89,13 +69,8 @@
       "reactions": []
     },
     {
-      "code": "9782",
-      "name": "ディーエムエス",
-      "reactions": []
-    },
-    {
-      "code": "9629",
-      "name": "ピー・シー・エー",
+      "code": "3492",
+      "name": "ＭＩＲＡＲＴＨ不動産投資法人",
       "reactions": []
     },
     {
@@ -107,14 +82,32 @@
       "code": "4973",
       "name": "日本高純度化学",
       "reactions": []
+    },
+    {
+      "code": "4765",
+      "name": "ＳＢＩグローバルアセットマネジメント",
+      "reactions": []
+    },
+    {
+      "code": "9782",
+      "name": "ディーエムエス",
+      "reactions": []
+    },
+    {
+      "code": "5532",
+      "name": "リアルゲイト",
+      "reactions": []
+    },
+    {
+      "code": "4479",
+      "name": "マクアケ",
+      "reactions": []
+    },
+    {
+      "code": "9629",
+      "name": "ピー・シー・エー",
+      "reactions": []
     }
   ],
-  "generated_at": "2026-10-22T22:26:27+09:00",
-  "tdnet_days_requested": 152,
-  "tdnet_days_parsed": 0,
-  "tdnet_events_found": 0,
-  "tdnet_scan_diagnostics": {
-    "missing": 152,
-    "parsed": 0
-  }
+  "generated_at": "2026-10-23T21:49:17+09:00"
 }

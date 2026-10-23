@@ -1,16 +1,16 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-23T01:53:57+09:00",
+  "generated_at": "2026-10-24T01:54:27+09:00",
   "scope": "時価総額80億円以上1000億円未満。JPX決算予定日2026年10月〜11月。時価総額は現時点値であり過去再現ではない",
   "coverage": {
-    "frozen_snapshots": 960,
+    "frozen_snapshots": 1245,
     "invalid_snapshots": 0,
-    "outcome_keys": 169,
+    "outcome_keys": 172,
     "matched": 0,
-    "pending_past_events": 0,
-    "eligible_season": 1407,
-    "elapsed_events": 144,
-    "progress_fraction": 0.1023
+    "pending_past_events": 8,
+    "eligible_season": 1398,
+    "elapsed_events": 131,
+    "progress_fraction": 0.0937
   },
   "overall": {
     "n": 0,
@@ -77,7 +77,40 @@
       "automatic_weight_change": false
     }
   ],
-  "pending_past_events": [],
+  "pending_past_events": [
+    {
+      "code": "2268",
+      "earnings_date": "2026-10-23"
+    },
+    {
+      "code": "2804",
+      "earnings_date": "2026-10-23"
+    },
+    {
+      "code": "3492",
+      "earnings_date": "2026-10-23"
+    },
+    {
+      "code": "6629",
+      "earnings_date": "2026-10-23"
+    },
+    {
+      "code": "6999",
+      "earnings_date": "2026-10-23"
+    },
+    {
+      "code": "7931",
+      "earnings_date": "2026-10-23"
+    },
+    {
+      "code": "8707",
+      "earnings_date": "2026-10-23"
+    },
+    {
+      "code": "9029",
+      "earnings_date": "2026-10-23"
+    }
+  ],
   "invalid_snapshots": [],
   "matched": [],
   "limitations": [

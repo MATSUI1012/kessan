@@ -1,23 +1,24 @@
 {
-  "schema": 4,
-  "updated_at": "2026-10-23T04:01:59+09:00",
+  "schema": 1,
+  "updated_at": "2026-10-24T01:18:45+09:00",
+  "method": "候補自身の出典のある過去決算日付とYahoo日足を照合。記事掲載日は実際の発表日と異なる場合がある。",
   "coverage": {
     "candidates": 20,
-    "with_history": 5,
-    "events": 5,
-    "new_events": 0
+    "with_history": 9,
+    "events": 9
   },
-  "method": "IR BANK決算短信の開示履歴に明記された日付とYahoo日足を照合。未確認は推測しない。",
   "records": [
     {
       "code": "6337",
       "name": "テセック",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/6337/ir: HTTP 403",
-        "https://irbank.net/6337: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "6023",
+      "name": "ダイハツインフィニアース",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "9733",
@@ -37,111 +38,53 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/9733/ir: HTTP 403",
-        "https://irbank.net/9733: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
-      "code": "6999",
-      "name": "ＫＯＡ",
+      "code": "7175",
+      "name": "今村証券",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/6999/ir: HTTP 403",
-        "https://irbank.net/6999: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
-      "code": "7102",
-      "name": "日本車輌製造",
-      "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/7102/ir: HTTP 403",
-        "https://irbank.net/7102: HTTP 403"
+      "code": "8871",
+      "name": "ゴールドクレスト",
+      "events": [
+        {
+          "event_date": "2026-05-14",
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE50OERnNjlzMUJfa3FnUkdQbVVEVG1lRWVOQmJWRlJvOGtIeTJyTmR3d0R6ZGZCelNDVTNfOHU0Y0xKUE52Z3NXUDBHRklBeWdWak4yQmhmZXNMZjVmclZ3THhIdmY3Y3lMUVE?oc=5",
+          "headline": "ゴールドクレスト[8871]：2026年3月期決算短信〔日本基準〕（連結） 2026年5月14日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-05-13",
+          "baseline_close": 3305.0,
+          "next_session_date": "2026-05-15",
+          "next_close_pct": 10.44,
+          "after_3d_pct": 10.74,
+          "after_5d_pct": 8.47,
+          "price_source": "Yahoo Finance 日足"
+        }
       ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
-      "code": "8707",
-      "name": "岩井コスモホールディングス",
-      "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/8707/ir: HTTP 403",
-        "https://irbank.net/8707: HTTP 403"
+      "code": "7241",
+      "name": "フタバ産業",
+      "events": [
+        {
+          "event_date": "2026-07-30",
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE54QktjMk1IMkw0a1ZQbVRfSWFCaXQ0c0xWY3JTb2VVbmFxT2ZYNnNveDI3YS1CR3QyUVBVR2JGZ2haN3JieUNpemJrNmRnRWpFNlNvWHJUU21MSXVHcTZHYUE0SHFsV0dwMHc?oc=5",
+          "headline": "フタバ産業[7241]：2027年３月期 第１四半期決算短信〔日本基準〕(連結) 2026年7月30日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-07-29",
+          "baseline_close": 1038.0,
+          "next_session_date": "2026-07-31",
+          "next_close_pct": -0.1,
+          "after_3d_pct": -0.87,
+          "after_5d_pct": 0.39,
+          "price_source": "Yahoo Finance 日足"
+        }
       ],
-      "new_events": 0
-    },
-    {
-      "code": "6629",
-      "name": "テクノホライゾン",
-      "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/6629/ir: HTTP 403",
-        "https://irbank.net/6629: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "7931",
-      "name": "未来工業",
-      "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/7931/ir: HTTP 403",
-        "https://irbank.net/7931: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "2268",
-      "name": "Ｂ－Ｒ　サーティワン　アイスクリーム",
-      "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/2268/ir: HTTP 403",
-        "https://irbank.net/2268: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "5532",
-      "name": "リアルゲイト",
-      "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/5532/ir: HTTP 403",
-        "https://irbank.net/5532: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "9029",
-      "name": "ヒガシホールディングス",
-      "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/9029/ir: HTTP 403",
-        "https://irbank.net/9029: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "3492",
-      "name": "ＭＩＲＡＲＴＨ不動産投資法人",
-      "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/3492/ir: HTTP 403",
-        "https://irbank.net/3492: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "2804",
-      "name": "ブルドックソース",
-      "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/2804/ir: HTTP 403",
-        "https://irbank.net/2804: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "2211",
@@ -161,99 +104,45 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/2211/ir: HTTP 403",
-        "https://irbank.net/2211: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
-      "code": "4973",
-      "name": "日本高純度化学",
-      "events": [
-        {
-          "event_date": "2026-07-24",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9aYS03amY5RWtrUzdEMnRjSmtaem8zbEtkR1dqMmtGcGtVZzNkRnZ6VkRTWVE2TVp6QUx1UUU3bmxCUzJXRUVpOFR5cUxJV0liOEEzUXgtbkFmajhyZG1aR0tIRHVXNl9TM3c?oc=5",
-          "headline": "日本高純度化学[4973]：2027年３月期 第１四半期決算短信〔日本基準〕（非連結） 2026年7月24日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "baseline_date": "2026-07-23",
-          "baseline_close": 5140.0,
-          "next_session_date": "2026-07-27",
-          "next_close_pct": -13.13,
-          "after_3d_pct": -17.51,
-          "after_5d_pct": -16.63,
-          "price_source": "Yahoo Finance 日足"
-        }
-      ],
-      "archive_diagnostics": [
-        "https://irbank.net/4973/ir: HTTP 403",
-        "https://irbank.net/4973: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "4765",
-      "name": "ＳＢＩグローバルアセットマネジメント",
-      "events": [
-        {
-          "event_date": "2026-07-27",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE84SS1fS1FBOXVYdXA0SWs2emtTdnVQV2xuLVpRYUdlekw5YzRMVUdzUXBnRVNHQm9vdUNLNTZPN01wWTd2SjIzSzFXUTNvTm9NZ2NrSG9TX0JnbGgwQi1zRTN1Q0hlUFRDLWc?oc=5",
-          "headline": "ＳＢＩグローバルアセットマネジメント[4765]：2027年３月期 第１四半期決算短信〔日本基準〕（連結） 2026年7月27日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "baseline_date": "2026-07-24",
-          "baseline_close": 567.0,
-          "next_session_date": "2026-07-28",
-          "next_close_pct": 3.7,
-          "after_3d_pct": 11.29,
-          "after_5d_pct": 7.76,
-          "price_source": "Yahoo Finance 日足"
-        }
-      ],
-      "archive_diagnostics": [
-        "https://irbank.net/4765/ir: HTTP 403",
-        "https://irbank.net/4765: HTTP 403"
-      ],
-      "new_events": 0
+      "code": "7102",
+      "name": "日本車輌製造",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "3911",
       "name": "Ａｉｍｉｎｇ",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/3911/ir: HTTP 403",
-        "https://irbank.net/3911: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
-      "code": "7175",
-      "name": "今村証券",
-      "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/7175/ir: HTTP 403",
-        "https://irbank.net/7175: HTTP 403"
+      "code": "2664",
+      "name": "カワチ薬品",
+      "events": [
+        {
+          "event_date": "2026-07-29",
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9WbXZkU0JYWUNiRy1xOGhmdTI0OWhKQXFaX3B6UENyY05CbWpUdFhPeDdFODlRWnhsU25CU3NXdHJ5WWdEY2RURDc2WFhaU0l1V2hSTWQ4Tk94RS1ENmhMUjMzZHplV3hKQ1E?oc=5",
+          "headline": "カワチ薬品[2664]：2027年３月期 第１四半期決算短信〔日本基準〕（連結） 2026年7月29日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-07-28",
+          "baseline_close": 3355.0,
+          "next_session_date": "2026-07-30",
+          "next_close_pct": 1.79,
+          "after_3d_pct": -1.94,
+          "after_5d_pct": 4.17,
+          "price_source": "Yahoo Finance 日足"
+        }
       ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
-      "code": "9782",
-      "name": "ディーエムエス",
+      "code": "3771",
+      "name": "システムリサーチ",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/9782/ir: HTTP 403",
-        "https://irbank.net/9782: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "9629",
-      "name": "ピー・シー・エー",
-      "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/9629/ir: HTTP 403",
-        "https://irbank.net/9629: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "6230",
@@ -273,11 +162,97 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/6230/ir: HTTP 403",
-        "https://irbank.net/6230: HTTP 403"
+      "status": "過去日付と翌営業日の終値を照合"
+    },
+    {
+      "code": "4973",
+      "name": "日本高純度化学",
+      "events": [
+        {
+          "event_date": "2026-07-24",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9aYS03amY5RWtrUzdEMnRjSmtaem8zbEtkR1dqMmtGcGtVZzNkRnZ6VkRTWVE2TVp6QUx1UUU3bmxCUzJXRUVpOFR5cUxJV0liOEEzUXgtbkFmajhyZG1aR0tIRHVXNl9TM3c?oc=5",
+          "headline": "日本高純度化学[4973]：2027年３月期 第１四半期決算短信〔日本基準〕（非連結） 2026年7月24日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-07-23",
+          "baseline_close": 5140.0,
+          "next_session_date": "2026-07-27",
+          "next_close_pct": -13.13,
+          "after_3d_pct": -17.51,
+          "after_5d_pct": -16.63,
+          "price_source": "Yahoo Finance 日足"
+        }
       ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
+    },
+    {
+      "code": "4765",
+      "name": "ＳＢＩグローバルアセットマネジメント",
+      "events": [
+        {
+          "event_date": "2026-07-27",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE84SS1fS1FBOXVYdXA0SWs2emtTdnVQV2xuLVpRYUdlekw5YzRMVUdzUXBnRVNHQm9vdUNLNTZPN01wWTd2SjIzSzFXUTNvTm9NZ2NrSG9TX0JnbGgwQi1zRTN1Q0hlUFRDLWc?oc=5",
+          "headline": "ＳＢＩグローバルアセットマネジメント[4765]：2027年３月期 第１四半期決算短信〔日本基準〕（連結） 2026年7月27日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-07-24",
+          "baseline_close": 567.0,
+          "next_session_date": "2026-07-28",
+          "next_close_pct": 3.7,
+          "after_3d_pct": 11.29,
+          "after_5d_pct": 7.76,
+          "price_source": "Yahoo Finance 日足"
+        }
+      ],
+      "status": "過去日付と翌営業日の終値を照合"
+    },
+    {
+      "code": "9782",
+      "name": "ディーエムエス",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "5532",
+      "name": "リアルゲイト",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "4479",
+      "name": "マクアケ",
+      "events": [
+        {
+          "event_date": "2026-07-28",
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5HVGdKRjJ0cF9HNlppNjBibEc5dTZjMlVCekotX1U5ZHUwREZ5eUpfNHNUZzRnSVVldGZIVTFIUU9CRXhXbUdtTmRhVHhDTmp0eFJvSWlndFIzcE1DVGlqLXJsemp3cExreWc?oc=5",
+          "headline": "マクアケ[4479]：2026年９月期 第３四半期決算短信〔日本基準〕（非連結） 2026年7月28日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-07-27",
+          "baseline_close": 1001.0,
+          "next_session_date": "2026-07-29",
+          "next_close_pct": -14.59,
+          "after_3d_pct": -15.98,
+          "after_5d_pct": -15.18,
+          "price_source": "Yahoo Finance 日足"
+        }
+      ],
+      "status": "過去日付と翌営業日の終値を照合"
+    },
+    {
+      "code": "9629",
+      "name": "ピー・シー・エー",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "7299",
+      "name": "フジオーゼックス",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "7646",
+      "name": "ＰＬＡＮＴ",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "updated_at": "2026-10-24T01:18:45+09:00",
-  "method": "候補自身の出典のある過去決算日付とYahoo日足を照合。記事掲載日は実際の発表日と異なる場合がある。",
+  "updated_at": "2026-10-24T01:48:43+09:00",
+  "method": "JPX予定日・Yahoo決算カレンダー・決算短信見出し内の適時開示日から本人の過去実績を取得。記事発信日をそのまま開示日として推定しない。",
   "coverage": {
     "candidates": 20,
     "with_history": 9,
@@ -52,7 +52,7 @@
       "events": [
         {
           "event_date": "2026-05-14",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE50OERnNjlzMUJfa3FnUkdQbVVEVG1lRWVOQmJWRlJvOGtIeTJyTmR3d0R6ZGZCelNDVTNfOHU0Y0xKUE52Z3NXUDBHRklBeWdWak4yQmhmZXNMZjVmclZ3THhIdmY3Y3lMUVE?oc=5",
           "headline": "ゴールドクレスト[8871]：2026年3月期決算短信〔日本基準〕（連結） 2026年5月14日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-05-13",
@@ -72,7 +72,7 @@
       "events": [
         {
           "event_date": "2026-07-30",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE54QktjMk1IMkw0a1ZQbVRfSWFCaXQ0c0xWY3JTb2VVbmFxT2ZYNnNveDI3YS1CR3QyUVBVR2JGZ2haN3JieUNpemJrNmRnRWpFNlNvWHJUU21MSXVHcTZHYUE0SHFsV0dwMHc?oc=5",
           "headline": "フタバ産業[7241]：2027年３月期 第１四半期決算短信〔日本基準〕(連結) 2026年7月30日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-07-29",
@@ -124,7 +124,7 @@
       "events": [
         {
           "event_date": "2026-07-29",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9WbXZkU0JYWUNiRy1xOGhmdTI0OWhKQXFaX3B6UENyY05CbWpUdFhPeDdFODlRWnhsU25CU3NXdHJ5WWdEY2RURDc2WFhaU0l1V2hSTWQ4Tk94RS1ENmhMUjMzZHplV3hKQ1E?oc=5",
           "headline": "カワチ薬品[2664]：2027年３月期 第１四半期決算短信〔日本基準〕（連結） 2026年7月29日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-07-28",
@@ -222,7 +222,7 @@
       "events": [
         {
           "event_date": "2026-07-28",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5HVGdKRjJ0cF9HNlppNjBibEc5dTZjMlVCekotX1U5ZHUwREZ5eUpfNHNUZzRnSVVldGZIVTFIUU9CRXhXbUdtTmRhVHhDTmp0eFJvSWlndFIzcE1DVGlqLXJsemp3cExreWc?oc=5",
           "headline": "マクアケ[4479]：2026年９月期 第３四半期決算短信〔日本基準〕（非連結） 2026年7月28日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-07-27",

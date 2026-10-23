@@ -1,13 +1,22 @@
 {
   "schema": 1,
-  "updated_at": "2026-10-23T00:22:38+09:00",
-  "window_start": "2026-08-23",
-  "window_end": "2026-10-23",
+  "updated_at": "2026-10-24T00:22:20+09:00",
+  "window_start": "2026-08-24",
+  "window_end": "2026-10-24",
   "description": "ニュース見出しを用いた暫定検出。原文の格付け変更・コンセンサス時系列を検証したものではない。目標株価の引き上げ単独では加点しない。",
   "records": [
     {
       "code": "6337",
       "name": "テセック",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
+      "code": "6023",
+      "name": "ダイハツインフィニアース",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,
@@ -24,8 +33,35 @@
       "status": "確認できる上方修正記事なし"
     },
     {
-      "code": "6999",
-      "name": "ＫＯＡ",
+      "code": "7175",
+      "name": "今村証券",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
+      "code": "8871",
+      "name": "ゴールドクレスト",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
+      "code": "7241",
+      "name": "フタバ産業",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
+      "code": "2211",
+      "name": "不二家",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,
@@ -42,8 +78,8 @@
       "status": "確認できる上方修正記事なし"
     },
     {
-      "code": "8707",
-      "name": "岩井コスモホールディングス",
+      "code": "3911",
+      "name": "Ａｉｍｉｎｇ",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,
@@ -51,8 +87,8 @@
       "status": "確認できる上方修正記事なし"
     },
     {
-      "code": "6629",
-      "name": "テクノホライゾン",
+      "code": "2664",
+      "name": "カワチ薬品",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,
@@ -60,8 +96,8 @@
       "status": "確認できる上方修正記事なし"
     },
     {
-      "code": "7931",
-      "name": "未来工業",
+      "code": "3771",
+      "name": "システムリサーチ",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,
@@ -69,53 +105,8 @@
       "status": "確認できる上方修正記事なし"
     },
     {
-      "code": "2268",
-      "name": "Ｂ－Ｒ　サーティワン　アイスクリーム",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
-      "code": "5532",
-      "name": "リアルゲイト",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
-      "code": "9029",
-      "name": "ヒガシホールディングス",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
-      "code": "3492",
-      "name": "ＭＩＲＡＲＴＨ不動産投資法人",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
-      "code": "2804",
-      "name": "ブルドックソース",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
-      "code": "2211",
-      "name": "不二家",
+      "code": "6230",
+      "name": "ＳＡＮＥＩ",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,
@@ -141,26 +132,26 @@
       "status": "確認できる上方修正記事なし"
     },
     {
-      "code": "3911",
-      "name": "Ａｉｍｉｎｇ",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
-      "code": "7175",
-      "name": "今村証券",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
       "code": "9782",
       "name": "ディーエムエス",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
+      "code": "5532",
+      "name": "リアルゲイト",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
+      "code": "4479",
+      "name": "マクアケ",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,
@@ -177,8 +168,17 @@
       "status": "確認できる上方修正記事なし"
     },
     {
-      "code": "6230",
-      "name": "ＳＡＮＥＩ",
+      "code": "7299",
+      "name": "フジオーゼックス",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
+      "code": "7646",
+      "name": "ＰＬＡＮＴ",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,

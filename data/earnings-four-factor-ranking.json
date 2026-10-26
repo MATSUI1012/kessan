@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-27T01:32:54+09:00",
+  "generated_at": "2026-10-27T01:56:17+09:00",
   "description": "4項目の調査順位。本人の過去決算反応は出典のある発表予定日・カレンダー日・記事掲載日付近の株価変化。実際の発表時刻・変動原因は未確認。未取得0点は悪材料ではない。",
   "weights": {
     "own_earnings_reaction": 3,
@@ -232,14 +232,20 @@
         "recent_industry_peers": 2,
         "analyst_upgrades_61d": 0
       },
-      "self_history_count": 1,
-      "self_history_positive": 0,
+      "self_history_count": 2,
+      "self_history_positive": 1,
       "self_history_events": [
         {
           "date": "2026-07-27",
           "next_close_pct": -0.28,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9ObXlvMGVEdzFnR2VBUzRBUHEtdjRYd1Y2X3NXeklxMU0wOUt1R2gySFA5TFRJUFdlTHF3MFFpQU5hR3FDX01jTnVNSTFkNmZNbTZBQ2FYamV2M2xxR1I1V3ItOG9ESzIxNFE?oc=5"
+        },
+        {
+          "date": "2026-04-24",
+          "next_close_pct": 3.09,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB0TkNHMWIxaDAwQWVqVmMtWXFtSDlmUzZZa2RKd1BLWWZuUjhwTWFJalhKMmY3YWpKVUNuYlBXSjlOSXpjN19pdkg0cHBVRE04Tmx4aUNOYTFYTVFtdmk3bHBranBjNWdOclE?oc=5"
         }
       ],
       "industry": "Specialty Chemicals",
@@ -952,7 +958,7 @@
         {
           "date": "2026-04-27",
           "next_close_pct": 5.32,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ZUjlVa1VwRTFSUUo1OTBJbXM2RXFwZXdvYzRLMEhtdjBubUFWLU81TXFkSmlQOEY0djRMSmdVVjNrNnpaVEYyZEl3LVZlMkpNNGNEQXN6VE5zNDA0YUdJQWc4QmJHSWVHZ1E?oc=5"
         }
       ],

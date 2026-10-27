@@ -1,23 +1,23 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-27T02:02:07+09:00",
+  "generated_at": "2026-10-28T02:03:18+09:00",
   "scope": "時価総額80億円以上1000億円未満。JPX決算予定日2026年10月〜11月。時価総額は現時点値であり過去再現ではない",
   "coverage": {
-    "frozen_snapshots": 1282,
+    "frozen_snapshots": 1278,
     "invalid_snapshots": 0,
-    "outcome_keys": 180,
-    "matched": 8,
-    "pending_past_events": 2,
-    "eligible_season": 1383,
-    "elapsed_events": 111,
-    "progress_fraction": 0.0803
+    "outcome_keys": 182,
+    "matched": 10,
+    "pending_past_events": 13,
+    "eligible_season": 1382,
+    "elapsed_events": 116,
+    "progress_fraction": 0.0839
   },
   "overall": {
-    "n": 8,
+    "n": 10,
     "up": 2,
-    "down": 6,
-    "up_rate": 0.25,
-    "mean_pct": -1.69
+    "down": 8,
+    "up_rate": 0.2,
+    "mean_pct": -2.41
   },
   "checks": [
     {
@@ -31,11 +31,11 @@
         "mean_pct": -0.1
       },
       "low": {
-        "n": 5,
+        "n": 7,
         "up": 1,
-        "down": 4,
-        "up_rate": 0.2,
-        "mean_pct": -2.644
+        "down": 6,
+        "up_rate": 0.1429,
+        "mean_pct": -3.4
       },
       "exploratory_sample_ready": false
     },
@@ -43,18 +43,18 @@
       "factor": "return_5d_pct",
       "threshold": 0,
       "high": {
-        "n": 1,
+        "n": 2,
         "up": 0,
-        "down": 1,
+        "down": 2,
         "up_rate": 0.0,
-        "mean_pct": -0.12
+        "mean_pct": -4.52
       },
       "low": {
-        "n": 7,
+        "n": 8,
         "up": 2,
-        "down": 5,
-        "up_rate": 0.2857,
-        "mean_pct": -1.914
+        "down": 6,
+        "up_rate": 0.25,
+        "mean_pct": -1.882
       },
       "exploratory_sample_ready": false
     }
@@ -79,12 +79,56 @@
   ],
   "pending_past_events": [
     {
-      "code": "2211",
-      "earnings_date": "2026-10-26"
+      "code": "3911",
+      "earnings_date": "2026-10-27"
     },
     {
-      "code": "6230",
-      "earnings_date": "2026-10-26"
+      "code": "4479",
+      "earnings_date": "2026-10-27"
+    },
+    {
+      "code": "4765",
+      "earnings_date": "2026-10-27"
+    },
+    {
+      "code": "4973",
+      "earnings_date": "2026-10-27"
+    },
+    {
+      "code": "5532",
+      "earnings_date": "2026-10-27"
+    },
+    {
+      "code": "6337",
+      "earnings_date": "2026-10-27"
+    },
+    {
+      "code": "7102",
+      "earnings_date": "2026-10-27"
+    },
+    {
+      "code": "7175",
+      "earnings_date": "2026-10-27"
+    },
+    {
+      "code": "7299",
+      "earnings_date": "2026-10-27"
+    },
+    {
+      "code": "7646",
+      "earnings_date": "2026-10-27"
+    },
+    {
+      "code": "9629",
+      "earnings_date": "2026-10-27"
+    },
+    {
+      "code": "9733",
+      "earnings_date": "2026-10-27"
+    },
+    {
+      "code": "9782",
+      "earnings_date": "2026-10-27"
     }
   ],
   "invalid_snapshots": [],
@@ -100,7 +144,7 @@
       },
       "next_session_date": "2026-10-26",
       "next_close_pct": -0.12,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -114,7 +158,7 @@
       },
       "next_session_date": "2026-10-26",
       "next_close_pct": -2.86,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -128,7 +172,7 @@
       },
       "next_session_date": "2026-10-26",
       "next_close_pct": 0.66,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx"
     },
     {
@@ -142,7 +186,7 @@
       },
       "next_session_date": "2026-10-26",
       "next_close_pct": -2.6,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -156,7 +200,7 @@
       },
       "next_session_date": "2026-10-26",
       "next_close_pct": 6.92,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -170,7 +214,7 @@
       },
       "next_session_date": "2026-10-26",
       "next_close_pct": -4.39,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -184,7 +228,7 @@
       },
       "next_session_date": "2026-10-26",
       "next_close_pct": -4.62,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -198,6 +242,34 @@
       },
       "next_session_date": "2026-10-26",
       "next_close_pct": -6.51,
+      "ohlc_complete": true,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "2211",
+      "name": "不二家",
+      "earnings_date": "2026-10-26",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.1285,
+        "return_5d_pct": -0.279
+      },
+      "next_session_date": "2026-10-27",
+      "next_close_pct": -1.66,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "6230",
+      "name": "ＳＡＮＥＩ",
+      "earnings_date": "2026-10-26",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.2183,
+        "return_5d_pct": 0.14
+      },
+      "next_session_date": "2026-10-27",
+      "next_close_pct": -8.92,
       "ohlc_complete": false,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     }

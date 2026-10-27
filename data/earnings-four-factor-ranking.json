@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-28T00:50:25+09:00",
-  "description": "4項目の調査優先順位。未確認は0点であり悪材料を意味しない。JPX予定日ベースの株価反応は実際の決算発表時刻未確認。業種はYahoo掲載分類。確率・買い推奨ではない。",
+  "generated_at": "2026-10-28T01:29:13+09:00",
+  "description": "4項目の調査順位。本人の過去決算反応は出典のある発表予定日・カレンダー日・記事掲載日付近の株価変化。実際の発表時刻・変動原因は未確認。未取得0点は悪材料ではない。",
   "weights": {
     "own_earnings_reaction": 3,
     "volume_supply_demand": 3,
@@ -10,7 +10,7 @@
   },
   "coverage": {
     "total": 20,
-    "own_history": 0,
+    "own_history": 6,
     "industry_identified": 20,
     "peer_reactions": 14,
     "upgrades": 0
@@ -28,9 +28,22 @@
         "recent_industry_peers": 2,
         "analyst_upgrades_61d": 0
       },
-      "self_history_count": 0,
+      "self_history_count": 2,
       "self_history_positive": 0,
-      "self_history_events": [],
+      "self_history_events": [
+        {
+          "date": "2026-06-23",
+          "next_close_pct": -0.05,
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBYT2pfNkljVkM1RXFNQ1V1QWljSmFKWVVMeXg0a1RZVEVvcHYwdnFjVEd2RzM0Y3lCUnVWY3JnQkJ4eDdmdm4zX3FZY3l5VHJLZXNEa2VrNFk?oc=5"
+        },
+        {
+          "date": "2025-06-25",
+          "next_close_pct": -1.08,
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1WU0w5aVlySHdpd0p1RG10Y1JRNGlWdGlfS2VKNTFOQm5qeWg2M3U2Wkd2Nlh4emlIdWpGUVFIeTJfdGowajY3bzloZ3lzb01TYVVzTl9ZejI?oc=5"
+        }
+      ],
       "industry": "Information Technology Services",
       "sector": "Technology",
       "industry_source": "Yahoo Finance company profile",
@@ -71,7 +84,7 @@
       "volume_ratio": 1.4,
       "upgrade_events": [],
       "data_coverage": {
-        "self_history": false,
+        "self_history": true,
         "industry_peer_reactions": true,
         "industry_identified": true,
         "volume_ratio": true,
@@ -90,9 +103,22 @@
         "recent_industry_peers": 2,
         "analyst_upgrades_61d": 0
       },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
+      "self_history_count": 2,
+      "self_history_positive": 1,
+      "self_history_events": [
+        {
+          "date": "2026-07-27",
+          "next_close_pct": -0.28,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9ObXlvMGVEdzFnR2VBUzRBUHEtdjRYd1Y2X3NXeklxMU0wOUt1R2gySFA5TFRJUFdlTHF3MFFpQU5hR3FDX01jTnVNSTFkNmZNbTZBQ2FYamV2M2xxR1I1V3ItOG9ESzIxNFE?oc=5"
+        },
+        {
+          "date": "2026-04-24",
+          "next_close_pct": 3.09,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB0TkNHMWIxaDAwQWVqVmMtWXFtSDlmUzZZa2RKd1BLWWZuUjhwTWFJalhKMmY3YWpKVUNuYlBXSjlOSXpjN19pdkg0cHBVRE04Tmx4aUNOYTFYTVFtdmk3bHBranBjNWdOclE?oc=5"
+        }
+      ],
       "industry": "Specialty Chemicals",
       "sector": "Basic Materials",
       "industry_source": "Yahoo Finance company profile",
@@ -115,7 +141,109 @@
       "volume_ratio": 1.26,
       "upgrade_events": [],
       "data_coverage": {
-        "self_history": false,
+        "self_history": true,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "2664",
+      "name": "カワチ薬品",
+      "earnings_date": "2026-10-28",
+      "market_cap_oku": 893.12,
+      "score_total": 2,
+      "score_components": {
+        "own_earnings_reaction": 1,
+        "volume_supply_demand": 1,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 1,
+      "self_history_positive": 1,
+      "self_history_events": [
+        {
+          "date": "2026-07-29",
+          "next_close_pct": 1.79,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9WbXZkU0JYWUNiRy1xOGhmdTI0OWhKQXFaX3B6UENyY05CbWpUdFhPeDdFODlRWnhsU25CU3NXdHJ5WWdEY2RURDc2WFhaU0l1V2hSTWQ4Tk94RS1ENmhMUjMzZHplV3hKQ1E?oc=5"
+        }
+      ],
+      "industry": "Pharmaceutical Retailers",
+      "sector": "Healthcare",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 2,
+      "peer_positive_count": 0,
+      "peer_events": [
+        {
+          "code": "2934",
+          "name": "ジェイフロンティア",
+          "date": "2026-10-15",
+          "next_close_pct": -1.42
+        },
+        {
+          "code": "7679",
+          "name": "薬王堂ホールディングス",
+          "date": "2026-10-05",
+          "next_close_pct": -1.64
+        }
+      ],
+      "volume_ratio": 1.27,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": true,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "8871",
+      "name": "ゴールドクレスト",
+      "earnings_date": "2026-10-28",
+      "market_cap_oku": 954.84,
+      "score_total": 2,
+      "score_components": {
+        "own_earnings_reaction": 1,
+        "volume_supply_demand": 1,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 1,
+      "self_history_positive": 1,
+      "self_history_events": [
+        {
+          "date": "2026-05-14",
+          "next_close_pct": 10.44,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE50OERnNjlzMUJfa3FnUkdQbVVEVG1lRWVOQmJWRlJvOGtIeTJyTmR3d0R6ZGZCelNDVTNfOHU0Y0xKUE52Z3NXUDBHRklBeWdWak4yQmhmZXNMZjVmclZ3THhIdmY3Y3lMUVE?oc=5"
+        }
+      ],
+      "industry": "Real Estate - Development",
+      "sector": "Real Estate",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 2,
+      "peer_positive_count": 0,
+      "peer_events": [
+        {
+          "code": "8887",
+          "name": "シーラホールディングス",
+          "date": "2026-10-15",
+          "next_close_pct": -2.57
+        },
+        {
+          "code": "8931",
+          "name": "和田興産",
+          "date": "2026-10-02",
+          "next_close_pct": -1.9
+        }
+      ],
+      "volume_ratio": 1.31,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": true,
         "industry_peer_reactions": true,
         "industry_identified": true,
         "volume_ratio": true,
@@ -408,94 +536,6 @@
       }
     },
     {
-      "code": "2664",
-      "name": "カワチ薬品",
-      "earnings_date": "2026-10-28",
-      "market_cap_oku": 893.12,
-      "score_total": 1,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 1,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Pharmaceutical Retailers",
-      "sector": "Healthcare",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 2,
-      "peer_positive_count": 0,
-      "peer_events": [
-        {
-          "code": "2934",
-          "name": "ジェイフロンティア",
-          "date": "2026-10-15",
-          "next_close_pct": -1.42
-        },
-        {
-          "code": "7679",
-          "name": "薬王堂ホールディングス",
-          "date": "2026-10-05",
-          "next_close_pct": -1.64
-        }
-      ],
-      "volume_ratio": 1.27,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
-      "code": "8871",
-      "name": "ゴールドクレスト",
-      "earnings_date": "2026-10-28",
-      "market_cap_oku": 954.84,
-      "score_total": 1,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 1,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Real Estate - Development",
-      "sector": "Real Estate",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 2,
-      "peer_positive_count": 0,
-      "peer_events": [
-        {
-          "code": "8887",
-          "name": "シーラホールディングス",
-          "date": "2026-10-15",
-          "next_close_pct": -2.57
-        },
-        {
-          "code": "8931",
-          "name": "和田興産",
-          "date": "2026-10-02",
-          "next_close_pct": -1.9
-        }
-      ],
-      "volume_ratio": 1.31,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
       "code": "5992",
       "name": "中央発條",
       "earnings_date": "2026-10-28",
@@ -521,6 +561,57 @@
       "data_coverage": {
         "self_history": false,
         "industry_peer_reactions": false,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "6955",
+      "name": "ＦＤＫ",
+      "earnings_date": "2026-10-28",
+      "market_cap_oku": 131.46,
+      "score_total": 0,
+      "score_components": {
+        "own_earnings_reaction": 0,
+        "volume_supply_demand": 0,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 1,
+      "self_history_positive": 0,
+      "self_history_events": [
+        {
+          "date": "2026-07-29",
+          "next_close_pct": -0.51,
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5keXdmWTlHU1ozSjd6NXVQZkl3SWp2dDZvNWc0Q3dWZnlrVnI1V1JzS2hqUTB3SGtrSmJ2MVNDTTl2YUVtTElvcnlzOHY1NV80c3dZLUxBb1BzZUF5WkxYUlphTm9uN0Nidmc?oc=5"
+        }
+      ],
+      "industry": "Electrical Equipment & Parts",
+      "sector": "Industrials",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 2,
+      "peer_positive_count": 1,
+      "peer_events": [
+        {
+          "code": "7931",
+          "name": "未来工業",
+          "date": "2026-10-23",
+          "next_close_pct": -4.39
+        },
+        {
+          "code": "6668",
+          "name": "アドテック　プラズマ　テクノロジー",
+          "date": "2026-10-09",
+          "next_close_pct": 20.82
+        }
+      ],
+      "volume_ratio": 1.14,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": true,
+        "industry_peer_reactions": true,
         "industry_identified": true,
         "volume_ratio": true,
         "upgrade_news_checked": true
@@ -695,10 +786,10 @@
       }
     },
     {
-      "code": "6955",
-      "name": "ＦＤＫ",
+      "code": "7241",
+      "name": "フタバ産業",
       "earnings_date": "2026-10-28",
-      "market_cap_oku": 131.46,
+      "market_cap_oku": 896.6,
       "score_total": 0,
       "score_components": {
         "own_earnings_reaction": 0,
@@ -706,33 +797,33 @@
         "recent_industry_peers": 0,
         "analyst_upgrades_61d": 0
       },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Electrical Equipment & Parts",
-      "sector": "Industrials",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 2,
-      "peer_positive_count": 1,
-      "peer_events": [
+      "self_history_count": 2,
+      "self_history_positive": 1,
+      "self_history_events": [
         {
-          "code": "7931",
-          "name": "未来工業",
-          "date": "2026-10-23",
-          "next_close_pct": -4.39
+          "date": "2026-07-30",
+          "next_close_pct": -0.1,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE54QktjMk1IMkw0a1ZQbVRfSWFCaXQ0c0xWY3JTb2VVbmFxT2ZYNnNveDI3YS1CR3QyUVBVR2JGZ2haN3JieUNpemJrNmRnRWpFNlNvWHJUU21MSXVHcTZHYUE0SHFsV0dwMHc?oc=5"
         },
         {
-          "code": "6668",
-          "name": "アドテック　プラズマ　テクノロジー",
-          "date": "2026-10-09",
-          "next_close_pct": 20.82
+          "date": "2026-04-27",
+          "next_close_pct": 5.32,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ZUjlVa1VwRTFSUUo1OTBJbXM2RXFwZXdvYzRLMEhtdjBubUFWLU81TXFkSmlQOEY0djRMSmdVVjNrNnpaVEYyZEl3LVZlMkpNNGNEQXN6VE5zNDA0YUdJQWc4QmJHSWVHZ1E?oc=5"
         }
       ],
-      "volume_ratio": 1.14,
+      "industry": "Auto Parts",
+      "sector": "Consumer Cyclical",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 0,
+      "peer_positive_count": 0,
+      "peer_events": [],
+      "volume_ratio": 0.71,
       "upgrade_events": [],
       "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
+        "self_history": true,
+        "industry_peer_reactions": false,
         "industry_identified": true,
         "volume_ratio": true,
         "upgrade_news_checked": true
@@ -919,37 +1010,6 @@
       }
     },
     {
-      "code": "7241",
-      "name": "フタバ産業",
-      "earnings_date": "2026-10-28",
-      "market_cap_oku": 896.6,
-      "score_total": 0,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 0,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Auto Parts",
-      "sector": "Consumer Cyclical",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 0,
-      "peer_positive_count": 0,
-      "peer_events": [],
-      "volume_ratio": 0.71,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": false,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
       "code": "9932",
       "name": "杉本商事",
       "earnings_date": "2026-10-28",
@@ -980,5 +1040,6 @@
         "upgrade_news_checked": true
       }
     }
-  ]
+  ],
+  "own_history_source": "Yahoo Finance 決算カレンダー、JPX記録、または決算短信ニュース掲載日。発表時刻未確認、掲載日と発表日が異なる可能性あり。"
 }

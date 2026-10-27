@@ -1,17 +1,17 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-27T06:47:47+09:00",
+  "generated_at": "2026-10-28T06:50:20+09:00",
   "season": {
     "start": "2026-10-01",
     "end": "2026-11-30",
     "scope": "JPX予定表の10-11月ユニーク銘柄（時価総額を問わない）",
     "scheduled_count": 3344,
-    "scheduled_dates_elapsed_before_today": 458,
-    "scheduled_progress_fraction": 0.137
+    "scheduled_dates_elapsed_before_today": 487,
+    "scheduled_progress_fraction": 0.1456
   },
   "coverage": {
     "frozen_pre_event_snapshots": 30,
-    "matched_subsequent_returns": 8,
+    "matched_subsequent_returns": 10,
     "complete_four_factor_scores_matched": 0,
     "unavailable_factors": [
       "四季報の事前予想改定",
@@ -25,25 +25,25 @@
     {
       "fraction": 0.2,
       "schedule_threshold_reached": false,
-      "observations_from_frozen_pre_earnings_snapshots": 8,
+      "observations_from_frozen_pre_earnings_snapshots": 10,
       "feedback_ready": false,
       "next_action": "決算予定日の経過と決算前スナップショットを蓄積"
     },
     {
       "fraction": 0.6,
       "schedule_threshold_reached": false,
-      "observations_from_frozen_pre_earnings_snapshots": 8,
+      "observations_from_frozen_pre_earnings_snapshots": 10,
       "feedback_ready": false,
       "next_action": "決算予定日の経過と決算前スナップショットを蓄積"
     }
   ],
   "observations_summary": {
-    "n": 8,
+    "n": 10,
     "up": 2,
-    "down": 6,
+    "down": 8,
     "unchanged": 0,
-    "up_rate": 0.25,
-    "average_return_pct": -1.69
+    "up_rate": 0.2,
+    "average_return_pct": -2.41
   },
   "factor_diagnostics": [
     {
@@ -58,12 +58,12 @@
         "average_return_pct": -0.1
       },
       "lower": {
-        "n": 5,
+        "n": 7,
         "up": 1,
-        "down": 4,
+        "down": 6,
         "unchanged": 0,
-        "up_rate": 0.2,
-        "average_return_pct": -2.644
+        "up_rate": 0.1429,
+        "average_return_pct": -3.4
       },
       "enough_for_exploratory_comparison": false,
       "note": "観察値による比較。決算発表に起因する効果は識別していません。"
@@ -72,20 +72,20 @@
       "factor": "return_5d_pct",
       "split_at": 0,
       "higher": {
-        "n": 1,
+        "n": 2,
         "up": 0,
-        "down": 1,
+        "down": 2,
         "unchanged": 0,
         "up_rate": 0.0,
-        "average_return_pct": -0.12
+        "average_return_pct": -4.52
       },
       "lower": {
-        "n": 7,
+        "n": 8,
         "up": 2,
-        "down": 5,
+        "down": 6,
         "unchanged": 0,
-        "up_rate": 0.2857,
-        "average_return_pct": -1.914
+        "up_rate": 0.25,
+        "average_return_pct": -1.882
       },
       "enough_for_exploratory_comparison": false,
       "note": "観察値による比較。決算発表に起因する効果は識別していません。"
@@ -1222,6 +1222,78 @@
       "outcome": {
         "next_session_date": "2026-10-26",
         "next_close_pct": -6.51,
+        "return_is_causal": false,
+        "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+      },
+      "up": false
+    },
+    {
+      "code": "2211",
+      "name": "不二家",
+      "earnings_date": "2026-10-26",
+      "captured_at": "2026-10-22T18:23:53+09:00",
+      "officially_rankable": false,
+      "strict_score": null,
+      "strict_components": null,
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.13,
+        "return_5d_pct": -0.28,
+        "analyst_count": null,
+        "revenue_consensus_yen": null,
+        "company_guidance_revision": null,
+        "shikiho_forecast_revision": null,
+        "target_price_revision": null,
+        "rating_upgrade": null,
+        "new_news_impact": null
+      },
+      "missing_core_factors": [
+        "company_guidance_revision",
+        "shikiho_forecast_revision",
+        "target_price_revision",
+        "rating_upgrade",
+        "new_news_impact"
+      ],
+      "evidence_note": "四季報・会社予想・目標株価・格付け・ニュースの変更データは未取得。点数には換算しない。",
+      "outcome": {
+        "next_session_date": "2026-10-27",
+        "next_close_pct": -1.66,
+        "return_is_causal": false,
+        "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+      },
+      "up": false
+    },
+    {
+      "code": "6230",
+      "name": "ＳＡＮＥＩ",
+      "earnings_date": "2026-10-26",
+      "captured_at": "2026-10-22T18:23:53+09:00",
+      "officially_rankable": false,
+      "strict_score": null,
+      "strict_components": null,
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.22,
+        "return_5d_pct": 0.14,
+        "analyst_count": null,
+        "revenue_consensus_yen": null,
+        "company_guidance_revision": null,
+        "shikiho_forecast_revision": null,
+        "target_price_revision": null,
+        "rating_upgrade": null,
+        "new_news_impact": null
+      },
+      "missing_core_factors": [
+        "company_guidance_revision",
+        "shikiho_forecast_revision",
+        "target_price_revision",
+        "rating_upgrade",
+        "new_news_impact"
+      ],
+      "evidence_note": "四季報・会社予想・目標株価・格付け・ニュースの変更データは未取得。点数には換算しない。",
+      "outcome": {
+        "next_session_date": "2026-10-27",
+        "next_close_pct": -8.92,
         "return_is_causal": false,
         "date_kind": "JPX決算発表予定日（発表時刻未確認）",
         "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"

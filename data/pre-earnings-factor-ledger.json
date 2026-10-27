@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-27T00:03:04+09:00",
+  "generated_at": "2026-10-27T22:26:32+09:00",
   "description": "学習用に保存済みの決算前銘柄への要因根拠の紐付け。正式な採点・順位には使わない。",
   "coverage": {
-    "snapshots_with_ledger": 1290,
+    "snapshots_with_ledger": 1292,
     "with_self_history": 4,
     "with_peer_history": 15,
-    "with_volume": 1290,
+    "with_volume": 1292,
     "rankable": 0
   },
   "records": [
@@ -5293,6 +5293,37 @@
       "earnings_date": "2026-10-30",
       "captured_at": "2026-10-22T18:30:59+09:00",
       "price_asof": "2026-10-21",
+      "factor_scores": {
+        "volume_supply_demand": 2,
+        "own_earnings_reaction": null,
+        "recent_industry_peers": null,
+        "analyst_revision": null,
+        "guidance_shikiho_targets_news": null
+      },
+      "self_history_events": [],
+      "peer_reaction_events": [],
+      "missing_factors": [
+        "本人の過去決算反応",
+        "同業他社の直近決算反応",
+        "コンセンサス/レーティングの決算前変更履歴",
+        "会社予想・四季報の改定履歴",
+        "目標株価の変更履歴",
+        "決算前ニュースの検証"
+      ],
+      "total_score": null,
+      "qualification": "not_rankable_incomplete_evidence",
+      "diagnostic_reference_only": {
+        "analyst_now_present": false,
+        "research_news_count": 0
+      },
+      "note": "個別要因の根拠のみ。決算予定日は発表時刻未確認。アーカイブ自体の保存時刻は追跡されておらず厳密な事前観測としては検証不可。合計採点・ランキングには使用禁止。"
+    },
+    {
+      "code": "6518",
+      "name": "三相電機",
+      "earnings_date": "2026-10-30",
+      "captured_at": "2026-10-27T21:51:06+09:00",
+      "price_asof": "2026-10-27",
       "factor_scores": {
         "volume_supply_demand": 2,
         "own_earnings_reaction": null,
@@ -27119,6 +27150,37 @@
       "price_asof": "2026-10-21",
       "factor_scores": {
         "volume_supply_demand": 0,
+        "own_earnings_reaction": null,
+        "recent_industry_peers": null,
+        "analyst_revision": null,
+        "guidance_shikiho_targets_news": null
+      },
+      "self_history_events": [],
+      "peer_reaction_events": [],
+      "missing_factors": [
+        "本人の過去決算反応",
+        "同業他社の直近決算反応",
+        "コンセンサス/レーティングの決算前変更履歴",
+        "会社予想・四季報の改定履歴",
+        "目標株価の変更履歴",
+        "決算前ニュースの検証"
+      ],
+      "total_score": null,
+      "qualification": "not_rankable_incomplete_evidence",
+      "diagnostic_reference_only": {
+        "analyst_now_present": false,
+        "research_news_count": 0
+      },
+      "note": "個別要因の根拠のみ。決算予定日は発表時刻未確認。アーカイブ自体の保存時刻は追跡されておらず厳密な事前観測としては検証不可。合計採点・ランキングには使用禁止。"
+    },
+    {
+      "code": "5029",
+      "name": "サークレイス",
+      "earnings_date": "2026-11-12",
+      "captured_at": "2026-10-27T21:51:06+09:00",
+      "price_asof": "2026-10-27",
+      "factor_scores": {
+        "volume_supply_demand": 3,
         "own_earnings_reaction": null,
         "recent_industry_peers": null,
         "analyst_revision": null,

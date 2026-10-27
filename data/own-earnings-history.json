@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "updated_at": "2026-10-28T01:29:13+09:00",
-  "method": "候補自身の出典のある過去決算日付とYahoo日足を照合。記事掲載日は実際の発表日と異なる場合がある。",
+  "updated_at": "2026-10-28T01:57:47+09:00",
+  "method": "JPX予定日・Yahoo決算カレンダー・決算短信見出し内の適時開示日から本人の過去実績を取得。記事発信日をそのまま開示日として推定しない。",
   "coverage": {
     "candidates": 20,
     "with_history": 6,
@@ -192,7 +192,7 @@
       "events": [
         {
           "event_date": "2026-07-29",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5keXdmWTlHU1ozSjd6NXVQZkl3SWp2dDZvNWc0Q3dWZnlrVnI1V1JzS2hqUTB3SGtrSmJ2MVNDTTl2YUVtTElvcnlzOHY1NV80c3dZLUxBb1BzZUF5WkxYUlphTm9uN0Nidmc?oc=5",
           "headline": "ＦＤＫ[6955]：2027年3月期 第1四半期決算短信〔日本基準〕（連結） 2026年7月29日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-07-28",

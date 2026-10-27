@@ -1,11 +1,11 @@
 {
-  "schema": 2,
-  "description": "TDnet決算短信の掲載日付近の終値反応。開示時刻未確認、決算による因果効果や上昇確率は示さない。",
+  "schema": 1,
+  "description": "決算カレンダー日付付近の終値反応。実際の発表時刻未検証であり、決算による因果効果・上昇確率ではありません。",
   "sources": [
-    "TDnet決算短信開示一覧（掲載日）",
-    "既存の出典付き履歴"
+    "JPX保存済み発表予定日",
+    "Yahoo Finance決算カレンダー日付（取得可能な銘柄のみ）"
   ],
-  "event_date_count": 6,
+  "event_date_count": 17,
   "with_reactions": 1,
   "records": [
     {
@@ -16,6 +16,16 @@
     {
       "code": "6023",
       "name": "ダイハツインフィニアース",
+      "reactions": []
+    },
+    {
+      "code": "7102",
+      "name": "日本車輌製造",
+      "reactions": []
+    },
+    {
+      "code": "7299",
+      "name": "フジオーゼックス",
       "reactions": []
     },
     {
@@ -78,13 +88,8 @@
       "reactions": []
     },
     {
-      "code": "2211",
-      "name": "不二家",
-      "reactions": []
-    },
-    {
-      "code": "6230",
-      "name": "ＳＡＮＥＩ",
+      "code": "4973",
+      "name": "日本高純度化学",
       "reactions": []
     },
     {
@@ -93,8 +98,18 @@
       "reactions": []
     },
     {
+      "code": "5532",
+      "name": "リアルゲイト",
+      "reactions": []
+    },
+    {
       "code": "7175",
       "name": "今村証券",
+      "reactions": []
+    },
+    {
+      "code": "5834",
+      "name": "ＳＢＩリーシングサービス",
       "reactions": []
     },
     {
@@ -103,8 +118,8 @@
       "reactions": []
     },
     {
-      "code": "7102",
-      "name": "日本車輌製造",
+      "code": "3911",
+      "name": "Ａｉｍｉｎｇ",
       "reactions": []
     },
     {
@@ -113,28 +128,8 @@
       "reactions": []
     },
     {
-      "code": "4973",
-      "name": "日本高純度化学",
-      "reactions": []
-    },
-    {
       "code": "4765",
       "name": "ＳＢＩグローバルアセットマネジメント",
-      "reactions": []
-    },
-    {
-      "code": "3911",
-      "name": "Ａｉｍｉｎｇ",
-      "reactions": []
-    },
-    {
-      "code": "5532",
-      "name": "リアルゲイト",
-      "reactions": []
-    },
-    {
-      "code": "9782",
-      "name": "ディーエムエス",
       "reactions": []
     },
     {
@@ -143,8 +138,8 @@
       "reactions": []
     },
     {
-      "code": "7299",
-      "name": "フジオーゼックス",
+      "code": "9782",
+      "name": "ディーエムエス",
       "reactions": []
     },
     {
@@ -156,14 +151,12 @@
       "code": "5992",
       "name": "中央発條",
       "reactions": []
+    },
+    {
+      "code": "4956",
+      "name": "コニシ",
+      "reactions": []
     }
   ],
-  "generated_at": "2026-10-27T00:04:54+09:00",
-  "tdnet_days_requested": 140,
-  "tdnet_days_parsed": 0,
-  "tdnet_events_found": 0,
-  "tdnet_scan_diagnostics": {
-    "missing": 140,
-    "parsed": 0
-  }
+  "generated_at": "2026-10-27T21:52:51+09:00"
 }

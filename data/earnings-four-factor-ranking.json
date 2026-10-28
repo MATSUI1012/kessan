@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-29T03:22:09+09:00",
+  "generated_at": "2026-10-29T04:11:37+09:00",
   "description": "4項目の調査順位。本人の過去決算反応は出典のある発表予定日・カレンダー日・記事掲載日付近の株価変化。実際の発表時刻・変動原因は未確認。未取得0点は悪材料ではない。",
   "weights": {
     "own_earnings_reaction": 3,
@@ -205,81 +205,6 @@
       }
     },
     {
-      "code": "4290",
-      "name": "プレステージ・インターナショナル",
-      "earnings_date": "2026-10-29",
-      "market_cap_oku": 858.02,
-      "score_total": 2,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 0,
-        "recent_industry_peers": 2,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 1,
-      "self_history_positive": 0,
-      "self_history_events": [
-        {
-          "date": "2026-05-13",
-          "next_close_pct": -1.5,
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBLaFpPYTZnMlhFVTU4N0FHNHFWOUFkY19OcE1HWFBpS0ViYnRadVA5cVQ4NWlZSF9IeDRGNUtzNkhwNjc4dnpqNEl0RVdxM1l5ZjV3a0ROY1dDUjM4OWxSWUswdnhTSzVIYmc?oc=5"
-        }
-      ],
-      "industry": "Specialty Business Services",
-      "sector": "Industrials",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 10,
-      "peer_positive_count": 6,
-      "peer_events": [
-        {
-          "code": "9252",
-          "name": "ラストワンマイル",
-          "date": "2026-10-15",
-          "next_close_pct": -13.52
-        },
-        {
-          "code": "7352",
-          "name": "ＴＷＯＳＴＯＮＥ＆Ｓｏｎｓ",
-          "date": "2026-10-15",
-          "next_close_pct": 17.97
-        },
-        {
-          "code": "1418",
-          "name": "インターライフホールディングス",
-          "date": "2026-10-15",
-          "next_close_pct": 0.66
-        },
-        {
-          "code": "7373",
-          "name": "アイドマ・ホールディングス",
-          "date": "2026-10-14",
-          "next_close_pct": -11.23
-        },
-        {
-          "code": "6183",
-          "name": "ベルシステム２４ホールディングス",
-          "date": "2026-10-14",
-          "next_close_pct": 2.85
-        },
-        {
-          "code": "6086",
-          "name": "シンメンテホールディングス",
-          "date": "2026-10-14",
-          "next_close_pct": 1.45
-        }
-      ],
-      "volume_ratio": 0.52,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": true,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
       "code": "4212",
       "name": "積水樹脂",
       "earnings_date": "2026-10-29",
@@ -376,6 +301,149 @@
         }
       ],
       "volume_ratio": 0.41,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": false,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "4290",
+      "name": "プレステージ・インターナショナル",
+      "earnings_date": "2026-10-29",
+      "market_cap_oku": 858.02,
+      "score_total": 2,
+      "score_components": {
+        "own_earnings_reaction": 0,
+        "volume_supply_demand": 0,
+        "recent_industry_peers": 2,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 1,
+      "self_history_positive": 0,
+      "self_history_events": [
+        {
+          "date": "2026-05-13",
+          "next_close_pct": -1.5,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBLaFpPYTZnMlhFVTU4N0FHNHFWOUFkY19OcE1HWFBpS0ViYnRadVA5cVQ4NWlZSF9IeDRGNUtzNkhwNjc4dnpqNEl0RVdxM1l5ZjV3a0ROY1dDUjM4OWxSWUswdnhTSzVIYmc?oc=5"
+        }
+      ],
+      "industry": "Specialty Business Services",
+      "sector": "Industrials",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 10,
+      "peer_positive_count": 6,
+      "peer_events": [
+        {
+          "code": "9252",
+          "name": "ラストワンマイル",
+          "date": "2026-10-15",
+          "next_close_pct": -13.52
+        },
+        {
+          "code": "7352",
+          "name": "ＴＷＯＳＴＯＮＥ＆Ｓｏｎｓ",
+          "date": "2026-10-15",
+          "next_close_pct": 17.97
+        },
+        {
+          "code": "1418",
+          "name": "インターライフホールディングス",
+          "date": "2026-10-15",
+          "next_close_pct": 0.66
+        },
+        {
+          "code": "7373",
+          "name": "アイドマ・ホールディングス",
+          "date": "2026-10-14",
+          "next_close_pct": -11.23
+        },
+        {
+          "code": "6183",
+          "name": "ベルシステム２４ホールディングス",
+          "date": "2026-10-14",
+          "next_close_pct": 2.85
+        },
+        {
+          "code": "6086",
+          "name": "シンメンテホールディングス",
+          "date": "2026-10-14",
+          "next_close_pct": 1.45
+        }
+      ],
+      "volume_ratio": 0.52,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": true,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "3891",
+      "name": "ニッポン高度紙工業",
+      "earnings_date": "2026-10-29",
+      "market_cap_oku": 633.85,
+      "score_total": 1,
+      "score_components": {
+        "own_earnings_reaction": 0,
+        "volume_supply_demand": 1,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 0,
+      "self_history_positive": 0,
+      "self_history_events": [],
+      "industry": "Electronic Components",
+      "sector": "Technology",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 6,
+      "peer_positive_count": 2,
+      "peer_events": [
+        {
+          "code": "6999",
+          "name": "ＫＯＡ",
+          "date": "2026-10-23",
+          "next_close_pct": 6.92
+        },
+        {
+          "code": "6629",
+          "name": "テクノホライゾン",
+          "date": "2026-10-23",
+          "next_close_pct": -2.6
+        },
+        {
+          "code": "6521",
+          "name": "オキサイド",
+          "date": "2026-10-15",
+          "next_close_pct": -2.8
+        },
+        {
+          "code": "7725",
+          "name": "インターアクション",
+          "date": "2026-10-13",
+          "next_close_pct": -0.22
+        },
+        {
+          "code": "7713",
+          "name": "シグマ光機",
+          "date": "2026-10-09",
+          "next_close_pct": 27.69
+        },
+        {
+          "code": "3321",
+          "name": "ミタチ産業",
+          "date": "2026-10-02",
+          "next_close_pct": -6.67
+        }
+      ],
+      "volume_ratio": 1.39,
       "upgrade_events": [],
       "data_coverage": {
         "self_history": false,
@@ -590,125 +658,6 @@
       }
     },
     {
-      "code": "3891",
-      "name": "ニッポン高度紙工業",
-      "earnings_date": "2026-10-29",
-      "market_cap_oku": 633.85,
-      "score_total": 1,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 1,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Electronic Components",
-      "sector": "Technology",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 6,
-      "peer_positive_count": 2,
-      "peer_events": [
-        {
-          "code": "6999",
-          "name": "ＫＯＡ",
-          "date": "2026-10-23",
-          "next_close_pct": 6.92
-        },
-        {
-          "code": "6629",
-          "name": "テクノホライゾン",
-          "date": "2026-10-23",
-          "next_close_pct": -2.6
-        },
-        {
-          "code": "6521",
-          "name": "オキサイド",
-          "date": "2026-10-15",
-          "next_close_pct": -2.8
-        },
-        {
-          "code": "7725",
-          "name": "インターアクション",
-          "date": "2026-10-13",
-          "next_close_pct": -0.22
-        },
-        {
-          "code": "7713",
-          "name": "シグマ光機",
-          "date": "2026-10-09",
-          "next_close_pct": 27.69
-        },
-        {
-          "code": "3321",
-          "name": "ミタチ産業",
-          "date": "2026-10-02",
-          "next_close_pct": -6.67
-        }
-      ],
-      "volume_ratio": 1.39,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
-      "code": "8614",
-      "name": "東洋証券",
-      "earnings_date": "2026-10-29",
-      "market_cap_oku": 432.63,
-      "score_total": 0,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 0,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 1,
-      "self_history_positive": 0,
-      "self_history_events": [
-        {
-          "date": "2026-07-30",
-          "next_close_pct": -1.49,
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1NdHJlcUlxWjFrQTlraHJRQ2tyTDJGbGJQb0tsa2pnb2s3ZDMxdlNrd1E3YnBpWDIySjBVYWdhTGp6V1pTN2ROUFJOaHZSSHlFeW5lLXlBMlZEbm5WUUJ2OU9mNGpiTV95X3c?oc=5"
-        }
-      ],
-      "industry": "Capital Markets",
-      "sector": "Financial Services",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 2,
-      "peer_positive_count": 1,
-      "peer_events": [
-        {
-          "code": "7175",
-          "name": "今村証券",
-          "date": "2026-10-27",
-          "next_close_pct": 1.13
-        },
-        {
-          "code": "8707",
-          "name": "岩井コスモホールディングス",
-          "date": "2026-10-23",
-          "next_close_pct": -4.62
-        }
-      ],
-      "volume_ratio": 0.96,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": true,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
       "code": "2594",
       "name": "キーコーヒー",
       "earnings_date": "2026-10-29",
@@ -771,6 +720,37 @@
       "data_coverage": {
         "self_history": false,
         "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "4549",
+      "name": "栄研化学",
+      "earnings_date": "2026-10-29",
+      "market_cap_oku": 783.59,
+      "score_total": 0,
+      "score_components": {
+        "own_earnings_reaction": 0,
+        "volume_supply_demand": 0,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 0,
+      "self_history_positive": 0,
+      "self_history_events": [],
+      "industry": "Medical Devices",
+      "sector": "Healthcare",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 0,
+      "peer_positive_count": 0,
+      "peer_events": [],
+      "volume_ratio": 0.74,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": false,
+        "industry_peer_reactions": false,
         "industry_identified": true,
         "volume_ratio": true,
         "upgrade_news_checked": true
@@ -871,81 +851,6 @@
       }
     },
     {
-      "code": "8622",
-      "name": "水戸証券",
-      "earnings_date": "2026-10-29",
-      "market_cap_oku": 443.93,
-      "score_total": 0,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 0,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Capital Markets",
-      "sector": "Financial Services",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 2,
-      "peer_positive_count": 1,
-      "peer_events": [
-        {
-          "code": "7175",
-          "name": "今村証券",
-          "date": "2026-10-27",
-          "next_close_pct": 1.13
-        },
-        {
-          "code": "8707",
-          "name": "岩井コスモホールディングス",
-          "date": "2026-10-23",
-          "next_close_pct": -4.62
-        }
-      ],
-      "volume_ratio": 0.96,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
-      "code": "4549",
-      "name": "栄研化学",
-      "earnings_date": "2026-10-29",
-      "market_cap_oku": 783.59,
-      "score_total": 0,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 0,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Medical Devices",
-      "sector": "Healthcare",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 0,
-      "peer_positive_count": 0,
-      "peer_events": [],
-      "volume_ratio": 0.74,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": false,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
       "code": "6810",
       "name": "マクセル",
       "earnings_date": "2026-10-29",
@@ -1008,6 +913,101 @@
       }
     },
     {
+      "code": "8614",
+      "name": "東洋証券",
+      "earnings_date": "2026-10-29",
+      "market_cap_oku": 432.63,
+      "score_total": 0,
+      "score_components": {
+        "own_earnings_reaction": 0,
+        "volume_supply_demand": 0,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 1,
+      "self_history_positive": 0,
+      "self_history_events": [
+        {
+          "date": "2026-07-30",
+          "next_close_pct": -1.49,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1NdHJlcUlxWjFrQTlraHJRQ2tyTDJGbGJQb0tsa2pnb2s3ZDMxdlNrd1E3YnBpWDIySjBVYWdhTGp6V1pTN2ROUFJOaHZSSHlFeW5lLXlBMlZEbm5WUUJ2OU9mNGpiTV95X3c?oc=5"
+        }
+      ],
+      "industry": "Capital Markets",
+      "sector": "Financial Services",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 2,
+      "peer_positive_count": 1,
+      "peer_events": [
+        {
+          "code": "7175",
+          "name": "今村証券",
+          "date": "2026-10-27",
+          "next_close_pct": 1.13
+        },
+        {
+          "code": "8707",
+          "name": "岩井コスモホールディングス",
+          "date": "2026-10-23",
+          "next_close_pct": -4.62
+        }
+      ],
+      "volume_ratio": 0.96,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": true,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "8622",
+      "name": "水戸証券",
+      "earnings_date": "2026-10-29",
+      "market_cap_oku": 443.93,
+      "score_total": 0,
+      "score_components": {
+        "own_earnings_reaction": 0,
+        "volume_supply_demand": 0,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 0,
+      "self_history_positive": 0,
+      "self_history_events": [],
+      "industry": "Capital Markets",
+      "sector": "Financial Services",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 2,
+      "peer_positive_count": 1,
+      "peer_events": [
+        {
+          "code": "7175",
+          "name": "今村証券",
+          "date": "2026-10-27",
+          "next_close_pct": 1.13
+        },
+        {
+          "code": "8707",
+          "name": "岩井コスモホールディングス",
+          "date": "2026-10-23",
+          "next_close_pct": -4.62
+        }
+      ],
+      "volume_ratio": 0.96,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": false,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
       "code": "9536",
       "name": "西部ガスホールディングス",
       "earnings_date": "2026-10-29",
@@ -1039,5 +1039,5 @@
       }
     }
   ],
-  "own_history_source": "IR BANK決算短信一覧、以前から保存されている根拠付き決算日。発表時刻は未確認。"
+  "own_history_source": "IR BANK上の決算短信掲載日（確認できた日付のみ）と保存済み履歴。実際の発表時刻は未確認。"
 }

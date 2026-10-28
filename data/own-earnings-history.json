@@ -1,7 +1,7 @@
 {
-  "schema": 1,
-  "updated_at": "2026-10-29T02:00:49+09:00",
-  "method": "JPX予定日・Yahoo決算カレンダー・決算短信見出し内の適時開示日から本人の過去実績を取得。記事発信日をそのまま開示日として推定しない。",
+  "schema": 2,
+  "updated_at": "2026-10-29T02:51:49+09:00",
+  "method": "複数のニュースRSS、JPX決算予定日、Yahoo決算カレンダーの出典日付を株価と照合。単なる記事配信日から開示日を推定しない。",
   "coverage": {
     "candidates": 20,
     "with_history": 9,
@@ -12,7 +12,11 @@
       "code": "4498",
       "name": "サイバートラスト",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "4552",
@@ -32,7 +36,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "4290",
@@ -52,7 +60,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "9640",
@@ -72,25 +84,41 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "3891",
       "name": "ニッポン高度紙工業",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "4221",
       "name": "大倉工業",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "6823",
       "name": "リオン",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "6345",
@@ -110,31 +138,51 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "6810",
       "name": "マクセル",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "4212",
       "name": "積水樹脂",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "4549",
       "name": "栄研化学",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "9536",
       "name": "西部ガスホールディングス",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "8624",
@@ -154,7 +202,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "8708",
@@ -174,7 +226,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "8706",
@@ -194,7 +250,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "8614",
@@ -214,13 +274,21 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "8622",
       "name": "水戸証券",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "8613",
@@ -240,19 +308,31 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "2594",
       "name": "キーコーヒー",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "6419",
       "name": "マースグループホールディングス",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     }
   ]
 }

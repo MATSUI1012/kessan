@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-29T01:32:25+09:00",
+  "generated_at": "2026-10-29T02:00:49+09:00",
   "description": "4項目の調査順位。本人の過去決算反応は出典のある発表予定日・カレンダー日・記事掲載日付近の株価変化。実際の発表時刻・変動原因は未確認。未取得0点は悪材料ではない。",
   "weights": {
     "own_earnings_reaction": 3,
@@ -10,7 +10,7 @@
   },
   "coverage": {
     "total": 20,
-    "own_history": 8,
+    "own_history": 9,
     "industry_identified": 20,
     "peer_reactions": 15,
     "upgrades": 0
@@ -34,7 +34,7 @@
         {
           "date": "2026-07-30",
           "next_close_pct": -0.39,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5CZEQteG8tZU5VMTItMThiSDYyanluTEVxWWhPWW85STJjTE9aZnJKSXhzOTFHVllCcWstLTFFc1huRlZvMlBiQkR2WU5oVENkTG5OZ09wV2tabDBHUXROSnZlbWloRU1UMkE?oc=5"
         }
       ],
@@ -165,7 +165,7 @@
         {
           "date": "2026-07-30",
           "next_close_pct": 6.06,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBRZ0M5bW9NMHRsdHZ6YTZuc2NBWjR3cG8yZjVKMTFpOEVMMGhxVFJWQTFIZFZDWl91V3V2MU4wOGdtMXMtZWpBbkRVRms5QXY0WUxSb0YyM2JnWHo0bE4xRHF1cnNtYTdtMlE?oc=5"
         }
       ],
@@ -222,7 +222,7 @@
         {
           "date": "2026-05-13",
           "next_close_pct": -1.5,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBLaFpPYTZnMlhFVTU4N0FHNHFWOUFkY19OcE1HWFBpS0ViYnRadVA5cVQ4NWlZSF9IeDRGNUtzNkhwNjc4dnpqNEl0RVdxM1l5ZjV3a0ROY1dDUjM4OWxSWUswdnhTSzVIYmc?oc=5"
         }
       ],
@@ -386,6 +386,57 @@
       }
     },
     {
+      "code": "6345",
+      "name": "アイチ　コーポレーション",
+      "earnings_date": "2026-10-29",
+      "market_cap_oku": 905.12,
+      "score_total": 1,
+      "score_components": {
+        "own_earnings_reaction": 1,
+        "volume_supply_demand": 0,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 1,
+      "self_history_positive": 1,
+      "self_history_events": [
+        {
+          "date": "2026-07-30",
+          "next_close_pct": 1.11,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9Kd3VLeGlub1lRYWkxejlyYWNkN0loXzFRSENCcmFQVVNhU2lEOVhrY1dSMWVYQ1VQMVExOGJwWDNza01JT0hVTGpaNVVHYjZGUGE0bHRhcnF5UDNqbkdtXy1MdVdaMzFzUlE?oc=5"
+        }
+      ],
+      "industry": "Farm & Heavy Construction Machinery",
+      "sector": "Industrials",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 2,
+      "peer_positive_count": 1,
+      "peer_events": [
+        {
+          "code": "6289",
+          "name": "技研製作所",
+          "date": "2026-10-09",
+          "next_close_pct": 2.43
+        },
+        {
+          "code": "8125",
+          "name": "ワキタ",
+          "date": "2026-10-08",
+          "next_close_pct": -3.71
+        }
+      ],
+      "volume_ratio": 0.74,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": true,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
       "code": "8613",
       "name": "丸三証券",
       "earnings_date": "2026-10-29",
@@ -403,7 +454,7 @@
         {
           "date": "2026-04-28",
           "next_close_pct": 1.95,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5FS1Q1YlF1bzR6Mzg5cVp0QTR1UTFndHN2TWpaNVRqQzgwWnpPVnFmeEVtSS11LUNRSUxvOWJabm1qa1hET1dkUzFTYmF6V0xTYlJXbmNZY0Q4QnFPQ2k2TVlYOXBBTWtLbGc?oc=5"
         }
       ],
@@ -454,7 +505,7 @@
         {
           "date": "2026-07-29",
           "next_close_pct": 1.44,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBQaVRvbUVfWkJZQzdkQ09HN2tFQmVTNjhVVkk0RHEyUWI5Tko5RzdRVFNiMkFJZVlCbHNKRmpUdlpyMlZvZi1IcDVRbER0LWdKRWNrNFNpVURxaXg1WGVTRlBab2lRTGpuZHc?oc=5"
         }
       ],
@@ -505,7 +556,7 @@
         {
           "date": "2026-04-28",
           "next_close_pct": 2.48,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5MZUwxMlVsQndOb2tITkxSUXhpYlZxVVlraHlNYVdFTzU5TXgwYXBxZUZpdktmLWRLS0xDTnlWQjRPSm93VHZ1eDF5ZTl1RElfbG9ZZEhHa0JlSE9Wd3NnVVRpeTFCMjVGa2c?oc=5"
         }
       ],
@@ -624,7 +675,7 @@
         {
           "date": "2026-07-30",
           "next_close_pct": -1.49,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1NdHJlcUlxWjFrQTlraHJRQ2tyTDJGbGJQb0tsa2pnb2s3ZDMxdlNrd1E3YnBpWDIySjBVYWdhTGp6V1pTN2ROUFJOaHZSSHlFeW5lLXlBMlZEbm5WUUJ2OU9mNGpiTV95X3c?oc=5"
         }
       ],
@@ -743,7 +794,7 @@
         {
           "date": "2026-05-13",
           "next_close_pct": -3.94,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1sVnhXSTFTc3ZNZW1zbEExbTJESzFNRFFVNTNuakh6eE9aUXlTSE9Uc2NEdkZMbHRnMUFIYzU5MXF0ZU9qRURaNlNJR0E3ajdESGZhZEpLSG5uZDVWRkpIV2p0Z05hbWRpeEE?oc=5"
         }
       ],
@@ -758,50 +809,6 @@
       "data_coverage": {
         "self_history": true,
         "industry_peer_reactions": false,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
-      "code": "6345",
-      "name": "アイチ　コーポレーション",
-      "earnings_date": "2026-10-29",
-      "market_cap_oku": 905.12,
-      "score_total": 0,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 0,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Farm & Heavy Construction Machinery",
-      "sector": "Industrials",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 2,
-      "peer_positive_count": 1,
-      "peer_events": [
-        {
-          "code": "6289",
-          "name": "技研製作所",
-          "date": "2026-10-09",
-          "next_close_pct": 2.43
-        },
-        {
-          "code": "8125",
-          "name": "ワキタ",
-          "date": "2026-10-08",
-          "next_close_pct": -3.71
-        }
-      ],
-      "volume_ratio": 0.74,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
         "industry_identified": true,
         "volume_ratio": true,
         "upgrade_news_checked": true

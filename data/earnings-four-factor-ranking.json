@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-30T01:34:44+09:00",
+  "generated_at": "2026-10-30T02:03:54+09:00",
   "description": "4項目の調査順位。本人の過去決算反応は出典のある発表予定日・カレンダー日・記事掲載日付近の株価変化。実際の発表時刻・変動原因は未確認。未取得0点は悪材料ではない。",
   "weights": {
     "own_earnings_reaction": 3,
@@ -10,7 +10,7 @@
   },
   "coverage": {
     "total": 20,
-    "own_history": 9,
+    "own_history": 10,
     "industry_identified": 20,
     "peer_reactions": 15,
     "upgrades": 0
@@ -34,7 +34,7 @@
         {
           "date": "2026-05-07",
           "next_close_pct": 6.53,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5veGJtRl9xVEdTa3hJVGRMQV9NSkJIV1k0c29LaWdhSVhObjNldG9nX3c0VU1vUFhzWm5CeGthLWFSMUdkNURDdGhnRnNCcFFSTXM1eUhFTUN3SndFTWt6eWFOaEx1LXA4VEE?oc=5"
         }
       ],
@@ -91,7 +91,7 @@
         {
           "date": "2026-05-14",
           "next_close_pct": 6.24,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB5cmY1bS1ac2JaU0tqdk50ZVE3U205RUZJeXFneHd1STljMm5zVlV5YTFzcGUzY2dFZzRMZm02cktJS3l0bDBvUFZ6ZXVwVHBtX3Q1SS0zNEl0ckxuSFJURy1hR09GOGdqTXc?oc=5"
         }
       ],
@@ -154,7 +154,7 @@
         {
           "date": "2026-07-31",
           "next_close_pct": 17.94,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0zOGl2Nkszc2k0UGZGbXBIMFJEYVNvdEtDanRtRnZCMVNuQkc0QVZkQ2xpSldzaWtEOXJqTmdqOFlPenFoOFRYQ1R4a0FTSTl1R0MxTzNjWC04NEx3U2xfdEpVcFh3eV9LM0E?oc=5"
         }
       ],
@@ -199,7 +199,7 @@
         {
           "date": "2026-04-30",
           "next_close_pct": -8.55,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1OeWdCRnFqY3ZzeUlfWmlZaEpyTG9BZlBDeDE1ak16NXdRellGU3ZPZFhuQjJ5a29BUndyVVpHTXpwbU1QVkZhVTBXLUp5WWJUNmpPWkl3TlZMbTZHV1V5WmJsSE9Wem1SaFE?oc=5"
         }
       ],
@@ -250,13 +250,13 @@
         {
           "date": "2026-07-30",
           "next_close_pct": 5.11,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE83eHU5dHlNdnZuODZCTTFWY2V4RUc0eExMNWU3Z28zWlJQQ1V0MnJ0N3l2cjctd0dSQVZTbEtTUGRVTHM2aktWWmhDbnQyZkVXUWdLcUtBV2hIWnNQRDVEelAwOFhwM0dmWnc?oc=5"
         },
         {
           "date": "2026-04-28",
           "next_close_pct": 24.38,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5BdUNnOG9iU2ZPS1BsNkVKZ2hnWXpXaGNXNWctanp4WS1fRFZ6TXl6QXlYWWpoNTVLcGNRcFo2alRwRkZBOGhwbU4xSFVESE9JSkhpcEtPT2tueU1sX1hhcWYzMjVldFZ0Z1E?oc=5"
         }
       ],
@@ -286,6 +286,81 @@
         }
       ],
       "volume_ratio": 1.04,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": true,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "6961",
+      "name": "エンプラス",
+      "earnings_date": "2026-10-30",
+      "market_cap_oku": 858.92,
+      "score_total": 2,
+      "score_components": {
+        "own_earnings_reaction": 0,
+        "volume_supply_demand": 2,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 1,
+      "self_history_positive": 0,
+      "self_history_events": [
+        {
+          "date": "2026-07-29",
+          "next_close_pct": -13.72,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBDY3FrdEpPQzJoaEcxM08waHNSR3pCM1dOd2R2UEg3cEk2Um43U19CZTAyYXFCRWUxcUxtQVFzXzVFMzc3Uks2SVJmVnI0UWNTSFdfUUVPd3JvSlhOczh4azRMaW5TUzhjenc?oc=5"
+        }
+      ],
+      "industry": "Electronic Components",
+      "sector": "Technology",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 6,
+      "peer_positive_count": 2,
+      "peer_events": [
+        {
+          "code": "6999",
+          "name": "ＫＯＡ",
+          "date": "2026-10-23",
+          "next_close_pct": 6.92
+        },
+        {
+          "code": "6629",
+          "name": "テクノホライゾン",
+          "date": "2026-10-23",
+          "next_close_pct": -2.6
+        },
+        {
+          "code": "6521",
+          "name": "オキサイド",
+          "date": "2026-10-15",
+          "next_close_pct": -2.8
+        },
+        {
+          "code": "7725",
+          "name": "インターアクション",
+          "date": "2026-10-13",
+          "next_close_pct": -0.22
+        },
+        {
+          "code": "7713",
+          "name": "シグマ光機",
+          "date": "2026-10-09",
+          "next_close_pct": 27.69
+        },
+        {
+          "code": "3321",
+          "name": "ミタチ産業",
+          "date": "2026-10-02",
+          "next_close_pct": -6.67
+        }
+      ],
+      "volume_ratio": 1.9,
       "upgrade_events": [],
       "data_coverage": {
         "self_history": true,
@@ -420,74 +495,6 @@
       }
     },
     {
-      "code": "6961",
-      "name": "エンプラス",
-      "earnings_date": "2026-10-30",
-      "market_cap_oku": 858.92,
-      "score_total": 2,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 2,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Electronic Components",
-      "sector": "Technology",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 6,
-      "peer_positive_count": 2,
-      "peer_events": [
-        {
-          "code": "6999",
-          "name": "ＫＯＡ",
-          "date": "2026-10-23",
-          "next_close_pct": 6.92
-        },
-        {
-          "code": "6629",
-          "name": "テクノホライゾン",
-          "date": "2026-10-23",
-          "next_close_pct": -2.6
-        },
-        {
-          "code": "6521",
-          "name": "オキサイド",
-          "date": "2026-10-15",
-          "next_close_pct": -2.8
-        },
-        {
-          "code": "7725",
-          "name": "インターアクション",
-          "date": "2026-10-13",
-          "next_close_pct": -0.22
-        },
-        {
-          "code": "7713",
-          "name": "シグマ光機",
-          "date": "2026-10-09",
-          "next_close_pct": 27.69
-        },
-        {
-          "code": "3321",
-          "name": "ミタチ産業",
-          "date": "2026-10-02",
-          "next_close_pct": -6.67
-        }
-      ],
-      "volume_ratio": 1.9,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
       "code": "6946",
       "name": "日本アビオニクス",
       "earnings_date": "2026-10-30",
@@ -505,7 +512,7 @@
         {
           "date": "2026-07-30",
           "next_close_pct": 12.03,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBDMzdvV3BZNFhPNGJiT0FjOHJXdjlZYzloUGp2ZWZWN2xYVmRHTlhBY2dvS2wzaTVNd1VqU2pRbWk3dy1RMlF5cXJmZnh6QnBnUVVTM3BSTG00UlJNM1RBSlU0T1dfVWhWQ3c?oc=5"
         }
       ],
@@ -698,7 +705,7 @@
         {
           "date": "2026-05-15",
           "next_close_pct": 16.34,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5oeGtkVko2cmF2NkV6M0RtN1dLRXk0RGlvOUZWY2FyWGJhcTU5czI5bzl5eHliRElYN0V3dTdJcWZtRlYzNUlNbUdidFdCVFd0LWY1LWI4NVdRcVRPTVhyWlpZZWR0MWdUYlE?oc=5"
         }
       ],
@@ -736,7 +743,7 @@
         {
           "date": "2026-05-08",
           "next_close_pct": 23.02,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1sam92NGhnZHhsbTJ3NnAxZ0tSSXg5QTFMVHNTMDF2Q3IwVlFWRElBY3lmSEdtWlRsNEtPWHRMYUNUWmlGN3BNeEFzT3dpU3FwSzlCeS14TTlJa28tUk1mNHhvcWlfWEx1dUE?oc=5"
         }
       ],
@@ -936,7 +943,7 @@
         {
           "date": "2026-05-08",
           "next_close_pct": -4.98,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9aUVQ5XzZ4dzlJWWlzRmV5dDdWd0hYZ2oxbVRVZ0NrcVJrdVp5UXZPWTJIcWVmOVVYcEV0WDNycXFHRjlvaE5WWVQwMlBweGpaZ1h1VENFWmJGeTAtWmxwMWJ6RG1ETzdzWFE?oc=5"
         }
       ],

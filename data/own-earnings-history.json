@@ -1,13 +1,13 @@
 {
-  "schema": 3,
-  "updated_at": "2026-10-30T03:24:49+09:00",
-  "method": "IR BANKの銘柄別開示一覧で決算短信の行に記載された日付とYahoo日足を照合。日付や終値が未確認なら過去履歴を保持しつつ加点しない。",
+  "schema": 4,
+  "updated_at": "2026-10-30T04:13:39+09:00",
   "coverage": {
     "candidates": 20,
     "with_history": 10,
     "events": 11,
     "new_events": 0
   },
+  "method": "IR BANK決算短信の開示履歴に明記された日付とYahoo日足を照合。未確認は推測しない。",
   "records": [
     {
       "code": "9065",
@@ -27,10 +27,9 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "決算短信の日付と終値照合済",
-      "irbank_diagnostics": [
-        "HTTP 403",
-        "HTTP 403"
+      "archive_diagnostics": [
+        "https://irbank.net/9065/ir: HTTP 403",
+        "https://irbank.net/9065: HTTP 403"
       ],
       "new_events": 0
     },
@@ -52,10 +51,9 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "決算短信の日付と終値照合済",
-      "irbank_diagnostics": [
-        "HTTP 403",
-        "HTTP 403"
+      "archive_diagnostics": [
+        "https://irbank.net/6196/ir: HTTP 403",
+        "https://irbank.net/6196: HTTP 403"
       ],
       "new_events": 0
     },
@@ -77,10 +75,9 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "決算短信の日付と終値照合済",
-      "irbank_diagnostics": [
-        "HTTP 403",
-        "HTTP 403"
+      "archive_diagnostics": [
+        "https://irbank.net/6961/ir: HTTP 403",
+        "https://irbank.net/6961: HTTP 403"
       ],
       "new_events": 0
     },
@@ -88,10 +85,9 @@
       "code": "2326",
       "name": "デジタルアーツ",
       "events": [],
-      "status": "過去の決算日時・株価を確認できず",
-      "irbank_diagnostics": [
-        "HTTP 403",
-        "HTTP 403"
+      "archive_diagnostics": [
+        "https://irbank.net/2326/ir: HTTP 403",
+        "https://irbank.net/2326: HTTP 403"
       ],
       "new_events": 0
     },
@@ -99,10 +95,9 @@
       "code": "6356",
       "name": "日本ギア工業",
       "events": [],
-      "status": "過去の決算日時・株価を確認できず",
-      "irbank_diagnostics": [
-        "HTTP 403",
-        "HTTP 403"
+      "archive_diagnostics": [
+        "https://irbank.net/6356/ir: HTTP 403",
+        "https://irbank.net/6356: HTTP 403"
       ],
       "new_events": 0
     },
@@ -110,10 +105,9 @@
       "code": "6135",
       "name": "牧野フライス製作所",
       "events": [],
-      "status": "過去の決算日時・株価を確認できず",
-      "irbank_diagnostics": [
-        "HTTP 403",
-        "HTTP 403"
+      "archive_diagnostics": [
+        "https://irbank.net/6135/ir: HTTP 403",
+        "https://irbank.net/6135: HTTP 403"
       ],
       "new_events": 0
     },
@@ -135,10 +129,9 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "決算短信の日付と終値照合済",
-      "irbank_diagnostics": [
-        "HTTP 403",
-        "HTTP 403"
+      "archive_diagnostics": [
+        "https://irbank.net/9511/ir: HTTP 403",
+        "https://irbank.net/9511: HTTP 403"
       ],
       "new_events": 0
     },
@@ -146,10 +139,9 @@
       "code": "5440",
       "name": "共英製鋼",
       "events": [],
-      "status": "過去の決算日時・株価を確認できず",
-      "irbank_diagnostics": [
-        "HTTP 403",
-        "HTTP 403"
+      "archive_diagnostics": [
+        "https://irbank.net/5440/ir: HTTP 403",
+        "https://irbank.net/5440: HTTP 403"
       ],
       "new_events": 0
     },
@@ -171,10 +163,9 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "決算短信の日付と終値照合済",
-      "irbank_diagnostics": [
-        "HTTP 403",
-        "HTTP 403"
+      "archive_diagnostics": [
+        "https://irbank.net/6946/ir: HTTP 403",
+        "https://irbank.net/6946: HTTP 403"
       ],
       "new_events": 0
     },
@@ -209,10 +200,9 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "決算短信の日付と終値照合済",
-      "irbank_diagnostics": [
-        "HTTP 403",
-        "HTTP 403"
+      "archive_diagnostics": [
+        "https://irbank.net/6617/ir: HTTP 403",
+        "https://irbank.net/6617: HTTP 403"
       ],
       "new_events": 0
     },
@@ -220,10 +210,9 @@
       "code": "8157",
       "name": "都築電気",
       "events": [],
-      "status": "過去の決算日時・株価を確認できず",
-      "irbank_diagnostics": [
-        "HTTP 403",
-        "HTTP 403"
+      "archive_diagnostics": [
+        "https://irbank.net/8157/ir: HTTP 403",
+        "https://irbank.net/8157: HTTP 403"
       ],
       "new_events": 0
     },
@@ -231,10 +220,9 @@
       "code": "7537",
       "name": "丸文",
       "events": [],
-      "status": "過去の決算日時・株価を確認できず",
-      "irbank_diagnostics": [
-        "HTTP 403",
-        "HTTP 403"
+      "archive_diagnostics": [
+        "https://irbank.net/7537/ir: HTTP 403",
+        "https://irbank.net/7537: HTTP 403"
       ],
       "new_events": 0
     },
@@ -242,10 +230,9 @@
       "code": "8818",
       "name": "京阪神ビルディング",
       "events": [],
-      "status": "過去の決算日時・株価を確認できず",
-      "irbank_diagnostics": [
-        "HTTP 403",
-        "HTTP 403"
+      "archive_diagnostics": [
+        "https://irbank.net/8818/ir: HTTP 403",
+        "https://irbank.net/8818: HTTP 403"
       ],
       "new_events": 0
     },
@@ -267,10 +254,9 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "決算短信の日付と終値照合済",
-      "irbank_diagnostics": [
-        "HTTP 403",
-        "HTTP 403"
+      "archive_diagnostics": [
+        "https://irbank.net/6331/ir: HTTP 403",
+        "https://irbank.net/6331: HTTP 403"
       ],
       "new_events": 0
     },
@@ -278,10 +264,9 @@
       "code": "9997",
       "name": "ベルーナ",
       "events": [],
-      "status": "過去の決算日時・株価を確認できず",
-      "irbank_diagnostics": [
-        "HTTP 403",
-        "HTTP 403"
+      "archive_diagnostics": [
+        "https://irbank.net/9997/ir: HTTP 403",
+        "https://irbank.net/9997: HTTP 403"
       ],
       "new_events": 0
     },
@@ -289,10 +274,9 @@
       "code": "3153",
       "name": "八洲電機",
       "events": [],
-      "status": "過去の決算日時・株価を確認できず",
-      "irbank_diagnostics": [
-        "HTTP 403",
-        "HTTP 403"
+      "archive_diagnostics": [
+        "https://irbank.net/3153/ir: HTTP 403",
+        "https://irbank.net/3153: HTTP 403"
       ],
       "new_events": 0
     },
@@ -314,10 +298,9 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "決算短信の日付と終値照合済",
-      "irbank_diagnostics": [
-        "HTTP 403",
-        "HTTP 403"
+      "archive_diagnostics": [
+        "https://irbank.net/8137/ir: HTTP 403",
+        "https://irbank.net/8137: HTTP 403"
       ],
       "new_events": 0
     },
@@ -339,10 +322,9 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "決算短信の日付と終値照合済",
-      "irbank_diagnostics": [
-        "HTTP 403",
-        "HTTP 403"
+      "archive_diagnostics": [
+        "https://irbank.net/5480/ir: HTTP 403",
+        "https://irbank.net/5480: HTTP 403"
       ],
       "new_events": 0
     },
@@ -364,10 +346,9 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "決算短信の日付と終値照合済",
-      "irbank_diagnostics": [
-        "HTTP 403",
-        "HTTP 403"
+      "archive_diagnostics": [
+        "https://irbank.net/8739/ir: HTTP 403",
+        "https://irbank.net/8739: HTTP 403"
       ],
       "new_events": 0
     },
@@ -375,10 +356,9 @@
       "code": "3482",
       "name": "ロードスターキャピタル",
       "events": [],
-      "status": "過去の決算日時・株価を確認できず",
-      "irbank_diagnostics": [
-        "HTTP 403",
-        "HTTP 403"
+      "archive_diagnostics": [
+        "https://irbank.net/3482/ir: HTTP 403",
+        "https://irbank.net/3482: HTTP 403"
       ],
       "new_events": 0
     }

@@ -1,2562 +1,3990 @@
 {
-  "schema": 2,
-  "updated_at": "2026-10-29T06:12:15+09:00",
+  "schema": 1,
+  "updated_at": "2026-10-30T04:49:42+09:00",
+  "method": "過去の出典付き本人決算履歴とJPX予定日を日付別に蓄積。実際の決算発表時刻は未確認。",
   "coverage": {
-    "companies": 212,
-    "events": 249
+    "companies": 239,
+    "events": 283
   },
   "records": [
     {
       "code": "1376",
+      "name": "カネコ種苗",
       "events": [
         {
           "event_date": "2026-10-05",
           "next_close_pct": -1.76,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "1401",
+      "name": "エムビーエス",
       "events": [
         {
           "event_date": "2026-10-13",
           "next_close_pct": -1.17,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "1407",
+      "name": "ウエストホールディングス",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 5.29,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "1418",
+      "name": "インターライフホールディングス",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 0.66,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "1419",
+      "name": "タマホーム",
       "events": [
         {
           "event_date": "2026-10-13",
           "next_close_pct": -1.74,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "1430",
+      "name": "ファーストコーポレーション",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": -2.28,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "1434",
+      "name": "ＪＥＳＣＯホールディングス",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": -6.42,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "1887",
+      "name": "日本国土開発",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 0.0,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "1930",
+      "name": "北陸電気工事",
+      "events": [
+        {
+          "event_date": "2026-10-28",
+          "next_close_pct": -1.46,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-10-27",
+          "next_session_date": "2026-10-29",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
     {
       "code": "1997",
+      "name": "暁飯島工業",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": -2.33,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2153",
+      "name": "Ｅ・Ｊホールディングス",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": -0.86,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2157",
+      "name": "コシダカホールディングス",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": -2.95,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2168",
+      "name": "パソナグループ",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 3.53,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2026-07-15",
           "next_close_pct": 0.26,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9oZWxoSGlnZlRSVjM5VE9iR3BVWHJTMVN5NnROeGF4eU0zTDh2MmFOSW9yNUVfakEyVmxqLWpjbnlMdlN0RE1JcFJ6MTVYQS04ZDlLdE1naGtibmNzUHBjX2ExNFdjdDNNY1E?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": "2026-07-14",
+          "next_session_date": "2026-07-16",
+          "price_source": "Yahoo Finance 日足"
         }
       ]
     },
     {
       "code": "2211",
+      "name": "不二家",
       "events": [
         {
           "event_date": "2026-10-26",
           "next_close_pct": -1.66,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2026-02-10",
           "next_close_pct": -1.25,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4wanU2NVROdzhONVpDRUpLZUFOVVE1RTVLSnFWLWlvM2EzaXZ2aUU2TXlQMjl6ZG1xdmVUWTRsaXpoQk5SUzV2VnBkUXhBZVE1LUd2UjI5dkZsTmV1ZkVUbEIyOEdWSW1PRVE?oc=5",
-          "date_kind": "決算短信の見出しに明記された適時開示日（時刻未確認）"
+          "date_kind": "決算短信の見出しに明記された適時開示日（時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2268",
+      "name": "Ｂ－Ｒ　サーティワン　アイスクリーム",
       "events": [
         {
           "event_date": "2026-10-23",
           "next_close_pct": -0.12,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2292",
+      "name": "Ｓ　Ｆｏｏｄｓ",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": -1.97,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2305",
+      "name": "スタジオアリス",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": -0.33,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2354",
+      "name": "ＹＥ　ＤＩＧＩＴＡＬ",
       "events": [
         {
           "event_date": "2026-09-30",
           "next_close_pct": 2.36,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2359",
+      "name": "コア",
       "events": [
+        {
+          "event_date": "2026-10-28",
+          "next_close_pct": -4.39,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-10-27",
+          "next_session_date": "2026-10-29",
+          "price_source": "保存済み日足（終値・出来高）"
+        },
         {
           "event_date": "2026-06-23",
           "next_close_pct": -0.05,
           "source_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBYT2pfNkljVkM1RXFNQ1V1QWljSmFKWVVMeXg0a1RZVEVvcHYwdnFjVEd2RzM0Y3lCUnVWY3JnQkJ4eDdmdm4zX3FZY3l5VHJLZXNEa2VrNFk?oc=5",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）"
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2025-06-25",
           "next_close_pct": -1.08,
           "source_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1WU0w5aVlySHdpd0p1RG10Y1JRNGlWdGlfS2VKNTFOQm5qeWg2M3U2Wkd2Nlh4emlIdWpGUVFIeTJfdGowajY3bzloZ3lzb01TYVVzTl9ZejI?oc=5",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）"
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2379",
+      "name": "ディップ",
       "events": [
         {
           "event_date": "2026-10-13",
           "next_close_pct": -5.85,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2462",
+      "name": "ライク",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": 0.0,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2471",
+      "name": "エスプール",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": -4.89,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2484",
+      "name": "出前館",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 1.43,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2653",
+      "name": "イオン九州",
       "events": [
         {
           "event_date": "2026-10-13",
           "next_close_pct": -1.64,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2664",
+      "name": "カワチ薬品",
       "events": [
+        {
+          "event_date": "2026-10-28",
+          "next_close_pct": -0.25,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-10-27",
+          "next_session_date": "2026-10-29",
+          "price_source": "保存済み日足（終値・出来高）"
+        },
         {
           "event_date": "2026-07-29",
           "next_close_pct": 1.79,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9WbXZkU0JYWUNiRy1xOGhmdTI0OWhKQXFaX3B6UENyY05CbWpUdFhPeDdFODlRWnhsU25CU3NXdHJ5WWdEY2RURDc2WFhaU0l1V2hSTWQ4Tk94RS1ENmhMUjMzZHplV3hKQ1E?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2668",
+      "name": "タビオ",
       "events": [
         {
           "event_date": "2026-10-13",
           "next_close_pct": 0.08,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2669",
+      "name": "カネ美食品",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": -0.13,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2698",
+      "name": "キャンドゥ",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": -0.78,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2734",
+      "name": "サーラコーポレーション",
       "events": [
         {
           "event_date": "2026-10-06",
           "next_close_pct": -3.85,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2735",
+      "name": "ワッツ",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": 6.15,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2753",
+      "name": "あみやき亭",
       "events": [
         {
           "event_date": "2026-10-05",
           "next_close_pct": -6.04,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2791",
+      "name": "大黒天物産",
       "events": [
         {
           "event_date": "2026-10-13",
           "next_close_pct": -8.34,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2798",
+      "name": "ワイズテーブルコーポレーション",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": -0.1,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2804",
+      "name": "ブルドックソース",
       "events": [
         {
           "event_date": "2026-10-23",
           "next_close_pct": -2.86,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2882",
+      "name": "イートアンドホールディングス",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": -0.45,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2884",
+      "name": "ヨシムラ・フード・ホールディングス",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 4.9,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2918",
+      "name": "わらべや日洋ホールディングス",
       "events": [
         {
           "event_date": "2026-10-07",
           "next_close_pct": -5.07,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2927",
+      "name": "ＡＦＣ－ＨＤアムスライフサイエンス",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 3.43,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2930",
+      "name": "北の達人コーポレーション",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 10.14,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2934",
+      "name": "ジェイフロンティア",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": -1.42,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2935",
+      "name": "ピックルスホールディングス",
       "events": [
         {
           "event_date": "2026-09-30",
           "next_close_pct": -1.42,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2936",
+      "name": "ベースフード",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": -2.17,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2972",
+      "name": "サンケイリアルエステート投資法人",
       "events": [
         {
           "event_date": "2026-10-16",
           "next_close_pct": -0.08,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "2975",
+      "name": "スター・マイカ・ホールディングス",
       "events": [
         {
           "event_date": "2026-09-30",
           "next_close_pct": -3.48,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3030",
+      "name": "ハブ",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": -0.67,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3063",
+      "name": "ジェイグループホールディングス",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": -0.81,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3075",
+      "name": "銚子丸",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": 0.24,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3077",
+      "name": "ホリイフードサービス",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": -14.32,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3080",
+      "name": "ジェーソン",
       "events": [
         {
           "event_date": "2026-10-13",
           "next_close_pct": -2.49,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3083",
+      "name": "スターシーズ",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": -3.56,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3091",
+      "name": "ブロンコビリー",
       "events": [
         {
           "event_date": "2026-10-22",
           "next_close_pct": 6.46,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2026-01-20",
           "next_close_pct": -2.55,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5sc3RNS3JkaXlEUldfNVZiQ3M2eGVZZXJYei1SOHpoYWJ3WjNwejJUOGNQal9haUZRZ2tDMFdTd2RpS1Nrc2poVXVwZjBSbEEwRVN2amZOaW1DaERMMm9MVjJ5Y1hqVTE4a0E?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3093",
+      "name": "トレジャー・ファクトリー",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": -1.85,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3139",
+      "name": "ラクト・ジャパン",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": 2.16,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3168",
+      "name": "ＭＥＲＦ",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": -16.87,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3189",
+      "name": "ＡＮＡＰホールディングス",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": -6.49,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3236",
+      "name": "プロパスト",
       "events": [
         {
           "event_date": "2026-10-13",
           "next_close_pct": 13.6,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3290",
+      "name": "Ｏｎｅリート投資法人",
       "events": [
         {
           "event_date": "2026-10-21",
           "next_close_pct": 0.54,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3321",
+      "name": "ミタチ産業",
       "events": [
         {
           "event_date": "2026-10-02",
           "next_close_pct": -6.67,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3353",
+      "name": "メディカル一光グループ",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": 0.36,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3454",
+      "name": "ファーストブラザーズ",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": 0.16,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3479",
+      "name": "ＴＫＰ",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 6.16,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3488",
+      "name": "セントラル・リート投資法人",
       "events": [
         {
           "event_date": "2026-10-19",
           "next_close_pct": -2.36,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3492",
+      "name": "ＭＩＲＡＲＴＨ不動産投資法人",
       "events": [
         {
           "event_date": "2026-10-23",
           "next_close_pct": 0.66,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3501",
+      "name": "ＳＵＭＩＮＯＥ",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": -1.11,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3547",
+      "name": "ユニシアホールディングス",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 0.31,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3548",
+      "name": "バロックジャパンリミテッド",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": -1.71,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3558",
+      "name": "ジェイドグループ",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": -5.85,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3560",
+      "name": "ほぼ日",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": -2.33,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3562",
+      "name": "Ｎｏ．１",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": -7.23,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3608",
+      "name": "ＴＳＩホールディングス",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": 4.69,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3678",
+      "name": "メディアドゥ",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": 7.76,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "3771",
+      "name": "システムリサーチ",
+      "events": [
+        {
+          "event_date": "2026-10-28",
+          "next_close_pct": -5.35,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-10-27",
+          "next_session_date": "2026-10-29",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
     {
       "code": "3791",
+      "name": "ＩＧポート",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 7.63,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3810",
+      "name": "サイバーステップホールディングス",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": -1.72,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2026-07-15",
           "next_close_pct": -23.74,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFByTTdmakx4YVc1ODFRVkZiMWF3cy1SRFM1enNfVnlfeDFOS3oyTERZU1FLMHlDTWt2a0hwNTVibDJnU0o4dVVXQnZRQXVrekFIQjFuNHhEbTJqTDV4SU9WUm1aVGx2SXZTUGc?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": "2026-07-14",
+          "next_session_date": "2026-07-16",
+          "price_source": "Yahoo Finance 日足"
+        }
+      ]
+    },
+    {
+      "code": "3850",
+      "name": "イントラマート",
+      "events": [
+        {
+          "event_date": "2026-10-28",
+          "next_close_pct": -14.16,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-10-27",
+          "next_session_date": "2026-10-29",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
     {
       "code": "3911",
+      "name": "Ａｉｍｉｎｇ",
       "events": [
         {
           "event_date": "2026-10-27",
           "next_close_pct": 8.41,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "3915",
+      "name": "テラスカイ",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 15.2,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2026-04-14",
           "next_close_pct": 9.47,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBCZUEtTmV1NWszbVJaWkcwLXJvSTdMQmQ3c0c4U2MzQ2NqNlNzZW5Va20yQzBaTVg1bFh3aVhOblJScFU5NWhMdkQ3TV9zVWstcFRwTm9udmV3ZUptOHBZRXNaMmpFN1g5UXc?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": "2026-04-13",
+          "next_session_date": "2026-04-15",
+          "price_source": "Yahoo Finance 日足"
         }
       ]
     },
     {
       "code": "3922",
+      "name": "ＰＲ　ＴＩＭＥＳ",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": 21.91,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "3969",
+      "name": "エイトレッド",
+      "events": [
+        {
+          "event_date": "2026-10-28",
+          "next_close_pct": 0.57,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-10-27",
+          "next_session_date": "2026-10-29",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
     {
       "code": "3991",
+      "name": "ウォンテッドリー",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": -7.45,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "4015",
+      "name": "ペイクラウドホールディングス",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": -3.61,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "4187",
+      "name": "大阪有機化学工業",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": 10.13,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "4290",
+      "name": "4290",
       "events": [
         {
           "event_date": "2026-05-13",
           "next_close_pct": -1.5,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBLaFpPYTZnMlhFVTU4N0FHNHFWOUFkY19OcE1HWFBpS0ViYnRadVA5cVQ4NWlZSF9IeDRGNUtzNkhwNjc4dnpqNEl0RVdxM1l5ZjV3a0ROY1dDUjM4OWxSWUswdnhTSzVIYmc?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "4343",
+      "name": "イオンファンタジー",
       "events": [
         {
           "event_date": "2026-10-13",
           "next_close_pct": 5.98,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "4412",
+      "name": "サイエンスアーツ",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 6.82,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "4413",
+      "name": "ボードルア",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 0.3,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2026-04-14",
           "next_close_pct": 16.71,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5UNjZSc0pPWTRMcThlZ2lSZDJMZUtsNlFhakJGZHAyN2VSZHZmMFZVWW1zTEZfTjRSbG0xTTczNU5YbGMtZG5HUmdYU25Kc0QyMzY2emU1c1hFRFVVUlZPaExqcm9JdlV6MGc?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": "2026-04-13",
+          "next_session_date": "2026-04-15",
+          "price_source": "Yahoo Finance 日足"
         }
       ]
     },
     {
       "code": "4430",
+      "name": "東海ソフト",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": -0.06,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "4434",
+      "name": "サーバーワークス",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 18.39,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "4439",
+      "name": "東名",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 15.62,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "4479",
+      "name": "マクアケ",
       "events": [
         {
           "event_date": "2026-10-27",
           "next_close_pct": 0.0,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2026-07-28",
           "next_close_pct": -14.59,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5HVGdKRjJ0cF9HNlppNjBibEc5dTZjMlVCekotX1U5ZHUwREZ5eUpfNHNUZzRnSVVldGZIVTFIUU9CRXhXbUdtTmRhVHhDTmp0eFJvSWlndFIzcE1DVGlqLXJsemp3cExreWc?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "4552",
+      "name": "4552",
       "events": [
         {
           "event_date": "2026-07-29",
           "next_close_pct": -2.7,
           "source_url": "https://finance.yahoo.com/quote/4552.T/analysis/",
-          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）"
+          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2026-05-13",
           "next_close_pct": -3.94,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1sVnhXSTFTc3ZNZW1zbEExbTJESzFNRFFVNTNuakh6eE9aUXlTSE9Uc2NEdkZMbHRnMUFIYzU5MXF0ZU9qRURaNlNJR0E3ajdESGZhZEpLSG5uZDVWRkpIV2p0Z05hbWRpeEE?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2026-01-28",
           "next_close_pct": -6.67,
           "source_url": "https://finance.yahoo.com/quote/4552.T/analysis/",
-          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）"
+          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2025-10-30",
           "next_close_pct": 3.64,
           "source_url": "https://finance.yahoo.com/quote/4552.T/analysis/",
-          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）"
+          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2025-07-29",
           "next_close_pct": 1.85,
           "source_url": "https://finance.yahoo.com/quote/4552.T/analysis/",
-          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）"
+          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2025-05-13",
           "next_close_pct": 1.27,
           "source_url": "https://finance.yahoo.com/quote/4552.T/analysis/",
-          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）"
+          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2025-01-30",
           "next_close_pct": -1.43,
           "source_url": "https://finance.yahoo.com/quote/4552.T/analysis/",
-          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）"
+          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2024-10-30",
           "next_close_pct": 5.19,
           "source_url": "https://finance.yahoo.com/quote/4552.T/analysis/",
-          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）"
+          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "4577",
+      "name": "ダイト",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": 1.39,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "4644",
+      "name": "イマジニア",
+      "events": [
+        {
+          "event_date": "2026-10-28",
+          "next_close_pct": 0.49,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-10-27",
+          "next_session_date": "2026-10-29",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
     {
       "code": "4668",
+      "name": "明光ネットワークジャパン",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": -4.66,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "4714",
+      "name": "リソー教育グループ",
       "events": [
         {
           "event_date": "2026-10-13",
           "next_close_pct": 41.15,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "4763",
+      "name": "クリーク・アンド・リバー社",
       "events": [
         {
           "event_date": "2026-10-08",
           "next_close_pct": -3.58,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "4765",
+      "name": "ＳＢＩグローバルアセットマネジメント",
       "events": [
         {
           "event_date": "2026-10-27",
           "next_close_pct": 2.66,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2026-07-27",
           "next_close_pct": 3.7,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE84SS1fS1FBOXVYdXA0SWs2emtTdnVQV2xuLVpRYUdlekw5YzRMVUdzUXBnRVNHQm9vdUNLNTZPN01wWTd2SjIzSzFXUTNvTm9NZ2NrSG9TX0JnbGgwQi1zRTN1Q0hlUFRDLWc?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "4825",
+      "name": "ウェザーニューズ",
       "events": [
         {
           "event_date": "2026-10-08",
           "next_close_pct": -3.01,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "4832",
+      "name": "ＪＦＥシステムズ",
+      "events": [
+        {
+          "event_date": "2026-10-28",
+          "next_close_pct": -0.84,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-10-27",
+          "next_session_date": "2026-10-29",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
     {
       "code": "4956",
+      "name": "コニシ",
       "events": [
+        {
+          "event_date": "2026-10-28",
+          "next_close_pct": -1.13,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-10-27",
+          "next_session_date": "2026-10-29",
+          "price_source": "保存済み日足（終値・出来高）"
+        },
         {
           "event_date": "2026-07-27",
           "next_close_pct": -0.28,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9ObXlvMGVEdzFnR2VBUzRBUHEtdjRYd1Y2X3NXeklxMU0wOUt1R2gySFA5TFRJUFdlTHF3MFFpQU5hR3FDX01jTnVNSTFkNmZNbTZBQ2FYamV2M2xxR1I1V3ItOG9ESzIxNFE?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2026-04-24",
           "next_close_pct": 3.09,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB0TkNHMWIxaDAwQWVqVmMtWXFtSDlmUzZZa2RKd1BLWWZuUjhwTWFJalhKMmY3YWpKVUNuYlBXSjlOSXpjN19pdkg0cHBVRE04Tmx4aUNOYTFYTVFtdmk3bHBranBjNWdOclE?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "4973",
+      "name": "日本高純度化学",
       "events": [
         {
           "event_date": "2026-10-27",
           "next_close_pct": -0.24,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2026-07-24",
           "next_close_pct": -13.13,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9aYS03amY5RWtrUzdEMnRjSmtaem8zbEtkR1dqMmtGcGtVZzNkRnZ6VkRTWVE2TVp6QUx1UUU3bmxCUzJXRUVpOFR5cUxJV0liOEEzUXgtbkFmajhyZG1aR0tIRHVXNl9TM3c?oc=5",
-          "date_kind": "決算短信の見出しに明記された適時開示日（時刻未確認）"
+          "date_kind": "決算短信の見出しに明記された適時開示日（時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "4992",
+      "name": "北興化学工業",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": -2.84,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "5018",
+      "name": "ＭＯＲＥＳＣＯ",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 15.44,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "5078",
+      "name": "セレコーポレーション",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": -1.53,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "5204",
+      "name": "石塚硝子",
       "events": [
         {
           "event_date": "2026-10-22",
           "next_close_pct": -5.69,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "5243",
+      "name": "ｎｏｔｅ",
       "events": [
         {
           "event_date": "2026-10-06",
           "next_close_pct": -18.81,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "5246",
+      "name": "ＥＬＥＭＥＮＴＳ",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": 4.97,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "5480",
+      "name": "日本冶金工業",
+      "events": [
+        {
+          "event_date": "2026-05-08",
+          "next_close_pct": -4.98,
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9aUVQ5XzZ4dzlJWWlzRmV5dDdWd0hYZ2oxbVRVZ0NrcVJrdVp5UXZPWTJIcWVmOVVYcEV0WDNycXFHRjlvaE5WWVQwMlBweGpaZ1h1VENFWmJGeTAtWmxwMWJ6RG1ETzdzWFE?oc=5",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": "2026-05-07",
+          "next_session_date": "2026-05-11",
+          "price_source": "Yahoo Finance 日足"
         }
       ]
     },
     {
       "code": "5527",
+      "name": "ｐｒｏｐｅｒｔｙ　ｔｅｃｈｎｏｌｏｇｉｅｓ",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 4.69,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "5532",
+      "name": "リアルゲイト",
       "events": [
         {
           "event_date": "2026-10-27",
           "next_close_pct": -0.85,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "5574",
+      "name": "ＡＢＥＪＡ",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 1.95,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2026-07-15",
           "next_close_pct": -0.75,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5sckcyZFFCUmZGQUN3cHJQMjBjNTlrVmdfTFA5cTl1STFtaWNvcjgxNUxYSExJSWx6UVZrdnozZ1Q1OUpFVUpKYmtiY3dTRzliLUZUaGtjcEQ5akotWXZVWU5oODEzWTlWaXc?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": "2026-07-14",
+          "next_session_date": "2026-07-16",
+          "price_source": "Yahoo Finance 日足"
         }
       ]
     },
     {
       "code": "5578",
+      "name": "ＡＲアドバンストテクノロジ",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": -11.15,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "5659",
+      "name": "日本精線",
+      "events": [
+        {
+          "event_date": "2026-10-28",
+          "next_close_pct": 7.49,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-10-27",
+          "next_session_date": "2026-10-29",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
+      "code": "5834",
+      "name": "ＳＢＩリーシングサービス",
+      "events": [
+        {
+          "event_date": "2026-10-28",
+          "next_close_pct": -1.98,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-10-27",
+          "next_session_date": "2026-10-29",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
     {
       "code": "5869",
+      "name": "早稲田学習研究会",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 0.16,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "5885",
+      "name": "ジーデップ・アドバンス",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": -3.17,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "5932",
+      "name": "三協立山",
       "events": [
         {
           "event_date": "2026-10-07",
           "next_close_pct": 14.62,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "5933",
+      "name": "アルインコ",
       "events": [
         {
           "event_date": "2026-10-20",
           "next_close_pct": -3.72,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "5942",
+      "name": "日本フイルコン",
       "events": [
         {
           "event_date": "2026-10-01",
           "next_close_pct": 8.27,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "5967",
+      "name": "ＴＯＮＥ",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": -5.42,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "5982",
+      "name": "マルゼン",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": -1.11,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "5992",
+      "name": "中央発條",
+      "events": [
+        {
+          "event_date": "2026-10-28",
+          "next_close_pct": -23.32,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-10-27",
+          "next_session_date": "2026-10-29",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
+      "code": "6023",
+      "name": "ダイハツインフィニアース",
+      "events": [
+        {
+          "event_date": "2026-10-28",
+          "next_close_pct": -8.41,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-10-27",
+          "next_session_date": "2026-10-29",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
     {
       "code": "6058",
+      "name": "ベクトル",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 4.52,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "6083",
+      "name": "ＥＲＩホールディングス",
       "events": [
         {
           "event_date": "2026-09-30",
           "next_close_pct": -17.75,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "6086",
+      "name": "シンメンテホールディングス",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": 1.45,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "6159",
+      "name": "ミクロン精密",
       "events": [
         {
           "event_date": "2026-10-13",
           "next_close_pct": -0.36,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "6183",
+      "name": "ベルシステム２４ホールディングス",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": 2.85,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "6196",
+      "name": "ストライクグループ",
+      "events": [
+        {
+          "event_date": "2026-04-30",
+          "next_close_pct": -8.55,
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1OeWdCRnFqY3ZzeUlfWmlZaEpyTG9BZlBDeDE1ak16NXdRellGU3ZPZFhuQjJ5a29BUndyVVpHTXpwbU1QVkZhVTBXLUp5WWJUNmpPWkl3TlZMbTZHV1V5WmJsSE9Wem1SaFE?oc=5",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": "2026-04-28",
+          "next_session_date": "2026-05-01",
+          "price_source": "Yahoo Finance 日足"
         }
       ]
     },
     {
       "code": "6199",
+      "name": "セラク",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 13.8,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "6224",
+      "name": "ＪＲＣ",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 5.64,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "6230",
+      "name": "ＳＡＮＥＩ",
       "events": [
         {
           "event_date": "2026-10-26",
           "next_close_pct": -8.92,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2026-07-27",
           "next_close_pct": -6.45,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9WX0tFNmJhSk9XclJfZldNV19FVm8zRmtOc2hFazkwaW05M1pZcG9mQ1lYUi12MVJ3aFZROXBub2NNMTFaOE5kQlkydGNhMDJMMDZXZGJmYkpFUlpHeXJnUENVeC1BSG9xS0E?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "6255",
+      "name": "エヌ・ピー・シー",
       "events": [
         {
           "event_date": "2026-10-07",
           "next_close_pct": -8.02,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "6264",
+      "name": "マルマエ",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": 9.17,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "6279",
+      "name": "瑞光",
       "events": [
         {
           "event_date": "2026-10-02",
           "next_close_pct": -3.79,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "6289",
+      "name": "技研製作所",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": 2.43,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "6331",
+      "name": "三菱化工機",
+      "events": [
+        {
+          "event_date": "2026-05-15",
+          "next_close_pct": 16.34,
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5oeGtkVko2cmF2NkV6M0RtN1dLRXk0RGlvOUZWY2FyWGJhcTU5czI5bzl5eHliRElYN0V3dTdJcWZtRlYzNUlNbUdidFdCVFd0LWY1LWI4NVdRcVRPTVhyWlpZZWR0MWdUYlE?oc=5",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": "2026-05-14",
+          "next_session_date": "2026-05-18",
+          "price_source": "Yahoo Finance 日足"
         }
       ]
     },
     {
       "code": "6337",
+      "name": "テセック",
       "events": [
         {
           "event_date": "2026-10-27",
           "next_close_pct": -14.25,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "6345",
+      "name": "6345",
       "events": [
         {
           "event_date": "2026-07-30",
           "next_close_pct": 1.11,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9Kd3VLeGlub1lRYWkxejlyYWNkN0loXzFRSENCcmFQVVNhU2lEOVhrY1dSMWVYQ1VQMVExOGJwWDNza01JT0hVTGpaNVVHYjZGUGE0bHRhcnF5UDNqbkdtXy1MdVdaMzFzUlE?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "6382",
+      "name": "トリニティ工業",
+      "events": [
+        {
+          "event_date": "2026-10-28",
+          "next_close_pct": -0.42,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-10-27",
+          "next_session_date": "2026-10-29",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
     {
       "code": "6469",
+      "name": "放電精密加工研究所",
       "events": [
         {
           "event_date": "2026-10-06",
           "next_close_pct": 1.33,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "6470",
+      "name": "大豊工業",
+      "events": [
+        {
+          "event_date": "2026-10-28",
+          "next_close_pct": -2.64,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-10-27",
+          "next_session_date": "2026-10-29",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
     {
       "code": "6496",
+      "name": "中北製作所",
       "events": [
         {
           "event_date": "2026-10-06",
           "next_close_pct": -7.41,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "6505",
+      "name": "東洋電機製造",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": 19.47,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "6521",
+      "name": "オキサイド",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": -2.8,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2026-07-14",
           "next_close_pct": -5.62,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1KeWtOd0lHcU9EcV9tV0x3WXkzT3U0TVJoRWpOQS0taXc0eEsyU3ZhM01BOEVOSWtGTmJDUGtHT2xQSW9XcENUbWpXUkdtQ2NLN1F4ZmZPSlVCUndFelg2NVJwbTd5V3R5ekE?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": "2026-07-13",
+          "next_session_date": "2026-07-15",
+          "price_source": "Yahoo Finance 日足"
         },
         {
           "event_date": "2026-04-14",
           "next_close_pct": -13.86,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE93MUtaZ0V3d21wWkZueUkxWmhfaWdtMG5Ia0tBMy1rdG1Sd3QzSUVhQzdKRzdUdjNTT2N4OWhKRVZ1QkNlNExjNmF3VUtEU2pNY3YyN3Q4czFkZThGSWNfa0lCS21NSEVNa2c?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": "2026-04-13",
+          "next_session_date": "2026-04-15",
+          "price_source": "Yahoo Finance 日足"
         }
       ]
     },
     {
       "code": "6572",
+      "name": "オープングループ",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": -6.02,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "6617",
+      "name": "東光高岳",
+      "events": [
+        {
+          "event_date": "2026-07-30",
+          "next_close_pct": 5.11,
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE83eHU5dHlNdnZuODZCTTFWY2V4RUc0eExMNWU3Z28zWlJQQ1V0MnJ0N3l2cjctd0dSQVZTbEtTUGRVTHM2aktWWmhDbnQyZkVXUWdLcUtBV2hIWnNQRDVEelAwOFhwM0dmWnc?oc=5",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": "2026-07-29",
+          "next_session_date": "2026-07-31",
+          "price_source": "Yahoo Finance 日足"
+        },
+        {
+          "event_date": "2026-04-28",
+          "next_close_pct": 24.38,
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5BdUNnOG9iU2ZPS1BsNkVKZ2hnWXpXaGNXNWctanp4WS1fRFZ6TXl6QXlYWWpoNTVLcGNRcFo2alRwRkZBOGhwbU4xSFVESE9JSkhpcEtPT2tueU1sX1hhcWYzMjVldFZ0Z1E?oc=5",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": "2026-04-27",
+          "next_session_date": "2026-04-30",
+          "price_source": "Yahoo Finance 日足"
         }
       ]
     },
     {
       "code": "6629",
+      "name": "テクノホライゾン",
       "events": [
         {
           "event_date": "2026-10-23",
           "next_close_pct": -2.6,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "6668",
+      "name": "アドテック　プラズマ　テクノロジー",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": 20.82,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "6810",
+      "name": "6810",
       "events": [
         {
           "event_date": "2026-04-27",
           "next_close_pct": -8.75,
           "source_url": "https://finance.yahoo.com/quote/6810.T/analysis/",
-          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）"
+          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2026-01-30",
           "next_close_pct": -5.66,
           "source_url": "https://finance.yahoo.com/quote/6810.T/analysis/",
-          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）"
+          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2025-10-30",
           "next_close_pct": 1.36,
           "source_url": "https://finance.yahoo.com/quote/6810.T/analysis/",
-          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）"
+          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2025-07-30",
           "next_close_pct": 1.0,
           "source_url": "https://finance.yahoo.com/quote/6810.T/analysis/",
-          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）"
+          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2025-04-25",
           "next_close_pct": 1.28,
           "source_url": "https://finance.yahoo.com/quote/6810.T/analysis/",
-          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）"
+          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2025-01-31",
           "next_close_pct": -4.63,
           "source_url": "https://finance.yahoo.com/quote/6810.T/analysis/",
-          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）"
+          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2024-10-31",
           "next_close_pct": -8.88,
           "source_url": "https://finance.yahoo.com/quote/6810.T/analysis/",
-          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）"
+          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "6946",
+      "name": "日本アビオニクス",
+      "events": [
+        {
+          "event_date": "2026-07-30",
+          "next_close_pct": 12.03,
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBDMzdvV3BZNFhPNGJiT0FjOHJXdjlZYzloUGp2ZWZWN2xYVmRHTlhBY2dvS2wzaTVNd1VqU2pRbWk3dy1RMlF5cXJmZnh6QnBnUVVTM3BSTG00UlJNM1RBSlU0T1dfVWhWQ3c?oc=5",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": "2026-07-29",
+          "next_session_date": "2026-07-31",
+          "price_source": "Yahoo Finance 日足"
         }
       ]
     },
     {
       "code": "6955",
+      "name": "ＦＤＫ",
       "events": [
+        {
+          "event_date": "2026-10-28",
+          "next_close_pct": -6.04,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-10-27",
+          "next_session_date": "2026-10-29",
+          "price_source": "保存済み日足（終値・出来高）"
+        },
         {
           "event_date": "2026-07-29",
           "next_close_pct": -0.51,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5keXdmWTlHU1ozSjd6NXVQZkl3SWp2dDZvNWc0Q3dWZnlrVnI1V1JzS2hqUTB3SGtrSmJ2MVNDTTl2YUVtTElvcnlzOHY1NV80c3dZLUxBb1BzZUF5WkxYUlphTm9uN0Nidmc?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "6961",
+      "name": "エンプラス",
+      "events": [
+        {
+          "event_date": "2026-07-29",
+          "next_close_pct": -13.72,
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBDY3FrdEpPQzJoaEcxM08waHNSR3pCM1dOd2R2UEg3cEk2Um43U19CZTAyYXFCRWUxcUxtQVFzXzVFMzc3Uks2SVJmVnI0UWNTSFdfUUVPd3JvSlhOczh4azRMaW5TUzhjenc?oc=5",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": "2026-07-28",
+          "next_session_date": "2026-07-30",
+          "price_source": "Yahoo Finance 日足"
         }
       ]
     },
     {
       "code": "6999",
+      "name": "ＫＯＡ",
       "events": [
         {
           "event_date": "2026-10-23",
           "next_close_pct": 6.92,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7085",
+      "name": "カーブスホールディングス",
       "events": [
         {
           "event_date": "2026-10-13",
           "next_close_pct": 8.08,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7102",
+      "name": "日本車輌製造",
       "events": [
         {
           "event_date": "2026-10-27",
           "next_close_pct": -7.07,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7175",
+      "name": "今村証券",
       "events": [
         {
           "event_date": "2026-10-27",
           "next_close_pct": 1.13,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7241",
+      "name": "フタバ産業",
       "events": [
+        {
+          "event_date": "2026-10-28",
+          "next_close_pct": -8.96,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-10-27",
+          "next_session_date": "2026-10-29",
+          "price_source": "保存済み日足（終値・出来高）"
+        },
         {
           "event_date": "2026-07-30",
           "next_close_pct": -0.1,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE54QktjMk1IMkw0a1ZQbVRfSWFCaXQ0c0xWY3JTb2VVbmFxT2ZYNnNveDI3YS1CR3QyUVBVR2JGZ2haN3JieUNpemJrNmRnRWpFNlNvWHJUU21MSXVHcTZHYUE0SHFsV0dwMHc?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2026-04-27",
           "next_close_pct": 5.32,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ZUjlVa1VwRTFSUUo1OTBJbXM2RXFwZXdvYzRLMEhtdjBubUFWLU81TXFkSmlQOEY0djRMSmdVVjNrNnpaVEYyZEl3LVZlMkpNNGNEQXN6VE5zNDA0YUdJQWc4QmJHSWVHZ1E?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7299",
+      "name": "フジオーゼックス",
       "events": [
         {
           "event_date": "2026-10-27",
           "next_close_pct": 1.28,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1016.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7352",
+      "name": "ＴＷＯＳＴＯＮＥ＆Ｓｏｎｓ",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 17.97,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7373",
+      "name": "アイドマ・ホールディングス",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": -11.23,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7388",
+      "name": "ＦＰパートナー",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 1.53,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7447",
+      "name": "ナガイレーベン",
       "events": [
         {
           "event_date": "2026-10-01",
           "next_close_pct": 4.41,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7487",
+      "name": "小津産業",
       "events": [
         {
           "event_date": "2026-10-08",
           "next_close_pct": 2.02,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7514",
+      "name": "ヒマラヤ",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 0.59,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7520",
+      "name": "エコス",
       "events": [
         {
           "event_date": "2026-10-13",
           "next_close_pct": -3.97,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7599",
+      "name": "ＩＤＯＭ",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": -19.31,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7607",
+      "name": "進和",
       "events": [
         {
           "event_date": "2026-10-13",
           "next_close_pct": -1.59,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7608",
+      "name": "エスケイジャパン",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": -17.39,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7610",
+      "name": "テイツー",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 0.75,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7646",
+      "name": "ＰＬＡＮＴ",
       "events": [
         {
           "event_date": "2026-10-27",
           "next_close_pct": 0.51,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7673",
+      "name": "ダイコー通産",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": 4.91,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7679",
+      "name": "薬王堂ホールディングス",
       "events": [
         {
           "event_date": "2026-10-05",
           "next_close_pct": -1.64,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7713",
+      "name": "シグマ光機",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": 27.69,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7725",
+      "name": "インターアクション",
       "events": [
         {
           "event_date": "2026-10-13",
           "next_close_pct": -0.22,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7811",
+      "name": "中本パックス",
       "events": [
         {
           "event_date": "2026-10-13",
           "next_close_pct": 3.45,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7818",
+      "name": "トランザクション",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 10.37,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7879",
+      "name": "ノダ",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": 1.95,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7888",
+      "name": "三光合成",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": -4.59,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7931",
+      "name": "未来工業",
       "events": [
         {
           "event_date": "2026-10-23",
           "next_close_pct": -4.39,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "7965",
+      "name": "象印マホービン",
       "events": [
         {
           "event_date": "2026-10-02",
           "next_close_pct": -1.95,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "8008",
+      "name": "ヨンドシーホールディングス",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": -3.11,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "8011",
+      "name": "三陽商会",
       "events": [
         {
           "event_date": "2026-10-06",
           "next_close_pct": -1.62,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "8095",
+      "name": "アステナホールディングス",
       "events": [
         {
           "event_date": "2026-10-13",
           "next_close_pct": -3.67,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "8125",
+      "name": "ワキタ",
       "events": [
         {
           "event_date": "2026-10-08",
           "next_close_pct": -3.71,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "8127",
+      "name": "ヤマトインターナショナル",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": 4.8,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "8137",
+      "name": "サンワテクノス",
+      "events": [
+        {
+          "event_date": "2026-05-08",
+          "next_close_pct": 23.02,
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1sam92NGhnZHhsbTJ3NnAxZ0tSSXg5QTFMVHNTMDF2Q3IwVlFWRElBY3lmSEdtWlRsNEtPWHRMYUNUWmlGN3BNeEFzT3dpU3FwSzlCeS14TTlJa28tUk1mNHhvcWlfWEx1dUE?oc=5",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": "2026-05-07",
+          "next_session_date": "2026-05-11",
+          "price_source": "Yahoo Finance 日足"
         }
       ]
     },
     {
       "code": "8167",
+      "name": "リテールパートナーズ",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 0.49,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "8198",
+      "name": "マックスバリュ東海",
       "events": [
         {
           "event_date": "2026-10-13",
           "next_close_pct": -2.35,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "8200",
+      "name": "リンガーハット",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": 3.94,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "8203",
+      "name": "ＭｒＭａｘＨＤ",
       "events": [
         {
           "event_date": "2026-10-08",
           "next_close_pct": -1.81,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "8244",
+      "name": "近鉄百貨店",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": 0.79,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "8613",
+      "name": "8613",
       "events": [
         {
           "event_date": "2026-04-28",
           "next_close_pct": 1.95,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5FS1Q1YlF1bzR6Mzg5cVp0QTR1UTFndHN2TWpaNVRqQzgwWnpPVnFmeEVtSS11LUNRSUxvOWJabm1qa1hET1dkUzFTYmF6V0xTYlJXbmNZY0Q4QnFPQ2k2TVlYOXBBTWtLbGc?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "8614",
+      "name": "8614",
       "events": [
         {
           "event_date": "2026-07-30",
           "next_close_pct": -1.49,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1NdHJlcUlxWjFrQTlraHJRQ2tyTDJGbGJQb0tsa2pnb2s3ZDMxdlNrd1E3YnBpWDIySjBVYWdhTGp6V1pTN2ROUFJOaHZSSHlFeW5lLXlBMlZEbm5WUUJ2OU9mNGpiTV95X3c?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "8624",
+      "name": "8624",
       "events": [
         {
           "event_date": "2026-07-30",
           "next_close_pct": 6.06,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBRZ0M5bW9NMHRsdHZ6YTZuc2NBWjR3cG8yZjVKMTFpOEVMMGhxVFJWQTFIZFZDWl91V3V2MU4wOGdtMXMtZWpBbkRVRms5QXY0WUxSb0YyM2JnWHo0bE4xRHF1cnNtYTdtMlE?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "8706",
+      "name": "8706",
       "events": [
         {
           "event_date": "2026-07-29",
           "next_close_pct": 1.44,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBQaVRvbUVfWkJZQzdkQ09HN2tFQmVTNjhVVkk0RHEyUWI5Tko5RzdRVFNiMkFJZVlCbHNKRmpUdlpyMlZvZi1IcDVRbER0LWdKRWNrNFNpVURxaXg1WGVTRlBab2lRTGpuZHc?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "8707",
+      "name": "岩井コスモホールディングス",
       "events": [
         {
           "event_date": "2026-10-23",
           "next_close_pct": -4.62,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "8708",
+      "name": "8708",
       "events": [
         {
           "event_date": "2026-04-28",
           "next_close_pct": 2.48,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5MZUwxMlVsQndOb2tITkxSUXhpYlZxVVlraHlNYVdFTzU5TXgwYXBxZUZpdktmLWRLS0xDTnlWQjRPSm93VHZ1eDF5ZTl1RElfbG9ZZEhHa0JlSE9Wd3NnVVRpeTFCMjVGa2c?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "8739",
+      "name": "スパークス・グループ",
+      "events": [
+        {
+          "event_date": "2026-05-07",
+          "next_close_pct": 6.53,
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5veGJtRl9xVEdTa3hJVGRMQV9NSkJIV1k0c29LaWdhSVhObjNldG9nX3c0VU1vUFhzWm5CeGthLWFSMUdkNURDdGhnRnNCcFFSTXM1eUhFTUN3SndFTWt6eWFOaEx1LXA4VEE?oc=5",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": "2026-05-01",
+          "next_session_date": "2026-05-08",
+          "price_source": "Yahoo Finance 日足"
         }
       ]
     },
     {
       "code": "8871",
+      "name": "ゴールドクレスト",
       "events": [
+        {
+          "event_date": "2026-10-28",
+          "next_close_pct": -10.89,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-10-27",
+          "next_session_date": "2026-10-29",
+          "price_source": "保存済み日足（終値・出来高）"
+        },
         {
           "event_date": "2026-07-30",
           "next_close_pct": -4.56,
           "source_url": "https://finance.yahoo.com/quote/8871.T/analysis/",
-          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）"
+          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2026-05-14",
           "next_close_pct": 10.44,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE50OERnNjlzMUJfa3FnUkdQbVVEVG1lRWVOQmJWRlJvOGtIeTJyTmR3d0R6ZGZCelNDVTNfOHU0Y0xKUE52Z3NXUDBHRklBeWdWak4yQmhmZXNMZjVmclZ3THhIdmY3Y3lMUVE?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2026-01-29",
           "next_close_pct": 2.31,
           "source_url": "https://finance.yahoo.com/quote/8871.T/analysis/",
-          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）"
+          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2025-10-30",
           "next_close_pct": 2.45,
           "source_url": "https://finance.yahoo.com/quote/8871.T/analysis/",
-          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）"
+          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2025-07-27",
           "next_close_pct": 1.47,
           "source_url": "https://finance.yahoo.com/quote/8871.T/analysis/",
-          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）"
+          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2025-05-13",
           "next_close_pct": -0.6,
           "source_url": "https://finance.yahoo.com/quote/8871.T/analysis/",
-          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）"
+          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2025-01-30",
           "next_close_pct": -4.92,
           "source_url": "https://finance.yahoo.com/quote/8871.T/analysis/",
-          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）"
+          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2024-10-30",
           "next_close_pct": -0.73,
           "source_url": "https://finance.yahoo.com/quote/8871.T/analysis/",
-          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）"
+          "date_kind": "Yahoo決算カレンダー日付（時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "8887",
+      "name": "シーラホールディングス",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": -2.57,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "8892",
+      "name": "エスコン",
       "events": [
         {
           "event_date": "2026-10-27",
           "next_close_pct": -4.17,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "8904",
+      "name": "ＡＶＡＮＴＩＡ",
       "events": [
         {
           "event_date": "2026-10-13",
           "next_close_pct": -0.24,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "8908",
+      "name": "毎日コムネット",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": 3.38,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "8914",
+      "name": "エリアリンク",
+      "events": [
+        {
+          "event_date": "2026-10-28",
+          "next_close_pct": -6.32,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-10-27",
+          "next_session_date": "2026-10-29",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
     {
       "code": "8931",
+      "name": "和田興産",
       "events": [
         {
           "event_date": "2026-10-02",
           "next_close_pct": -1.9,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "9029",
+      "name": "ヒガシホールディングス",
       "events": [
         {
           "event_date": "2026-10-23",
           "next_close_pct": -6.51,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "9065",
+      "name": "山九",
+      "events": [
+        {
+          "event_date": "2026-05-14",
+          "next_close_pct": 6.24,
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB5cmY1bS1ac2JaU0tqdk50ZVE3U205RUZJeXFneHd1STljMm5zVlV5YTFzcGUzY2dFZzRMZm02cktJS3l0bDBvUFZ6ZXVwVHBtX3Q1SS0zNEl0ckxuSFJURy1hR09GOGdqTXc?oc=5",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": "2026-05-13",
+          "next_session_date": "2026-05-15",
+          "price_source": "Yahoo Finance 日足"
+        }
+      ]
+    },
+    {
+      "code": "9115",
+      "name": "明海グループ",
+      "events": [
+        {
+          "event_date": "2026-10-28",
+          "next_close_pct": 0.0,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-10-27",
+          "next_session_date": "2026-10-29",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
     {
       "code": "9168",
+      "name": "ライズ・コンサルティング・グループ",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": -8.98,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "9216",
+      "name": "ビーウィズ",
       "events": [
         {
           "event_date": "2026-10-13",
           "next_close_pct": 1.75,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "9252",
+      "name": "ラストワンマイル",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": -13.52,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "9265",
+      "name": "ヤマシタヘルスケアホールディングス",
       "events": [
         {
           "event_date": "2026-09-30",
           "next_close_pct": -2.69,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "9270",
+      "name": "バリュエンスホールディングス",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": -0.54,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "9278",
+      "name": "ブックオフグループホールディングス",
       "events": [
         {
           "event_date": "2026-10-13",
           "next_close_pct": -3.99,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "9307",
+      "name": "杉村倉庫",
+      "events": [
+        {
+          "event_date": "2026-10-28",
+          "next_close_pct": -3.22,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-10-27",
+          "next_session_date": "2026-10-29",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
     {
       "code": "9369",
+      "name": "キユーソー流通システム",
       "events": [
         {
           "event_date": "2026-09-30",
           "next_close_pct": -0.69,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "9381",
+      "name": "エーアイテイー",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": 2.91,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "9414",
+      "name": "日本ＢＳ放送",
       "events": [
         {
           "event_date": "2026-10-08",
           "next_close_pct": -1.16,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "9511",
+      "name": "沖縄電力",
+      "events": [
+        {
+          "event_date": "2026-07-31",
+          "next_close_pct": 17.94,
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0zOGl2Nkszc2k0UGZGbXBIMFJEYVNvdEtDanRtRnZCMVNuQkc0QVZkQ2xpSldzaWtEOXJqTmdqOFlPenFoOFRYQ1R4a0FTSTl1R0MxTzNjWC04NEx3U2xfdEpVcFh3eV9LM0E?oc=5",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": "2026-07-30",
+          "next_session_date": "2026-08-03",
+          "price_source": "Yahoo Finance 日足"
         }
       ]
     },
     {
       "code": "9560",
+      "name": "プログリット",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": 15.18,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "9628",
+      "name": "燦ホールディングス",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": 0.23,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "9629",
+      "name": "ピー・シー・エー",
       "events": [
         {
           "event_date": "2026-10-27",
           "next_close_pct": -2.7,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "9640",
+      "name": "9640",
       "events": [
         {
           "event_date": "2026-07-30",
           "next_close_pct": -0.39,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5CZEQteG8tZU5VMTItMThiSDYyanluTEVxWWhPWW85STJjTE9aZnJKSXhzOTFHVllCcWstLTFFc1huRlZvMlBiQkR2WU5oVENkTG5OZ09wV2tabDBHUXROSnZlbWloRU1UMkE?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "9651",
+      "name": "日本プロセス",
       "events": [
         {
           "event_date": "2026-09-30",
           "next_close_pct": -1.65,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "9661",
+      "name": "歌舞伎座",
       "events": [
         {
           "event_date": "2026-10-13",
           "next_close_pct": -0.98,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "9698",
+      "name": "クレオ",
+      "events": [
+        {
+          "event_date": "2026-10-28",
+          "next_close_pct": -3.9,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-10-27",
+          "next_session_date": "2026-10-29",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
     {
       "code": "9733",
+      "name": "ナガセ",
       "events": [
         {
           "event_date": "2026-10-27",
           "next_close_pct": -4.85,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         },
         {
           "event_date": "2026-07-23",
           "next_close_pct": -3.46,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1XR296WHlCbmlFUzhWUHZ5UzFUYjdhUWg5eElRTVVYYlFVX1NaVVBRa3dicEZjYXpyd04xZ3ZaTHZKU201cHpLcG1GaVV1Q3UwRHdrNldaTDV4b0xBWmJwWjFPT0dGaHp6Mmc?oc=5",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）"
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "9740",
+      "name": "セントラル警備保障",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": -2.4,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "9765",
+      "name": "オオバ",
       "events": [
         {
           "event_date": "2026-10-08",
           "next_close_pct": -1.89,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "9782",
+      "name": "ディーエムエス",
       "events": [
         {
           "event_date": "2026-10-27",
           "next_close_pct": -2.45,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "9837",
+      "name": "モリト",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": -0.93,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "9846",
+      "name": "天満屋ストア",
       "events": [
         {
           "event_date": "2026-10-07",
           "next_close_pct": -1.02,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "9872",
+      "name": "北恵",
       "events": [
         {
           "event_date": "2026-10-02",
           "next_close_pct": 0.52,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "9932",
+      "name": "杉本商事",
+      "events": [
+        {
+          "event_date": "2026-10-28",
+          "next_close_pct": -7.35,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-10-27",
+          "next_session_date": "2026-10-29",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
     {
       "code": "9946",
+      "name": "ミニストップ",
       "events": [
         {
           "event_date": "2026-10-08",
           "next_close_pct": -2.13,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "9979",
+      "name": "大庄",
       "events": [
         {
           "event_date": "2026-10-15",
           "next_close_pct": -1.09,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "9982",
+      "name": "タキヒヨー",
       "events": [
         {
           "event_date": "2026-10-09",
           "next_close_pct": -0.9,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     },
     {
       "code": "9993",
+      "name": "ヤマザワ",
       "events": [
         {
           "event_date": "2026-10-14",
           "next_close_pct": 0.53,
           "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-          "date_kind": "JPX決算発表予定日（発表時刻未確認）"
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": null,
+          "next_session_date": null,
+          "price_source": "Yahoo Finance / 保存済み日足"
         }
       ]
     }

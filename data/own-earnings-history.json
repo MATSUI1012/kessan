@@ -1,366 +1,188 @@
 {
-  "schema": 4,
-  "updated_at": "2026-10-30T04:13:39+09:00",
+  "schema": 1,
+  "updated_at": "2026-10-31T01:30:06+09:00",
+  "method": "候補自身の出典のある過去決算日付とYahoo日足を照合。記事掲載日は実際の発表日と異なる場合がある。",
   "coverage": {
     "candidates": 20,
-    "with_history": 10,
-    "events": 11,
-    "new_events": 0
+    "with_history": 4,
+    "events": 4
   },
-  "method": "IR BANK決算短信の開示履歴に明記された日付とYahoo日足を照合。未確認は推測しない。",
   "records": [
     {
-      "code": "9065",
-      "name": "山九",
-      "events": [
-        {
-          "event_date": "2026-05-14",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB5cmY1bS1ac2JaU0tqdk50ZVE3U205RUZJeXFneHd1STljMm5zVlV5YTFzcGUzY2dFZzRMZm02cktJS3l0bDBvUFZ6ZXVwVHBtX3Q1SS0zNEl0ckxuSFJURy1hR09GOGdqTXc?oc=5",
-          "headline": "山九[9065]：2026年３月期 決算短信〔日本基準〕(連結) 2026年5月14日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "baseline_date": "2026-05-13",
-          "baseline_close": 1709.6,
-          "next_session_date": "2026-05-15",
-          "next_close_pct": 6.24,
-          "after_3d_pct": 8.33,
-          "after_5d_pct": 7.87,
-          "price_source": "Yahoo Finance 日足"
-        }
-      ],
-      "archive_diagnostics": [
-        "https://irbank.net/9065/ir: HTTP 403",
-        "https://irbank.net/9065: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "6196",
-      "name": "ストライクグループ",
-      "events": [
-        {
-          "event_date": "2026-04-30",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1OeWdCRnFqY3ZzeUlfWmlZaEpyTG9BZlBDeDE1ak16NXdRellGU3ZPZFhuQjJ5a29BUndyVVpHTXpwbU1QVkZhVTBXLUp5WWJUNmpPWkl3TlZMbTZHV1V5WmJsSE9Wem1SaFE?oc=5",
-          "headline": "ストライクグループ[6196]：2026年９月期 第２四半期（中間期）決算短信〔日本基準〕(非連結) 2026年4月30日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "baseline_date": "2026-04-28",
-          "baseline_close": 1298.0,
-          "next_session_date": "2026-05-01",
-          "next_close_pct": -8.55,
-          "after_3d_pct": -5.01,
-          "after_5d_pct": -7.4,
-          "price_source": "Yahoo Finance 日足"
-        }
-      ],
-      "archive_diagnostics": [
-        "https://irbank.net/6196/ir: HTTP 403",
-        "https://irbank.net/6196: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "6961",
-      "name": "エンプラス",
-      "events": [
-        {
-          "event_date": "2026-07-29",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBDY3FrdEpPQzJoaEcxM08waHNSR3pCM1dOd2R2UEg3cEk2Um43U19CZTAyYXFCRWUxcUxtQVFzXzVFMzc3Uks2SVJmVnI0UWNTSFdfUUVPd3JvSlhOczh4azRMaW5TUzhjenc?oc=5",
-          "headline": "エンプラス[6961]：2027年３月期 第１四半期決算短信〔日本基準〕（連結） 2026年7月29日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "baseline_date": "2026-07-28",
-          "baseline_close": 11950.0,
-          "next_session_date": "2026-07-30",
-          "next_close_pct": -13.72,
-          "after_3d_pct": -6.11,
-          "after_5d_pct": 3.77,
-          "price_source": "Yahoo Finance 日足"
-        }
-      ],
-      "archive_diagnostics": [
-        "https://irbank.net/6961/ir: HTTP 403",
-        "https://irbank.net/6961: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "2326",
-      "name": "デジタルアーツ",
-      "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/2326/ir: HTTP 403",
-        "https://irbank.net/2326: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "6356",
-      "name": "日本ギア工業",
-      "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/6356/ir: HTTP 403",
-        "https://irbank.net/6356: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "6135",
-      "name": "牧野フライス製作所",
-      "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/6135/ir: HTTP 403",
-        "https://irbank.net/6135: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "9511",
-      "name": "沖縄電力",
+      "code": "2220",
+      "name": "亀田製菓",
       "events": [
         {
           "event_date": "2026-07-31",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0zOGl2Nkszc2k0UGZGbXBIMFJEYVNvdEtDanRtRnZCMVNuQkc0QVZkQ2xpSldzaWtEOXJqTmdqOFlPenFoOFRYQ1R4a0FTSTl1R0MxTzNjWC04NEx3U2xfdEpVcFh3eV9LM0E?oc=5",
-          "headline": "沖縄電力[9511]：2027年３月期 第１四半期決算短信〔日本基準〕（連結） 2026年7月31日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB4a0J0MmZOWnp1YTE4dnNvSmVVb01GQUJUNTVhS1NSd3VUOWRpdE1iQ3JLR1dsRi1BYzRGMFRLTUVJekpFT25HSmxkTE1LWUx4d0E2aEJHSklKYVNKeElJZmZ6eFVTYzlpZlE?oc=5",
+          "headline": "亀田製菓[2220]：2027年３月期第１四半期決算短信〔日本基準〕(連結) 2026年7月31日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-07-30",
-          "baseline_close": 931.0,
+          "baseline_close": 1290.0,
           "next_session_date": "2026-08-03",
-          "next_close_pct": 17.94,
-          "after_3d_pct": 13.96,
-          "after_5d_pct": 14.82,
+          "next_close_pct": -3.26,
+          "after_3d_pct": -4.57,
+          "after_5d_pct": 0.78,
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/9511/ir: HTTP 403",
-        "https://irbank.net/9511: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
-      "code": "5440",
-      "name": "共英製鋼",
+      "code": "4718",
+      "name": "早稲田アカデミー",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/5440/ir: HTTP 403",
-        "https://irbank.net/5440: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
-      "code": "6946",
-      "name": "日本アビオニクス",
-      "events": [
-        {
-          "event_date": "2026-07-30",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBDMzdvV3BZNFhPNGJiT0FjOHJXdjlZYzloUGp2ZWZWN2xYVmRHTlhBY2dvS2wzaTVNd1VqU2pRbWk3dy1RMlF5cXJmZnh6QnBnUVVTM3BSTG00UlJNM1RBSlU0T1dfVWhWQ3c?oc=5",
-          "headline": "日本アビオニクス[6946]：２０２７年３月期 第１四半期決算短信〔日本基準〕（連結） 2026年7月30日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "baseline_date": "2026-07-29",
-          "baseline_close": 4740.0,
-          "next_session_date": "2026-07-31",
-          "next_close_pct": 12.03,
-          "after_3d_pct": 16.88,
-          "after_5d_pct": 24.68,
-          "price_source": "Yahoo Finance 日足"
-        }
-      ],
-      "archive_diagnostics": [
-        "https://irbank.net/6946/ir: HTTP 403",
-        "https://irbank.net/6946: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "6617",
-      "name": "東光高岳",
-      "events": [
-        {
-          "event_date": "2026-07-30",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE83eHU5dHlNdnZuODZCTTFWY2V4RUc0eExMNWU3Z28zWlJQQ1V0MnJ0N3l2cjctd0dSQVZTbEtTUGRVTHM2aktWWmhDbnQyZkVXUWdLcUtBV2hIWnNQRDVEelAwOFhwM0dmWnc?oc=5",
-          "headline": "東光高岳[6617]：2027年3月期第1四半期決算短信〔日本基準〕（連結） 2026年7月30日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "baseline_date": "2026-07-29",
-          "baseline_close": 6650.0,
-          "next_session_date": "2026-07-31",
-          "next_close_pct": 5.11,
-          "after_3d_pct": 14.74,
-          "after_5d_pct": 22.41,
-          "price_source": "Yahoo Finance 日足"
-        },
-        {
-          "event_date": "2026-04-28",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5BdUNnOG9iU2ZPS1BsNkVKZ2hnWXpXaGNXNWctanp4WS1fRFZ6TXl6QXlYWWpoNTVLcGNRcFo2alRwRkZBOGhwbU4xSFVESE9JSkhpcEtPT2tueU1sX1hhcWYzMjVldFZ0Z1E?oc=5",
-          "headline": "東光高岳[6617]：2026年3月期決算短信〔日本基準〕（連結） 2026年4月28日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "baseline_date": "2026-04-27",
-          "baseline_close": 6070.0,
-          "next_session_date": "2026-04-30",
-          "next_close_pct": 24.38,
-          "after_3d_pct": 29.65,
-          "after_5d_pct": 37.73,
-          "price_source": "Yahoo Finance 日足"
-        }
-      ],
-      "archive_diagnostics": [
-        "https://irbank.net/6617/ir: HTTP 403",
-        "https://irbank.net/6617: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "8157",
-      "name": "都築電気",
-      "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/8157/ir: HTTP 403",
-        "https://irbank.net/8157: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "7537",
-      "name": "丸文",
-      "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/7537/ir: HTTP 403",
-        "https://irbank.net/7537: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "8818",
-      "name": "京阪神ビルディング",
-      "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/8818/ir: HTTP 403",
-        "https://irbank.net/8818: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "6331",
-      "name": "三菱化工機",
-      "events": [
-        {
-          "event_date": "2026-05-15",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5oeGtkVko2cmF2NkV6M0RtN1dLRXk0RGlvOUZWY2FyWGJhcTU5czI5bzl5eHliRElYN0V3dTdJcWZtRlYzNUlNbUdidFdCVFd0LWY1LWI4NVdRcVRPTVhyWlpZZWR0MWdUYlE?oc=5",
-          "headline": "三菱化工機[6331]：2026年３月期決算短信〔日本基準〕(連結) 2026年5月15日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "baseline_date": "2026-05-14",
-          "baseline_close": 3305.0,
-          "next_session_date": "2026-05-18",
-          "next_close_pct": 16.34,
-          "after_3d_pct": 4.08,
-          "after_5d_pct": 2.87,
-          "price_source": "Yahoo Finance 日足"
-        }
-      ],
-      "archive_diagnostics": [
-        "https://irbank.net/6331/ir: HTTP 403",
-        "https://irbank.net/6331: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "9997",
-      "name": "ベルーナ",
-      "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/9997/ir: HTTP 403",
-        "https://irbank.net/9997: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "3153",
-      "name": "八洲電機",
-      "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/3153/ir: HTTP 403",
-        "https://irbank.net/3153: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "8137",
-      "name": "サンワテクノス",
+      "code": "7723",
+      "name": "愛知時計電機",
       "events": [
         {
           "event_date": "2026-05-08",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1sam92NGhnZHhsbTJ3NnAxZ0tSSXg5QTFMVHNTMDF2Q3IwVlFWRElBY3lmSEdtWlRsNEtPWHRMYUNUWmlGN3BNeEFzT3dpU3FwSzlCeS14TTlJa28tUk1mNHhvcWlfWEx1dUE?oc=5",
-          "headline": "サンワテクノス[8137]：2026年3月期 決算短信〔日本基準〕（連結） 2026年5月8日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1CSHNrOXc1S0Y5YTFCRmJndjFNRmFDSndGZURzaGxXSFNWTEZadjdibXZHSUl2Z2M1LWNfZ0V1Q2tVbEIyazJya2w5c3BTYXE1Z013XzJuUlNveDdiQzd2dkFmb3U2V2J3blE?oc=5",
+          "headline": "愛知時計電機[7723]：2026年3月期 決算短信〔日本基準〕（連結） 2026年5月8日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-05-07",
-          "baseline_close": 3215.0,
+          "baseline_close": 2976.0,
           "next_session_date": "2026-05-11",
-          "next_close_pct": 23.02,
-          "after_3d_pct": 17.57,
-          "after_5d_pct": 14.46,
+          "next_close_pct": 2.32,
+          "after_3d_pct": 2.82,
+          "after_5d_pct": 2.49,
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/8137/ir: HTTP 403",
-        "https://irbank.net/8137: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
-      "code": "5480",
-      "name": "日本冶金工業",
+      "code": "7971",
+      "name": "東リ",
       "events": [
         {
-          "event_date": "2026-05-08",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9aUVQ5XzZ4dzlJWWlzRmV5dDdWd0hYZ2oxbVRVZ0NrcVJrdVp5UXZPWTJIcWVmOVVYcEV0WDNycXFHRjlvaE5WWVQwMlBweGpaZ1h1VENFWmJGeTAtWmxwMWJ6RG1ETzdzWFE?oc=5",
-          "headline": "日本冶金工業[5480]：2026年３月期 決算短信〔日本基準〕(連結) 2026年5月8日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "baseline_date": "2026-05-07",
-          "baseline_close": 4715.0,
-          "next_session_date": "2026-05-11",
-          "next_close_pct": -4.98,
-          "after_3d_pct": -5.2,
-          "after_5d_pct": -4.56,
+          "event_date": "2026-07-30",
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9kWTVLcF93dU1aOVVFWHRKMmlmTHNweTRYZ2FpWWxRRS1hclhfN1dkaUJYa25PS2dWQk43YjZ6Y3BEQXNrcWVnNnF3RVZSaHRkUHJ1eW0zX0FTYktwQm5NcWFIYlA5bFM1VUE?oc=5",
+          "headline": "東リ[7971]：2027年３月期 第１四半期決算短信〔日本基準〕（連結） 2026年7月30日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-07-29",
+          "baseline_close": 662.0,
+          "next_session_date": "2026-07-31",
+          "next_close_pct": 0.91,
+          "after_3d_pct": 0.3,
+          "after_5d_pct": 3.02,
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/5480/ir: HTTP 403",
-        "https://irbank.net/5480: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
-      "code": "8739",
-      "name": "スパークス・グループ",
-      "events": [
-        {
-          "event_date": "2026-05-07",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5veGJtRl9xVEdTa3hJVGRMQV9NSkJIV1k0c29LaWdhSVhObjNldG9nX3c0VU1vUFhzWm5CeGthLWFSMUdkNURDdGhnRnNCcFFSTXM1eUhFTUN3SndFTWt6eWFOaEx1LXA4VEE?oc=5",
-          "headline": "スパークス・グループ[8739]：2026年３月期 決算短信〔日本基準〕（連結） 2026年5月7日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "baseline_date": "2026-05-01",
-          "baseline_close": 1914.0,
-          "next_session_date": "2026-05-08",
-          "next_close_pct": 6.53,
-          "after_3d_pct": 10.61,
-          "after_5d_pct": 11.44,
-          "price_source": "Yahoo Finance 日足"
-        }
-      ],
-      "archive_diagnostics": [
-        "https://irbank.net/8739/ir: HTTP 403",
-        "https://irbank.net/8739: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "3482",
-      "name": "ロードスターキャピタル",
+      "code": "2003",
+      "name": "日東富士製粉",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/3482/ir: HTTP 403",
-        "https://irbank.net/3482: HTTP 403"
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "6200",
+      "name": "インソース",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "7236",
+      "name": "ティラド",
+      "events": [
+        {
+          "event_date": "2026-04-27",
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1wOFJ1UXlhUEFDQm5LOWRkYU1ENFFEcWJhQk12OVJjZEZtNHZwc3hSWDB4UzRNMm9MbWNBMnU4aDh6WUN0czVqVlNJaUVuSzFnOGNJcWVNRFBqVlBIZXNXVUhjQTVzTXhhTWc?oc=5",
+          "headline": "ティラド[7236]：2026年3月期 決算短信〔日本基準〕（連結） 2026年4月27日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-04-24",
+          "baseline_close": 815.0,
+          "next_session_date": "2026-04-28",
+          "next_close_pct": 17.91,
+          "after_3d_pct": 79.14,
+          "after_5d_pct": 77.91,
+          "price_source": "Yahoo Finance 日足"
+        }
       ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
+    },
+    {
+      "code": "3371",
+      "name": "ソフトクリエイトホールディングス",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "2816",
+      "name": "ダイショー",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "7366",
+      "name": "ＬＩＴＡＬＩＣＯ",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "3580",
+      "name": "小松マテーレ",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "2489",
+      "name": "アドウェイズ",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "9768",
+      "name": "いであ",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "9351",
+      "name": "東洋埠頭",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "7551",
+      "name": "ウェッズ",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "5187",
+      "name": "クリエートメディック",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "7480",
+      "name": "スズデン",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "5367",
+      "name": "ニッカトー",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "5955",
+      "name": "ワイズホールディングス",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "3914",
+      "name": "ＪＩＧ－ＳＡＷ",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
     }
   ]
 }

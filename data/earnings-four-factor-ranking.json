@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-31T00:55:05+09:00",
-  "description": "4項目の調査優先順位。未確認は0点であり悪材料を意味しない。JPX予定日ベースの株価反応は実際の決算発表時刻未確認。業種はYahoo掲載分類。確率・買い推奨ではない。",
+  "generated_at": "2026-10-31T01:30:06+09:00",
+  "description": "4項目の調査順位。本人の過去決算反応は出典のある発表予定日・カレンダー日・記事掲載日付近の株価変化。実際の発表時刻・変動原因は未確認。未取得0点は悪材料ではない。",
   "weights": {
     "own_earnings_reaction": 3,
     "volume_supply_demand": 3,
@@ -10,12 +10,87 @@
   },
   "coverage": {
     "total": 20,
-    "own_history": 0,
+    "own_history": 4,
     "industry_identified": 20,
     "peer_reactions": 20,
     "upgrades": 0
   },
   "records": [
+    {
+      "code": "7971",
+      "name": "東リ",
+      "earnings_date": "2026-11-02",
+      "market_cap_oku": 409.7,
+      "score_total": 4,
+      "score_components": {
+        "own_earnings_reaction": 1,
+        "volume_supply_demand": 3,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 1,
+      "self_history_positive": 1,
+      "self_history_events": [
+        {
+          "date": "2026-07-30",
+          "next_close_pct": 0.91,
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9kWTVLcF93dU1aOVVFWHRKMmlmTHNweTRYZ2FpWWxRRS1hclhfN1dkaUJYa25PS2dWQk43YjZ6Y3BEQXNrcWVnNnF3RVZSaHRkUHJ1eW0zX0FTYktwQm5NcWFIYlA5bFM1VUE?oc=5"
+        }
+      ],
+      "industry": "Building Products & Equipment",
+      "sector": "Industrials",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 6,
+      "peer_positive_count": 3,
+      "peer_events": [
+        {
+          "code": "7949",
+          "name": "小松ウオール工業",
+          "date": "2026-10-29",
+          "next_close_pct": -0.42
+        },
+        {
+          "code": "4212",
+          "name": "積水樹脂",
+          "date": "2026-10-29",
+          "next_close_pct": -7.66
+        },
+        {
+          "code": "6230",
+          "name": "ＳＡＮＥＩ",
+          "date": "2026-10-26",
+          "next_close_pct": -8.92
+        },
+        {
+          "code": "7879",
+          "name": "ノダ",
+          "date": "2026-10-14",
+          "next_close_pct": 1.95
+        },
+        {
+          "code": "5932",
+          "name": "三協立山",
+          "date": "2026-10-07",
+          "next_close_pct": 14.62
+        },
+        {
+          "code": "9872",
+          "name": "北恵",
+          "date": "2026-10-02",
+          "next_close_pct": 0.52
+        }
+      ],
+      "volume_ratio": 3.68,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": true,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
     {
       "code": "4718",
       "name": "早稲田アカデミー",
@@ -85,6 +160,120 @@
       }
     },
     {
+      "code": "7236",
+      "name": "ティラド",
+      "earnings_date": "2026-11-02",
+      "market_cap_oku": 723.48,
+      "score_total": 3,
+      "score_components": {
+        "own_earnings_reaction": 1,
+        "volume_supply_demand": 2,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 1,
+      "self_history_positive": 1,
+      "self_history_events": [
+        {
+          "date": "2026-04-27",
+          "next_close_pct": 17.91,
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1wOFJ1UXlhUEFDQm5LOWRkYU1ENFFEcWJhQk12OVJjZEZtNHZwc3hSWDB4UzRNMm9MbWNBMnU4aDh6WUN0czVqVlNJaUVuSzFnOGNJcWVNRFBqVlBIZXNXVUhjQTVzTXhhTWc?oc=5"
+        }
+      ],
+      "industry": "Auto Parts",
+      "sector": "Consumer Cyclical",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 5,
+      "peer_positive_count": 1,
+      "peer_events": [
+        {
+          "code": "7241",
+          "name": "フタバ産業",
+          "date": "2026-10-28",
+          "next_close_pct": -8.96
+        },
+        {
+          "code": "6470",
+          "name": "大豊工業",
+          "date": "2026-10-28",
+          "next_close_pct": -2.64
+        },
+        {
+          "code": "6382",
+          "name": "トリニティ工業",
+          "date": "2026-10-28",
+          "next_close_pct": -0.42
+        },
+        {
+          "code": "5992",
+          "name": "中央発條",
+          "date": "2026-10-28",
+          "next_close_pct": -23.32
+        },
+        {
+          "code": "7299",
+          "name": "フジオーゼックス",
+          "date": "2026-10-27",
+          "next_close_pct": 1.28
+        }
+      ],
+      "volume_ratio": 1.84,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": true,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "7723",
+      "name": "愛知時計電機",
+      "earnings_date": "2026-11-02",
+      "market_cap_oku": 421.28,
+      "score_total": 3,
+      "score_components": {
+        "own_earnings_reaction": 1,
+        "volume_supply_demand": 2,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 1,
+      "self_history_positive": 1,
+      "self_history_events": [
+        {
+          "date": "2026-05-08",
+          "next_close_pct": 2.32,
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1CSHNrOXc1S0Y5YTFCRmJndjFNRmFDSndGZURzaGxXSFNWTEZadjdibXZHSUl2Z2M1LWNfZ0V1Q2tVbEIyazJya2w5c3BTYXE1Z013XzJuUlNveDdiQzd2dkFmb3U2V2J3blE?oc=5"
+        }
+      ],
+      "industry": "Scientific & Technical Instruments",
+      "sector": "Technology",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 1,
+      "peer_positive_count": 0,
+      "peer_events": [
+        {
+          "code": "5933",
+          "name": "アルインコ",
+          "date": "2026-10-20",
+          "next_close_pct": -3.72
+        }
+      ],
+      "volume_ratio": 2.53,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": true,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
       "code": "3914",
       "name": "ＪＩＧ－ＳＡＷ",
       "earnings_date": "2026-11-02",
@@ -147,112 +336,6 @@
       }
     },
     {
-      "code": "7971",
-      "name": "東リ",
-      "earnings_date": "2026-11-02",
-      "market_cap_oku": 409.7,
-      "score_total": 3,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 3,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Building Products & Equipment",
-      "sector": "Industrials",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 6,
-      "peer_positive_count": 3,
-      "peer_events": [
-        {
-          "code": "7949",
-          "name": "小松ウオール工業",
-          "date": "2026-10-29",
-          "next_close_pct": -0.42
-        },
-        {
-          "code": "4212",
-          "name": "積水樹脂",
-          "date": "2026-10-29",
-          "next_close_pct": -7.66
-        },
-        {
-          "code": "6230",
-          "name": "ＳＡＮＥＩ",
-          "date": "2026-10-26",
-          "next_close_pct": -8.92
-        },
-        {
-          "code": "7879",
-          "name": "ノダ",
-          "date": "2026-10-14",
-          "next_close_pct": 1.95
-        },
-        {
-          "code": "5932",
-          "name": "三協立山",
-          "date": "2026-10-07",
-          "next_close_pct": 14.62
-        },
-        {
-          "code": "9872",
-          "name": "北恵",
-          "date": "2026-10-02",
-          "next_close_pct": 0.52
-        }
-      ],
-      "volume_ratio": 3.68,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
-      "code": "2003",
-      "name": "日東富士製粉",
-      "earnings_date": "2026-11-02",
-      "market_cap_oku": 713.45,
-      "score_total": 2,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 2,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Farm Products",
-      "sector": "Consumer Defensive",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 1,
-      "peer_positive_count": 0,
-      "peer_events": [
-        {
-          "code": "2292",
-          "name": "Ｓ　Ｆｏｏｄｓ",
-          "date": "2026-10-14",
-          "next_close_pct": -1.97
-        }
-      ],
-      "volume_ratio": 2.4,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
       "code": "2220",
       "name": "亀田製菓",
       "earnings_date": "2026-11-02",
@@ -264,9 +347,16 @@
         "recent_industry_peers": 0,
         "analyst_upgrades_61d": 0
       },
-      "self_history_count": 0,
+      "self_history_count": 1,
       "self_history_positive": 0,
-      "self_history_events": [],
+      "self_history_events": [
+        {
+          "date": "2026-07-31",
+          "next_close_pct": -3.26,
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB4a0J0MmZOWnp1YTE4dnNvSmVVb01GQUJUNTVhS1NSd3VUOWRpdE1iQ3JLR1dsRi1BYzRGMFRLTUVJekpFT25HSmxkTE1LWUx4d0E2aEJHSklKYVNKeElJZmZ6eFVTYzlpZlE?oc=5"
+        }
+      ],
       "industry": "Packaged Foods",
       "sector": "Consumer Defensive",
       "industry_source": "Yahoo Finance company profile",
@@ -311,6 +401,44 @@
         }
       ],
       "volume_ratio": 1.83,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": true,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "2003",
+      "name": "日東富士製粉",
+      "earnings_date": "2026-11-02",
+      "market_cap_oku": 713.45,
+      "score_total": 2,
+      "score_components": {
+        "own_earnings_reaction": 0,
+        "volume_supply_demand": 2,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 0,
+      "self_history_positive": 0,
+      "self_history_events": [],
+      "industry": "Farm Products",
+      "sector": "Consumer Defensive",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 1,
+      "peer_positive_count": 0,
+      "peer_events": [
+        {
+          "code": "2292",
+          "name": "Ｓ　Ｆｏｏｄｓ",
+          "date": "2026-10-14",
+          "next_close_pct": -1.97
+        }
+      ],
+      "volume_ratio": 2.4,
       "upgrade_events": [],
       "data_coverage": {
         "self_history": false,
@@ -501,68 +629,6 @@
       }
     },
     {
-      "code": "7236",
-      "name": "ティラド",
-      "earnings_date": "2026-11-02",
-      "market_cap_oku": 723.48,
-      "score_total": 2,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 2,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Auto Parts",
-      "sector": "Consumer Cyclical",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 5,
-      "peer_positive_count": 1,
-      "peer_events": [
-        {
-          "code": "7241",
-          "name": "フタバ産業",
-          "date": "2026-10-28",
-          "next_close_pct": -8.96
-        },
-        {
-          "code": "6470",
-          "name": "大豊工業",
-          "date": "2026-10-28",
-          "next_close_pct": -2.64
-        },
-        {
-          "code": "6382",
-          "name": "トリニティ工業",
-          "date": "2026-10-28",
-          "next_close_pct": -0.42
-        },
-        {
-          "code": "5992",
-          "name": "中央発條",
-          "date": "2026-10-28",
-          "next_close_pct": -23.32
-        },
-        {
-          "code": "7299",
-          "name": "フジオーゼックス",
-          "date": "2026-10-27",
-          "next_close_pct": 1.28
-        }
-      ],
-      "volume_ratio": 1.84,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
       "code": "7366",
       "name": "ＬＩＴＡＬＩＣＯ",
       "earnings_date": "2026-11-02",
@@ -621,44 +687,6 @@
         }
       ],
       "volume_ratio": 1.08,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
-      "code": "7723",
-      "name": "愛知時計電機",
-      "earnings_date": "2026-11-02",
-      "market_cap_oku": 421.28,
-      "score_total": 2,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 2,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Scientific & Technical Instruments",
-      "sector": "Technology",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 1,
-      "peer_positive_count": 0,
-      "peer_events": [
-        {
-          "code": "5933",
-          "name": "アルインコ",
-          "date": "2026-10-20",
-          "next_close_pct": -3.72
-        }
-      ],
-      "volume_ratio": 2.53,
       "upgrade_events": [],
       "data_coverage": {
         "self_history": false,
@@ -1178,5 +1206,6 @@
         "upgrade_news_checked": true
       }
     }
-  ]
+  ],
+  "own_history_source": "Yahoo Finance 決算カレンダー、JPX記録、または決算短信ニュース掲載日。発表時刻未確認、掲載日と発表日が異なる可能性あり。"
 }

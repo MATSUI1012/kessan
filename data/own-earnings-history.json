@@ -1,11 +1,12 @@
 {
-  "schema": 2,
-  "updated_at": "2026-10-31T02:48:09+09:00",
-  "method": "複数のニュースRSS、JPX決算予定日、Yahoo決算カレンダーの出典日付を株価と照合。単なる記事配信日から開示日を推定しない。",
+  "schema": 3,
+  "updated_at": "2026-10-31T03:20:54+09:00",
+  "method": "IR BANKの銘柄別開示一覧で決算短信の行に記載された日付とYahoo日足を照合。日付や終値が未確認なら過去履歴を保持しつつ加点しない。",
   "coverage": {
     "candidates": 20,
     "with_history": 4,
-    "events": 4
+    "events": 4,
+    "new_events": 0
   },
   "records": [
     {
@@ -26,21 +27,23 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 3,
-        "rss_failures": 0
-      }
+      "status": "決算短信の日付と終値照合済",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "4718",
       "name": "早稲田アカデミー",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去の決算日時・株価を確認できず",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "7723",
@@ -60,11 +63,12 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 3,
-        "rss_failures": 0
-      }
+      "status": "決算短信の日付と終値照合済",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "7971",
@@ -84,31 +88,34 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 3,
-        "rss_failures": 0
-      }
+      "status": "決算短信の日付と終値照合済",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "2003",
       "name": "日東富士製粉",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去の決算日時・株価を確認できず",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "6200",
       "name": "インソース",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去の決算日時・株価を確認できず",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "7236",
@@ -128,141 +135,155 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 3,
-        "rss_failures": 0
-      }
+      "status": "決算短信の日付と終値照合済",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "3371",
       "name": "ソフトクリエイトホールディングス",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去の決算日時・株価を確認できず",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "2816",
       "name": "ダイショー",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去の決算日時・株価を確認できず",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "7366",
       "name": "ＬＩＴＡＬＩＣＯ",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去の決算日時・株価を確認できず",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "3580",
       "name": "小松マテーレ",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去の決算日時・株価を確認できず",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "2489",
       "name": "アドウェイズ",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去の決算日時・株価を確認できず",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "9768",
       "name": "いであ",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去の決算日時・株価を確認できず",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "9351",
       "name": "東洋埠頭",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去の決算日時・株価を確認できず",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "7551",
       "name": "ウェッズ",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去の決算日時・株価を確認できず",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "5187",
       "name": "クリエートメディック",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去の決算日時・株価を確認できず",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "7480",
       "name": "スズデン",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去の決算日時・株価を確認できず",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "5367",
       "name": "ニッカトー",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去の決算日時・株価を確認できず",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "5955",
       "name": "ワイズホールディングス",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去の決算日時・株価を確認できず",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "3914",
       "name": "ＪＩＧ－ＳＡＷ",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去の決算日時・株価を確認できず",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     }
   ]
 }

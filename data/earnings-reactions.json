@@ -1,194 +1,260 @@
 {
-  "schema": 2,
-  "description": "TDnet決算短信の掲載日付近の終値反応。開示時刻未確認、決算による因果効果や上昇確率は示さない。",
+  "schema": 1,
+  "description": "決算カレンダー日付付近の終値反応。実際の発表時刻未検証であり、決算による因果効果・上昇確率ではありません。",
   "sources": [
-    "TDnet決算短信開示一覧（掲載日）",
-    "既存の出典付き履歴"
+    "JPX保存済み発表予定日",
+    "Yahoo Finance決算カレンダー日付（取得可能な銘柄のみ）"
   ],
-  "event_date_count": 26,
-  "with_reactions": 2,
+  "event_date_count": 32,
+  "with_reactions": 3,
   "records": [
     {
-      "code": "4552",
-      "name": "ＪＣＲファーマ",
+      "code": "9511",
+      "name": "沖縄電力",
       "reactions": [
         {
-          "event_date": "2026-07-29",
+          "event_date": "2026-07-30",
           "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
-          "source_url": "https://finance.yahoo.com/quote/4552.T/analysis/",
-          "baseline_date": "2026-07-28",
-          "baseline_close": 518.0,
-          "after_1d_date": "2026-07-30",
-          "after_1d_pct": -2.7,
-          "after_3d_pct": -8.49,
-          "after_5d_pct": -5.6,
+          "source_url": "https://finance.yahoo.com/quote/9511.T/analysis/",
+          "baseline_date": "2026-07-29",
+          "baseline_close": 940.0,
+          "after_1d_date": "2026-07-31",
+          "after_1d_pct": 12.13,
+          "after_3d_pct": 14.79,
+          "after_5d_pct": 13.62,
           "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
         },
         {
-          "event_date": "2026-01-28",
+          "event_date": "2026-04-29",
           "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
-          "source_url": "https://finance.yahoo.com/quote/4552.T/analysis/",
-          "baseline_date": "2026-01-27",
-          "baseline_close": 675.0,
-          "after_1d_date": "2026-01-29",
-          "after_1d_pct": -6.67,
-          "after_3d_pct": -10.22,
-          "after_5d_pct": -9.04,
+          "source_url": "https://finance.yahoo.com/quote/9511.T/analysis/",
+          "baseline_date": "2026-04-28",
+          "baseline_close": 1021.0,
+          "after_1d_date": "2026-04-30",
+          "after_1d_pct": -8.42,
+          "after_3d_pct": -5.19,
+          "after_5d_pct": -5.09,
+          "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
+        },
+        {
+          "event_date": "2026-01-29",
+          "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
+          "source_url": "https://finance.yahoo.com/quote/9511.T/analysis/",
+          "baseline_date": "2026-01-28",
+          "baseline_close": 1087.0,
+          "after_1d_date": "2026-01-30",
+          "after_1d_pct": 1.01,
+          "after_3d_pct": 2.94,
+          "after_5d_pct": 3.77,
           "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
         },
         {
           "event_date": "2025-10-30",
           "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
-          "source_url": "https://finance.yahoo.com/quote/4552.T/analysis/",
+          "source_url": "https://finance.yahoo.com/quote/9511.T/analysis/",
           "baseline_date": "2025-10-29",
-          "baseline_close": 577.0,
+          "baseline_close": 1010.0,
           "after_1d_date": "2025-10-31",
-          "after_1d_pct": 3.64,
-          "after_3d_pct": 5.55,
-          "after_5d_pct": 6.24,
+          "after_1d_pct": 0.1,
+          "after_3d_pct": 0.79,
+          "after_5d_pct": 2.28,
           "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
         }
       ]
     },
     {
-      "code": "4498",
-      "name": "サイバートラスト",
+      "code": "9065",
+      "name": "山九",
       "reactions": []
     },
     {
-      "code": "3891",
-      "name": "ニッポン高度紙工業",
+      "code": "6961",
+      "name": "エンプラス",
       "reactions": []
     },
     {
-      "code": "4212",
-      "name": "積水樹脂",
+      "code": "6196",
+      "name": "ストライクグループ",
       "reactions": []
     },
     {
-      "code": "6810",
-      "name": "マクセル",
+      "code": "5440",
+      "name": "共英製鋼",
+      "reactions": []
+    },
+    {
+      "code": "6135",
+      "name": "牧野フライス製作所",
       "reactions": [
         {
-          "event_date": "2026-04-27",
+          "event_date": "2026-07-30",
           "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
-          "source_url": "https://finance.yahoo.com/quote/6810.T/analysis/",
-          "baseline_date": "2026-04-24",
-          "baseline_close": 2148.0,
-          "after_1d_date": "2026-04-28",
-          "after_1d_pct": -8.75,
-          "after_3d_pct": -7.03,
-          "after_5d_pct": -9.08,
+          "source_url": "https://finance.yahoo.com/quote/6135.T/analysis/",
+          "baseline_date": "2026-07-29",
+          "baseline_close": 2786.0,
+          "after_1d_date": "2026-07-31",
+          "after_1d_pct": -0.07,
+          "after_3d_pct": 6.82,
+          "after_5d_pct": 8.18,
+          "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
+        },
+        {
+          "event_date": "2026-04-29",
+          "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
+          "source_url": "https://finance.yahoo.com/quote/6135.T/analysis/",
+          "baseline_date": "2026-04-28",
+          "baseline_close": 2360.0,
+          "after_1d_date": "2026-04-30",
+          "after_1d_pct": 0.85,
+          "after_3d_pct": 15.68,
+          "after_5d_pct": 15.93,
           "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
         },
         {
           "event_date": "2026-01-30",
           "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
-          "source_url": "https://finance.yahoo.com/quote/6810.T/analysis/",
+          "source_url": "https://finance.yahoo.com/quote/6135.T/analysis/",
           "baseline_date": "2026-01-29",
-          "baseline_close": 2226.0,
+          "baseline_close": 2266.0,
           "after_1d_date": "2026-02-02",
-          "after_1d_pct": -5.66,
-          "after_3d_pct": -2.29,
-          "after_5d_pct": -1.66,
+          "after_1d_pct": 3.09,
+          "after_3d_pct": 2.82,
+          "after_5d_pct": 2.91,
           "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
         },
         {
           "event_date": "2025-10-30",
           "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
-          "source_url": "https://finance.yahoo.com/quote/6810.T/analysis/",
+          "source_url": "https://finance.yahoo.com/quote/6135.T/analysis/",
           "baseline_date": "2025-10-29",
-          "baseline_close": 2209.0,
+          "baseline_close": 2270.0,
           "after_1d_date": "2025-10-31",
-          "after_1d_pct": 1.36,
-          "after_3d_pct": -3.49,
-          "after_5d_pct": -3.67,
+          "after_1d_pct": -1.32,
+          "after_3d_pct": -0.44,
+          "after_5d_pct": -0.18,
           "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
         }
       ]
     },
     {
-      "code": "8624",
-      "name": "いちよし証券",
+      "code": "8818",
+      "name": "京阪神ビルディング",
+      "reactions": [
+        {
+          "event_date": "2026-07-29",
+          "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
+          "source_url": "https://finance.yahoo.com/quote/8818.T/analysis/",
+          "baseline_date": "2026-07-28",
+          "baseline_close": 1110.0,
+          "after_1d_date": "2026-07-30",
+          "after_1d_pct": 0.99,
+          "after_3d_pct": -0.36,
+          "after_5d_pct": -2.79,
+          "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
+        },
+        {
+          "event_date": "2026-05-12",
+          "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
+          "source_url": "https://finance.yahoo.com/quote/8818.T/analysis/",
+          "baseline_date": "2026-05-11",
+          "baseline_close": 1015.0,
+          "after_1d_date": "2026-05-13",
+          "after_1d_pct": 4.58,
+          "after_3d_pct": 10.15,
+          "after_5d_pct": 9.61,
+          "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
+        },
+        {
+          "event_date": "2026-01-29",
+          "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
+          "source_url": "https://finance.yahoo.com/quote/8818.T/analysis/",
+          "baseline_date": "2026-01-28",
+          "baseline_close": 948.0,
+          "after_1d_date": "2026-01-30",
+          "after_1d_pct": 0.9,
+          "after_3d_pct": 4.64,
+          "after_5d_pct": 6.49,
+          "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
+        },
+        {
+          "event_date": "2025-10-30",
+          "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
+          "source_url": "https://finance.yahoo.com/quote/8818.T/analysis/",
+          "baseline_date": "2025-10-29",
+          "baseline_close": 871.5,
+          "after_1d_date": "2025-10-31",
+          "after_1d_pct": -0.57,
+          "after_3d_pct": 5.28,
+          "after_5d_pct": 4.07,
+          "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
+        }
+      ]
+    },
+    {
+      "code": "2326",
+      "name": "デジタルアーツ",
       "reactions": []
     },
     {
-      "code": "9534",
-      "name": "北海道瓦斯",
+      "code": "3153",
+      "name": "八洲電機",
       "reactions": []
     },
     {
-      "code": "9640",
-      "name": "セゾンテクノロジー",
+      "code": "8157",
+      "name": "都築電気",
       "reactions": []
     },
     {
-      "code": "4221",
-      "name": "大倉工業",
+      "code": "6356",
+      "name": "日本ギア工業",
       "reactions": []
     },
     {
-      "code": "6349",
-      "name": "小森コーポレーション",
+      "code": "6617",
+      "name": "東光高岳",
       "reactions": []
     },
     {
-      "code": "4290",
-      "name": "プレステージ・インターナショナル",
+      "code": "6946",
+      "name": "日本アビオニクス",
       "reactions": []
     },
     {
-      "code": "6823",
-      "name": "リオン",
+      "code": "7537",
+      "name": "丸文",
       "reactions": []
     },
     {
-      "code": "6345",
-      "name": "アイチ　コーポレーション",
+      "code": "6331",
+      "name": "三菱化工機",
       "reactions": []
     },
     {
-      "code": "9536",
-      "name": "西部ガスホールディングス",
+      "code": "8739",
+      "name": "スパークス・グループ",
       "reactions": []
     },
     {
-      "code": "8706",
-      "name": "極東証券",
+      "code": "5480",
+      "name": "日本冶金工業",
       "reactions": []
     },
     {
-      "code": "4549",
-      "name": "栄研化学",
+      "code": "8137",
+      "name": "サンワテクノス",
       "reactions": []
     },
     {
-      "code": "8622",
-      "name": "水戸証券",
+      "code": "3482",
+      "name": "ロードスターキャピタル",
       "reactions": []
     },
     {
-      "code": "8613",
-      "name": "丸三証券",
-      "reactions": []
-    },
-    {
-      "code": "8708",
-      "name": "アイザワ証券グループ",
-      "reactions": []
-    },
-    {
-      "code": "8614",
-      "name": "東洋証券",
+      "code": "9997",
+      "name": "ベルーナ",
       "reactions": []
     }
   ],
-  "generated_at": "2026-10-29T22:41:31+09:00",
-  "tdnet_days_requested": 136,
-  "tdnet_days_parsed": 0,
-  "tdnet_events_found": 0,
-  "tdnet_scan_diagnostics": {
-    "missing": 136,
-    "parsed": 0
-  }
+  "generated_at": "2026-10-30T22:00:35+09:00"
 }

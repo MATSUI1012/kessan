@@ -1,16 +1,16 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-30T06:56:18+09:00",
+  "generated_at": "2026-10-31T06:51:35+09:00",
   "season": {
     "start": "2026-10-01",
     "end": "2026-11-30",
     "scope": "JPX予定表の10-11月ユニーク銘柄（時価総額を問わない）",
-    "scheduled_count": 3344,
-    "scheduled_dates_elapsed_before_today": 660,
-    "scheduled_progress_fraction": 0.1974
+    "scheduled_count": 3346,
+    "scheduled_dates_elapsed_before_today": 908,
+    "scheduled_progress_fraction": 0.2714
   },
   "coverage": {
-    "frozen_pre_event_snapshots": 30,
+    "frozen_pre_event_snapshots": 50,
     "matched_subsequent_returns": 30,
     "complete_four_factor_scores_matched": 0,
     "unavailable_factors": [
@@ -24,10 +24,10 @@
   "milestones": [
     {
       "fraction": 0.2,
-      "schedule_threshold_reached": false,
+      "schedule_threshold_reached": true,
       "observations_from_frozen_pre_earnings_snapshots": 30,
       "feedback_ready": false,
-      "next_action": "決算予定日の経過と決算前スナップショットを蓄積"
+      "next_action": "検証済み標本30件以上で要因差を点検。重みを自動変更せず、別期間で再検証"
     },
     {
       "fraction": 0.6,
@@ -923,6 +923,566 @@
         "return_5d_pct": -0.99,
         "analyst_count": 2,
         "revenue_consensus_yen": 5032500000,
+        "company_guidance_revision": null,
+        "shikiho_forecast_revision": null,
+        "target_price_revision": null,
+        "rating_upgrade": null,
+        "new_news_impact": null
+      },
+      "missing_core_factors": [
+        "company_guidance_revision",
+        "shikiho_forecast_revision",
+        "target_price_revision",
+        "rating_upgrade",
+        "new_news_impact"
+      ],
+      "evidence_note": "四季報・会社予想・目標株価・格付け・ニュースの変更データは未取得。点数には換算しない。"
+    },
+    {
+      "code": "2003",
+      "name": "日東富士製粉",
+      "earnings_date": "2026-11-02",
+      "captured_at": "2026-10-31T06:51:35+09:00",
+      "officially_rankable": false,
+      "strict_score": null,
+      "strict_components": null,
+      "pre_event_factors": {
+        "volume_ratio_5_20": 2.4,
+        "return_5d_pct": -0.2,
+        "analyst_count": null,
+        "revenue_consensus_yen": null,
+        "company_guidance_revision": null,
+        "shikiho_forecast_revision": null,
+        "target_price_revision": null,
+        "rating_upgrade": null,
+        "new_news_impact": null
+      },
+      "missing_core_factors": [
+        "company_guidance_revision",
+        "shikiho_forecast_revision",
+        "target_price_revision",
+        "rating_upgrade",
+        "new_news_impact"
+      ],
+      "evidence_note": "四季報・会社予想・目標株価・格付け・ニュースの変更データは未取得。点数には換算しない。"
+    },
+    {
+      "code": "2220",
+      "name": "亀田製菓",
+      "earnings_date": "2026-11-02",
+      "captured_at": "2026-10-31T06:51:35+09:00",
+      "officially_rankable": false,
+      "strict_score": null,
+      "strict_components": null,
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.83,
+        "return_5d_pct": 0.95,
+        "analyst_count": 1,
+        "revenue_consensus_yen": 33130000000,
+        "company_guidance_revision": null,
+        "shikiho_forecast_revision": null,
+        "target_price_revision": null,
+        "rating_upgrade": null,
+        "new_news_impact": null
+      },
+      "missing_core_factors": [
+        "company_guidance_revision",
+        "shikiho_forecast_revision",
+        "target_price_revision",
+        "rating_upgrade",
+        "new_news_impact"
+      ],
+      "evidence_note": "四季報・会社予想・目標株価・格付け・ニュースの変更データは未取得。点数には換算しない。"
+    },
+    {
+      "code": "2489",
+      "name": "アドウェイズ",
+      "earnings_date": "2026-11-02",
+      "captured_at": "2026-10-31T06:51:35+09:00",
+      "officially_rankable": false,
+      "strict_score": null,
+      "strict_components": null,
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.22,
+        "return_5d_pct": -1.27,
+        "analyst_count": null,
+        "revenue_consensus_yen": null,
+        "company_guidance_revision": null,
+        "shikiho_forecast_revision": null,
+        "target_price_revision": null,
+        "rating_upgrade": null,
+        "new_news_impact": null
+      },
+      "missing_core_factors": [
+        "company_guidance_revision",
+        "shikiho_forecast_revision",
+        "target_price_revision",
+        "rating_upgrade",
+        "new_news_impact"
+      ],
+      "evidence_note": "四季報・会社予想・目標株価・格付け・ニュースの変更データは未取得。点数には換算しない。"
+    },
+    {
+      "code": "2816",
+      "name": "ダイショー",
+      "earnings_date": "2026-11-02",
+      "captured_at": "2026-10-31T06:51:35+09:00",
+      "officially_rankable": false,
+      "strict_score": null,
+      "strict_components": null,
+      "pre_event_factors": {
+        "volume_ratio_5_20": 2.4,
+        "return_5d_pct": 0.0,
+        "analyst_count": null,
+        "revenue_consensus_yen": null,
+        "company_guidance_revision": null,
+        "shikiho_forecast_revision": null,
+        "target_price_revision": null,
+        "rating_upgrade": null,
+        "new_news_impact": null
+      },
+      "missing_core_factors": [
+        "company_guidance_revision",
+        "shikiho_forecast_revision",
+        "target_price_revision",
+        "rating_upgrade",
+        "new_news_impact"
+      ],
+      "evidence_note": "四季報・会社予想・目標株価・格付け・ニュースの変更データは未取得。点数には換算しない。"
+    },
+    {
+      "code": "3371",
+      "name": "ソフトクリエイトホールディングス",
+      "earnings_date": "2026-11-02",
+      "captured_at": "2026-10-31T06:51:35+09:00",
+      "officially_rankable": false,
+      "strict_score": null,
+      "strict_components": null,
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.51,
+        "return_5d_pct": -4.74,
+        "analyst_count": null,
+        "revenue_consensus_yen": null,
+        "company_guidance_revision": null,
+        "shikiho_forecast_revision": null,
+        "target_price_revision": null,
+        "rating_upgrade": null,
+        "new_news_impact": null
+      },
+      "missing_core_factors": [
+        "company_guidance_revision",
+        "shikiho_forecast_revision",
+        "target_price_revision",
+        "rating_upgrade",
+        "new_news_impact"
+      ],
+      "evidence_note": "四季報・会社予想・目標株価・格付け・ニュースの変更データは未取得。点数には換算しない。"
+    },
+    {
+      "code": "3580",
+      "name": "小松マテーレ",
+      "earnings_date": "2026-11-02",
+      "captured_at": "2026-10-31T06:51:35+09:00",
+      "officially_rankable": false,
+      "strict_score": null,
+      "strict_components": null,
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.99,
+        "return_5d_pct": -1.31,
+        "analyst_count": null,
+        "revenue_consensus_yen": null,
+        "company_guidance_revision": null,
+        "shikiho_forecast_revision": null,
+        "target_price_revision": null,
+        "rating_upgrade": null,
+        "new_news_impact": null
+      },
+      "missing_core_factors": [
+        "company_guidance_revision",
+        "shikiho_forecast_revision",
+        "target_price_revision",
+        "rating_upgrade",
+        "new_news_impact"
+      ],
+      "evidence_note": "四季報・会社予想・目標株価・格付け・ニュースの変更データは未取得。点数には換算しない。"
+    },
+    {
+      "code": "3914",
+      "name": "ＪＩＧ－ＳＡＷ",
+      "earnings_date": "2026-11-02",
+      "captured_at": "2026-10-31T06:51:35+09:00",
+      "officially_rankable": false,
+      "strict_score": null,
+      "strict_components": null,
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.22,
+        "return_5d_pct": -2.75,
+        "analyst_count": null,
+        "revenue_consensus_yen": null,
+        "company_guidance_revision": null,
+        "shikiho_forecast_revision": null,
+        "target_price_revision": null,
+        "rating_upgrade": null,
+        "new_news_impact": null
+      },
+      "missing_core_factors": [
+        "company_guidance_revision",
+        "shikiho_forecast_revision",
+        "target_price_revision",
+        "rating_upgrade",
+        "new_news_impact"
+      ],
+      "evidence_note": "四季報・会社予想・目標株価・格付け・ニュースの変更データは未取得。点数には換算しない。"
+    },
+    {
+      "code": "4718",
+      "name": "早稲田アカデミー",
+      "earnings_date": "2026-11-02",
+      "captured_at": "2026-10-31T06:51:35+09:00",
+      "officially_rankable": false,
+      "strict_score": null,
+      "strict_components": null,
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.92,
+        "return_5d_pct": 8.15,
+        "analyst_count": 1,
+        "revenue_consensus_yen": 12313000000,
+        "company_guidance_revision": null,
+        "shikiho_forecast_revision": null,
+        "target_price_revision": null,
+        "rating_upgrade": null,
+        "new_news_impact": null
+      },
+      "missing_core_factors": [
+        "company_guidance_revision",
+        "shikiho_forecast_revision",
+        "target_price_revision",
+        "rating_upgrade",
+        "new_news_impact"
+      ],
+      "evidence_note": "四季報・会社予想・目標株価・格付け・ニュースの変更データは未取得。点数には換算しない。"
+    },
+    {
+      "code": "5187",
+      "name": "クリエートメディック",
+      "earnings_date": "2026-11-02",
+      "captured_at": "2026-10-31T06:51:35+09:00",
+      "officially_rankable": false,
+      "strict_score": null,
+      "strict_components": null,
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.23,
+        "return_5d_pct": 0.36,
+        "analyst_count": null,
+        "revenue_consensus_yen": null,
+        "company_guidance_revision": null,
+        "shikiho_forecast_revision": null,
+        "target_price_revision": null,
+        "rating_upgrade": null,
+        "new_news_impact": null
+      },
+      "missing_core_factors": [
+        "company_guidance_revision",
+        "shikiho_forecast_revision",
+        "target_price_revision",
+        "rating_upgrade",
+        "new_news_impact"
+      ],
+      "evidence_note": "四季報・会社予想・目標株価・格付け・ニュースの変更データは未取得。点数には換算しない。"
+    },
+    {
+      "code": "5367",
+      "name": "ニッカトー",
+      "earnings_date": "2026-11-02",
+      "captured_at": "2026-10-31T06:51:35+09:00",
+      "officially_rankable": false,
+      "strict_score": null,
+      "strict_components": null,
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.75,
+        "return_5d_pct": 1.31,
+        "analyst_count": null,
+        "revenue_consensus_yen": null,
+        "company_guidance_revision": null,
+        "shikiho_forecast_revision": null,
+        "target_price_revision": null,
+        "rating_upgrade": null,
+        "new_news_impact": null
+      },
+      "missing_core_factors": [
+        "company_guidance_revision",
+        "shikiho_forecast_revision",
+        "target_price_revision",
+        "rating_upgrade",
+        "new_news_impact"
+      ],
+      "evidence_note": "四季報・会社予想・目標株価・格付け・ニュースの変更データは未取得。点数には換算しない。"
+    },
+    {
+      "code": "5955",
+      "name": "ワイズホールディングス",
+      "earnings_date": "2026-11-02",
+      "captured_at": "2026-10-31T06:51:35+09:00",
+      "officially_rankable": false,
+      "strict_score": null,
+      "strict_components": null,
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.22,
+        "return_5d_pct": 0.0,
+        "analyst_count": null,
+        "revenue_consensus_yen": null,
+        "company_guidance_revision": null,
+        "shikiho_forecast_revision": null,
+        "target_price_revision": null,
+        "rating_upgrade": null,
+        "new_news_impact": null
+      },
+      "missing_core_factors": [
+        "company_guidance_revision",
+        "shikiho_forecast_revision",
+        "target_price_revision",
+        "rating_upgrade",
+        "new_news_impact"
+      ],
+      "evidence_note": "四季報・会社予想・目標株価・格付け・ニュースの変更データは未取得。点数には換算しない。"
+    },
+    {
+      "code": "6200",
+      "name": "インソース",
+      "earnings_date": "2026-11-02",
+      "captured_at": "2026-10-31T06:51:35+09:00",
+      "officially_rankable": false,
+      "strict_score": null,
+      "strict_components": null,
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.79,
+        "return_5d_pct": -3.42,
+        "analyst_count": 2,
+        "revenue_consensus_yen": 4563500000,
+        "company_guidance_revision": null,
+        "shikiho_forecast_revision": null,
+        "target_price_revision": null,
+        "rating_upgrade": null,
+        "new_news_impact": null
+      },
+      "missing_core_factors": [
+        "company_guidance_revision",
+        "shikiho_forecast_revision",
+        "target_price_revision",
+        "rating_upgrade",
+        "new_news_impact"
+      ],
+      "evidence_note": "四季報・会社予想・目標株価・格付け・ニュースの変更データは未取得。点数には換算しない。"
+    },
+    {
+      "code": "7236",
+      "name": "ティラド",
+      "earnings_date": "2026-11-02",
+      "captured_at": "2026-10-31T06:51:35+09:00",
+      "officially_rankable": false,
+      "strict_score": null,
+      "strict_components": null,
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.84,
+        "return_5d_pct": -6.1,
+        "analyst_count": null,
+        "revenue_consensus_yen": null,
+        "company_guidance_revision": null,
+        "shikiho_forecast_revision": null,
+        "target_price_revision": null,
+        "rating_upgrade": null,
+        "new_news_impact": null
+      },
+      "missing_core_factors": [
+        "company_guidance_revision",
+        "shikiho_forecast_revision",
+        "target_price_revision",
+        "rating_upgrade",
+        "new_news_impact"
+      ],
+      "evidence_note": "四季報・会社予想・目標株価・格付け・ニュースの変更データは未取得。点数には換算しない。"
+    },
+    {
+      "code": "7366",
+      "name": "ＬＩＴＡＬＩＣＯ",
+      "earnings_date": "2026-11-02",
+      "captured_at": "2026-10-31T06:51:35+09:00",
+      "officially_rankable": false,
+      "strict_score": null,
+      "strict_components": null,
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.08,
+        "return_5d_pct": -0.97,
+        "analyst_count": 2,
+        "revenue_consensus_yen": 11265500000,
+        "company_guidance_revision": null,
+        "shikiho_forecast_revision": null,
+        "target_price_revision": null,
+        "rating_upgrade": null,
+        "new_news_impact": null
+      },
+      "missing_core_factors": [
+        "company_guidance_revision",
+        "shikiho_forecast_revision",
+        "target_price_revision",
+        "rating_upgrade",
+        "new_news_impact"
+      ],
+      "evidence_note": "四季報・会社予想・目標株価・格付け・ニュースの変更データは未取得。点数には換算しない。"
+    },
+    {
+      "code": "7480",
+      "name": "スズデン",
+      "earnings_date": "2026-11-02",
+      "captured_at": "2026-10-31T06:51:35+09:00",
+      "officially_rankable": false,
+      "strict_score": null,
+      "strict_components": null,
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.35,
+        "return_5d_pct": -7.09,
+        "analyst_count": null,
+        "revenue_consensus_yen": null,
+        "company_guidance_revision": null,
+        "shikiho_forecast_revision": null,
+        "target_price_revision": null,
+        "rating_upgrade": null,
+        "new_news_impact": null
+      },
+      "missing_core_factors": [
+        "company_guidance_revision",
+        "shikiho_forecast_revision",
+        "target_price_revision",
+        "rating_upgrade",
+        "new_news_impact"
+      ],
+      "evidence_note": "四季報・会社予想・目標株価・格付け・ニュースの変更データは未取得。点数には換算しない。"
+    },
+    {
+      "code": "7551",
+      "name": "ウェッズ",
+      "earnings_date": "2026-11-02",
+      "captured_at": "2026-10-31T06:51:35+09:00",
+      "officially_rankable": false,
+      "strict_score": null,
+      "strict_components": null,
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.53,
+        "return_5d_pct": 0.76,
+        "analyst_count": null,
+        "revenue_consensus_yen": null,
+        "company_guidance_revision": null,
+        "shikiho_forecast_revision": null,
+        "target_price_revision": null,
+        "rating_upgrade": null,
+        "new_news_impact": null
+      },
+      "missing_core_factors": [
+        "company_guidance_revision",
+        "shikiho_forecast_revision",
+        "target_price_revision",
+        "rating_upgrade",
+        "new_news_impact"
+      ],
+      "evidence_note": "四季報・会社予想・目標株価・格付け・ニュースの変更データは未取得。点数には換算しない。"
+    },
+    {
+      "code": "7723",
+      "name": "愛知時計電機",
+      "earnings_date": "2026-11-02",
+      "captured_at": "2026-10-31T06:51:35+09:00",
+      "officially_rankable": false,
+      "strict_score": null,
+      "strict_components": null,
+      "pre_event_factors": {
+        "volume_ratio_5_20": 2.53,
+        "return_5d_pct": -1.54,
+        "analyst_count": 1,
+        "revenue_consensus_yen": 14717000000,
+        "company_guidance_revision": null,
+        "shikiho_forecast_revision": null,
+        "target_price_revision": null,
+        "rating_upgrade": null,
+        "new_news_impact": null
+      },
+      "missing_core_factors": [
+        "company_guidance_revision",
+        "shikiho_forecast_revision",
+        "target_price_revision",
+        "rating_upgrade",
+        "new_news_impact"
+      ],
+      "evidence_note": "四季報・会社予想・目標株価・格付け・ニュースの変更データは未取得。点数には換算しない。"
+    },
+    {
+      "code": "7971",
+      "name": "東リ",
+      "earnings_date": "2026-11-02",
+      "captured_at": "2026-10-31T06:51:35+09:00",
+      "officially_rankable": false,
+      "strict_score": null,
+      "strict_components": null,
+      "pre_event_factors": {
+        "volume_ratio_5_20": 3.68,
+        "return_5d_pct": 6.18,
+        "analyst_count": null,
+        "revenue_consensus_yen": null,
+        "company_guidance_revision": null,
+        "shikiho_forecast_revision": null,
+        "target_price_revision": null,
+        "rating_upgrade": null,
+        "new_news_impact": null
+      },
+      "missing_core_factors": [
+        "company_guidance_revision",
+        "shikiho_forecast_revision",
+        "target_price_revision",
+        "rating_upgrade",
+        "new_news_impact"
+      ],
+      "evidence_note": "四季報・会社予想・目標株価・格付け・ニュースの変更データは未取得。点数には換算しない。"
+    },
+    {
+      "code": "9351",
+      "name": "東洋埠頭",
+      "earnings_date": "2026-11-02",
+      "captured_at": "2026-10-31T06:51:35+09:00",
+      "officially_rankable": false,
+      "strict_score": null,
+      "strict_components": null,
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.55,
+        "return_5d_pct": 0.21,
+        "analyst_count": null,
+        "revenue_consensus_yen": null,
+        "company_guidance_revision": null,
+        "shikiho_forecast_revision": null,
+        "target_price_revision": null,
+        "rating_upgrade": null,
+        "new_news_impact": null
+      },
+      "missing_core_factors": [
+        "company_guidance_revision",
+        "shikiho_forecast_revision",
+        "target_price_revision",
+        "rating_upgrade",
+        "new_news_impact"
+      ],
+      "evidence_note": "四季報・会社予想・目標株価・格付け・ニュースの変更データは未取得。点数には換算しない。"
+    },
+    {
+      "code": "9768",
+      "name": "いであ",
+      "earnings_date": "2026-11-02",
+      "captured_at": "2026-10-31T06:51:35+09:00",
+      "officially_rankable": false,
+      "strict_score": null,
+      "strict_components": null,
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.8,
+        "return_5d_pct": 0.0,
+        "analyst_count": null,
+        "revenue_consensus_yen": null,
         "company_guidance_revision": null,
         "shikiho_forecast_revision": null,
         "target_price_revision": null,

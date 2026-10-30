@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "updated_at": "2026-10-31T01:30:06+09:00",
-  "method": "候補自身の出典のある過去決算日付とYahoo日足を照合。記事掲載日は実際の発表日と異なる場合がある。",
+  "updated_at": "2026-10-31T01:56:59+09:00",
+  "method": "JPX予定日・Yahoo決算カレンダー・決算短信見出し内の適時開示日から本人の過去実績を取得。記事発信日をそのまま開示日として推定しない。",
   "coverage": {
     "candidates": 20,
     "with_history": 4,
@@ -14,7 +14,7 @@
       "events": [
         {
           "event_date": "2026-07-31",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB4a0J0MmZOWnp1YTE4dnNvSmVVb01GQUJUNTVhS1NSd3VUOWRpdE1iQ3JLR1dsRi1BYzRGMFRLTUVJekpFT25HSmxkTE1LWUx4d0E2aEJHSklKYVNKeElJZmZ6eFVTYzlpZlE?oc=5",
           "headline": "亀田製菓[2220]：2027年３月期第１四半期決算短信〔日本基準〕(連結) 2026年7月31日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-07-30",
@@ -40,7 +40,7 @@
       "events": [
         {
           "event_date": "2026-05-08",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1CSHNrOXc1S0Y5YTFCRmJndjFNRmFDSndGZURzaGxXSFNWTEZadjdibXZHSUl2Z2M1LWNfZ0V1Q2tVbEIyazJya2w5c3BTYXE1Z013XzJuUlNveDdiQzd2dkFmb3U2V2J3blE?oc=5",
           "headline": "愛知時計電機[7723]：2026年3月期 決算短信〔日本基準〕（連結） 2026年5月8日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-05-07",
@@ -60,7 +60,7 @@
       "events": [
         {
           "event_date": "2026-07-30",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9kWTVLcF93dU1aOVVFWHRKMmlmTHNweTRYZ2FpWWxRRS1hclhfN1dkaUJYa25PS2dWQk43YjZ6Y3BEQXNrcWVnNnF3RVZSaHRkUHJ1eW0zX0FTYktwQm5NcWFIYlA5bFM1VUE?oc=5",
           "headline": "東リ[7971]：2027年３月期 第１四半期決算短信〔日本基準〕（連結） 2026年7月30日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-07-29",
@@ -92,7 +92,7 @@
       "events": [
         {
           "event_date": "2026-04-27",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1wOFJ1UXlhUEFDQm5LOWRkYU1ENFFEcWJhQk12OVJjZEZtNHZwc3hSWDB4UzRNMm9MbWNBMnU4aDh6WUN0czVqVlNJaUVuSzFnOGNJcWVNRFBqVlBIZXNXVUhjQTVzTXhhTWc?oc=5",
           "headline": "ティラド[7236]：2026年3月期 決算短信〔日本基準〕（連結） 2026年4月27日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-04-24",

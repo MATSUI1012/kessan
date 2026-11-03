@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-11-04T01:33:18+09:00",
+  "generated_at": "2026-11-04T02:07:55+09:00",
   "description": "4項目の調査順位。本人の過去決算反応は出典のある発表予定日・カレンダー日・記事掲載日付近の株価変化。実際の発表時刻・変動原因は未確認。未取得0点は悪材料ではない。",
   "weights": {
     "own_earnings_reaction": 3,
@@ -1114,9 +1114,15 @@
         "recent_industry_peers": 0,
         "analyst_upgrades_61d": 0
       },
-      "self_history_count": 1,
-      "self_history_positive": 0,
+      "self_history_count": 2,
+      "self_history_positive": 1,
       "self_history_events": [
+        {
+          "date": "2026-08-05",
+          "next_close_pct": 26.32,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBacDdyZFg5YzVmY0RiRDdHU0R5UF9IOHZodjJSNjVyam82YmZSN1czcVh1SDd6cVYwb1NKdjAwRFhGQjZVNWxobHFHT1VDRXdJRXhNUDhGUW52bHIxRXphWWFrVXRWRGt2bXc?oc=5"
+        },
         {
           "date": "2026-05-13",
           "next_close_pct": -14.34,

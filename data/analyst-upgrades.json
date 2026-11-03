@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-03T00:42:27+09:00",
-  "window_start": "2026-09-03",
-  "window_end": "2026-11-03",
+  "updated_at": "2026-11-04T00:31:29+09:00",
+  "window_start": "2026-09-04",
+  "window_end": "2026-11-04",
   "description": "ニュース見出しを用いた暫定検出。原文の格付け変更・コンセンサス時系列を検証したものではない。目標株価の引き上げ単独では加点しない。",
   "records": [
     {
@@ -69,6 +69,15 @@
       "status": "確認できる上方修正記事なし"
     },
     {
+      "code": "8081",
+      "name": "カナデン",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
       "code": "7466",
       "name": "ＳＰＫ",
       "events": [],
@@ -96,26 +105,17 @@
       "status": "確認できる上方修正記事なし"
     },
     {
-      "code": "8081",
-      "name": "カナデン",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
-      "code": "6958",
-      "name": "日本シイエムケイ",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
       "code": "7609",
       "name": "ダイトロン",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
+      "code": "3844",
+      "name": "コムチュア",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,
@@ -141,8 +141,8 @@
       "status": "確認できる上方修正記事なし"
     },
     {
-      "code": "3844",
-      "name": "コムチュア",
+      "code": "6958",
+      "name": "日本シイエムケイ",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,

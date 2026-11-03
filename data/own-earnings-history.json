@@ -1,73 +1,48 @@
 {
-  "schema": 4,
-  "updated_at": "2026-11-03T04:15:50+09:00",
+  "schema": 1,
+  "updated_at": "2026-11-04T01:33:18+09:00",
+  "method": "候補自身の出典のある過去決算日付とYahoo日足を照合。記事掲載日は実際の発表日と異なる場合がある。",
   "coverage": {
     "candidates": 20,
     "with_history": 8,
-    "events": 8,
-    "new_events": 0
+    "events": 8
   },
-  "method": "IR BANK決算短信の開示履歴に明記された日付とYahoo日足を照合。未確認は推測しない。",
   "records": [
     {
       "code": "5821",
       "name": "平河ヒューテック",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/5821/ir: HTTP 403",
-        "https://irbank.net/5821: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "6817",
       "name": "スミダコーポレーション",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/6817/ir: HTTP 403",
-        "https://irbank.net/6817: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "6240",
       "name": "ヤマシンフィルタ",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/6240/ir: HTTP 403",
-        "https://irbank.net/6240: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "3150",
       "name": "グリムス",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/3150/ir: HTTP 403",
-        "https://irbank.net/3150: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "3636",
       "name": "三菱総合研究所",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/3636/ir: HTTP 403",
-        "https://irbank.net/3636: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "4559",
       "name": "ゼリア新薬工業",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/4559/ir: HTTP 403",
-        "https://irbank.net/4559: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "4847",
@@ -87,41 +62,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/4847/ir: HTTP 403",
-        "https://irbank.net/4847: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "7466",
-      "name": "ＳＰＫ",
-      "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/7466/ir: HTTP 403",
-        "https://irbank.net/7466: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "4326",
-      "name": "インテージホールディングス",
-      "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/4326/ir: HTTP 403",
-        "https://irbank.net/4326: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "5449",
-      "name": "大阪製鐵",
-      "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/5449/ir: HTTP 403",
-        "https://irbank.net/5449: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "8081",
@@ -141,21 +82,25 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/8081/ir: HTTP 403",
-        "https://irbank.net/8081: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
-      "code": "6958",
-      "name": "日本シイエムケイ",
+      "code": "7466",
+      "name": "ＳＰＫ",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/6958/ir: HTTP 403",
-        "https://irbank.net/6958: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "4326",
+      "name": "インテージホールディングス",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "5449",
+      "name": "大阪製鐵",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "7609",
@@ -175,11 +120,13 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/7609/ir: HTTP 403",
-        "https://irbank.net/7609: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
+    },
+    {
+      "code": "3844",
+      "name": "コムチュア",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "3668",
@@ -199,31 +146,19 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/3668/ir: HTTP 403",
-        "https://irbank.net/3668: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "7600",
       "name": "日本エム・ディ・エム",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/7600/ir: HTTP 403",
-        "https://irbank.net/7600: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
-      "code": "3844",
-      "name": "コムチュア",
+      "code": "6958",
+      "name": "日本シイエムケイ",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/3844/ir: HTTP 403",
-        "https://irbank.net/3844: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "1799",
@@ -243,11 +178,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/1799/ir: HTTP 403",
-        "https://irbank.net/1799: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "5632",
@@ -267,11 +198,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/5632/ir: HTTP 403",
-        "https://irbank.net/5632: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "6809",
@@ -291,11 +218,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/6809/ir: HTTP 403",
-        "https://irbank.net/6809: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "4886",
@@ -315,11 +238,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/4886/ir: HTTP 403",
-        "https://irbank.net/4886: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     }
   ]
 }

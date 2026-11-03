@@ -1,120 +1,113 @@
 {
-  "schema": 2,
-  "description": "TDnet決算短信の掲載日付近の終値反応。開示時刻未確認、決算による因果効果や上昇確率は示さない。",
+  "schema": 1,
+  "description": "決算カレンダー日付付近の終値反応。実際の発表時刻未検証であり、決算による因果効果・上昇確率ではありません。",
   "sources": [
-    "TDnet決算短信開示一覧（掲載日）",
-    "既存の出典付き履歴"
+    "JPX保存済み発表予定日",
+    "Yahoo Finance決算カレンダー日付（取得可能な銘柄のみ）"
   ],
-  "event_date_count": 20,
+  "event_date_count": 0,
   "with_reactions": 0,
   "records": [
     {
-      "code": "2220",
-      "name": "亀田製菓",
+      "code": "5821",
+      "name": "平河ヒューテック",
       "reactions": []
     },
     {
-      "code": "4718",
-      "name": "早稲田アカデミー",
+      "code": "6817",
+      "name": "スミダコーポレーション",
       "reactions": []
     },
     {
-      "code": "7723",
-      "name": "愛知時計電機",
+      "code": "6240",
+      "name": "ヤマシンフィルタ",
       "reactions": []
     },
     {
-      "code": "7971",
-      "name": "東リ",
+      "code": "3150",
+      "name": "グリムス",
       "reactions": []
     },
     {
-      "code": "2003",
-      "name": "日東富士製粉",
+      "code": "3636",
+      "name": "三菱総合研究所",
       "reactions": []
     },
     {
-      "code": "2816",
-      "name": "ダイショー",
+      "code": "4559",
+      "name": "ゼリア新薬工業",
       "reactions": []
     },
     {
-      "code": "7480",
-      "name": "スズデン",
+      "code": "4847",
+      "name": "インテリジェント　ウェイブ",
       "reactions": []
     },
     {
-      "code": "7236",
-      "name": "ティラド",
+      "code": "8081",
+      "name": "カナデン",
       "reactions": []
     },
     {
-      "code": "2489",
-      "name": "アドウェイズ",
+      "code": "7466",
+      "name": "ＳＰＫ",
       "reactions": []
     },
     {
-      "code": "3914",
-      "name": "ＪＩＧ－ＳＡＷ",
+      "code": "4326",
+      "name": "インテージホールディングス",
       "reactions": []
     },
     {
-      "code": "7366",
-      "name": "ＬＩＴＡＬＩＣＯ",
+      "code": "5449",
+      "name": "大阪製鐵",
       "reactions": []
     },
     {
-      "code": "6200",
-      "name": "インソース",
+      "code": "6958",
+      "name": "日本シイエムケイ",
       "reactions": []
     },
     {
-      "code": "9686",
-      "name": "東洋テック",
+      "code": "7609",
+      "name": "ダイトロン",
       "reactions": []
     },
     {
-      "code": "7551",
-      "name": "ウェッズ",
+      "code": "3844",
+      "name": "コムチュア",
       "reactions": []
     },
     {
-      "code": "5367",
-      "name": "ニッカトー",
+      "code": "3668",
+      "name": "コロプラ",
       "reactions": []
     },
     {
-      "code": "3580",
-      "name": "小松マテーレ",
+      "code": "7600",
+      "name": "日本エム・ディ・エム",
       "reactions": []
     },
     {
-      "code": "5955",
-      "name": "ワイズホールディングス",
+      "code": "1799",
+      "name": "第一建設工業",
       "reactions": []
     },
     {
-      "code": "3371",
-      "name": "ソフトクリエイトホールディングス",
+      "code": "5632",
+      "name": "三菱製鋼",
       "reactions": []
     },
     {
-      "code": "9768",
-      "name": "いであ",
+      "code": "6809",
+      "name": "ＴＯＡ",
       "reactions": []
     },
     {
-      "code": "5187",
-      "name": "クリエートメディック",
+      "code": "4886",
+      "name": "あすか製薬ホールディングス",
       "reactions": []
     }
   ],
-  "generated_at": "2026-11-02T22:50:29+09:00",
-  "tdnet_days_requested": 132,
-  "tdnet_days_parsed": 0,
-  "tdnet_events_found": 0,
-  "tdnet_scan_diagnostics": {
-    "missing": 132,
-    "parsed": 0
-  }
+  "generated_at": "2026-11-03T22:09:02+09:00"
 }

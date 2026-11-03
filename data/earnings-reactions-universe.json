@@ -2,16 +2,16 @@
   "schema": 1,
   "description": "JPXの決算発表予定日の前後の株価変化。実際の決算発表日時や因果関係は未確認。今回の20銘柄自身の過去決算成績ではない。",
   "source": "JPX archived scheduled dates + repository daily stock closes",
-  "events_available": 941,
-  "samples": 41,
+  "events_available": 985,
+  "samples": 37,
   "missing_reason_counts": {
-    "no_pre_event_close": 451,
-    "fewer_than_five_post_sessions": 449
+    "no_pre_event_close": 455,
+    "fewer_than_five_post_sessions": 493
   },
   "records": [
     {
       "code": "8060",
-      "name": "キヤノンマーケティングジャパン",
+      "name": "",
       "scheduled_date": "2026-10-26",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -27,7 +27,7 @@
     },
     {
       "code": "7970",
-      "name": "信越ポリマー",
+      "name": "",
       "scheduled_date": "2026-10-26",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -43,7 +43,7 @@
     },
     {
       "code": "6923",
-      "name": "スタンレー電気",
+      "name": "",
       "scheduled_date": "2026-10-26",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -59,7 +59,7 @@
     },
     {
       "code": "6663",
-      "name": "太洋テクノレックス",
+      "name": "",
       "scheduled_date": "2026-10-26",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -75,7 +75,7 @@
     },
     {
       "code": "6230",
-      "name": "ＳＡＮＥＩ",
+      "name": "",
       "scheduled_date": "2026-10-26",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -91,7 +91,7 @@
     },
     {
       "code": "3635",
-      "name": "コーエーテクモホールディングス",
+      "name": "",
       "scheduled_date": "2026-10-26",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -107,7 +107,7 @@
     },
     {
       "code": "2211",
-      "name": "不二家",
+      "name": "",
       "scheduled_date": "2026-10-26",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -123,7 +123,7 @@
     },
     {
       "code": "1718",
-      "name": "美樹工業",
+      "name": "",
       "scheduled_date": "2026-10-26",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -139,7 +139,7 @@
     },
     {
       "code": "9353",
-      "name": "櫻島埠頭",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1016.xlsx",
@@ -155,7 +155,7 @@
     },
     {
       "code": "9029",
-      "name": "ヒガシホールディングス",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -171,7 +171,7 @@
     },
     {
       "code": "8961",
-      "name": "森トラストリート投資法人",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
@@ -187,7 +187,7 @@
     },
     {
       "code": "8707",
-      "name": "岩井コスモホールディングス",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -203,7 +203,7 @@
     },
     {
       "code": "7931",
-      "name": "未来工業",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -219,7 +219,7 @@
     },
     {
       "code": "7422",
-      "name": "東邦レマック",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -235,7 +235,7 @@
     },
     {
       "code": "6999",
-      "name": "ＫＯＡ",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -251,7 +251,7 @@
     },
     {
       "code": "6954",
-      "name": "ファナック",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -267,7 +267,7 @@
     },
     {
       "code": "6629",
-      "name": "テクノホライゾン",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -283,7 +283,7 @@
     },
     {
       "code": "5423",
-      "name": "東京製鐵",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -299,7 +299,7 @@
     },
     {
       "code": "3912",
-      "name": "モバイルファクトリー",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -315,7 +315,7 @@
     },
     {
       "code": "3492",
-      "name": "ＭＩＲＡＲＴＨ不動産投資法人",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
@@ -331,7 +331,7 @@
     },
     {
       "code": "2804",
-      "name": "ブルドックソース",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -347,7 +347,7 @@
     },
     {
       "code": "2268",
-      "name": "Ｂ－Ｒ　サーティワン　アイスクリーム",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -363,7 +363,7 @@
     },
     {
       "code": "9478",
-      "name": "ＳＥホールディングス・アンド・インキュベーションズ",
+      "name": "",
       "scheduled_date": "2026-10-22",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -379,7 +379,7 @@
     },
     {
       "code": "8954",
-      "name": "オリックス不動産投資法人",
+      "name": "",
       "scheduled_date": "2026-10-22",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
@@ -395,7 +395,7 @@
     },
     {
       "code": "8617",
-      "name": "光世証券",
+      "name": "",
       "scheduled_date": "2026-10-22",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -411,7 +411,7 @@
     },
     {
       "code": "6146",
-      "name": "ディスコ",
+      "name": "",
       "scheduled_date": "2026-10-22",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -427,7 +427,7 @@
     },
     {
       "code": "5204",
-      "name": "石塚硝子",
+      "name": "",
       "scheduled_date": "2026-10-22",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -443,7 +443,7 @@
     },
     {
       "code": "3091",
-      "name": "ブロンコビリー",
+      "name": "",
       "scheduled_date": "2026-10-22",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -459,7 +459,7 @@
     },
     {
       "code": "8953",
-      "name": "日本都市ファンド投資法人",
+      "name": "",
       "scheduled_date": "2026-10-21",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
@@ -475,7 +475,7 @@
     },
     {
       "code": "5576",
-      "name": "オービーシステム",
+      "name": "",
       "scheduled_date": "2026-10-21",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -491,7 +491,7 @@
     },
     {
       "code": "4929",
-      "name": "アジュバンホールディングス",
+      "name": "",
       "scheduled_date": "2026-10-21",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -507,7 +507,7 @@
     },
     {
       "code": "3290",
-      "name": "Ｏｎｅリート投資法人",
+      "name": "",
       "scheduled_date": "2026-10-21",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
@@ -523,7 +523,7 @@
     },
     {
       "code": "8968",
-      "name": "福岡リート投資法人",
+      "name": "",
       "scheduled_date": "2026-10-20",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
@@ -539,7 +539,7 @@
     },
     {
       "code": "5990",
-      "name": "スーパーツール",
+      "name": "",
       "scheduled_date": "2026-10-20",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -555,7 +555,7 @@
     },
     {
       "code": "5933",
-      "name": "アルインコ",
+      "name": "",
       "scheduled_date": "2026-10-20",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -571,7 +571,7 @@
     },
     {
       "code": "3466",
-      "name": "ラサールロジポート投資法人",
+      "name": "",
       "scheduled_date": "2026-10-20",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
@@ -587,7 +587,7 @@
     },
     {
       "code": "3226",
-      "name": "三井不動産アコモデーションファンド投資法人",
+      "name": "",
       "scheduled_date": "2026-10-20",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
@@ -600,74 +600,7 @@
       "after_5d_pct": 0.73,
       "turnover_oku_before": 4.29,
       "current_market_cap_oku": 2701.13
-    },
-    {
-      "code": "8984",
-      "name": "大和ハウスリート投資法人",
-      "scheduled_date": "2026-10-19",
-      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-      "baseline_date": "2026-10-16",
-      "after_1d_date": "2026-10-20",
-      "after_3d_date": "2026-10-22",
-      "after_5d_date": "2026-10-26",
-      "after_1d_pct": -1.2,
-      "after_3d_pct": -0.37,
-      "after_5d_pct": 2.02,
-      "turnover_oku_before": 11.09,
-      "current_market_cap_oku": 4916.65
-    },
-    {
-      "code": "3488",
-      "name": "セントラル・リート投資法人",
-      "scheduled_date": "2026-10-19",
-      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-      "baseline_date": "2026-10-16",
-      "after_1d_date": "2026-10-20",
-      "after_3d_date": "2026-10-22",
-      "after_5d_date": "2026-10-26",
-      "after_1d_pct": -2.36,
-      "after_3d_pct": -1.04,
-      "after_5d_pct": -0.66,
-      "turnover_oku_before": 1.04,
-      "current_market_cap_oku": 255.64
-    },
-    {
-      "code": "3481",
-      "name": "三菱地所物流リート投資法人",
-      "scheduled_date": "2026-10-19",
-      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-      "baseline_date": "2026-10-16",
-      "after_1d_date": "2026-10-20",
-      "after_3d_date": "2026-10-22",
-      "after_5d_date": "2026-10-26",
-      "after_1d_pct": -1.48,
-      "after_3d_pct": -2.03,
-      "after_5d_pct": -0.37,
-      "turnover_oku_before": 4.36,
-      "current_market_cap_oku": 1534.02
-    },
-    {
-      "code": "3295",
-      "name": "ヒューリックリート投資法人",
-      "scheduled_date": "2026-10-19",
-      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-      "baseline_date": "2026-10-16",
-      "after_1d_date": "2026-10-20",
-      "after_3d_date": "2026-10-22",
-      "after_5d_date": "2026-10-26",
-      "after_1d_pct": -1.07,
-      "after_3d_pct": -1.92,
-      "after_5d_pct": -0.21,
-      "turnover_oku_before": 3.89,
-      "current_market_cap_oku": 1954.08
     }
   ],
-  "generated_at": "2026-11-02T23:18:45+09:00",
-  "name_match_source": "data/earnings.json (JPX earnings calendar; match code/date, or uniquely named code)",
-  "name_missing_count": 0,
-  "name_matched_count": 41
+  "generated_at": "2026-11-03T23:15:01+09:00"
 }

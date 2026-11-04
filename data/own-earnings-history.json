@@ -1,18 +1,32 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-05T01:36:53+09:00",
-  "method": "候補自身の出典のある過去決算日付とYahoo日足を照合。記事掲載日は実際の発表日と異なる場合がある。",
+  "updated_at": "2026-11-05T02:06:37+09:00",
+  "method": "JPX予定日・Yahoo決算カレンダー・決算短信見出し内の適時開示日から本人の過去実績を取得。記事発信日をそのまま開示日として推定しない。",
   "coverage": {
     "candidates": 20,
-    "with_history": 8,
-    "events": 8
+    "with_history": 9,
+    "events": 10
   },
   "records": [
     {
       "code": "3034",
       "name": "クオールホールディングス",
-      "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "events": [
+        {
+          "event_date": "2026-08-07",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1vUmdtMmN1d2VYQlh0T202UzJFQzB1UC1zRWl4aUUtZHdzTTlpbzRLVFZTZ1JzcFFTazNYVGZHdFpiU0p0OXREeUVMM0Z5T2tNWGpEbmVRdUlkcENpZnluYWFGcVpqcG94WFE?oc=5",
+          "headline": "クオールホールディングス[3034]：2027年３月期 第１四半期決算短信〔日本基準〕（連結） 2026年8月7日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-08-06",
+          "baseline_close": 2049.0,
+          "next_session_date": "2026-08-10",
+          "next_close_pct": 18.06,
+          "after_3d_pct": 20.55,
+          "after_5d_pct": 25.38,
+          "price_source": "Yahoo Finance 日足"
+        }
+      ],
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "4968",
@@ -26,7 +40,7 @@
       "events": [
         {
           "event_date": "2026-05-12",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1Yc3BzdFBhS0UzakNpZnIweUhuekxHWEpqWmU0SGsyZE13T3BnN2VzVDlHd3phLS1QcDh4UFJFWm9xTnc3Y0pCQkt2NkdnZHBPbzRQWjlNNG9NdWlZQ3RER3Q2alFpc0Viemc?oc=5",
           "headline": "大崎電気工業[6644]：2026年3月期 決算短信〔日本基準〕(連結) 2026年5月12日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-05-11",
@@ -46,7 +60,7 @@
       "events": [
         {
           "event_date": "2026-05-12",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4taVYzMUNOY3ZwdmxnYXZNTmNSM2V4Sm9OaWcxbWpVZUJMWlVFOGFCdkRtVktDQmVXTWJUUTM2dmJRbDlBY3U0SVZUa1BnZUVsX1VTd1VTcXEtWm8tRlE1ZXU2ZkhYeWdEYVE?oc=5",
           "headline": "東京エネシス[1945]：2026年３月期 決算短信〔日本基準〕（連結） 2026年5月12日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-05-11",
@@ -66,7 +80,7 @@
       "events": [
         {
           "event_date": "2026-05-12",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE83cG9iTXFwa1FGN1k1NTNTelh1SVJaS3pQWTJZallobGV4eWxxa1Z3dnZQQlNWREp6c3gxTUE1aG9NQkJSNGFybWZXNlU2NUkxM3JWejBBTlpNN1lSVWxqc3VzMXQtcW1ONEE?oc=5",
           "headline": "アルペン[3028]：2026年６月期 第３四半期決算短信〔日本基準〕（連結） 2026年5月12日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-05-11",
@@ -106,7 +120,7 @@
       "events": [
         {
           "event_date": "2026-05-11",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1wU0EtQUNKQlU5aEw3OHlibWRhSFR3VVRsaEx4MzRNZUllQUpZWV9yMUY2ZnRqTExHcmwzY2pqSFE0UUI0d201XzhoaGt5am1FZEZrQ3RuVEJJVDVNS1dJWmxsQ2FhTmdoTnc?oc=5",
           "headline": "荏原実業[6328]：2026年12月期 第1四半期決算短信〔日本基準〕（連結） 2026年5月11日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-05-08",
@@ -115,6 +129,19 @@
           "next_close_pct": 4.66,
           "after_3d_pct": -2.73,
           "after_5d_pct": -5.73,
+          "price_source": "Yahoo Finance 日足"
+        },
+        {
+          "event_date": "2025-11-06",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE05dXpwazNsSGsySm1Hc0prZEVTRS1vTDJLMzVRbGJiSE5TM1o5a0pSSFRnZ2k1U3pIMWM0R3dxVHlDXzZ0cS1LbFpJT0FPU2UwYTFTQVlzOFBKWDVNZ3lZRGlhMjYxNi15MkE?oc=5",
+          "headline": "荏原実業[6328]：2025年12月期 第3四半期決算短信〔日本基準〕（連結） 2025年11月6日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2025-11-05",
+          "baseline_close": 2092.5,
+          "next_session_date": "2025-11-07",
+          "next_close_pct": 3.7,
+          "after_3d_pct": 3.94,
+          "after_5d_pct": 5.97,
           "price_source": "Yahoo Finance 日足"
         }
       ],
@@ -132,7 +159,7 @@
       "events": [
         {
           "event_date": "2026-02-12",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1fME8zeHZQVXBwcDRJZlo1bVlYSTdFVDMzcGVseWZCY3BPYzFSZHAxdmdpam5BUXZjaDQ5YkFobTZnOTFERTlDWTBuM2JzY0xSenJ0QWpnZ0xldDNkNTJBMnJ3UGhJQU5uS1E?oc=5",
           "headline": "地主[3252]：2025年12月期 決算短信〔日本基準〕（連結） 2026年2月12日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-02-10",
@@ -176,7 +203,7 @@
       "events": [
         {
           "event_date": "2026-05-07",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0yeG1sTFJqR2RZaWxkRU16MGtVUERtVDJKNDd3aXFPNXpVYUk2SHU0MmJQaHpDZUZxcjg4djYtTUhoczc1N2pKSlFSOXBVZ1VLenpxVkhQTlhYWGNiYXQwQm5sS2JBMmpfQ2c?oc=5",
           "headline": "日本通信[9424]：2026年3月期 決算短信〔日本基準〕（連結） 2026年5月7日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-05-01",
@@ -202,7 +229,7 @@
       "events": [
         {
           "event_date": "2026-05-07",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9zTjdLWU90VmVZYkQ2N2NPbmRLaG9aemh5NWZOT3NGN09LSmE5Z2QyWTRGelNYOEVxTkJJaU9ZbWZzdk54T1JNelZhZWpXaENJSExub3Q0Zi1jVHJsN1hNZGc1OS1sWGdWYWc?oc=5",
           "headline": "世紀東急工業[1898]：2026年３月期 決算短信〔日本基準〕（連結） 2026年5月7日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-05-01",

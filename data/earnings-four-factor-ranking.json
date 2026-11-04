@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generated_at": "2026-11-05T00:58:30+09:00",
-  "description": "4項目の調査優先順位。未確認は0点であり悪材料を意味しない。JPX予定日ベースの株価反応は実際の決算発表時刻未確認。業種はYahoo掲載分類。確率・買い推奨ではない。",
+  "generated_at": "2026-11-05T01:36:53+09:00",
+  "description": "4項目の調査順位。本人の過去決算反応は出典のある発表予定日・カレンダー日・記事掲載日付近の株価変化。実際の発表時刻・変動原因は未確認。未取得0点は悪材料ではない。",
   "weights": {
     "own_earnings_reaction": 3,
     "volume_supply_demand": 3,
@@ -10,7 +10,7 @@
   },
   "coverage": {
     "total": 20,
-    "own_history": 0,
+    "own_history": 8,
     "industry_identified": 20,
     "peer_reactions": 19,
     "upgrades": 0
@@ -21,16 +21,23 @@
       "name": "東京エネシス",
       "earnings_date": "2026-11-05",
       "market_cap_oku": 629.89,
-      "score_total": 2,
+      "score_total": 3,
       "score_components": {
-        "own_earnings_reaction": 0,
+        "own_earnings_reaction": 1,
         "volume_supply_demand": 2,
         "recent_industry_peers": 0,
         "analyst_upgrades_61d": 0
       },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
+      "self_history_count": 1,
+      "self_history_positive": 1,
+      "self_history_events": [
+        {
+          "date": "2026-05-12",
+          "next_close_pct": 21.64,
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4taVYzMUNOY3ZwdmxnYXZNTmNSM2V4Sm9OaWcxbWpVZUJMWlVFOGFCdkRtVktDQmVXTWJUUTM2dmJRbDlBY3U0SVZUa1BnZUVsX1VTd1VTcXEtWm8tRlE1ZXU2ZkhYeWdEYVE?oc=5"
+        }
+      ],
       "industry": "Engineering & Construction",
       "sector": "Industrials",
       "industry_source": "Yahoo Finance company profile",
@@ -77,7 +84,157 @@
       "volume_ratio": 2.06,
       "upgrade_events": [],
       "data_coverage": {
-        "self_history": false,
+        "self_history": true,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "6328",
+      "name": "荏原実業",
+      "earnings_date": "2026-11-05",
+      "market_cap_oku": 575.62,
+      "score_total": 3,
+      "score_components": {
+        "own_earnings_reaction": 1,
+        "volume_supply_demand": 2,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 1,
+      "self_history_positive": 1,
+      "self_history_events": [
+        {
+          "date": "2026-05-11",
+          "next_close_pct": 4.66,
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1wU0EtQUNKQlU5aEw3OHlibWRhSFR3VVRsaEx4MzRNZUllQUpZWV9yMUY2ZnRqTExHcmwzY2pqSFE0UUI0d201XzhoaGt5am1FZEZrQ3RuVEJJVDVNS1dJWmxsQ2FhTmdoTnc?oc=5"
+        }
+      ],
+      "industry": "Conglomerates",
+      "sector": "Industrials",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 10,
+      "peer_positive_count": 2,
+      "peer_events": [
+        {
+          "code": "8285",
+          "name": "三谷産業",
+          "date": "2026-10-30",
+          "next_close_pct": -6.84
+        },
+        {
+          "code": "8157",
+          "name": "都築電気",
+          "date": "2026-10-30",
+          "next_close_pct": -10.07
+        },
+        {
+          "code": "7795",
+          "name": "ＫＹＯＲＩＴＳＵ",
+          "date": "2026-10-30",
+          "next_close_pct": -5.85
+        },
+        {
+          "code": "4685",
+          "name": "菱友システムズ",
+          "date": "2026-10-30",
+          "next_close_pct": -2.99
+        },
+        {
+          "code": "3512",
+          "name": "日本フエルト",
+          "date": "2026-10-30",
+          "next_close_pct": -1.85
+        },
+        {
+          "code": "4439",
+          "name": "東名",
+          "date": "2026-10-15",
+          "next_close_pct": 15.62
+        }
+      ],
+      "volume_ratio": 2.46,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": true,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "1898",
+      "name": "世紀東急工業",
+      "earnings_date": "2026-11-05",
+      "market_cap_oku": 513.95,
+      "score_total": 2,
+      "score_components": {
+        "own_earnings_reaction": 1,
+        "volume_supply_demand": 1,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 1,
+      "self_history_positive": 1,
+      "self_history_events": [
+        {
+          "date": "2026-05-07",
+          "next_close_pct": 2.05,
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9zTjdLWU90VmVZYkQ2N2NPbmRLaG9aemh5NWZOT3NGN09LSmE5Z2QyWTRGelNYOEVxTkJJaU9ZbWZzdk54T1JNelZhZWpXaENJSExub3Q0Zi1jVHJsN1hNZGc1OS1sWGdWYWc?oc=5"
+        }
+      ],
+      "industry": "Engineering & Construction",
+      "sector": "Industrials",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 10,
+      "peer_positive_count": 0,
+      "peer_events": [
+        {
+          "code": "9768",
+          "name": "いであ",
+          "date": "2026-11-02",
+          "next_close_pct": -2.32
+        },
+        {
+          "code": "1976",
+          "name": "明星工業",
+          "date": "2026-10-30",
+          "next_close_pct": -0.3
+        },
+        {
+          "code": "1850",
+          "name": "南海辰村建設",
+          "date": "2026-10-30",
+          "next_close_pct": -4.43
+        },
+        {
+          "code": "1930",
+          "name": "北陸電気工事",
+          "date": "2026-10-28",
+          "next_close_pct": -1.46
+        },
+        {
+          "code": "1887",
+          "name": "日本国土開発",
+          "date": "2026-10-15",
+          "next_close_pct": 0.0
+        },
+        {
+          "code": "2153",
+          "name": "Ｅ・Ｊホールディングス",
+          "date": "2026-10-14",
+          "next_close_pct": -0.86
+        }
+      ],
+      "volume_ratio": 1.43,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": true,
         "industry_peer_reactions": true,
         "industry_identified": true,
         "volume_ratio": true,
@@ -96,9 +253,16 @@
         "recent_industry_peers": 0,
         "analyst_upgrades_61d": 0
       },
-      "self_history_count": 0,
+      "self_history_count": 1,
       "self_history_positive": 0,
-      "self_history_events": [],
+      "self_history_events": [
+        {
+          "date": "2026-05-12",
+          "next_close_pct": -3.66,
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE83cG9iTXFwa1FGN1k1NTNTelh1SVJaS3pQWTJZallobGV4eWxxa1Z3dnZQQlNWREp6c3gxTUE1aG9NQkJSNGFybWZXNlU2NUkxM3JWejBBTlpNN1lSVWxqc3VzMXQtcW1ONEE?oc=5"
+        }
+      ],
       "industry": "Specialty Retail",
       "sector": "Consumer Cyclical",
       "industry_source": "Yahoo Finance company profile",
@@ -145,7 +309,109 @@
       "volume_ratio": 2.16,
       "upgrade_events": [],
       "data_coverage": {
-        "self_history": false,
+        "self_history": true,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "6644",
+      "name": "大崎電気工業",
+      "earnings_date": "2026-11-05",
+      "market_cap_oku": 547.03,
+      "score_total": 2,
+      "score_components": {
+        "own_earnings_reaction": 0,
+        "volume_supply_demand": 2,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 1,
+      "self_history_positive": 0,
+      "self_history_events": [
+        {
+          "date": "2026-05-12",
+          "next_close_pct": -19.79,
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1Yc3BzdFBhS0UzakNpZnIweUhuekxHWEpqWmU0SGsyZE13T3BnN2VzVDlHd3phLS1QcDh4UFJFWm9xTnc3Y0pCQkt2NkdnZHBPbzRQWjlNNG9NdWlZQ3RER3Q2alFpc0Viemc?oc=5"
+        }
+      ],
+      "industry": "Scientific & Technical Instruments",
+      "sector": "Technology",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 3,
+      "peer_positive_count": 0,
+      "peer_events": [
+        {
+          "code": "7723",
+          "name": "愛知時計電機",
+          "date": "2026-11-02",
+          "next_close_pct": -3.5
+        },
+        {
+          "code": "3388",
+          "name": "明治電機工業",
+          "date": "2026-10-30",
+          "next_close_pct": -5.38
+        },
+        {
+          "code": "5933",
+          "name": "アルインコ",
+          "date": "2026-10-20",
+          "next_close_pct": -3.72
+        }
+      ],
+      "volume_ratio": 1.58,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": true,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "9424",
+      "name": "日本通信",
+      "earnings_date": "2026-11-05",
+      "market_cap_oku": 174.41,
+      "score_total": 2,
+      "score_components": {
+        "own_earnings_reaction": 1,
+        "volume_supply_demand": 1,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 1,
+      "self_history_positive": 1,
+      "self_history_events": [
+        {
+          "date": "2026-05-07",
+          "next_close_pct": 0.79,
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0yeG1sTFJqR2RZaWxkRU16MGtVUERtVDJKNDd3aXFPNXpVYUk2SHU0MmJQaHpDZUZxcjg4djYtTUhoczc1N2pKSlFSOXBVZ1VLenpxVkhQTlhYWGNiYXQwQm5sS2JBMmpfQ2c?oc=5"
+        }
+      ],
+      "industry": "Telecom Services",
+      "sector": "Communication Services",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 1,
+      "peer_positive_count": 0,
+      "peer_events": [
+        {
+          "code": "3776",
+          "name": "ブロードバンドタワー",
+          "date": "2026-10-30",
+          "next_close_pct": -10.84
+        }
+      ],
+      "volume_ratio": 1.39,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": true,
         "industry_peer_reactions": true,
         "industry_identified": true,
         "volume_ratio": true,
@@ -271,124 +537,6 @@
       }
     },
     {
-      "code": "6328",
-      "name": "荏原実業",
-      "earnings_date": "2026-11-05",
-      "market_cap_oku": 575.62,
-      "score_total": 2,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 2,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Conglomerates",
-      "sector": "Industrials",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 10,
-      "peer_positive_count": 2,
-      "peer_events": [
-        {
-          "code": "8285",
-          "name": "三谷産業",
-          "date": "2026-10-30",
-          "next_close_pct": -6.84
-        },
-        {
-          "code": "8157",
-          "name": "都築電気",
-          "date": "2026-10-30",
-          "next_close_pct": -10.07
-        },
-        {
-          "code": "7795",
-          "name": "ＫＹＯＲＩＴＳＵ",
-          "date": "2026-10-30",
-          "next_close_pct": -5.85
-        },
-        {
-          "code": "4685",
-          "name": "菱友システムズ",
-          "date": "2026-10-30",
-          "next_close_pct": -2.99
-        },
-        {
-          "code": "3512",
-          "name": "日本フエルト",
-          "date": "2026-10-30",
-          "next_close_pct": -1.85
-        },
-        {
-          "code": "4439",
-          "name": "東名",
-          "date": "2026-10-15",
-          "next_close_pct": 15.62
-        }
-      ],
-      "volume_ratio": 2.46,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
-      "code": "6644",
-      "name": "大崎電気工業",
-      "earnings_date": "2026-11-05",
-      "market_cap_oku": 547.03,
-      "score_total": 2,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 2,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Scientific & Technical Instruments",
-      "sector": "Technology",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 3,
-      "peer_positive_count": 0,
-      "peer_events": [
-        {
-          "code": "7723",
-          "name": "愛知時計電機",
-          "date": "2026-11-02",
-          "next_close_pct": -3.5
-        },
-        {
-          "code": "3388",
-          "name": "明治電機工業",
-          "date": "2026-10-30",
-          "next_close_pct": -5.38
-        },
-        {
-          "code": "5933",
-          "name": "アルインコ",
-          "date": "2026-10-20",
-          "next_close_pct": -3.72
-        }
-      ],
-      "volume_ratio": 1.58,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
       "code": "8150",
       "name": "三信電気",
       "earnings_date": "2026-11-05",
@@ -439,10 +587,10 @@
       }
     },
     {
-      "code": "1898",
-      "name": "世紀東急工業",
+      "code": "9413",
+      "name": "テレビ東京ホールディングス",
       "earnings_date": "2026-11-05",
-      "market_cap_oku": 513.95,
+      "market_cap_oku": 879.03,
       "score_total": 1,
       "score_components": {
         "own_earnings_reaction": 0,
@@ -450,56 +598,39 @@
         "recent_industry_peers": 0,
         "analyst_upgrades_61d": 0
       },
-      "self_history_count": 0,
+      "self_history_count": 1,
       "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Engineering & Construction",
-      "sector": "Industrials",
+      "self_history_events": [
+        {
+          "date": "2026-05-08",
+          "next_close_pct": -5.09,
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB5YVVYNl9Xb3RpbDJXc0NtR19tdEt2Ym9sYUJvQWpJYmFIT3B2ZW1pbUJFSVBpbUp4OEc2dzNHTXUtTUYyZVZTajFGMjFlcEVRanFleGc2WUc1LS12Q1k0THpjM2FBTjlVaFE?oc=5"
+        }
+      ],
+      "industry": "Broadcasting",
+      "sector": "Communication Services",
       "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 10,
+      "peer_reaction_count": 2,
       "peer_positive_count": 0,
       "peer_events": [
         {
-          "code": "9768",
-          "name": "いであ",
-          "date": "2026-11-02",
-          "next_close_pct": -2.32
-        },
-        {
-          "code": "1976",
-          "name": "明星工業",
+          "code": "4839",
+          "name": "ＷＯＷＯＷ",
           "date": "2026-10-30",
-          "next_close_pct": -0.3
+          "next_close_pct": -13.51
         },
         {
-          "code": "1850",
-          "name": "南海辰村建設",
-          "date": "2026-10-30",
-          "next_close_pct": -4.43
-        },
-        {
-          "code": "1930",
-          "name": "北陸電気工事",
-          "date": "2026-10-28",
-          "next_close_pct": -1.46
-        },
-        {
-          "code": "1887",
-          "name": "日本国土開発",
-          "date": "2026-10-15",
-          "next_close_pct": 0.0
-        },
-        {
-          "code": "2153",
-          "name": "Ｅ・Ｊホールディングス",
-          "date": "2026-10-14",
-          "next_close_pct": -0.86
+          "code": "9414",
+          "name": "日本ＢＳ放送",
+          "date": "2026-10-08",
+          "next_close_pct": -1.16
         }
       ],
-      "volume_ratio": 1.43,
+      "volume_ratio": 1.32,
       "upgrade_events": [],
       "data_coverage": {
-        "self_history": false,
+        "self_history": true,
         "industry_peer_reactions": true,
         "industry_identified": true,
         "volume_ratio": true,
@@ -681,81 +812,74 @@
       }
     },
     {
-      "code": "9413",
-      "name": "テレビ東京ホールディングス",
+      "code": "3252",
+      "name": "地主",
       "earnings_date": "2026-11-05",
-      "market_cap_oku": 879.03,
-      "score_total": 1,
+      "market_cap_oku": 545.73,
+      "score_total": 0,
       "score_components": {
         "own_earnings_reaction": 0,
-        "volume_supply_demand": 1,
+        "volume_supply_demand": 0,
         "recent_industry_peers": 0,
         "analyst_upgrades_61d": 0
       },
-      "self_history_count": 0,
+      "self_history_count": 1,
       "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Broadcasting",
-      "sector": "Communication Services",
+      "self_history_events": [
+        {
+          "date": "2026-02-12",
+          "next_close_pct": -3.24,
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1fME8zeHZQVXBwcDRJZlo1bVlYSTdFVDMzcGVseWZCY3BPYzFSZHAxdmdpam5BUXZjaDQ5YkFobTZnOTFERTlDWTBuM2JzY0xSenJ0QWpnZ0xldDNkNTJBMnJ3UGhJQU5uS1E?oc=5"
+        }
+      ],
+      "industry": "Real Estate Services",
+      "sector": "Real Estate",
       "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 2,
-      "peer_positive_count": 0,
+      "peer_reaction_count": 14,
+      "peer_positive_count": 5,
       "peer_events": [
         {
-          "code": "4839",
-          "name": "ＷＯＷＯＷ",
+          "code": "8860",
+          "name": "フジ住宅",
           "date": "2026-10-30",
-          "next_close_pct": -13.51
+          "next_close_pct": 1.64
         },
         {
-          "code": "9414",
-          "name": "日本ＢＳ放送",
-          "date": "2026-10-08",
-          "next_close_pct": -1.16
-        }
-      ],
-      "volume_ratio": 1.32,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
-      "code": "9424",
-      "name": "日本通信",
-      "earnings_date": "2026-11-05",
-      "market_cap_oku": 174.41,
-      "score_total": 1,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 1,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Telecom Services",
-      "sector": "Communication Services",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 1,
-      "peer_positive_count": 0,
-      "peer_events": [
-        {
-          "code": "3776",
-          "name": "ブロードバンドタワー",
+          "code": "8818",
+          "name": "京阪神ビルディング",
           "date": "2026-10-30",
-          "next_close_pct": -10.84
+          "next_close_pct": -0.53
+        },
+        {
+          "code": "3482",
+          "name": "ロードスターキャピタル",
+          "date": "2026-10-30",
+          "next_close_pct": -1.14
+        },
+        {
+          "code": "8898",
+          "name": "センチュリー２１・ジャパン",
+          "date": "2026-10-29",
+          "next_close_pct": 0.0
+        },
+        {
+          "code": "8864",
+          "name": "空港施設",
+          "date": "2026-10-29",
+          "next_close_pct": 4.23
+        },
+        {
+          "code": "4262",
+          "name": "ニフティライフスタイル",
+          "date": "2026-10-29",
+          "next_close_pct": -2.13
         }
       ],
-      "volume_ratio": 1.39,
+      "volume_ratio": 1.06,
       "upgrade_events": [],
       "data_coverage": {
-        "self_history": false,
+        "self_history": true,
         "industry_peer_reactions": true,
         "industry_identified": true,
         "volume_ratio": true,
@@ -889,74 +1013,6 @@
         }
       ],
       "volume_ratio": 0.87,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
-      "code": "3252",
-      "name": "地主",
-      "earnings_date": "2026-11-05",
-      "market_cap_oku": 545.73,
-      "score_total": 0,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 0,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Real Estate Services",
-      "sector": "Real Estate",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 14,
-      "peer_positive_count": 5,
-      "peer_events": [
-        {
-          "code": "8860",
-          "name": "フジ住宅",
-          "date": "2026-10-30",
-          "next_close_pct": 1.64
-        },
-        {
-          "code": "8818",
-          "name": "京阪神ビルディング",
-          "date": "2026-10-30",
-          "next_close_pct": -0.53
-        },
-        {
-          "code": "3482",
-          "name": "ロードスターキャピタル",
-          "date": "2026-10-30",
-          "next_close_pct": -1.14
-        },
-        {
-          "code": "8898",
-          "name": "センチュリー２１・ジャパン",
-          "date": "2026-10-29",
-          "next_close_pct": 0.0
-        },
-        {
-          "code": "8864",
-          "name": "空港施設",
-          "date": "2026-10-29",
-          "next_close_pct": 4.23
-        },
-        {
-          "code": "4262",
-          "name": "ニフティライフスタイル",
-          "date": "2026-10-29",
-          "next_close_pct": -2.13
-        }
-      ],
-      "volume_ratio": 1.06,
       "upgrade_events": [],
       "data_coverage": {
         "self_history": false,
@@ -1201,5 +1257,6 @@
         "upgrade_news_checked": true
       }
     }
-  ]
+  ],
+  "own_history_source": "Yahoo Finance 決算カレンダー、JPX記録、または決算短信ニュース掲載日。発表時刻未確認、掲載日と発表日が異なる可能性あり。"
 }

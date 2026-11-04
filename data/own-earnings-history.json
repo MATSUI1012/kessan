@@ -1,7 +1,7 @@
 {
-  "schema": 1,
-  "updated_at": "2026-11-05T02:06:37+09:00",
-  "method": "JPX予定日・Yahoo決算カレンダー・決算短信見出し内の適時開示日から本人の過去実績を取得。記事発信日をそのまま開示日として推定しない。",
+  "schema": 2,
+  "updated_at": "2026-11-05T02:56:41+09:00",
+  "method": "複数のニュースRSS、JPX決算予定日、Yahoo決算カレンダーの出典日付を株価と照合。単なる記事配信日から開示日を推定しない。",
   "coverage": {
     "candidates": 20,
     "with_history": 9,
@@ -26,13 +26,21 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "4968",
       "name": "荒川化学工業",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "6644",
@@ -52,7 +60,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "1945",
@@ -72,7 +84,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "3028",
@@ -92,7 +108,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "9413",
@@ -112,7 +132,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "6328",
@@ -145,13 +169,21 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 4,
+        "rss_failures": 0
+      }
     },
     {
       "code": "8150",
       "name": "三信電気",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "3252",
@@ -171,31 +203,51 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "4475",
       "name": "ＨＥＮＮＧＥ",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "5208",
       "name": "有沢製作所",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "1814",
       "name": "大末建設",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "2612",
       "name": "かどや製油",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "9424",
@@ -215,13 +267,21 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "5851",
       "name": "リョービ",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "1898",
@@ -241,31 +301,51 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "7018",
       "name": "内海造船",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "7711",
       "name": "助川電気工業",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "8065",
       "name": "佐藤商事",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "4674",
       "name": "クレスコ",
       "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "status": "本人の過去決算履歴は未確認",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     }
   ]
 }

@@ -1,23 +1,23 @@
 {
   "schema": 1,
-  "generated_at": "2026-11-05T02:13:57+09:00",
+  "generated_at": "2026-11-06T02:27:15+09:00",
   "scope": "時価総額80億円以上1000億円未満。JPX決算予定日2026年10月〜11月。時価総額は現時点値であり過去再現ではない",
   "coverage": {
-    "frozen_snapshots": 1266,
+    "frozen_snapshots": 1256,
     "invalid_snapshots": 0,
-    "outcome_keys": 412,
-    "matched": 231,
-    "pending_past_events": 30,
-    "eligible_season": 1272,
-    "elapsed_events": 239,
-    "progress_fraction": 0.1879
+    "outcome_keys": 443,
+    "matched": 258,
+    "pending_past_events": 66,
+    "eligible_season": 1261,
+    "elapsed_events": 265,
+    "progress_fraction": 0.2102
   },
   "overall": {
-    "n": 231,
-    "up": 72,
-    "down": 155,
-    "up_rate": 0.3117,
-    "mean_pct": -1.761
+    "n": 258,
+    "up": 81,
+    "down": 172,
+    "up_rate": 0.314,
+    "mean_pct": -1.664
   },
   "checks": [
     {
@@ -25,17 +25,17 @@
       "threshold": 1.5,
       "high": {
         "n": 33,
-        "up": 10,
-        "down": 23,
-        "up_rate": 0.303,
-        "mean_pct": -1.595
+        "up": 9,
+        "down": 24,
+        "up_rate": 0.2727,
+        "mean_pct": -2.013
       },
       "low": {
-        "n": 198,
-        "up": 62,
-        "down": 132,
-        "up_rate": 0.3131,
-        "mean_pct": -1.788
+        "n": 225,
+        "up": 72,
+        "down": 148,
+        "up_rate": 0.32,
+        "mean_pct": -1.612
       },
       "exploratory_sample_ready": true
     },
@@ -43,18 +43,18 @@
       "factor": "return_5d_pct",
       "threshold": 0,
       "high": {
-        "n": 91,
-        "up": 31,
-        "down": 58,
-        "up_rate": 0.3407,
-        "mean_pct": -1.049
+        "n": 99,
+        "up": 35,
+        "down": 61,
+        "up_rate": 0.3535,
+        "mean_pct": -0.619
       },
       "low": {
-        "n": 140,
-        "up": 41,
-        "down": 97,
-        "up_rate": 0.2929,
-        "mean_pct": -2.223
+        "n": 159,
+        "up": 46,
+        "down": 111,
+        "up_rate": 0.2893,
+        "mean_pct": -2.314
       },
       "exploratory_sample_ready": true
     }
@@ -62,10 +62,10 @@
   "milestones": [
     {
       "threshold": 0.2,
-      "date_fraction_reached": false,
+      "date_fraction_reached": true,
       "matched_sample_ready": true,
       "group_comparison_ready": true,
-      "may_review_weights": false,
+      "may_review_weights": true,
       "automatic_weight_change": false
     },
     {
@@ -79,124 +79,268 @@
   ],
   "pending_past_events": [
     {
-      "code": "1787",
-      "earnings_date": "2026-11-04"
+      "code": "1814",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "1799",
-      "earnings_date": "2026-11-04"
+      "code": "1898",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "1967",
-      "earnings_date": "2026-11-04"
+      "code": "1945",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "2335",
-      "earnings_date": "2026-11-04"
+      "code": "2148",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "3150",
-      "earnings_date": "2026-11-04"
+      "code": "2307",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "3636",
-      "earnings_date": "2026-11-04"
+      "code": "2573",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "3668",
-      "earnings_date": "2026-11-04"
+      "code": "2612",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "3844",
-      "earnings_date": "2026-11-04"
+      "code": "2676",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "4326",
-      "earnings_date": "2026-11-04"
+      "code": "2705",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "4559",
-      "earnings_date": "2026-11-04"
+      "code": "3028",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "4847",
-      "earnings_date": "2026-11-04"
+      "code": "3034",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "4886",
-      "earnings_date": "2026-11-04"
+      "code": "3166",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "5449",
-      "earnings_date": "2026-11-04"
+      "code": "3232",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "5632",
-      "earnings_date": "2026-11-04"
+      "code": "3252",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "5821",
-      "earnings_date": "2026-11-04"
+      "code": "3420",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "5951",
-      "earnings_date": "2026-11-04"
+      "code": "3676",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "6240",
-      "earnings_date": "2026-11-04"
+      "code": "3712",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "6643",
-      "earnings_date": "2026-11-04"
+      "code": "3837",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "6809",
-      "earnings_date": "2026-11-04"
+      "code": "4310",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "6817",
-      "earnings_date": "2026-11-04"
+      "code": "4475",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "6958",
-      "earnings_date": "2026-11-04"
+      "code": "4642",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "7466",
-      "earnings_date": "2026-11-04"
+      "code": "4674",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "7565",
-      "earnings_date": "2026-11-04"
+      "code": "4792",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "7600",
-      "earnings_date": "2026-11-04"
+      "code": "4923",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "7609",
-      "earnings_date": "2026-11-04"
+      "code": "4968",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "8081",
-      "earnings_date": "2026-11-04"
+      "code": "4972",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "9059",
-      "earnings_date": "2026-11-04"
+      "code": "5185",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "9799",
-      "earnings_date": "2026-11-04"
+      "code": "5208",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "9845",
-      "earnings_date": "2026-11-04"
+      "code": "5261",
+      "earnings_date": "2026-11-05"
     },
     {
-      "code": "9990",
-      "earnings_date": "2026-11-04"
+      "code": "5408",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "5851",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "5940",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "6050",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "6073",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "6322",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "6328",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "6339",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "6413",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "6644",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "6769",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "6994",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "7018",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "7089",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "7130",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "7212",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "7412",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "7421",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "7711",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "7841",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "7917",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "7979",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "7991",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "8065",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "8150",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "8158",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "9057",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "9312",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "9324",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "9413",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "9424",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "9537",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "9619",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "9639",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "9902",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "9913",
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "code": "9991",
+      "earnings_date": "2026-11-05"
     }
   ],
   "invalid_snapshots": [],
@@ -2428,20 +2572,6 @@
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
-      "code": "6518",
-      "name": "三相電機",
-      "earnings_date": "2026-10-30",
-      "captured_at": "2026-10-27T21:51:06+09:00",
-      "pre_event_factors": {
-        "volume_ratio_5_20": 1.7106,
-        "return_5d_pct": 7.091
-      },
-      "next_session_date": "2026-11-02",
-      "next_close_pct": 6.12,
-      "ohlc_complete": true,
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
-    },
-    {
       "code": "6617",
       "name": "東光高岳",
       "earnings_date": "2026-10-30",
@@ -3114,20 +3244,6 @@
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
-      "code": "9997",
-      "name": "ベルーナ",
-      "earnings_date": "2026-10-30",
-      "captured_at": "2026-10-22T18:30:59+09:00",
-      "pre_event_factors": {
-        "volume_ratio_5_20": 0.6961,
-        "return_5d_pct": -0.864
-      },
-      "next_session_date": "2026-11-02",
-      "next_close_pct": 2.95,
-      "ohlc_complete": true,
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
-    },
-    {
       "code": "2003",
       "name": "日東富士製粉",
       "earnings_date": "2026-11-02",
@@ -3138,7 +3254,7 @@
       },
       "next_session_date": "2026-11-04",
       "next_close_pct": 0.2,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -3152,7 +3268,7 @@
       },
       "next_session_date": "2026-11-04",
       "next_close_pct": -8.5,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -3166,7 +3282,7 @@
       },
       "next_session_date": "2026-11-04",
       "next_close_pct": -18.72,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -3180,7 +3296,7 @@
       },
       "next_session_date": "2026-11-04",
       "next_close_pct": 0.07,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -3194,7 +3310,7 @@
       },
       "next_session_date": "2026-11-04",
       "next_close_pct": -5.08,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -3208,7 +3324,7 @@
       },
       "next_session_date": "2026-11-04",
       "next_close_pct": -1.77,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -3222,7 +3338,7 @@
       },
       "next_session_date": "2026-11-04",
       "next_close_pct": -4.12,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1023.xlsx"
     },
     {
@@ -3236,7 +3352,7 @@
       },
       "next_session_date": "2026-11-04",
       "next_close_pct": -2.5,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -3250,7 +3366,7 @@
       },
       "next_session_date": "2026-11-04",
       "next_close_pct": -0.54,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -3264,7 +3380,7 @@
       },
       "next_session_date": "2026-11-04",
       "next_close_pct": -7.08,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -3278,7 +3394,7 @@
       },
       "next_session_date": "2026-11-04",
       "next_close_pct": 7.79,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -3292,7 +3408,7 @@
       },
       "next_session_date": "2026-11-04",
       "next_close_pct": 2.8,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -3306,7 +3422,7 @@
       },
       "next_session_date": "2026-11-04",
       "next_close_pct": 0.7,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -3320,7 +3436,7 @@
       },
       "next_session_date": "2026-11-04",
       "next_close_pct": 1.59,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -3334,7 +3450,7 @@
       },
       "next_session_date": "2026-11-04",
       "next_close_pct": 9.69,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -3348,7 +3464,7 @@
       },
       "next_session_date": "2026-11-04",
       "next_close_pct": -1.5,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -3362,7 +3478,7 @@
       },
       "next_session_date": "2026-11-04",
       "next_close_pct": -3.5,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -3376,7 +3492,7 @@
       },
       "next_session_date": "2026-11-04",
       "next_close_pct": -0.14,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -3390,7 +3506,7 @@
       },
       "next_session_date": "2026-11-04",
       "next_close_pct": -2.29,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -3404,7 +3520,7 @@
       },
       "next_session_date": "2026-11-04",
       "next_close_pct": 0.55,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -3418,7 +3534,7 @@
       },
       "next_session_date": "2026-11-04",
       "next_close_pct": -2.32,
-      "ohlc_complete": false,
+      "ohlc_complete": true,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     },
     {
@@ -3432,6 +3548,412 @@
       },
       "next_session_date": "2026-11-04",
       "next_close_pct": -1.67,
+      "ohlc_complete": true,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "1787",
+      "name": "ナカボーテック",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.4194,
+        "return_5d_pct": -2.448
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": -0.53,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "1799",
+      "name": "第一建設工業",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.0434,
+        "return_5d_pct": 0.904
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": -2.81,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "1967",
+      "name": "ヤマト",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.0918,
+        "return_5d_pct": -0.651
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": 5.25,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "2335",
+      "name": "キューブシステム",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.5649,
+        "return_5d_pct": 0.679
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": -0.3,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "3150",
+      "name": "グリムス",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.8746,
+        "return_5d_pct": -1.586
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": 13.19,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "3636",
+      "name": "三菱総合研究所",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.0524,
+        "return_5d_pct": 3.529
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": -1.15,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "3668",
+      "name": "コロプラ",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.7844,
+        "return_5d_pct": 2.29
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": 21.49,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "3844",
+      "name": "コムチュア",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.5455,
+        "return_5d_pct": 1.482
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": 5.76,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "4326",
+      "name": "インテージホールディングス",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.2829,
+        "return_5d_pct": -2.179
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": 3.45,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "4559",
+      "name": "ゼリア新薬工業",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.8829,
+        "return_5d_pct": 3.351
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": 8.28,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "4847",
+      "name": "インテリジェント　ウェイブ",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.2106,
+        "return_5d_pct": -1.129
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": -2.21,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "4886",
+      "name": "あすか製薬ホールディングス",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.1937,
+        "return_5d_pct": 0.099
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": 7.82,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "5449",
+      "name": "大阪製鐵",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.6696,
+        "return_5d_pct": 1.992
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": 1.16,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "5632",
+      "name": "三菱製鋼",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.8851,
+        "return_5d_pct": -3.603
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": -8.6,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "5821",
+      "name": "平河ヒューテック",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.4512,
+        "return_5d_pct": -5.207
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": -0.96,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "5951",
+      "name": "ダイニチ工業",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.1338,
+        "return_5d_pct": -0.722
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": -4.5,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "6240",
+      "name": "ヤマシンフィルタ",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.1478,
+        "return_5d_pct": -1.796
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": -2.41,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "6643",
+      "name": "戸上電機製作所",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.5096,
+        "return_5d_pct": -4.356
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": -7.68,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "6809",
+      "name": "ＴＯＡ",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.8409,
+        "return_5d_pct": -0.402
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": 4.08,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "6817",
+      "name": "スミダコーポレーション",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.4832,
+        "return_5d_pct": -5.887
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": -4.88,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "6958",
+      "name": "日本シイエムケイ",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.2412,
+        "return_5d_pct": -5.825
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": -9.58,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "7466",
+      "name": "ＳＰＫ",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.3794,
+        "return_5d_pct": -4.422
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": -1.17,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "7565",
+      "name": "萬世電機",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.9091,
+        "return_5d_pct": -0.704
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": 0.89,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "7600",
+      "name": "日本エム・ディ・エム",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.1814,
+        "return_5d_pct": -2.848
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": -20.42,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "7609",
+      "name": "ダイトロン",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.2518,
+        "return_5d_pct": -11.852
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": -11.48,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "8081",
+      "name": "カナデン",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.0226,
+        "return_5d_pct": -4.794
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": 0.44,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "9059",
+      "name": "カンダホールディングス",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.9392,
+        "return_5d_pct": 0.326
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": 0.0,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "9845",
+      "name": "パーカーコーポレーション",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.0237,
+        "return_5d_pct": -2.363
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": -5.76,
+      "ohlc_complete": false,
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
+    },
+    {
+      "code": "9990",
+      "name": "サックスバー　ホールディングス",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.8032,
+        "return_5d_pct": -0.397
+      },
+      "next_session_date": "2026-11-05",
+      "next_close_pct": -0.81,
       "ohlc_complete": false,
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx"
     }

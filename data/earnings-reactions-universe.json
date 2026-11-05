@@ -2,16 +2,736 @@
   "schema": 1,
   "description": "JPXの決算発表予定日の前後の株価変化。実際の決算発表日時や因果関係は未確認。今回の20銘柄自身の過去決算成績ではない。",
   "source": "JPX archived scheduled dates + repository daily stock closes",
-  "events_available": 985,
-  "samples": 61,
+  "events_available": 1065,
+  "samples": 102,
   "missing_reason_counts": {
-    "no_pre_event_close": 460,
-    "fewer_than_five_post_sessions": 464
+    "no_pre_event_close": 466,
+    "fewer_than_five_post_sessions": 497
   },
   "records": [
     {
+      "code": "9932",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -7.35,
+      "after_3d_pct": -7.65,
+      "after_5d_pct": -8.95,
+      "turnover_oku_before": 0.5,
+      "current_market_cap_oku": 207.99
+    },
+    {
+      "code": "9698",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -3.9,
+      "after_3d_pct": -3.1,
+      "after_5d_pct": -4.3,
+      "turnover_oku_before": 0.01,
+      "current_market_cap_oku": 91.69
+    },
+    {
+      "code": "9307",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -3.22,
+      "after_3d_pct": -7.19,
+      "after_5d_pct": -9.87,
+      "turnover_oku_before": 0.03,
+      "current_market_cap_oku": 136.94
+    },
+    {
+      "code": "9115",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": 0.0,
+      "after_3d_pct": -1.65,
+      "after_5d_pct": -10.5,
+      "turnover_oku_before": 0.15,
+      "current_market_cap_oku": 313.66
+    },
+    {
+      "code": "9022",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -1.09,
+      "after_3d_pct": 2.87,
+      "after_5d_pct": 13.2,
+      "turnover_oku_before": 92.39,
+      "current_market_cap_oku": 41525.89
+    },
+    {
+      "code": "8914",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -6.32,
+      "after_3d_pct": -9.36,
+      "after_5d_pct": -5.22,
+      "turnover_oku_before": 1.07,
+      "current_market_cap_oku": 396.92
+    },
+    {
+      "code": "8871",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -10.89,
+      "after_3d_pct": -14.83,
+      "after_5d_pct": -11.83,
+      "turnover_oku_before": 2.7,
+      "current_market_cap_oku": 841.84
+    },
+    {
+      "code": "8628",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": 3.72,
+      "after_3d_pct": -1.76,
+      "after_5d_pct": 1.57,
+      "turnover_oku_before": 8.92,
+      "current_market_cap_oku": 2673.83
+    },
+    {
+      "code": "8604",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": 2.61,
+      "after_3d_pct": 4.31,
+      "after_5d_pct": 9.73,
+      "turnover_oku_before": 128.08,
+      "current_market_cap_oku": 46147.71
+    },
+    {
+      "code": "8595",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -2.25,
+      "after_3d_pct": -2.2,
+      "after_5d_pct": 0.2,
+      "turnover_oku_before": 9.57,
+      "current_market_cap_oku": 1161.14
+    },
+    {
+      "code": "8421",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": 0.16,
+      "after_3d_pct": -0.05,
+      "after_5d_pct": -0.37,
+      "turnover_oku_before": 0.27,
+      "current_market_cap_oku": 16275.67
+    },
+    {
+      "code": "7283",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": 0.49,
+      "after_3d_pct": 1.27,
+      "after_5d_pct": 6.31,
+      "turnover_oku_before": 2.47,
+      "current_market_cap_oku": 1245.17
+    },
+    {
+      "code": "7276",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -7.58,
+      "after_3d_pct": -8.42,
+      "after_5d_pct": -0.78,
+      "turnover_oku_before": 26.98,
+      "current_market_cap_oku": 6488.68
+    },
+    {
+      "code": "7241",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -8.96,
+      "after_3d_pct": -7.97,
+      "after_5d_pct": -4.78,
+      "turnover_oku_before": 2.63,
+      "current_market_cap_oku": 853.74
+    },
+    {
+      "code": "6955",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -6.04,
+      "after_3d_pct": -8.92,
+      "after_5d_pct": -11.55,
+      "turnover_oku_before": 0.14,
+      "current_market_cap_oku": 116.28
+    },
+    {
+      "code": "6857",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": 9.36,
+      "after_3d_pct": 5.64,
+      "after_5d_pct": -12.92,
+      "turnover_oku_before": 4445.04,
+      "current_market_cap_oku": 212912.41
+    },
+    {
+      "code": "6807",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -3.46,
+      "after_3d_pct": -6.43,
+      "after_5d_pct": -12.26,
+      "turnover_oku_before": 12.0,
+      "current_market_cap_oku": 1554.22
+    },
+    {
+      "code": "6701",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -7.94,
+      "after_3d_pct": -9.83,
+      "after_5d_pct": -12.25,
+      "turnover_oku_before": 338.96,
+      "current_market_cap_oku": 62681.44
+    },
+    {
+      "code": "6526",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": 3.59,
+      "after_3d_pct": -4.14,
+      "after_5d_pct": -14.96,
+      "turnover_oku_before": 151.45,
+      "current_market_cap_oku": 2823.91
+    },
+    {
+      "code": "6501",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -9.69,
+      "after_3d_pct": -11.49,
+      "after_5d_pct": -15.01,
+      "turnover_oku_before": 558.48,
+      "current_market_cap_oku": 212692.19
+    },
+    {
+      "code": "6470",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -2.64,
+      "after_3d_pct": -5.0,
+      "after_5d_pct": -18.64,
+      "turnover_oku_before": 0.48,
+      "current_market_cap_oku": 254.08
+    },
+    {
+      "code": "6382",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -0.42,
+      "after_3d_pct": -3.17,
+      "after_5d_pct": -3.59,
+      "turnover_oku_before": 0.22,
+      "current_market_cap_oku": 186.22
+    },
+    {
+      "code": "6023",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -8.41,
+      "after_3d_pct": -11.73,
+      "after_5d_pct": -19.66,
+      "turnover_oku_before": 8.93,
+      "current_market_cap_oku": 590.26
+    },
+    {
+      "code": "5994",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -4.28,
+      "after_3d_pct": -4.9,
+      "after_5d_pct": -5.74,
+      "turnover_oku_before": 0.01,
+      "current_market_cap_oku": 38.68
+    },
+    {
+      "code": "5992",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -23.32,
+      "after_3d_pct": -23.26,
+      "after_5d_pct": -24.69,
+      "turnover_oku_before": 1.96,
+      "current_market_cap_oku": 704.76
+    },
+    {
+      "code": "5834",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -1.98,
+      "after_3d_pct": -4.11,
+      "after_5d_pct": -2.76,
+      "turnover_oku_before": 1.89,
+      "current_market_cap_oku": 398.97
+    },
+    {
+      "code": "5659",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": 7.49,
+      "after_3d_pct": 4.33,
+      "after_5d_pct": 3.07,
+      "turnover_oku_before": 0.78,
+      "current_market_cap_oku": 401.72
+    },
+    {
+      "code": "4956",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -1.13,
+      "after_3d_pct": 2.45,
+      "after_5d_pct": 7.16,
+      "turnover_oku_before": 1.67,
+      "current_market_cap_oku": 996.15
+    },
+    {
+      "code": "4832",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -0.84,
+      "after_3d_pct": 1.16,
+      "after_5d_pct": 1.32,
+      "turnover_oku_before": 0.4,
+      "current_market_cap_oku": 604.95
+    },
+    {
+      "code": "4722",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": 0.0,
+      "after_3d_pct": 0.0,
+      "after_5d_pct": 0.04,
+      "turnover_oku_before": 4.67,
+      "current_market_cap_oku": 2155.36
+    },
+    {
+      "code": "4644",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": 0.49,
+      "after_3d_pct": -0.19,
+      "after_5d_pct": 0.1,
+      "turnover_oku_before": 0.02,
+      "current_market_cap_oku": 99.28
+    },
+    {
+      "code": "4373",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -7.44,
+      "after_3d_pct": -8.32,
+      "after_5d_pct": -8.24,
+      "turnover_oku_before": 12.49,
+      "current_market_cap_oku": 2575.67
+    },
+    {
+      "code": "3969",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": 0.57,
+      "after_3d_pct": -0.65,
+      "after_5d_pct": -1.58,
+      "turnover_oku_before": 0.03,
+      "current_market_cap_oku": 102.57
+    },
+    {
+      "code": "3850",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -14.16,
+      "after_3d_pct": -17.63,
+      "after_5d_pct": -18.28,
+      "turnover_oku_before": 0.59,
+      "current_market_cap_oku": 154.67
+    },
+    {
+      "code": "3839",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -1.57,
+      "after_3d_pct": -2.35,
+      "after_5d_pct": -2.51,
+      "turnover_oku_before": 0.1,
+      "current_market_cap_oku": 50.89
+    },
+    {
+      "code": "3778",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": 8.86,
+      "after_3d_pct": 0.81,
+      "after_5d_pct": -2.9,
+      "turnover_oku_before": 32.03,
+      "current_market_cap_oku": 1153.11
+    },
+    {
+      "code": "3771",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -5.35,
+      "after_3d_pct": -5.76,
+      "after_5d_pct": -4.84,
+      "turnover_oku_before": 1.01,
+      "current_market_cap_oku": 309.81
+    },
+    {
+      "code": "3003",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -0.14,
+      "after_3d_pct": 4.52,
+      "after_5d_pct": 14.12,
+      "turnover_oku_before": 61.91,
+      "current_market_cap_oku": 15338.26
+    },
+    {
+      "code": "2760",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -4.6,
+      "after_3d_pct": -6.67,
+      "after_5d_pct": -20.13,
+      "turnover_oku_before": 6.39,
+      "current_market_cap_oku": 1074.91
+    },
+    {
+      "code": "2737",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -20.71,
+      "after_3d_pct": -25.73,
+      "after_5d_pct": -30.72,
+      "turnover_oku_before": 49.19,
+      "current_market_cap_oku": 1528.83
+    },
+    {
+      "code": "2664",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -0.25,
+      "after_3d_pct": 0.86,
+      "after_5d_pct": 2.82,
+      "turnover_oku_before": 3.81,
+      "current_market_cap_oku": 914.59
+    },
+    {
+      "code": "2359",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -4.39,
+      "after_3d_pct": -8.02,
+      "after_5d_pct": -8.35,
+      "turnover_oku_before": 0.53,
+      "current_market_cap_oku": 279.13
+    },
+    {
+      "code": "2002",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": 4.06,
+      "after_3d_pct": 8.82,
+      "after_5d_pct": 17.13,
+      "turnover_oku_before": 14.21,
+      "current_market_cap_oku": 6776.45
+    },
+    {
+      "code": "1934",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": 3.72,
+      "after_3d_pct": 0.0,
+      "after_5d_pct": -0.08,
+      "turnover_oku_before": 3.72,
+      "current_market_cap_oku": 1696.56
+    },
+    {
+      "code": "1930",
+      "name": "",
+      "scheduled_date": "2026-10-28",
+      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "baseline_date": "2026-10-27",
+      "after_1d_date": "2026-10-29",
+      "after_3d_date": "2026-11-02",
+      "after_5d_date": "2026-11-05",
+      "after_1d_pct": -1.46,
+      "after_3d_pct": -3.59,
+      "after_5d_pct": -5.92,
+      "turnover_oku_before": 0.65,
+      "current_market_cap_oku": 389.16
+    },
+    {
       "code": "9782",
-      "name": "ディーエムエス",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -23,11 +743,11 @@
       "after_3d_pct": -2.75,
       "after_5d_pct": -2.75,
       "turnover_oku_before": 0.55,
-      "current_market_cap_oku": 172.56
+      "current_market_cap_oku": 175.0
     },
     {
       "code": "9733",
-      "name": "ナガセ",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -39,11 +759,11 @@
       "after_3d_pct": -5.02,
       "after_5d_pct": -6.84,
       "turnover_oku_before": 0.53,
-      "current_market_cap_oku": 527.24
+      "current_market_cap_oku": 540.61
     },
     {
       "code": "9697",
-      "name": "カプコン",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -55,11 +775,11 @@
       "after_3d_pct": -8.89,
       "after_5d_pct": -7.32,
       "turnover_oku_before": 111.31,
-      "current_market_cap_oku": 16838.25
+      "current_market_cap_oku": 18227.14
     },
     {
       "code": "9629",
-      "name": "ピー・シー・エー",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -71,11 +791,11 @@
       "after_3d_pct": 1.86,
       "after_5d_pct": 1.8,
       "turnover_oku_before": 0.46,
-      "current_market_cap_oku": 317.42
+      "current_market_cap_oku": 326.24
     },
     {
       "code": "8892",
-      "name": "エスコン",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -87,11 +807,11 @@
       "after_3d_pct": -1.85,
       "after_5d_pct": -2.13,
       "turnover_oku_before": 1.88,
-      "current_market_cap_oku": 1013.69
+      "current_market_cap_oku": 1054.92
     },
     {
       "code": "8697",
-      "name": "日本取引所グループ",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -103,11 +823,11 @@
       "after_3d_pct": -3.53,
       "after_5d_pct": -4.15,
       "turnover_oku_before": 68.81,
-      "current_market_cap_oku": 21417.66
+      "current_market_cap_oku": 22268.05
     },
     {
       "code": "8218",
-      "name": "コメリ",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -119,11 +839,11 @@
       "after_3d_pct": -2.01,
       "after_5d_pct": -1.75,
       "turnover_oku_before": 2.3,
-      "current_market_cap_oku": 1810.55
+      "current_market_cap_oku": 1875.22
     },
     {
       "code": "7751",
-      "name": "キヤノン",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -135,11 +855,11 @@
       "after_3d_pct": -4.14,
       "after_5d_pct": -6.18,
       "turnover_oku_before": 168.14,
-      "current_market_cap_oku": 38691.23
+      "current_market_cap_oku": 40657.87
     },
     {
       "code": "7646",
-      "name": "ＰＬＡＮＴ",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -151,11 +871,11 @@
       "after_3d_pct": -0.97,
       "after_5d_pct": -1.43,
       "turnover_oku_before": 0.04,
-      "current_market_cap_oku": 119.16
+      "current_market_cap_oku": 120.13
     },
     {
       "code": "7309",
-      "name": "シマノ",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -167,11 +887,11 @@
       "after_3d_pct": 10.56,
       "after_5d_pct": 11.82,
       "turnover_oku_before": 49.64,
-      "current_market_cap_oku": 17496.99
+      "current_market_cap_oku": 18455.73
     },
     {
       "code": "7299",
-      "name": "フジオーゼックス",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1016.xlsx",
@@ -183,11 +903,11 @@
       "after_3d_pct": -2.23,
       "after_5d_pct": -2.74,
       "turnover_oku_before": 0.13,
-      "current_market_cap_oku": 171.66
+      "current_market_cap_oku": 172.45
     },
     {
       "code": "7175",
-      "name": "今村証券",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -199,11 +919,11 @@
       "after_3d_pct": -2.08,
       "after_5d_pct": -3.09,
       "turnover_oku_before": 0.47,
-      "current_market_cap_oku": 83.4
+      "current_market_cap_oku": 82.74
     },
     {
       "code": "7102",
-      "name": "日本車輌製造",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -215,11 +935,11 @@
       "after_3d_pct": -9.6,
       "after_5d_pct": -9.47,
       "turnover_oku_before": 2.85,
-      "current_market_cap_oku": 489.87
+      "current_market_cap_oku": 489.15
     },
     {
       "code": "6988",
-      "name": "日東電工",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -231,11 +951,11 @@
       "after_3d_pct": -5.99,
       "after_5d_pct": -5.1,
       "turnover_oku_before": 88.21,
-      "current_market_cap_oku": 22006.58
+      "current_market_cap_oku": 22964.23
     },
     {
       "code": "6337",
-      "name": "テセック",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -247,11 +967,11 @@
       "after_3d_pct": -20.55,
       "after_5d_pct": -20.22,
       "turnover_oku_before": 5.99,
-      "current_market_cap_oku": 129.99
+      "current_market_cap_oku": 119.56
     },
     {
       "code": "5911",
-      "name": "横河ブリッジホールディングス",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -263,11 +983,11 @@
       "after_3d_pct": -5.36,
       "after_5d_pct": -5.09,
       "turnover_oku_before": 3.64,
-      "current_market_cap_oku": 1086.62
+      "current_market_cap_oku": 1107.35
     },
     {
       "code": "5609",
-      "name": "日本鋳造",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -279,11 +999,11 @@
       "after_3d_pct": 2.67,
       "after_5d_pct": 0.51,
       "turnover_oku_before": 0.05,
-      "current_market_cap_oku": 47.2
+      "current_market_cap_oku": 46.43
     },
     {
       "code": "5532",
-      "name": "リアルゲイト",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -295,11 +1015,11 @@
       "after_3d_pct": 0.85,
       "after_5d_pct": -1.99,
       "turnover_oku_before": 0.66,
-      "current_market_cap_oku": 224.5
+      "current_market_cap_oku": 218.97
     },
     {
       "code": "5344",
-      "name": "ＭＡＲＵＷＡ",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -311,11 +1031,11 @@
       "after_3d_pct": 10.9,
       "after_5d_pct": 3.08,
       "turnover_oku_before": 55.46,
-      "current_market_cap_oku": 5903.38
+      "current_market_cap_oku": 5200.01
     },
     {
       "code": "5279",
-      "name": "日本興業",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -327,11 +1047,11 @@
       "after_3d_pct": 1.93,
       "after_5d_pct": -3.87,
       "turnover_oku_before": 0.04,
-      "current_market_cap_oku": 33.34
+      "current_market_cap_oku": 33.07
     },
     {
       "code": "4973",
-      "name": "日本高純度化学",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -343,11 +1063,11 @@
       "after_3d_pct": -0.95,
       "after_5d_pct": -2.62,
       "turnover_oku_before": 3.39,
-      "current_market_cap_oku": 237.35
+      "current_market_cap_oku": 231.26
     },
     {
       "code": "4765",
-      "name": "ＳＢＩグローバルアセットマネジメント",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -359,11 +1079,11 @@
       "after_3d_pct": 2.16,
       "after_5d_pct": 3.16,
       "turnover_oku_before": 1.69,
-      "current_market_cap_oku": 856.0
+      "current_market_cap_oku": 885.0
     },
     {
       "code": "4733",
-      "name": "オービックビジネスコンサルタント",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -375,11 +1095,11 @@
       "after_3d_pct": 5.35,
       "after_5d_pct": 6.59,
       "turnover_oku_before": 32.89,
-      "current_market_cap_oku": 7547.74
+      "current_market_cap_oku": 7863.48
     },
     {
       "code": "4684",
-      "name": "オービック",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -391,11 +1111,11 @@
       "after_3d_pct": 1.31,
       "after_5d_pct": 0.63,
       "turnover_oku_before": 134.64,
-      "current_market_cap_oku": 26091.98
+      "current_market_cap_oku": 26953.42
     },
     {
       "code": "4519",
-      "name": "中外製薬",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -407,11 +1127,11 @@
       "after_3d_pct": -1.09,
       "after_5d_pct": -0.03,
       "turnover_oku_before": 229.27,
-      "current_market_cap_oku": 113462.55
+      "current_market_cap_oku": 118317.0
     },
     {
       "code": "4479",
-      "name": "マクアケ",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -423,11 +1143,11 @@
       "after_3d_pct": -5.26,
       "after_5d_pct": -8.15,
       "turnover_oku_before": 0.47,
-      "current_market_cap_oku": 109.13
+      "current_market_cap_oku": 108.23
     },
     {
       "code": "4063",
-      "name": "信越化学工業",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -439,11 +1159,11 @@
       "after_3d_pct": 3.16,
       "after_5d_pct": 0.28,
       "turnover_oku_before": 288.06,
-      "current_market_cap_oku": 105294.34
+      "current_market_cap_oku": 103369.66
     },
     {
       "code": "3911",
-      "name": "Ａｉｍｉｎｇ",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -455,11 +1175,11 @@
       "after_3d_pct": 0.93,
       "after_5d_pct": 1.4,
       "turnover_oku_before": 1.63,
-      "current_market_cap_oku": 101.27
+      "current_market_cap_oku": 106.87
     },
     {
       "code": "2212",
-      "name": "山崎製パン",
+      "name": "",
       "scheduled_date": "2026-10-27",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -471,11 +1191,11 @@
       "after_3d_pct": -0.61,
       "after_5d_pct": -0.2,
       "turnover_oku_before": 27.52,
-      "current_market_cap_oku": 7742.3
+      "current_market_cap_oku": 8281.82
     },
     {
       "code": "8060",
-      "name": "キヤノンマーケティングジャパン",
+      "name": "",
       "scheduled_date": "2026-10-26",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -487,11 +1207,11 @@
       "after_3d_pct": -6.7,
       "after_5d_pct": -6.13,
       "turnover_oku_before": 23.15,
-      "current_market_cap_oku": 8023.85
+      "current_market_cap_oku": 8248.28
     },
     {
       "code": "7970",
-      "name": "信越ポリマー",
+      "name": "",
       "scheduled_date": "2026-10-26",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -503,11 +1223,11 @@
       "after_3d_pct": 13.71,
       "after_5d_pct": 11.44,
       "turnover_oku_before": 4.09,
-      "current_market_cap_oku": 1951.34
+      "current_market_cap_oku": 1906.3
     },
     {
       "code": "6923",
-      "name": "スタンレー電気",
+      "name": "",
       "scheduled_date": "2026-10-26",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -519,11 +1239,11 @@
       "after_3d_pct": -11.93,
       "after_5d_pct": -12.54,
       "turnover_oku_before": 30.68,
-      "current_market_cap_oku": 3849.66
+      "current_market_cap_oku": 4045.4
     },
     {
       "code": "6663",
-      "name": "太洋テクノレックス",
+      "name": "",
       "scheduled_date": "2026-10-26",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -535,11 +1255,11 @@
       "after_3d_pct": -3.54,
       "after_5d_pct": -5.79,
       "turnover_oku_before": 0.05,
-      "current_market_cap_oku": 17.38
+      "current_market_cap_oku": 17.14
     },
     {
       "code": "6230",
-      "name": "ＳＡＮＥＩ",
+      "name": "",
       "scheduled_date": "2026-10-26",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -551,11 +1271,11 @@
       "after_3d_pct": -9.66,
       "after_5d_pct": -10.94,
       "turnover_oku_before": 0.02,
-      "current_market_cap_oku": 87.12
+      "current_market_cap_oku": 89.59
     },
     {
       "code": "3635",
-      "name": "コーエーテクモホールディングス",
+      "name": "",
       "scheduled_date": "2026-10-26",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -567,11 +1287,11 @@
       "after_3d_pct": -0.33,
       "after_5d_pct": 4.22,
       "turnover_oku_before": 21.56,
-      "current_market_cap_oku": 5817.4
+      "current_market_cap_oku": 6183.39
     },
     {
       "code": "2211",
-      "name": "不二家",
+      "name": "",
       "scheduled_date": "2026-10-26",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -583,11 +1303,11 @@
       "after_3d_pct": -3.99,
       "after_5d_pct": -3.6,
       "turnover_oku_before": 1.34,
-      "current_market_cap_oku": 628.41
+      "current_market_cap_oku": 643.1
     },
     {
       "code": "1718",
-      "name": "美樹工業",
+      "name": "",
       "scheduled_date": "2026-10-26",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -599,11 +1319,11 @@
       "after_3d_pct": -2.57,
       "after_5d_pct": -3.4,
       "turnover_oku_before": 0.07,
-      "current_market_cap_oku": 69.52
+      "current_market_cap_oku": 70.84
     },
     {
       "code": "9353",
-      "name": "櫻島埠頭",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1016.xlsx",
@@ -619,7 +1339,7 @@
     },
     {
       "code": "9029",
-      "name": "ヒガシホールディングス",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -631,11 +1351,11 @@
       "after_3d_pct": -6.77,
       "after_5d_pct": -9.35,
       "turnover_oku_before": 0.11,
-      "current_market_cap_oku": 223.84
+      "current_market_cap_oku": 222.01
     },
     {
       "code": "8961",
-      "name": "森トラストリート投資法人",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
@@ -647,11 +1367,11 @@
       "after_3d_pct": -0.3,
       "after_5d_pct": -1.49,
       "turnover_oku_before": 3.86,
-      "current_market_cap_oku": 2328.24
+      "current_market_cap_oku": 2395.88
     },
     {
       "code": "8707",
-      "name": "岩井コスモホールディングス",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -663,11 +1383,11 @@
       "after_3d_pct": -6.45,
       "after_5d_pct": -7.66,
       "turnover_oku_before": 6.41,
-      "current_market_cap_oku": 853.82
+      "current_market_cap_oku": 854.99
     },
     {
       "code": "7931",
-      "name": "未来工業",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -679,11 +1399,11 @@
       "after_3d_pct": -6.17,
       "after_5d_pct": -1.23,
       "turnover_oku_before": 1.0,
-      "current_market_cap_oku": 576.25
+      "current_market_cap_oku": 574.63
     },
     {
       "code": "7422",
-      "name": "東邦レマック",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -695,11 +1415,11 @@
       "after_3d_pct": 3.8,
       "after_5d_pct": 4.0,
       "turnover_oku_before": 0.07,
-      "current_market_cap_oku": 26.66
+      "current_market_cap_oku": 26.61
     },
     {
       "code": "6999",
-      "name": "ＫＯＡ",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -711,11 +1431,11 @@
       "after_3d_pct": 9.87,
       "after_5d_pct": 3.21,
       "turnover_oku_before": 15.63,
-      "current_market_cap_oku": 715.26
+      "current_market_cap_oku": 659.19
     },
     {
       "code": "6954",
-      "name": "ファナック",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -727,11 +1447,11 @@
       "after_3d_pct": 5.05,
       "after_5d_pct": 1.42,
       "turnover_oku_before": 254.85,
-      "current_market_cap_oku": 52072.63
+      "current_market_cap_oku": 52285.36
     },
     {
       "code": "6629",
-      "name": "テクノホライゾン",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -743,11 +1463,11 @@
       "after_3d_pct": -0.73,
       "after_5d_pct": -6.76,
       "turnover_oku_before": 1.53,
-      "current_market_cap_oku": 135.71
+      "current_market_cap_oku": 122.1
     },
     {
       "code": "5423",
-      "name": "東京製鐵",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -759,11 +1479,11 @@
       "after_3d_pct": 0.29,
       "after_5d_pct": 2.17,
       "turnover_oku_before": 6.4,
-      "current_market_cap_oku": 1784.41
+      "current_market_cap_oku": 1782.39
     },
     {
       "code": "3912",
-      "name": "モバイルファクトリー",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -775,11 +1495,11 @@
       "after_3d_pct": -0.56,
       "after_5d_pct": -1.02,
       "turnover_oku_before": 0.05,
-      "current_market_cap_oku": 69.29
+      "current_market_cap_oku": 69.22
     },
     {
       "code": "3492",
-      "name": "ＭＩＲＡＲＴＨ不動産投資法人",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
@@ -791,11 +1511,11 @@
       "after_3d_pct": 0.0,
       "after_5d_pct": -2.66,
       "turnover_oku_before": 5.18,
-      "current_market_cap_oku": 738.65
+      "current_market_cap_oku": 749.8
     },
     {
       "code": "2804",
-      "name": "ブルドックソース",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -807,11 +1527,11 @@
       "after_3d_pct": -5.19,
       "after_5d_pct": -3.35,
       "turnover_oku_before": 0.35,
-      "current_market_cap_oku": 221.93
+      "current_market_cap_oku": 228.63
     },
     {
       "code": "2268",
-      "name": "Ｂ－Ｒ　サーティワン　アイスクリーム",
+      "name": "",
       "scheduled_date": "2026-10-23",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -823,11 +1543,11 @@
       "after_3d_pct": -0.12,
       "after_5d_pct": 0.0,
       "turnover_oku_before": 0.1,
-      "current_market_cap_oku": 390.25
+      "current_market_cap_oku": 389.77
     },
     {
       "code": "9478",
-      "name": "ＳＥホールディングス・アンド・インキュベーションズ",
+      "name": "",
       "scheduled_date": "2026-10-22",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -839,11 +1559,11 @@
       "after_3d_pct": 4.44,
       "after_5d_pct": 2.22,
       "turnover_oku_before": 0.38,
-      "current_market_cap_oku": 74.06
+      "current_market_cap_oku": 73.01
     },
     {
       "code": "8954",
-      "name": "オリックス不動産投資法人",
+      "name": "",
       "scheduled_date": "2026-10-22",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
@@ -855,11 +1575,11 @@
       "after_3d_pct": 0.23,
       "after_5d_pct": -2.93,
       "turnover_oku_before": 8.51,
-      "current_market_cap_oku": 4741.68
+      "current_market_cap_oku": 4901.76
     },
     {
       "code": "8617",
-      "name": "光世証券",
+      "name": "",
       "scheduled_date": "2026-10-22",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -871,11 +1591,11 @@
       "after_3d_pct": -6.25,
       "after_5d_pct": -6.41,
       "turnover_oku_before": 0.03,
-      "current_market_cap_oku": 55.9
+      "current_market_cap_oku": 55.15
     },
     {
       "code": "6146",
-      "name": "ディスコ",
+      "name": "",
       "scheduled_date": "2026-10-22",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -887,11 +1607,11 @@
       "after_3d_pct": -7.04,
       "after_5d_pct": -2.33,
       "turnover_oku_before": 938.6,
-      "current_market_cap_oku": 51399.97
+      "current_market_cap_oku": 44976.33
     },
     {
       "code": "5204",
-      "name": "石塚硝子",
+      "name": "",
       "scheduled_date": "2026-10-22",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -903,11 +1623,11 @@
       "after_3d_pct": -5.43,
       "after_5d_pct": -5.76,
       "turnover_oku_before": 0.16,
-      "current_market_cap_oku": 116.51
+      "current_market_cap_oku": 117.51
     },
     {
       "code": "3091",
-      "name": "ブロンコビリー",
+      "name": "",
       "scheduled_date": "2026-10-22",
       "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
       "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
@@ -919,75 +1639,8 @@
       "after_3d_pct": 6.12,
       "after_5d_pct": 1.97,
       "turnover_oku_before": 5.11,
-      "current_market_cap_oku": 891.03
-    },
-    {
-      "code": "8953",
-      "name": "日本都市ファンド投資法人",
-      "scheduled_date": "2026-10-21",
-      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-      "baseline_date": "2026-10-20",
-      "after_1d_date": "2026-10-22",
-      "after_3d_date": "2026-10-26",
-      "after_5d_date": "2026-10-28",
-      "after_1d_pct": 1.18,
-      "after_3d_pct": 4.8,
-      "after_5d_pct": 3.73,
-      "turnover_oku_before": 16.38,
-      "current_market_cap_oku": 7595.61
-    },
-    {
-      "code": "5576",
-      "name": "オービーシステム",
-      "scheduled_date": "2026-10-21",
-      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-      "baseline_date": "2026-10-20",
-      "after_1d_date": "2026-10-22",
-      "after_3d_date": "2026-10-26",
-      "after_5d_date": "2026-10-28",
-      "after_1d_pct": -0.62,
-      "after_3d_pct": -4.8,
-      "after_5d_pct": -4.33,
-      "turnover_oku_before": 0.12,
-      "current_market_cap_oku": 69.1
-    },
-    {
-      "code": "4929",
-      "name": "アジュバンホールディングス",
-      "scheduled_date": "2026-10-21",
-      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-      "baseline_date": "2026-10-20",
-      "after_1d_date": "2026-10-22",
-      "after_3d_date": "2026-10-26",
-      "after_5d_date": "2026-10-28",
-      "after_1d_pct": -1.47,
-      "after_3d_pct": -1.6,
-      "after_5d_pct": -2.01,
-      "turnover_oku_before": 0.04,
-      "current_market_cap_oku": 58.8
-    },
-    {
-      "code": "3290",
-      "name": "Ｏｎｅリート投資法人",
-      "scheduled_date": "2026-10-21",
-      "date_kind": "JPX決算発表予定日（実際の発表日時は未確認）",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-      "baseline_date": "2026-10-20",
-      "after_1d_date": "2026-10-22",
-      "after_3d_date": "2026-10-26",
-      "after_5d_date": "2026-10-28",
-      "after_1d_pct": 0.54,
-      "after_3d_pct": 2.43,
-      "after_5d_pct": 0.67,
-      "turnover_oku_before": 2.1,
-      "current_market_cap_oku": 700.07
+      "current_market_cap_oku": 931.26
     }
   ],
-  "generated_at": "2026-11-04T23:18:16+09:00",
-  "name_match_source": "data/earnings.json (JPX earnings calendar; match code/date, or uniquely named code)",
-  "name_missing_count": 0,
-  "name_matched_count": 61
+  "generated_at": "2026-11-05T23:22:25+09:00"
 }

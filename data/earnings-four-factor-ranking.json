@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-11-06T01:47:08+09:00",
+  "generated_at": "2026-11-06T02:25:02+09:00",
   "description": "4項目の調査順位。本人の過去決算反応は出典のある発表予定日・カレンダー日・記事掲載日付近の株価変化。実際の発表時刻・変動原因は未確認。未取得0点は悪材料ではない。",
   "weights": {
     "own_earnings_reaction": 3,
@@ -34,7 +34,7 @@
         {
           "date": "2026-05-08",
           "next_close_pct": 11.54,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBXM3hUdzFXZzJpM1ItN29KVEdRVEhHSE44MElCVXJ1Q244a3pXa0FvdU1rcW95dUZRSndBODNiTEpYWGgwc1ZhaDNDbGlhVU5MZ3pWNU5xNHlDYjhSaVQ3VUFpMHBrbE1weXc?oc=5"
         }
       ],
@@ -109,7 +109,7 @@
         {
           "date": "2026-08-06",
           "next_close_pct": 14.24,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1TVTZCV0VjdzFycklGOUVqZlFUdk96T3k1eHZXNkFaclgyYlJkM1pFTl9KYXpmbW9GeC03aGpMTThPU1JvQnRGelZkc3BrNnE0Yk84NHV6TENPZDF1bGttRTRTS1pSSkd5REE?oc=5"
         }
       ],
@@ -184,7 +184,7 @@
         {
           "date": "2026-05-15",
           "next_close_pct": -4.87,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ScnFRY1lPaEM0T1o4X01tT1NoODVJVk5pUDJ3T2tOVUlqM25TTjNWeEdVc1pVY3ZkT3p6dDc5T3Fzb09BcXpKcWF2WC1LU0Rid3YzcmdwX3J2WFRfYUVxLTNab1hhYzBqTmc?oc=5"
         }
       ],
@@ -315,7 +315,7 @@
         {
           "date": "2026-05-14",
           "next_close_pct": 10.76,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE94NTEtN0xYbFRyTnVnQXp2dmJiVC1iWk16RE1VY1NMU213TV9YYjNVQVBBT29Ud0huVlRQRWppdUIwdGwtQ3VORG9oVXBOYzhaWTZlN01PTEVFUFBHNUltNWZfWHZzdnpTS0E?oc=5"
         }
       ],
@@ -390,7 +390,7 @@
         {
           "date": "2026-05-12",
           "next_close_pct": -17.3,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE16eS1veVhER3ByTXlWV0RTN2xBQlhWU1k0VTZ5UjNVWVQ3SzNtMXpfOFhzTzhicEoxM3F3b052ZkJKMnVmbVJ2M3cwYTZ5ZUg5b2t1b1VERWtvT2YwcFFIZmJtLUtlYUZ0MWc?oc=5"
         }
       ],
@@ -465,7 +465,7 @@
         {
           "date": "2026-05-08",
           "next_close_pct": 5.35,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBKZ19YYmoxTnRhS0d1WkdiNzlBb3ZnSHpMYkJWZ0Y5U3VkLV9tSFJWUExObW9GbTBvNUVOUFFTczVZUjNBTngwOXp5ZE85V0NHeldZVWNXS0NoRkNsQU5jcWNyeC1JU214clE?oc=5"
         }
       ],
@@ -534,14 +534,20 @@
         "recent_industry_peers": 0,
         "analyst_upgrades_61d": 0
       },
-      "self_history_count": 1,
-      "self_history_positive": 0,
+      "self_history_count": 2,
+      "self_history_positive": 1,
       "self_history_events": [
         {
           "date": "2026-08-18",
           "next_close_pct": -16.94,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE13WTc3NFc0NFlmNjlfdEQ4VDc5UUhpb1V4d1ZtZ1NsYlMtTmRic2ktTkVaaEFRaTlMOTZXejdoTHJmMlVmZ3AzQTJJaHM2SWhIbDl5M3h5UnNMbGNnZjJaX0RlZ05UY1ZnNkE?oc=5"
+        },
+        {
+          "date": "2026-05-08",
+          "next_close_pct": 2.96,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBReC1tSnczd2hYMUQxOUFHTHdnUnJKbDBBbHo4cGQ2RGwtWHhYeVJwNnJCVkd5YkhUaDJaLVJsLWlwbTVBLVJmYk00TVFiTVYxaDlkd3lNSXp3cFBSWFNhY3RZc0kwelJTTmc?oc=5"
         }
       ],
       "industry": "Specialty Industrial Machinery",
@@ -615,7 +621,7 @@
         {
           "date": "2026-05-14",
           "next_close_pct": 1.84,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBRWHpSaVNNQnoxYmhDYjJSbzJtQXdia1daZzNxeGtGLTRBQTFMcFhFcmdUMjY4X1BDb1dWelAzUHl1amVqcnBzU2paeVRpSmNSQkplWDMxQkk5OUY3bEZmRVFoN3ZjbnBia3c?oc=5"
         }
       ],
@@ -894,7 +900,7 @@
         {
           "date": "2026-05-12",
           "next_close_pct": -7.38,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5UMzVlaTBObzJaMDY3Ylc4OWNHS3BKdkVSWXJpZk1fTURtVThTbDI3TDNwVW5kellOT1ZEZ2FUSkN0alZIdXhBbHowMFNab1BEQ1RVX0RUTGhSem1ramR3RzQ5SXkzaF81Nmc?oc=5"
         }
       ],
@@ -939,7 +945,7 @@
         {
           "date": "2026-05-11",
           "next_close_pct": -9.55,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBIZzQ4NmFUN3UzOGx5aFpiMFpPeUs1NG4wWHVXSFhicFlPajU3RXlyc3dEZkQyYWtZWUs0UWxqSzlkTmhjSFFQRHZBUWtIanNRd0ZYQlRmT25WaktpcS0tU05hTXpXME04SGc?oc=5"
         }
       ],
@@ -1028,13 +1034,19 @@
         "recent_industry_peers": 0,
         "analyst_upgrades_61d": 0
       },
-      "self_history_count": 1,
-      "self_history_positive": 0,
+      "self_history_count": 2,
+      "self_history_positive": 1,
       "self_history_events": [
+        {
+          "date": "2026-08-07",
+          "next_close_pct": 0.99,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1fNlVRZFdZdmF3STU5dzRvYjJqUWJfcWc0bThDRk5JUnJ4NDA0dGhCeXdlZGZhbW1Yb1lCRngxWnhUQUU4NGZ1cGZrUGhUTWl0bXl5TUl2MGlpcEV5aWJEVTk5MnhlMjJ1N0E?oc=5"
+        },
         {
           "date": "2026-05-15",
           "next_close_pct": -1.96,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBEMHZZNldCVVUwQm14OXo3RHYyUVdHOFEwRVQtQW5LS3JUOGoycEplc1VZRFNuWWVDTkxvbVYtTmtLa0NOUjBTMmZva0FlWkRqcTJZMXZrOTFFbzdsNFM5ZTRIdGg2ZC1IY2c?oc=5"
         }
       ],

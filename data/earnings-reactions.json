@@ -1,120 +1,162 @@
 {
-  "schema": 2,
-  "description": "TDnet決算短信の掲載日付近の終値反応。開示時刻未確認、決算による因果効果や上昇確率は示さない。",
+  "schema": 1,
+  "description": "決算カレンダー日付付近の終値反応。実際の発表時刻未検証であり、決算による因果効果・上昇確率ではありません。",
   "sources": [
-    "TDnet決算短信開示一覧（掲載日）",
-    "既存の出典付き履歴"
+    "JPX保存済み発表予定日",
+    "Yahoo Finance決算カレンダー日付（取得可能な銘柄のみ）"
   ],
-  "event_date_count": 20,
-  "with_reactions": 0,
+  "event_date_count": 24,
+  "with_reactions": 1,
   "records": [
     {
-      "code": "6958",
-      "name": "日本シイエムケイ",
+      "code": "9413",
+      "name": "テレビ東京ホールディングス",
       "reactions": []
     },
     {
-      "code": "5821",
-      "name": "平河ヒューテック",
+      "code": "3034",
+      "name": "クオールホールディングス",
       "reactions": []
     },
     {
-      "code": "6817",
-      "name": "スミダコーポレーション",
+      "code": "3252",
+      "name": "地主",
+      "reactions": [
+        {
+          "event_date": "2026-08-12",
+          "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
+          "source_url": "https://finance.yahoo.com/quote/3252.T/analysis/",
+          "baseline_date": "2026-08-10",
+          "baseline_close": 2860.0,
+          "after_1d_date": "2026-08-13",
+          "after_1d_pct": 3.74,
+          "after_3d_pct": 3.81,
+          "after_5d_pct": 2.87,
+          "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
+        },
+        {
+          "event_date": "2026-05-07",
+          "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
+          "source_url": "https://finance.yahoo.com/quote/3252.T/analysis/",
+          "baseline_date": "2026-05-01",
+          "baseline_close": 3340.0,
+          "after_1d_date": "2026-05-08",
+          "after_1d_pct": -1.65,
+          "after_3d_pct": -3.74,
+          "after_5d_pct": -2.4,
+          "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
+        },
+        {
+          "event_date": "2026-02-12",
+          "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
+          "source_url": "https://finance.yahoo.com/quote/3252.T/analysis/",
+          "baseline_date": "2026-02-10",
+          "baseline_close": 3550.0,
+          "after_1d_date": "2026-02-13",
+          "after_1d_pct": -3.24,
+          "after_3d_pct": -9.44,
+          "after_5d_pct": -5.21,
+          "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
+        },
+        {
+          "event_date": "2025-11-05",
+          "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
+          "source_url": "https://finance.yahoo.com/quote/3252.T/analysis/",
+          "baseline_date": "2025-11-04",
+          "baseline_close": 2865.0,
+          "after_1d_date": "2025-11-06",
+          "after_1d_pct": 0.73,
+          "after_3d_pct": 2.16,
+          "after_5d_pct": 2.48,
+          "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
+        }
+      ]
+    },
+    {
+      "code": "5208",
+      "name": "有沢製作所",
       "reactions": []
     },
     {
-      "code": "3844",
-      "name": "コムチュア",
+      "code": "4968",
+      "name": "荒川化学工業",
       "reactions": []
     },
     {
-      "code": "6240",
-      "name": "ヤマシンフィルタ",
+      "code": "1945",
+      "name": "東京エネシス",
       "reactions": []
     },
     {
-      "code": "3150",
-      "name": "グリムス",
+      "code": "6994",
+      "name": "指月電機製作所",
       "reactions": []
     },
     {
-      "code": "4326",
-      "name": "インテージホールディングス",
+      "code": "6644",
+      "name": "大崎電気工業",
       "reactions": []
     },
     {
-      "code": "4847",
-      "name": "インテリジェント　ウェイブ",
+      "code": "3028",
+      "name": "アルペン",
       "reactions": []
     },
     {
-      "code": "4559",
-      "name": "ゼリア新薬工業",
+      "code": "8065",
+      "name": "佐藤商事",
       "reactions": []
     },
     {
-      "code": "5632",
-      "name": "三菱製鋼",
+      "code": "8150",
+      "name": "三信電気",
       "reactions": []
     },
     {
-      "code": "8081",
-      "name": "カナデン",
+      "code": "4475",
+      "name": "ＨＥＮＮＧＥ",
       "reactions": []
     },
     {
-      "code": "6809",
-      "name": "ＴＯＡ",
+      "code": "1814",
+      "name": "大末建設",
       "reactions": []
     },
     {
-      "code": "4886",
-      "name": "あすか製薬ホールディングス",
+      "code": "2612",
+      "name": "かどや製油",
       "reactions": []
     },
     {
-      "code": "7466",
-      "name": "ＳＰＫ",
+      "code": "4674",
+      "name": "クレスコ",
       "reactions": []
     },
     {
-      "code": "5449",
-      "name": "大阪製鐵",
+      "code": "7711",
+      "name": "助川電気工業",
       "reactions": []
     },
     {
-      "code": "7609",
-      "name": "ダイトロン",
+      "code": "9424",
+      "name": "日本通信",
       "reactions": []
     },
     {
-      "code": "7600",
-      "name": "日本エム・ディ・エム",
+      "code": "5851",
+      "name": "リョービ",
       "reactions": []
     },
     {
-      "code": "3636",
-      "name": "三菱総合研究所",
+      "code": "7018",
+      "name": "内海造船",
       "reactions": []
     },
     {
-      "code": "3668",
-      "name": "コロプラ",
-      "reactions": []
-    },
-    {
-      "code": "1799",
-      "name": "第一建設工業",
+      "code": "1898",
+      "name": "世紀東急工業",
       "reactions": []
     }
   ],
-  "generated_at": "2026-11-04T22:50:11+09:00",
-  "tdnet_days_requested": 140,
-  "tdnet_days_parsed": 0,
-  "tdnet_events_found": 0,
-  "tdnet_scan_diagnostics": {
-    "missing": 140,
-    "parsed": 0
-  }
+  "generated_at": "2026-11-05T22:17:30+09:00"
 }

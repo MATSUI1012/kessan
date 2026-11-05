@@ -1,7 +1,7 @@
 {
-  "schema": 1,
-  "generated_at": "2026-11-06T06:16:03+09:00",
-  "description": "4項目すべての根拠が確認できた銘柄だけ正式に採点。未取得を0点扱いしない。ニュース見出しのみではレーティング変更なしと認定しない。",
+  "schema": 2,
+  "generated_at": "2026-11-06T06:25:29+09:00",
+  "description": "本人過去決算反応、出来高、同業反応、Yahoo EPS60日前比較および証券会社格付け履歴が揃った銘柄だけ表示。取れない項目を0点にしない。Yahooは二次データで証券会社原本未照合。",
   "research_generated_at": "2026-11-06T00:27:11+09:00",
   "coverage": {
     "screened": 20,
@@ -10,30 +10,31 @@
     "volume_available": 20,
     "peers_available": 18,
     "analyst_revision_verified": 0,
-    "new_own_events": 14
+    "eps_trend_60d_available": 3,
+    "broker_history_available": 0
   },
   "records": [],
   "audits": [
     {
       "code": "6929",
       "name": "日本セラミック",
-      "earnings_date": "2026-11-06",
       "covered": {
         "own_earnings_reaction": true,
         "volume_supply_demand": true,
         "recent_industry_peers": true,
         "analyst_upgrades_61d": false
       },
-      "own_events": 7,
+      "own_events": 4,
       "peer_events": 15,
-      "analyst_headline_indications": [],
-      "newly_collected_own_events": 6,
-      "fetch_diagnostics": []
+      "eps_60d_available": true,
+      "broker_history_available": false,
+      "eps_up": true,
+      "broker_upgrades": 0,
+      "diagnostics": {}
     },
     {
       "code": "6140",
       "name": "旭ダイヤモンド工業",
-      "earnings_date": "2026-11-06",
       "covered": {
         "own_earnings_reaction": true,
         "volume_supply_demand": true,
@@ -42,14 +43,15 @@
       },
       "own_events": 1,
       "peer_events": 4,
-      "analyst_headline_indications": [],
-      "newly_collected_own_events": 0,
-      "fetch_diagnostics": []
+      "eps_60d_available": false,
+      "broker_history_available": false,
+      "eps_up": null,
+      "broker_upgrades": 0,
+      "diagnostics": {}
     },
     {
       "code": "7613",
       "name": "シークス",
-      "earnings_date": "2026-11-06",
       "covered": {
         "own_earnings_reaction": false,
         "volume_supply_demand": true,
@@ -58,30 +60,32 @@
       },
       "own_events": 0,
       "peer_events": 15,
-      "analyst_headline_indications": [],
-      "newly_collected_own_events": 0,
-      "fetch_diagnostics": []
+      "eps_60d_available": false,
+      "broker_history_available": false,
+      "eps_up": null,
+      "broker_upgrades": 0,
+      "diagnostics": {}
     },
     {
       "code": "7606",
       "name": "ＴＡＢＡＹＡホールディングス",
-      "earnings_date": "2026-11-06",
       "covered": {
         "own_earnings_reaction": true,
         "volume_supply_demand": true,
         "recent_industry_peers": true,
         "analyst_upgrades_61d": false
       },
-      "own_events": 7,
+      "own_events": 4,
       "peer_events": 4,
-      "analyst_headline_indications": [],
-      "newly_collected_own_events": 7,
-      "fetch_diagnostics": []
+      "eps_60d_available": true,
+      "broker_history_available": false,
+      "eps_up": true,
+      "broker_upgrades": 0,
+      "diagnostics": {}
     },
     {
       "code": "5602",
       "name": "栗本鐵工所",
-      "earnings_date": "2026-11-06",
       "covered": {
         "own_earnings_reaction": false,
         "volume_supply_demand": true,
@@ -90,14 +94,15 @@
       },
       "own_events": 0,
       "peer_events": 9,
-      "analyst_headline_indications": [],
-      "newly_collected_own_events": 0,
-      "fetch_diagnostics": []
+      "eps_60d_available": false,
+      "broker_history_available": false,
+      "eps_up": null,
+      "broker_upgrades": 0,
+      "diagnostics": {}
     },
     {
       "code": "7721",
       "name": "東京計器",
-      "earnings_date": "2026-11-06",
       "covered": {
         "own_earnings_reaction": true,
         "volume_supply_demand": true,
@@ -106,14 +111,15 @@
       },
       "own_events": 2,
       "peer_events": 3,
-      "analyst_headline_indications": [],
-      "newly_collected_own_events": 1,
-      "fetch_diagnostics": []
+      "eps_60d_available": true,
+      "broker_history_available": false,
+      "eps_up": false,
+      "broker_upgrades": 0,
+      "diagnostics": {}
     },
     {
       "code": "6143",
       "name": "ソディック",
-      "earnings_date": "2026-11-06",
       "covered": {
         "own_earnings_reaction": false,
         "volume_supply_demand": true,
@@ -122,14 +128,15 @@
       },
       "own_events": 0,
       "peer_events": 22,
-      "analyst_headline_indications": [],
-      "newly_collected_own_events": 0,
-      "fetch_diagnostics": []
+      "eps_60d_available": false,
+      "broker_history_available": false,
+      "eps_up": null,
+      "broker_upgrades": 0,
+      "diagnostics": {}
     },
     {
       "code": "4028",
       "name": "石原産業",
-      "earnings_date": "2026-11-06",
       "covered": {
         "own_earnings_reaction": true,
         "volume_supply_demand": true,
@@ -138,14 +145,15 @@
       },
       "own_events": 1,
       "peer_events": 12,
-      "analyst_headline_indications": [],
-      "newly_collected_own_events": 0,
-      "fetch_diagnostics": []
+      "eps_60d_available": false,
+      "broker_history_available": false,
+      "eps_up": null,
+      "broker_upgrades": 0,
+      "diagnostics": {}
     },
     {
       "code": "6327",
       "name": "北川精機",
-      "earnings_date": "2026-11-06",
       "covered": {
         "own_earnings_reaction": true,
         "volume_supply_demand": true,
@@ -154,14 +162,15 @@
       },
       "own_events": 2,
       "peer_events": 22,
-      "analyst_headline_indications": [],
-      "newly_collected_own_events": 0,
-      "fetch_diagnostics": []
+      "eps_60d_available": false,
+      "broker_history_available": false,
+      "eps_up": null,
+      "broker_upgrades": 0,
+      "diagnostics": {}
     },
     {
       "code": "4970",
       "name": "東洋合成工業",
-      "earnings_date": "2026-11-06",
       "covered": {
         "own_earnings_reaction": true,
         "volume_supply_demand": true,
@@ -170,14 +179,15 @@
       },
       "own_events": 1,
       "peer_events": 12,
-      "analyst_headline_indications": [],
-      "newly_collected_own_events": 0,
-      "fetch_diagnostics": []
+      "eps_60d_available": false,
+      "broker_history_available": false,
+      "eps_up": null,
+      "broker_upgrades": 0,
+      "diagnostics": {}
     },
     {
       "code": "6332",
       "name": "月島ホールディングス",
-      "earnings_date": "2026-11-06",
       "covered": {
         "own_earnings_reaction": true,
         "volume_supply_demand": true,
@@ -186,14 +196,15 @@
       },
       "own_events": 1,
       "peer_events": 1,
-      "analyst_headline_indications": [],
-      "newly_collected_own_events": 0,
-      "fetch_diagnostics": []
+      "eps_60d_available": false,
+      "broker_history_available": false,
+      "eps_up": null,
+      "broker_upgrades": 0,
+      "diagnostics": {}
     },
     {
       "code": "3036",
       "name": "アルコニックス",
-      "earnings_date": "2026-11-06",
       "covered": {
         "own_earnings_reaction": false,
         "volume_supply_demand": true,
@@ -202,14 +213,15 @@
       },
       "own_events": 0,
       "peer_events": 1,
-      "analyst_headline_indications": [],
-      "newly_collected_own_events": 0,
-      "fetch_diagnostics": []
+      "eps_60d_available": false,
+      "broker_history_available": false,
+      "eps_up": null,
+      "broker_upgrades": 0,
+      "diagnostics": {}
     },
     {
       "code": "6652",
       "name": "ＩＤＥＣ",
-      "earnings_date": "2026-11-06",
       "covered": {
         "own_earnings_reaction": true,
         "volume_supply_demand": true,
@@ -218,14 +230,15 @@
       },
       "own_events": 1,
       "peer_events": 9,
-      "analyst_headline_indications": [],
-      "newly_collected_own_events": 0,
-      "fetch_diagnostics": []
+      "eps_60d_available": false,
+      "broker_history_available": false,
+      "eps_up": null,
+      "broker_upgrades": 0,
+      "diagnostics": {}
     },
     {
       "code": "3663",
       "name": "セルシス",
-      "earnings_date": "2026-11-06",
       "covered": {
         "own_earnings_reaction": false,
         "volume_supply_demand": true,
@@ -234,14 +247,15 @@
       },
       "own_events": 0,
       "peer_events": 15,
-      "analyst_headline_indications": [],
-      "newly_collected_own_events": 0,
-      "fetch_diagnostics": []
+      "eps_60d_available": false,
+      "broker_history_available": false,
+      "eps_up": null,
+      "broker_upgrades": 0,
+      "diagnostics": {}
     },
     {
       "code": "3687",
       "name": "フィックスターズ",
-      "earnings_date": "2026-11-06",
       "covered": {
         "own_earnings_reaction": true,
         "volume_supply_demand": true,
@@ -250,14 +264,15 @@
       },
       "own_events": 1,
       "peer_events": 15,
-      "analyst_headline_indications": [],
-      "newly_collected_own_events": 0,
-      "fetch_diagnostics": []
+      "eps_60d_available": false,
+      "broker_history_available": false,
+      "eps_up": null,
+      "broker_upgrades": 0,
+      "diagnostics": {}
     },
     {
       "code": "3315",
       "name": "日本コークス工業",
-      "earnings_date": "2026-11-06",
       "covered": {
         "own_earnings_reaction": true,
         "volume_supply_demand": true,
@@ -266,14 +281,15 @@
       },
       "own_events": 2,
       "peer_events": 0,
-      "analyst_headline_indications": [],
-      "newly_collected_own_events": 0,
-      "fetch_diagnostics": []
+      "eps_60d_available": false,
+      "broker_history_available": false,
+      "eps_up": null,
+      "broker_upgrades": 0,
+      "diagnostics": {}
     },
     {
       "code": "2681",
       "name": "セカンドリテイリング",
-      "earnings_date": "2026-11-06",
       "covered": {
         "own_earnings_reaction": true,
         "volume_supply_demand": true,
@@ -282,14 +298,15 @@
       },
       "own_events": 1,
       "peer_events": 8,
-      "analyst_headline_indications": [],
-      "newly_collected_own_events": 0,
-      "fetch_diagnostics": []
+      "eps_60d_available": false,
+      "broker_history_available": false,
+      "eps_up": null,
+      "broker_upgrades": 0,
+      "diagnostics": {}
     },
     {
       "code": "8550",
       "name": "栃木銀行",
-      "earnings_date": "2026-11-06",
       "covered": {
         "own_earnings_reaction": false,
         "volume_supply_demand": true,
@@ -298,14 +315,15 @@
       },
       "own_events": 0,
       "peer_events": 0,
-      "analyst_headline_indications": [],
-      "newly_collected_own_events": 0,
-      "fetch_diagnostics": []
+      "eps_60d_available": false,
+      "broker_history_available": false,
+      "eps_up": null,
+      "broker_upgrades": 0,
+      "diagnostics": {}
     },
     {
       "code": "6492",
       "name": "岡野バルブ製造",
-      "earnings_date": "2026-11-06",
       "covered": {
         "own_earnings_reaction": false,
         "volume_supply_demand": true,
@@ -314,14 +332,15 @@
       },
       "own_events": 0,
       "peer_events": 22,
-      "analyst_headline_indications": [],
-      "newly_collected_own_events": 0,
-      "fetch_diagnostics": []
+      "eps_60d_available": false,
+      "broker_history_available": false,
+      "eps_up": null,
+      "broker_upgrades": 0,
+      "diagnostics": {}
     },
     {
       "code": "6277",
       "name": "ホソカワミクロン",
-      "earnings_date": "2026-11-06",
       "covered": {
         "own_earnings_reaction": false,
         "volume_supply_demand": true,
@@ -330,9 +349,11 @@
       },
       "own_events": 0,
       "peer_events": 22,
-      "analyst_headline_indications": [],
-      "newly_collected_own_events": 0,
-      "fetch_diagnostics": []
+      "eps_60d_available": false,
+      "broker_history_available": false,
+      "eps_up": null,
+      "broker_upgrades": 0,
+      "diagnostics": {}
     }
   ]
 }

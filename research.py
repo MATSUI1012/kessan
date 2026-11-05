@@ -38,6 +38,7 @@ MIN_CAP = 80 * 100_000_000
 MIN_CAP = 80 * 100_000_000
 MIN_CAP = 80 * 100_000_000
 MIN_CAP = 80 * 100_000_000
+MIN_CAP = 80 * 100_000_000
 
 
 def utc_now() -> datetime:

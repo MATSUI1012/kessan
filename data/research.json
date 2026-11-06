@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T00:27:11+09:00",
+  "generated_at": "2026-11-06T20:33:44+09:00",
   "schema": 1,
   "screening": {
     "days_ahead": 14,
@@ -13,14 +13,14 @@
       "name": "日本セラミック",
       "earnings_date": "2026-11-06",
       "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-      "market_cap_yen": 68794947200,
-      "price_date": "2026-11-05",
-      "close": 3400.0,
-      "turnover_oku": 9.12,
-      "avg_turnover_20_oku": 5.09,
-      "volume_ratio_5_20": 2.25,
-      "return_5d": -6.72,
-      "return_20d": -9.21,
+      "market_cap_yen": 63331819040,
+      "price_date": "2026-11-06",
+      "close": 3130.0,
+      "turnover_oku": 10.24,
+      "avg_turnover_20_oku": 5.45,
+      "volume_ratio_5_20": 2.01,
+      "return_5d": -13.42,
+      "return_20d": -16.31,
       "financials": {
         "revenue_yen": 27339999232,
         "period_type": "ttm",
@@ -35,24 +35,88 @@
         "period": "0q",
         "revenue_mean_yen": 7213333330
       },
-      "prior_reactions": [],
+      "prior_reactions": [
+        {
+          "event_date": "2026-08-06",
+          "after_1d_pct": -3.71,
+          "after_3d_pct": -4.86,
+          "after_5d_pct": -3.96,
+          "eps_estimate": 59.67,
+          "eps_actual": 63.33,
+          "eps_surprise_pct": 6.13,
+          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
+        },
+        {
+          "event_date": "2026-05-07",
+          "after_1d_pct": 8.09,
+          "after_3d_pct": 16.46,
+          "after_5d_pct": 16.18,
+          "eps_estimate": 53.27,
+          "eps_actual": 63.09,
+          "eps_surprise_pct": 18.43,
+          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
+        },
+        {
+          "event_date": "2026-02-06",
+          "after_1d_pct": -2.14,
+          "after_3d_pct": -0.4,
+          "after_5d_pct": -1.87,
+          "eps_estimate": 49.16,
+          "eps_actual": 66.42,
+          "eps_surprise_pct": 35.11,
+          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
+        },
+        {
+          "event_date": "2025-11-06",
+          "after_1d_pct": 0.98,
+          "after_3d_pct": 2.94,
+          "after_5d_pct": 5.88,
+          "eps_estimate": 44.41,
+          "eps_actual": 65.14,
+          "eps_surprise_pct": 46.68,
+          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
+        }
+      ],
       "sources": {
         "fundamentals": "https://finance.yahoo.com/quote/6929.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/6929.T/analysis/"
       },
       "missing_data": [
-        "Only TTM revenue available; quarterly year-on-year change unknown",
-        "Historical earnings dates or surrounding daily price data unavailable"
+        "Only TTM revenue available; quarterly year-on-year change unknown"
       ],
       "news": [
         {
-          "title": "【決算速報】明電舎、中間経常9,956百万。アナリスト予想を上回る(アイフィス株予報) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPMGtnY1BxUFMzb1NCRmVUdlczb2liRURuTm1aaTIzNUR2WW0wR1lPbVlBT2NyWDBiRnFralhSSzFTOXpTc204TDY5Vk1zY2FsdDd4WHYwQV9FdVFkOTloaHgyYzVlbTktRUl4T2pPNDM2UDhLdXBZT0lHNlJQckdsOFZ4UFBlRGs?oc=5",
+          "title": "日本セラミック[6929]：2026年12月期 第3四半期決算短信[日本基準]（連結） 2026年11月6日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBVM1RBVE90cUVzd1RxRWkzSEZlLUNHa1BZU0tBZ0EtQmQwdlV5MExzWEQzbnVJaGJZb1NadUZpMjI2NEd4dVVQc1V4X1V0cHFfdGZweUwxZTBrbFV4YkZrckk3NDNUcDNJQVE?oc=5",
+          "source": "日本経済新聞",
+          "published_at": "2026-11-06T15:10+09:00"
+        },
+        {
+          "title": "【四半期業績】日本セラミック（鳥取市） - 中国新聞デジタル",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5tM0Iwd1RaUmhka3pCblZnbGtqY1ZDLVo4OWRUZE5CZExXaWpNYVNPbTFEUkpqRGw5Q1g4S3dqTnRkYWw0SzY1ZTc3emFxZXN3TDl1bmU3LW5Kdw?oc=5",
+          "source": "中国新聞デジタル",
+          "published_at": "2026-11-06T16:21+09:00"
+        },
+        {
+          "title": "【決算速報】日セラミック---26年12月期3Qは減益、経常利益は2.2％減(フィスコ) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZFZ5bjJEN2xNSjlTdHRlX28wMUFsRUtBRDEzM0tDVzRxYlZIUlRXNG9EaTNkMF9KVXVYMjNEc0pMaHQ5NTdEeWNnMUlUeXVnc3E0VjNreVJVbmVHLV96ZWRMaUx1aGo3amhoaGNOTFpsREt0NzNTN1Qta0NHdFpubWlXSEs3REE?oc=5",
           "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-30T15:31+09:00"
+          "published_at": "2026-11-06T18:47+09:00"
+        },
+        {
+          "title": "日セラ、1-9月期(3Q累計)経常が2％減益で着地・7-9月期も33％減益 - 株探",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE56aktTUk1XcHc4MGtfMy1ueUhBQU5UeDZGdXBUSlU3R2ZuTzFTZUttcTRkTk96MXdzemltVkhGdy1ETUFBbFhSNnBocTdxUXlwam1zTVBIQU43Zkk0cGVMM3BR?oc=5",
+          "source": "株探",
+          "published_at": "2026-11-06T15:10+09:00"
+        },
+        {
+          "title": "【決算速報】日本セラミック、3Q累計経常4,976百万。(アイフィス株予報) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQOFVuUndCM2VwVTFUOC1xWXp4MnEzVHNfRkVGMFN2Z05VWWpXVFdUVUlaazhUNk5IUm9LTWs3bVpQQzB1SWhuTGZPcDRoUmlqV1FjSkpEdmxrbmtEQVJyWERLYmY4TExRbUhicVBnbkk5Mk5DVkNDS2Q3bGdTc0FLTXBEbklyQzg?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-06T15:10+09:00"
         }
       ],
-      "research_priority_score": 3,
+      "research_priority_score": 4,
       "signals": [
         {
           "label": "直近出来高が増加（5日平均/前20日平均）",
@@ -61,171 +125,27 @@
         {
           "label": "担当アナリスト数を確認できる市場予想あり",
           "points": 1
-        }
-      ],
-      "evidence_count": 3
-    },
-    {
-      "code": "6140",
-      "name": "旭ダイヤモンド工業",
-      "earnings_date": "2026-11-06",
-      "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-      "market_cap_yen": 48084180687,
-      "price_date": "2026-11-05",
-      "close": 999.0,
-      "turnover_oku": 7.49,
-      "avg_turnover_20_oku": 4.75,
-      "volume_ratio_5_20": 1.76,
-      "return_5d": -10.0,
-      "return_20d": -13.95,
-      "financials": {
-        "revenue_yen": 43081998336,
-        "period_type": "ttm",
-        "latest_period": null,
-        "data_source": "Yahoo Finance TTM summary, not company IR",
-        "revenue_yoy_pct": null,
-        "operating_income_yoy_pct": null
-      },
-      "analyst_consensus": {
-        "revenue_mean_yen": 11375000000,
-        "analyst_count": 1,
-        "period": "0q"
-      },
-      "prior_reactions": [],
-      "sources": {
-        "fundamentals": "https://finance.yahoo.com/quote/6140.T/financials/",
-        "estimates": "https://finance.yahoo.com/quote/6140.T/analysis/"
-      },
-      "missing_data": [
-        "Only TTM revenue available; quarterly year-on-year change unknown",
-        "Historical earnings dates or surrounding daily price data unavailable"
-      ],
-      "news": [
-        {
-          "title": "【決算速報】日進工具、今期経常を55％上方修正(株探ニュース) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdjFFRnBRazBvTVlxc2lURHg5VWVBTFdnNEludC0ydkxxRU5ObUxNTTFBS21YenZuU2Q1WnBOTGFIRkYycVZPX0RkbFNLcWljVnVyNHQzaGwwRVlYc3hHQWY2VTJISThvN2dNSUV3c1BiSkpLQ1VhUS1vVGhBYUJJMjA1T19WYkk?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-30T16:02+09:00"
         },
         {
-          "title": "【決算速報】東京精密、中間経常21,146百万。アナリスト予想を上回る(アイフィス株予報) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUXpqbGJySGlRZ28tcmx5dEtCR2l2RHg3QTZHNTJ1TnlBOXpIUmdTdDE3SE95RG9zWFVVSlJ4UkNRTXprYnZVano2VWFvaUtJNDlDbHZzOWtReTR5eDR2Q2k5ZlBwUGJ2dTJONnRROGxxTExjUHBmbHdWLXVWeDc0Vl9HcnFWLTg?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-11-04T15:30+09:00"
-        },
-        {
-          "title": "【決算発表予定】2026年11月02日(月)～06日(金)の個人的注目決算予定銘柄 - かりんの株レポ",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBRTlFSZEI0QVZhMHlxMnhIY1NtYTNpX1k5VXIxMjlfMFIwR21YMXRObVdpWnlQYXZfUHkyZUYwNTNjRmMycERfT1FORQ?oc=5",
-          "source": "かりんの株レポ",
-          "published_at": "2026-10-30T20:36+09:00"
-        }
-      ],
-      "research_priority_score": 3,
-      "signals": [
-        {
-          "label": "直近出来高が増加（5日平均/前20日平均）",
-          "points": 2
-        },
-        {
-          "label": "担当アナリスト数を確認できる市場予想あり",
+          "label": "過去決算のEPS予想超過が確認できる",
           "points": 1
         }
       ],
-      "evidence_count": 3
-    },
-    {
-      "code": "7613",
-      "name": "シークス",
-      "earnings_date": "2026-11-06",
-      "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-      "market_cap_yen": 75203281835,
-      "price_date": "2026-11-05",
-      "close": 1595.0,
-      "turnover_oku": 4.64,
-      "avg_turnover_20_oku": 3.27,
-      "volume_ratio_5_20": 1.69,
-      "return_5d": -1.97,
-      "return_20d": -4.61,
-      "financials": {
-        "revenue_yen": 297309995008,
-        "period_type": "ttm",
-        "latest_period": null,
-        "data_source": "Yahoo Finance TTM summary, not company IR",
-        "revenue_yoy_pct": null,
-        "operating_income_yoy_pct": null
-      },
-      "analyst_consensus": {
-        "revenue_mean_yen": 78000000000,
-        "analyst_count": 1,
-        "period": "0q"
-      },
-      "prior_reactions": [],
-      "sources": {
-        "fundamentals": "https://finance.yahoo.com/quote/7613.T/financials/",
-        "estimates": "https://finance.yahoo.com/quote/7613.T/analysis/"
-      },
-      "missing_data": [
-        "Only TTM revenue available; quarterly year-on-year change unknown",
-        "Historical earnings dates or surrounding daily price data unavailable"
-      ],
-      "news": [
-        {
-          "title": "シークス(株)【7613】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1MSmxSOU9iTUNxUmRtWUtSTm1sTUNCemJQc1UteU9FN0NZeS1jNmxlUnZQZ1RrbFFSNHNmaHpDV0daUGQyN2lHTHVadDRqVkdvV1BjWi16NzZITE05bHpoSVZsekRtbW00cTRvRlg3SXF0dVBy?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-29T19:02+09:00"
-        },
-        {
-          "title": "シークス Research Memo（6）：2026年12月期中間期は戦略コンセプトが奏功し2ケタ増益 - ｄメニューニュース",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNekctNWpISnZUeUYxYmhvOWN3M3ZqakZuQ1gyczg5aTVhTnNmY1VqTWNaZkxHWjFaREg0azRrNUo0N1VfUWNidTZVZDRIRUpvblJaLWQtZzNrM0VKUncxTlJrTkdfdGJRSUEwamxQd25rdXhjSDlKM1E2bzFWNE1yRTNpb1E3ZHPSAYwBQVVfeXFMTm1hRTNUTzdLRnRFZHZpRnZqam9OdDZlUHRyNldsblAwSmJIYnVKQWdjbzM0UDY5bXVIeDVSTFlVdEZVUUxoYjF2dXB6ZnYxa0dvZDE4UHk1R0JUN29LNEF5RnBqalZWRXNZeUhpSnlYZVVTaXd6dzdaSkJpdGYzN1l0SWRPb1FpZUthbF8?oc=5",
-          "source": "ｄメニューニュース",
-          "published_at": "2026-10-29T11:06+09:00"
-        },
-        {
-          "title": "【注目トピックス 日本株】シークス Research Memo（1）：次期中期経営計画へ向け、戦略コンセプトを実行 - マネーポストWEB",
-          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5jQjNVT2xCSUJpdVRoSGdKODlvRlN6WmxROXl3ZDAwTlc2cTl1ZHJEQm9xdXU0SFVmWUNDSFcyOXMzZkFoNW9F?oc=5",
-          "source": "マネーポストWEB",
-          "published_at": "2026-10-29T11:01+09:00"
-        },
-        {
-          "title": "シークス Research Memo（7）：2026年12月期中間期の利益は日本と欧州がけん引 - ｄメニューニュース",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQTXhqSWtTQXpOdkdTMXk3R3dFM054N3pMWlNzY0dSYjBnbVFKMEdoWF9VVXpnTGFaOU9FdHRxVVlQVjd2bDJQZWZESVotUXUzNnZ0dWVFNWJYa1o3dW1sc2dkSWJGcW1Cb0xNVGZHSFJvd1NzLUF1YmdHZnpGTjlHMGEwMGpJelHSAYwBQVVfeXFMTXllNVVjOVRveG8xMTNnLTJmWktCRVZEdlhzazdOTzRHTV8zOWlNTTA1TkFvaE81MEFoT1RRMVBDZ2JEVGpBQlNzb2tka2wteGRaUEZ5VS1BTlJ6cU9VM0dVOE9kUjBKZ3paVzRWVjNKN09tUzQwMkdhaXFYUHRkSE5mb2Ytb3k0X2Qxb0s?oc=5",
-          "source": "ｄメニューニュース",
-          "published_at": "2026-10-29T11:07+09:00"
-        },
-        {
-          "title": "【注目トピックス 日本株】シークス Research Memo（5）：戦略目標は順調に進捗 - マネーポストWEB",
-          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFB3NHFfWlZlblJwQVQ4VVYtdnBmaURXdGxaaUItaFhhYjJZZlUwNVZMMGNKemF6QXg0c2gzcnJzTkJ1SzdWRUgw?oc=5",
-          "source": "マネーポストWEB",
-          "published_at": "2026-10-29T11:05+09:00"
-        }
-      ],
-      "research_priority_score": 3,
-      "signals": [
-        {
-          "label": "直近出来高が増加（5日平均/前20日平均）",
-          "points": 2
-        },
-        {
-          "label": "担当アナリスト数を確認できる市場予想あり",
-          "points": 1
-        }
-      ],
-      "evidence_count": 3
+      "evidence_count": 4
     },
     {
       "code": "7606",
       "name": "ＴＡＢＡＹＡホールディングス",
       "earnings_date": "2026-11-06",
       "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-      "market_cap_yen": 70585880014,
-      "price_date": "2026-11-05",
-      "close": 2633.0,
-      "turnover_oku": 6.51,
-      "avg_turnover_20_oku": 4.99,
-      "volume_ratio_5_20": 1.16,
-      "return_5d": 6.86,
-      "return_20d": 9.75,
+      "market_cap_yen": 65117015782,
+      "price_date": "2026-11-06",
+      "close": 2429.0,
+      "turnover_oku": 8.92,
+      "avg_turnover_20_oku": 5.21,
+      "volume_ratio_5_20": 1.05,
+      "return_5d": -1.7,
+      "return_20d": 0.41,
       "financials": {
         "revenue_yen": 166201999360,
         "period_type": "ttm",
@@ -240,14 +160,44 @@
         "period": "0q",
         "revenue_mean_yen": 36484241500
       },
-      "prior_reactions": [],
+      "prior_reactions": [
+        {
+          "event_date": "2026-08-06",
+          "after_1d_pct": 5.25,
+          "after_3d_pct": 5.66,
+          "after_5d_pct": 5.04,
+          "eps_estimate": 66.27,
+          "eps_actual": 76.78,
+          "eps_surprise_pct": 15.86,
+          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
+        },
+        {
+          "event_date": "2026-02-04",
+          "after_1d_pct": 4.21,
+          "after_3d_pct": 6.1,
+          "after_5d_pct": 7.34,
+          "eps_estimate": 188.75,
+          "eps_actual": 201.65,
+          "eps_surprise_pct": 6.83,
+          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
+        },
+        {
+          "event_date": "2025-11-06",
+          "after_1d_pct": 5.55,
+          "after_3d_pct": 10.43,
+          "after_5d_pct": 12.35,
+          "eps_estimate": -24.79,
+          "eps_actual": -12.16,
+          "eps_surprise_pct": null,
+          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
+        }
+      ],
       "sources": {
         "fundamentals": "https://finance.yahoo.com/quote/7606.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/7606.T/analysis/"
       },
       "missing_data": [
-        "Only TTM revenue available; quarterly year-on-year change unknown",
-        "Historical earnings dates or surrounding daily price data unavailable"
+        "Only TTM revenue available; quarterly year-on-year change unknown"
       ],
       "news": [
         {
@@ -258,30 +208,30 @@
         },
         {
           "title": "ＴＡＢＡＹＡ - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPY3VtSUJhRnlocWdKdEc1NDhIR1V2NWxiUmFQYkRSR2ZXS3lEeHQ2bFlLWnBLVzZYbzNsQmpEajZ5NndKeEdpZng4N1lTYzMyekl6a3d0dXFsTkNJakR5aVlJZlZhYWxtdVR1c2lFZzN1OFBxcWxIV21CNDFWZEdkVy1XUklxMzQ0dElfeWoyQ3FGdS1qOVZCZmR3a2hINGJDcXdhY1hoQjlMTGExWGlxVE1lbmt3WXc5V3R4dl9ma1BzR2JqUTR3Q2xsQUc?oc=5",
+          "source": "日本経済新聞",
+          "published_at": "2026-11-06T12:30+09:00"
+        },
+        {
+          "title": "ＴＡＢＡＹＡ、上期経常が28％増益で着地・7-9月期は赤字縮小 - 株探",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA5cDdDZHBCTU9abTVnX256blhOaENfRFBuelQtd19SZFBsZ0tUY2lJWVJhSTc1RVRZR3JuTWY0WmJ6WnpjcDBrMl9JeklDOGYzQ0E?oc=5",
+          "source": "株探",
+          "published_at": "2026-11-06T12:30+09:00"
+        },
+        {
+          "title": "【決算速報】ＴＡＢＡＹＡ、上期経常が28％増益で着地・7-9月期は赤字縮小(株探ニュース) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdjI3X3pNYXlvOFJWWUZ2ZGtuT2xVUm1GYnljcDlkMDRWbDduWGdYMW1XMzYxS2NXQ1hCOGFKV2F1amZmYnZBYXVrMlQ2YzhTOTdjLUxra0dVanRsWW1kcVhBdDRuNWRUOHQ1OEJ2QWhNZjBEVDJ3SUNYemVWc2d0QnpnUHVXcE0?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-06T12:30+09:00"
+        },
+        {
+          "title": "ＴＡＢＡＹＡ - 日本経済新聞",
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOMDRONUFWd3pGV1B1aC01VFI4TzZqVGhPdFIydmd1eTNkSzdQX0g3U1hDa1VwQzhQSk45Y3lLUWVGZGc4S251M0piUi1hRzVpUVhmWFY2ZW1ReFM2ZUR5WVZNUW9tMlJVOEgwRFU4dWFud09UZk9wcUtCMjBSajVELUxzOG5pUWJuZ0t4YTdlYXByQUdVbl8xODNqQ0ZWQ2thOVB1bkJ3cUUwNVVCQ3JlaDR3Xy1NQWpDWklyZjFPeGRCb2R3U3NiNG1Ma1I?oc=5",
           "source": "日本経済新聞",
           "published_at": "2026-11-04T15:30+09:00"
-        },
-        {
-          "title": "【決算速報】サックスバーＨ、中間経常1,435百万。事前予想とほぼ同水準(アイフィス株予報) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbTh0dWpKdVJEY1hRQTBkbjdBUUpYUUEteEdIb0JNbHRNYTZ5WGZsSWxES29hS3FfNS03a3VWOEctMjh0NkxNSHhmeDFzRXV5QlZTd0RwN3FTajNKTHhYdVRXVExNcDBzSURrV3hmVFVzZE1EekF5SEpVQ1V0cjh5TUhIeFN2UkE?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-11-04T15:30+09:00"
-        },
-        {
-          "title": "「ユニクロ」の値上げ撤回の波紋と、10.42％高で週間上昇率トップのHUMAN MADEの底堅さ｜「SVT インデックス」週報 - SEVENTIE TWO",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQamNlZWJQZkNweEI4RmpFMGE3ejF5NFYzeExyYl9lcDI3MGo3NUNWTnZvZjU0aDBZZnllQUItUmJnMFlWU0RjY2F5MkxRZi1rU1FzX05CdlhsdEg4bzNPX3FfRWhES2o5M1VTQXoybW9CbkZJT0RkZWZVdUh1eEllX1ZEWQ?oc=5",
-          "source": "SEVENTIE TWO",
-          "published_at": "2026-11-02T16:03+09:00"
-        },
-        {
-          "title": "【決算速報】ハウスローゼ、今期経常を一転赤字に下方修正、配当も5円減額(株探ニュース) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdExaanlRLV9IMkR5NkQxOUpVc1I1VTlNWDhGUWc5dHN0eG5SYWNNaTJJM1l0N05rVm5HWTBWZnJLdV9iOXJ5MXdVMnBxTVFJSWFmMDJvTHcwR2xPWEJ0OEJMUjIzMEUwMnEzZmhkZS1FWFlFUWlxWlVfOVRYNTVuWThJZ0t6dW8?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-11-05T15:32+09:00"
         }
       ],
-      "research_priority_score": 2,
+      "research_priority_score": 3,
       "signals": [
         {
           "label": "20営業日で緩やかな上昇",
@@ -290,232 +240,27 @@
         {
           "label": "担当アナリスト数を確認できる市場予想あり",
           "points": 1
-        }
-      ],
-      "evidence_count": 3
-    },
-    {
-      "code": "5602",
-      "name": "栗本鐵工所",
-      "earnings_date": "2026-11-06",
-      "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-      "market_cap_yen": 95810483140,
-      "price_date": "2026-11-05",
-      "close": 1627.0,
-      "turnover_oku": 5.66,
-      "avg_turnover_20_oku": 4.89,
-      "volume_ratio_5_20": 1.48,
-      "return_5d": -2.87,
-      "return_20d": 0.74,
-      "financials": {
-        "revenue_yen": 129762000896,
-        "period_type": "ttm",
-        "latest_period": null,
-        "data_source": "Yahoo Finance TTM summary, not company IR",
-        "revenue_yoy_pct": null,
-        "operating_income_yoy_pct": null
-      },
-      "analyst_consensus": {
-        "revenue_mean_yen": 31931000000,
-        "analyst_count": 1,
-        "period": "0q"
-      },
-      "prior_reactions": [],
-      "sources": {
-        "fundamentals": "https://finance.yahoo.com/quote/5602.T/financials/",
-        "estimates": "https://finance.yahoo.com/quote/5602.T/analysis/"
-      },
-      "missing_data": [
-        "Only TTM revenue available; quarterly year-on-year change unknown",
-        "Historical earnings dates or surrounding daily price data unavailable"
-      ],
-      "news": [
-        {
-          "title": "【決算速報】鋳鉄管、上期経常が黒字浮上で着地・7-9月期も黒字浮上(株探ニュース) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPaXFDcmtsNmZRaHJVb1NuRXhod1VHX2h1SXBqbTYwbTQ3RDBYMDk1T0FJMWYtTUxfSWxpY0NTTXFteVpCc0NJdTEwTTZxckhpTmlTWnpIOE9zeUJMMFN4X0E1NFJlYmowVDhCSHRsRVpYSzF6OHhFMXJsOWFCRV83cnJrelJxY2M?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-30T15:32+09:00"
         },
         {
-          "title": "【決算速報】モリ工業、中間経常2,767百万。事前予想を上回る(アイフィス株予報) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNYjJsQVdJc3lxdVJhNG1ucUdwdFdvaUNkSWhTdWI1eW1OOFZ6X0dYQWkxZkk0R0NHYmUycTU0bEp6aUltWnI0NUFFMnFVTkE5dVdSUlRyVWRoRXVUN2ZHZHYzek8xVWx3MjVnbjJSdmJiTGd4ejdZWVFNRHg4UmE5TVZISHZPdVE?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-30T13:30+09:00"
-        },
-        {
-          "title": "「優れたテクノロジーを、親しみやすく」を企業理念に掲げる独立系インテグレーター「日本ビジネスシステムズ」とリサーチ・カバレッジ契約を締結｜次世代型の株式リサーチ「ENVALITH（エンヴァリス）」 - PR TIMES",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBLQlVHM0N5Y01sMU1JREhZZFgzMDlzZjJOaHFyS2JuZHJRaHZOb0pzMGRSVzY2UUFNdG1abDRnLWtlNkwxMHRscG40TzcwY1RIZld1dC10MVlkczB6d29xU21VbmppLW5hdGc?oc=5",
-          "source": "PR TIMES",
-          "published_at": "2026-11-05T08:30+09:00"
-        },
-        {
-          "title": "【決算速報】日本精線、中間経常1,986百万。事前予想を上回る(アイフィス株予報) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNaERmUnplUXpxOVZPU0JGSUNvNGRBUzFiNHFWb1JlaDhpZzIyQ3hTdHBRdXlMNEZSVlNjSWt5TlpjQkVaREhLYXAzNExOaXhHTHVoNmUzMUVFWFBRQkJ4MEY3aURhLXNPZFItNURoQ3VKeTg1blZwZ096RHRHZjlRT2x0ZXBJMDQ?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-28T14:30+09:00"
-        },
-        {
-          "title": "顧客の要求時期に間に合わせるため、河間工場の残り空間に約1,510億円を投じSAP能力を先に確保──「イビデン」のインタビューレポートを配信｜次世代型の株式リサーチ「ENVALITH（エンヴァリス）」 - PR TIMES",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBJQ1kzTkVrVmJoZnQycVZXTXF3RVdTeGZaUVNtV3l4a0NLTXNhTEVYNHEtT0RRekZYYldxVEJwalNNMmVRcGF0aF9HU2cxUWNnekNob1pVSmx5NnZqY1NYVDhMczNXazdHanc?oc=5",
-          "source": "PR TIMES",
-          "published_at": "2026-11-04T18:43+09:00"
-        }
-      ],
-      "research_priority_score": 2,
-      "signals": [
-        {
-          "label": "20営業日で緩やかな上昇",
-          "points": 1
-        },
-        {
-          "label": "担当アナリスト数を確認できる市場予想あり",
+          "label": "過去決算のEPS予想超過が確認できる",
           "points": 1
         }
       ],
-      "evidence_count": 3
-    },
-    {
-      "code": "7721",
-      "name": "東京計器",
-      "earnings_date": "2026-11-06",
-      "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-      "market_cap_yen": 84301218180,
-      "price_date": "2026-11-05",
-      "close": 5130.0,
-      "turnover_oku": 16.08,
-      "avg_turnover_20_oku": 14.83,
-      "volume_ratio_5_20": 1.01,
-      "return_5d": -10.31,
-      "return_20d": -30.01,
-      "financials": {
-        "revenue_yen": 62231998464,
-        "period_type": "ttm",
-        "latest_period": null,
-        "data_source": "Yahoo Finance TTM summary, not company IR",
-        "revenue_yoy_pct": null,
-        "operating_income_yoy_pct": null
-      },
-      "analyst_consensus": {
-        "eps_mean": 23.14,
-        "analyst_count": 4,
-        "period": "0q",
-        "revenue_mean_yen": 14784250000
-      },
-      "prior_reactions": [],
-      "sources": {
-        "fundamentals": "https://finance.yahoo.com/quote/7721.T/financials/",
-        "estimates": "https://finance.yahoo.com/quote/7721.T/analysis/"
-      },
-      "missing_data": [
-        "Only TTM revenue available; quarterly year-on-year change unknown",
-        "Historical earnings dates or surrounding daily price data unavailable"
-      ],
-      "news": [
-        {
-          "title": "【決算速報】長野計器、今期経常を一転49％増益に上方修正・2期ぶり最高益更新へ(株探ニュース) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNTFVRbkZYR2hpUDl4MkxUTEhuT3RHMXlKNFZnbUd4SEZjOFlFUTZ4MjZUZEZMN0w2ZVNQQm5tUlZ6SlBtYUVoa0ZfTmhiWkw4d2w5dlBDLVdHTG9WcTNrYi16b0pvRWRNelJZRUJuY3o2WmtZdTNfT3kweWstdjZsVXlWZFZQZGc?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-23T15:31+09:00"
-        },
-        {
-          "title": "明日の決算発表予定 三菱重、サンリオなど255社 (11月5日) - 株探",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8zblpCalUtTTdrZHZWQTd5YkRYakI1dk4tM2hqdkJNUE9lYkRHVGUwbHM5SmdHQ3RyLWh4cWpKU3B5cV9YN3gzNVI1dnV2ZmQ4YUEzN2FnMW1TZEFocDRJeQ?oc=5",
-          "source": "株探",
-          "published_at": "2026-11-05T15:41+09:00"
-        },
-        {
-          "title": "【アナリスト予想】東京計器、27年3月期経常予想。対前週1.7%上昇。(アイフィス株予報) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQREw2X29JREVUSHdpZnRWUFJRZ3d1Vzk0emlGbjVXTG1VblFvVVlRVXNDOHNTdFVHb0JMQmh4QzMwTVVjbzZTNG5Lb3lLMU00R1NMa2ZIT3ZmTHlFRlNfdXRMUDVma0xlZXVEaEYzMlQyczQwU0lSSEtTRzRNQUtoTy1QcHlvNWM?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-26T22:46+09:00"
-        },
-        {
-          "title": "★本日の【サプライズ決算】速報 (11月05日) - 株探",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1QSUxaNEx3LW5EYlZYalo5S3ExVUhjblQ2UGdHYTlCVURhTFp3RGZTUHNZTlZHMWZJY1NzdU9kdVdKSks1dWNZTndnUXdWb3dORzZIYkNiV0JMNjBPNkNKZg?oc=5",
-          "source": "株探",
-          "published_at": "2026-11-05T16:34+09:00"
-        },
-        {
-          "title": "【アナリスト評価】東京計器、レーティング中立に引下げ、目標株価6,000円に引下げ（日系大手証券）(アイフィス株予報) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWEUtcGxkYjk0MW91aVBxbl9OUjJSUUFNMmxUeGFVMmpnTTV5cENkMGw3YnFCSGlsTUdOVmtXZFZERW1yTkdkMlpvV0hmZWx3WjljYVFqYkpFMjktWHNYX01MOFJGRjNHNTczNUtUSlF6UUdnV21yOXRQNVdRaVZCWmlMT0tJczA?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-26T16:00+09:00"
-        }
-      ],
-      "research_priority_score": 1,
-      "signals": [
-        {
-          "label": "担当アナリスト数を確認できる市場予想あり",
-          "points": 1
-        }
-      ],
-      "evidence_count": 3
-    },
-    {
-      "code": "6143",
-      "name": "ソディック",
-      "earnings_date": "2026-11-06",
-      "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-      "market_cap_yen": 65619636875,
-      "price_date": "2026-11-05",
-      "close": 1313.0,
-      "turnover_oku": 13.2,
-      "avg_turnover_20_oku": 23.48,
-      "volume_ratio_5_20": 0.54,
-      "return_5d": -13.45,
-      "return_20d": -25.06,
-      "financials": {
-        "revenue_yen": 89513000960,
-        "period_type": "ttm",
-        "latest_period": null,
-        "data_source": "Yahoo Finance TTM summary, not company IR",
-        "revenue_yoy_pct": null,
-        "operating_income_yoy_pct": null
-      },
-      "analyst_consensus": {
-        "revenue_mean_yen": 22730000000,
-        "analyst_count": 1,
-        "period": "0q"
-      },
-      "prior_reactions": [],
-      "sources": {
-        "fundamentals": "https://finance.yahoo.com/quote/6143.T/financials/",
-        "estimates": "https://finance.yahoo.com/quote/6143.T/analysis/"
-      },
-      "missing_data": [
-        "Only TTM revenue available; quarterly year-on-year change unknown",
-        "Historical earnings dates or surrounding daily price data unavailable"
-      ],
-      "news": [
-        {
-          "title": "【決算速報】ＦＵＪＩ、中間経常34,374百万。事前予想を上回る(アイフィス株予報) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQZWI1M3lTejRnTzQzNkFBV2loS01jeklTVWlvaXVDS05kRnl6RXByU044b1RjOEwzaVZTclNkMnUxQ1pFYi1XeWNsQnB5T2dnVnBJQ0ZMaGU1OEVIdTcyYUFkSkNXNjBOeEdmVUN6RExIUU9rak84YWZJTFZXOV9helAzRDN0SVE?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-11-05T15:30+09:00"
-        }
-      ],
-      "research_priority_score": 1,
-      "signals": [
-        {
-          "label": "担当アナリスト数を確認できる市場予想あり",
-          "points": 1
-        }
-      ],
-      "evidence_count": 3
+      "evidence_count": 4
     },
     {
       "code": "4028",
       "name": "石原産業",
       "earnings_date": "2026-11-06",
       "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-      "market_cap_yen": 93710627446,
-      "price_date": "2026-11-05",
-      "close": 2449.0,
-      "turnover_oku": 7.51,
-      "avg_turnover_20_oku": 5.74,
-      "volume_ratio_5_20": 1.21,
-      "return_5d": -9.33,
-      "return_20d": -13.71,
+      "market_cap_yen": 90037201462,
+      "price_date": "2026-11-06",
+      "close": 2353.0,
+      "turnover_oku": 20.49,
+      "avg_turnover_20_oku": 6.57,
+      "volume_ratio_5_20": 1.74,
+      "return_5d": -12.0,
+      "return_20d": -17.15,
       "financials": {
         "revenue_yen": 151625007104,
         "period_type": "ttm",
@@ -540,22 +285,365 @@
       ],
       "news": [
         {
+          "title": "石原産業[4028]：2027年３月期 第２四半期（中間期）決算短信〔日本基準〕(連結) 2026年11月6日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5EOERXRUR2SEU1ay0xc25mVUNCSGpnclY2dVpIZ3hfMWJKTGE4b3g1bWxEc3o5Um1QU2cweGhkMUQwM1psZzdsY1VpNVloQUxzbXhvenNjaEs3WTlGcF9mU25vYS1yQ2F3ZUE?oc=5",
+          "source": "日本経済新聞",
+          "published_at": "2026-11-06T13:00+09:00"
+        },
+        {
           "title": "石原産業(株)【4028】：今の株価の理由は？値動きの背景をAIが解説 - Yahoo!ファイナンス",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5OOG0wM2pZNHBPb25wYk1kbGpJZkpqSVlkVHd2R0QtTFB6MF9Ka3dGclVLNUo2N3lZYUt5bWRDSEY1bU9aTXYtZGZUR2VKVW4xajMyUDhPQjZ6bGtTZkFN?oc=5",
           "source": "Yahoo!ファイナンス",
           "published_at": "2026-11-02T16:05+09:00"
         },
         {
-          "title": "【決算速報】第一工業製薬、中間経常8,836百万。事前予想を上回る(アイフィス株予報) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNakJLVWlITldrd0QtT3d1Ym0xZWpVd3E5b3BQeHlDaU5ZVGo2RFZRRzVKbV8xT1k5cFU5WS1FcjlnaDZPQkM2TXJ1MHFlc2xoajV1S29RR05kWDVueFpDbGtrWG5jUzRqY0dVSktnWThWV0cwdVJaNXl2T3pMX01CV1ZxbEFMVTQ?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-29T14:00+09:00"
+          "title": "石原産、今期経常を17％上方修正 - 株探",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9FUFdsa2k1MnEwLS1wREgwQ3YwN3VmaUw2bS1CMUQ5dllvYXg3WG1ZcTcteXEySmpKbWRicHhjOE9vQjJ2MFgyUzFoYm9wRHBLTzlZ?oc=5",
+          "source": "株探",
+          "published_at": "2026-11-06T13:00+09:00"
         },
         {
-          "title": "【決算速報】ＺＡＣＲＯＳ、中間経常6,700百万。(アイフィス株予報) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOaFROS3podjJPamVxSHFKcVRBcXY1VTZ0S3M5VkFIR0lzSjZoY1VCY2RoaERLS0s4dkJKTjdYdzgzVDVGdDFkd1ZHSjQyOVJGNmZVbEp2Z1pxblgxcGlBeEVoOThwQWhBU1hGM1p0aTYzWmdkbjlBdXduamRTc0dtMXhlMDc2ck0?oc=5",
+          "title": "【決算速報】石原産業、中間経常3,854百万。事前予想を上回る(アイフィス株予報) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQQ0J0ZnVhNnZCUlNPZ3Y3SmpaOWRjTlV4SUQxczFyd0FFMnFUTHFqdDNzR2tNbDE2MEJDZldfbk9mTVhnUDFrQnp0dmYzN2RVTWpyZzQzcXhKZ2VTa1dweDFhN0oyb3ZuLXk0WXFJanFrU1JwbDFWWTltOUU2YjR5UFhJQ0Q2RTg?oc=5",
           "source": "Yahoo!ファイナンス",
-          "published_at": "2026-11-05T16:00+09:00"
+          "published_at": "2026-11-06T13:00+09:00"
+        },
+        {
+          "title": "【決算速報】石原産---27年3月期2Qは減益、経常利益は54.7％減(フィスコ) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdE0xa0QtdmJEMUYtTGpHbVZhdnpYQmlNb3pYUHJES3BnbEpoaGVrUlVhekt2M1FrMExzaFY1Z190bEprcF9RUDlSM1lnYTFETUNQdGx2TjF4YzZCam9XSTA4bmVIbmJHSmxrU2hnSkxfd2xsN2JnWHZPNGF1azNfSGFXQ2UwUlU?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-06T15:04+09:00"
+        }
+      ],
+      "research_priority_score": 3,
+      "signals": [
+        {
+          "label": "直近出来高が増加（5日平均/前20日平均）",
+          "points": 2
+        },
+        {
+          "label": "担当アナリスト数を確認できる市場予想あり",
+          "points": 1
+        }
+      ],
+      "evidence_count": 3
+    },
+    {
+      "code": "3036",
+      "name": "アルコニックス",
+      "earnings_date": "2026-11-06",
+      "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+      "market_cap_yen": 88650060042,
+      "price_date": "2026-11-06",
+      "close": 2949.0,
+      "turnover_oku": 16.51,
+      "avg_turnover_20_oku": 4.1,
+      "volume_ratio_5_20": 1.89,
+      "return_5d": -6.53,
+      "return_20d": -10.77,
+      "financials": {
+        "revenue_yen": 239726002176,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
+      "analyst_consensus": {
+        "revenue_mean_yen": 56500000000,
+        "analyst_count": 1,
+        "period": "0q"
+      },
+      "prior_reactions": [],
+      "sources": {
+        "fundamentals": "https://finance.yahoo.com/quote/3036.T/financials/",
+        "estimates": "https://finance.yahoo.com/quote/3036.T/analysis/"
+      },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
+      "news": [
+        {
+          "title": "アルコニクス、今期経常を43％上方修正・最高益予想を上乗せ、配当も7円増額 - 株探",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBPbU9SbC1EbDlxbmhpLXU1OS1URm9tTms4WWFEWDIwZHdJbEZTTzdpakJMVVN2bVZBMTNmT3BaUGR6N0EyUGdXN1NlVTNwQjJIOGc?oc=5",
+          "source": "株探",
+          "published_at": "2026-11-06T12:30+09:00"
+        },
+        {
+          "title": "アルコニックス[3036]：2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結） 2026年11月6日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYUlzdWFqTm55OXJYX0phZ1luRUd2dklsRTRNd3dMVmlqSjJqNDdoaFAyamw3eVNCczBYQ2hocHh2RzcwMXdQYWxDczk5bHNSRl95RkJPNm55VzlHenNXQU9SalBRUVp0ekE2U0JRTXExSVJ6N1A0eE56dTRHNHUtY2RPNzVqbFB4MWRSdVlHa1ZpY0xxdHhJeEt1VFV6VlR0Qlo2M1gzX0lZSEhEZFhEYThiNTBfRFZ4Yy12RUN6eUF0Vmd5dG91MFdDTmg?oc=5",
+          "source": "日本経済新聞",
+          "published_at": "2026-11-06T12:30+09:00"
+        },
+        {
+          "title": "【決算速報】アルコニックス---27年3月期2Qは増益、経常利益は250.6％増(フィスコ) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPS2R4bTVlMTMwQ0ZDM3RONHMyUm1OSTNET1F5QjVnTU9iSVZtWV9zdXdXTUxqVFJhZzlnZ2V5OVRhLXpkRnBlaHdyTy1DYlZDdjBwTm5KbTZoblpLWVRMRHVOcXJPdDdpeWR3aW9sRm4xVDFRVmZfWkNCRDdKN2RNaE0xLTJ2UkU?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-06T16:16+09:00"
+        },
+        {
+          "title": "【決算速報】アルコニックス、中間経常13,883百万。アナリスト予想を上回る(アイフィス株予報) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZkk0Y1VWSi15Q2xzdWVWWDdWQ3M2ZnZCRXNZSGFxY29ZM1NHNzJOa0NtVTBsQ0pqdl9jMmJzN3lVcTRQTnBuQU5LU3BrbUwyb2toejlxY1R0QmZRMEVMV3Q5VW9Wc2NaRmh3UVVlLXZiQlhhVG9PX1EyWFkyRXpJMFRJUHBoUEk?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-06T12:30+09:00"
+        },
+        {
+          "title": "決算速報＞アルコニクス、２７年３月期第２四半期決算は純利益４．０倍(ウエルスアドバイザー) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPek5YS0FkWXdyTHl5dEo5bkZIX25mdnU2dGJpeVduaEMtVU1TaUliSWlRYlNjMFZyV3hwNTE2YmxGTVhrbmtiNkNjXzNCbEdMbzZoMDJvSElOMS1CSWl5ZmF4WE9Dd0h1T1MwNXU1NmY2VlZ6a2FqY1pQNnplTS1KMUNrbGhkRVE?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-06T12:30+09:00"
+        }
+      ],
+      "research_priority_score": 3,
+      "signals": [
+        {
+          "label": "直近出来高が増加（5日平均/前20日平均）",
+          "points": 2
+        },
+        {
+          "label": "担当アナリスト数を確認できる市場予想あり",
+          "points": 1
+        }
+      ],
+      "evidence_count": 3
+    },
+    {
+      "code": "6140",
+      "name": "旭ダイヤモンド工業",
+      "earnings_date": "2026-11-06",
+      "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+      "market_cap_yen": 47458460618,
+      "price_date": "2026-11-06",
+      "close": 986.0,
+      "turnover_oku": 12.14,
+      "avg_turnover_20_oku": 5.21,
+      "volume_ratio_5_20": 1.94,
+      "return_5d": -10.2,
+      "return_20d": -14.63,
+      "financials": {
+        "revenue_yen": 43081998336,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
+      "analyst_consensus": {
+        "revenue_mean_yen": 11375000000,
+        "analyst_count": 1,
+        "period": "0q"
+      },
+      "prior_reactions": [],
+      "sources": {
+        "fundamentals": "https://finance.yahoo.com/quote/6140.T/financials/",
+        "estimates": "https://finance.yahoo.com/quote/6140.T/analysis/"
+      },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
+      "news": [
+        {
+          "title": "旭ダイヤ - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBOVGhTc29xUmE4MzRlQldEMjZRODdoLV9SR2tSOEpvMkxuMXVra0lqVFBtenlXWWlFbWdfMUJRTE1YckVpZTlzelZJSlM1LWktZG1uZk9ZSUxtVHkwSDE3aWtpSUlqODZxNWc?oc=5",
+          "source": "日本経済新聞",
+          "published_at": "2026-11-06T15:00+09:00"
+        },
+        {
+          "title": "旭ダイヤ、今期経常を23％上方修正 - 株探",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1KbXZMQ042SWg4TGdDblNkdTVhbGx5aEt6cXo2ZTlrZERoZkoxZFNkMUIxTkY5eWFwVXNKckd1YkhLc2RSLVJuT3hsRHZoaHh6RkViSDB0VkJEcHJHcy1wS25R?oc=5",
+          "source": "株探",
+          "published_at": "2026-11-06T15:00+09:00"
+        },
+        {
+          "title": "【決算速報】旭ダイヤ、今期経常を23％上方修正(株探ニュース) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNEZweUY1cmk3SlRtSUZzTEVWdUh1azQ0LVZwSFgxVmJlWk9XSEM5TTRDaXhSUHhIWEREXzRYMTVVdlEwZ19GZ0JVcmVlLXRqcnlwT016YXhJb3FGQTdkN1VGVTd0ak95cG10TURkNy1rVE9NaTlfZUFSTm9JRHJfTVJ0VUx0VE0?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-06T15:01+09:00"
+        },
+        {
+          "title": "【決算速報】旭ダイヤ---27年3月期2Qは増益、経常利益は131.8％増(フィスコ) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNUzJ5MktZTEV3aG9KUzNWZ0tXcFJ3S2dmYUZEVFVWU3hPbml3dDkzZmhLLTBFdVhYUVlSUnYxUy1MZWs4SzNOZ1JUVEJsM0hteFF0LWZOUDYzd0ZCdTBnbWk4VHZTYUxpNlpwc1hEZ1hYOHdkS3lqVFRfWUlkTmt3c3dqNUlsek0?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-06T18:47+09:00"
+        },
+        {
+          "title": "11月6日に業績・配当予想を修正した会社はこちら - 四季報オンライン",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1Dak1hbFBJM2hkWTk1U3pjcHhGTVhRcEpPLWl2cXJKRUxUZ1RHTXFGNUNOd0Q3S252ck94Zm40RW9ESkdUSU5qQVdWNENHVFZoMldnUXBvMA?oc=5",
+          "source": "四季報オンライン",
+          "published_at": "2026-11-06T16:30+09:00"
+        }
+      ],
+      "research_priority_score": 3,
+      "signals": [
+        {
+          "label": "直近出来高が増加（5日平均/前20日平均）",
+          "points": 2
+        },
+        {
+          "label": "担当アナリスト数を確認できる市場予想あり",
+          "points": 1
+        }
+      ],
+      "evidence_count": 3
+    },
+    {
+      "code": "7721",
+      "name": "東京計器",
+      "earnings_date": "2026-11-06",
+      "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+      "market_cap_yen": 78056683500,
+      "price_date": "2026-11-06",
+      "close": 4750.0,
+      "turnover_oku": 21.72,
+      "avg_turnover_20_oku": 14.82,
+      "volume_ratio_5_20": 1.17,
+      "return_5d": -16.23,
+      "return_20d": -35.46,
+      "financials": {
+        "revenue_yen": 62231998464,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
+      "analyst_consensus": {
+        "eps_mean": 23.14,
+        "analyst_count": 4,
+        "period": "0q",
+        "revenue_mean_yen": 14784250000
+      },
+      "prior_reactions": [
+        {
+          "event_date": "2026-08-10",
+          "after_1d_pct": 1.25,
+          "after_3d_pct": 2.91,
+          "after_5d_pct": 7.35,
+          "eps_estimate": -22.53,
+          "eps_actual": 1.9,
+          "eps_surprise_pct": null,
+          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
+        }
+      ],
+      "sources": {
+        "fundamentals": "https://finance.yahoo.com/quote/7721.T/financials/",
+        "estimates": "https://finance.yahoo.com/quote/7721.T/analysis/"
+      },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown"
+      ],
+      "news": [
+        {
+          "title": "東京計器、今期経常を4％上方修正・最高益予想を上乗せ - 株探",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB5SDA5RFE2X2ZOWVo5a0F2SnRYZFNseWh2ZDlQQURFTkxlZzVCRU1xME1IOU02ZHZDOUx2ZTR2enEtTlFvSlQ2VE42TkxQemFyQlE?oc=5",
+          "source": "株探",
+          "published_at": "2026-11-06T16:00+09:00"
+        },
+        {
+          "title": "【決算速報】東京計器---27年3月期2Qは減益、経常利益は0.5％減(フィスコ) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPekhwY214Rk5pSDZaRVR3TmZHNldNUEF6UWVuZ2h5c0tIQ0Q3cFFsb3oxZ0dtcHFnNHk4M0RlZS1kZkF5Qjd4ejl0bURyWmk2UEk1T2dfcnB0UUZoSTN3WldnQXljTHN4a1hCX3NiN2Z3bEJqck5rcEpZMDJ2Uk9ncUo0Zmk3bkU?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-06T20:04+09:00"
+        },
+        {
+          "title": "決算速報＞東京計器、２７年３月期第２四半期決算は純利益１２．６％増の２ケタ増益(ウエルスアドバイザー) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbmpiMjYySVE0U09jbGRBRFVCS3M3WEJZekZUSWZ0b1E1aGxnN3JKOVpLaDlhZ3JLMUhDREdNS0dlUGlta00ySWJXWWtaWHhsWl9RdFcycnZiSFFzSDN2ZnFJUzhVRzRXNDdGMXFhU1dqMmU0RWxMUHdDMmhodWVzX3NacVdjMU0?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-06T16:01+09:00"
+        },
+        {
+          "title": "【決算速報】東京計器、中間経常821百万。(アイフィス株予報) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOWW5hRmVTNG5OOTlfSVBERG1LOTZHaGU2bGNhVzBPTzRiVGIyLW5CYXlWWlJaUlpPaDlpWUZJQ3JuWGpCRmxEYWYxZ0wtZDcxTXVBT1QwVFFxVENZbE41Y2tEekN2aEZEb3F1eW9USkdwV0kxNVV1ek9GM01JdWN1SWlZcFdSLU0?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-06T16:00+09:00"
+        },
+        {
+          "title": "【アナリスト予想】東京計器、27年3月期経常予想。対前週1.7%上昇。(アイフィス株予報) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQREw2X29JREVUSHdpZnRWUFJRZ3d1Vzk0emlGbjVXTG1VblFvVVlRVXNDOHNTdFVHb0JMQmh4QzMwTVVjbzZTNG5Lb3lLMU00R1NMa2ZIT3ZmTHlFRlNfdXRMUDVma0xlZXVEaEYzMlQyczQwU0lSSEtTRzRNQUtoTy1QcHlvNWM?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-10-26T22:46+09:00"
+        }
+      ],
+      "research_priority_score": 2,
+      "signals": [
+        {
+          "label": "担当アナリスト数を確認できる市場予想あり",
+          "points": 1
+        },
+        {
+          "label": "過去決算日付近の株価反応データあり",
+          "points": 1
+        }
+      ],
+      "evidence_count": 4
+    },
+    {
+      "code": "6143",
+      "name": "ソディック",
+      "earnings_date": "2026-11-06",
+      "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+      "market_cap_yen": 64220284375,
+      "price_date": "2026-11-06",
+      "close": 1285.0,
+      "turnover_oku": 29.01,
+      "avg_turnover_20_oku": 24.16,
+      "volume_ratio_5_20": 0.69,
+      "return_5d": -14.28,
+      "return_20d": -28.13,
+      "financials": {
+        "revenue_yen": 89513000960,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
+      "analyst_consensus": {
+        "revenue_mean_yen": 22730000000,
+        "analyst_count": 1,
+        "period": "0q"
+      },
+      "prior_reactions": [],
+      "sources": {
+        "fundamentals": "https://finance.yahoo.com/quote/6143.T/financials/",
+        "estimates": "https://finance.yahoo.com/quote/6143.T/analysis/"
+      },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
+      "news": [
+        {
+          "title": "決算:ソディック純利益2.1倍に上振れ 26年12月期、AI向け好調 - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5Oenk2SHd4MDRoSEJMS3AxOXNTZzlZMGxXZzlQRnNINGxtMldzWE5xSU1xUmlDMVN2amRLVDJpUExESDVXMDYwcFhMRVh2ZTg0TEtsWTRFOElfanVqcG1yNS1UdDFkZkVfb3RVeg?oc=5",
+          "source": "日本経済新聞",
+          "published_at": "2026-11-06T16:32+09:00"
+        },
+        {
+          "title": "決算速報＞ソディック、２６年１２月期第３四半期決算は純利益３．２倍(ウエルスアドバイザー) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdGREMHBSY1lzUjJEQ2t0NmNSeTlBcTdvVlVPRVR4UWk4dVhZemVOQmx6ZDI0R0FRZDRNZWMxb3FxNTZoMG5EeW1yQ05CSkE4VzBCRFVRLVpNVEYweEh1NDJVZTBHVkU2YWtwa0d5M1hFRktVSHExaHpzeEp4UUZZanBjSmFVM0E?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-06T15:00+09:00"
+        },
+        {
+          "title": "ソディック、今期経常を21％上方修正・最高益予想を上乗せ - 株探",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1VUjNjc2ZKQXByRVNIYVJsMHo4NFV4ZWxVZUhtd1dzejZEVjBGUHNlRFladHRPcnRjRzQzclVpU3djc3M0TDNPcFpaWU9UYUZnUXdZ?oc=5",
+          "source": "株探",
+          "published_at": "2026-11-06T15:00+09:00"
+        },
+        {
+          "title": "ソディック[6143]：2026年12月期第３四半期 決算短信〔日本基準〕（連結） 2026年11月6日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8xRDJOM2hZSjBYZWF6M05yZXJiMEttbUJxRmNQNUkwOE1JWnhfTzVSakloeHVfMXpIbldSY21uek01Z1EwMzhzZEx0bjB6SDl2dzVCMXVvaHZpVGNRWFJXMU5iVVUyTlVCM0E?oc=5",
+          "source": "日本経済新聞",
+          "published_at": "2026-11-06T15:00+09:00"
+        },
+        {
+          "title": "【決算速報】ソディック、今期経常を21％上方修正・最高益予想を上乗せ(株探ニュース) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQMWtDamhST1hnVkVmRS1LTmVUc1BQUGh4Ni1nVHlsQkZCTV9CTzVOdnV2N3JKQUtrdk9JRXYzdXZrYXhPdllnM1ZkRDJya2hDUUlUNy1vTzdITWluQk9kbFNSV3YzMnRSWE8tNjl4YkZXaXhxclJ4Z2ZfcjhIQVhxUG9xbjFHdzg?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-06T15:01+09:00"
         }
       ],
       "research_priority_score": 1,
@@ -568,20 +656,20 @@
       "evidence_count": 3
     },
     {
-      "code": "6327",
-      "name": "北川精機",
+      "code": "5602",
+      "name": "栗本鐵工所",
       "earnings_date": "2026-11-06",
       "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-      "market_cap_yen": 17871120144,
-      "price_date": "2026-11-05",
-      "close": 2188.0,
-      "turnover_oku": 7.39,
-      "avg_turnover_20_oku": 6.93,
-      "volume_ratio_5_20": 1.3,
-      "return_5d": -24.76,
-      "return_20d": -35.84,
+      "market_cap_yen": 84739572980,
+      "price_date": "2026-11-06",
+      "close": 1439.0,
+      "turnover_oku": 11.51,
+      "avg_turnover_20_oku": 5.31,
+      "volume_ratio_5_20": 1.47,
+      "return_5d": -13.78,
+      "return_20d": -9.67,
       "financials": {
-        "revenue_yen": 6607000064,
+        "revenue_yen": 129762000896,
         "period_type": "ttm",
         "latest_period": null,
         "data_source": "Yahoo Finance TTM summary, not company IR",
@@ -589,14 +677,14 @@
         "operating_income_yoy_pct": null
       },
       "analyst_consensus": {
-        "revenue_mean_yen": 2620000000,
+        "revenue_mean_yen": 31931000000,
         "analyst_count": 1,
         "period": "0q"
       },
       "prior_reactions": [],
       "sources": {
-        "fundamentals": "https://finance.yahoo.com/quote/6327.T/financials/",
-        "estimates": "https://finance.yahoo.com/quote/6327.T/analysis/"
+        "fundamentals": "https://finance.yahoo.com/quote/5602.T/financials/",
+        "estimates": "https://finance.yahoo.com/quote/5602.T/analysis/"
       },
       "missing_data": [
         "Only TTM revenue available; quarterly year-on-year change unknown",
@@ -604,34 +692,34 @@
       ],
       "news": [
         {
-          "title": "北川精機(株)【6327】：今の株価の理由は？値動きの背景をAIが解説 - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBUTVR2QkE2N3Vaa3c2SUkxYWJ3bVZCOElRNW9ja2FpbHRqZ3pqdGpEcFo0SFQ1RG5pZW9XeEh0TVN4ZGw4VjJXek94WTA0UTNBREptcnRSaU1haXRRMVZJ?oc=5",
+          "title": "【決算速報】栗本鐵工所、中間経常3,580百万。アナリスト予想を下回る(アイフィス株予報) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOUW9RN25OTTgwZjZURUlFcndZcjZEbFBESlo2c0pZM2dvZE81bE5FWmtZdy16YUZsODQ4NkJXV1NIT1Ata2c5UmR4MXM3OGk5d0ZvbWpSeHpENFN5clAydUczV18zQ1pLWkdMdzJUMG9oQTc1WUF5anRNS3llUjU0Z25JeEZvTFU?oc=5",
           "source": "Yahoo!ファイナンス",
-          "published_at": "2026-11-04T15:56+09:00"
+          "published_at": "2026-11-06T13:40+09:00"
         },
         {
-          "title": "★本日の【イチオシ決算】 日本製鉄、ソニーＧ、太陽誘電 (11月5日) - 株探",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE95M1lxOGpYX29sbS1ZdUpncEdiYWRwQnRVb2MxT0xmQk9nVkRuMkV6VDZDUGVfSVl2Mjd2bHlZRW1YaTB4bFdPNDdMQ1Z3YU9iaWVldWd0TDY3bW1pd0NqaQ?oc=5",
+          "title": "栗本鉄、上期経常は8％増益で着地 - 株探",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9pNWJReUgyMWZaLWR3d3FvUUFwUjN4cVNSb2N4VmpxS1VGZU53RDNvb0Q1TEJaMUZva0VIa1hVRXNVREE2c2J6RUg0YW5Zc1oxZ3c?oc=5",
           "source": "株探",
-          "published_at": "2026-11-05T19:43+09:00"
+          "published_at": "2026-11-06T13:40+09:00"
         },
         {
-          "title": "明日の決算発表予定 三菱重、サンリオなど255社 (11月5日)(株探ニュース) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNLVo3M094UTJ3Z2Q5S2FPWF9VSEt5dE5GN09lR1N1dXJ1c3VrUlF5bTV1M3RZYXRRM2xwQjY2UGotWFl4a3h6ejd0UklhMWhKOFVKX1Q0X3JmeFBfUnZjRW5UME4zSmJXUkRreHlmWHdBREwtUFl1aDAxUS05RTd6QkpDUlczWTQ?oc=5",
+          "title": "決算速報＞栗本鉄、２７年３月期第２四半期決算は純利益２．６％減(ウエルスアドバイザー) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQM05aTEFXdG92SkpaUnBuRm8xQUNvWEl5NkJOODJ4aWlYcGRsem8zUG8xWmRSdlpEZHMtWHdhTVl2VFhaMWJicWRKc3hyY1hxaGpIUVZRWm9PQ1kyMFk2MlllMVdmdFRCUkV5VVp0b3dlUWhuRkJ3LUtSdFNaUUhRdnFFOEFIc1k?oc=5",
           "source": "Yahoo!ファイナンス",
-          "published_at": "2026-11-05T15:41+09:00"
+          "published_at": "2026-11-06T13:40+09:00"
         },
         {
-          "title": "★本日の【サプライズ決算】速報 (11月05日) - 株探",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1QSUxaNEx3LW5EYlZYalo5S3ExVUhjblQ2UGdHYTlCVURhTFp3RGZTUHNZTlZHMWZJY1NzdU9kdVdKSks1dWNZTndnUXdWb3dORzZIYkNiV0JMNjBPNkNKZg?oc=5",
-          "source": "株探",
-          "published_at": "2026-11-05T16:34+09:00"
-        },
-        {
-          "title": "【決算速報】トリニ工、上期経常が30％減益で着地・7-9月期も31％減益(株探ニュース) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOLVJuQnIyV2ZIdkJYcmZ2cUhPeUZ0VUVSbTRmcW9yZl9GeEJMZEtlSVpHSnllU3JDSHd3TE82Y3FONUpOZTZlaHVHVjVNWUtyaWxkSWRJR0FwMV9kUDRQMjJsRHg2c2E0dmkyMzJMZnJUVnktZDNmTnBIdGtGQUJSRVNzdzR2MFU?oc=5",
+          "title": "【決算速報】栗本鉄---27年3月期2Qは増益、経常利益は8.1％増(フィスコ) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPME9CYm5vazQzaVZOM1YyZlh6c0htQ1lUN3NmNGJFeGxiTV83eHc4aEJyLTF5SWlsUGZ2bVhZMEpaREZFMTFOUmxSUno3UHZYSS05QnB6Q3hwYzFJTjZod0RWTXEyTmFJa2tvdXJMMmc0QURCSmJkdUcxQVhzVkIweGs5V3h2SDQ?oc=5",
           "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-28T15:01+09:00"
+          "published_at": "2026-11-06T16:16+09:00"
+        },
+        {
+          "title": "【決算速報】栗本鉄、上期経常は8％増益で着地(株探ニュース) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPbGVWci1qcVRFZ1o0bzZkTEpfVHFhdzQ3NkVNc2VBbGdYdEpkMU1jOEVCeEZBdHoyOHNRZTZIYldQaXhmc001LVBveWdGNElkaVBRRWpmWm1QdWREWnRJSW15QkE0bjF1M1VqUXFNbzRrcVd3OGJyd1ZlcmV6WVNfbnJkWXpzakk?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-06T13:40+09:00"
         }
       ],
       "research_priority_score": 1,
@@ -648,14 +736,14 @@
       "name": "東洋合成工業",
       "earnings_date": "2026-11-06",
       "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-      "market_cap_yen": 58255656920,
-      "price_date": "2026-11-05",
-      "close": 7340.0,
-      "turnover_oku": 6.42,
-      "avg_turnover_20_oku": 7.34,
-      "volume_ratio_5_20": 0.96,
-      "return_5d": -20.22,
-      "return_20d": -34.93,
+      "market_cap_yen": 54525390060,
+      "price_date": "2026-11-06",
+      "close": 6870.0,
+      "turnover_oku": 9.3,
+      "avg_turnover_20_oku": 7.58,
+      "volume_ratio_5_20": 1.19,
+      "return_5d": -25.57,
+      "return_20d": -37.72,
       "financials": {
         "revenue_yen": 14944000000,
         "period_type": "ttm",
@@ -686,28 +774,104 @@
           "published_at": "2026-10-29T19:02+09:00"
         },
         {
-          "title": "東洋合成工業(株)【4970】：板気配 - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5ibjg4ZEtlTEhKSzRZMlJ0S1A4c1MwaTUzeFZqMDQ1TGltSmRyMTQ0RDgwOG1UaU5Uc0NTRWpTdjhQcHRmVXliclhTN05CeWlxOUIxeGJZcHQ4U0RELW1N?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-30T16:00+09:00"
+          "title": "東洋合成 - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNRE5RQ2J2bTdJb0Q2WUl1aVlRVks1b3VnOFJ5aUxZTWw4c2JtcHZOT1drWEJ6aFZfT2tLQnI0V3NsWHI4WS01UV8zZkQ3SUYtVHZmcXZzQ0pJU2FjQ2lwektJR200Y1drZjJocmlHdlJKaDMxbVNsc3VlaFpoWEhhaEcyQkNFSXRLR0pYbjdyZmQxOGZIa055Q0RXbExWVlJqcFQxbFpacURxVVNrVUptNS1tdkNjWVNnS3A2OElPbHVsNFNuVVVPR1F0UXQ?oc=5",
+          "source": "日本経済新聞",
+          "published_at": "2026-11-06T15:30+09:00"
         },
         {
-          "title": "【アナリスト評価】東洋合成工業、レーティング強気を継続、目標株価15,700円に引下げ（米系大手証券）(アイフィス株予報) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQX0JnZTdLd3lKNFlGWmlMaFpMSllzTjhUV2R6SWJLM1RDUmp2YWhyVDZnS05WY183dy00SlNTSnpqME15TDNlVmxLSENwRmNMNlZ5RDFyeDZiTXI2NUxIU3JKRGIwOUZ6Q21lR3V6SFJQRmdOZkZRVUE2d0pHMTY1VVAzTEYtQTA?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-27T16:39+09:00"
+          "title": "東洋合成、今期経常を13％上方修正・最高益予想を上乗せ、配当も10円増額 - 株探",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBmYzhCVVYxbjhjMmFwblozRU9XOWZRYnI4MlpOWlBNNC1BcVhwS25TOHI0b2JubjFvWGxzREZPV3hMcXE3dEdta3FBVm5CWlVTQkE?oc=5",
+          "source": "株探",
+          "published_at": "2026-11-06T15:30+09:00"
         },
         {
-          "title": "【アナリスト予想】東洋合成工業、27年3月期経常予想。対前週1%上昇。(アイフィス株予報) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSUU0RmRpRnB0blRIVllTM0pLYmUwbVJnRlRVMVJnXzQxSGtUUFJ6V3d6dFU4S1pKMnFidjdGWV8xQjZjc1pvclhfZjVnOUZKYW4zUHBraGotaTdPUTd4QnlQRndZV2sydVRVWnV3NjlFRENjSGN4c3hDRS1VMEowX2tPQjRKSzQ?oc=5",
+          "title": "決算速報＞東洋合成、２７年３月期第２四半期決算は純利益４．４倍(ウエルスアドバイザー) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQV25WdzUxVk9ZSmQ3cmtWYmR4ZDhndUpFM2dGYzV4NjRaQ0xEN0Y3dmtXamFubkpNVGxBd1RoOEJZVzRkcFhYRHdrV1huNEN5RnBPbzBsSkpqOEpVdl83NVlheGlLekFLRDFLb0c2OC1PdXpQM245VzJYMVdsd25Ba3RWU3dkWW8?oc=5",
           "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-27T16:00+09:00"
+          "published_at": "2026-11-06T15:32+09:00"
         },
         {
-          "title": "【決算速報】北興化学工業、26年11月年間1株配当64円。(アイフィス株予報) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPTFlnRTI3N1pYQ2N6cTduN1dzVldjSlNUcmdMY1djX2g3TTRWa2JYSXhUYnRGeV96MVZRSGZkTXFUN3c4UjRXd2MwVUNGb3lGS0RvdUlfb0FSbmdiX1NqSlhnS2ZuVy1WTGF4OWRUWkZjOWZ1MHotR3B0VWh6YTFYRzZRQW9JWk0?oc=5",
+          "title": "【決算速報】東洋合成---27年3月期2Qは増益、経常利益は346.7％増(フィスコ) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQZHdhNEtxdDI5QnplRERtRXZ5ZGU4c01TWHZXalpMV1RSTGhFeVdqakp4WFR5aVFzQnA4ZFV6eWd1bE90ZGs3VjdXM0t0cHNUNF9udjZXcVlCWlEtTGVERzFmb0dKWWI4Njg1ZU43SWFEMEMzdzEyOW8yZzdHM2NyWDV0cmx0c1E?oc=5",
           "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-27T15:30+09:00"
+          "published_at": "2026-11-06T18:47+09:00"
+        }
+      ],
+      "research_priority_score": 1,
+      "signals": [
+        {
+          "label": "担当アナリスト数を確認できる市場予想あり",
+          "points": 1
+        }
+      ],
+      "evidence_count": 3
+    },
+    {
+      "code": "7613",
+      "name": "シークス",
+      "earnings_date": "2026-11-06",
+      "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+      "market_cap_yen": 74147528169,
+      "price_date": "2026-11-06",
+      "close": 1573.0,
+      "turnover_oku": 7.75,
+      "avg_turnover_20_oku": 3.51,
+      "volume_ratio_5_20": 1.44,
+      "return_5d": -3.26,
+      "return_20d": -4.32,
+      "financials": {
+        "revenue_yen": 297309995008,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
+      "analyst_consensus": {
+        "revenue_mean_yen": 78000000000,
+        "analyst_count": 1,
+        "period": "0q"
+      },
+      "prior_reactions": [],
+      "sources": {
+        "fundamentals": "https://finance.yahoo.com/quote/7613.T/financials/",
+        "estimates": "https://finance.yahoo.com/quote/7613.T/analysis/"
+      },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
+      "news": [
+        {
+          "title": "シークス[7613]：2026年12月期第３四半期決算短信〔日本基準〕(連結) 2026年11月6日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPUVpBZ1AzVXJGNl9mdDY1RHFxZDJEdW9yTVRRV1JuV0dZYThzR1E0b1o0Vm1wNEh1WjAxRGZrWWNTY0NuTTZFMldYWHY2R3VKOFptWXhJeW55ejN5U1UtMk44OC0yaTRCN2szVzNZeUFzRGFZZE5IT0RnUHdpNE1PcjdYV0FHOHNWUWxwV2R3MEJyZlMxUk0tdXI5VUtmTmRGM050U1VfMlhyZ3J2QjNjanJxaDVPZ19yYjNMR3UweVJZXzlGYXgxTDNxVnI?oc=5",
+          "source": "日本経済新聞",
+          "published_at": "2026-11-06T15:30+09:00"
+        },
+        {
+          "title": "シークス(株)【7613】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1MSmxSOU9iTUNxUmRtWUtSTm1sTUNCemJQc1UteU9FN0NZeS1jNmxlUnZQZ1RrbFFSNHNmaHpDV0daUGQyN2lHTHVadDRqVkdvV1BjWi16NzZITE05bHpoSVZsekRtbW00cTRvRlg3SXF0dVBy?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-10-29T19:02+09:00"
+        },
+        {
+          "title": "シークス、1-9月期(3Q累計)経常が39％増益で着地・7-9月期も49％増益 - 株探",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE95aklxNEdOMG8zUGFiLTAxWTE0Y3pqdmtyVDR5WHNqMjd3OUdqdk9mMm9SU21jUXNSanM1M0NvVGk2WkNtc3psWVEwYXo3aWFYdUE?oc=5",
+          "source": "株探",
+          "published_at": "2026-11-06T15:30+09:00"
+        },
+        {
+          "title": "【決算速報】シークス、1-9月期(3Q累計)経常が39％増益で着地・7-9月期も49％増益(株探ニュース) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZ3oxT3A4V3M3dXNyR2pvaTR1LVVldVlXdlFfOTVZUTRWMVB6dmRhZjNpMkwzbXFLVjY2anB0aUNFNUN5bUVTMVhfV0h5X2JBUzU3RWRCU0gzY0VuMF9sZU1yTVlJNnAzOWlzejlEZ0NhRkMwb0E1NW1RLXphTzlFWHhQcnhWOGM?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-06T15:32+09:00"
+        },
+        {
+          "title": "【注目トピックス 日本株】シークス Research Memo（7）：2026年12月期中間期の利益は日本と欧州がけん引 - マネーポストWEB",
+          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBMUVJsYlhWbGR1ZGpMZzVkLXYwRTd5dTdUWW9vbFdVSE9KX2Z1OFFTZUhLRUpMQU9XZGxwZy1FNEZ5ektZX0Vv?oc=5",
+          "source": "マネーポストWEB",
+          "published_at": "2026-10-29T11:07+09:00"
         }
       ],
       "research_priority_score": 1,
@@ -724,14 +888,14 @@
       "name": "月島ホールディングス",
       "earnings_date": "2026-11-06",
       "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-      "market_cap_yen": 90647199447,
-      "price_date": "2026-11-05",
-      "close": 2289.0,
-      "turnover_oku": 5.8,
+      "market_cap_yen": 86330666140,
+      "price_date": "2026-11-06",
+      "close": 2180.0,
+      "turnover_oku": 7.71,
       "avg_turnover_20_oku": 8.6,
-      "volume_ratio_5_20": 1.06,
-      "return_5d": -3.34,
-      "return_20d": -13.0,
+      "volume_ratio_5_20": 0.81,
+      "return_5d": -8.86,
+      "return_20d": -15.54,
       "financials": {
         "revenue_yen": 151321001984,
         "period_type": "ttm",
@@ -756,10 +920,34 @@
       ],
       "news": [
         {
-          "title": "決算:三菱化工機の純利益6億円上振れ 27年3月期、ＧＸ関連の受注好調 - 日本経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBQNE1ZeVBJUnMzQ0p3YlEzakctSnpXdTV3M1dKVmpzbjVOek44SUx6QlozRjhwWHQ3QTllWmVqWU91Z3NIdkx6ekdBamwtRmZrYUtCbU14NUlqYl9iWUw5UGxMc19iNnU0RnVzWQ?oc=5",
+          "title": "月島ホールディングス[6332]：27.3期 第２四半期決算補足説明資料 2026年11月6日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNZmlOOVM0cVBPcUFsYWtvbXNWcWE1N2szR0l6ZnZYdmZBUFhWVDZUeFpSU0ZvOXhpM0tiaElkUjJsUDVqY21reFhLWC1SRVFrdEMxNG1oeVVQSmpkZDhYak04NXJQRmxVWXI1eWpoYWY5YnZFNDNYVDNIV2EtU2JDUENfaEV6TzU3RWVpa2tMYXRWTDlIM3NaSG9EVmRiV1BHUFZGQnozUWZtTkNpRC1UeDNVNVZqdjhGWWFFcVhuTm9OLU1LYVZEN0pSMmo?oc=5",
           "source": "日本経済新聞",
-          "published_at": "2026-10-30T16:59+09:00"
+          "published_at": "2026-11-06T14:30+09:00"
+        },
+        {
+          "title": "決算速報＞月島ＨＤ、２７年３月期第２四半期決算は純利益７５．４％減の大幅減益(ウエルスアドバイザー) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdW9GLVV6SGdZb1g4TUZvOU9vSkF2dnZLaXNGQmRXMHRNVmcwNWoxY2FMM0Ffc2NoZUM3ckF5aEdtakJYQnhzMGdkN0hUNDhJb3BQZHlsbjRBU1Bsb25zSVhmTV9wZndpVzhhVHZIU29ySkhuekh4UFM1Qkg5VjNtcjNiTi14clE?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-06T14:30+09:00"
+        },
+        {
+          "title": "月島ＨＤ - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOY24wWE9XYzRLekotZG9FYUpya1JfVWJ3b3FpdEFGMXRSbzlNcmozTmJMc3RIaDRkVTJaWDFxN3QzbXgtV0p1UUV0dkdqWTQ5Y1FRLWxTSVNCODNPY3F4T1FwOExZOVVxSzJQYVlBNGNPTjc1M3NTUlFDR3lHZkRHdGtJRXl2cllqZFo3UTBvUFdiNU9VcTJvbnQ4S1lrVDVvNzNzUHAwRnVsTk5zaHQxV3E4QVZteUFjVVhRZnJCbUJIM1hheTJUWk5CU1U?oc=5",
+          "source": "日本経済新聞",
+          "published_at": "2026-11-06T14:30+09:00"
+        },
+        {
+          "title": "【決算速報】月島ＨＤ、7-9月期(2Q)経常は46％減益、今期配当を5円増額修正(株探ニュース) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPcnpjYVhyNVZyUTF5UmJabGtQOVdfVHpxb0hMR2dsaUZPQm1OZVl5SXdnSlk2cUlyVWQ3VWJTOXFjdkVZQWRPRm1jc0o5RFdLRWxhVXIxWHRFNW4wdmhfaDhKRzd5N2VENWdycjZZZEdsM2FlZ0hxSk52Q3BDQVNSaVkwZF9CVmc?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-06T14:30+09:00"
+        },
+        {
+          "title": "【決算速報】月島HD---27年3月期2Qは減益、経常利益は24.8％減(フィスコ) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNYmxVbVR1WXNVZjhKTlRWbXUtSjk1bDBTZThLLU9FUlhVa1NwNm05dmFjUlBmcDZrNzZaa3ZKU0JaeVRPZjN3alJNMkVkRzlKWHRYNHVUb1dwSTgzTzludW5ndGk1YXpLbHNJQktLbzkyN3p5UGRDY0oxX3VCNEl2VzJ6dTJOOG8?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-06T18:47+09:00"
         }
       ],
       "research_priority_score": 1,
@@ -772,20 +960,20 @@
       "evidence_count": 3
     },
     {
-      "code": "3036",
-      "name": "アルコニックス",
+      "code": "6327",
+      "name": "北川精機",
       "earnings_date": "2026-11-06",
       "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-      "market_cap_yen": 88229205230,
-      "price_date": "2026-11-05",
-      "close": 2935.0,
-      "turnover_oku": 4.71,
-      "avg_turnover_20_oku": 3.46,
-      "volume_ratio_5_20": 1.11,
-      "return_5d": -7.12,
-      "return_20d": -12.78,
+      "market_cap_yen": 16654119732,
+      "price_date": "2026-11-06",
+      "close": 2039.0,
+      "turnover_oku": 6.73,
+      "avg_turnover_20_oku": 6.84,
+      "volume_ratio_5_20": 1.46,
+      "return_5d": -28.23,
+      "return_20d": -41.07,
       "financials": {
-        "revenue_yen": 239726002176,
+        "revenue_yen": 6607000064,
         "period_type": "ttm",
         "latest_period": null,
         "data_source": "Yahoo Finance TTM summary, not company IR",
@@ -793,14 +981,14 @@
         "operating_income_yoy_pct": null
       },
       "analyst_consensus": {
-        "revenue_mean_yen": 56500000000,
+        "revenue_mean_yen": 2620000000,
         "analyst_count": 1,
         "period": "0q"
       },
       "prior_reactions": [],
       "sources": {
-        "fundamentals": "https://finance.yahoo.com/quote/3036.T/financials/",
-        "estimates": "https://finance.yahoo.com/quote/3036.T/analysis/"
+        "fundamentals": "https://finance.yahoo.com/quote/6327.T/financials/",
+        "estimates": "https://finance.yahoo.com/quote/6327.T/analysis/"
       },
       "missing_data": [
         "Only TTM revenue available; quarterly year-on-year change unknown",
@@ -808,34 +996,34 @@
       ],
       "news": [
         {
-          "title": "【決算速報】明和産、上期経常が微減益で着地・7-9月期も23％減益(株探ニュース) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdWVFX2oyUU95Mk9zakxYQzk5dGl0bFB1cnZzSFR3OEotaDdxbnpjdExLVkhMb0pJME45RmpvQW85cE5xSEdDeDdVeG1OczByYzl2N1lBSWNwbS14MkRNRHdYOHI3V25DazNSVTYxQ041M0puZjhQSkJvLVk1RUcybjNQWGMtaFU?oc=5",
+          "title": "北川精機(株)【6327】：今の株価の理由は？値動きの背景をAIが解説 - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBUTVR2QkE2N3Vaa3c2SUkxYWJ3bVZCOElRNW9ja2FpbHRqZ3pqdGpEcFo0SFQ1RG5pZW9XeEh0TVN4ZGw4VjJXek94WTA0UTNBREptcnRSaU1haXRRMVZJ?oc=5",
           "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-30T13:31+09:00"
+          "published_at": "2026-11-06T15:56+09:00"
         },
         {
-          "title": "アルコニックスグループ、「統合報告書2026」を公開 - PR TIMES",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9telBrUlVNWE9hYi1kSHhJdk1kNkF2RTI2di1Hamdfd1JZSFpVcDFwOTFOR3Rkckl1c1JLazQ4WUVRMHpDZFFQek5abzB5Y3dHR2E4NDJXLVB2Nm12bnJDRVFlTFFfMWl6SXc?oc=5",
-          "source": "PR TIMES",
-          "published_at": "2026-10-28T10:40+09:00"
+          "title": "北川精機、7-9月期(1Q)経常は2.1倍増益で着地 - 株探",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8xbTJ5a3JIX0N6Zk5CeXJ1dzR3dnJQb1ZNN2tDaDRkYzBvMDBYVDB4QXdybUlTOUZmWURGTFI1azJ5aWpTa2dId3J5YXRTRTRnTkE?oc=5",
+          "source": "株探",
+          "published_at": "2026-11-06T15:35+09:00"
         },
         {
-          "title": "【決算速報】日邦産業、今期経常を一転1％増益に上方修正・最高益、配当も6円増額(株探ニュース) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPUElTRjRTVlJVME5NNFJzN2xPdHB2aW9jbjFqSFNYYW1WVnFyeGt1Nk5rOGtXZmpxcG5vdEhNWENveDVQbGdOOVp5WHJTVmFXWjMtNE1Bam95TFFwUHJaWUVrUWo2MFdZWHlwSHNFX3FmYVl3aGpEaUs4ZzRXQjNMSkhhYVpYUFE?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-11-05T15:32+09:00"
+          "title": "北川精機[6327]：2027年６月期 第１四半期決算短信〔日本基準〕（連結） 2026年11月6日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1TVE43aEtsNmNKNVZoYnU4MVNEdXpwUHBmeVJmc0pvZlV6V3hVUzVXMVVjYjFUQlFFMnJLanBvcnp5SGFnYWh2bGQweS1hUEYxNXlwdGRCNFk4ZmVWb3J3U2JpTUQ0S19oaEE?oc=5",
+          "source": "日本経済新聞",
+          "published_at": "2026-11-06T15:35+09:00"
         },
         {
-          "title": "【決算速報】高速、中間経常3,441百万。アナリスト予想を上回る(アイフィス株予報) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPYWZxcVU5MzctbnZsUEFQejlxTTFJeHdVQ3hfbDBPQmFMSW0xYjBiZFRYcHVQYXpZZkZRN3pwaWRERHd4Rll1NXQxTjVnWU1scWJLWFNUVGI4YWVVeUpSMWpBdEdNRzl2a3dCMC04NG15TEI2c1hqM0lGdGV0RF9sRFVqeWdrM2c?oc=5",
+          "title": "【決算速報】北川精機、7-9月期(1Q)経常は2.1倍増益で着地(株探ニュース) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOLVBWb3JHcG9Hc2tBeVpFOHIzTTVtTmdPSTduWU5hMjlhOEJyRG5ITldzZzZyYktISFNIMk04eURDMmJuOGVQcmE3VXc0dGgxZnhHNk81YmloalAyY1VFYk1DRGtmVzc4cncwQ2tQdlFvTTFvbFQ1ckkzWm9KVU5FREZxUTJJdWs?oc=5",
           "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-30T15:31+09:00"
+          "published_at": "2026-11-06T15:35+09:00"
         },
         {
-          "title": "【決算速報】椿本興業、中間経常3,628百万。事前予想とほぼ同水準(アイフィス株予報) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQQ3pRWVNkeGl6cEhvSmlHcm9vVXl2VjVFdTcxTUl6Ui1PeVFzVTNUU3h6cndUWk0xWGtvbGdhQVNQX0VfMDl5bkpGM3FaM19nc01RZGhad0VJcFN4MEYzSnpTSmpXa2FHMU15aVlfQllFMFNTcmFVYzlGXzN2aDlNa2ltVDR5STQ?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-30T16:00+09:00"
+          "title": "【中間決算】JMS（広島市中区） - 中国新聞デジタル",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE53WFN6cGotR29iMG9oZ0VrNmVFY2J5a0Q5U05HZWQ4SzkwUm5URXQtaHlsZDVRTnVpV3R0eXF1V2JEOEpRU2sxZnFHVm02TGJtVzllOHVYaFM4QQ?oc=5",
+          "source": "中国新聞デジタル",
+          "published_at": "2026-11-06T17:25+09:00"
         }
       ],
       "research_priority_score": 1,
@@ -852,14 +1040,14 @@
       "name": "ＩＤＥＣ",
       "earnings_date": "2026-11-06",
       "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-      "market_cap_yen": 93810799395,
-      "price_date": "2026-11-05",
-      "close": 3165.0,
-      "turnover_oku": 4.17,
-      "avg_turnover_20_oku": 5.45,
-      "volume_ratio_5_20": 0.88,
-      "return_5d": -10.97,
-      "return_20d": -23.27,
+      "market_cap_yen": 88653428433,
+      "price_date": "2026-11-06",
+      "close": 2991.0,
+      "turnover_oku": 6.72,
+      "avg_turnover_20_oku": 5.4,
+      "volume_ratio_5_20": 0.97,
+      "return_5d": -13.43,
+      "return_20d": -28.36,
       "financials": {
         "revenue_yen": 78635999232,
         "period_type": "ttm",
@@ -890,16 +1078,28 @@
           "published_at": "2026-10-28T19:02+09:00"
         },
         {
+          "title": "ＩＤＥＣ、上期経常が2.1倍増益で着地・7-9月期も60％増益 - 株探",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9odFVqTlpxMk4wNXUyMS1jbkduY0hOTHFwcS1mM2h2ZHdCUWR3XzNHSXhrZUFITDJjb0hjRkhVUVdvemRjM19ndnF0b1JkV0VWdUE?oc=5",
+          "source": "株探",
+          "published_at": "2026-11-06T15:30+09:00"
+        },
+        {
+          "title": "【決算速報】ＩＤＥＣ、上期経常が2.1倍増益で着地・7-9月期も60％増益(株探ニュース) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNcDU4bmxnSG1PNktReEY3TUxkWjBRRzN0U2FLMTdDUklpQ2U4VDNLUkhERkFGOVhxbzVsRE8xOFBhQnJNMmZGNEtmdUQ5aGdYdlRIN3NIRFhPMUwxbm9iaHM2WmtnSjZ4cHZPaURYRUtGMXZ1a0M0QnZnU2tuZlJjUVRoNnJsaU0?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-06T15:32+09:00"
+        },
+        {
           "title": "【決算】日創グループ：2026年8月期は売上高215億円・営業利益55％減、太陽光架台と建設事業が低迷も次期は増収増益予想 - みんなの広報宣伝部",
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBndVZsN3gydE5wVmpUcGx6eEQ3Tk5xTGRacFlVbTFSeGlpc2VrNWlKbTI4b3J4eFJVSEV5azlUaEU1ZWVfdmE5V1JyVDNmdTBqMnZuLXpHaDZPNEMxekstVjBSODVCeXVQY3k5U3JqamRDdw?oc=5",
           "source": "みんなの広報宣伝部",
           "published_at": "2026-11-01T10:38+09:00"
         },
         {
-          "title": "【決算速報】マクセル、中間経常5,814百万。(アイフィス株予報) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPVk4tNWU5NDdyR1ViR3JXcnRiamJpd2dUdTBHa3NZU1hLNEtzaVVOeWxPOTNTM3ZXNHF4NWt1VWs5a05Lbjl3RllnVWNLTnpsaTV4OU5aT21yRGNMalNzSUk3Zmc5N1V0QXVZa1hzZFRCMkhSNjlHcU51MzJLYThDb2IxMWowOWM?oc=5",
+          "title": "【決算速報】ＩＤＥＣ---27年3月期2Qは増益、経常利益は112.3％増(フィスコ) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNmdfcWRNZThoak5LOFpPUHBCV0N6ZGY1STV2ZktSM0swUkJTU29FRWtZTkZVcE8wUVFsRTVIS0dzYVMzd2dUMnZkNG9Ca19xeHRDRENGa2w3VWxnckRoMlNKM0xiclRSbUVESHpsYUltcUhLV2RGbGJXRlk3ZXlQblo1dnVEQk0?oc=5",
           "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-29T15:30+09:00"
+          "published_at": "2026-11-06T18:47+09:00"
         }
       ],
       "research_priority_score": 1,
@@ -916,14 +1116,14 @@
       "name": "セルシス",
       "earnings_date": "2026-11-06",
       "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-      "market_cap_yen": 51646860888,
-      "price_date": "2026-11-05",
-      "close": 1743.0,
-      "turnover_oku": 3.8,
-      "avg_turnover_20_oku": 3.59,
-      "volume_ratio_5_20": 1.46,
-      "return_5d": -0.46,
-      "return_20d": -4.65,
+      "market_cap_yen": 49398502050,
+      "price_date": "2026-11-06",
+      "close": 1665.0,
+      "turnover_oku": 3.88,
+      "avg_turnover_20_oku": 3.63,
+      "volume_ratio_5_20": 0.92,
+      "return_5d": -2.35,
+      "return_20d": -5.88,
       "financials": {
         "revenue_yen": 9161555968,
         "period_type": "ttm",
@@ -948,22 +1148,34 @@
       ],
       "news": [
         {
-          "title": "明日の決算発表予定 三菱重、サンリオなど255社 (11月5日) - 株探",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8zblpCalUtTTdrZHZWQTd5YkRYakI1dk4tM2hqdkJNUE9lYkRHVGUwbHM5SmdHQ3RyLWh4cWpKU3B5cV9YN3gzNVI1dnV2ZmQ4YUEzN2FnMW1TZEFocDRJeQ?oc=5",
-          "source": "株探",
-          "published_at": "2026-11-05T15:41+09:00"
+          "title": "セルシス[3663]：2026年12月期 第３四半期決算説明補足資料 2026年11月6日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQaWdreXg4aFFEVFdzZ3ZxcjRqazVwaDc5alJjLVVlYmlwcFBiSEZvbVhQa1k3SjRWenpkZVNHV1BuNWNTQV8yLVM2NE5GREhmaklVeUdpSE5kRzNjSVpLUmhxbHBxd3RhWV9vWmdtUTRXVFdxZjF0QXgwWkZUQUZ6R2xmQ1NuT01NeDM0dXkybXp5dUJmMTYyLXhfR2xVSGswUXZkcm1Zc2swVHJxRFF6RklwRm9wYzNtQ3ltTk9PcS12cDVSSHM1Ni14Qzc?oc=5",
+          "source": "日本経済新聞",
+          "published_at": "2026-11-06T15:30+09:00"
         },
         {
-          "title": "本日の【サプライズ決算】続報 (11月05日)(株探ニュース) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNcmNZX3ZuYXNjWE9rYTZDNE5qRGc2NWh6XzNZa2Zsa1EtbmE0aGZwaGtYQV9JWkxjamJJV291bHJtOVZfWHdJczhFYksyN0J4cE8wdEszSnlXTUVGNEtINGh1Vkl0dEdyQjFEWFdFeTFDZ21iaElIZDNCUmJ6WFU0SmIydEhkRDA?oc=5",
+          "title": "【決算速報】セルシス---26年12月期3Qは増益、経常利益は40％増(フィスコ) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNWFdfbEtrUWttSWRDNHVqUURkNV9jdnlmaUdCdHBEbWlDakYyVWo5eVBwMFB5OE10ZTJ3aW9uU2d6YkYzTkZuaUhnQkRVMGhiYzZCMmlOSjBlMHAxT01tLVo3dEkxQm5OQnI3MUh0QTBnbHVqMUdkQXhGY0ltdDhBRmRJOHlLTGc?oc=5",
           "source": "Yahoo!ファイナンス",
-          "published_at": "2026-11-05T18:03+09:00"
+          "published_at": "2026-11-06T18:46+09:00"
         },
         {
-          "title": "★本日の【サプライズ決算】速報 (11月05日) - Moomoo",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOV1kxMFBiOWpBMFVZdzF2RndUZDZFdG13cUJZOHVBdER4MG80a2diUGlZWFY3OEpUUVNNWVB6NEh4SWUxeU8yX0ZiUG1lbzBrUERLaHduUEkyMXJvanVQWmVWUi1ab3Z4Q092eHZ4blRGVXEwOXQ0NEZqazA0STU0MTgzb2xhX3JGRDlR?oc=5",
-          "source": "Moomoo",
-          "published_at": "2026-11-05T16:34+09:00"
+          "title": "セルシス、1-9月期(3Q累計)経常が40％増益で着地・7-9月期も26％増益 - 株探",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1PT3BXMVJoZk1GeFJhZ3ktc1hGQXZyT0libGgyd1ZBSVZYTmNvV1pURXNsd09iRU5LcmRhajA2eTZac2ZEOUVlLXhFa1RGWGlSNXc?oc=5",
+          "source": "株探",
+          "published_at": "2026-11-06T15:30+09:00"
+        },
+        {
+          "title": "【速報】セルシス、第3四半期決算は営業利益38％増の30億円と大幅増益…通期計画の進捗率は77.3%に到達 - gamebiz【ゲームビズ】",
+          "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE41SFRaQXY0aEpZSjRZNGx3SDBlZWtoNGRVUkhVR250Q1lnLTlpQjh6dURrY1dPUFJfXzBVZHN4bTBINmRM?oc=5",
+          "source": "gamebiz【ゲームビズ】",
+          "published_at": "2026-11-06T15:25+09:00"
+        },
+        {
+          "title": "セルシス2026年3Q決算発表、売上高・営業利益ともに前年同期比で増収増益 サブスクARRも成長中、11年連続で増配を予定 - PR TIMES",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBNcUZwM2x2RFlzSUNORUI3TzZQaUdPd0pkMXNpUE5QOVdnbktveGN3eEhmS1hVNnRIZ2JUU0E5NXpKYTRvMjBlcWV5WGYzMXdJN3VldmYtNXVfa3JUWmU3XzVrR21ZX1VQaWc?oc=5",
+          "source": "PR TIMES",
+          "published_at": "2026-11-06T15:52+09:00"
         }
       ],
       "research_priority_score": 1,
@@ -980,14 +1192,14 @@
       "name": "フィックスターズ",
       "earnings_date": "2026-11-06",
       "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-      "market_cap_yen": 53591105022,
-      "price_date": "2026-11-05",
-      "close": 1659.0,
-      "turnover_oku": 11.2,
-      "avg_turnover_20_oku": 10.93,
-      "volume_ratio_5_20": 1.14,
-      "return_5d": -12.78,
-      "return_20d": -26.17,
+      "market_cap_yen": 50231566190,
+      "price_date": "2026-11-06",
+      "close": 1555.0,
+      "turnover_oku": 13.89,
+      "avg_turnover_20_oku": 10.9,
+      "volume_ratio_5_20": 1.15,
+      "return_5d": -16.62,
+      "return_20d": -30.61,
       "financials": {
         "revenue_yen": 10460898304,
         "period_type": "ttm",
@@ -1008,71 +1220,34 @@
       ],
       "news": [
         {
-          "title": "(株)フィックスターズ【3687】：現物信用売買内訳時系列 - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE54TGJOS3d4aFBlZmFTbEI3NkRtWFd1a3Bia0d3M2U1dEtacmtFYkx6dEhxeF85YVFlZ2ZhVWNiNTU0WFFLZlJTRGZxb3NjUVZPd09UQjU4S0wyNE9TUU5R?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-30T16:00+09:00"
-        }
-      ],
-      "research_priority_score": 0,
-      "signals": [],
-      "evidence_count": 2
-    },
-    {
-      "code": "3315",
-      "name": "日本コークス工業",
-      "earnings_date": "2026-11-06",
-      "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-      "market_cap_yen": 24154889246,
-      "price_date": "2026-11-05",
-      "close": 83.0,
-      "turnover_oku": 9.39,
-      "avg_turnover_20_oku": 9.62,
-      "volume_ratio_5_20": 1.17,
-      "return_5d": -2.35,
-      "return_20d": -11.7,
-      "financials": {
-        "revenue_yen": 87336001536,
-        "period_type": "ttm",
-        "latest_period": null,
-        "data_source": "Yahoo Finance TTM summary, not company IR",
-        "revenue_yoy_pct": null,
-        "operating_income_yoy_pct": null
-      },
-      "analyst_consensus": null,
-      "prior_reactions": [],
-      "sources": {
-        "fundamentals": "https://finance.yahoo.com/quote/3315.T/financials/",
-        "estimates": "https://finance.yahoo.com/quote/3315.T/analysis/"
-      },
-      "missing_data": [
-        "Only TTM revenue available; quarterly year-on-year change unknown",
-        "Historical earnings dates or surrounding daily price data unavailable"
-      ],
-      "news": [
+          "title": "フィックスターズ[3687]：2026年9月期 決算 補足説明資料 2026年11月6日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE81N2dRSFVZM2M4eF9rR0xnZXVGVnVnVTdhR3c4NkcwbVBoTDVvdmVOaUE0dzRpdGw4ZmQ2UUJHRm1qeVR3eDJuUUNmQXN2RlVBS2Nkb1d0dGo3SkpQelZSZGtGTWY1Y0pjRGc?oc=5",
+          "source": "日本経済新聞",
+          "published_at": "2026-11-06T16:30+09:00"
+        },
         {
-          "title": "3315 日本コークス工業 - 株探",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5EenUwZDE4ZXA4LTNEQUg1ODFNVFF4cUYtbWF6aTBCQVpvb2JzbGczdjdzeFNuMDRBLU9SbktoTnl1ZW5GOEpzUG1UZzkzMG9OX1RSZVpQcE9yWnVv?oc=5",
+          "title": "Ｆスターズ、今期経常は7％増で6期連続最高益、3円増配へ - 株探",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5ZbXB5bmpaVXBONTc2SDJxMVNUVWhxbGozcmY2MUVDNEFELWhyeG1pZWlpVzVDMGFHVlZkSFU0enpiUTNOYkNaWUhSSXc4VFVPSVE?oc=5",
           "source": "株探",
-          "published_at": "2026-10-24T00:01+09:00"
+          "published_at": "2026-11-06T16:30+09:00"
         },
         {
-          "title": "【決算速報】住石ＨＤ、上期経常が23％増益で着地・7-9月期も17％増益(株探ニュース) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOV09HLXNEVnJsXzlJUjhkQkg2d3NIRFVyVW95UGlTTFo3V0JhSFo0WTNMd3pobEU3NkxkdzlYaGQxcnp4M0Zhd1hhemZ3Y2dYMDAtcDB1dG5FcVA4RW5YZHFQZnBKQm9uRlRGdngycWR2ZmZNWVN6UTFxZHF5MXFic2U2V2U3Q2c?oc=5",
+          "title": "【決算速報】フィックスターズ、経常12.2%増益。事前予想を下回る(アイフィス株予報) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQT2d4VGlZbnQtM3lfNjJMSFVPZnlkNjJPaVRYaWdGZ0QxVFJnU0E2ck81bmY4QV92ZkE2bHpYSmN3V3JOLVNpR3VCQ1ZvN1MzeTluY1NfTEhMSm5ZNUZWMVh4Z1AyNnEzdXRVeTZhSnZYcDZLekJxd1FaV0J3SmM1cWs2TW14c28?oc=5",
           "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-30T15:31+09:00"
+          "published_at": "2026-11-06T17:50+09:00"
         },
         {
-          "title": "株価100円以下から化けるのはどれだ！？北紡の+29.85%は再現できるか。出来高急増を待つ「超低位材料株」監視すべき20社【危険度ランク付き】｜日本個別株デューデリジェンスセンター - note",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBGeUpPZXJNdDYwMW9iTHNzZWN5eURaMjlJRWNrbE02T3UwbDdiTDg2UVVrYUNQU1RWM1pxZ3FaQzc2UTd3Sm1oYk9HRktuTGlfaExybllpX1RjYzg?oc=5",
-          "source": "note",
-          "published_at": "2026-10-25T16:00+09:00"
-        },
-        {
-          "title": "アコム(株)【8572】：株つぶやき - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9QSFpicVJmSG81M3BGczNYa0tkQnhlUUtVX1VYWFo5c2dsNHBsQXMxWTdNYzRkNVlhUklNMEhRdkFQMWNxYXhUWjQtbWlvV0Zob2Jzdlp5V3k?oc=5",
+          "title": "【決算速報】Ｆスターズ、今期経常は7％増で6期連続最高益、3円増配へ(株探ニュース) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdzNaQW4zM0g0bWlJU1VnX0RRcXEyNzNPUFh0VGs1WVQ5eTdobHZodl92U2hnNjRLa1Z4RWFsVW42R0p2Q05MN0cxSGptQ3dZQVRVMUlHMnlsMHNxUE4yX1BMb1dkYTZyU3NJWTVndWE3SzU1UXY4QVBPUUxoRDltNGFhWFJfdGc?oc=5",
           "source": "Yahoo!ファイナンス",
-          "published_at": "2026-11-03T03:01+09:00"
+          "published_at": "2026-11-06T16:31+09:00"
+        },
+        {
+          "title": "決算速報＞Ｆスターズ、２６年９月期決算は純利益０．５％増(ウエルスアドバイザー) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQR0tMZXYwb2FrMTZDb1dBZnBzZzNUZG5VeGMxb0RCbjd6dThEMTJlNi1jV3B0NmI0M3ptTFpRTDZPTENEcVhPN0NMQWxBdmQ2SVBBNERmZllJZERaNmRhSXRMVDBFMlY0czRGaHctT0ZKSHFyeGlYYzlXTkJpVVlvYmpJWUJaRnc?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-06T16:30+09:00"
         }
       ],
       "research_priority_score": 0,
@@ -1084,14 +1259,14 @@
       "name": "セカンドリテイリング",
       "earnings_date": "2026-11-06",
       "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-      "market_cap_yen": 78970189935,
-      "price_date": "2026-11-05",
-      "close": 1985.0,
-      "turnover_oku": 6.31,
-      "avg_turnover_20_oku": 4.88,
-      "volume_ratio_5_20": 1.36,
-      "return_5d": 4.53,
-      "return_20d": -10.1,
+      "market_cap_yen": 73599421350,
+      "price_date": "2026-11-06",
+      "close": 1850.0,
+      "turnover_oku": 10.74,
+      "avg_turnover_20_oku": 5.18,
+      "volume_ratio_5_20": 1.35,
+      "return_5d": -2.27,
+      "return_20d": -13.1,
       "financials": {
         "revenue_yen": 501788999680,
         "period_type": "ttm",
@@ -1112,28 +1287,34 @@
       ],
       "news": [
         {
+          "title": "セカンドリテイリング[2681]：2027年3月期 第2四半期 決算説明資料 2026年11月6日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOekpDSDFDUnRBNXNkSDh3N2pLSEUwN0EzazdJbzY1Q09MWW5odTMzWW9tSXQtczQ2eGdBN2c1N2oxWVVSTEk0TU0za01PTUxUdXJrRGtYdzBuaDFEWVJEMGptZTItVGhLbHZNZFdPUHI1UkJTaE4zUV9kWE9WeXplUmpkT2hkLVVIZnlmbTl0ZjZLZDEtXzhkbkxlekd4VzJSVzgxVGIzQy03akg3dXJqUmc2b3ZKdDRqTHhpSENmWjdidmVKOTA1MUI4LW8?oc=5",
+          "source": "日本経済新聞",
+          "published_at": "2026-11-06T15:30+09:00"
+        },
+        {
           "title": "(株)セカンドリテイリング【2681】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
           "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5EUnZCVVh6T0hqVmh4ZGkzSThsa2xDRjRQY25MQnp5Y21TU2VOLWFXbzJpLTZLREREZTZLcUwwNWZaME5rMXA4NXNRWTNKZWVZazFzN2RNYTFWZUQyUlIySmJDXzRsdWs1WFJ5UWYwT1U4SVlQTlE?oc=5",
           "source": "Yahoo!ファイナンス",
           "published_at": "2026-10-29T19:02+09:00"
         },
         {
-          "title": "セカンドリテイリング／11月はセカスト6店舗など4業態・12店舗を新規オープン - 流通ニュース",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBhYUlhdThuM2haQTFqWUZnS2VZc3VyS2F0aDQyT05WLWdBY1haT3NrLXZMMjAzcy15ZVhNNGltMFAyMXF1VllNM3ZoVWFLclo0QTJ1TQ?oc=5",
-          "source": "流通ニュース",
-          "published_at": "2026-10-29T13:31+09:00"
+          "title": "セカンドリテイリング、27年3月期の営業利益を130億円→170億円に上方修正…セカストのリユース衣料やゲオのリユーススマホが貢献 - gamebiz【ゲームビズ】",
+          "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1YUmZIczlXQ0QtTUh1S0VXZHNLTjJ4Ulo3YkVLa3RXMVV1R2tDUWtGdHJVVzN6d3A2VWtWNXBQWVNEN2h4?oc=5",
+          "source": "gamebiz【ゲームビズ】",
+          "published_at": "2026-11-06T16:02+09:00"
         },
         {
-          "title": "PHPの脆弱性問題、中部の企業や銀行業界に波及 サイトやサービスの一時停止など：ニュース - 中日BIZナビ",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5DV2tqVjZ5QmVKTEQ1V0h3MUlZNWs4eXdqNjZycmZFSlVkQVFnVElmamxTRFlXV25VUXJNMUswTHVuN2szQTVmMnlINEE2Y1VWTnBhenpCWXBEZEZaR2hRXzdPSQ?oc=5",
-          "source": "中日BIZナビ",
-          "published_at": "2026-10-26T12:04+09:00"
+          "title": "セカリテ、今期経常を一転8％増益に上方修正 - 株探",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1xVHZnQnlkc2pfanFvdWVON011R1Rhd0QzazFjeTVPLTRfeGx4ZTRoNmVIQnNQV0pZVk9sSUJSSmR4dTgwUEVRQUUybTc1STNxelE?oc=5",
+          "source": "株探",
+          "published_at": "2026-11-06T15:30+09:00"
         },
         {
-          "title": "セカンドリテイリンググループ2026年11月新規出店のお知らせ 国内外のセカンドストリートを含む4業態、合計12店が新たにオープン！ - Excite エキサイト",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE93WkFVRWFzYUtkWlhUbzlYNFVUSGdta1RaSDNjV09VLXNDaEo1azlhaE5lajZUcEVZbFl0XzlHUmNRTk1nRjlIUjNyMHVPakZ0cDdJWTB4YWthZ21tLVktX3BvTkYwUWJDQzd5S2Q1LTktMjAxUmc?oc=5",
-          "source": "Excite エキサイト",
-          "published_at": "2026-10-29T23:10+09:00"
+          "title": "セカンドリテイリング[2681]：2027年3月期 第2四半期（中間期）決算短信〔日本基準〕（連結） 2026年11月6日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOdWJrWXRiMXFnVllRcDhHaHNkU3JUSmN5Z2JZOU1EUFNHUXFSdVk4SjVHOEJhRnVQUHNRMGlfQy1YeFJBc0pDR0U5QmZHWmZaQUpYT20wVk1Ic25xTVE5b1pYM2tXMTNReVYwQ1dmTFdMbjI4TXBWejJsd3NmYXExNDBfWl9mRXRXWDJuRDVERW9yMFBvUHp6MEtPSVd3RTAzaXZMdHZkN2Y4d2dlYXFKeFVaZlBvRy1RZG9rRUxna0Vkbk1PZW80LXJtWk4?oc=5",
+          "source": "日本経済新聞",
+          "published_at": "2026-11-06T15:30+09:00"
         }
       ],
       "research_priority_score": 0,
@@ -1145,14 +1326,14 @@
       "name": "栃木銀行",
       "earnings_date": "2026-11-06",
       "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-      "market_cap_yen": 92573860064,
-      "price_date": "2026-11-05",
-      "close": 889.0,
-      "turnover_oku": 5.03,
-      "avg_turnover_20_oku": 7.34,
-      "volume_ratio_5_20": 0.82,
-      "return_5d": -6.81,
-      "return_20d": -27.66,
+      "market_cap_yen": 82785397920,
+      "price_date": "2026-11-06",
+      "close": 795.0,
+      "turnover_oku": 9.02,
+      "avg_turnover_20_oku": 7.16,
+      "volume_ratio_5_20": 0.88,
+      "return_5d": -18.46,
+      "return_20d": -32.68,
       "financials": {
         "revenue_yen": 45241999360,
         "period_type": "ttm",
@@ -1173,16 +1354,34 @@
       ],
       "news": [
         {
-          "title": "栃木銀行、顧客のメールアドレス1000件流出 「アララ」不正アクセスで - 47NEWS",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9pMmZrOGdhbENiRWNsbzVXRUxHM091V3paMTFTSnNMeldKejJoS1ZFV3dJZGYzNjNUSmdhb2YxTVhpOE9NU2dTVlgyMA?oc=5",
-          "source": "47NEWS",
-          "published_at": "2026-11-03T17:20+09:00"
+          "title": "栃木銀行[8550]：2027年3月期第2四半期決算説明資料 2026年11月6日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxON1lMWEJlUlgzb25Jdk5fU2xtUUl3MHNfNzhpTGc4bUc4YXhmdUJ1MS1pMmpSMTRnSFdYc1dwczdfSV9XVjBOUy1uZHljQlA4VEdDQnhwTW5fRnYySllEdzdwMHZWRnpGWUtUSUktbjg4Nmxxc181djNsd3NZTE4wVTFId1kzUDhFaG5ndEMtZ3YxRGhIaUpRcW1zQnRrZkJRMUk3MHNnQVFRYkRfZ3RNVE1QSUpRWUJVdGtZS3pIT0Z0REdkWndPM0JaTTA?oc=5",
+          "source": "日本経済新聞",
+          "published_at": "2026-11-06T15:00+09:00"
         },
         {
-          "title": "【決算速報】佐賀銀、上期経常を2％上方修正・最高益予想を上乗せ、配当も10円増額(株探ニュース) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQR0NuaWlnM3VyUW9IWUlJb042Wk8yenAtcThRRXFEZDdVRnBCM01xTEE3VVRfTS1RNy1oSmFmYWZwcTFCRU9lc2NwakVjMmpXbS15dUVocmFhanVFakxUVVlLSXBTVWdoVkNVaGFxVC1GYUxudlNhY0MySWlpZHZ5RXdBR3pHSHM?oc=5",
+          "title": "栃木銀行 中間決算は増収減益 米共和党敗北の影響注視 - NHKニュース",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1TYjZVMGo4NFRaV2RoZHpwSTJWTGdYamNqbnFfVkh0VmdvY1AzdjcyWmlaUkd1dUFmZjhZU1hDbkFpVmhyUnNTZnlWekxibGZtYTZWWk5lT1RuLU14dG84?oc=5",
+          "source": "NHKニュース",
+          "published_at": "2026-11-06T19:18+09:00"
+        },
+        {
+          "title": "〔決算〕栃木銀行、連結純利益18．9％減＝26年9月中間(時事通信) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQc1VfNWwwVlAxcUtMUE4wS3djU3h1Q0k1VHFSZzI4Z0lRakxLLVp4alktWGhPQVhSeHp2X2Ntc3ZnUjhwZml1aFBRNzhIWXNqQVlkUGZaa1plcm5ERmZ5Mmo2ZWdhS0JZTGktM3NSRDd4UDU2dmEyNEVvOUlHY1hUY1BJamdydGc?oc=5",
           "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-23T16:00+09:00"
+          "published_at": "2026-11-06T19:07+09:00"
+        },
+        {
+          "title": "栃木銀行、2026年9月中間決算を発表 本店新築で経費計上、本業のもうけは好調 - 47NEWS",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9veFBmNFdIVlh3NFkzelZUNExWdW8tcnM3TzMtdU56RUNybUo0VUZPZUYxb0lxaTQzM0RJbU1mMjUtZGk1aEY1LWFUdw?oc=5",
+          "source": "47NEWS",
+          "published_at": "2026-11-06T19:50+09:00"
+        },
+        {
+          "title": "決算:栃木銀行の4〜9月期、純利益19%減 新本店の建築費用かさむ - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8xbV93ZkV3cjg2MlVjejBYaVZrRlBaeE5DV1lVRzVJR2JVNFBNT0QtYzNyd2hnTDBTY0Fic0FqOG9ieDZzUHBMeGRna3o4WFFGbjZ5M20tUmdqT05vMDZoOGlQTmFueThRSmpZYg?oc=5",
+          "source": "日本経済新聞",
+          "published_at": "2026-11-06T18:31+09:00"
         }
       ],
       "research_priority_score": 0,
@@ -1190,20 +1389,20 @@
       "evidence_count": 2
     },
     {
-      "code": "6492",
-      "name": "岡野バルブ製造",
+      "code": "3315",
+      "name": "日本コークス工業",
       "earnings_date": "2026-11-06",
       "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-      "market_cap_yen": 16693623390,
-      "price_date": "2026-11-05",
-      "close": 10390.0,
-      "turnover_oku": 3.51,
-      "avg_turnover_20_oku": 3.22,
-      "volume_ratio_5_20": 0.97,
-      "return_5d": -15.46,
-      "return_20d": -32.05,
+      "market_cap_yen": 22699775436,
+      "price_date": "2026-11-06",
+      "close": 78.0,
+      "turnover_oku": 7.59,
+      "avg_turnover_20_oku": 9.63,
+      "volume_ratio_5_20": 1.12,
+      "return_5d": -7.14,
+      "return_20d": -17.02,
       "financials": {
-        "revenue_yen": 8645998592,
+        "revenue_yen": 87336001536,
         "period_type": "ttm",
         "latest_period": null,
         "data_source": "Yahoo Finance TTM summary, not company IR",
@@ -1213,8 +1412,8 @@
       "analyst_consensus": null,
       "prior_reactions": [],
       "sources": {
-        "fundamentals": "https://finance.yahoo.com/quote/6492.T/financials/",
-        "estimates": "https://finance.yahoo.com/quote/6492.T/analysis/"
+        "fundamentals": "https://finance.yahoo.com/quote/3315.T/financials/",
+        "estimates": "https://finance.yahoo.com/quote/3315.T/analysis/"
       },
       "missing_data": [
         "Only TTM revenue available; quarterly year-on-year change unknown",
@@ -1222,28 +1421,34 @@
       ],
       "news": [
         {
-          "title": "発電・備蓄支える黒子に特需 岡野バルブは最高益 エネルギー探訪9000キロ⑤ - 日経ヴェリタス - 日本経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBpdW9sNnYxWkhlZ2lCeXhJaEZwekxJUVRycmlxTm1VQV9KNGtRTVJoOU01ZUltUVUtOWpONlJ6VTBSYUVKbnpma1JmNE8xWW1VcjVySkNxcUMwTHQ0eHctbWlDZzI3OXM3ZlA3UjdSV3hLeGZPajdoQXFlRV9FQQ?oc=5",
+          "title": "日本コークス、上期経常が6％増益で着地・7-9月期は12％減益 - 株探",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE90WjhxM21PM3Q5SFhtcWRfcWRJWVR4SnlERzdRcXd0NnpzMTlScGMwT0lOa1RycXJwZXhNVW15QUNBcFk0YnZMQTdsc0M1ZVdfa2c?oc=5",
+          "source": "株探",
+          "published_at": "2026-11-06T14:00+09:00"
+        },
+        {
+          "title": "日本コークス工業[3315]：2027年３月期 第２四半期（中間期）決算短信〔日本基準〕(連結) 2026年11月6日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9aRDktT1NOdWRfYmZVX0xRUV9qX1hGN1hhUHRyR2dyNjVpSkFIaXFSd2hQOUZURzhURGE4VkpuNVlUcW1wMXdnWGdZeTBMWUk3TVVtdzlLUUdKTWRrQkt6clhwckxzNDBJZVE?oc=5",
           "source": "日本経済新聞",
-          "published_at": "2026-10-31T05:00+09:00"
+          "published_at": "2026-11-06T14:00+09:00"
         },
         {
-          "title": "業績修正（取引時間中）－フジッコ、ＳＡＮＥＩ、丸大食品(トレーダーズ・ウェブ) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQc08zdURsMy1xVzJ5MWZKdThPR0drLVRsLXFJeU5jbVBCQXhKMmZodk5pV1h6bFlwQjR0YkFDS0Zsa2x3ajMtQVBzcEN1dl9KeVR1VFN6WkJ2b0ViOU1QdEhnSGZXVTA5RlZQUGR3NTI4Y3doM0hwN3A2ZW56bHhscERibms2Rkk?oc=5",
+          "title": "【決算速報】日本コークス、上期経常が6％増益で着地・7-9月期は12％減益(株探ニュース) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPWWFXS1c5aDNWOTBna2txQm9DWEJZN2czd0FKdGxyNFZuYlZBYkU1d0tFOVg4QTRfSzMyVEsxWVNGeVpBZGJZRkxjSXhkVXpSVmdrQmt5T3FybnkyN2lpZFVyQVFvRjJmdUNCSGpPeGE4cTBsejJGUjBUQjVxNXRSUGZjVGFtSzA?oc=5",
           "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-26T16:00+09:00"
+          "published_at": "2026-11-06T14:04+09:00"
         },
         {
-          "title": "【決算速報】日ギア、上期経常を40％上方修正・最高益予想を上乗せ(株探ニュース) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQSEJDa01YOEVVLVlnakgtYTc1enhXb0hQWnE3NkZVdlN6TTZBZ3ExcXVkN0VKN1VLVFdUYkk4TjBXY1BIN3RmVEQtblR6akFxcS1xbU12WnVMbjE0Y255WGppc0pRLUtrVG1rOU4yWkFrWlBQeDdMYTlFa0g3UGtZcV9rQy1pOUE?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-27T16:00+09:00"
+          "title": "2027年３月期 第２四半期（中間期）決算短信〔日本基準〕(連結) 投稿日時： 2026/11/06 14:00[適時開示] - みんかぶ",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE44elhkdENucUp6SGlra2o4dXE2TWl0TnlMX21FYzRtS0V2U3JiM1RjLVRjZlE5cXFWeWRJTi02OWNRLUp0ZHc?oc=5",
+          "source": "みんかぶ",
+          "published_at": "2026-11-06T14:00+09:00"
         },
         {
-          "title": "【決算速報】日ギア、上期経常が59％増益で着地・7-9月期も86％増益(株探ニュース) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNlBrSFZHN1FwVkl4bjQ3N01wSXpnUGV4MThJNUUyQzRFQUYtZWNzQVNYSmZsbmZITENGODlSQUk2SkRYLW11VUJ2U28tUXdkUWpBbnNKRmlKUW5vOUhuX3huV3V3OEU3YV9zVDlhdnRvUkJSdENManFCTnlzYzUxY1c4LUVnVTA?oc=5",
+          "title": "【決算速報】日本コークス---27年3月期2Qは増益、経常利益は6.1％増(フィスコ) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPOFlMa3RmazRHbmRrT2I3TjhqdzhLT0I2QUo0c21DZHFHaW1wX3ljRHFmYWpOOGswTEU2WDM4elhvWWZvMVlfZzFBTUl5bk9WcHp1aXNuX0xUOHcwSVNnRzYwOVRqTE5xQ3FTWTYzY3UzeWJaOWpvUGxMZDM2Zkp3cTVnLVY0NTQ?oc=5",
           "source": "Yahoo!ファイナンス",
-          "published_at": "2026-10-30T13:01+09:00"
+          "published_at": "2026-11-06T16:16+09:00"
         }
       ],
       "research_priority_score": 0,
@@ -1255,14 +1460,14 @@
       "name": "ホソカワミクロン",
       "earnings_date": "2026-11-06",
       "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-      "market_cap_yen": 96196660000,
-      "price_date": "2026-11-05",
-      "close": 6560.0,
-      "turnover_oku": 3.34,
-      "avg_turnover_20_oku": 3.28,
-      "volume_ratio_5_20": 1.23,
-      "return_5d": -0.61,
-      "return_20d": -1.2,
+      "market_cap_yen": 92535866050,
+      "price_date": "2026-11-06",
+      "close": 6310.0,
+      "turnover_oku": 6.07,
+      "avg_turnover_20_oku": 3.42,
+      "volume_ratio_5_20": 1.37,
+      "return_5d": -3.07,
+      "return_20d": -2.62,
       "financials": {
         "revenue_yen": 80607002624,
         "period_type": "ttm",
@@ -1281,12 +1486,118 @@
         "Only TTM revenue available; quarterly year-on-year change unknown",
         "Historical earnings dates or surrounding daily price data unavailable"
       ],
-      "news": [],
+      "news": [
+        {
+          "title": "ホソカワミクロン[6277]：2026年９月期決算短信〔日本基準〕(連結) 2026年11月6日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9LYWdTa3VOSC1UVmFmV3NoYW52VG9SeDFVXzU5WUIxZFQyZzhJZklxR2FkSUtBSnJFRW1fWFE0UWJZMF9MaTNsY3pjVHZKemZ3RW5xY2cwem9tcGxNXzBlS3E4OWZ5dFZNakE?oc=5",
+          "source": "日本経済新聞",
+          "published_at": "2026-11-06T15:30+09:00"
+        },
+        {
+          "title": "【通期決算発表】 ホソカワミクロン：粉体処理機器メーカー最大手。高機能フィル…(フィスコ) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQcUZiUzFCZWpYUVRNRTA1aUU0dGVzd0NhcXk3WWxZMmFTaEhIMy1oZ290d2lyVFg0Y3h4c2FSb1llTUdCMk1Oc0NHWUlTMV9JTi12aS15MG02OFkxWmZVbGJVMEk5blVTdE1Pem85N0RhQWtJMXVjblBrTndyZWk0b29LUTkxdDQ?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-06T17:33+09:00"
+        },
+        {
+          "title": "ホソミクロン、今期経常は2％増益、10円増配へ - 株探",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE41RWdSdEQtUlhRZmowelJBOVp6MGxENUR0Um1RanBnQm9XQkZIWWpURGZXZnp5YXhnRWYyU3hEYmFKTVJaQl9TSjlNVnAwRUlwLXc?oc=5",
+          "source": "株探",
+          "published_at": "2026-11-06T15:30+09:00"
+        },
+        {
+          "title": "【決算速報】ホソカワミクロン、経常26.4%減益。事前予想を上回る(アイフィス株予報) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPVGlCZzM5NV9MM1ZXTDI3S0V2bW1Tb0k3dERzTTRmNUlLM2lwTFNNYVRQMlBFMXhjSzZHUGgyX2ppbldGRkk2cnd2NEZKcUFGTlh1MmgtRmctcF84dGV0NHBoQzNCN2I0LVBnS2VxSmx2RmRrSEF4WkUtT1p0YlhnemprSi1NT1k?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-06T15:31+09:00"
+        },
+        {
+          "title": "【決算速報】ホソミクロン、今期経常は2％増益、10円増配へ(株探ニュース) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTHh0ZzdVOUp5QU5OMVkwLWowdHlKeEV3ME1vZktYTkNOeEZlMmFzT0ljZE1HTmZVbmpKTVRfakJSUTFkcVU3Y2VNeXF1NVplV1ZucGpudzRaTEZfa2hFaGs3ckhESzl2aTlvdlBIb0g1VXo5cWpSbDd0Nmd2SWJDWFN0b2NHS0U?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-06T15:32+09:00"
+        }
+      ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 1
+      "evidence_count": 2
+    },
+    {
+      "code": "8395",
+      "name": "佐賀銀行",
+      "earnings_date": "2026-11-06",
+      "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+      "market_cap_yen": 94645387200,
+      "price_date": "2026-11-06",
+      "close": 5600.0,
+      "turnover_oku": 4.59,
+      "avg_turnover_20_oku": 5.69,
+      "volume_ratio_5_20": 1.02,
+      "return_5d": -13.85,
+      "return_20d": -21.24,
+      "financials": {
+        "revenue_yen": 64819998720,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
+      "analyst_consensus": null,
+      "prior_reactions": [],
+      "sources": {
+        "fundamentals": "https://finance.yahoo.com/quote/8395.T/financials/",
+        "estimates": "https://finance.yahoo.com/quote/8395.T/analysis/"
+      },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
+      "news": [
+        {
+          "title": "決算:佐賀銀行の4〜9月純利益、58億円に上方修正 - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9OVEthRnVfb1F4OGhRcjJXY3E0RWRXeUxUM0Z1NzM4TV9URzloek5qbVJzcF9pWHNRMXhuMUdDbEVaZGlLQTIzd2YxRU5KdnI1Z3BjTURpM3lQWEphNVcyWm1tV095bWl3eXNpZg?oc=5",
+          "source": "日本経済新聞",
+          "published_at": "2026-10-26T16:00+09:00"
+        },
+        {
+          "title": "〔決算〕佐賀銀行、連結純利益17．1％増（時事通信） - Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE55Z0NCTnZwdVVFWFZ2NWVSVzhhOGRiNHJtUkdoaTViVk1OekI3aVRFX2xSVEtIbzRKOXk2ME1SOXlleW9Ea2Z3cFE0d3psVFEzclpBeWtIZVNJcFdHeXYyWmRPbVpOVkZ2OEg5S3dwTF9MSEQyb2p4bmxSMTNNdnM?oc=5",
+          "source": "Yahoo!ニュース",
+          "published_at": "2026-11-06T20:01+09:00"
+        },
+        {
+          "title": "佐賀銀行が経常収益を320億円から370億円へ上方修正 2026年9月中間決算の業績予想 | 行政・社会 | 佐賀県のニュース - 佐賀新聞",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA1d3hyOVRzVzNNOF9ZRVBOazMtQTlZcjh1bFZ2NzBSTTV2V2I2bjZfb1VIbGFaZWdjVDJQVDJQR2lKZmMxbUFLZTYyZVNzUWZPUC1iT0tn?oc=5",
+          "source": "佐賀新聞",
+          "published_at": "2026-10-27T16:00+09:00"
+        },
+        {
+          "title": "中間決算 佐賀銀 佐賀共栄銀ともに「増収増益」 - NHKニュース",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5udW53d3h0M0l5M2txdExVeFdqVXRGS3JxcDlGR2l5VFZHbmFnbTVFWHNicmlqTl95LXc2R2VoVjBhd0NINnBuRWNZaVhKZ2dPbzBIN0RydW9BcGJoM1NF?oc=5",
+          "source": "NHKニュース",
+          "published_at": "2026-11-06T19:47+09:00"
+        },
+        {
+          "title": "決算:佐賀銀行の4〜9月、純利益17％増 年間10円増配 - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5pbFFXNnVlYWxMUHZFRlVYZ3lvMnZsdVQ3UUotNjNxYnEwdWx5bWxkTE5EZUpxbGcwWXpkcDhmSlBFZUoydm5MNTlCNXNOY3Q4OXRvVm91TVJiWWVDb2Y2VDI2dUVfUTQ3d080Tw?oc=5",
+          "source": "日本経済新聞",
+          "published_at": "2026-11-06T18:57+09:00"
+        }
+      ],
+      "research_priority_score": 0,
+      "signals": [],
+      "evidence_count": 2
     }
   ],
   "count": 20,
-  "method": "調査優先度は公開価格・出来高・取得できた四半期業績等のみ。買い推奨や決算予測確率ではありません。"
+  "method": "調査優先度は公開価格・出来高・取得できた四半期業績等のみ。買い推奨や決算予測確率ではありません。",
+  "coverage": {
+    "screened": 20,
+    "financials_any": 20,
+    "quarterly_or_annual": 0,
+    "ttm_only": 20,
+    "earnings_reaction_history": 3,
+    "analyst_estimates": 14
+  }
 }

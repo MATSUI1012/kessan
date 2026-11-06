@@ -1,14 +1,14 @@
 {
   "schema": 2,
-  "generated_at": "2026-11-05T22:16:31+09:00",
+  "generated_at": "2026-11-06T22:10:27+09:00",
   "scope": "時価総額80億円以上1000億円未満。JPX決算予定日2026年10月〜11月。時価総額は現時点値であり過去再現ではない",
   "coverage": {
-    "season_eligible_companies": 1261,
-    "elapsed_scheduled_events": 265,
-    "scheduled_progress_fraction": 0.2102,
-    "frozen_before_event": 1256,
-    "newly_frozen": 7,
-    "matched_nextday_outcomes": 229,
+    "season_eligible_companies": 1262,
+    "elapsed_scheduled_events": 335,
+    "scheduled_progress_fraction": 0.2655,
+    "frozen_before_event": 1247,
+    "newly_frozen": 12,
+    "matched_nextday_outcomes": 257,
     "fully_scored_validated_matches": 0
   },
   "milestones": [
@@ -26,29 +26,29 @@
     }
   ],
   "return_summary": {
-    "n": 229,
-    "rising": 70,
-    "falling": 155,
-    "rise_rate": 0.3057,
-    "mean_return_pct": -1.816
+    "n": 257,
+    "rising": 80,
+    "falling": 172,
+    "rise_rate": 0.3113,
+    "mean_return_pct": -1.674
   },
   "factor_checks": [
     {
       "name": "volume_ratio_5_20",
       "boundary": 1.5,
       "higher": {
-        "n": 32,
+        "n": 33,
         "rising": 9,
-        "falling": 23,
-        "rise_rate": 0.2812,
-        "mean_return_pct": -1.836
+        "falling": 24,
+        "rise_rate": 0.2727,
+        "mean_return_pct": -2.013
       },
       "lower": {
-        "n": 197,
-        "rising": 61,
-        "falling": 132,
-        "rise_rate": 0.3096,
-        "mean_return_pct": -1.812
+        "n": 224,
+        "rising": 71,
+        "falling": 148,
+        "rise_rate": 0.317,
+        "mean_return_pct": -1.625
       },
       "enough_to_compare": true
     },
@@ -56,18 +56,18 @@
       "name": "return_5d_pct",
       "boundary": 0,
       "higher": {
-        "n": 90,
-        "rising": 30,
-        "falling": 58,
-        "rise_rate": 0.3333,
-        "mean_return_pct": -1.129
+        "n": 99,
+        "rising": 35,
+        "falling": 61,
+        "rise_rate": 0.3535,
+        "mean_return_pct": -0.619
       },
       "lower": {
-        "n": 139,
-        "rising": 40,
-        "falling": 97,
-        "rise_rate": 0.2878,
-        "mean_return_pct": -2.26
+        "n": 158,
+        "rising": 45,
+        "falling": 111,
+        "rise_rate": 0.2848,
+        "mean_return_pct": -2.336
       },
       "enough_to_compare": true
     }
@@ -443,28 +443,6 @@
       "pre_event_factors": {
         "volume_ratio_5_20": 1.7915,
         "return_5d_pct": 4.36
-      },
-      "formally_ranked": false,
-      "strict_score": null,
-      "missing_score_evidence": [
-        "本人の過去決算反応",
-        "四季報・会社予想の改定履歴",
-        "レーティング・目標株価の改定履歴",
-        "ニュース根拠の検証"
-      ],
-      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
-    },
-    {
-      "code": "7175",
-      "name": "今村証券",
-      "earnings_date": "2026-10-27",
-      "captured_at": "2026-10-22T18:30:59+09:00",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-      "market_cap_oku_at_capture": 87.34,
-      "price_asof": "2026-10-21",
-      "pre_event_factors": {
-        "volume_ratio_5_20": 1.4729,
-        "return_5d_pct": -10.908
       },
       "formally_ranked": false,
       "strict_score": null,
@@ -6197,28 +6175,6 @@
       "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
     },
     {
-      "code": "4642",
-      "name": "オリジナル設計",
-      "earnings_date": "2026-11-05",
-      "captured_at": "2026-10-22T18:30:59+09:00",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-      "market_cap_oku_at_capture": 84.09,
-      "price_asof": "2026-10-21",
-      "pre_event_factors": {
-        "volume_ratio_5_20": 0.6176,
-        "return_5d_pct": 0.0
-      },
-      "formally_ranked": false,
-      "strict_score": null,
-      "missing_score_evidence": [
-        "本人の過去決算反応",
-        "四季報・会社予想の改定履歴",
-        "レーティング・目標株価の改定履歴",
-        "ニュース根拠の検証"
-      ],
-      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
-    },
-    {
       "code": "4674",
       "name": "クレスコ",
       "earnings_date": "2026-11-05",
@@ -6427,28 +6383,6 @@
       "pre_event_factors": {
         "volume_ratio_5_20": 0.9746,
         "return_5d_pct": -2.328
-      },
-      "formally_ranked": false,
-      "strict_score": null,
-      "missing_score_evidence": [
-        "本人の過去決算反応",
-        "四季報・会社予想の改定履歴",
-        "レーティング・目標株価の改定履歴",
-        "ニュース根拠の検証"
-      ],
-      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
-    },
-    {
-      "code": "5940",
-      "name": "不二サッシ",
-      "earnings_date": "2026-11-05",
-      "captured_at": "2026-10-22T18:30:59+09:00",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-      "market_cap_oku_at_capture": 91.28,
-      "price_asof": "2026-10-21",
-      "pre_event_factors": {
-        "volume_ratio_5_20": 0.4198,
-        "return_5d_pct": -0.952
       },
       "formally_ranked": false,
       "strict_score": null,
@@ -9255,28 +9189,6 @@
       "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
     },
     {
-      "code": "7963",
-      "name": "興研",
-      "earnings_date": "2026-11-06",
-      "captured_at": "2026-10-22T18:30:59+09:00",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-      "market_cap_oku_at_capture": 83.85,
-      "price_asof": "2026-10-21",
-      "pre_event_factors": {
-        "volume_ratio_5_20": 1.0369,
-        "return_5d_pct": -4.465
-      },
-      "formally_ranked": false,
-      "strict_score": null,
-      "missing_score_evidence": [
-        "本人の過去決算反応",
-        "四季報・会社予想の改定履歴",
-        "レーティング・目標株価の改定履歴",
-        "ニュース根拠の検証"
-      ],
-      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
-    },
-    {
       "code": "7987",
       "name": "ナカバヤシ",
       "earnings_date": "2026-11-06",
@@ -9585,28 +9497,6 @@
       "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
     },
     {
-      "code": "9063",
-      "name": "岡山県貨物運送",
-      "earnings_date": "2026-11-06",
-      "captured_at": "2026-11-05T22:16:31+09:00",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-      "market_cap_oku_at_capture": 80.05,
-      "price_asof": "2026-11-05",
-      "pre_event_factors": {
-        "volume_ratio_5_20": 1.7578,
-        "return_5d_pct": -1.619
-      },
-      "formally_ranked": false,
-      "strict_score": null,
-      "missing_score_evidence": [
-        "本人の過去決算反応",
-        "四季報・会社予想の改定履歴",
-        "レーティング・目標株価の改定履歴",
-        "ニュース根拠の検証"
-      ],
-      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
-    },
-    {
       "code": "9130",
       "name": "共栄タンカー",
       "earnings_date": "2026-11-06",
@@ -9815,28 +9705,6 @@
       "pre_event_factors": {
         "volume_ratio_5_20": 0.6512,
         "return_5d_pct": -1.283
-      },
-      "formally_ranked": false,
-      "strict_score": null,
-      "missing_score_evidence": [
-        "本人の過去決算反応",
-        "四季報・会社予想の改定履歴",
-        "レーティング・目標株価の改定履歴",
-        "ニュース根拠の検証"
-      ],
-      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
-    },
-    {
-      "code": "9867",
-      "name": "ソレキア",
-      "earnings_date": "2026-11-06",
-      "captured_at": "2026-10-22T18:30:59+09:00",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-      "market_cap_oku_at_capture": 89.5,
-      "price_asof": "2026-10-21",
-      "pre_event_factors": {
-        "volume_ratio_5_20": 1.7778,
-        "return_5d_pct": -0.289
       },
       "formally_ranked": false,
       "strict_score": null,
@@ -10069,6 +9937,28 @@
       "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
     },
     {
+      "code": "1965",
+      "name": "テクノ菱和",
+      "earnings_date": "2026-11-09",
+      "captured_at": "2026-11-06T22:10:27+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 997.7,
+      "price_asof": "2026-11-06",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.8982,
+        "return_5d_pct": -24.312
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
+    },
+    {
       "code": "2288",
       "name": "丸大食品",
       "earnings_date": "2026-11-09",
@@ -10189,28 +10079,6 @@
       "pre_event_factors": {
         "volume_ratio_5_20": 3.2315,
         "return_5d_pct": 0.501
-      },
-      "formally_ranked": false,
-      "strict_score": null,
-      "missing_score_evidence": [
-        "本人の過去決算反応",
-        "四季報・会社予想の改定履歴",
-        "レーティング・目標株価の改定履歴",
-        "ニュース根拠の検証"
-      ],
-      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
-    },
-    {
-      "code": "3143",
-      "name": "オーウイル",
-      "earnings_date": "2026-11-09",
-      "captured_at": "2026-10-22T18:30:59+09:00",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-      "market_cap_oku_at_capture": 98.05,
-      "price_asof": "2026-10-21",
-      "pre_event_factors": {
-        "volume_ratio_5_20": 0.5209,
-        "return_5d_pct": -4.229
       },
       "formally_ranked": false,
       "strict_score": null,
@@ -13435,28 +13303,6 @@
       "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
     },
     {
-      "code": "7619",
-      "name": "田中商事",
-      "earnings_date": "2026-11-10",
-      "captured_at": "2026-10-22T18:30:59+09:00",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-      "market_cap_oku_at_capture": 83.73,
-      "price_asof": "2026-10-21",
-      "pre_event_factors": {
-        "volume_ratio_5_20": 1.5374,
-        "return_5d_pct": 2.39
-      },
-      "formally_ranked": false,
-      "strict_score": null,
-      "missing_score_evidence": [
-        "本人の過去決算反応",
-        "四季報・会社予想の改定履歴",
-        "レーティング・目標株価の改定履歴",
-        "ニュース根拠の検証"
-      ],
-      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
-    },
-    {
       "code": "7868",
       "name": "広済堂ホールディングス",
       "earnings_date": "2026-11-10",
@@ -15415,6 +15261,28 @@
       "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
     },
     {
+      "code": "5253",
+      "name": "カバー",
+      "earnings_date": "2026-11-11",
+      "captured_at": "2026-11-06T22:10:27+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 969.95,
+      "price_asof": "2026-11-06",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.1872,
+        "return_5d_pct": -0.912
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
+    },
+    {
       "code": "5262",
       "name": "日本ヒューム",
       "earnings_date": "2026-11-11",
@@ -16273,6 +16141,28 @@
       "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
     },
     {
+      "code": "7944",
+      "name": "ローランド",
+      "earnings_date": "2026-11-11",
+      "captured_at": "2026-11-06T22:10:27+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 962.58,
+      "price_asof": "2026-11-06",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.3938,
+        "return_5d_pct": -3.826
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
+    },
+    {
       "code": "8023",
       "name": "ＤＡＩＫＯ　ＸＴＥＣＨ",
       "earnings_date": "2026-11-11",
@@ -16415,6 +16305,28 @@
       "pre_event_factors": {
         "volume_ratio_5_20": 0.4469,
         "return_5d_pct": 1.477
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
+    },
+    {
+      "code": "8399",
+      "name": "琉球銀行",
+      "earnings_date": "2026-11-11",
+      "captured_at": "2026-11-06T22:10:27+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 998.92,
+      "price_asof": "2026-11-06",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.0741,
+        "return_5d_pct": -15.063
       },
       "formally_ranked": false,
       "strict_score": null,
@@ -16735,28 +16647,6 @@
       "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
     },
     {
-      "code": "1491",
-      "name": "中外鉱業",
-      "earnings_date": "2026-11-12",
-      "captured_at": "2026-11-05T22:16:31+09:00",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-      "market_cap_oku_at_capture": 81.76,
-      "price_asof": "2026-11-05",
-      "pre_event_factors": {
-        "volume_ratio_5_20": 2.0546,
-        "return_5d_pct": -5.167
-      },
-      "formally_ranked": false,
-      "strict_score": null,
-      "missing_score_evidence": [
-        "本人の過去決算反応",
-        "四季報・会社予想の改定履歴",
-        "レーティング・目標株価の改定履歴",
-        "ニュース根拠の検証"
-      ],
-      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
-    },
-    {
       "code": "1811",
       "name": "錢高組",
       "earnings_date": "2026-11-12",
@@ -17053,6 +16943,28 @@
       "pre_event_factors": {
         "volume_ratio_5_20": 2.5381,
         "return_5d_pct": -14.381
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
+    },
+    {
+      "code": "2874",
+      "name": "横浜冷凍",
+      "earnings_date": "2026-11-12",
+      "captured_at": "2026-11-06T22:10:27+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 978.92,
+      "price_asof": "2026-11-06",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.1138,
+        "return_5d_pct": -7.438
       },
       "formally_ranked": false,
       "strict_score": null,
@@ -17405,6 +17317,28 @@
       "pre_event_factors": {
         "volume_ratio_5_20": 1.2087,
         "return_5d_pct": -17.935
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
+    },
+    {
+      "code": "3465",
+      "name": "ケイアイスター不動産",
+      "earnings_date": "2026-11-12",
+      "captured_at": "2026-11-06T22:10:27+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 977.98,
+      "price_asof": "2026-11-06",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 2.3551,
+        "return_5d_pct": 3.789
       },
       "formally_ranked": false,
       "strict_score": null,
@@ -17867,6 +17801,28 @@
       "pre_event_factors": {
         "volume_ratio_5_20": 1.4535,
         "return_5d_pct": -0.418
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
+    },
+    {
+      "code": "3993",
+      "name": "ＰＫＳＨＡ　Ｔｅｃｈｎｏｌｏｇｙ",
+      "earnings_date": "2026-11-12",
+      "captured_at": "2026-11-06T22:10:27+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1016.xlsx",
+      "market_cap_oku_at_capture": 924.94,
+      "price_asof": "2026-11-06",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.3618,
+        "return_5d_pct": -19.359
       },
       "formally_ranked": false,
       "strict_score": null,
@@ -18561,28 +18517,6 @@
       "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
     },
     {
-      "code": "4937",
-      "name": "Ｗａｑｏｏ",
-      "earnings_date": "2026-11-12",
-      "captured_at": "2026-11-02T22:12:09+09:00",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-      "market_cap_oku_at_capture": 81.17,
-      "price_asof": "2026-11-02",
-      "pre_event_factors": {
-        "volume_ratio_5_20": 2.466,
-        "return_5d_pct": -2.566
-      },
-      "formally_ranked": false,
-      "strict_score": null,
-      "missing_score_evidence": [
-        "本人の過去決算反応",
-        "四季報・会社予想の改定履歴",
-        "レーティング・目標株価の改定履歴",
-        "ニュース根拠の検証"
-      ],
-      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
-    },
-    {
       "code": "4978",
       "name": "リプロセル",
       "earnings_date": "2026-11-12",
@@ -18945,6 +18879,28 @@
       "pre_event_factors": {
         "volume_ratio_5_20": 1.025,
         "return_5d_pct": -4.512
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
+    },
+    {
+      "code": "5715",
+      "name": "古河機械金属",
+      "earnings_date": "2026-11-12",
+      "captured_at": "2026-11-06T22:10:27+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 997.58,
+      "price_asof": "2026-11-06",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.0993,
+        "return_5d_pct": -15.25
       },
       "formally_ranked": false,
       "strict_score": null,
@@ -20761,28 +20717,6 @@
       "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
     },
     {
-      "code": "9193",
-      "name": "東京汽船",
-      "earnings_date": "2026-11-12",
-      "captured_at": "2026-10-22T18:30:59+09:00",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-      "market_cap_oku_at_capture": 85.3,
-      "price_asof": "2026-10-21",
-      "pre_event_factors": {
-        "volume_ratio_5_20": 1.1631,
-        "return_5d_pct": 1.061
-      },
-      "formally_ranked": false,
-      "strict_score": null,
-      "missing_score_evidence": [
-        "本人の過去決算反応",
-        "四季報・会社予想の改定履歴",
-        "レーティング・目標株価の改定履歴",
-        "ニュース根拠の検証"
-      ],
-      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
-    },
-    {
       "code": "9221",
       "name": "フルハシＥＰＯ",
       "earnings_date": "2026-11-12",
@@ -21035,28 +20969,6 @@
       "pre_event_factors": {
         "volume_ratio_5_20": 0.8074,
         "return_5d_pct": 0.679
-      },
-      "formally_ranked": false,
-      "strict_score": null,
-      "missing_score_evidence": [
-        "本人の過去決算反応",
-        "四季報・会社予想の改定履歴",
-        "レーティング・目標株価の改定履歴",
-        "ニュース根拠の検証"
-      ],
-      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
-    },
-    {
-      "code": "9791",
-      "name": "ビケンテクノ",
-      "earnings_date": "2026-11-12",
-      "captured_at": "2026-10-22T18:30:59+09:00",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-      "market_cap_oku_at_capture": 85.4,
-      "price_asof": "2026-10-20",
-      "pre_event_factors": {
-        "volume_ratio_5_20": 1.217,
-        "return_5d_pct": -1.651
       },
       "formally_ranked": false,
       "strict_score": null,
@@ -21431,28 +21343,6 @@
       "pre_event_factors": {
         "volume_ratio_5_20": 0.5114,
         "return_5d_pct": -1.048
-      },
-      "formally_ranked": false,
-      "strict_score": null,
-      "missing_score_evidence": [
-        "本人の過去決算反応",
-        "四季報・会社予想の改定履歴",
-        "レーティング・目標株価の改定履歴",
-        "ニュース根拠の検証"
-      ],
-      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
-    },
-    {
-      "code": "2332",
-      "name": "クエスト",
-      "earnings_date": "2026-11-13",
-      "captured_at": "2026-10-23T21:48:16+09:00",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-      "market_cap_oku_at_capture": 90.7,
-      "price_asof": "2026-10-23",
-      "pre_event_factors": {
-        "volume_ratio_5_20": 0.5424,
-        "return_5d_pct": 0.97
       },
       "formally_ranked": false,
       "strict_score": null,
@@ -22763,28 +22653,6 @@
       "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
     },
     {
-      "code": "4040",
-      "name": "南海化学",
-      "earnings_date": "2026-11-13",
-      "captured_at": "2026-10-23T21:48:16+09:00",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-      "market_cap_oku_at_capture": 84.92,
-      "price_asof": "2026-10-23",
-      "pre_event_factors": {
-        "volume_ratio_5_20": 2.4124,
-        "return_5d_pct": 0.236
-      },
-      "formally_ranked": false,
-      "strict_score": null,
-      "missing_score_evidence": [
-        "本人の過去決算反応",
-        "四季報・会社予想の改定履歴",
-        "レーティング・目標株価の改定履歴",
-        "ニュース根拠の検証"
-      ],
-      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
-    },
-    {
       "code": "4053",
       "name": "Ｓｕｎ　Ａｓｔｅｒｉｓｋ",
       "earnings_date": "2026-11-13",
@@ -23577,28 +23445,6 @@
       "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
     },
     {
-      "code": "4840",
-      "name": "トライアイズ",
-      "earnings_date": "2026-11-13",
-      "captured_at": "2026-11-05T22:16:31+09:00",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-      "market_cap_oku_at_capture": 82.07,
-      "price_asof": "2026-11-05",
-      "pre_event_factors": {
-        "volume_ratio_5_20": 1.1885,
-        "return_5d_pct": -5.247
-      },
-      "formally_ranked": false,
-      "strict_score": null,
-      "missing_score_evidence": [
-        "本人の過去決算反応",
-        "四季報・会社予想の改定履歴",
-        "レーティング・目標株価の改定履歴",
-        "ニュース根拠の検証"
-      ],
-      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
-    },
-    {
       "code": "4888",
       "name": "ステラファーマ",
       "earnings_date": "2026-11-13",
@@ -24193,6 +24039,50 @@
       "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
     },
     {
+      "code": "6033",
+      "name": "エクストリーム",
+      "earnings_date": "2026-11-13",
+      "captured_at": "2026-11-06T22:10:27+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 80.75,
+      "price_asof": "2026-11-06",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 3.2056,
+        "return_5d_pct": 2.725
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
+    },
+    {
+      "code": "6036",
+      "name": "ＫｅｅＰｅｒ技研",
+      "earnings_date": "2026-11-13",
+      "captured_at": "2026-11-06T22:10:27+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 978.11,
+      "price_asof": "2026-11-06",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.114,
+        "return_5d_pct": -3.396
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
+    },
+    {
       "code": "6045",
       "name": "レントラックス",
       "earnings_date": "2026-11-13",
@@ -24303,28 +24193,6 @@
       "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
     },
     {
-      "code": "6094",
-      "name": "フリークアウト・ホールディングス",
-      "earnings_date": "2026-11-13",
-      "captured_at": "2026-10-23T21:48:16+09:00",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-      "market_cap_oku_at_capture": 86.54,
-      "price_asof": "2026-10-23",
-      "pre_event_factors": {
-        "volume_ratio_5_20": 0.2804,
-        "return_5d_pct": 1.014
-      },
-      "formally_ranked": false,
-      "strict_score": null,
-      "missing_score_evidence": [
-        "本人の過去決算反応",
-        "四季報・会社予想の改定履歴",
-        "レーティング・目標株価の改定履歴",
-        "ニュース根拠の検証"
-      ],
-      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
-    },
-    {
       "code": "6118",
       "name": "アイダエンジニアリング",
       "earnings_date": "2026-11-13",
@@ -24423,6 +24291,28 @@
       "pre_event_factors": {
         "volume_ratio_5_20": 0.1554,
         "return_5d_pct": -10.439
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
+    },
+    {
+      "code": "6209",
+      "name": "リケンＮＰＲ",
+      "earnings_date": "2026-11-13",
+      "captured_at": "2026-11-06T22:10:27+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 994.14,
+      "price_asof": "2026-11-06",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.5506,
+        "return_5d_pct": -3.018
       },
       "formally_ranked": false,
       "strict_score": null,
@@ -25557,6 +25447,28 @@
       "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
     },
     {
+      "code": "6914",
+      "name": "オプテックスグループ",
+      "earnings_date": "2026-11-13",
+      "captured_at": "2026-11-06T22:10:27+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 981.86,
+      "price_asof": "2026-11-06",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.2847,
+        "return_5d_pct": -12.261
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
+    },
+    {
       "code": "7030",
       "name": "スプリックス",
       "earnings_date": "2026-11-13",
@@ -25589,28 +25501,6 @@
       "pre_event_factors": {
         "volume_ratio_5_20": 0.443,
         "return_5d_pct": -2.179
-      },
-      "formally_ranked": false,
-      "strict_score": null,
-      "missing_score_evidence": [
-        "本人の過去決算反応",
-        "四季報・会社予想の改定履歴",
-        "レーティング・目標株価の改定履歴",
-        "ニュース根拠の検証"
-      ],
-      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
-    },
-    {
-      "code": "7084",
-      "name": "Ｓｍｉｌｅ　Ｈｏｌｄｉｎｇｓ",
-      "earnings_date": "2026-11-13",
-      "captured_at": "2026-10-23T21:48:16+09:00",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-      "market_cap_oku_at_capture": 86.09,
-      "price_asof": "2026-10-23",
-      "pre_event_factors": {
-        "volume_ratio_5_20": 0.7627,
-        "return_5d_pct": -1.322
       },
       "formally_ranked": false,
       "strict_score": null,
@@ -25777,28 +25667,6 @@
       "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
     },
     {
-      "code": "7264",
-      "name": "ムロコーポレーション",
-      "earnings_date": "2026-11-13",
-      "captured_at": "2026-10-23T21:48:16+09:00",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-      "market_cap_oku_at_capture": 82.05,
-      "price_asof": "2026-10-23",
-      "pre_event_factors": {
-        "volume_ratio_5_20": 2.0386,
-        "return_5d_pct": 3.113
-      },
-      "formally_ranked": false,
-      "strict_score": null,
-      "missing_score_evidence": [
-        "本人の過去決算反応",
-        "四季報・会社予想の改定履歴",
-        "レーティング・目標株価の改定履歴",
-        "ニュース根拠の検証"
-      ],
-      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
-    },
-    {
       "code": "7266",
       "name": "今仙電機製作所",
       "earnings_date": "2026-11-13",
@@ -25809,28 +25677,6 @@
       "pre_event_factors": {
         "volume_ratio_5_20": 0.7541,
         "return_5d_pct": -2.181
-      },
-      "formally_ranked": false,
-      "strict_score": null,
-      "missing_score_evidence": [
-        "本人の過去決算反応",
-        "四季報・会社予想の改定履歴",
-        "レーティング・目標株価の改定履歴",
-        "ニュース根拠の検証"
-      ],
-      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
-    },
-    {
-      "code": "7291",
-      "name": "日本プラスト",
-      "earnings_date": "2026-11-13",
-      "captured_at": "2026-10-23T21:48:16+09:00",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-      "market_cap_oku_at_capture": 83.48,
-      "price_asof": "2026-10-23",
-      "pre_event_factors": {
-        "volume_ratio_5_20": 0.6134,
-        "return_5d_pct": -1.77
       },
       "formally_ranked": false,
       "strict_score": null,
@@ -26381,28 +26227,6 @@
       "pre_event_factors": {
         "volume_ratio_5_20": 0.6154,
         "return_5d_pct": -2.359
-      },
-      "formally_ranked": false,
-      "strict_score": null,
-      "missing_score_evidence": [
-        "本人の過去決算反応",
-        "四季報・会社予想の改定履歴",
-        "レーティング・目標株価の改定履歴",
-        "ニュース根拠の検証"
-      ],
-      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
-    },
-    {
-      "code": "8039",
-      "name": "築地魚市場",
-      "earnings_date": "2026-11-13",
-      "captured_at": "2026-10-23T21:48:16+09:00",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-      "market_cap_oku_at_capture": 80.6,
-      "price_asof": "2026-10-23",
-      "pre_event_factors": {
-        "volume_ratio_5_20": 1.6508,
-        "return_5d_pct": 2.257
       },
       "formally_ranked": false,
       "strict_score": null,
@@ -27217,28 +27041,6 @@
       "pre_event_factors": {
         "volume_ratio_5_20": 0.7741,
         "return_5d_pct": -0.954
-      },
-      "formally_ranked": false,
-      "strict_score": null,
-      "missing_score_evidence": [
-        "本人の過去決算反応",
-        "四季報・会社予想の改定履歴",
-        "レーティング・目標株価の改定履歴",
-        "ニュース根拠の検証"
-      ],
-      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。"
-    },
-    {
-      "code": "9827",
-      "name": "リリカラ",
-      "earnings_date": "2026-11-13",
-      "captured_at": "2026-10-23T21:48:16+09:00",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-      "market_cap_oku_at_capture": 80.06,
-      "price_asof": "2026-10-23",
-      "pre_event_factors": {
-        "volume_ratio_5_20": 0.9158,
-        "return_5d_pct": -1.664
       },
       "formally_ranked": false,
       "strict_score": null,
@@ -28202,35 +28004,6 @@
       "observed_return": {
         "next_session_date": "2026-10-28",
         "next_close_pct": -7.07,
-        "ohlc_complete": true,
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
-      }
-    },
-    {
-      "code": "7175",
-      "name": "今村証券",
-      "earnings_date": "2026-10-27",
-      "captured_at": "2026-10-22T18:30:59+09:00",
-      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
-      "market_cap_oku_at_capture": 87.34,
-      "price_asof": "2026-10-21",
-      "pre_event_factors": {
-        "volume_ratio_5_20": 1.4729,
-        "return_5d_pct": -10.908
-      },
-      "formally_ranked": false,
-      "strict_score": null,
-      "missing_score_evidence": [
-        "本人の過去決算反応",
-        "四季報・会社予想の改定履歴",
-        "レーティング・目標株価の改定履歴",
-        "ニュース根拠の検証"
-      ],
-      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
-      "observed_return": {
-        "next_session_date": "2026-10-28",
-        "next_close_pct": 1.13,
         "ohlc_complete": true,
         "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
         "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
@@ -33741,7 +33514,7 @@
       "observed_return": {
         "next_session_date": "2026-11-04",
         "next_close_pct": 0.2,
-        "ohlc_complete": false,
+        "ohlc_complete": true,
         "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
         "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
       }
@@ -33770,7 +33543,7 @@
       "observed_return": {
         "next_session_date": "2026-11-04",
         "next_close_pct": -8.5,
-        "ohlc_complete": false,
+        "ohlc_complete": true,
         "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
         "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
       }
@@ -33799,7 +33572,7 @@
       "observed_return": {
         "next_session_date": "2026-11-04",
         "next_close_pct": -18.72,
-        "ohlc_complete": false,
+        "ohlc_complete": true,
         "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
         "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
       }
@@ -33828,7 +33601,7 @@
       "observed_return": {
         "next_session_date": "2026-11-04",
         "next_close_pct": 0.07,
-        "ohlc_complete": false,
+        "ohlc_complete": true,
         "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
         "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
       }
@@ -33857,7 +33630,7 @@
       "observed_return": {
         "next_session_date": "2026-11-04",
         "next_close_pct": -5.08,
-        "ohlc_complete": false,
+        "ohlc_complete": true,
         "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
         "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
       }
@@ -33886,7 +33659,7 @@
       "observed_return": {
         "next_session_date": "2026-11-04",
         "next_close_pct": -1.77,
-        "ohlc_complete": false,
+        "ohlc_complete": true,
         "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
         "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
       }
@@ -33915,7 +33688,7 @@
       "observed_return": {
         "next_session_date": "2026-11-04",
         "next_close_pct": -4.12,
-        "ohlc_complete": false,
+        "ohlc_complete": true,
         "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1023.xlsx",
         "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
       }
@@ -33944,7 +33717,7 @@
       "observed_return": {
         "next_session_date": "2026-11-04",
         "next_close_pct": -2.5,
-        "ohlc_complete": false,
+        "ohlc_complete": true,
         "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
         "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
       }
@@ -33973,7 +33746,7 @@
       "observed_return": {
         "next_session_date": "2026-11-04",
         "next_close_pct": -0.54,
-        "ohlc_complete": false,
+        "ohlc_complete": true,
         "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
         "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
       }
@@ -34002,7 +33775,7 @@
       "observed_return": {
         "next_session_date": "2026-11-04",
         "next_close_pct": -7.08,
-        "ohlc_complete": false,
+        "ohlc_complete": true,
         "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
         "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
       }
@@ -34031,7 +33804,7 @@
       "observed_return": {
         "next_session_date": "2026-11-04",
         "next_close_pct": 7.79,
-        "ohlc_complete": false,
+        "ohlc_complete": true,
         "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
         "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
       }
@@ -34060,7 +33833,7 @@
       "observed_return": {
         "next_session_date": "2026-11-04",
         "next_close_pct": 2.8,
-        "ohlc_complete": false,
+        "ohlc_complete": true,
         "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
         "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
       }
@@ -34089,7 +33862,7 @@
       "observed_return": {
         "next_session_date": "2026-11-04",
         "next_close_pct": 0.7,
-        "ohlc_complete": false,
+        "ohlc_complete": true,
         "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
         "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
       }
@@ -34118,7 +33891,7 @@
       "observed_return": {
         "next_session_date": "2026-11-04",
         "next_close_pct": 1.59,
-        "ohlc_complete": false,
+        "ohlc_complete": true,
         "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
         "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
       }
@@ -34147,7 +33920,7 @@
       "observed_return": {
         "next_session_date": "2026-11-04",
         "next_close_pct": 9.69,
-        "ohlc_complete": false,
+        "ohlc_complete": true,
         "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
         "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
       }
@@ -34176,7 +33949,7 @@
       "observed_return": {
         "next_session_date": "2026-11-04",
         "next_close_pct": -1.5,
-        "ohlc_complete": false,
+        "ohlc_complete": true,
         "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
         "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
       }
@@ -34205,7 +33978,7 @@
       "observed_return": {
         "next_session_date": "2026-11-04",
         "next_close_pct": -3.5,
-        "ohlc_complete": false,
+        "ohlc_complete": true,
         "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
         "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
       }
@@ -34234,7 +34007,7 @@
       "observed_return": {
         "next_session_date": "2026-11-04",
         "next_close_pct": -0.14,
-        "ohlc_complete": false,
+        "ohlc_complete": true,
         "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
         "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
       }
@@ -34263,7 +34036,7 @@
       "observed_return": {
         "next_session_date": "2026-11-04",
         "next_close_pct": -2.29,
-        "ohlc_complete": false,
+        "ohlc_complete": true,
         "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
         "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
       }
@@ -34292,7 +34065,7 @@
       "observed_return": {
         "next_session_date": "2026-11-04",
         "next_close_pct": 0.55,
-        "ohlc_complete": false,
+        "ohlc_complete": true,
         "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
         "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
       }
@@ -34321,7 +34094,7 @@
       "observed_return": {
         "next_session_date": "2026-11-04",
         "next_close_pct": -2.32,
-        "ohlc_complete": false,
+        "ohlc_complete": true,
         "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
         "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
       }
@@ -34350,6 +34123,847 @@
       "observed_return": {
         "next_session_date": "2026-11-04",
         "next_close_pct": -1.67,
+        "ohlc_complete": true,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "1787",
+      "name": "ナカボーテック",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 120.82,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.4194,
+        "return_5d_pct": -2.448
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": -0.53,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "1799",
+      "name": "第一建設工業",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 593.19,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.0434,
+        "return_5d_pct": 0.904
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": -2.81,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "1967",
+      "name": "ヤマト",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 477.95,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.0918,
+        "return_5d_pct": -0.651
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": 5.25,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "2335",
+      "name": "キューブシステム",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 157.54,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.5649,
+        "return_5d_pct": 0.679
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": -0.3,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "3150",
+      "name": "グリムス",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 545.27,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.8746,
+        "return_5d_pct": -1.586
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": 13.19,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "3636",
+      "name": "三菱総合研究所",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 832.09,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.0524,
+        "return_5d_pct": 3.529
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": -1.15,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "3668",
+      "name": "コロプラ",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 516.84,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.7844,
+        "return_5d_pct": 2.29
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": 21.49,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "3844",
+      "name": "コムチュア",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 414.93,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.5455,
+        "return_5d_pct": 1.482
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": 5.76,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "4326",
+      "name": "インテージホールディングス",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 736.33,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.2829,
+        "return_5d_pct": -2.179
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": 3.45,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "4559",
+      "name": "ゼリア新薬工業",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 883.79,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.8829,
+        "return_5d_pct": 3.351
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": 8.28,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "4847",
+      "name": "インテリジェント　ウェイブ",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 389.88,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.2106,
+        "return_5d_pct": -1.129
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": -2.21,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "4886",
+      "name": "あすか製薬ホールディングス",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 576.11,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.1937,
+        "return_5d_pct": 0.099
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": 7.82,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "5449",
+      "name": "大阪製鐵",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 720.14,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.6696,
+        "return_5d_pct": 1.992
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": 1.16,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "5632",
+      "name": "三菱製鋼",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 343.85,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.8851,
+        "return_5d_pct": -3.603
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": -8.6,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "5821",
+      "name": "平河ヒューテック",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 481.14,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.4512,
+        "return_5d_pct": -5.207
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": -0.96,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "5951",
+      "name": "ダイニチ工業",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 178.03,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.1338,
+        "return_5d_pct": -0.722
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": -4.5,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "6240",
+      "name": "ヤマシンフィルタ",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 342.31,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.1478,
+        "return_5d_pct": -1.796
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": -2.41,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "6643",
+      "name": "戸上電機製作所",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 244.34,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.5096,
+        "return_5d_pct": -4.356
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": -7.68,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "6809",
+      "name": "ＴＯＡ",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 601.63,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.8409,
+        "return_5d_pct": -0.402
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": 4.08,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "6817",
+      "name": "スミダコーポレーション",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 391.58,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.4832,
+        "return_5d_pct": -5.887
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": -4.88,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "6958",
+      "name": "日本シイエムケイ",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 553.23,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.2412,
+        "return_5d_pct": -5.825
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": -9.58,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "7466",
+      "name": "ＳＰＫ",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 283.72,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.3794,
+        "return_5d_pct": -4.422
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": -1.17,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "7565",
+      "name": "萬世電機",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 114.47,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.9091,
+        "return_5d_pct": -0.704
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": 0.89,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "7600",
+      "name": "日本エム・ディ・エム",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 161.81,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.1814,
+        "return_5d_pct": -2.848
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": -20.42,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "7609",
+      "name": "ダイトロン",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 854.3,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.2518,
+        "return_5d_pct": -11.852
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": -11.48,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "8081",
+      "name": "カナデン",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 593.29,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.0226,
+        "return_5d_pct": -4.794
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": 0.44,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "9059",
+      "name": "カンダホールディングス",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 197.76,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.9392,
+        "return_5d_pct": 0.326
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": 0.0,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "9845",
+      "name": "パーカーコーポレーション",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 330.88,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 1.0237,
+        "return_5d_pct": -2.363
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": -5.76,
+        "ohlc_complete": false,
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+        "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"
+      }
+    },
+    {
+      "code": "9990",
+      "name": "サックスバー　ホールディングス",
+      "earnings_date": "2026-11-04",
+      "captured_at": "2026-10-22T18:30:59+09:00",
+      "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+      "market_cap_oku_at_capture": 220.1,
+      "price_asof": "2026-10-21",
+      "pre_event_factors": {
+        "volume_ratio_5_20": 0.8032,
+        "return_5d_pct": -0.397
+      },
+      "formally_ranked": false,
+      "strict_score": null,
+      "missing_score_evidence": [
+        "本人の過去決算反応",
+        "四季報・会社予想の改定履歴",
+        "レーティング・目標株価の改定履歴",
+        "ニュース根拠の検証"
+      ],
+      "remark": "学習用観測であり正式候補ではない。未取得を0点として採点しない。",
+      "observed_return": {
+        "next_session_date": "2026-11-05",
+        "next_close_pct": -0.81,
         "ohlc_complete": false,
         "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
         "caveat": "JPX予定日基準。実際の開示時刻・因果関係は未検証"

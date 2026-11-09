@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-10T01:47:12+09:00",
-  "method": "候補自身の出典のある過去決算日付とYahoo日足を照合。記事掲載日は実際の発表日と異なる場合がある。",
+  "updated_at": "2026-11-10T02:20:13+09:00",
+  "method": "JPX予定日・Yahoo決算カレンダー・決算短信見出し内の適時開示日から本人の過去実績を取得。記事発信日をそのまま開示日として推定しない。",
   "coverage": {
     "candidates": 20,
-    "with_history": 10,
-    "events": 15
+    "with_history": 11,
+    "events": 17
   },
   "records": [
     {
@@ -14,7 +14,7 @@
       "events": [
         {
           "event_date": "2026-08-07",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5qeTExakd0eE5mNVV3UUg4VnptcGgxbkQwQldjX3N5WVA2RldrdFQwbEVXX00tSXAwc2ZZRHl6RXdBNmdvdExlWTQ0c2haYjZ5Y210OUpGbTloWllKN0Mydi1oV2sxNTZoTVE?oc=5",
           "headline": "日本電子材料[6855]：2027年３月期 第１四半期決算短信［日本基準］(連結) 2026年8月7日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-08-06",
@@ -27,7 +27,7 @@
         },
         {
           "event_date": "2026-05-14",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBqVGNHRk9OdHd6TEh1VS05M0dUMVBCSk9GdnpVWXJ6OUxSSjExdm14SF8wMkNCNjg2ZklKb1g4OFh5QUdhNTBSUFpQaVdfbksxbXJXY3M2MjlOMFF6WnRzMHpBMXRMVWk4Znc?oc=5",
           "headline": "日本電子材料[6855]：2026年３月期 決算短信［日本基準］(連結) 2026年5月14日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-05-13",
@@ -59,7 +59,7 @@
       "events": [
         {
           "event_date": "2026-05-11",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5mcjlnOFdVbk9IRnVTc2trTXVESUh3SXB6Z2tvWTJCcEJ4M0FlWnZXUzUwRF9yaXQ1b3RIVW5ncUlNOFAyUG5xWllYVVM2a2lEdlhhbnViOGFvZ04yOHhyb0dsbHNldE5uOEE?oc=5",
           "headline": "プレミアグループ[7199]：2026年３月期決算短信〔IFRS〕 （連結） 2026年5月11日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-05-08",
@@ -79,7 +79,7 @@
       "events": [
         {
           "event_date": "2026-08-05",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9XZDByUGJ3Q2xLWUlmMmxRdFpSal9ETzdXbnp2MUZpVGhCeGpYZUpzdWllSmlpTk1QRVZlYmNmbjhmLTdOUGlkdnJCTzFZcG1BMmxBamFFUE1wUDVELUVBcEZ5eklUZ3Zud3c?oc=5",
           "headline": "新日本科学[2395]：2027年３月期 第１四半期決算短信〔日本基準〕（連結） 2026年8月5日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-08-04",
@@ -98,8 +98,21 @@
       "name": "ユニチカ",
       "events": [
         {
+          "event_date": "2026-08-06",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9TNF85am4wTVhWZWJ6a2lUVHo1M1Q2cUVRMmtIbWdxeEYxQUY1eG9iSEdVMExoLU4zU0taNkthcVR2ZUhOMXhZMUxVWnhacm1HWWo2eTNrOG5WVWdxbUZxWVhkaWtiRFlzRWc?oc=5",
+          "headline": "ユニチカ[3103]：2027年３月期 第１四半期決算短信〔日本基準〕（連結） 2026年8月6日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-08-05",
+          "baseline_close": 1009.0,
+          "next_session_date": "2026-08-07",
+          "next_close_pct": 1.29,
+          "after_3d_pct": 9.22,
+          "after_5d_pct": 57.98,
+          "price_source": "Yahoo Finance 日足"
+        },
+        {
           "event_date": "2026-05-14",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE92SUZaUTNwcklOWW04S0tfSHc4RnBmSzdwc1o1Y1JyVFpwQmhuc3QzQmpOeEpjWGZGck96V2lSVzNWLUhka3o4TU9Bb3dBSDh3enp3YW9GcVpBbDBqU1Z4Y1pvZ0lvb09NaFE?oc=5",
           "headline": "ユニチカ[3103]：2026年3月期 決算短信〔日本基準〕（連結） 2026年5月14日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-05-13",
@@ -119,7 +132,7 @@
       "events": [
         {
           "event_date": "2026-08-07",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9tUVBNbm8tX2t6ZGdiMlF5SWFkbExWVngxR2g5Ni14MGhTa3ZaM2l4VHA1eTVnZVVRbGhWbGVvckpqSjBhUEdWbDlqb0RId3ZLYlJQbFIxYkQ3NWY4U2V3RVp6NzZTZmMtR3c?oc=5",
           "headline": "日本ケミコン[6997]：2027年3月期第1四半期決算短信〔日本基準〕（連結） 2026年8月7日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-08-06",
@@ -132,7 +145,7 @@
         },
         {
           "event_date": "2026-05-14",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5NV1RWOGhPN0ROdkRKWEdpWGpReVFqWXVkRUxfV0xjZm4zN1FmbTNUbmFOX2kycEl2b2dJTDNnRC1EeE9CSndpX1JMOHh6UXpZeE9zeDVDRVdpNG4td2F5YnE1S01PUllZa2c?oc=5",
           "headline": "日本ケミコン[6997]：2026年3月期決算短信〔日本基準〕（連結） 2026年5月14日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-05-13",
@@ -158,7 +171,7 @@
       "events": [
         {
           "event_date": "2026-05-15",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBYa2xPMjZVUjVVU2sxel9XS1pJQUhyVTNwRXh4b3BjVlJ2RkpSRFpzbGREQmlWNlBtSmtqQkl6X0hmTDJmaGo5LUFyUF9QTGwyTkVUN1ktNG5OVTRwelVsT0ZZZEpxZFJ4RFE?oc=5",
           "headline": "関東電化工業[4047]：2026年3月期決算短信〔日本基準〕(連結) 2026年5月15日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-05-14",
@@ -233,8 +246,22 @@
     {
       "code": "6785",
       "name": "鈴木",
-      "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "events": [
+        {
+          "event_date": "2026-08-10",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE90SlZCaEVRV0JCV3ZDbkVnOVl3T0FZdl9Vck16WU5mRzQ4aUplNWMtSUl6ZDVKa01VS3JsZC1uQ2ZzMGFUQVAtZ19jd0VwbHJRZHpBT2NvZ0NJRFJZVUJISWJPekhGN1Jrdmc?oc=5",
+          "headline": "鈴木[6785]：2026年６月期 決算短信〔日本基準〕（連結） 2026年8月10日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-08-07",
+          "baseline_close": 3145.0,
+          "next_session_date": "2026-08-12",
+          "next_close_pct": -5.5,
+          "after_3d_pct": -2.54,
+          "after_5d_pct": -2.7,
+          "price_source": "Yahoo Finance 日足"
+        }
+      ],
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "5726",
@@ -242,7 +269,7 @@
       "events": [
         {
           "event_date": "2026-08-25",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1aVWJPa25NVFNXLXJIeV81NjAxV1lyQ3NfSEJuMGt1MlZMckJVOC0weWRTRnpROE5KMEpuOUVDa0R3X2oyckFuOTdVN0lFaVRwbkxMbFhoZ2NLVjcyUzJPUTJ3QjlkbzNMM1E?oc=5",
           "headline": "大阪チタニウムテクノロジーズ[5726]：2027年３月期 第１四半期決算短信〔日本基準〕（非連結）（公認会計士等による期中レビューの完了） 2026年8月25日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-08-24",
@@ -255,7 +282,7 @@
         },
         {
           "event_date": "2026-08-07",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9MUnk3S1BGREVoMTZwNk9JYURFdGtwYW1wVW9CQnpOUlJ2SlYxSllDaTN1Y1dydmgxZElPSFBFd2JmTGdZYnZkcEgxTTk0d1dsY3BBOVR3YzhBWmY0eVRUUDdheTJhM09iZEE?oc=5",
           "headline": "大阪チタニウムテクノロジーズ[5726]：2027年3月期第1四半期決算短信〔日本基準〕（非連結） 2026年8月7日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-08-06",
@@ -281,7 +308,7 @@
       "events": [
         {
           "event_date": "2026-05-12",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBSTFhjeE9tVmFqZ2k2UzN0YXRiUUpTS1hXenExbTFzYTBvTWVxd3ZiR3c5SjdNWHVsaTZBSkNpZlctNUJ3elk3U3kzN0s5aS1jVEdLeHBMMHBTV1c2cE44d1oxU0FKb0QxZkE?oc=5",
           "headline": "大平洋金属[5541]：2026年３月期決算短信〔日本基準〕(連結) 2026年5月12日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-05-11",
@@ -319,7 +346,7 @@
       "events": [
         {
           "event_date": "2026-05-12",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9fYkJKYkkycnEtSjhpalhrWDVnUy1HdG8xRno3aDc0NEFjam9yRVFLQnV1N3ZXM25ma2hUVk1rZHJQS3ZwcVdmdmc2N0VHeGFaRENHX2hFdTdNZFpEcDVQa29IaWNYakdYUVE?oc=5",
           "headline": "東和銀行[8558]：2026年3月期 決算短信〔日本基準〕（連結） 2026年5月12日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-05-11",

@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-07T06:21:59+09:00",
+  "updated_at": "2026-11-10T06:31:40+09:00",
   "description": "Yahoo Finance EPS 60日トレンドと証券会社の格付け履歴。値がない場合は未確認。EPSの変化日は特定できない。原本の証券会社発表は未照合。",
   "coverage": {
     "current_candidates": 20,
-    "eps_trend_60d_available": 1,
+    "eps_trend_60d_available": 2,
     "broker_history_available": 0,
-    "consensus_increase": 1,
+    "consensus_increase": 2,
     "dated_broker_upgrades": 0
   },
   "records": [
@@ -581,6 +581,36 @@
       "broker_upgrades_history": []
     },
     {
+      "code": "2395",
+      "name": "新日本科学",
+      "earnings_date": "2026-11-10",
+      "observed_at": "2026-11-10T06:31:40+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 8777500000.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-10",
+          "earnings_date": "2026-11-10",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 8777500000.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
       "code": "2489",
       "name": "アドウェイズ",
       "earnings_date": "2026-11-02",
@@ -960,6 +990,66 @@
           "earnings_date": "2026-10-22",
           "eps_estimate_current": null,
           "revenue_mean_current": 8776000000.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
+      "code": "3103",
+      "name": "ユニチカ",
+      "earnings_date": "2026-11-10",
+      "observed_at": "2026-11-10T06:31:40+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 19900000000.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-10",
+          "earnings_date": "2026-11-10",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 19900000000.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
+      "code": "3131",
+      "name": "シンデン・ハイテックス",
+      "earnings_date": "2026-11-10",
+      "observed_at": "2026-11-10T06:31:40+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 0.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-10",
+          "earnings_date": "2026-11-10",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
         }
       ],
       "broker_upgrades_history": []
@@ -1793,6 +1883,36 @@
       "broker_upgrades_history": []
     },
     {
+      "code": "4047",
+      "name": "関東電化工業",
+      "earnings_date": "2026-11-10",
+      "observed_at": "2026-11-10T06:31:40+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 24626000000.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-10",
+          "earnings_date": "2026-11-10",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 24626000000.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
       "code": "4064",
       "name": "日本カーバイド工業",
       "earnings_date": "2026-11-09",
@@ -2574,6 +2694,36 @@
       "broker_upgrades_history": []
     },
     {
+      "code": "5121",
+      "name": "藤倉コンポジット",
+      "earnings_date": "2026-11-10",
+      "observed_at": "2026-11-10T06:31:40+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 10265000000.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-10",
+          "earnings_date": "2026-11-10",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 10265000000.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
       "code": "5187",
       "name": "クリエートメディック",
       "earnings_date": "2026-11-02",
@@ -2868,6 +3018,36 @@
       "broker_upgrades_history": []
     },
     {
+      "code": "5541",
+      "name": "大平洋金属",
+      "earnings_date": "2026-11-10",
+      "observed_at": "2026-11-10T06:31:40+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 0.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-10",
+          "earnings_date": "2026-11-10",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
       "code": "5602",
       "name": "栗本鐵工所",
       "earnings_date": "2026-11-06",
@@ -2957,6 +3137,36 @@
         {
           "date": "2026-10-28",
           "earnings_date": "2026-10-28",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
+      "code": "5726",
+      "name": "大阪チタニウムテクノロジーズ",
+      "earnings_date": "2026-11-10",
+      "observed_at": "2026-11-10T06:31:40+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 0.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-10",
+          "earnings_date": "2026-11-10",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
         }
@@ -3157,6 +3367,36 @@
           "earnings_date": "2026-10-28",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
+      "code": "6016",
+      "name": "ジャパンエンジンコーポレーション",
+      "earnings_date": "2026-11-10",
+      "observed_at": "2026-11-10T06:31:40+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 7618000000.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-10",
+          "earnings_date": "2026-11-10",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 7618000000.0
         }
       ],
       "broker_upgrades_history": []
@@ -3439,6 +3679,49 @@
           "earnings_date": "2026-10-26",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
+      "code": "6235",
+      "name": "オプトラン",
+      "earnings_date": "2026-11-10",
+      "observed_at": "2026-11-10T06:31:40+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": 32.6,
+        "days_30_ago": 0.0,
+        "days_60_ago": 0.0,
+        "available": true,
+        "increased_last_60_days": true
+      },
+      "revenue_mean_current": 10500000000.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [
+        {
+          "kind": "consensus_up_revision",
+          "period": "0q",
+          "earnings_date": "2026-11-10",
+          "value_60d_ago": 0.0,
+          "value_current": 32.6,
+          "field": "EPS consensus estimate",
+          "comparison_window_days": 60,
+          "source_url": "https://finance.yahoo.com/quote/6235.T/analysis/",
+          "source_type": "Yahoo Finance EPS trend 60daysAgo vs current",
+          "exact_revision_date_known": false
+        }
+      ],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-10",
+          "earnings_date": "2026-11-10",
+          "eps_estimate_current": 32.6,
+          "revenue_mean_current": 10500000000.0
         }
       ],
       "broker_upgrades_history": []
@@ -4080,6 +4363,96 @@
       "broker_upgrades_history": []
     },
     {
+      "code": "6785",
+      "name": "鈴木",
+      "earnings_date": "2026-11-10",
+      "observed_at": "2026-11-10T06:31:40+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 10000000000.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-10",
+          "earnings_date": "2026-11-10",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 10000000000.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
+      "code": "6794",
+      "name": "フォスター電機",
+      "earnings_date": "2026-11-10",
+      "observed_at": "2026-11-10T06:31:40+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 36903000000.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-10",
+          "earnings_date": "2026-11-10",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 36903000000.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
+      "code": "6800",
+      "name": "ヨコオ",
+      "earnings_date": "2026-11-10",
+      "observed_at": "2026-11-10T06:31:40+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 25085000000.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-10",
+          "earnings_date": "2026-11-10",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 25085000000.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
       "code": "6809",
       "name": "ＴＯＡ",
       "earnings_date": "2026-11-04",
@@ -4237,6 +4610,36 @@
           "earnings_date": "2026-11-09",
           "eps_estimate_current": null,
           "revenue_mean_current": 30213000000.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
+      "code": "6855",
+      "name": "日本電子材料",
+      "earnings_date": "2026-11-10",
+      "observed_at": "2026-11-10T06:31:40+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 9759000000.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-10",
+          "earnings_date": "2026-11-10",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 9759000000.0
         }
       ],
       "broker_upgrades_history": []
@@ -4406,6 +4809,49 @@
           "earnings_date": "2026-10-30",
           "eps_estimate_current": null,
           "revenue_mean_current": 12679000000.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
+      "code": "6997",
+      "name": "日本ケミコン",
+      "earnings_date": "2026-11-10",
+      "observed_at": "2026-11-10T06:31:40+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": 43.94,
+        "days_30_ago": 51.52,
+        "days_60_ago": 0.0,
+        "available": true,
+        "increased_last_60_days": true
+      },
+      "revenue_mean_current": 38942574270.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [
+        {
+          "kind": "consensus_up_revision",
+          "period": "0q",
+          "earnings_date": "2026-11-10",
+          "value_60d_ago": 0.0,
+          "value_current": 43.94,
+          "field": "EPS consensus estimate",
+          "comparison_window_days": 60,
+          "source_url": "https://finance.yahoo.com/quote/6997.T/analysis/",
+          "source_type": "Yahoo Finance EPS trend 60daysAgo vs current",
+          "exact_revision_date_known": false
+        }
+      ],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-10",
+          "earnings_date": "2026-11-10",
+          "eps_estimate_current": 43.94,
+          "revenue_mean_current": 38942574270.0
         }
       ],
       "broker_upgrades_history": []
@@ -4628,6 +5074,36 @@
           "earnings_date": "2026-10-27",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
+      "code": "7199",
+      "name": "プレミアグループ",
+      "earnings_date": "2026-11-10",
+      "observed_at": "2026-11-10T06:31:40+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 12413000000.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-10",
+          "earnings_date": "2026-11-10",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 12413000000.0
         }
       ],
       "broker_upgrades_history": []
@@ -5252,6 +5728,36 @@
       "broker_upgrades_history": []
     },
     {
+      "code": "8061",
+      "name": "西華産業",
+      "earnings_date": "2026-11-10",
+      "observed_at": "2026-11-10T06:31:40+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 32500000000.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-10",
+          "earnings_date": "2026-11-10",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 32500000000.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
       "code": "8065",
       "name": "佐藤商事",
       "earnings_date": "2026-11-05",
@@ -5468,6 +5974,36 @@
       "broker_upgrades_history": []
     },
     {
+      "code": "8338",
+      "name": "筑波銀行",
+      "earnings_date": "2026-11-10",
+      "observed_at": "2026-11-10T06:31:40+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 0.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-10",
+          "earnings_date": "2026-11-10",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
       "code": "8550",
       "name": "栃木銀行",
       "earnings_date": "2026-11-06",
@@ -5491,6 +6027,36 @@
         {
           "date": "2026-11-06",
           "earnings_date": "2026-11-06",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
+      "code": "8558",
+      "name": "東和銀行",
+      "earnings_date": "2026-11-10",
+      "observed_at": "2026-11-10T06:31:40+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 0.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-10",
+          "earnings_date": "2026-11-10",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
         }
@@ -6082,6 +6648,36 @@
       "broker_upgrades_history": []
     },
     {
+      "code": "9308",
+      "name": "乾汽船",
+      "earnings_date": "2026-11-10",
+      "observed_at": "2026-11-10T06:31:40+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 0.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-10",
+          "earnings_date": "2026-11-10",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
       "code": "9351",
       "name": "東洋埠頭",
       "earnings_date": "2026-11-02",
@@ -6454,6 +7050,36 @@
         {
           "date": "2026-10-27",
           "earnings_date": "2026-10-27",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
+      "code": "9880",
+      "name": "イノテック",
+      "earnings_date": "2026-11-10",
+      "observed_at": "2026-11-10T06:31:40+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 0.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-10",
+          "earnings_date": "2026-11-10",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
         }

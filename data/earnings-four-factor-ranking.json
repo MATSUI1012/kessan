@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-11-11T03:25:49+09:00",
+  "generated_at": "2026-11-11T04:17:55+09:00",
   "description": "4項目の調査順位。本人の過去決算反応は出典のある発表予定日・カレンダー日・記事掲載日付近の株価変化。実際の発表時刻・変動原因は未確認。未取得0点は悪材料ではない。",
   "weights": {
     "own_earnings_reaction": 3,
@@ -16,6 +16,68 @@
     "upgrades": 0
   },
   "records": [
+    {
+      "code": "3632",
+      "name": "グリーホールディングス",
+      "earnings_date": "2026-11-11",
+      "market_cap_oku": 836.86,
+      "score_total": 4,
+      "score_components": {
+        "own_earnings_reaction": 0,
+        "volume_supply_demand": 2,
+        "recent_industry_peers": 2,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 0,
+      "self_history_positive": 0,
+      "self_history_events": [],
+      "industry": "Electronic Gaming & Multimedia",
+      "sector": "Communication Services",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 5,
+      "peer_positive_count": 3,
+      "peer_events": [
+        {
+          "code": "3668",
+          "name": "コロプラ",
+          "date": "2026-11-04",
+          "next_close_pct": 21.49
+        },
+        {
+          "code": "7844",
+          "name": "マーベラス",
+          "date": "2026-10-30",
+          "next_close_pct": 6.24
+        },
+        {
+          "code": "3793",
+          "name": "ドリコム",
+          "date": "2026-10-29",
+          "next_close_pct": -9.76
+        },
+        {
+          "code": "3911",
+          "name": "Ａｉｍｉｎｇ",
+          "date": "2026-10-27",
+          "next_close_pct": 8.41
+        },
+        {
+          "code": "3810",
+          "name": "サイバーステップホールディングス",
+          "date": "2026-10-15",
+          "next_close_pct": -1.72
+        }
+      ],
+      "volume_ratio": 2.25,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": false,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
     {
       "code": "4933",
       "name": "Ｉ－ｎｅ",
@@ -148,68 +210,6 @@
       "upgrade_events": [],
       "data_coverage": {
         "self_history": true,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
-      "code": "3632",
-      "name": "グリーホールディングス",
-      "earnings_date": "2026-11-11",
-      "market_cap_oku": 836.86,
-      "score_total": 4,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 2,
-        "recent_industry_peers": 2,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Electronic Gaming & Multimedia",
-      "sector": "Communication Services",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 5,
-      "peer_positive_count": 3,
-      "peer_events": [
-        {
-          "code": "3668",
-          "name": "コロプラ",
-          "date": "2026-11-04",
-          "next_close_pct": 21.49
-        },
-        {
-          "code": "7844",
-          "name": "マーベラス",
-          "date": "2026-10-30",
-          "next_close_pct": 6.24
-        },
-        {
-          "code": "3793",
-          "name": "ドリコム",
-          "date": "2026-10-29",
-          "next_close_pct": -9.76
-        },
-        {
-          "code": "3911",
-          "name": "Ａｉｍｉｎｇ",
-          "date": "2026-10-27",
-          "next_close_pct": 8.41
-        },
-        {
-          "code": "3810",
-          "name": "サイバーステップホールディングス",
-          "date": "2026-10-15",
-          "next_close_pct": -1.72
-        }
-      ],
-      "volume_ratio": 2.25,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
         "industry_peer_reactions": true,
         "industry_identified": true,
         "volume_ratio": true,
@@ -580,87 +580,6 @@
       }
     },
     {
-      "code": "8151",
-      "name": "東陽テクニカ",
-      "earnings_date": "2026-11-11",
-      "market_cap_oku": 362.57,
-      "score_total": 2,
-      "score_components": {
-        "own_earnings_reaction": 2,
-        "volume_supply_demand": 0,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 2,
-      "self_history_positive": 2,
-      "self_history_events": [
-        {
-          "date": "2026-08-05",
-          "next_close_pct": 1.85,
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBfaUlMb2Jzc3pVU1hRaUtPQ3gyNWlNNHpNQ1l4ZVN2am5QWWVBS1VKQ2dYVDBGVkdIbklkNURBREQwZTRfM0VBX1UtOFhxX2hZalU2Q1BhU0h3WklrWmwyVjlLZUdWMnVxQnc?oc=5"
-        },
-        {
-          "date": "2025-11-12",
-          "next_close_pct": 2.97,
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1aYmVMVnQ5RElFTFE0R0taYjRwSXBJN1Z2Z2pIS1NWOXBOZUpTMXNoOTJIeVN1U0Q1REw1enpmV1pQN0VWa2pJLVdmWV9mYWFxVHhVcnFKSGlXVTJYNXVKWjFKNXpfc2trTmc?oc=5"
-        }
-      ],
-      "industry": "Scientific & Technical Instruments",
-      "sector": "Technology",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 7,
-      "peer_positive_count": 2,
-      "peer_events": [
-        {
-          "code": "7760",
-          "name": "ＩＭＶ",
-          "date": "2026-11-06",
-          "next_close_pct": 13.35
-        },
-        {
-          "code": "7745",
-          "name": "Ａ＆Ｄホロンホールディングス",
-          "date": "2026-11-06",
-          "next_close_pct": 2.43
-        },
-        {
-          "code": "7721",
-          "name": "東京計器",
-          "date": "2026-11-06",
-          "next_close_pct": -7.89
-        },
-        {
-          "code": "6644",
-          "name": "大崎電気工業",
-          "date": "2026-11-05",
-          "next_close_pct": -11.9
-        },
-        {
-          "code": "7723",
-          "name": "愛知時計電機",
-          "date": "2026-11-02",
-          "next_close_pct": -3.5
-        },
-        {
-          "code": "3388",
-          "name": "明治電機工業",
-          "date": "2026-10-30",
-          "next_close_pct": -5.38
-        }
-      ],
-      "volume_ratio": 1.02,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": true,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
       "code": "5702",
       "name": "大紀アルミニウム工業所",
       "earnings_date": "2026-11-11",
@@ -749,65 +668,77 @@
       }
     },
     {
-      "code": "7226",
-      "name": "極東開発工業",
+      "code": "8151",
+      "name": "東陽テクニカ",
       "earnings_date": "2026-11-11",
-      "market_cap_oku": 807.5,
-      "score_total": 1,
+      "market_cap_oku": 362.57,
+      "score_total": 2,
       "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 1,
+        "own_earnings_reaction": 2,
+        "volume_supply_demand": 0,
         "recent_industry_peers": 0,
         "analyst_upgrades_61d": 0
       },
-      "self_history_count": 1,
-      "self_history_positive": 0,
+      "self_history_count": 2,
+      "self_history_positive": 2,
       "self_history_events": [
         {
-          "date": "2026-05-13",
-          "next_close_pct": -12.4,
+          "date": "2026-08-05",
+          "next_close_pct": 1.85,
           "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5XdjFsbk5idUtKM1BWd2JaZVozVnM4bkdrLXo1UXFwQkFmTjNqa05YVUNlMFVJaWI3TUhzTU9uZHh0dXVvR3VrWmZuTXlPc2htSDJGRHlld1lIVVpHN2U5TFRVcDlTNjlSSUE?oc=5"
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBfaUlMb2Jzc3pVU1hRaUtPQ3gyNWlNNHpNQ1l4ZVN2am5QWWVBS1VKQ2dYVDBGVkdIbklkNURBREQwZTRfM0VBX1UtOFhxX2hZalU2Q1BhU0h3WklrWmwyVjlLZUdWMnVxQnc?oc=5"
+        },
+        {
+          "date": "2025-11-12",
+          "next_close_pct": 2.97,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1aYmVMVnQ5RElFTFE0R0taYjRwSXBJN1Z2Z2pIS1NWOXBOZUpTMXNoOTJIeVN1U0Q1REw1enpmV1pQN0VWa2pJLVdmWV9mYWFxVHhVcnFKSGlXVTJYNXVKWjFKNXpfc2trTmc?oc=5"
         }
       ],
-      "industry": "Farm & Heavy Construction Machinery",
-      "sector": "Industrials",
+      "industry": "Scientific & Technical Instruments",
+      "sector": "Technology",
       "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 5,
-      "peer_positive_count": 1,
+      "peer_reaction_count": 7,
+      "peer_positive_count": 2,
       "peer_events": [
         {
-          "code": "3302",
-          "name": "帝国繊維",
+          "code": "7760",
+          "name": "ＩＭＶ",
           "date": "2026-11-06",
-          "next_close_pct": -5.35
+          "next_close_pct": 13.35
         },
         {
-          "code": "6455",
-          "name": "モリタホールディングス",
-          "date": "2026-10-30",
-          "next_close_pct": -2.37
-        },
-        {
-          "code": "6345",
-          "name": "アイチ　コーポレーション",
-          "date": "2026-10-29",
-          "next_close_pct": -6.56
-        },
-        {
-          "code": "6289",
-          "name": "技研製作所",
-          "date": "2026-10-09",
+          "code": "7745",
+          "name": "Ａ＆Ｄホロンホールディングス",
+          "date": "2026-11-06",
           "next_close_pct": 2.43
         },
         {
-          "code": "8125",
-          "name": "ワキタ",
-          "date": "2026-10-08",
-          "next_close_pct": -3.71
+          "code": "7721",
+          "name": "東京計器",
+          "date": "2026-11-06",
+          "next_close_pct": -7.89
+        },
+        {
+          "code": "6644",
+          "name": "大崎電気工業",
+          "date": "2026-11-05",
+          "next_close_pct": -11.9
+        },
+        {
+          "code": "7723",
+          "name": "愛知時計電機",
+          "date": "2026-11-02",
+          "next_close_pct": -3.5
+        },
+        {
+          "code": "3388",
+          "name": "明治電機工業",
+          "date": "2026-10-30",
+          "next_close_pct": -5.38
         }
       ],
-      "volume_ratio": 1.2,
+      "volume_ratio": 1.02,
       "upgrade_events": [],
       "data_coverage": {
         "self_history": true,
@@ -1015,6 +946,75 @@
       "upgrade_events": [],
       "data_coverage": {
         "self_history": false,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "7226",
+      "name": "極東開発工業",
+      "earnings_date": "2026-11-11",
+      "market_cap_oku": 807.5,
+      "score_total": 1,
+      "score_components": {
+        "own_earnings_reaction": 0,
+        "volume_supply_demand": 1,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 1,
+      "self_history_positive": 0,
+      "self_history_events": [
+        {
+          "date": "2026-05-13",
+          "next_close_pct": -12.4,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5XdjFsbk5idUtKM1BWd2JaZVozVnM4bkdrLXo1UXFwQkFmTjNqa05YVUNlMFVJaWI3TUhzTU9uZHh0dXVvR3VrWmZuTXlPc2htSDJGRHlld1lIVVpHN2U5TFRVcDlTNjlSSUE?oc=5"
+        }
+      ],
+      "industry": "Farm & Heavy Construction Machinery",
+      "sector": "Industrials",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 5,
+      "peer_positive_count": 1,
+      "peer_events": [
+        {
+          "code": "3302",
+          "name": "帝国繊維",
+          "date": "2026-11-06",
+          "next_close_pct": -5.35
+        },
+        {
+          "code": "6455",
+          "name": "モリタホールディングス",
+          "date": "2026-10-30",
+          "next_close_pct": -2.37
+        },
+        {
+          "code": "6345",
+          "name": "アイチ　コーポレーション",
+          "date": "2026-10-29",
+          "next_close_pct": -6.56
+        },
+        {
+          "code": "6289",
+          "name": "技研製作所",
+          "date": "2026-10-09",
+          "next_close_pct": 2.43
+        },
+        {
+          "code": "8125",
+          "name": "ワキタ",
+          "date": "2026-10-08",
+          "next_close_pct": -3.71
+        }
+      ],
+      "volume_ratio": 1.2,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": true,
         "industry_peer_reactions": true,
         "industry_identified": true,
         "volume_ratio": true,
@@ -1362,5 +1362,5 @@
       }
     }
   ],
-  "own_history_source": "IR BANK決算短信一覧、以前から保存されている根拠付き決算日。発表時刻は未確認。"
+  "own_history_source": "IR BANK上の決算短信掲載日（確認できた日付のみ）と保存済み履歴。実際の発表時刻は未確認。"
 }

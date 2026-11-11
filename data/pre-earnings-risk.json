@@ -1,9 +1,8 @@
 {
-  "schema": 1,
-  "generated_at": "2026-11-11T21:33:03+09:00",
-  "source": "Repository data/prices.json + data/research.json; JPX scheduled earnings dates",
+  "schema": 2,
+  "generated_at": "2026-11-11T21:46:07+09:00",
   "source_research_at": "2026-11-11T20:38:02+09:00",
-  "description": "決算前の価格変動の統計。発表日・発表時刻や会社IRの実績を検証したものではない。",
+  "description": "決算前の価格変動。株価の鮮度は今日基準で測定し、将来の決算日を使わない。",
   "records": [
     {
       "code": "7944",
@@ -12,6 +11,8 @@
       "n": 265,
       "status": "計算済み",
       "last_price_date": "2026-11-10",
+      "freshness_asof": "2026-11-11",
+      "age_days": 1,
       "return_5d_pct": 3.41,
       "return_20d_pct": 3.27,
       "annualized_volatility_20d_pct": 26.85,
@@ -19,7 +20,7 @@
       "latest_turnover_oku": 2.95,
       "turnover_to_market_cap_ratio": 0.003,
       "quality_flags": [],
-      "method": "決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。"
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "3632",
@@ -28,6 +29,8 @@
       "n": 265,
       "status": "計算済み",
       "last_price_date": "2026-11-10",
+      "freshness_asof": "2026-11-11",
+      "age_days": 1,
       "return_5d_pct": 13.79,
       "return_20d_pct": 17.07,
       "annualized_volatility_20d_pct": 35.49,
@@ -35,7 +38,7 @@
       "latest_turnover_oku": 17.97,
       "turnover_to_market_cap_ratio": 0.022,
       "quality_flags": [],
-      "method": "決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。"
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "6480",
@@ -44,6 +47,8 @@
       "n": 265,
       "status": "計算済み",
       "last_price_date": "2026-11-10",
+      "freshness_asof": "2026-11-11",
+      "age_days": 1,
       "return_5d_pct": -9.44,
       "return_20d_pct": -28.86,
       "annualized_volatility_20d_pct": 82.1,
@@ -51,7 +56,7 @@
       "latest_turnover_oku": 14.13,
       "turnover_to_market_cap_ratio": 0.014,
       "quality_flags": [],
-      "method": "決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。"
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "7226",
@@ -60,6 +65,8 @@
       "n": 265,
       "status": "計算済み",
       "last_price_date": "2026-11-10",
+      "freshness_asof": "2026-11-11",
+      "age_days": 1,
       "return_5d_pct": 0.82,
       "return_20d_pct": -1.36,
       "annualized_volatility_20d_pct": 21.56,
@@ -67,7 +74,7 @@
       "latest_turnover_oku": 2.78,
       "turnover_to_market_cap_ratio": 0.004,
       "quality_flags": [],
-      "method": "決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。"
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "4275",
@@ -76,6 +83,8 @@
       "n": 265,
       "status": "計算済み",
       "last_price_date": "2026-11-10",
+      "freshness_asof": "2026-11-11",
+      "age_days": 1,
       "return_5d_pct": 0.9,
       "return_20d_pct": -1.05,
       "annualized_volatility_20d_pct": 52.69,
@@ -83,7 +92,7 @@
       "latest_turnover_oku": 3.79,
       "turnover_to_market_cap_ratio": 0.01,
       "quality_flags": [],
-      "method": "決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。"
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "7915",
@@ -92,6 +101,8 @@
       "n": 265,
       "status": "計算済み",
       "last_price_date": "2026-11-10",
+      "freshness_asof": "2026-11-11",
+      "age_days": 1,
       "return_5d_pct": -4.5,
       "return_20d_pct": -7.73,
       "annualized_volatility_20d_pct": 31.3,
@@ -99,7 +110,7 @@
       "latest_turnover_oku": 2.14,
       "turnover_to_market_cap_ratio": 0.004,
       "quality_flags": [],
-      "method": "決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。"
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "4071",
@@ -108,6 +119,8 @@
       "n": 265,
       "status": "計算済み",
       "last_price_date": "2026-11-10",
+      "freshness_asof": "2026-11-11",
+      "age_days": 1,
       "return_5d_pct": 4.6,
       "return_20d_pct": 6.28,
       "annualized_volatility_20d_pct": 32.66,
@@ -115,7 +128,7 @@
       "latest_turnover_oku": 2.83,
       "turnover_to_market_cap_ratio": 0.003,
       "quality_flags": [],
-      "method": "決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。"
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "4022",
@@ -124,6 +137,8 @@
       "n": 265,
       "status": "計算済み",
       "last_price_date": "2026-11-10",
+      "freshness_asof": "2026-11-11",
+      "age_days": 1,
       "return_5d_pct": -9.06,
       "return_20d_pct": -31.95,
       "annualized_volatility_20d_pct": 93.56,
@@ -131,7 +146,7 @@
       "latest_turnover_oku": 23.09,
       "turnover_to_market_cap_ratio": 0.041,
       "quality_flags": [],
-      "method": "決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。"
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "5702",
@@ -140,6 +155,8 @@
       "n": 265,
       "status": "計算済み",
       "last_price_date": "2026-11-10",
+      "freshness_asof": "2026-11-11",
+      "age_days": 1,
       "return_5d_pct": 0.64,
       "return_20d_pct": -5.94,
       "annualized_volatility_20d_pct": 32.35,
@@ -147,7 +164,7 @@
       "latest_turnover_oku": 6.03,
       "turnover_to_market_cap_ratio": 0.01,
       "quality_flags": [],
-      "method": "決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。"
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "4008",
@@ -156,6 +173,8 @@
       "n": 265,
       "status": "計算済み",
       "last_price_date": "2026-11-10",
+      "freshness_asof": "2026-11-11",
+      "age_days": 1,
       "return_5d_pct": -0.9,
       "return_20d_pct": -5.53,
       "annualized_volatility_20d_pct": 31.58,
@@ -163,7 +182,7 @@
       "latest_turnover_oku": 2.17,
       "turnover_to_market_cap_ratio": 0.003,
       "quality_flags": [],
-      "method": "決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。"
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "4259",
@@ -172,6 +191,8 @@
       "n": 265,
       "status": "計算済み",
       "last_price_date": "2026-11-10",
+      "freshness_asof": "2026-11-11",
+      "age_days": 1,
       "return_5d_pct": -5.59,
       "return_20d_pct": -14.97,
       "annualized_volatility_20d_pct": 65.04,
@@ -179,7 +200,7 @@
       "latest_turnover_oku": 9.95,
       "turnover_to_market_cap_ratio": 0.014,
       "quality_flags": [],
-      "method": "決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。"
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "9519",
@@ -188,6 +209,8 @@
       "n": 265,
       "status": "計算済み",
       "last_price_date": "2026-11-10",
+      "freshness_asof": "2026-11-11",
+      "age_days": 1,
       "return_5d_pct": 4.81,
       "return_20d_pct": -12.31,
       "annualized_volatility_20d_pct": 48.74,
@@ -195,7 +218,7 @@
       "latest_turnover_oku": 6.53,
       "turnover_to_market_cap_ratio": 0.01,
       "quality_flags": [],
-      "method": "決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。"
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "4258",
@@ -204,6 +227,8 @@
       "n": 265,
       "status": "計算済み",
       "last_price_date": "2026-11-10",
+      "freshness_asof": "2026-11-11",
+      "age_days": 1,
       "return_5d_pct": -7.29,
       "return_20d_pct": -6.7,
       "annualized_volatility_20d_pct": 100.28,
@@ -213,7 +238,7 @@
       "quality_flags": [
         "年率換算20日変動率100%以上"
       ],
-      "method": "決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。"
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "3673",
@@ -222,6 +247,8 @@
       "n": 265,
       "status": "計算済み",
       "last_price_date": "2026-11-10",
+      "freshness_asof": "2026-11-11",
+      "age_days": 1,
       "return_5d_pct": 3.87,
       "return_20d_pct": -1.23,
       "annualized_volatility_20d_pct": 37.33,
@@ -229,7 +256,7 @@
       "latest_turnover_oku": 4.28,
       "turnover_to_market_cap_ratio": 0.005,
       "quality_flags": [],
-      "method": "決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。"
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "2980",
@@ -238,6 +265,8 @@
       "n": 265,
       "status": "計算済み",
       "last_price_date": "2026-11-10",
+      "freshness_asof": "2026-11-11",
+      "age_days": 1,
       "return_5d_pct": 0.95,
       "return_20d_pct": -6.71,
       "annualized_volatility_20d_pct": 42.94,
@@ -245,7 +274,7 @@
       "latest_turnover_oku": 3.46,
       "turnover_to_market_cap_ratio": 0.01,
       "quality_flags": [],
-      "method": "決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。"
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "6638",
@@ -254,6 +283,8 @@
       "n": 265,
       "status": "計算済み",
       "last_price_date": "2026-11-10",
+      "freshness_asof": "2026-11-11",
+      "age_days": 1,
       "return_5d_pct": -8.73,
       "return_20d_pct": -15.78,
       "annualized_volatility_20d_pct": 55.29,
@@ -261,7 +292,7 @@
       "latest_turnover_oku": 2.59,
       "turnover_to_market_cap_ratio": 0.004,
       "quality_flags": [],
-      "method": "決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。"
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "8151",
@@ -270,6 +301,8 @@
       "n": 265,
       "status": "計算済み",
       "last_price_date": "2026-11-10",
+      "freshness_asof": "2026-11-11",
+      "age_days": 1,
       "return_5d_pct": -3.56,
       "return_20d_pct": -8.63,
       "annualized_volatility_20d_pct": 34.67,
@@ -277,7 +310,7 @@
       "latest_turnover_oku": 2.62,
       "turnover_to_market_cap_ratio": 0.007,
       "quality_flags": [],
-      "method": "決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。"
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "4933",
@@ -286,6 +319,8 @@
       "n": 265,
       "status": "計算済み",
       "last_price_date": "2026-11-10",
+      "freshness_asof": "2026-11-11",
+      "age_days": 1,
       "return_5d_pct": 1.01,
       "return_20d_pct": 8.9,
       "annualized_volatility_20d_pct": 47.62,
@@ -293,7 +328,7 @@
       "latest_turnover_oku": 2.01,
       "turnover_to_market_cap_ratio": 0.005,
       "quality_flags": [],
-      "method": "決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。"
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "9755",
@@ -302,6 +337,8 @@
       "n": 265,
       "status": "計算済み",
       "last_price_date": "2026-11-10",
+      "freshness_asof": "2026-11-11",
+      "age_days": 1,
       "return_5d_pct": 0.34,
       "return_20d_pct": -2.86,
       "annualized_volatility_20d_pct": 20.02,
@@ -309,7 +346,7 @@
       "latest_turnover_oku": 2.11,
       "turnover_to_market_cap_ratio": 0.003,
       "quality_flags": [],
-      "method": "決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。"
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "5599",
@@ -318,6 +355,8 @@
       "n": 265,
       "status": "計算済み",
       "last_price_date": "2026-11-10",
+      "freshness_asof": "2026-11-11",
+      "age_days": 1,
       "return_5d_pct": -9.8,
       "return_20d_pct": 5.64,
       "annualized_volatility_20d_pct": 189.87,
@@ -327,7 +366,7 @@
       "quality_flags": [
         "年率換算20日変動率100%以上"
       ],
-      "method": "決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。"
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     }
   ]
 }

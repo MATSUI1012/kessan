@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-11-12T01:36:45+09:00",
+  "generated_at": "2026-11-12T02:07:51+09:00",
   "description": "4項目の調査順位。本人の過去決算反応は出典のある発表予定日・カレンダー日・記事掲載日付近の株価変化。実際の発表時刻・変動原因は未確認。未取得0点は悪材料ではない。",
   "weights": {
     "own_earnings_reaction": 3,
@@ -10,7 +10,7 @@
   },
   "coverage": {
     "total": 20,
-    "own_history": 9,
+    "own_history": 11,
     "industry_identified": 20,
     "peer_reactions": 20,
     "upgrades": 0
@@ -79,15 +79,90 @@
       }
     },
     {
-      "code": "7803",
-      "name": "ブシロード",
+      "code": "6072",
+      "name": "ＥＲＴＨ　Ｇｒｏｕｐ",
       "earnings_date": "2026-11-12",
-      "market_cap_oku": 686.58,
+      "market_cap_oku": 261.02,
       "score_total": 3,
       "score_components": {
         "own_earnings_reaction": 1,
-        "volume_supply_demand": 0,
-        "recent_industry_peers": 2,
+        "volume_supply_demand": 2,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 1,
+      "self_history_positive": 1,
+      "self_history_events": [
+        {
+          "date": "2026-05-14",
+          "next_close_pct": 10.02,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5BZHdzNzVQRXpIMC0xSklfOWJWOHlnRzdOLWN0aVZjMEtTX0E4b0FydVRmYWJDbWZaeTFIMGtKWWV0VkRvb25BZ2pyUnNHQ2FLVEp5c2dkMmRtSmNXSVNEN0ZsVnI4eFA1ZEE?oc=5"
+        }
+      ],
+      "industry": "Specialty Business Services",
+      "sector": "Industrials",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 25,
+      "peer_positive_count": 13,
+      "peer_events": [
+        {
+          "code": "7868",
+          "name": "広済堂ホールディングス",
+          "date": "2026-11-10",
+          "next_close_pct": 4.28
+        },
+        {
+          "code": "7094",
+          "name": "ＮｅｘＴｏｎｅ",
+          "date": "2026-11-10",
+          "next_close_pct": 8.75
+        },
+        {
+          "code": "5071",
+          "name": "ヴィス",
+          "date": "2026-11-10",
+          "next_close_pct": 1.89
+        },
+        {
+          "code": "9319",
+          "name": "中央倉庫",
+          "date": "2026-11-09",
+          "next_close_pct": 11.71
+        },
+        {
+          "code": "7914",
+          "name": "共同印刷",
+          "date": "2026-11-09",
+          "next_close_pct": 2.28
+        },
+        {
+          "code": "7987",
+          "name": "ナカバヤシ",
+          "date": "2026-11-06",
+          "next_close_pct": -0.38
+        }
+      ],
+      "volume_ratio": 2.22,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": true,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "3993",
+      "name": "ＰＫＳＨＡ　Ｔｅｃｈｎｏｌｏｇｙ",
+      "earnings_date": "2026-11-12",
+      "market_cap_oku": 996.92,
+      "score_total": 2,
+      "score_components": {
+        "own_earnings_reaction": 1,
+        "volume_supply_demand": 1,
+        "recent_industry_peers": 0,
         "analyst_upgrades_61d": 0
       },
       "self_history_count": 1,
@@ -95,49 +170,55 @@
       "self_history_events": [
         {
           "date": "2026-08-13",
-          "next_close_pct": 2.34,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1ia3FwNWw2blVjMnNIM1ZmeVEyZ21mMkZfMGwzY0lpYmxZZWcxMktnaTZKUWozUHlKV0psRWZvRGFxYnpjaXJOYWhvd2M0NnBISGltSFR6OUhPWFNkZFJaeFN3dGpXMnhxc2c?oc=5"
+          "next_close_pct": 5.32,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE91LXJWa3g4SXZPMUxhclp1clR6UmstMzNlT0lWd2dqX19mOTk3QzJtTm42Z0U1V0NuQUtzSGNKbmRmY00wd3d4NEdjNmNhSkpidDlTU0g2cXM1RlgxYi1rQ3FnZ3JCYTlZWXc?oc=5"
         }
       ],
-      "industry": "Electronic Gaming & Multimedia",
-      "sector": "Communication Services",
+      "industry": "Software - Infrastructure",
+      "sector": "Technology",
       "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 5,
-      "peer_positive_count": 3,
+      "peer_reaction_count": 11,
+      "peer_positive_count": 6,
       "peer_events": [
         {
-          "code": "3668",
-          "name": "コロプラ",
+          "code": "4687",
+          "name": "ＴＤＣソフト",
+          "date": "2026-11-09",
+          "next_close_pct": 4.87
+        },
+        {
+          "code": "4475",
+          "name": "ＨＥＮＮＧＥ",
+          "date": "2026-11-05",
+          "next_close_pct": 19.77
+        },
+        {
+          "code": "4847",
+          "name": "インテリジェント　ウェイブ",
           "date": "2026-11-04",
-          "next_close_pct": 21.49
+          "next_close_pct": -2.21
         },
         {
-          "code": "7844",
-          "name": "マーベラス",
+          "code": "3914",
+          "name": "ＪＩＧ－ＳＡＷ",
+          "date": "2026-11-02",
+          "next_close_pct": -4.12
+        },
+        {
+          "code": "2428",
+          "name": "ウェルネット",
           "date": "2026-10-30",
-          "next_close_pct": 6.24
+          "next_close_pct": -4.17
         },
         {
-          "code": "3793",
-          "name": "ドリコム",
-          "date": "2026-10-29",
-          "next_close_pct": -9.76
-        },
-        {
-          "code": "3911",
-          "name": "Ａｉｍｉｎｇ",
-          "date": "2026-10-27",
-          "next_close_pct": 8.41
-        },
-        {
-          "code": "3810",
-          "name": "サイバーステップホールディングス",
-          "date": "2026-10-15",
-          "next_close_pct": -1.72
+          "code": "2326",
+          "name": "デジタルアーツ",
+          "date": "2026-10-30",
+          "next_close_pct": 2.72
         }
       ],
-      "volume_ratio": 0.92,
+      "volume_ratio": 1.21,
       "upgrade_events": [],
       "data_coverage": {
         "self_history": true,
@@ -165,7 +246,7 @@
         {
           "date": "2026-05-12",
           "next_close_pct": -15.93,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5yRk01VlF5SHN3Y0l1bGR3VDdzS3FIbDlsSGtQX2pEUUc0bjFaOGplaEt2cF93aWZ5eXRuc2lfQWc4S19iLWxDdFB6U0FyTHBXcWNPNGxSZFBlemk2eUdTUF96QWlDdmNNSXc?oc=5"
         }
       ],
@@ -222,7 +303,7 @@
         {
           "date": "2026-05-12",
           "next_close_pct": 15.8,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1EUjlPMXZ2ZGtQSzBkaFIyWXI1TWlzNWZ3NHBUbllDanRnblFsRmlQcHFtTVFKSnV0RUxRSndWSS05S0F1ZmFwQjJ0WVVPN0w4YjVpOGlEd3VQNHc2d09ydWNGaFp2V2Z3dlE?oc=5"
         }
       ],
@@ -270,6 +351,81 @@
         }
       ],
       "volume_ratio": 1.23,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": true,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "7803",
+      "name": "ブシロード",
+      "earnings_date": "2026-11-12",
+      "market_cap_oku": 686.58,
+      "score_total": 2,
+      "score_components": {
+        "own_earnings_reaction": 0,
+        "volume_supply_demand": 0,
+        "recent_industry_peers": 2,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 2,
+      "self_history_positive": 1,
+      "self_history_events": [
+        {
+          "date": "2026-08-13",
+          "next_close_pct": 2.34,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1ia3FwNWw2blVjMnNIM1ZmeVEyZ21mMkZfMGwzY0lpYmxZZWcxMktnaTZKUWozUHlKV0psRWZvRGFxYnpjaXJOYWhvd2M0NnBISGltSFR6OUhPWFNkZFJaeFN3dGpXMnhxc2c?oc=5"
+        },
+        {
+          "date": "2026-05-15",
+          "next_close_pct": -2.38,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBtOUZFZ0RZQmdOV3RPZzVoYXlqZEFmSFlTd3VZMkp4akVNdExEcjA1c2tiS1h1c2dYRklqVk5YRTdDZ0RGTDh3VkFBUWtFQ3dtT0h3MXJLbmdRbGxIOXhWTkJBTDkzcUhRT0E?oc=5"
+        }
+      ],
+      "industry": "Electronic Gaming & Multimedia",
+      "sector": "Communication Services",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 5,
+      "peer_positive_count": 3,
+      "peer_events": [
+        {
+          "code": "3668",
+          "name": "コロプラ",
+          "date": "2026-11-04",
+          "next_close_pct": 21.49
+        },
+        {
+          "code": "7844",
+          "name": "マーベラス",
+          "date": "2026-10-30",
+          "next_close_pct": 6.24
+        },
+        {
+          "code": "3793",
+          "name": "ドリコム",
+          "date": "2026-10-29",
+          "next_close_pct": -9.76
+        },
+        {
+          "code": "3911",
+          "name": "Ａｉｍｉｎｇ",
+          "date": "2026-10-27",
+          "next_close_pct": 8.41
+        },
+        {
+          "code": "3810",
+          "name": "サイバーステップホールディングス",
+          "date": "2026-10-15",
+          "next_close_pct": -1.72
+        }
+      ],
+      "volume_ratio": 0.92,
       "upgrade_events": [],
       "data_coverage": {
         "self_history": true,
@@ -442,74 +598,6 @@
       }
     },
     {
-      "code": "6072",
-      "name": "ＥＲＴＨ　Ｇｒｏｕｐ",
-      "earnings_date": "2026-11-12",
-      "market_cap_oku": 261.02,
-      "score_total": 2,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 2,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Specialty Business Services",
-      "sector": "Industrials",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 25,
-      "peer_positive_count": 13,
-      "peer_events": [
-        {
-          "code": "7868",
-          "name": "広済堂ホールディングス",
-          "date": "2026-11-10",
-          "next_close_pct": 4.28
-        },
-        {
-          "code": "7094",
-          "name": "ＮｅｘＴｏｎｅ",
-          "date": "2026-11-10",
-          "next_close_pct": 8.75
-        },
-        {
-          "code": "5071",
-          "name": "ヴィス",
-          "date": "2026-11-10",
-          "next_close_pct": 1.89
-        },
-        {
-          "code": "9319",
-          "name": "中央倉庫",
-          "date": "2026-11-09",
-          "next_close_pct": 11.71
-        },
-        {
-          "code": "7914",
-          "name": "共同印刷",
-          "date": "2026-11-09",
-          "next_close_pct": 2.28
-        },
-        {
-          "code": "7987",
-          "name": "ナカバヤシ",
-          "date": "2026-11-06",
-          "next_close_pct": -0.38
-        }
-      ],
-      "volume_ratio": 2.22,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
       "code": "4092",
       "name": "日本化学工業",
       "earnings_date": "2026-11-12",
@@ -527,13 +615,13 @@
         {
           "date": "2026-08-10",
           "next_close_pct": -7.5,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE00V3NMbTVCbUhRa2YtVEZwYnN4cktIMkNWRzRrZHBVT0dYRGlST2RhbVI4SE1qM2tzMTBVcWt0M2R4c1pkODFEOXRIR2hkSE9XQUZIMnJtck8xX1ozclJ6cGtRRmlfa2RkQUE?oc=5"
         },
         {
           "date": "2026-05-13",
           "next_close_pct": -3.71,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9ZSF84dzBFajJPVmhLS29Hd1ItUWZLZ3k1a1JkWlpMYTBNM2xzU0NTMGNiM0tGdEljc19oMXQ5THNWYTV6akFiRWJqRmlMSWlHZnlLRy1TVTFSektDRkJBdmFJYkUyNG84aVE?oc=5"
         }
       ],
@@ -608,7 +696,7 @@
         {
           "date": "2026-08-12",
           "next_close_pct": 1.59,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9UOHNtLU5LVTM1ZVVUek9aX01aZ3M4dE5hVEh0UEhncTZJcHB4YTVyVkdsZ0s2aXljNzdpMURfQ3Z6VUlsY0dwSjlZaWk2VzVBLUE5Uy1SaWdtRHpHYzIwQTg3dHhWY1RGV3c?oc=5"
         }
       ],
@@ -683,13 +771,13 @@
         {
           "date": "2026-08-12",
           "next_close_pct": -1.89,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4zMHpwc3pGcENDT2ZRUWpmb2FraDRBVEZzTjZTN1pESkJobDBiZzQweVg3dDNGcVJ5R3ktT0o2MS1jZUk4SmRaYmtERG4tT2hsVDB5Mk9Ub1FWY0hTU3RqbFNoREI2M19CMUE?oc=5"
         },
         {
           "date": "2026-05-12",
           "next_close_pct": 8.63,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9na0ZjRmY5cmkyY3BnZjMzY0VmazVGMkgzOVVIaWwwQno2dkVrZlhnd0hCTG1KREJiTldTRl9aTDVYM0pKc2V0UTR3LWJDVDFwVUExOW1JWk50TG9FemhfS2NNckQzai1IYVE?oc=5"
         }
       ],
@@ -747,74 +835,6 @@
       }
     },
     {
-      "code": "3993",
-      "name": "ＰＫＳＨＡ　Ｔｅｃｈｎｏｌｏｇｙ",
-      "earnings_date": "2026-11-12",
-      "market_cap_oku": 996.92,
-      "score_total": 1,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 1,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Software - Infrastructure",
-      "sector": "Technology",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 11,
-      "peer_positive_count": 6,
-      "peer_events": [
-        {
-          "code": "4687",
-          "name": "ＴＤＣソフト",
-          "date": "2026-11-09",
-          "next_close_pct": 4.87
-        },
-        {
-          "code": "4475",
-          "name": "ＨＥＮＮＧＥ",
-          "date": "2026-11-05",
-          "next_close_pct": 19.77
-        },
-        {
-          "code": "4847",
-          "name": "インテリジェント　ウェイブ",
-          "date": "2026-11-04",
-          "next_close_pct": -2.21
-        },
-        {
-          "code": "3914",
-          "name": "ＪＩＧ－ＳＡＷ",
-          "date": "2026-11-02",
-          "next_close_pct": -4.12
-        },
-        {
-          "code": "2428",
-          "name": "ウェルネット",
-          "date": "2026-10-30",
-          "next_close_pct": -4.17
-        },
-        {
-          "code": "2326",
-          "name": "デジタルアーツ",
-          "date": "2026-10-30",
-          "next_close_pct": 2.72
-        }
-      ],
-      "volume_ratio": 1.21,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
       "code": "3692",
       "name": "ＦＦＲＩセキュリティ",
       "earnings_date": "2026-11-12",
@@ -832,7 +852,7 @@
         {
           "date": "2026-08-13",
           "next_close_pct": -12.41,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5HeldfTVRsY1VHQWxZR01YckRTU054cGhoUWVNdTl4cERtWGNwdEJ3TUhwaDNxdVRIS0lTbWhPN0M5NENtdkpNNUZwbGpveGkwUXQwVjFEOUlOWFFNTTdlNGRWbmp5ZnF6YVE?oc=5"
         }
       ],
@@ -907,7 +927,7 @@
         {
           "date": "2026-05-14",
           "next_close_pct": -16.55,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBqWGt1cERUa0VoaUN5Vm02NTBYZmZmaVBtYWl0eGtZNFdzSHVzMkdlZ1ZrcnpYNkZ0WHdkSlRJNHp1aWxfWVhDYXJDV3R6T1A5VlFsbnE2UkxkZ1dmREZKc2FtZU4xc2ZOTlE?oc=5"
         }
       ],
@@ -982,7 +1002,7 @@
         {
           "date": "2026-08-12",
           "next_close_pct": -20.84,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9VenlDZkdTanhnWWY0Z01YaG92V2VzWWtzSkt3dWxxQVdMY0N1TWM0ejNJMXJHQlVfb1hmMk8tdC1nMnRxU0MyZjVyVmtvOVA1eUlxSXRkYlNNV3YtYUxwSW8yMjdmQlhaR2c?oc=5"
         }
       ],

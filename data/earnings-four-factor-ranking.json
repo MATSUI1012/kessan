@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generated_at": "2026-11-12T04:22:03+09:00",
-  "description": "4項目の調査順位。本人の過去決算反応は出典のある発表予定日・カレンダー日・記事掲載日付近の株価変化。実際の発表時刻・変動原因は未確認。未取得0点は悪材料ではない。",
+  "generated_at": "2026-11-12T04:58:27+09:00",
+  "description": "現在の20候補に基づく4項目順位。本人の過去決算反応は出典付き日付で計算、実際の発表時刻未確認。未取得は0点。",
   "weights": {
     "own_earnings_reaction": 3,
     "volume_supply_demand": 3,
@@ -15,6 +15,8 @@
     "peer_reactions": 20,
     "upgrades": 0
   },
+  "research_generated_at": "2026-11-12T00:18:14+09:00",
+  "own_history_source": "保存済み出典付きの本人決算日、JPX予定日付近の終値反応。発表時刻未確認。",
   "records": [
     {
       "code": "3656",
@@ -154,118 +156,6 @@
       }
     },
     {
-      "code": "2585",
-      "name": "ライフドリンク　カンパニー",
-      "earnings_date": "2026-11-12",
-      "market_cap_oku": 661.07,
-      "score_total": 2,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 2,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Beverages - Non-Alcoholic",
-      "sector": "Consumer Defensive",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 2,
-      "peer_positive_count": 1,
-      "peer_events": [
-        {
-          "code": "9959",
-          "name": "アシードホールディングス",
-          "date": "2026-11-09",
-          "next_close_pct": 1.62
-        },
-        {
-          "code": "2573",
-          "name": "北海道コカ・コーラボトリング",
-          "date": "2026-11-05",
-          "next_close_pct": -1.35
-        }
-      ],
-      "volume_ratio": 1.73,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
-      "code": "2986",
-      "name": "ＬＡホールディングス",
-      "earnings_date": "2026-11-12",
-      "market_cap_oku": 597.41,
-      "score_total": 2,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 2,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Real Estate Services",
-      "sector": "Real Estate",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 24,
-      "peer_positive_count": 13,
-      "peer_events": [
-        {
-          "code": "8945",
-          "name": "サンネクスタグループ",
-          "date": "2026-11-10",
-          "next_close_pct": 0.76
-        },
-        {
-          "code": "8928",
-          "name": "穴吹興産",
-          "date": "2026-11-10",
-          "next_close_pct": -1.12
-        },
-        {
-          "code": "8881",
-          "name": "日神グループホールディングス",
-          "date": "2026-11-10",
-          "next_close_pct": 1.15
-        },
-        {
-          "code": "8841",
-          "name": "テーオーシー",
-          "date": "2026-11-10",
-          "next_close_pct": 1.83
-        },
-        {
-          "code": "7187",
-          "name": "ジェイリース",
-          "date": "2026-11-10",
-          "next_close_pct": 2.64
-        },
-        {
-          "code": "8844",
-          "name": "コスモスイニシア",
-          "date": "2026-11-09",
-          "next_close_pct": -3.52
-        }
-      ],
-      "volume_ratio": 2.15,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
       "code": "3993",
       "name": "ＰＫＳＨＡ　Ｔｅｃｈｎｏｌｏｇｙ",
       "earnings_date": "2026-11-12",
@@ -334,56 +224,6 @@
       "upgrade_events": [],
       "data_coverage": {
         "self_history": true,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
-      "code": "4480",
-      "name": "メドレー",
-      "earnings_date": "2026-11-12",
-      "market_cap_oku": 784.23,
-      "score_total": 2,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 0,
-        "recent_industry_peers": 2,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Health Information Services",
-      "sector": "Healthcare",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 3,
-      "peer_positive_count": 2,
-      "peer_events": [
-        {
-          "code": "9438",
-          "name": "エムティーアイ",
-          "date": "2026-11-10",
-          "next_close_pct": -10.02
-        },
-        {
-          "code": "3628",
-          "name": "データホライゾン",
-          "date": "2026-11-10",
-          "next_close_pct": 6.12
-        },
-        {
-          "code": "4320",
-          "name": "ＣＥホールディングス",
-          "date": "2026-11-06",
-          "next_close_pct": 0.06
-        }
-      ],
-      "volume_ratio": 1.19,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
         "industry_peer_reactions": true,
         "industry_identified": true,
         "volume_ratio": true,
@@ -591,6 +431,168 @@
       "upgrade_events": [],
       "data_coverage": {
         "self_history": true,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "2585",
+      "name": "ライフドリンク　カンパニー",
+      "earnings_date": "2026-11-12",
+      "market_cap_oku": 661.07,
+      "score_total": 2,
+      "score_components": {
+        "own_earnings_reaction": 0,
+        "volume_supply_demand": 2,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 0,
+      "self_history_positive": 0,
+      "self_history_events": [],
+      "industry": "Beverages - Non-Alcoholic",
+      "sector": "Consumer Defensive",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 2,
+      "peer_positive_count": 1,
+      "peer_events": [
+        {
+          "code": "9959",
+          "name": "アシードホールディングス",
+          "date": "2026-11-09",
+          "next_close_pct": 1.62
+        },
+        {
+          "code": "2573",
+          "name": "北海道コカ・コーラボトリング",
+          "date": "2026-11-05",
+          "next_close_pct": -1.35
+        }
+      ],
+      "volume_ratio": 1.73,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": false,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "2986",
+      "name": "ＬＡホールディングス",
+      "earnings_date": "2026-11-12",
+      "market_cap_oku": 597.41,
+      "score_total": 2,
+      "score_components": {
+        "own_earnings_reaction": 0,
+        "volume_supply_demand": 2,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 0,
+      "self_history_positive": 0,
+      "self_history_events": [],
+      "industry": "Real Estate Services",
+      "sector": "Real Estate",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 24,
+      "peer_positive_count": 13,
+      "peer_events": [
+        {
+          "code": "8945",
+          "name": "サンネクスタグループ",
+          "date": "2026-11-10",
+          "next_close_pct": 0.76
+        },
+        {
+          "code": "8928",
+          "name": "穴吹興産",
+          "date": "2026-11-10",
+          "next_close_pct": -1.12
+        },
+        {
+          "code": "8881",
+          "name": "日神グループホールディングス",
+          "date": "2026-11-10",
+          "next_close_pct": 1.15
+        },
+        {
+          "code": "8841",
+          "name": "テーオーシー",
+          "date": "2026-11-10",
+          "next_close_pct": 1.83
+        },
+        {
+          "code": "7187",
+          "name": "ジェイリース",
+          "date": "2026-11-10",
+          "next_close_pct": 2.64
+        },
+        {
+          "code": "8844",
+          "name": "コスモスイニシア",
+          "date": "2026-11-09",
+          "next_close_pct": -3.52
+        }
+      ],
+      "volume_ratio": 2.15,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": false,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "4480",
+      "name": "メドレー",
+      "earnings_date": "2026-11-12",
+      "market_cap_oku": 784.23,
+      "score_total": 2,
+      "score_components": {
+        "own_earnings_reaction": 0,
+        "volume_supply_demand": 0,
+        "recent_industry_peers": 2,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 0,
+      "self_history_positive": 0,
+      "self_history_events": [],
+      "industry": "Health Information Services",
+      "sector": "Healthcare",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 3,
+      "peer_positive_count": 2,
+      "peer_events": [
+        {
+          "code": "9438",
+          "name": "エムティーアイ",
+          "date": "2026-11-10",
+          "next_close_pct": -10.02
+        },
+        {
+          "code": "3628",
+          "name": "データホライゾン",
+          "date": "2026-11-10",
+          "next_close_pct": 6.12
+        },
+        {
+          "code": "4320",
+          "name": "ＣＥホールディングス",
+          "date": "2026-11-06",
+          "next_close_pct": 0.06
+        }
+      ],
+      "volume_ratio": 1.19,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": false,
         "industry_peer_reactions": true,
         "industry_identified": true,
         "volume_ratio": true,
@@ -835,74 +837,6 @@
       }
     },
     {
-      "code": "3040",
-      "name": "ソリトンシステムズ",
-      "earnings_date": "2026-11-12",
-      "market_cap_oku": 549.38,
-      "score_total": 0,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 0,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Software - Infrastructure",
-      "sector": "Technology",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 11,
-      "peer_positive_count": 6,
-      "peer_events": [
-        {
-          "code": "4687",
-          "name": "ＴＤＣソフト",
-          "date": "2026-11-09",
-          "next_close_pct": 4.87
-        },
-        {
-          "code": "4475",
-          "name": "ＨＥＮＮＧＥ",
-          "date": "2026-11-05",
-          "next_close_pct": 19.77
-        },
-        {
-          "code": "4847",
-          "name": "インテリジェント　ウェイブ",
-          "date": "2026-11-04",
-          "next_close_pct": -2.21
-        },
-        {
-          "code": "3914",
-          "name": "ＪＩＧ－ＳＡＷ",
-          "date": "2026-11-02",
-          "next_close_pct": -4.12
-        },
-        {
-          "code": "2428",
-          "name": "ウェルネット",
-          "date": "2026-10-30",
-          "next_close_pct": -4.17
-        },
-        {
-          "code": "2326",
-          "name": "デジタルアーツ",
-          "date": "2026-10-30",
-          "next_close_pct": 2.72
-        }
-      ],
-      "volume_ratio": 0.56,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
       "code": "3692",
       "name": "ＦＦＲＩセキュリティ",
       "earnings_date": "2026-11-12",
@@ -971,142 +905,6 @@
       "upgrade_events": [],
       "data_coverage": {
         "self_history": true,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
-      "code": "3788",
-      "name": "ＧＭＯグローバルサイン・ホールディングス",
-      "earnings_date": "2026-11-12",
-      "market_cap_oku": 214.83,
-      "score_total": 0,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 0,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Information Technology Services",
-      "sector": "Technology",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 32,
-      "peer_positive_count": 11,
-      "peer_events": [
-        {
-          "code": "9753",
-          "name": "アイエックス・ナレッジ",
-          "date": "2026-11-10",
-          "next_close_pct": 0.96
-        },
-        {
-          "code": "4819",
-          "name": "デジタルガレージ",
-          "date": "2026-11-10",
-          "next_close_pct": -5.4
-        },
-        {
-          "code": "4072",
-          "name": "電算システムホールディングス",
-          "date": "2026-11-10",
-          "next_close_pct": -1.12
-        },
-        {
-          "code": "9739",
-          "name": "ＮＳＷ",
-          "date": "2026-11-09",
-          "next_close_pct": 0.04
-        },
-        {
-          "code": "4783",
-          "name": "ＮＣＤ",
-          "date": "2026-11-06",
-          "next_close_pct": 0.93
-        },
-        {
-          "code": "4769",
-          "name": "ＩＣ",
-          "date": "2026-11-06",
-          "next_close_pct": 2.66
-        }
-      ],
-      "volume_ratio": 0.63,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
-      "code": "3968",
-      "name": "セグエグループ",
-      "earnings_date": "2026-11-12",
-      "market_cap_oku": 290.92,
-      "score_total": 0,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 0,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 0,
-      "self_history_positive": 0,
-      "self_history_events": [],
-      "industry": "Information Technology Services",
-      "sector": "Technology",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 32,
-      "peer_positive_count": 11,
-      "peer_events": [
-        {
-          "code": "9753",
-          "name": "アイエックス・ナレッジ",
-          "date": "2026-11-10",
-          "next_close_pct": 0.96
-        },
-        {
-          "code": "4819",
-          "name": "デジタルガレージ",
-          "date": "2026-11-10",
-          "next_close_pct": -5.4
-        },
-        {
-          "code": "4072",
-          "name": "電算システムホールディングス",
-          "date": "2026-11-10",
-          "next_close_pct": -1.12
-        },
-        {
-          "code": "9739",
-          "name": "ＮＳＷ",
-          "date": "2026-11-09",
-          "next_close_pct": 0.04
-        },
-        {
-          "code": "4783",
-          "name": "ＮＣＤ",
-          "date": "2026-11-06",
-          "next_close_pct": 0.93
-        },
-        {
-          "code": "4769",
-          "name": "ＩＣ",
-          "date": "2026-11-06",
-          "next_close_pct": 2.66
-        }
-      ],
-      "volume_ratio": 0.41,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": false,
         "industry_peer_reactions": true,
         "industry_identified": true,
         "volume_ratio": true,
@@ -1264,6 +1062,210 @@
       }
     },
     {
+      "code": "3040",
+      "name": "ソリトンシステムズ",
+      "earnings_date": "2026-11-12",
+      "market_cap_oku": 549.38,
+      "score_total": 0,
+      "score_components": {
+        "own_earnings_reaction": 0,
+        "volume_supply_demand": 0,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 0,
+      "self_history_positive": 0,
+      "self_history_events": [],
+      "industry": "Software - Infrastructure",
+      "sector": "Technology",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 11,
+      "peer_positive_count": 6,
+      "peer_events": [
+        {
+          "code": "4687",
+          "name": "ＴＤＣソフト",
+          "date": "2026-11-09",
+          "next_close_pct": 4.87
+        },
+        {
+          "code": "4475",
+          "name": "ＨＥＮＮＧＥ",
+          "date": "2026-11-05",
+          "next_close_pct": 19.77
+        },
+        {
+          "code": "4847",
+          "name": "インテリジェント　ウェイブ",
+          "date": "2026-11-04",
+          "next_close_pct": -2.21
+        },
+        {
+          "code": "3914",
+          "name": "ＪＩＧ－ＳＡＷ",
+          "date": "2026-11-02",
+          "next_close_pct": -4.12
+        },
+        {
+          "code": "2428",
+          "name": "ウェルネット",
+          "date": "2026-10-30",
+          "next_close_pct": -4.17
+        },
+        {
+          "code": "2326",
+          "name": "デジタルアーツ",
+          "date": "2026-10-30",
+          "next_close_pct": 2.72
+        }
+      ],
+      "volume_ratio": 0.56,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": false,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "3788",
+      "name": "ＧＭＯグローバルサイン・ホールディングス",
+      "earnings_date": "2026-11-12",
+      "market_cap_oku": 214.83,
+      "score_total": 0,
+      "score_components": {
+        "own_earnings_reaction": 0,
+        "volume_supply_demand": 0,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 0,
+      "self_history_positive": 0,
+      "self_history_events": [],
+      "industry": "Information Technology Services",
+      "sector": "Technology",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 32,
+      "peer_positive_count": 11,
+      "peer_events": [
+        {
+          "code": "9753",
+          "name": "アイエックス・ナレッジ",
+          "date": "2026-11-10",
+          "next_close_pct": 0.96
+        },
+        {
+          "code": "4819",
+          "name": "デジタルガレージ",
+          "date": "2026-11-10",
+          "next_close_pct": -5.4
+        },
+        {
+          "code": "4072",
+          "name": "電算システムホールディングス",
+          "date": "2026-11-10",
+          "next_close_pct": -1.12
+        },
+        {
+          "code": "9739",
+          "name": "ＮＳＷ",
+          "date": "2026-11-09",
+          "next_close_pct": 0.04
+        },
+        {
+          "code": "4783",
+          "name": "ＮＣＤ",
+          "date": "2026-11-06",
+          "next_close_pct": 0.93
+        },
+        {
+          "code": "4769",
+          "name": "ＩＣ",
+          "date": "2026-11-06",
+          "next_close_pct": 2.66
+        }
+      ],
+      "volume_ratio": 0.63,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": false,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
+      "code": "3968",
+      "name": "セグエグループ",
+      "earnings_date": "2026-11-12",
+      "market_cap_oku": 290.92,
+      "score_total": 0,
+      "score_components": {
+        "own_earnings_reaction": 0,
+        "volume_supply_demand": 0,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 0,
+      "self_history_positive": 0,
+      "self_history_events": [],
+      "industry": "Information Technology Services",
+      "sector": "Technology",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 32,
+      "peer_positive_count": 11,
+      "peer_events": [
+        {
+          "code": "9753",
+          "name": "アイエックス・ナレッジ",
+          "date": "2026-11-10",
+          "next_close_pct": 0.96
+        },
+        {
+          "code": "4819",
+          "name": "デジタルガレージ",
+          "date": "2026-11-10",
+          "next_close_pct": -5.4
+        },
+        {
+          "code": "4072",
+          "name": "電算システムホールディングス",
+          "date": "2026-11-10",
+          "next_close_pct": -1.12
+        },
+        {
+          "code": "9739",
+          "name": "ＮＳＷ",
+          "date": "2026-11-09",
+          "next_close_pct": 0.04
+        },
+        {
+          "code": "4783",
+          "name": "ＮＣＤ",
+          "date": "2026-11-06",
+          "next_close_pct": 0.93
+        },
+        {
+          "code": "4769",
+          "name": "ＩＣ",
+          "date": "2026-11-06",
+          "next_close_pct": 2.66
+        }
+      ],
+      "volume_ratio": 0.41,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": false,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
       "code": "6613",
       "name": "ＱＤレーザ",
       "earnings_date": "2026-11-12",
@@ -1399,6 +1401,5 @@
         "upgrade_news_checked": true
       }
     }
-  ],
-  "own_history_source": "IR BANK上の決算短信掲載日（確認できた日付のみ）と保存済み履歴。実際の発表時刻は未確認。"
+  ]
 }

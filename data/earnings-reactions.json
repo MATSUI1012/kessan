@@ -1,182 +1,187 @@
 {
-  "schema": 2,
-  "description": "TDnet決算短信の掲載日付近の終値反応。開示時刻未確認、決算による因果効果や上昇確率は示さない。",
+  "schema": 1,
+  "description": "決算カレンダー日付付近の終値反応。実際の発表時刻未検証であり、決算による因果効果・上昇確率ではありません。",
   "sources": [
-    "TDnet決算短信開示一覧（掲載日）",
-    "既存の出典付き履歴"
+    "JPX保存済み発表予定日",
+    "Yahoo Finance決算カレンダー日付（取得可能な銘柄のみ）"
   ],
-  "event_date_count": 25,
+  "event_date_count": 26,
   "with_reactions": 2,
   "records": [
     {
-      "code": "6235",
-      "name": "オプトラン",
+      "code": "7944",
+      "name": "ローランド",
       "reactions": [
         {
           "event_date": "2026-08-06",
           "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
-          "source_url": "https://finance.yahoo.com/quote/6235.T/analysis/",
+          "source_url": "https://finance.yahoo.com/quote/7944.T/analysis/",
           "baseline_date": "2026-08-05",
-          "baseline_close": 3320.0,
+          "baseline_close": 4600.0,
           "after_1d_date": "2026-08-07",
-          "after_1d_pct": -4.67,
-          "after_3d_pct": -4.67,
-          "after_5d_pct": -3.31,
+          "after_1d_pct": -6.85,
+          "after_3d_pct": -4.57,
+          "after_5d_pct": -6.3,
           "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
         },
         {
-          "event_date": "2026-05-12",
+          "event_date": "2026-05-13",
           "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
-          "source_url": "https://finance.yahoo.com/quote/6235.T/analysis/",
-          "baseline_date": "2026-05-11",
-          "baseline_close": 4610.0,
-          "after_1d_date": "2026-05-13",
-          "after_1d_pct": -0.87,
-          "after_3d_pct": -13.67,
-          "after_5d_pct": -15.18,
+          "source_url": "https://finance.yahoo.com/quote/7944.T/analysis/",
+          "baseline_date": "2026-05-12",
+          "baseline_close": 4145.0,
+          "after_1d_date": "2026-05-14",
+          "after_1d_pct": 7.36,
+          "after_3d_pct": 11.22,
+          "after_5d_pct": 10.13,
           "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
         },
         {
-          "event_date": "2026-02-13",
+          "event_date": "2026-02-12",
           "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
-          "source_url": "https://finance.yahoo.com/quote/6235.T/analysis/",
-          "baseline_date": "2026-02-12",
-          "baseline_close": 2196.0,
-          "after_1d_date": "2026-02-16",
-          "after_1d_pct": 19.72,
-          "after_3d_pct": 25.0,
-          "after_5d_pct": 28.42,
+          "source_url": "https://finance.yahoo.com/quote/7944.T/analysis/",
+          "baseline_date": "2026-02-10",
+          "baseline_close": 4000.0,
+          "after_1d_date": "2026-02-13",
+          "after_1d_pct": -3.5,
+          "after_3d_pct": -2.0,
+          "after_5d_pct": 0.75,
           "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
         },
         {
           "event_date": "2025-11-10",
           "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
-          "source_url": "https://finance.yahoo.com/quote/6235.T/analysis/",
+          "source_url": "https://finance.yahoo.com/quote/7944.T/analysis/",
           "baseline_date": "2025-11-07",
-          "baseline_close": 1576.0,
+          "baseline_close": 3275.0,
           "after_1d_date": "2025-11-11",
-          "after_1d_pct": -1.4,
-          "after_3d_pct": 15.99,
-          "after_5d_pct": 10.98,
+          "after_1d_pct": 4.43,
+          "after_3d_pct": 8.4,
+          "after_5d_pct": 7.79,
           "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
         }
       ]
     },
     {
-      "code": "3103",
-      "name": "ユニチカ",
+      "code": "3632",
+      "name": "グリーホールディングス",
       "reactions": []
     },
     {
-      "code": "6855",
-      "name": "日本電子材料",
+      "code": "6480",
+      "name": "日本トムソン",
       "reactions": []
     },
     {
-      "code": "2395",
-      "name": "新日本科学",
+      "code": "7226",
+      "name": "極東開発工業",
       "reactions": []
     },
     {
-      "code": "6800",
-      "name": "ヨコオ",
+      "code": "4275",
+      "name": "カーリット",
       "reactions": []
     },
     {
-      "code": "6794",
-      "name": "フォスター電機",
-      "reactions": []
-    },
-    {
-      "code": "8061",
-      "name": "西華産業",
-      "reactions": []
-    },
-    {
-      "code": "6785",
-      "name": "鈴木",
-      "reactions": []
-    },
-    {
-      "code": "6997",
-      "name": "日本ケミコン",
+      "code": "7915",
+      "name": "ＮＩＳＳＨＡ",
       "reactions": [
         {
-          "event_date": "2026-02-08",
+          "event_date": "2026-05-11",
           "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
-          "source_url": "https://finance.yahoo.com/quote/6997.T/analysis/",
-          "baseline_date": "2026-02-06",
-          "baseline_close": 1572.0,
-          "after_1d_date": "2026-02-09",
-          "after_1d_pct": 2.48,
-          "after_3d_pct": -0.95,
-          "after_5d_pct": -3.31,
+          "source_url": "https://finance.yahoo.com/quote/7915.T/analysis/",
+          "baseline_date": "2026-05-08",
+          "baseline_close": 1311.0,
+          "after_1d_date": "2026-05-12",
+          "after_1d_pct": -1.75,
+          "after_3d_pct": 17.01,
+          "after_5d_pct": 20.14,
+          "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
+        },
+        {
+          "event_date": "2025-11-10",
+          "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
+          "source_url": "https://finance.yahoo.com/quote/7915.T/analysis/",
+          "baseline_date": "2025-11-07",
+          "baseline_close": 1305.0,
+          "after_1d_date": "2025-11-11",
+          "after_1d_pct": 0.38,
+          "after_3d_pct": -7.89,
+          "after_5d_pct": -10.19,
           "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
         }
       ]
     },
     {
-      "code": "7199",
-      "name": "プレミアグループ",
+      "code": "4071",
+      "name": "プラスアルファ・コンサルティング",
       "reactions": []
     },
     {
-      "code": "9888",
-      "name": "ＵＥＸ",
+      "code": "4022",
+      "name": "ラサ工業",
       "reactions": []
     },
     {
-      "code": "9880",
-      "name": "イノテック",
+      "code": "5702",
+      "name": "大紀アルミニウム工業所",
       "reactions": []
     },
     {
-      "code": "6016",
-      "name": "ジャパンエンジンコーポレーション",
+      "code": "4008",
+      "name": "住友精化",
       "reactions": []
     },
     {
-      "code": "4047",
-      "name": "関東電化工業",
+      "code": "4259",
+      "name": "エクサウィザーズ",
       "reactions": []
     },
     {
-      "code": "5121",
-      "name": "藤倉コンポジット",
+      "code": "9519",
+      "name": "レノバ",
       "reactions": []
     },
     {
-      "code": "8338",
-      "name": "筑波銀行",
+      "code": "4258",
+      "name": "網屋",
       "reactions": []
     },
     {
-      "code": "5541",
-      "name": "大平洋金属",
+      "code": "3673",
+      "name": "ブロードリーフ",
       "reactions": []
     },
     {
-      "code": "3131",
-      "name": "シンデン・ハイテックス",
+      "code": "2980",
+      "name": "ＳＲＥホールディングス",
       "reactions": []
     },
     {
-      "code": "9308",
-      "name": "乾汽船",
+      "code": "6638",
+      "name": "ミマキエンジニアリング",
       "reactions": []
     },
     {
-      "code": "8558",
-      "name": "東和銀行",
+      "code": "8151",
+      "name": "東陽テクニカ",
+      "reactions": []
+    },
+    {
+      "code": "4933",
+      "name": "Ｉ－ｎｅ",
+      "reactions": []
+    },
+    {
+      "code": "9755",
+      "name": "応用地質",
+      "reactions": []
+    },
+    {
+      "code": "5599",
+      "name": "Ｓ＆Ｊ",
       "reactions": []
     }
   ],
-  "generated_at": "2026-11-10T22:49:50+09:00",
-  "tdnet_days_requested": 136,
-  "tdnet_days_parsed": 0,
-  "tdnet_events_found": 0,
-  "tdnet_scan_diagnostics": {
-    "missing": 136,
-    "parsed": 0
-  }
+  "generated_at": "2026-11-11T22:16:48+09:00"
 }

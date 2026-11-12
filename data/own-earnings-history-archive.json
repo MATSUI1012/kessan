@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-12T04:58:27+09:00",
+  "updated_at": "2026-11-13T04:54:38+09:00",
   "method": "過去の出典付き本人決算履歴とJPX予定日を日付別に蓄積。実際の決算発表時刻は未確認。",
   "coverage": {
-    "companies": 856,
-    "events": 1060
+    "companies": 970,
+    "events": 1187
   },
   "records": [
     {
@@ -336,6 +336,21 @@
           "date_kind": "JPX決算発表予定日（発表時刻未確認）",
           "baseline_date": "2026-11-09",
           "next_session_date": "2026-11-11",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
+      "code": "1810",
+      "name": "松井建設",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 24.77,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
           "price_source": "保存済み日足（終値・出来高）"
         }
       ]
@@ -827,6 +842,21 @@
       ]
     },
     {
+      "code": "2108",
+      "name": "ニッテン",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 0.51,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "2112",
       "name": "塩水港精糖",
       "events": [
@@ -852,6 +882,21 @@
           "date_kind": "JPX決算発表予定日（発表時刻未確認）",
           "baseline_date": "2026-11-09",
           "next_session_date": "2026-11-11",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
+      "code": "2120",
+      "name": "ＬＩＦＵＬＬ",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 1.2,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
           "price_source": "保存済み日足（終値・出来高）"
         }
       ]
@@ -956,6 +1001,21 @@
       ]
     },
     {
+      "code": "2185",
+      "name": "シイエム・シイ",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -2.67,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "2193",
       "name": "クックパッド",
       "events": [
@@ -967,6 +1027,36 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "2204",
+      "name": "中村屋",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 0.16,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
+      "code": "2207",
+      "name": "ｍｅｉｔｏ",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 7.78,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -1089,6 +1179,21 @@
           "date_kind": "JPX決算発表予定日（発表時刻未確認）",
           "baseline_date": "2026-11-09",
           "next_session_date": "2026-11-11",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
+      "code": "2226",
+      "name": "湖池屋",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -1.45,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
           "price_source": "保存済み日足（終値・出来高）"
         }
       ]
@@ -1360,6 +1465,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "2410",
+      "name": "キャリアデザインセンター",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -12.28,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -2006,6 +2126,21 @@
       ]
     },
     {
+      "code": "2820",
+      "name": "やまみ",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 14.91,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "2882",
       "name": "イートアンドホールディングス",
       "events": [
@@ -2096,6 +2231,21 @@
       ]
     },
     {
+      "code": "2907",
+      "name": "あじかん",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 1.73,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "2908",
       "name": "フジッコ",
       "events": [
@@ -2137,6 +2287,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "2922",
+      "name": "なとり",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 0.51,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -2246,6 +2411,21 @@
       ]
     },
     {
+      "code": "2962",
+      "name": "テクニスコ",
+      "events": [
+        {
+          "event_date": "2026-08-14",
+          "next_close_pct": -4.63,
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB1Z1ltbkplZzI2eEY4eVgtbWpTLXZHaXA0MnZIX0JvYVZsaWQ2Rk0wTm8xZ0tHS3MtYnB6YUNIWVNqUnBIaU9jczNUS0hleXJaLTJySXEtQ2VmS3FoRmpjU3dlSWRCaFlpMlE?oc=5",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": "2026-08-13",
+          "next_session_date": "2026-08-17",
+          "price_source": "Yahoo Finance 日足"
+        }
+      ]
+    },
+    {
       "code": "2972",
       "name": "サンケイリアルエステート投資法人",
       "events": [
@@ -2279,6 +2459,15 @@
       "code": "2980",
       "name": "2980",
       "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -10.57,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        },
         {
           "event_date": "2026-05-13",
           "next_close_pct": -16.56,
@@ -2546,6 +2735,21 @@
       ]
     },
     {
+      "code": "3109",
+      "name": "シキボウ",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -1.17,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "3131",
       "name": "シンデン・ハイテックス",
       "events": [
@@ -2696,6 +2900,21 @@
       ]
     },
     {
+      "code": "3178",
+      "name": "チムニー",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 0.0,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "3179",
       "name": "シュッピン",
       "events": [
@@ -2752,6 +2971,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "3205",
+      "name": "ダイドーリミテッド",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -0.27,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -3026,6 +3260,21 @@
       ]
     },
     {
+      "code": "3392",
+      "name": "デリカフーズホールディングス",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -0.42,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "3393",
       "name": "スターティアホールディングス",
       "events": [
@@ -3041,6 +3290,21 @@
       ]
     },
     {
+      "code": "3417",
+      "name": "大木ヘルスケアホールディングス",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 3.58,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "3420",
       "name": "ケー・エフ・シー",
       "events": [
@@ -3052,6 +3316,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "3431",
+      "name": "宮地エンジニアリンググループ",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 0.0,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -3081,6 +3360,21 @@
           "date_kind": "JPX決算発表予定日（発表時刻未確認）",
           "baseline_date": "2026-11-09",
           "next_session_date": "2026-11-11",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
+      "code": "3447",
+      "name": "信和",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -1.41,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
           "price_source": "保存済み日足（終値・出来高）"
         }
       ]
@@ -3311,6 +3605,21 @@
       ]
     },
     {
+      "code": "3571",
+      "name": "ソトー",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 0.59,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "3580",
       "name": "小松マテーレ",
       "events": [
@@ -3351,6 +3660,21 @@
           "date_kind": "JPX決算発表予定日（発表時刻未確認）",
           "baseline_date": "2026-11-09",
           "next_session_date": "2026-11-11",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
+      "code": "3632",
+      "name": "グリーホールディングス",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 5.75,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
           "price_source": "保存済み日足（終値・出来高）"
         }
       ]
@@ -3464,6 +3788,21 @@
       ]
     },
     {
+      "code": "3673",
+      "name": "ブロードリーフ",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -18.01,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "3676",
       "name": "デジタルハーツホールディングス",
       "events": [
@@ -3490,6 +3829,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "3683",
+      "name": "サイバーリンクス",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -8.56,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -3548,6 +3902,21 @@
       ]
     },
     {
+      "code": "3723",
+      "name": "日本ファルコム",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -10.16,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "3771",
       "name": "システムリサーチ",
       "events": [
@@ -3574,6 +3943,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "3773",
+      "name": "アドバンスト・メディア",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 11.36,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -3653,6 +4037,21 @@
       ]
     },
     {
+      "code": "3800",
+      "name": "ユニリタ",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 0.67,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "3810",
       "name": "サイバーステップホールディングス",
       "events": [
@@ -3673,6 +4072,21 @@
           "baseline_date": "2026-07-14",
           "next_session_date": "2026-07-16",
           "price_source": "Yahoo Finance 日足"
+        }
+      ]
+    },
+    {
+      "code": "3817",
+      "name": "ＳＲＡホールディングス",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -0.32,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -3851,6 +4265,21 @@
       ]
     },
     {
+      "code": "3920",
+      "name": "アイビーシー",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 1.37,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "3922",
       "name": "ＰＲ　ＴＩＭＥＳ",
       "events": [
@@ -3911,6 +4340,36 @@
       ]
     },
     {
+      "code": "3947",
+      "name": "ダイナパック",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 0.9,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
+      "code": "3950",
+      "name": "ザ・パック",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -1.31,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "3951",
       "name": "朝日印刷",
       "events": [
@@ -3956,6 +4415,21 @@
       ]
     },
     {
+      "code": "3984",
+      "name": "ユーザーローカル",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -2.37,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "3991",
       "name": "ウォンテッドリー",
       "events": [
@@ -3967,6 +4441,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "3992",
+      "name": "ニーズウェル",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -1.68,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -3990,6 +4479,15 @@
       "name": "4008",
       "events": [
         {
+          "event_date": "2026-11-11",
+          "next_close_pct": -4.04,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        },
+        {
           "event_date": "2026-05-12",
           "next_close_pct": 2.89,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1LWFBQRzgxY08wemdjLXlKLXZYZjBkcGJKandWQWpaVWVjYjV2OWNQRU5NWjg0bEQzb3ktV1lXbTJ6cnd5LV9laGRCMGVldjVjdGdXdlNPWlh2djBlVzZmR0ZUcmhSeGxGcGc?oc=5",
@@ -3997,6 +4495,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "4013",
+      "name": "勤次郎",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -8.71,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -4019,6 +4532,15 @@
       "code": "4022",
       "name": "4022",
       "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -1.29,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        },
         {
           "event_date": "2026-08-12",
           "next_close_pct": -3.51,
@@ -4051,6 +4573,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "4027",
+      "name": "テイカ",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 25.09,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -4211,6 +4748,36 @@
       ]
     },
     {
+      "code": "4100",
+      "name": "戸田工業",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -6.1,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
+      "code": "4112",
+      "name": "保土谷化学工業",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 0.85,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "4113",
       "name": "田岡化学工業",
       "events": [
@@ -4361,6 +4928,36 @@
       ]
     },
     {
+      "code": "4231",
+      "name": "タイガースポリマー",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 15.34,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
+      "code": "4237",
+      "name": "フジプレアム",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 3.81,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "4248",
       "name": "竹本容器",
       "events": [
@@ -4372,6 +4969,36 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "4258",
+      "name": "網屋",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -12.82,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
+      "code": "4259",
+      "name": "エクサウィザーズ",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -15.35,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -4394,6 +5021,15 @@
       "code": "4275",
       "name": "4275",
       "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 0.45,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        },
         {
           "event_date": "2026-08-08",
           "next_close_pct": -12.46,
@@ -4544,6 +5180,21 @@
       ]
     },
     {
+      "code": "4331",
+      "name": "テイクアンドギヴ・ニーズ",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -0.72,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "4343",
       "name": "イオンファンタジー",
       "events": [
@@ -4604,6 +5255,21 @@
       ]
     },
     {
+      "code": "4356",
+      "name": "応用技術",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 4.73,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "4362",
       "name": "日本精化",
       "events": [
@@ -4630,6 +5296,60 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "4389",
+      "name": "プロパティデータバンク",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 2.15,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
+      "code": "4392",
+      "name": "ＦＩＧ",
+      "events": [
+        {
+          "event_date": "2026-08-07",
+          "next_close_pct": -2.25,
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1OMVdDZlBIaWJ5R1RjNVZiTTFfZkx0RXdpSC1VeDBnZERSMjRRSEdfQTgtNmhYbUl0d3lma1pFNlNzVURVX0pROTRNTnc4bnRjN3VnR2VhU2NHdUduNHFmUzlOZy1EcXFUOGc?oc=5",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": "2026-08-06",
+          "next_session_date": "2026-08-10",
+          "price_source": "Yahoo Finance 日足"
+        },
+        {
+          "event_date": "2026-05-14",
+          "next_close_pct": 23.81,
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5xYXNfcUlsWm9kVTU3dGN5MmJ4TmZpcnpIV2pRc0Y1LWVHdXN0X2tFc2MtNDhrcV90YjVNeC1GTHIyVzJWVGIxWkdmVk8tdUVFXzZULVhLdFEwajJyd2o0aVJVWGNfcDZtQXc?oc=5",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": "2026-05-13",
+          "next_session_date": "2026-05-15",
+          "price_source": "Yahoo Finance 日足"
+        }
+      ]
+    },
+    {
+      "code": "4396",
+      "name": "システムサポートホールディングス",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -11.51,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -4937,6 +5657,36 @@
       ]
     },
     {
+      "code": "4524",
+      "name": "森下仁丹",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 1.55,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
+      "code": "4538",
+      "name": "扶桑薬品工業",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 2.11,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "4548",
       "name": "生化学工業",
       "events": [
@@ -5114,6 +5864,21 @@
       ]
     },
     {
+      "code": "4570",
+      "name": "免疫生物研究所",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -5.39,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "4577",
       "name": "ダイト",
       "events": [
@@ -5200,6 +5965,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "4667",
+      "name": "アイサンテクノロジー",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -14.54,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -5543,6 +6323,21 @@
       ]
     },
     {
+      "code": "4828",
+      "name": "ビジネスエンジニアリング",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -3.4,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "4832",
       "name": "ＪＦＥシステムズ",
       "events": [
@@ -5645,6 +6440,36 @@
       ]
     },
     {
+      "code": "4889",
+      "name": "レナサイエンス",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 4.9,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
+      "code": "4894",
+      "name": "クオリプス",
+      "events": [
+        {
+          "event_date": "2026-08-13",
+          "next_close_pct": 4.25,
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1KUGlHYno0d3oydlVjaFMzX25uUFNYYk53VDVVak8zTDd6WGJ6OUFMNm93YzRqSWNhaG9nMFBRc3l2ZlRnVzUxelVzbER4NXBGVnJkUTVtaFN0R3ZSc2RtTV9UeFByUzZ6RVE?oc=5",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": "2026-08-12",
+          "next_session_date": "2026-08-14",
+          "price_source": "Yahoo Finance 日足"
+        }
+      ]
+    },
+    {
       "code": "4923",
       "name": "コタ",
       "events": [
@@ -5660,9 +6485,33 @@
       ]
     },
     {
+      "code": "4931",
+      "name": "新日本製薬",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 1.89,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "4933",
       "name": "4933",
       "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -4.67,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        },
         {
           "event_date": "2026-08-07",
           "next_close_pct": 9.6,
@@ -5680,6 +6529,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "4951",
+      "name": "エステー",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 0.13,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -5771,6 +6635,21 @@
       ]
     },
     {
+      "code": "4971",
+      "name": "メック",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -0.55,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "4972",
       "name": "綜研化学",
       "events": [
@@ -5806,6 +6685,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "4979",
+      "name": "ＯＡＴアグリオ",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -15.73,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -5865,6 +6759,21 @@
           "date_kind": "JPX決算発表予定日（発表時刻未確認）",
           "baseline_date": "2026-11-09",
           "next_session_date": "2026-11-11",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
+      "code": "5013",
+      "name": "ユシロ",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -0.65,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
           "price_source": "保存済み日足（終値・出来高）"
         }
       ]
@@ -5940,6 +6849,21 @@
           "date_kind": "JPX決算発表予定日（発表時刻未確認）",
           "baseline_date": "2026-11-09",
           "next_session_date": "2026-11-11",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
+      "code": "5184",
+      "name": "ニチリン",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -0.6,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
           "price_source": "保存済み日足（終値・出来高）"
         }
       ]
@@ -6035,6 +6959,21 @@
       ]
     },
     {
+      "code": "5253",
+      "name": "カバー",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -12.67,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "5261",
       "name": "リソルホールディングス",
       "events": [
@@ -6046,6 +6985,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "5262",
+      "name": "日本ヒューム",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -5.97,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -6106,6 +7060,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "5288",
+      "name": "アジアパイルホールディングス",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 0.0,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -6407,6 +7376,51 @@
       ]
     },
     {
+      "code": "5586",
+      "name": "Ｌａｂｏｒｏ．ＡＩ",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -1.27,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
+      "code": "5589",
+      "name": "オートサーバー",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 3.02,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
+      "code": "5599",
+      "name": "Ｓ＆Ｊ",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -12.7,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "5602",
       "name": "栗本鐵工所",
       "events": [
@@ -6480,6 +7494,15 @@
       "name": "5702",
       "events": [
         {
+          "event_date": "2026-11-11",
+          "next_close_pct": -3.19,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        },
+        {
           "event_date": "2026-05-14",
           "next_close_pct": 15.28,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1BRzlnNWdoVXhGa3JXNnNaOXBkWnVHM2xFVk4yNXlkcjBMYU1IY2hscWZheHQtcVRzdzFCTkk3NzF2UFROdFN2MnVHYUNxeThmNjBwb3YzUVUwM3VkTkl2OHE0aXFFaC1lZVE?oc=5",
@@ -6494,6 +7517,15 @@
       "code": "5726",
       "name": "5726",
       "events": [
+        {
+          "event_date": "2026-11-10",
+          "next_close_pct": 7.88,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-09",
+          "next_session_date": "2026-11-11",
+          "price_source": "Yahoo Finance 日足"
+        },
         {
           "event_date": "2026-08-25",
           "next_close_pct": -11.61,
@@ -6616,6 +7648,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "5852",
+      "name": "アーレスティ",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -0.34,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -6875,6 +7922,21 @@
       ]
     },
     {
+      "code": "5976",
+      "name": "高周波熱錬",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 1.58,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "5982",
       "name": "マルゼン",
       "events": [
@@ -6916,6 +7978,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "6016",
+      "name": "ジャパンエンジンコーポレーション",
+      "events": [
+        {
+          "event_date": "2026-11-10",
+          "next_close_pct": 13.18,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-09",
+          "next_session_date": "2026-11-11",
+          "price_source": "Yahoo Finance 日足"
         }
       ]
     },
@@ -7070,6 +8147,21 @@
       ]
     },
     {
+      "code": "6087",
+      "name": "アビスト",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 1.35,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "6088",
       "name": "シグマクシス・ホールディングス",
       "events": [
@@ -7111,6 +8203,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "6125",
+      "name": "岡本工作機械製作所",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 5.01,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -7298,6 +8405,21 @@
       ]
     },
     {
+      "code": "6165",
+      "name": "パンチ工業",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 3.18,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "6183",
       "name": "ベルシステム２４ホールディングス",
       "events": [
@@ -7367,6 +8489,21 @@
       ]
     },
     {
+      "code": "6203",
+      "name": "豊和工業",
+      "events": [
+        {
+          "event_date": "2026-05-15",
+          "next_close_pct": -6.4,
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5NVzJxMDdXRW1oVUVyUWY3eFhyS3g2ajBkQlZLVE5YWkxEUnVqSFZhN0kyWjZFOC12djhSRllGckw1d09GYmpoSU1mODJfZ3F3R0ZuSnVoUmIzWnY1U0J4aWlCTmdBbGxmbFE?oc=5",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "baseline_date": "2026-05-14",
+          "next_session_date": "2026-05-18",
+          "price_source": "Yahoo Finance 日足"
+        }
+      ]
+    },
+    {
       "code": "6208",
       "name": "石川製作所",
       "events": [
@@ -7423,6 +8560,36 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "6226",
+      "name": "守谷輸送機工業",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -3.29,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
+      "code": "6228",
+      "name": "ジェイ・イー・ティ",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 27.15,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -7604,6 +8771,21 @@
       ]
     },
     {
+      "code": "6272",
+      "name": "レオン自動機",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 3.33,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "6277",
       "name": "ホソカワミクロン",
       "events": [
@@ -7645,6 +8827,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "6286",
+      "name": "靜甲",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -2.9,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -8121,6 +9318,15 @@
       "name": "6480",
       "events": [
         {
+          "event_date": "2026-11-11",
+          "next_close_pct": 3.4,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        },
+        {
           "event_date": "2026-05-11",
           "next_close_pct": 56.91,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB4TFR2UTNUckppV3A2MDBuVlJNeFlHU1lyMXBhM3d2amJPanBzSXpBUmJ3TmVXWlg4NGIyMUpxdWhXazZmM0lLMlZ2dE1vdVhSQVg4UTRVT1A2M0xULWhSWkhDeEpnX3pNWVE?oc=5",
@@ -8128,6 +9334,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "6485",
+      "name": "前澤給装工業",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 2.23,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -8270,6 +9491,21 @@
       ]
     },
     {
+      "code": "6570",
+      "name": "共和コーポレーション",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -28.4,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "6572",
       "name": "オープングループ",
       "events": [
@@ -8318,6 +9554,21 @@
       ]
     },
     {
+      "code": "6626",
+      "name": "ＳＥＭＩＴＥＣ",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 1.11,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "6629",
       "name": "テクノホライゾン",
       "events": [
@@ -8338,6 +9589,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "6638",
+      "name": "ミマキエンジニアリング",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 1.95,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -8921,6 +10187,21 @@
       ]
     },
     {
+      "code": "6850",
+      "name": "チノー",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 9.73,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "6855",
       "name": "日本電子材料",
       "events": [
@@ -9263,6 +10544,21 @@
       ]
     },
     {
+      "code": "6986",
+      "name": "双葉電子工業",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -2.15,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "6989",
       "name": "北陸電気工業",
       "events": [
@@ -9368,6 +10664,21 @@
       ]
     },
     {
+      "code": "6998",
+      "name": "日本タングステン",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 6.62,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "6999",
       "name": "ＫＯＡ",
       "events": [
@@ -9428,6 +10739,21 @@
       ]
     },
     {
+      "code": "7087",
+      "name": "ウイルテック",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 5.9,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "7089",
       "name": "フォースタートアップス",
       "events": [
@@ -9469,6 +10795,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "7119",
+      "name": "ハルメクホールディングス",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -0.96,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1016.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -9647,6 +10988,21 @@
       ]
     },
     {
+      "code": "7213",
+      "name": "レシップホールディングス",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -8.05,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "7218",
       "name": "田中精密工業",
       "events": [
@@ -9665,6 +11021,15 @@
       "code": "7226",
       "name": "7226",
       "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -0.24,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        },
         {
           "event_date": "2026-05-13",
           "next_close_pct": -12.4,
@@ -9779,6 +11144,36 @@
       ]
     },
     {
+      "code": "7280",
+      "name": "ミツバ",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -8.75,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
+      "code": "7292",
+      "name": "村上開明堂",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -0.58,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "7299",
       "name": "フジオーゼックス",
       "events": [
@@ -9804,6 +11199,21 @@
           "date_kind": "JPX決算発表予定日（発表時刻未確認）",
           "baseline_date": "2026-11-09",
           "next_session_date": "2026-11-11",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
+      "code": "7326",
+      "name": "ＳＢＩインシュアランスグループ",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -0.19,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
           "price_source": "保存済み日足（終値・出来高）"
         }
       ]
@@ -9854,6 +11264,21 @@
       ]
     },
     {
+      "code": "7374",
+      "name": "コンフィデンス・インターワークス",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -1.86,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "7388",
       "name": "ＦＰパートナー",
       "events": [
@@ -9889,6 +11314,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "7414",
+      "name": "小野建",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -3.35,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -10166,6 +11606,21 @@
       ]
     },
     {
+      "code": "7505",
+      "name": "扶桑電通",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -2.98,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "7508",
       "name": "Ｇ‐７ホールディングス",
       "events": [
@@ -10241,6 +11696,21 @@
       ]
     },
     {
+      "code": "7525",
+      "name": "リックス",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 7.45,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "7537",
       "name": "丸文",
       "events": [
@@ -10267,6 +11737,36 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "7554",
+      "name": "幸楽苑",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -0.08,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
+      "code": "7561",
+      "name": "ハークスレイホールディングス",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -1.95,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -10538,6 +12038,21 @@
       ]
     },
     {
+      "code": "7628",
+      "name": "オーハシテクニカ",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 1.08,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "7634",
       "name": "星医療酸器",
       "events": [
@@ -10564,6 +12079,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "7637",
+      "name": "白銅",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 2.96,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -10988,6 +12518,21 @@
       ]
     },
     {
+      "code": "7849",
+      "name": "スターツ出版",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -1.26,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "7868",
       "name": "広済堂ホールディングス",
       "events": [
@@ -11096,6 +12641,15 @@
       "code": "7915",
       "name": "7915",
       "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -5.0,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        },
         {
           "event_date": "2026-05-11",
           "next_close_pct": -1.75,
@@ -11495,6 +13049,36 @@
       ]
     },
     {
+      "code": "8023",
+      "name": "ＤＡＩＫＯ　ＸＴＥＣＨ",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -0.48,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
+      "code": "8029",
+      "name": "ルックホールディングス",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -0.9,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "8043",
       "name": "スターゼン",
       "events": [
@@ -11729,6 +13313,21 @@
       ]
     },
     {
+      "code": "8118",
+      "name": "キング",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 0.09,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "8125",
       "name": "ワキタ",
       "events": [
@@ -11755,6 +13354,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "8132",
+      "name": "シナネンホールディングス",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 1.9,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -11817,6 +13431,15 @@
       "name": "8151",
       "events": [
         {
+          "event_date": "2026-11-11",
+          "next_close_pct": 5.88,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        },
+        {
           "event_date": "2026-08-05",
           "next_close_pct": 1.85,
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBfaUlMb2Jzc3pVU1hRaUtPQ3gyNWlNNHpNQ1l4ZVN2am5QWWVBS1VKQ2dYVDBGVkdIbklkNURBREQwZTRfM0VBX1UtOFhxX2hZalU2Q1BhU0h3WklrWmwyVjlLZUdWMnVxQnc?oc=5",
@@ -11833,6 +13456,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "8152",
+      "name": "ソマール",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 2.16,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -12001,6 +13639,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "8275",
+      "name": "フォーバル",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -3.95,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -12878,6 +14531,21 @@
       ]
     },
     {
+      "code": "8920",
+      "name": "東祥",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 1.74,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "8928",
       "name": "穴吹興産",
       "events": [
@@ -13061,6 +14729,21 @@
       ]
     },
     {
+      "code": "9074",
+      "name": "日本石油輸送",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -2.21,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "9081",
       "name": "神奈川中央交通",
       "events": [
@@ -13072,6 +14755,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "9082",
+      "name": "大和自動車交通",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -4.12,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -13496,6 +15194,21 @@
       ]
     },
     {
+      "code": "9380",
+      "name": "東海運",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 0.67,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "9381",
       "name": "エーアイテイー",
       "events": [
@@ -13522,6 +15235,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "9408",
+      "name": "ＢＳＮメディアホールディングス",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 6.39,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -13615,6 +15343,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "9445",
+      "name": "フォーバルテレコム",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 0.59,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -13754,6 +15497,15 @@
       "code": "9519",
       "name": "9519",
       "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 0.67,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        },
         {
           "event_date": "2026-05-13",
           "next_close_pct": 4.58,
@@ -13897,6 +15649,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "9633",
+      "name": "東京テアトル",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -0.38,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -14090,6 +15857,21 @@
       ]
     },
     {
+      "code": "9726",
+      "name": "ＫＮＴ－ＣＴホールディングス",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -1.61,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "9733",
       "name": "ナガセ",
       "events": [
@@ -14174,6 +15956,21 @@
       ]
     },
     {
+      "code": "9755",
+      "name": "応用地質",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": 1.51,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1016.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
+        }
+      ]
+    },
+    {
       "code": "9763",
       "name": "丸建リース",
       "events": [
@@ -14215,6 +16012,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "9780",
+      "name": "ハリマビステム",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -0.1,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },
@@ -14350,6 +16162,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "9850",
+      "name": "グルメ杵屋",
+      "events": [
+        {
+          "event_date": "2026-11-11",
+          "next_close_pct": -1.51,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-10",
+          "next_session_date": "2026-11-12",
+          "price_source": "保存済み日足（終値・出来高）"
         }
       ]
     },

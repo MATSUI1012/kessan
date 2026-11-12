@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "generated_at": "2026-11-11T06:55:01+09:00",
+  "generated_at": "2026-11-13T06:59:30+09:00",
   "season": {
     "start": "2026-10-01",
     "end": "2026-11-30",
     "scope": "JPX予定表の10-11月ユニーク銘柄（時価総額を問わない）",
-    "scheduled_count": 3390,
-    "scheduled_dates_elapsed_before_today": 1871,
-    "scheduled_progress_fraction": 0.5519
+    "scheduled_count": 3392,
+    "scheduled_dates_elapsed_before_today": 2571,
+    "scheduled_progress_fraction": 0.758
   },
   "coverage": {
     "frozen_pre_event_snapshots": 90,
@@ -31,10 +31,10 @@
     },
     {
       "fraction": 0.6,
-      "schedule_threshold_reached": false,
+      "schedule_threshold_reached": true,
       "observations_from_frozen_pre_earnings_snapshots": 89,
-      "feedback_ready": false,
-      "next_action": "決算予定日の経過と決算前スナップショットを蓄積"
+      "feedback_ready": true,
+      "next_action": "検証済み標本30件以上で要因差を点検。重みを自動変更せず、別期間で再検証"
     }
   ],
   "observations_summary": {

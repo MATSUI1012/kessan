@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-11-14T01:35:22+09:00",
+  "generated_at": "2026-11-14T02:06:28+09:00",
   "description": "4項目の調査順位。本人の過去決算反応は出典のある発表予定日・カレンダー日・記事掲載日付近の株価変化。実際の発表時刻・変動原因は未確認。未取得0点は悪材料ではない。",
   "weights": {
     "own_earnings_reaction": 3,
@@ -34,7 +34,7 @@
         {
           "date": "2026-08-14",
           "next_close_pct": -8.33,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9XQ0lUaW9zRk0tTHRwRmh4V1VRUTk3cm84aERMa2VTbWJ0bGFKRU1QbUdMT2dBTnFDUExVVFVucGxqcl9PR0Y2VkVJVjVjYnVSSm5UVG03WS16MnJUYmZSUVhmTVE5RnRHVlE?oc=5"
         }
       ],
@@ -92,6 +92,93 @@
       }
     },
     {
+      "code": "3905",
+      "name": "データセクション",
+      "earnings_date": "2026-11-16",
+      "market_cap_oku": 547.52,
+      "score_total": 2,
+      "score_components": {
+        "own_earnings_reaction": 2,
+        "volume_supply_demand": 0,
+        "recent_industry_peers": 0,
+        "analyst_upgrades_61d": 0
+      },
+      "self_history_count": 3,
+      "self_history_positive": 2,
+      "self_history_events": [
+        {
+          "date": "2026-08-14",
+          "next_close_pct": -3.73,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE12cWJGVnNQTGZ5SWxKQ3lDY0xuVTlQWHVCelBWODMyNmxaSWh3bVFvQ3lpUzVDRDRQNWswY0VuZXZicVl1Nms4LUJ6b0IxQnd1M2RfUHF0RG9hSTRJT214OEp4aHdsTmZYSnc?oc=5"
+        },
+        {
+          "date": "2026-05-15",
+          "next_close_pct": 32.29,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5QTjQ2RkRoNTRvczl1MlE1QU9WUmxISXFVMC1lLW1RdlRMTU9xa2NQX2EzMTMwN20wUEp2anI2ei1QSDhlVVNiX2ZpaVJYaWhpdlVBQUo4RUIzZFRDSkhOa05vUi1zMTF5SGc?oc=5"
+        },
+        {
+          "date": "2025-08-14",
+          "next_close_pct": 10.72,
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8tMnpuRDBMVERWaXFncktPZFZvVDVqakVCWkU0VkFFNzl0QkZwRG9wcUxPRjlya1U0MjZETTdiMmpfdWROSXZocE9nOXBFVkwtdmRaVktIUm9oV3hkcjR1T05veDkwNEhWTUE?oc=5"
+        }
+      ],
+      "industry": "Software - Application",
+      "sector": "Technology",
+      "industry_source": "Yahoo Finance company profile",
+      "peer_reaction_count": 45,
+      "peer_positive_count": 20,
+      "peer_events": [
+        {
+          "code": "7320",
+          "name": "Ｓｏｌｖｖｙ",
+          "date": "2026-11-12",
+          "next_close_pct": 6.08
+        },
+        {
+          "code": "5254",
+          "name": "Ａｒｅｎｔ",
+          "date": "2026-11-12",
+          "next_close_pct": -1.03
+        },
+        {
+          "code": "5139",
+          "name": "オープンワーク",
+          "date": "2026-11-12",
+          "next_close_pct": -0.44
+        },
+        {
+          "code": "5029",
+          "name": "サークレイス",
+          "date": "2026-11-12",
+          "next_close_pct": 0.05
+        },
+        {
+          "code": "4323",
+          "name": "日本システム技術",
+          "date": "2026-11-12",
+          "next_close_pct": 1.44
+        },
+        {
+          "code": "4255",
+          "name": "ＴＨＥＣＯＯ",
+          "date": "2026-11-12",
+          "next_close_pct": 17.61
+        }
+      ],
+      "volume_ratio": 0.78,
+      "upgrade_events": [],
+      "data_coverage": {
+        "self_history": true,
+        "industry_peer_reactions": true,
+        "industry_identified": true,
+        "volume_ratio": true,
+        "upgrade_news_checked": true
+      }
+    },
+    {
       "code": "7047",
       "name": "ポート",
       "earnings_date": "2026-11-16",
@@ -109,13 +196,13 @@
         {
           "date": "2026-10-15",
           "next_close_pct": -0.5,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1ZVm5tYjU0Szlwa3AtMzJyU3NacGc1aHRDSTVsSFpXUkJhVHp2WGlmYXg3MFVsb1pTUDlzLXNKSzhhaGpVMzM4V3RtZXpxN1JkZ0x2UGw5eHgzT014OGczQy1YRVhncUhnZHc?oc=5"
         },
         {
           "date": "2026-05-15",
           "next_close_pct": -6.64,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0tQW84SFNhdUdKNnk3NGgxYVpNWDNuOU9pak5tdWFtb1Z2RVNsVnNoQjUwV182UldsVlBxUG9QQUZDQ0FGbDVWMl9mSTk0YmxSbEtGS091ZnZaTlZFQ1NhRF9hNmpWUS1oWXc?oc=5"
         }
       ],
@@ -240,7 +327,7 @@
         {
           "date": "2026-08-14",
           "next_close_pct": 5.93,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5GOVlMTm5UWFlLcE5Cam9MTjJzRkx5RDF5eERubnFBVnV0aTZFcTB6T3BpMGlkZFU4dnJPcW82VnRhb3ptZVIyaVJZRmt2Skd5TDVEQms2MUtKV09xMUxkeXg1b0x3MWhERXc?oc=5"
         }
       ],
@@ -315,7 +402,7 @@
         {
           "date": "2026-08-14",
           "next_close_pct": 7.42,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1DamVCZkpnQVdmMHJhQ1cwMTRYckhoUGpzR21lTVZ6b25qRzM4NmVHeXkyNXh0cTE0di1YRF9HOWJXSjBrQkhvS1lYam81R2d2UU9jT2trMV91OG4xWTVwUU1GWWxiYXR6Wnc?oc=5"
         }
       ],
@@ -390,7 +477,7 @@
         {
           "date": "2026-05-15",
           "next_close_pct": 5.63,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9IVDg1RTF2SUVoOGF3TzFNTkxCVFlaTWUweEtSdE5jZW14V0RzdG5BeWZYSW1lMWo5M3FaRERBS3F1WXNNSkdDRFAtWHgtVzhZMlhfOXdkZ0liam5paF9hMVNGWDREanEtekE?oc=5"
         }
       ],
@@ -601,7 +688,7 @@
         {
           "date": "2026-08-14",
           "next_close_pct": -0.92,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4zWWFHZ3RaNWFha2FHc1JkQmxadFpIU2N0OTBCZkhxenUya0ROQi1DTTZGRjZpWlM0ZzFJWjl4M2gzLVdnTUtQMEpxYWNSOUpCUmY5WUVNREEwTzNCQ2ljMXJOVC0ySnFRd1E?oc=5"
         }
       ],
@@ -659,87 +746,6 @@
       }
     },
     {
-      "code": "3905",
-      "name": "データセクション",
-      "earnings_date": "2026-11-16",
-      "market_cap_oku": 547.52,
-      "score_total": 0,
-      "score_components": {
-        "own_earnings_reaction": 0,
-        "volume_supply_demand": 0,
-        "recent_industry_peers": 0,
-        "analyst_upgrades_61d": 0
-      },
-      "self_history_count": 2,
-      "self_history_positive": 1,
-      "self_history_events": [
-        {
-          "date": "2026-08-14",
-          "next_close_pct": -3.73,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE12cWJGVnNQTGZ5SWxKQ3lDY0xuVTlQWHVCelBWODMyNmxaSWh3bVFvQ3lpUzVDRDRQNWswY0VuZXZicVl1Nms4LUJ6b0IxQnd1M2RfUHF0RG9hSTRJT214OEp4aHdsTmZYSnc?oc=5"
-        },
-        {
-          "date": "2026-05-15",
-          "next_close_pct": 32.29,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5QTjQ2RkRoNTRvczl1MlE1QU9WUmxISXFVMC1lLW1RdlRMTU9xa2NQX2EzMTMwN20wUEp2anI2ei1QSDhlVVNiX2ZpaVJYaWhpdlVBQUo4RUIzZFRDSkhOa05vUi1zMTF5SGc?oc=5"
-        }
-      ],
-      "industry": "Software - Application",
-      "sector": "Technology",
-      "industry_source": "Yahoo Finance company profile",
-      "peer_reaction_count": 45,
-      "peer_positive_count": 20,
-      "peer_events": [
-        {
-          "code": "7320",
-          "name": "Ｓｏｌｖｖｙ",
-          "date": "2026-11-12",
-          "next_close_pct": 6.08
-        },
-        {
-          "code": "5254",
-          "name": "Ａｒｅｎｔ",
-          "date": "2026-11-12",
-          "next_close_pct": -1.03
-        },
-        {
-          "code": "5139",
-          "name": "オープンワーク",
-          "date": "2026-11-12",
-          "next_close_pct": -0.44
-        },
-        {
-          "code": "5029",
-          "name": "サークレイス",
-          "date": "2026-11-12",
-          "next_close_pct": 0.05
-        },
-        {
-          "code": "4323",
-          "name": "日本システム技術",
-          "date": "2026-11-12",
-          "next_close_pct": 1.44
-        },
-        {
-          "code": "4255",
-          "name": "ＴＨＥＣＯＯ",
-          "date": "2026-11-12",
-          "next_close_pct": 17.61
-        }
-      ],
-      "volume_ratio": 0.78,
-      "upgrade_events": [],
-      "data_coverage": {
-        "self_history": true,
-        "industry_peer_reactions": true,
-        "industry_identified": true,
-        "volume_ratio": true,
-        "upgrade_news_checked": true
-      }
-    },
-    {
       "code": "3983",
       "name": "オロ",
       "earnings_date": "2026-11-16",
@@ -757,7 +763,7 @@
         {
           "date": "2026-08-14",
           "next_close_pct": -6.03,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1xM3Z5dHJxa01YcXZLYXRhLUdkV05NNzgtM05tNExJZzZ3VnNqWHhYRlF3OVRNbFpkc0d6MzFUbXBRek02bTFRWFRRSWJObE93Qnl3WUdVOVpld214V3dSYjFJMnVDSDM2RHc?oc=5"
         }
       ],
@@ -832,7 +838,7 @@
         {
           "date": "2026-09-10",
           "next_close_pct": -1.66,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5KQ1pLR2p0QVhyUzRhdXc1dTZ5c3NLYThRNFlqUVE3OHhnZjNXdkluNy1pM2UxOWNIcVdKVWl2aUtxQV9Jd2JLOG11aVB3REUzWnRKd3ZFOG95MXM3WWc5cTd0eVdvU2xHREE?oc=5"
         }
       ],
@@ -907,7 +913,7 @@
         {
           "date": "2026-08-13",
           "next_close_pct": -2.2,
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9TNWJSd3I3MGQ1LXNac3JOWGxQbjFxd3E3Tnh2U0NwbGNaS0RhUmxaOFEyeTFZR3J4dmhNQV9ITGFRZlpVN1V2dEJoZ2VxUUhTOTZINThueVFLNHBucS0tTWxUaVJrUmhLeGc?oc=5"
         }
       ],

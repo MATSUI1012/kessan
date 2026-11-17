@@ -1,18 +1,45 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-17T08:51:38+09:00",
-  "method": "候補自身の出典のある過去決算日付とYahoo日足を照合。記事掲載日は実際の発表日と異なる場合がある。",
+  "updated_at": "2026-11-17T09:15:18+09:00",
+  "method": "JPX予定日・Yahoo決算カレンダー・決算短信見出し内の適時開示日から本人の過去実績を取得。記事発信日をそのまま開示日として推定しない。",
   "coverage": {
     "candidates": 4,
-    "with_history": 0,
-    "events": 0
+    "with_history": 2,
+    "events": 3
   },
   "records": [
     {
       "code": "2590",
       "name": "ダイドーグループホールディングス",
-      "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "events": [
+        {
+          "event_date": "2026-08-27",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBZZjNGdWNyTi05YmJ3c2JjazYyc0tfNEc1WHpWekJ2MjFJSDNOUkg0X3gwdEtpdWtOOUtOTEJzWnFwT3pRQ1VMUUVPY1RGMXdJelk5WTJzRGpIczZCTTVGTlFBbXZRLTFrTEE?oc=5",
+          "headline": "ダイドーグループホールディングス[2590]：2027年1月期 第2四半期（中間期）決算短信〔日本基準〕（連結） 2026年8月27日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-08-26",
+          "baseline_close": 3050.0,
+          "next_session_date": "2026-08-28",
+          "next_close_pct": 1.31,
+          "after_3d_pct": -2.07,
+          "after_5d_pct": -2.2,
+          "price_source": "Yahoo Finance 日足"
+        },
+        {
+          "event_date": "2026-05-26",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9tQ21OVjZQMDByUTBaN0diUGdtdTh6WFVsM0JkajhUMV9wb3pfTWZ6ZEpmNHBjVmNlQnBrbElxZ25zZDU3dTdZVUt1c2l2WFBjeFIwVTUwZXN6RGdkUTlsd3p3YjViWWMzNVE?oc=5",
+          "headline": "ダイドーグループホールディングス[2590]：2027年1月期 第1四半期決算短信〔日本基準〕（連結） 2026年5月26日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-05-25",
+          "baseline_close": 2518.0,
+          "next_session_date": "2026-05-27",
+          "next_close_pct": 7.98,
+          "after_3d_pct": 6.55,
+          "after_5d_pct": -0.28,
+          "price_source": "Yahoo Finance 日足"
+        }
+      ],
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "4369",
@@ -23,8 +50,22 @@
     {
       "code": "3031",
       "name": "ラクーンホールディングス",
-      "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "events": [
+        {
+          "event_date": "2026-06-11",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9BcFZzU3ZRem9kaFJ1dWV6YVVuR19XQlRLWVhmNzFXOUdJaE8zVmhSTmRtM3JWak5BeE1HcS16c1NrLTM4czMyeUF0Ym1mYnJFR3d0dDhWeVBWcTN4ZGZabi1fblVMS2U4MlE?oc=5",
+          "headline": "ラクーンホールディングス[3031]：2026年４月期決算短信〔日本基準〕(連結) 2026年6月11日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-06-10",
+          "baseline_close": 639.0,
+          "next_session_date": "2026-06-12",
+          "next_close_pct": -11.11,
+          "after_3d_pct": -10.64,
+          "after_5d_pct": -10.8,
+          "price_source": "Yahoo Finance 日足"
+        }
+      ],
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "3329",

@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generated_at": "2026-11-17T10:53:37+09:00",
-  "description": "4項目の調査順位。本人の過去決算反応は出典のある発表予定日・カレンダー日・記事掲載日付近の株価変化。実際の発表時刻・変動原因は未確認。未取得0点は悪材料ではない。",
+  "generated_at": "2026-11-17T11:26:03+09:00",
+  "description": "現在の20候補に基づく4項目順位。本人の過去決算反応は出典付き日付で計算、実際の発表時刻未確認。未取得は0点。",
   "weights": {
     "own_earnings_reaction": 3,
     "volume_supply_demand": 3,
@@ -15,6 +15,8 @@
     "peer_reactions": 4,
     "upgrades": 0
   },
+  "research_generated_at": "2026-11-17T08:29:03+09:00",
+  "own_history_source": "保存済み出典付きの本人決算日、JPX予定日付近の終値反応。発表時刻未確認。",
   "records": [
     {
       "code": "2590",
@@ -290,6 +292,5 @@
         "upgrade_news_checked": true
       }
     }
-  ],
-  "own_history_source": "IR BANK上の決算短信掲載日（確認できた日付のみ）と保存済み履歴。実際の発表時刻は未確認。"
+  ]
 }

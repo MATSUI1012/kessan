@@ -130,7 +130,10 @@
           "points": 1
         }
       ],
-      "evidence_count": 4
+      "evidence_count": 4,
+      "daily_turnover_to_market_cap_ratio": 0.003,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "4369",
@@ -208,7 +211,10 @@
           "points": 1
         }
       ],
-      "evidence_count": 4
+      "evidence_count": 4,
+      "daily_turnover_to_market_cap_ratio": 0.017,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "3031",
@@ -284,7 +290,10 @@
           "points": 1
         }
       ],
-      "evidence_count": 3
+      "evidence_count": 3,
+      "daily_turnover_to_market_cap_ratio": 0.003,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "3329",
@@ -345,7 +354,10 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2
+      "evidence_count": 2,
+      "daily_turnover_to_market_cap_ratio": 0.0,
+      "quality_flags": [],
+      "quality_review_required": false
     }
   ],
   "count": 4,
@@ -358,5 +370,7 @@
     "market_analyst_estimates": 3,
     "historical_scheduled_event_reactions": 2,
     "news_links": 4
-  }
+  },
+  "quality_review_count": 0,
+  "quality_rule": "Heuristic only. Large turnover/volume/returns are not proof of bad data, good earnings or stock-split."
 }

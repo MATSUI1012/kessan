@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T08:29:03+09:00",
+  "generated_at": "2026-11-18T04:25:59+09:00",
   "schema": 1,
   "screening": {
     "days_ahead": 14,
@@ -13,14 +13,14 @@
       "name": "ダイドーグループホールディングス",
       "earnings_date": "2026-11-26",
       "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan10_1106.xlsx",
-      "market_cap_yen": 99560724180,
-      "price_date": "2026-11-13",
-      "close": 3115.0,
-      "turnover_oku": 1.33,
-      "avg_turnover_20_oku": 2.22,
-      "volume_ratio_5_20": 0.65,
-      "return_5d": 1.96,
-      "return_20d": 1.63,
+      "market_cap_yen": 98450970885,
+      "price_date": "2026-11-16",
+      "close": 3140.0,
+      "turnover_oku": 2.55,
+      "avg_turnover_20_oku": 2.24,
+      "volume_ratio_5_20": 0.68,
+      "return_5d": -0.32,
+      "return_20d": 3.63,
       "financials": {
         "revenue_yen": 243592003584,
         "period_type": "ttm",
@@ -34,17 +34,88 @@
         "analyst_count": 1,
         "period": "0q"
       },
-      "prior_reactions": [],
+      "prior_reactions": [
+        {
+          "event_date": "2026-08-27",
+          "after_1d_pct": 1.31,
+          "after_3d_pct": -2.07,
+          "after_5d_pct": -2.2,
+          "eps_estimate": 94.77,
+          "eps_actual": 84.85,
+          "eps_surprise_pct": -10.47,
+          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
+        },
+        {
+          "event_date": "2026-05-25",
+          "after_1d_pct": -1.65,
+          "after_3d_pct": 2.59,
+          "after_5d_pct": 0.67,
+          "eps_estimate": -15.79,
+          "eps_actual": 3.49,
+          "eps_surprise_pct": null,
+          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
+        },
+        {
+          "event_date": "2026-03-03",
+          "after_1d_pct": -3.6,
+          "after_3d_pct": 6.93,
+          "after_5d_pct": 11.57,
+          "eps_estimate": 32.28,
+          "eps_actual": -972.63,
+          "eps_surprise_pct": -3113.1,
+          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
+        },
+        {
+          "event_date": "2025-11-26",
+          "after_1d_pct": -0.72,
+          "after_3d_pct": 2.48,
+          "after_5d_pct": -0.36,
+          "eps_estimate": 67.21,
+          "eps_actual": 57.85,
+          "eps_surprise_pct": -13.93,
+          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
+        }
+      ],
       "sources": {
         "fundamentals": "https://finance.yahoo.com/quote/2590.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/2590.T/analysis/"
       },
       "missing_data": [
-        "Only TTM revenue available; quarterly year-on-year change unknown",
-        "Historical earnings dates or surrounding daily price data unavailable"
+        "Only TTM revenue available; quarterly year-on-year change unknown"
       ],
-      "news": [],
-      "research_priority_score": 2,
+      "news": [
+        {
+          "title": "【決算速報】エバラ食品工業、中間経常1,511百万。(アイフィス株予報) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZ1F5cWRvdExjbUM2TWgzYWtld2hYdWc5c2FWd3ZrNkUwWEJPeW5iQ0JqUXlOLU4zWC1wQ1ZLX3dZbEs0bjVYb3dzanhWOVVqMWtEaFZZZ2wzWFdBWV9oUU4tREdvOF9qZjRNZG9SZWM4Q1QwOWNpbHlFT0I5VFRaczEwYV9ReVE?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-06T15:45+09:00"
+        },
+        {
+          "title": "ダイドーグループホールディングスと京都大学、DHAモノグリセリドに関する特許を取得 ダイドードリンコと京都大学による共同研究成果 - AGARA 紀伊民報",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5MaDFBZnpiY1kzaW9rOUREVEpQcDQ4ckkySTNBcnNQRjUzcjVBUDFPRzJWQXZieXRzMWRMdWNYSWZUMnNjanN6TExRWHhVVms?oc=5",
+          "source": "AGARA 紀伊民報",
+          "published_at": "2026-11-06T15:00+09:00"
+        },
+        {
+          "title": "2026年12月期 第３四半期決算短信〔日本基準〕（連結） 投稿日時： 2026/11/11 15:30[適時開示] - みんかぶ",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE55WlYtSVUyc0QxeExtWEh2TGQ4UTB6a3dtRE5fOTRBLWJvRTZ3d1IyRGFfQnhmUnZmdENjVXd4Q2FDTjRWZlE?oc=5",
+          "source": "みんかぶ",
+          "published_at": "2026-11-11T15:30+09:00"
+        },
+        {
+          "title": "【決算速報】プレミアムウォＨ、中間税引前6,947百万。(アイフィス株予報) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPbTdTWmFVRndtM0N6aE5WeDlDYk02dEs0MGJ4Qlk4cEdOeC1RR1VHTG53SGI5Y3l6Z0RPMnRKSWp0ZzlNQnJ5RFdXTUFrS2dXblE4X3h4VHp5VFZMUjFhd3ZfWVJOTUprUkE0eGZjZmFnam1GaDNsS1ZxeW1EYmg0MzltWlk3RlE?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-10T15:00+09:00"
+        },
+        {
+          "title": "決算プラス・インパクト銘柄 【東証プライム】引け後 … ニトリＨＤ、アサヒ、大林組 (11月13日発表分) - みんかぶ",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9nMVhJMWtDVUtOSzEycUdyZVhHZGcxRFVvQ3p1MlZvaS1sZ0FFbnB1TUphQm9hM0pmSmVHbHJEeGgzNTZkMHc?oc=5",
+          "source": "みんかぶ",
+          "published_at": "2026-11-16T15:48+09:00"
+        }
+      ],
+      "research_priority_score": 3,
       "signals": [
         {
           "label": "20営業日で緩やかな上昇",
@@ -53,23 +124,27 @@
         {
           "label": "担当アナリスト数を確認できる市場予想あり",
           "points": 1
+        },
+        {
+          "label": "過去決算日付近の株価反応データあり",
+          "points": 1
         }
       ],
-      "evidence_count": 2
+      "evidence_count": 4
     },
     {
       "code": "4369",
       "name": "トリケミカル研究所",
       "earnings_date": "2026-11-30",
       "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan10_1106.xlsx",
-      "market_cap_yen": 87123674148,
-      "price_date": "2026-11-13",
-      "close": 2855.0,
-      "turnover_oku": 12.18,
-      "avg_turnover_20_oku": 15.28,
-      "volume_ratio_5_20": 1.05,
-      "return_5d": 15.12,
-      "return_20d": -8.2,
+      "market_cap_yen": 84491440800,
+      "price_date": "2026-11-16",
+      "close": 2681.0,
+      "turnover_oku": 14.43,
+      "avg_turnover_20_oku": 15.21,
+      "volume_ratio_5_20": 1.08,
+      "return_5d": 5.84,
+      "return_20d": -16.09,
       "financials": {
         "revenue_yen": 26212999168,
         "period_type": "ttm",
@@ -83,14 +158,24 @@
         "analyst_count": 2,
         "period": "0q"
       },
-      "prior_reactions": [],
+      "prior_reactions": [
+        {
+          "event_date": "2026-03-13",
+          "after_1d_pct": -16.71,
+          "after_3d_pct": -11.92,
+          "after_5d_pct": -16.9,
+          "eps_estimate": 43.77,
+          "eps_actual": 45.96,
+          "eps_surprise_pct": 5.0,
+          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
+        }
+      ],
       "sources": {
         "fundamentals": "https://finance.yahoo.com/quote/4369.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/4369.T/analysis/"
       },
       "missing_data": [
-        "Only TTM revenue available; quarterly year-on-year change unknown",
-        "Historical earnings dates or surrounding daily price data unavailable"
+        "Only TTM revenue available; quarterly year-on-year change unknown"
       ],
       "news": [
         {
@@ -112,28 +197,32 @@
           "published_at": "2026-11-04T15:38+09:00"
         }
       ],
-      "research_priority_score": 1,
+      "research_priority_score": 2,
       "signals": [
         {
           "label": "担当アナリスト数を確認できる市場予想あり",
           "points": 1
+        },
+        {
+          "label": "過去決算日付近の株価反応データあり",
+          "points": 1
         }
       ],
-      "evidence_count": 3
+      "evidence_count": 4
     },
     {
       "code": "3031",
       "name": "ラクーンホールディングス",
       "earnings_date": "2026-11-30",
       "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan10_1106.xlsx",
-      "market_cap_yen": 12156610191,
-      "price_date": "2026-11-13",
-      "close": 631.0,
-      "turnover_oku": 0.16,
-      "avg_turnover_20_oku": 0.9,
-      "volume_ratio_5_20": 0.31,
-      "return_5d": 0.48,
-      "return_20d": -9.6,
+      "market_cap_yen": 12447438186,
+      "price_date": "2026-11-16",
+      "close": 627.0,
+      "turnover_oku": 0.39,
+      "avg_turnover_20_oku": 0.89,
+      "volume_ratio_5_20": 0.33,
+      "return_5d": -1.26,
+      "return_20d": -10.3,
       "financials": {
         "revenue_yen": 6791507968,
         "period_type": "ttm",
@@ -202,14 +291,14 @@
       "name": "東和フードサービス",
       "earnings_date": "2026-11-30",
       "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan10_1106.xlsx",
-      "market_cap_yen": 16958429499,
-      "price_date": "2026-11-13",
-      "close": 2103.0,
-      "turnover_oku": 0.02,
+      "market_cap_yen": 16950357900,
+      "price_date": "2026-11-16",
+      "close": 2101.0,
+      "turnover_oku": 0.05,
       "avg_turnover_20_oku": 0.5,
-      "volume_ratio_5_20": 0.13,
-      "return_5d": 0.14,
-      "return_20d": -1.91,
+      "volume_ratio_5_20": 0.12,
+      "return_5d": -0.43,
+      "return_20d": -1.87,
       "financials": {
         "revenue_yen": 13464000512,
         "period_type": "ttm",
@@ -228,12 +317,45 @@
         "Only TTM revenue available; quarterly year-on-year change unknown",
         "Historical earnings dates or surrounding daily price data unavailable"
       ],
-      "news": [],
+      "news": [
+        {
+          "title": "東和フードサービス(株)【3329】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5WalQ3TEtISUU3Y1g5VUM5eGFnNnBCRTF0QjlGZF8xTUh5NHFPN1NjY3hpeHRyaldoRkZmcTdnMC14ekNqanl0ZGd1bUhhRkc0cnVDSXl2cFpPaEczdUdZbVVmSFFYdEFIVDlwblEyTlNWVGRnT1E?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-05T19:02+09:00"
+        },
+        {
+          "title": "【決算速報】銀座ルノア、上期経常が26％増益で着地・7-9月期も98％増益(株探ニュース) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQcE5zdlk0U3ZCQWViOFoyQ0djY2JGRUpFSHE4SXliS21XUjBuaUY0b0o0YllFbGhWQXBpVWZfN1F5Y1llb1JJMXkya1dGZWJtQkFIVzNUNXBGVmJtQ1FvR0NTZ3NZRzB1eWZvVWNyNFp5WTJ4bFVpM29qVHdJQURIdThHQzlpbVU?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-05T15:31+09:00"
+        },
+        {
+          "title": "【決算速報】ホットランドＨ、3Q累計経常954百万。(アイフィス株予報) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMHJjVlRfN0JCMWdIRkFUMXZ5VWJzTHVaTldqYThLNUV3cFZmS2pnVFBESlZDekh0LW1ZQUdhTmpXVUNlcm5TMFl4OS1xWjNiamZ3NmZXUmE5cDg3YmJPZ2E2THBhYTg1ckJzXzE3OUlYcXdOcDhwNXI3REFBWWZnNHF4V2tuM00?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-13T15:33+09:00"
+        },
+        {
+          "title": "【決算速報】銀座ルノアール、中間経常180百万。(アイフィス株予報) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZDlpaXF4ZWtpcGo4OFYtWHhyOUxreXhJZEZkR3Nuek1od2YyX2JjVDBkSXVONkR3Mjc2bG5yeXA3OVR5Tjlkc0Q1TXA2RkNmTWhZYThEYmFxeGVXSW1aQkFja0EwVHFVLWU4akZrMG1lT3ZTMGtSaW1rTTlWaElsRkpSN1c1Yk0?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-05T17:00+09:00"
+        }
+      ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 1
+      "evidence_count": 2
     }
   ],
   "count": 4,
-  "method": "調査優先度は公開価格・出来高・取得できた四半期業績等のみ。買い推奨や決算予測確率ではありません。"
+  "method": "調査優先度は公開価格・出来高・取得できた四半期業績等のみ。買い推奨や決算予測確率ではありません。",
+  "coverage": {
+    "screened": 4,
+    "financials_any": 4,
+    "quarterly_or_annual": 0,
+    "ttm_only": 4,
+    "earnings_reaction_history": 2,
+    "analyst_estimates": 3
+  }
 }

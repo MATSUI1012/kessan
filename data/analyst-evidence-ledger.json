@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-14T06:30:35+09:00",
+  "updated_at": "2026-11-17T12:10:47+09:00",
   "description": "Yahoo Finance EPS 60日トレンドと証券会社の格付け履歴。値がない場合は未確認。EPSの変化日は特定できない。原本の証券会社発表は未照合。",
   "coverage": {
-    "current_candidates": 20,
-    "eps_trend_60d_available": 0,
+    "current_candidates": 4,
+    "eps_trend_60d_available": 1,
     "broker_history_available": 0,
     "consensus_increase": 0,
     "dated_broker_upgrades": 0
@@ -761,6 +761,36 @@
       "broker_upgrades_history": []
     },
     {
+      "code": "2590",
+      "name": "ダイドーグループホールディングス",
+      "earnings_date": "2026-11-26",
+      "observed_at": "2026-11-17T12:10:47+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": 94.64058,
+        "days_30_ago": 94.64058,
+        "days_60_ago": 94.64058,
+        "available": true,
+        "increased_last_60_days": false
+      },
+      "revenue_mean_current": 0.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-17",
+          "earnings_date": "2026-11-26",
+          "eps_estimate_current": 94.64058,
+          "revenue_mean_current": 0.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
       "code": "2594",
       "name": "キーコーヒー",
       "earnings_date": "2026-10-29",
@@ -1062,6 +1092,36 @@
           "earnings_date": "2026-11-05",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
+      "code": "3031",
+      "name": "ラクーンホールディングス",
+      "earnings_date": "2026-11-30",
+      "observed_at": "2026-11-17T12:10:47+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 1806000000.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-17",
+          "earnings_date": "2026-11-30",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 1806000000.0
         }
       ],
       "broker_upgrades_history": []
@@ -1456,6 +1516,36 @@
         {
           "date": "2026-11-06",
           "earnings_date": "2026-11-06",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
+      "code": "3329",
+      "name": "東和フードサービス",
+      "earnings_date": "2026-11-30",
+      "observed_at": "2026-11-17T12:10:47+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 0.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-17",
+          "earnings_date": "2026-11-30",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
         }
@@ -2724,6 +2814,36 @@
           "earnings_date": "2026-11-16",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
+      "code": "4369",
+      "name": "トリケミカル研究所",
+      "earnings_date": "2026-11-30",
+      "observed_at": "2026-11-17T12:10:47+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 7600000000.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-17",
+          "earnings_date": "2026-11-30",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 7600000000.0
         }
       ],
       "broker_upgrades_history": []

@@ -1,13 +1,12 @@
 {
-  "schema": 4,
-  "updated_at": "2026-11-17T10:53:37+09:00",
+  "schema": 1,
+  "updated_at": "2026-11-18T08:10:35+09:00",
+  "method": "候補自身の出典のある過去決算日付とYahoo日足を照合。記事掲載日は実際の発表日と異なる場合がある。",
   "coverage": {
     "candidates": 4,
     "with_history": 2,
-    "events": 3,
-    "new_events": 0
+    "events": 3
   },
-  "method": "IR BANK決算短信の開示履歴に明記された日付とYahoo日足を照合。未確認は推測しない。",
   "records": [
     {
       "code": "2590",
@@ -40,21 +39,13 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/2590/ir: HTTP 403",
-        "https://irbank.net/2590: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "4369",
       "name": "トリケミカル研究所",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/4369/ir: HTTP 403",
-        "https://irbank.net/4369: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "3031",
@@ -74,21 +65,13 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/3031/ir: HTTP 403",
-        "https://irbank.net/3031: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "3329",
       "name": "東和フードサービス",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/3329/ir: HTTP 403",
-        "https://irbank.net/3329: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
     }
   ]
 }

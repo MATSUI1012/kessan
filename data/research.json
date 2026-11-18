@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T04:06:19+09:00",
+  "generated_at": "2026-11-19T07:15:34+09:00",
   "schema": 1,
   "screening": {
     "days_ahead": 14,
@@ -34,62 +34,16 @@
         "analyst_count": 1,
         "period": "0q"
       },
-      "prior_reactions": [
-        {
-          "event_date": "2026-08-27",
-          "after_1d_pct": 1.31,
-          "after_3d_pct": -2.07,
-          "after_5d_pct": -2.2,
-          "eps_estimate": 94.77,
-          "eps_actual": 84.85,
-          "eps_surprise_pct": -10.47,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        },
-        {
-          "event_date": "2026-05-25",
-          "after_1d_pct": -1.65,
-          "after_3d_pct": 2.59,
-          "after_5d_pct": 0.67,
-          "eps_estimate": -15.79,
-          "eps_actual": 3.49,
-          "eps_surprise_pct": null,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        },
-        {
-          "event_date": "2026-03-03",
-          "after_1d_pct": -3.6,
-          "after_3d_pct": 6.93,
-          "after_5d_pct": 11.57,
-          "eps_estimate": 32.28,
-          "eps_actual": -972.63,
-          "eps_surprise_pct": -3113.1,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        },
-        {
-          "event_date": "2025-11-26",
-          "after_1d_pct": -0.72,
-          "after_3d_pct": 2.48,
-          "after_5d_pct": -0.36,
-          "eps_estimate": 67.21,
-          "eps_actual": 57.85,
-          "eps_surprise_pct": -13.93,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        }
-      ],
+      "prior_reactions": [],
       "sources": {
         "fundamentals": "https://finance.yahoo.com/quote/2590.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/2590.T/analysis/"
       },
       "missing_data": [
-        "Only TTM revenue available; quarterly year-on-year change unknown"
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
       ],
       "news": [
-        {
-          "title": "米エヌビディアの決算を受けて買い先行スタートも次第に買い見送られる【クロージング】 投稿日時： 2026/11/18 16:33[フィスコ] - みんかぶ",
-          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE0wcGRuUExjTXhucXVrME1IcmxXSmRfVVExdTYxcmx3SUl5MF9RYjUxVUhmMVJ0MVlORHp2MGVWZnVqNDBIUGtRTg?oc=5",
-          "source": "みんかぶ",
-          "published_at": "2026-11-18T16:33+09:00"
-        },
         {
           "title": "【決算速報】エバラ食品工業、中間経常1,511百万。(アイフィス株予報) - Yahoo!ファイナンス",
           "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZ1F5cWRvdExjbUM2TWgzYWtld2hYdWc5c2FWd3ZrNkUwWEJPeW5iQ0JqUXlOLU4zWC1wQ1ZLX3dZbEs0bjVYb3dzanhWOVVqMWtEaFZZZ2wzWFdBWV9oUU4tREdvOF9qZjRNZG9SZWM4Q1QwOWNpbHlFT0I5VFRaczEwYV9ReVE?oc=5",
@@ -97,10 +51,10 @@
           "published_at": "2026-11-06T15:45+09:00"
         },
         {
-          "title": "【決算速報】プレミアムウォＨ、中間税引前6,947百万。(アイフィス株予報) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPbTdTWmFVRndtM0N6aE5WeDlDYk02dEs0MGJ4Qlk4cEdOeC1RR1VHTG53SGI5Y3l6Z0RPMnRKSWp0ZzlNQnJ5RFdXTUFrS2dXblE4X3h4VHp5VFZMUjFhd3ZfWVJOTUprUkE0eGZjZmFnam1GaDNsS1ZxeW1EYmg0MzltWlk3RlE?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-11-10T15:00+09:00"
+          "title": "ダイドーグループホールディングスと京都大学、DHAモノグリセリドに関する特許を取得 ダイドードリンコと京都大学による共同研究成果 - AGARA 紀伊民報",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5MaDFBZnpiY1kzaW9rOUREVEpQcDQ4ckkySTNBcnNQRjUzcjVBUDFPRzJWQXZieXRzMWRMdWNYSWZUMnNjanN6TExRWHhVVms?oc=5",
+          "source": "AGARA 紀伊民報",
+          "published_at": "2026-11-06T15:00+09:00"
         },
         {
           "title": "2026年12月期 第３四半期決算短信〔日本基準〕（連結） 投稿日時： 2026/11/11 15:30[適時開示] - みんかぶ",
@@ -109,13 +63,19 @@
           "published_at": "2026-11-11T15:30+09:00"
         },
         {
+          "title": "【決算速報】プレミアムウォＨ、中間税引前6,947百万。(アイフィス株予報) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPbTdTWmFVRndtM0N6aE5WeDlDYk02dEs0MGJ4Qlk4cEdOeC1RR1VHTG53SGI5Y3l6Z0RPMnRKSWp0ZzlNQnJ5RFdXTUFrS2dXblE4X3h4VHp5VFZMUjFhd3ZfWVJOTUprUkE0eGZjZmFnam1GaDNsS1ZxeW1EYmg0MzltWlk3RlE?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-10T15:00+09:00"
+        },
+        {
           "title": "2026年度中間期 決算説明会要旨及び動画公開のお知らせ 投稿日時： 2026/11/18 13:15[適時開示] - みんかぶ",
           "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9CdU5oc290cWs2ZEotOU9QTXdoMUtrREtsVVRpZ0k1ME9ITU15LUZmR1VNMEN1bGJvNmg4ekZjMUFNbVdtQ0NwVw?oc=5",
           "source": "みんかぶ",
           "published_at": "2026-11-18T13:15+09:00"
         }
       ],
-      "research_priority_score": 3,
+      "research_priority_score": 2,
       "signals": [
         {
           "label": "20営業日で緩やかな上昇",
@@ -124,16 +84,9 @@
         {
           "label": "担当アナリスト数を確認できる市場予想あり",
           "points": 1
-        },
-        {
-          "label": "過去決算日付近の株価反応データあり",
-          "points": 1
         }
       ],
-      "evidence_count": 4,
-      "daily_turnover_to_market_cap_ratio": 0.002,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "4369",
@@ -161,24 +114,14 @@
         "analyst_count": 2,
         "period": "0q"
       },
-      "prior_reactions": [
-        {
-          "event_date": "2026-03-13",
-          "after_1d_pct": -16.71,
-          "after_3d_pct": -11.92,
-          "after_5d_pct": -16.9,
-          "eps_estimate": 43.77,
-          "eps_actual": 45.96,
-          "eps_surprise_pct": 5.0,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        }
-      ],
+      "prior_reactions": [],
       "sources": {
         "fundamentals": "https://finance.yahoo.com/quote/4369.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/4369.T/analysis/"
       },
       "missing_data": [
-        "Only TTM revenue available; quarterly year-on-year change unknown"
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
       ],
       "news": [
         {
@@ -194,21 +137,14 @@
           "published_at": "2026-11-12T11:38+09:00"
         }
       ],
-      "research_priority_score": 2,
+      "research_priority_score": 1,
       "signals": [
         {
           "label": "担当アナリスト数を確認できる市場予想あり",
           "points": 1
-        },
-        {
-          "label": "過去決算日付近の株価反応データあり",
-          "points": 1
         }
       ],
-      "evidence_count": 4,
-      "daily_turnover_to_market_cap_ratio": 0.016,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "3031",
@@ -278,10 +214,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 3,
-      "daily_turnover_to_market_cap_ratio": 0.004,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "3329",
@@ -317,9 +250,9 @@
       "news": [
         {
           "title": "東和フードサービス(株)【3329】：企業情報（決算時期・代表者名・大株主情報・IR動画など） - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5WalQ3TEtISUU3Y1g5VUM5eGFnNnBCRTF0QjlGZF8xTUh5NHFPN1NjY3hpeHRyaldoRkZmcTdnMC14ekNqanl0ZGd1bUhhRkc0cnVDSXl2cFpPaEczdUdZbVVmSFFYdEFIVDlwblEyTlNWVGRnT1E?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBkaU9UOC1yN2N5T3lRZFNmS3Q3WVNkeXYtQU43aFVVTTlFNW1kVXlrMkRxX1R2V05fWE1zR0hUYUZLclo2UGdNUWVtMjRXX3VMNXFHeThpZnN0ZkFY?oc=5",
           "source": "Yahoo!ファイナンス",
-          "published_at": "2026-11-05T19:02+09:00"
+          "published_at": "2026-11-12T19:03+09:00"
         },
         {
           "title": "【決算速報】銀座ルノアール、中間経常180百万。(アイフィス株予報) - Yahoo!ファイナンス",
@@ -336,23 +269,9 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.0,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     }
   ],
   "count": 4,
-  "method": "Research PRIORITY only; no probability of an earnings beat. TTM revenue is not quarterly results. Prior reactions, if any, are based on historical JPX scheduled dates, not verified disclosure times.",
-  "coverage": {
-    "screened": 4,
-    "official_ir_verified": 0,
-    "quarterly_or_annual_yahoo": 0,
-    "ttm_reference_only": 4,
-    "market_analyst_estimates": 3,
-    "historical_scheduled_event_reactions": 2,
-    "news_links": 4
-  },
-  "quality_review_count": 0,
-  "quality_rule": "Heuristic only. Large turnover/volume/returns are not proof of bad data, good earnings or stock-split."
+  "method": "調査優先度は公開価格・出来高・取得できた四半期業績等のみ。買い推奨や決算予測確率ではありません。"
 }

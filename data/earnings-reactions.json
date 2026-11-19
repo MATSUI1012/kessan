@@ -1,12 +1,12 @@
 {
-  "schema": 2,
-  "description": "TDnet決算短信の掲載日付近の終値反応。開示時刻未確認、決算による因果効果や上昇確率は示さない。",
+  "schema": 1,
+  "description": "決算カレンダー日付付近の終値反応。実際の発表時刻未検証であり、決算による因果効果・上昇確率ではありません。",
   "sources": [
-    "TDnet決算短信開示一覧（掲載日）",
-    "既存の出典付き履歴"
+    "JPX保存済み発表予定日",
+    "Yahoo Finance決算カレンダー日付（取得可能な銘柄のみ）"
   ],
-  "event_date_count": 5,
-  "with_reactions": 2,
+  "event_date_count": 9,
+  "with_reactions": 3,
   "records": [
     {
       "code": "2590",
@@ -81,6 +81,65 @@
       ]
     },
     {
+      "code": "2910",
+      "name": "ロック・フィールド",
+      "reactions": [
+        {
+          "event_date": "2026-09-03",
+          "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
+          "source_url": "https://finance.yahoo.com/quote/2910.T/analysis/",
+          "baseline_date": "2026-09-02",
+          "baseline_close": 1413.0,
+          "after_1d_date": "2026-09-04",
+          "after_1d_pct": 2.41,
+          "after_3d_pct": -0.85,
+          "after_5d_pct": -1.77,
+          "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
+        },
+        {
+          "event_date": "2026-06-10",
+          "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
+          "source_url": "https://finance.yahoo.com/quote/2910.T/analysis/",
+          "baseline_date": "2026-06-09",
+          "baseline_close": 1256.0,
+          "after_1d_date": "2026-06-11",
+          "after_1d_pct": 0.8,
+          "after_3d_pct": 3.11,
+          "after_5d_pct": 1.04,
+          "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
+        },
+        {
+          "event_date": "2026-03-06",
+          "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
+          "source_url": "https://finance.yahoo.com/quote/2910.T/analysis/",
+          "baseline_date": "2026-03-05",
+          "baseline_close": 1404.0,
+          "after_1d_date": "2026-03-09",
+          "after_1d_pct": 1.5,
+          "after_3d_pct": -0.57,
+          "after_5d_pct": -2.99,
+          "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
+        },
+        {
+          "event_date": "2025-12-05",
+          "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
+          "source_url": "https://finance.yahoo.com/quote/2910.T/analysis/",
+          "baseline_date": "2025-12-04",
+          "baseline_close": 1392.0,
+          "after_1d_date": "2025-12-08",
+          "after_1d_pct": -2.08,
+          "after_3d_pct": -4.09,
+          "after_5d_pct": -5.1,
+          "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
+        }
+      ]
+    },
+    {
+      "code": "1873",
+      "name": "日本ハウスホールディングス",
+      "reactions": []
+    },
+    {
       "code": "3031",
       "name": "ラクーンホールディングス",
       "reactions": []
@@ -89,14 +148,17 @@
       "code": "3329",
       "name": "東和フードサービス",
       "reactions": []
+    },
+    {
+      "code": "3662",
+      "name": "エイチームホールディングス",
+      "reactions": []
+    },
+    {
+      "code": "6040",
+      "name": "日本スキー場開発",
+      "reactions": []
     }
   ],
-  "generated_at": "2026-11-19T05:54:35+09:00",
-  "tdnet_days_requested": 148,
-  "tdnet_days_parsed": 0,
-  "tdnet_events_found": 0,
-  "tdnet_scan_diagnostics": {
-    "missing": 148,
-    "parsed": 0
-  }
+  "generated_at": "2026-11-20T05:31:42+09:00"
 }

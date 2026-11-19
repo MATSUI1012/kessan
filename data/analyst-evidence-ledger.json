@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-18T11:36:30+09:00",
+  "updated_at": "2026-11-19T11:00:05+09:00",
   "description": "Yahoo Finance EPS 60日トレンドと証券会社の格付け履歴。値がない場合は未確認。EPSの変化日は特定できない。原本の証券会社発表は未照合。",
   "coverage": {
     "current_candidates": 4,
@@ -764,7 +764,7 @@
       "code": "2590",
       "name": "ダイドーグループホールディングス",
       "earnings_date": "2026-11-26",
-      "observed_at": "2026-11-18T11:36:30+09:00",
+      "observed_at": "2026-11-19T11:00:05+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": 94.64058,
@@ -789,6 +789,12 @@
         },
         {
           "date": "2026-11-18",
+          "earnings_date": "2026-11-26",
+          "eps_estimate_current": 94.64058,
+          "revenue_mean_current": 0.0
+        },
+        {
+          "date": "2026-11-19",
           "earnings_date": "2026-11-26",
           "eps_estimate_current": 94.64058,
           "revenue_mean_current": 0.0
@@ -1106,7 +1112,7 @@
       "code": "3031",
       "name": "ラクーンホールディングス",
       "earnings_date": "2026-11-30",
-      "observed_at": "2026-11-18T11:36:30+09:00",
+      "observed_at": "2026-11-19T11:00:05+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -1131,6 +1137,12 @@
         },
         {
           "date": "2026-11-18",
+          "earnings_date": "2026-11-30",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 1806000000.0
+        },
+        {
+          "date": "2026-11-19",
           "earnings_date": "2026-11-30",
           "eps_estimate_current": null,
           "revenue_mean_current": 1806000000.0
@@ -1538,7 +1550,7 @@
       "code": "3329",
       "name": "東和フードサービス",
       "earnings_date": "2026-11-30",
-      "observed_at": "2026-11-18T11:36:30+09:00",
+      "observed_at": "2026-11-19T11:00:05+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -1563,6 +1575,12 @@
         },
         {
           "date": "2026-11-18",
+          "earnings_date": "2026-11-30",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
+        },
+        {
+          "date": "2026-11-19",
           "earnings_date": "2026-11-30",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
@@ -2840,7 +2858,7 @@
       "code": "4369",
       "name": "トリケミカル研究所",
       "earnings_date": "2026-11-30",
-      "observed_at": "2026-11-18T11:36:30+09:00",
+      "observed_at": "2026-11-19T11:00:05+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -2865,6 +2883,12 @@
         },
         {
           "date": "2026-11-18",
+          "earnings_date": "2026-11-30",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 7600000000.0
+        },
+        {
+          "date": "2026-11-19",
           "earnings_date": "2026-11-30",
           "eps_estimate_current": null,
           "revenue_mean_current": 7600000000.0

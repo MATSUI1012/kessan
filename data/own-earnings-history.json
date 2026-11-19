@@ -1,17 +1,32 @@
 {
-  "schema": 2,
-  "updated_at": "2026-11-20T08:34:03+09:00",
-  "method": "複数のニュースRSS、JPX決算予定日、Yahoo決算カレンダーの出典日付を株価と照合。単なる記事配信日から開示日を推定しない。",
+  "schema": 3,
+  "updated_at": "2026-11-20T08:53:13+09:00",
+  "method": "IR BANKの銘柄別開示一覧で決算短信の行に記載された日付とYahoo日足を照合。日付や終値が未確認なら過去履歴を保持しつつ加点しない。",
   "coverage": {
     "candidates": 8,
-    "with_history": 4,
-    "events": 5
+    "with_history": 8,
+    "events": 20,
+    "new_events": 15
   },
   "records": [
     {
       "code": "2590",
       "name": "ダイドーグループホールディングス",
       "events": [
+        {
+          "event_date": "2026-10-30",
+          "date_kind": "IR BANK決算短信掲載一覧の日付（発表時刻未確認）",
+          "source_url": "https://irbank.net/2590/140120131028045864",
+          "headline": "平成26年1月期第3四半期決算短信〔日本基準〕(連結)（15:00）",
+          "discovered_via": "IR BANK 銘柄別開示一覧",
+          "baseline_date": "2026-10-29",
+          "baseline_close": 2983.0,
+          "next_session_date": "2026-11-02",
+          "next_close_pct": 0.74,
+          "after_3d_pct": 8.62,
+          "after_5d_pct": 5.6,
+          "price_source": "Yahoo Finance 日足"
+        },
         {
           "event_date": "2026-08-27",
           "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
@@ -39,26 +54,55 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 3,
-        "rss_failures": 0
-      }
+      "status": "決算短信の日付と終値照合済",
+      "irbank_diagnostics": [
+        "ok:1"
+      ],
+      "new_events": 1
     },
     {
       "code": "4369",
       "name": "トリケミカル研究所",
-      "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "events": [
+        {
+          "event_date": "2026-08-31",
+          "date_kind": "IR BANK決算短信掲載一覧の日付（発表時刻未確認）",
+          "source_url": "https://irbank.net/4369/140120131121062929",
+          "headline": "平成26年1月期第3四半期決算短信〔日本基準〕(非連結)（15:00）",
+          "discovered_via": "IR BANK 銘柄別開示一覧",
+          "baseline_date": "2026-08-28",
+          "baseline_close": 3135.0,
+          "next_session_date": "2026-09-01",
+          "next_close_pct": -1.91,
+          "after_3d_pct": -5.45,
+          "after_5d_pct": 0.64,
+          "price_source": "Yahoo Finance 日足"
+        }
+      ],
+      "status": "決算短信の日付と終値照合済",
+      "irbank_diagnostics": [
+        "ok:1"
+      ],
+      "new_events": 1
     },
     {
       "code": "3031",
       "name": "ラクーンホールディングス",
       "events": [
+        {
+          "event_date": "2026-08-31",
+          "date_kind": "IR BANK決算短信掲載一覧の日付（発表時刻未確認）",
+          "source_url": "https://irbank.net/3031/140120131120062560",
+          "headline": "平成26年4月期第2四半期決算短信〔日本基準〕(連結)（15:00）",
+          "discovered_via": "IR BANK 銘柄別開示一覧",
+          "baseline_date": "2026-08-28",
+          "baseline_close": 655.0,
+          "next_session_date": "2026-09-01",
+          "next_close_pct": 5.65,
+          "after_3d_pct": 3.05,
+          "after_5d_pct": 2.29,
+          "price_source": "Yahoo Finance 日足"
+        },
         {
           "event_date": "2026-06-11",
           "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
@@ -73,26 +117,154 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 3,
-        "rss_failures": 0
-      }
+      "status": "決算短信の日付と終値照合済",
+      "irbank_diagnostics": [
+        "ok:1"
+      ],
+      "new_events": 1
     },
     {
       "code": "2910",
       "name": "ロック・フィールド",
-      "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "events": [
+        {
+          "event_date": "2026-09-04",
+          "date_kind": "IR BANK決算短信掲載一覧の日付（発表時刻未確認）",
+          "source_url": "https://irbank.net/2910/140120260903531397",
+          "headline": "2027年4月期第1四半期決算短信〔日本基準〕(連結)",
+          "discovered_via": "IR BANK 銘柄別開示一覧",
+          "baseline_date": "2026-09-03",
+          "baseline_close": 1410.0,
+          "next_session_date": "2026-09-07",
+          "next_close_pct": 1.28,
+          "after_3d_pct": -1.49,
+          "after_5d_pct": -2.2,
+          "price_source": "Yahoo Finance 日足"
+        },
+        {
+          "event_date": "2026-06-10",
+          "date_kind": "IR BANK決算短信掲載一覧の日付（発表時刻未確認）",
+          "source_url": "https://irbank.net/2910/140120260610567143",
+          "headline": "2026年4月期決算短信〔日本基準〕(連結)",
+          "discovered_via": "IR BANK 銘柄別開示一覧",
+          "baseline_date": "2026-06-09",
+          "baseline_close": 1256.0,
+          "next_session_date": "2026-06-11",
+          "next_close_pct": 0.8,
+          "after_3d_pct": 3.11,
+          "after_5d_pct": 1.04,
+          "price_source": "Yahoo Finance 日足"
+        },
+        {
+          "event_date": "2026-03-06",
+          "date_kind": "IR BANK決算短信掲載一覧の日付（発表時刻未確認）",
+          "source_url": "https://irbank.net/2910/140120260305576912",
+          "headline": "2026年4月期第3四半期決算短信〔日本基準〕(連結)",
+          "discovered_via": "IR BANK 銘柄別開示一覧",
+          "baseline_date": "2026-03-05",
+          "baseline_close": 1404.0,
+          "next_session_date": "2026-03-09",
+          "next_close_pct": 1.5,
+          "after_3d_pct": -0.57,
+          "after_5d_pct": -2.99,
+          "price_source": "Yahoo Finance 日足"
+        },
+        {
+          "event_date": "2025-12-05",
+          "date_kind": "IR BANK決算短信掲載一覧の日付（発表時刻未確認）",
+          "source_url": "https://irbank.net/2910/140120251204514998",
+          "headline": "2026年4月期第2四半期(中間期)決算短信〔日本基準〕(連結)",
+          "discovered_via": "IR BANK 銘柄別開示一覧",
+          "baseline_date": "2025-12-04",
+          "baseline_close": 1392.0,
+          "next_session_date": "2025-12-08",
+          "next_close_pct": -2.08,
+          "after_3d_pct": -4.09,
+          "after_5d_pct": -5.1,
+          "price_source": "Yahoo Finance 日足"
+        },
+        {
+          "event_date": "2025-09-05",
+          "date_kind": "IR BANK決算短信掲載一覧の日付（発表時刻未確認）",
+          "source_url": "https://irbank.net/2910/140120250904553641",
+          "headline": "2026年4月期第1四半期決算短信〔日本基準〕(連結)",
+          "discovered_via": "IR BANK 銘柄別開示一覧",
+          "baseline_date": "2025-09-04",
+          "baseline_close": 1572.0,
+          "next_session_date": "2025-09-08",
+          "next_close_pct": -4.52,
+          "after_3d_pct": -3.82,
+          "after_5d_pct": -4.07,
+          "price_source": "Yahoo Finance 日足"
+        },
+        {
+          "event_date": "2025-06-10",
+          "date_kind": "IR BANK決算短信掲載一覧の日付（発表時刻未確認）",
+          "source_url": "https://irbank.net/2910/140120250609585398",
+          "headline": "2025年4月期決算短信〔日本基準〕(連結)",
+          "discovered_via": "IR BANK 銘柄別開示一覧",
+          "baseline_date": "2025-06-09",
+          "baseline_close": 1486.0,
+          "next_session_date": "2025-06-11",
+          "next_close_pct": -3.5,
+          "after_3d_pct": -1.35,
+          "after_5d_pct": -0.4,
+          "price_source": "Yahoo Finance 日足"
+        },
+        {
+          "event_date": "2025-03-06",
+          "date_kind": "IR BANK決算短信掲載一覧の日付（発表時刻未確認）",
+          "source_url": "https://irbank.net/2910/140120250305588497",
+          "headline": "2025年4月期第3四半期決算短信〔日本基準〕(連結)",
+          "discovered_via": "IR BANK 銘柄別開示一覧",
+          "baseline_date": "2025-03-05",
+          "baseline_close": 1609.0,
+          "next_session_date": "2025-03-07",
+          "next_close_pct": 1.31,
+          "after_3d_pct": 0.62,
+          "after_5d_pct": 1.8,
+          "price_source": "Yahoo Finance 日足"
+        },
+        {
+          "event_date": "2024-12-06",
+          "date_kind": "IR BANK決算短信掲載一覧の日付（発表時刻未確認）",
+          "source_url": "https://irbank.net/2910/140120241205534832",
+          "headline": "2025年4月期第2四半期(中間期)決算短信〔日本基準〕(連結)",
+          "discovered_via": "IR BANK 銘柄別開示一覧",
+          "baseline_date": "2024-12-05",
+          "baseline_close": 1512.0,
+          "next_session_date": "2024-12-09",
+          "next_close_pct": 0.0,
+          "after_3d_pct": 0.6,
+          "after_5d_pct": 0.46,
+          "price_source": "Yahoo Finance 日足"
+        }
+      ],
+      "status": "決算短信の日付と終値照合済",
+      "irbank_diagnostics": [
+        "ok:0",
+        "ok:8"
+      ],
+      "new_events": 8
     },
     {
       "code": "1873",
       "name": "日本ハウスホールディングス",
       "events": [
+        {
+          "event_date": "2026-11-02",
+          "date_kind": "IR BANK決算短信掲載一覧の日付（発表時刻未確認）",
+          "source_url": "https://irbank.net/1873/140120131209069975",
+          "headline": "平成25年10月期決算短信〔日本基準〕(連結)（15:00）",
+          "discovered_via": "IR BANK 銘柄別開示一覧",
+          "baseline_date": "2026-10-30",
+          "baseline_close": 312.0,
+          "next_session_date": "2026-11-04",
+          "next_close_pct": -1.92,
+          "after_3d_pct": -0.32,
+          "after_5d_pct": 1.92,
+          "price_source": "Yahoo Finance 日足"
+        },
         {
           "event_date": "2026-09-04",
           "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
@@ -107,36 +279,80 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 3,
-        "rss_failures": 0
-      }
+      "status": "決算短信の日付と終値照合済",
+      "irbank_diagnostics": [
+        "ok:1"
+      ],
+      "new_events": 1
     },
     {
       "code": "3329",
       "name": "東和フードサービス",
-      "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "events": [
+        {
+          "event_date": "2026-11-02",
+          "date_kind": "IR BANK決算短信掲載一覧の日付（発表時刻未確認）",
+          "source_url": "https://irbank.net/3329/140120131128065923",
+          "headline": "平成26年4月期第2四半期決算短信〔日本基準〕(非連結)（15:25）",
+          "discovered_via": "IR BANK 銘柄別開示一覧",
+          "baseline_date": "2026-10-30",
+          "baseline_close": 2077.0,
+          "next_session_date": "2026-11-04",
+          "next_close_pct": 1.01,
+          "after_3d_pct": 1.11,
+          "after_5d_pct": 1.4,
+          "price_source": "Yahoo Finance 日足"
+        }
+      ],
+      "status": "決算短信の日付と終値照合済",
+      "irbank_diagnostics": [
+        "ok:1"
+      ],
+      "new_events": 1
     },
     {
       "code": "3662",
       "name": "エイチームホールディングス",
-      "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "events": [
+        {
+          "event_date": "2026-11-16",
+          "date_kind": "IR BANK決算短信掲載一覧の日付（発表時刻未確認）",
+          "source_url": "https://irbank.net/3662/140120130912023183",
+          "headline": "平成25年7月期決算短信〔日本基準〕(連結)（15:00）",
+          "discovered_via": "IR BANK 銘柄別開示一覧",
+          "baseline_date": "2026-11-13",
+          "baseline_close": 872.0,
+          "next_session_date": "2026-11-17",
+          "next_close_pct": -3.33,
+          "after_3d_pct": -4.36,
+          "after_5d_pct": null,
+          "price_source": "Yahoo Finance 日足"
+        }
+      ],
+      "status": "決算短信の日付と終値照合済",
+      "irbank_diagnostics": [
+        "ok:1"
+      ],
+      "new_events": 1
     },
     {
       "code": "6040",
       "name": "日本スキー場開発",
       "events": [
+        {
+          "event_date": "2026-11-10",
+          "date_kind": "IR BANK決算短信掲載一覧の日付（発表時刻未確認）",
+          "source_url": "https://irbank.net/6040/140120150527493132",
+          "headline": "平成27年7月期第3四半期決算短信〔日本基準〕(連結)（15:00）",
+          "discovered_via": "IR BANK 銘柄別開示一覧",
+          "baseline_date": "2026-11-09",
+          "baseline_close": 494.0,
+          "next_session_date": "2026-11-11",
+          "next_close_pct": 0.4,
+          "after_3d_pct": 0.4,
+          "after_5d_pct": -1.82,
+          "price_source": "Yahoo Finance 日足"
+        },
         {
           "event_date": "2026-09-11",
           "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
@@ -151,11 +367,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 3,
-        "rss_failures": 0
-      }
+      "status": "決算短信の日付と終値照合済",
+      "irbank_diagnostics": [
+        "ok:1"
+      ],
+      "new_events": 1
     }
   ]
 }

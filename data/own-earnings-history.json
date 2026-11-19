@@ -1,13 +1,12 @@
 {
-  "schema": 4,
-  "updated_at": "2026-11-19T09:30:14+09:00",
+  "schema": 1,
+  "updated_at": "2026-11-20T07:46:55+09:00",
+  "method": "候補自身の出典のある過去決算日付とYahoo日足を照合。記事掲載日は実際の発表日と異なる場合がある。",
   "coverage": {
-    "candidates": 4,
-    "with_history": 2,
-    "events": 3,
-    "new_events": 0
+    "candidates": 8,
+    "with_history": 4,
+    "events": 5
   },
-  "method": "IR BANK決算短信の開示履歴に明記された日付とYahoo日足を照合。未確認は推測しない。",
   "records": [
     {
       "code": "2590",
@@ -40,21 +39,13 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/2590/ir: HTTP 403",
-        "https://irbank.net/2590: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "4369",
       "name": "トリケミカル研究所",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/4369/ir: HTTP 403",
-        "https://irbank.net/4369: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "3031",
@@ -74,21 +65,65 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/3031/ir: HTTP 403",
-        "https://irbank.net/3031: HTTP 403"
+      "status": "過去日付と翌営業日の終値を照合"
+    },
+    {
+      "code": "2910",
+      "name": "ロック・フィールド",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "1873",
+      "name": "日本ハウスホールディングス",
+      "events": [
+        {
+          "event_date": "2026-09-04",
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBqb05TTXdjZjVjTnZrdlhlUXB1WHM3SUpHdTk0NTRPNE5odS1pWTFGVE1KSUxBUmdOVnQ2QXJnbGt6eWIxQ29ydHdwdGRBYXBadDlMYXpJTjlycnBVZG1ZSk14dy1vaXZiS1E?oc=5",
+          "headline": "日本ハウスホールディングス[1873]：2027年４月期 第１四半期決算短信〔日本基準〕（連結） 2026年9月4日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-09-03",
+          "baseline_close": 323.0,
+          "next_session_date": "2026-09-07",
+          "next_close_pct": -4.02,
+          "after_3d_pct": -5.57,
+          "after_5d_pct": -6.5,
+          "price_source": "Yahoo Finance 日足"
+        }
       ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "3329",
       "name": "東和フードサービス",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/3329/ir: HTTP 403",
-        "https://irbank.net/3329: HTTP 403"
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "3662",
+      "name": "エイチームホールディングス",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "6040",
+      "name": "日本スキー場開発",
+      "events": [
+        {
+          "event_date": "2026-09-11",
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE10eHVtTHAyRU9lQWN6a3p5NDRreXU4VXk0MEJCekh0N0dtTWFvdW95NTJRTXpwRnBzVXNTSjdoV3prTmwzVnBidFMzdEZ4VXpmY2N0UzFraXhyRWFzbEFpMzZMU3YtQWtWMlE?oc=5",
+          "headline": "日本スキー場開発[6040]：2026年７月期 決算短信〔日本基準〕（連結） 2026年9月11日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-09-10",
+          "baseline_close": 461.0,
+          "next_session_date": "2026-09-14",
+          "next_close_pct": 0.87,
+          "after_3d_pct": 0.65,
+          "after_5d_pct": 0.87,
+          "price_source": "Yahoo Finance 日足"
+        }
       ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     }
   ]
 }

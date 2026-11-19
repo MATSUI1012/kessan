@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-19T07:24:06+09:00",
-  "window_start": "2026-09-19",
-  "window_end": "2026-11-19",
+  "updated_at": "2026-11-20T07:30:11+09:00",
+  "window_start": "2026-09-20",
+  "window_end": "2026-11-20",
   "description": "ニュース見出しを用いた暫定検出。原文の格付け変更・コンセンサス時系列を検証したものではない。目標株価の引き上げ単独では加点しない。",
   "records": [
     {
@@ -33,8 +33,44 @@
       "status": "確認できる上方修正記事なし"
     },
     {
+      "code": "2910",
+      "name": "ロック・フィールド",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
+      "code": "1873",
+      "name": "日本ハウスホールディングス",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
       "code": "3329",
       "name": "東和フードサービス",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
+      "code": "3662",
+      "name": "エイチームホールディングス",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
+      "code": "6040",
+      "name": "日本スキー場開発",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,

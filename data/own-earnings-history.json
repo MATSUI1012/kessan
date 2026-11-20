@@ -1,13 +1,13 @@
 {
-  "schema": 3,
-  "updated_at": "2026-11-20T08:53:13+09:00",
-  "method": "IR BANKの銘柄別開示一覧で決算短信の行に記載された日付とYahoo日足を照合。日付や終値が未確認なら過去履歴を保持しつつ加点しない。",
+  "schema": 4,
+  "updated_at": "2026-11-20T09:41:41+09:00",
   "coverage": {
     "candidates": 8,
     "with_history": 8,
     "events": 20,
-    "new_events": 15
+    "new_events": 0
   },
+  "method": "IR BANK決算短信の開示履歴に明記された日付とYahoo日足を照合。未確認は推測しない。",
   "records": [
     {
       "code": "2590",
@@ -54,11 +54,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "決算短信の日付と終値照合済",
-      "irbank_diagnostics": [
-        "ok:1"
+      "archive_diagnostics": [
+        "https://irbank.net/2590/ir: HTTP 403",
+        "https://irbank.net/2590: HTTP 403"
       ],
-      "new_events": 1
+      "new_events": 0
     },
     {
       "code": "4369",
@@ -79,11 +79,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "決算短信の日付と終値照合済",
-      "irbank_diagnostics": [
-        "ok:1"
+      "archive_diagnostics": [
+        "https://irbank.net/4369/ir: HTTP 403",
+        "https://irbank.net/4369: HTTP 403"
       ],
-      "new_events": 1
+      "new_events": 0
     },
     {
       "code": "3031",
@@ -117,11 +117,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "決算短信の日付と終値照合済",
-      "irbank_diagnostics": [
-        "ok:1"
+      "archive_diagnostics": [
+        "https://irbank.net/3031/ir: HTTP 403",
+        "https://irbank.net/3031: HTTP 403"
       ],
-      "new_events": 1
+      "new_events": 0
     },
     {
       "code": "2910",
@@ -240,12 +240,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "決算短信の日付と終値照合済",
-      "irbank_diagnostics": [
-        "ok:0",
-        "ok:8"
+      "archive_diagnostics": [
+        "https://irbank.net/2910/ir: HTTP 403",
+        "https://irbank.net/2910: HTTP 403"
       ],
-      "new_events": 8
+      "new_events": 0
     },
     {
       "code": "1873",
@@ -279,11 +278,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "決算短信の日付と終値照合済",
-      "irbank_diagnostics": [
-        "ok:1"
+      "archive_diagnostics": [
+        "https://irbank.net/1873/ir: HTTP 403",
+        "https://irbank.net/1873: HTTP 403"
       ],
-      "new_events": 1
+      "new_events": 0
     },
     {
       "code": "3329",
@@ -304,11 +303,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "決算短信の日付と終値照合済",
-      "irbank_diagnostics": [
-        "ok:1"
+      "archive_diagnostics": [
+        "https://irbank.net/3329/ir: HTTP 403",
+        "https://irbank.net/3329: HTTP 403"
       ],
-      "new_events": 1
+      "new_events": 0
     },
     {
       "code": "3662",
@@ -329,11 +328,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "決算短信の日付と終値照合済",
-      "irbank_diagnostics": [
-        "ok:1"
+      "archive_diagnostics": [
+        "https://irbank.net/3662/ir: HTTP 403",
+        "https://irbank.net/3662: HTTP 403"
       ],
-      "new_events": 1
+      "new_events": 0
     },
     {
       "code": "6040",
@@ -367,11 +366,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "決算短信の日付と終値照合済",
-      "irbank_diagnostics": [
-        "ok:1"
+      "archive_diagnostics": [
+        "https://irbank.net/6040/ir: HTTP 403",
+        "https://irbank.net/6040: HTTP 403"
       ],
-      "new_events": 1
+      "new_events": 0
     }
   ]
 }

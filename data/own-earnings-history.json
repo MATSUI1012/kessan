@@ -1,7 +1,7 @@
 {
-  "schema": 1,
-  "updated_at": "2026-11-21T07:40:48+09:00",
-  "method": "JPX予定日・Yahoo決算カレンダー・決算短信見出し内の適時開示日から本人の過去実績を取得。記事発信日をそのまま開示日として推定しない。",
+  "schema": 2,
+  "updated_at": "2026-11-21T08:04:11+09:00",
+  "method": "複数のニュースRSS、JPX決算予定日、Yahoo決算カレンダーの出典日付を株価と照合。単なる記事配信日から開示日を推定しない。",
   "coverage": {
     "candidates": 8,
     "with_history": 8,
@@ -53,7 +53,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "2910",
@@ -143,7 +147,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "4369",
@@ -164,7 +172,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "3031",
@@ -198,7 +210,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "1873",
@@ -232,7 +248,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     },
     {
       "code": "3329",
@@ -253,7 +273,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "3662",
@@ -274,7 +298,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 0,
+        "rss_failures": 0
+      }
     },
     {
       "code": "6040",
@@ -321,7 +349,11 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "過去日付と翌営業日の終値を照合"
+      "status": "出典の日付と日足を照合",
+      "source_diagnostics": {
+        "google_and_bing_results": 3,
+        "rss_failures": 0
+      }
     }
   ]
 }

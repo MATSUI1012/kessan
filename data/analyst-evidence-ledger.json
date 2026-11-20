@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-19T11:00:05+09:00",
+  "updated_at": "2026-11-20T10:54:21+09:00",
   "description": "Yahoo Finance EPS 60日トレンドと証券会社の格付け履歴。値がない場合は未確認。EPSの変化日は特定できない。原本の証券会社発表は未照合。",
   "coverage": {
-    "current_candidates": 4,
+    "current_candidates": 8,
     "eps_trend_60d_available": 1,
     "broker_history_available": 0,
     "consensus_increase": 0,
@@ -160,6 +160,36 @@
         {
           "date": "2026-11-05",
           "earnings_date": "2026-11-05",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
+      "code": "1873",
+      "name": "日本ハウスホールディングス",
+      "earnings_date": "2026-12-04",
+      "observed_at": "2026-11-20T10:54:21+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 0.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-20",
+          "earnings_date": "2026-12-04",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
         }
@@ -764,7 +794,7 @@
       "code": "2590",
       "name": "ダイドーグループホールディングス",
       "earnings_date": "2026-11-26",
-      "observed_at": "2026-11-19T11:00:05+09:00",
+      "observed_at": "2026-11-20T10:54:21+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": 94.64058,
@@ -795,6 +825,12 @@
         },
         {
           "date": "2026-11-19",
+          "earnings_date": "2026-11-26",
+          "eps_estimate_current": 94.64058,
+          "revenue_mean_current": 0.0
+        },
+        {
+          "date": "2026-11-20",
           "earnings_date": "2026-11-26",
           "eps_estimate_current": 94.64058,
           "revenue_mean_current": 0.0
@@ -1019,6 +1055,36 @@
       "broker_upgrades_history": []
     },
     {
+      "code": "2910",
+      "name": "ロック・フィールド",
+      "earnings_date": "2026-12-04",
+      "observed_at": "2026-11-20T10:54:21+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 12630000000.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-20",
+          "earnings_date": "2026-12-04",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 12630000000.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
       "code": "2962",
       "name": "テクニスコ",
       "earnings_date": "2026-11-13",
@@ -1112,7 +1178,7 @@
       "code": "3031",
       "name": "ラクーンホールディングス",
       "earnings_date": "2026-11-30",
-      "observed_at": "2026-11-19T11:00:05+09:00",
+      "observed_at": "2026-11-20T10:54:21+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -1143,6 +1209,12 @@
         },
         {
           "date": "2026-11-19",
+          "earnings_date": "2026-11-30",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 1806000000.0
+        },
+        {
+          "date": "2026-11-20",
           "earnings_date": "2026-11-30",
           "eps_estimate_current": null,
           "revenue_mean_current": 1806000000.0
@@ -1550,7 +1622,7 @@
       "code": "3329",
       "name": "東和フードサービス",
       "earnings_date": "2026-11-30",
-      "observed_at": "2026-11-19T11:00:05+09:00",
+      "observed_at": "2026-11-20T10:54:21+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -1581,6 +1653,12 @@
         },
         {
           "date": "2026-11-19",
+          "earnings_date": "2026-11-30",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
+        },
+        {
+          "date": "2026-11-20",
           "earnings_date": "2026-11-30",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
@@ -1912,6 +1990,36 @@
         {
           "date": "2026-11-13",
           "earnings_date": "2026-11-13",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
+      "code": "3662",
+      "name": "エイチームホールディングス",
+      "earnings_date": "2026-12-04",
+      "observed_at": "2026-11-20T10:54:21+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 0.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-20",
+          "earnings_date": "2026-12-04",
           "eps_estimate_current": null,
           "revenue_mean_current": 0.0
         }
@@ -2858,7 +2966,7 @@
       "code": "4369",
       "name": "トリケミカル研究所",
       "earnings_date": "2026-11-30",
-      "observed_at": "2026-11-19T11:00:05+09:00",
+      "observed_at": "2026-11-20T10:54:21+09:00",
       "eps_consensus": {
         "period": "0q",
         "current": null,
@@ -2889,6 +2997,12 @@
         },
         {
           "date": "2026-11-19",
+          "earnings_date": "2026-11-30",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 7600000000.0
+        },
+        {
+          "date": "2026-11-20",
           "earnings_date": "2026-11-30",
           "eps_estimate_current": null,
           "revenue_mean_current": 7600000000.0
@@ -4657,6 +4771,36 @@
           "earnings_date": "2026-11-16",
           "eps_estimate_current": null,
           "revenue_mean_current": 1708000000.0
+        }
+      ],
+      "broker_upgrades_history": []
+    },
+    {
+      "code": "6040",
+      "name": "日本スキー場開発",
+      "earnings_date": "2026-12-04",
+      "observed_at": "2026-11-20T10:54:21+09:00",
+      "eps_consensus": {
+        "period": "0q",
+        "current": null,
+        "days_30_ago": null,
+        "days_60_ago": null,
+        "available": false,
+        "increased_last_60_days": null
+      },
+      "revenue_mean_current": 0.0,
+      "broker_history_available": false,
+      "broker_upgrades_61d": [],
+      "evidence_complete": false,
+      "supported_positive_signals": [],
+      "diagnostics": {},
+      "observed_consensus_up_revision": [],
+      "snapshots": [
+        {
+          "date": "2026-11-20",
+          "earnings_date": "2026-12-04",
+          "eps_estimate_current": null,
+          "revenue_mean_current": 0.0
         }
       ],
       "broker_upgrades_history": []

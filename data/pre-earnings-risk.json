@@ -1,9 +1,8 @@
 {
-  "schema": 1,
-  "generated_at": "2026-11-21T04:14:45+09:00",
-  "source": "Repository data/prices.json + data/research.json; JPX scheduled earnings dates",
+  "schema": 2,
+  "generated_at": "2026-11-21T04:24:42+09:00",
   "source_research_at": "2026-11-21T03:51:20+09:00",
-  "description": "決算前の価格変動の統計。発表日・発表時刻や会社IRの実績を検証したものではない。",
+  "description": "決算前の価格変動。株価の鮮度は今日基準で測定し、将来の決算日を使わない。",
   "records": [
     {
       "code": "2590",
@@ -12,6 +11,8 @@
       "n": 265,
       "status": "計算済み",
       "last_price_date": "2026-11-19",
+      "freshness_asof": "2026-11-21",
+      "age_days": 2,
       "return_5d_pct": -2.09,
       "return_20d_pct": 0.5,
       "annualized_volatility_20d_pct": 39.51,
@@ -19,16 +20,25 @@
       "latest_turnover_oku": 2.35,
       "turnover_to_market_cap_ratio": 0.002,
       "quality_flags": [],
-      "method": "決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。"
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "2910",
       "name": "ロック・フィールド",
       "earnings_date": "2026-12-04",
       "n": 265,
-      "status": "株価が古い",
+      "status": "計算済み",
       "last_price_date": "2026-11-19",
-      "gap_days": 15
+      "freshness_asof": "2026-11-21",
+      "age_days": 2,
+      "return_5d_pct": 1.62,
+      "return_20d_pct": 0.51,
+      "annualized_volatility_20d_pct": 29.05,
+      "volume_ratio_5_vs_previous20": 0.33,
+      "latest_turnover_oku": 0.44,
+      "turnover_to_market_cap_ratio": 0.001,
+      "quality_flags": [],
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "4369",
@@ -37,6 +47,8 @@
       "n": 265,
       "status": "計算済み",
       "last_price_date": "2026-11-19",
+      "freshness_asof": "2026-11-21",
+      "age_days": 2,
       "return_5d_pct": -10.63,
       "return_20d_pct": -17.43,
       "annualized_volatility_20d_pct": 75.06,
@@ -44,7 +56,7 @@
       "latest_turnover_oku": 10.34,
       "turnover_to_market_cap_ratio": 0.013,
       "quality_flags": [],
-      "method": "決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。"
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "3031",
@@ -53,6 +65,8 @@
       "n": 265,
       "status": "計算済み",
       "last_price_date": "2026-11-19",
+      "freshness_asof": "2026-11-21",
+      "age_days": 2,
       "return_5d_pct": -1.1,
       "return_20d_pct": -5.99,
       "annualized_volatility_20d_pct": 29.26,
@@ -60,16 +74,25 @@
       "latest_turnover_oku": 0.27,
       "turnover_to_market_cap_ratio": 0.002,
       "quality_flags": [],
-      "method": "決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。"
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "1873",
       "name": "日本ハウスホールディングス",
       "earnings_date": "2026-12-04",
       "n": 265,
-      "status": "株価が古い",
+      "status": "計算済み",
       "last_price_date": "2026-11-19",
-      "gap_days": 15
+      "freshness_asof": "2026-11-21",
+      "age_days": 2,
+      "return_5d_pct": 0.31,
+      "return_20d_pct": 2.85,
+      "annualized_volatility_20d_pct": 24.56,
+      "volume_ratio_5_vs_previous20": 0.67,
+      "latest_turnover_oku": 0.27,
+      "turnover_to_market_cap_ratio": 0.002,
+      "quality_flags": [],
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "3329",
@@ -78,6 +101,8 @@
       "n": 265,
       "status": "計算済み",
       "last_price_date": "2026-11-19",
+      "freshness_asof": "2026-11-21",
+      "age_days": 2,
       "return_5d_pct": -0.81,
       "return_20d_pct": -2.66,
       "annualized_volatility_20d_pct": 10.2,
@@ -85,25 +110,43 @@
       "latest_turnover_oku": 0.06,
       "turnover_to_market_cap_ratio": 0.0,
       "quality_flags": [],
-      "method": "決算予定日より前の取引日終値のみ。20営業日日次対数リターン標準偏差×√252で年率換算。決算結果の上昇確率ではない。"
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "3662",
       "name": "エイチームホールディングス",
       "earnings_date": "2026-12-04",
       "n": 265,
-      "status": "株価が古い",
+      "status": "計算済み",
       "last_price_date": "2026-11-19",
-      "gap_days": 15
+      "freshness_asof": "2026-11-21",
+      "age_days": 2,
+      "return_5d_pct": -3.58,
+      "return_20d_pct": -11.56,
+      "annualized_volatility_20d_pct": 27.89,
+      "volume_ratio_5_vs_previous20": 1.17,
+      "latest_turnover_oku": 0.79,
+      "turnover_to_market_cap_ratio": 0.005,
+      "quality_flags": [],
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     },
     {
       "code": "6040",
       "name": "日本スキー場開発",
       "earnings_date": "2026-12-04",
       "n": 265,
-      "status": "株価が古い",
+      "status": "計算済み",
       "last_price_date": "2026-11-19",
-      "gap_days": 15
+      "freshness_asof": "2026-11-21",
+      "age_days": 2,
+      "return_5d_pct": -2.01,
+      "return_20d_pct": -0.61,
+      "annualized_volatility_20d_pct": 18.9,
+      "volume_ratio_5_vs_previous20": 0.7,
+      "latest_turnover_oku": 0.04,
+      "turnover_to_market_cap_ratio": 0.0,
+      "quality_flags": [],
+      "method": "決算日以降の株価を除外。鮮度は実行日（決算当日まで）基準。発表時刻未検証・上昇確率ではない。"
     }
   ]
 }

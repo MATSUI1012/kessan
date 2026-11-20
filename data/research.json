@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T03:51:20+09:00",
+  "generated_at": "2026-11-21T06:55:51+09:00",
   "schema": 1,
   "screening": {
     "days_ahead": 14,
@@ -34,54 +34,14 @@
         "analyst_count": 1,
         "period": "0q"
       },
-      "prior_reactions": [
-        {
-          "event_date": "2026-08-27",
-          "after_1d_pct": 1.31,
-          "after_3d_pct": -2.07,
-          "after_5d_pct": -2.2,
-          "eps_estimate": 94.77,
-          "eps_actual": 84.85,
-          "eps_surprise_pct": -10.47,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        },
-        {
-          "event_date": "2026-05-25",
-          "after_1d_pct": -1.65,
-          "after_3d_pct": 2.59,
-          "after_5d_pct": 0.67,
-          "eps_estimate": -15.79,
-          "eps_actual": 3.49,
-          "eps_surprise_pct": null,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        },
-        {
-          "event_date": "2026-03-03",
-          "after_1d_pct": -3.6,
-          "after_3d_pct": 6.93,
-          "after_5d_pct": 11.57,
-          "eps_estimate": 32.28,
-          "eps_actual": -972.63,
-          "eps_surprise_pct": -3113.1,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        },
-        {
-          "event_date": "2025-11-26",
-          "after_1d_pct": -0.72,
-          "after_3d_pct": 2.48,
-          "after_5d_pct": -0.36,
-          "eps_estimate": 67.21,
-          "eps_actual": 57.85,
-          "eps_surprise_pct": -13.93,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        }
-      ],
+      "prior_reactions": [],
       "sources": {
         "fundamentals": "https://finance.yahoo.com/quote/2590.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/2590.T/analysis/"
       },
       "missing_data": [
-        "Only TTM revenue available; quarterly year-on-year change unknown"
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
       ],
       "news": [
         {
@@ -115,7 +75,7 @@
           "published_at": "2026-11-16T17:30+09:00"
         }
       ],
-      "research_priority_score": 3,
+      "research_priority_score": 2,
       "signals": [
         {
           "label": "20営業日で緩やかな上昇",
@@ -124,16 +84,9 @@
         {
           "label": "担当アナリスト数を確認できる市場予想あり",
           "points": 1
-        },
-        {
-          "label": "過去決算日付近の株価反応データあり",
-          "points": 1
         }
       ],
-      "evidence_count": 4,
-      "daily_turnover_to_market_cap_ratio": 0.002,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "2910",
@@ -161,54 +114,14 @@
         "analyst_count": 1,
         "period": "0q"
       },
-      "prior_reactions": [
-        {
-          "event_date": "2026-09-03",
-          "after_1d_pct": 2.41,
-          "after_3d_pct": -0.85,
-          "after_5d_pct": -1.77,
-          "eps_estimate": 2.87,
-          "eps_actual": 3.8,
-          "eps_surprise_pct": 32.4,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        },
-        {
-          "event_date": "2026-06-10",
-          "after_1d_pct": 0.8,
-          "after_3d_pct": 3.11,
-          "after_5d_pct": 1.04,
-          "eps_estimate": -8.34,
-          "eps_actual": -8.38,
-          "eps_surprise_pct": null,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        },
-        {
-          "event_date": "2026-03-06",
-          "after_1d_pct": 1.5,
-          "after_3d_pct": -0.57,
-          "after_5d_pct": -2.99,
-          "eps_estimate": 13.4,
-          "eps_actual": 16.01,
-          "eps_surprise_pct": 19.48,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        },
-        {
-          "event_date": "2025-12-05",
-          "after_1d_pct": -2.08,
-          "after_3d_pct": -4.09,
-          "after_5d_pct": -5.1,
-          "eps_estimate": 6.53,
-          "eps_actual": -3.43,
-          "eps_surprise_pct": -152.53,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        }
-      ],
+      "prior_reactions": [],
       "sources": {
         "fundamentals": "https://finance.yahoo.com/quote/2910.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/2910.T/analysis/"
       },
       "missing_data": [
-        "Only TTM revenue available; quarterly year-on-year change unknown"
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
       ],
       "news": [
         {
@@ -230,19 +143,19 @@
           "published_at": "2026-11-13T15:00+09:00"
         },
         {
-          "title": "日本製麻の親会社、SEIMAホールディングスが決算延期 12月14日以降に発表の見込み|経済ニュース - 神戸新聞",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB5cTU4OXZEb0h3Nl9vZ1JtcHFGOWxxQzJqTlRoU1ZlVXNISjNwWk54WXE4aVhISEtnQm5QNm9IcFUxdUdzSVQyXzctY2VQdnZRVnpua1NIbWFHb000X09JaGI1a1hrOW1WZ0l4ck53?oc=5",
-          "source": "神戸新聞",
-          "published_at": "2026-11-12T18:25+09:00"
-        },
-        {
           "title": "加藤産業、最高業績を更新 食品値上げと販売拡大で 26年9月期連結決算|経済ニュース - 神戸新聞",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE12U1habUZkbjVtUWNhNi1OdWtnYVRVc3FqMHU3R1hfT05SVHk3WnVoVnR3RjZHUS13WDZ6UGtYdE1BYkp2ZmM0TUMzcE8wcTRLRFo1UFF5b1l0SDVCekFsY0M0bEpfOFFZQTJMS1Vn?oc=5",
           "source": "神戸新聞",
-          "published_at": "2026-11-12T22:08+09:00"
+          "published_at": "2026-11-12T17:00+09:00"
+        },
+        {
+          "title": "川崎重工業 純利益予想を1180億円に上方修正 半導体製造ロボなど好調で 27年3月期連結決算|経済ニュース - 神戸新聞",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBpTVF6MlBCZ1pPb3ZqbzZubjQ2d3FWTnlieVdIMkFabTlnbHlqUkVkRWJPRzhpV3k0SkRNcFd0T19MVm1NZXdTQWpsZHZCaXhOckt2WHZNYk1CN2w3S21sUzdsOHQwRmdpZGZ3Z1RR?oc=5",
+          "source": "神戸新聞",
+          "published_at": "2026-11-10T17:00+09:00"
         }
       ],
-      "research_priority_score": 3,
+      "research_priority_score": 2,
       "signals": [
         {
           "label": "20営業日で緩やかな上昇",
@@ -251,16 +164,9 @@
         {
           "label": "担当アナリスト数を確認できる市場予想あり",
           "points": 1
-        },
-        {
-          "label": "過去決算のEPS予想超過が確認できる",
-          "points": 1
         }
       ],
-      "evidence_count": 4,
-      "daily_turnover_to_market_cap_ratio": 0.001,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "4369",
@@ -288,24 +194,14 @@
         "analyst_count": 2,
         "period": "0q"
       },
-      "prior_reactions": [
-        {
-          "event_date": "2026-03-13",
-          "after_1d_pct": -16.71,
-          "after_3d_pct": -11.92,
-          "after_5d_pct": -16.9,
-          "eps_estimate": 43.77,
-          "eps_actual": 45.96,
-          "eps_surprise_pct": 5.0,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        }
-      ],
+      "prior_reactions": [],
       "sources": {
         "fundamentals": "https://finance.yahoo.com/quote/4369.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/4369.T/analysis/"
       },
       "missing_data": [
-        "Only TTM revenue available; quarterly year-on-year change unknown"
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
       ],
       "news": [
         {
@@ -315,21 +211,14 @@
           "published_at": "2026-11-12T11:38+09:00"
         }
       ],
-      "research_priority_score": 2,
+      "research_priority_score": 1,
       "signals": [
         {
           "label": "担当アナリスト数を確認できる市場予想あり",
           "points": 1
-        },
-        {
-          "label": "過去決算日付近の株価反応データあり",
-          "points": 1
         }
       ],
-      "evidence_count": 4,
-      "daily_turnover_to_market_cap_ratio": 0.013,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "3031",
@@ -387,10 +276,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 3,
-      "daily_turnover_to_market_cap_ratio": 0.002,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "1873",
@@ -450,10 +336,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.002,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "3329",
@@ -502,10 +385,7 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.0,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "3662",
@@ -572,10 +452,7 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.005,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "6040",
@@ -642,23 +519,9 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.0,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     }
   ],
   "count": 8,
-  "method": "Research PRIORITY only; no probability of an earnings beat. TTM revenue is not quarterly results. Prior reactions, if any, are based on historical JPX scheduled dates, not verified disclosure times.",
-  "coverage": {
-    "screened": 8,
-    "official_ir_verified": 0,
-    "quarterly_or_annual_yahoo": 0,
-    "ttm_reference_only": 8,
-    "market_analyst_estimates": 4,
-    "historical_scheduled_event_reactions": 3,
-    "news_links": 8
-  },
-  "quality_review_count": 0,
-  "quality_rule": "Heuristic only. Large turnover/volume/returns are not proof of bad data, good earnings or stock-split."
+  "method": "調査優先度は公開価格・出来高・取得できた四半期業績等のみ。買い推奨や決算予測確率ではありません。"
 }

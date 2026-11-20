@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-21T07:22:19+09:00",
-  "method": "候補自身の出典のある過去決算日付とYahoo日足を照合。記事掲載日は実際の発表日と異なる場合がある。",
+  "updated_at": "2026-11-21T07:40:48+09:00",
+  "method": "JPX予定日・Yahoo決算カレンダー・決算短信見出し内の適時開示日から本人の過去実績を取得。記事発信日をそのまま開示日として推定しない。",
   "coverage": {
     "candidates": 8,
     "with_history": 8,
-    "events": 18
+    "events": 19
   },
   "records": [
     {
@@ -75,10 +75,9 @@
         },
         {
           "event_date": "2026-06-10",
-          "date_kind": "IR BANK決算短信掲載一覧の日付（発表時刻未確認）",
-          "source_url": "https://irbank.net/2910/140120260610567143",
-          "headline": "2026年4月期決算短信〔日本基準〕(連結)",
-          "discovered_via": "IR BANK 銘柄別開示一覧",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1JUEg3Z3BLMVdVRVNhXzNoM3hFUnNkT0lJMGYyaWllbWFTM3pJZUlUR2NjZ2Z2WWNYM0RCXzRjSDZpb2xNTFVoaHc5UTdQR3NUVjhNTm8tRnlDZ3VkNm16M09qUXBkdzI2d1E?oc=5",
+          "headline": "ロック・フィールド[2910]：2026年４月期 決算短信〔日本基準〕（連結） 2026年6月10日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-06-09",
           "baseline_close": 1256.0,
           "next_session_date": "2026-06-11",
@@ -306,6 +305,19 @@
           "next_close_pct": 0.87,
           "after_3d_pct": 0.65,
           "after_5d_pct": 0.87,
+          "price_source": "Yahoo Finance 日足"
+        },
+        {
+          "event_date": "2026-06-05",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE94VmdyZG50OF9FUS0yQWtmMlU1c1Q5bXFlc3QteXdNRVA1dkpGV1lLWmt4UkluQXJ1ZC1CM0xFR2tJS29ycnAtUDdXeDhaQU1jVWw2NU1SV1NVLWg4NWdqVTJSbHZmckY0bkE?oc=5",
+          "headline": "日本スキー場開発[6040]：2026年7月期第3四半期 決算短信[日本基準](連結） 2026年6月5日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-06-04",
+          "baseline_close": 461.0,
+          "next_session_date": "2026-06-08",
+          "next_close_pct": 1.95,
+          "after_3d_pct": 5.21,
+          "after_5d_pct": 4.56,
           "price_source": "Yahoo Finance 日足"
         }
       ],

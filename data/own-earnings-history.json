@@ -1,13 +1,12 @@
 {
-  "schema": 4,
-  "updated_at": "2026-11-20T09:41:41+09:00",
+  "schema": 1,
+  "updated_at": "2026-11-21T07:22:19+09:00",
+  "method": "候補自身の出典のある過去決算日付とYahoo日足を照合。記事掲載日は実際の発表日と異なる場合がある。",
   "coverage": {
     "candidates": 8,
     "with_history": 8,
-    "events": 20,
-    "new_events": 0
+    "events": 18
   },
-  "method": "IR BANK決算短信の開示履歴に明記された日付とYahoo日足を照合。未確認は推測しない。",
   "records": [
     {
       "code": "2590",
@@ -54,74 +53,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/2590/ir: HTTP 403",
-        "https://irbank.net/2590: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "4369",
-      "name": "トリケミカル研究所",
-      "events": [
-        {
-          "event_date": "2026-08-31",
-          "date_kind": "IR BANK決算短信掲載一覧の日付（発表時刻未確認）",
-          "source_url": "https://irbank.net/4369/140120131121062929",
-          "headline": "平成26年1月期第3四半期決算短信〔日本基準〕(非連結)（15:00）",
-          "discovered_via": "IR BANK 銘柄別開示一覧",
-          "baseline_date": "2026-08-28",
-          "baseline_close": 3135.0,
-          "next_session_date": "2026-09-01",
-          "next_close_pct": -1.91,
-          "after_3d_pct": -5.45,
-          "after_5d_pct": 0.64,
-          "price_source": "Yahoo Finance 日足"
-        }
-      ],
-      "archive_diagnostics": [
-        "https://irbank.net/4369/ir: HTTP 403",
-        "https://irbank.net/4369: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "3031",
-      "name": "ラクーンホールディングス",
-      "events": [
-        {
-          "event_date": "2026-08-31",
-          "date_kind": "IR BANK決算短信掲載一覧の日付（発表時刻未確認）",
-          "source_url": "https://irbank.net/3031/140120131120062560",
-          "headline": "平成26年4月期第2四半期決算短信〔日本基準〕(連結)（15:00）",
-          "discovered_via": "IR BANK 銘柄別開示一覧",
-          "baseline_date": "2026-08-28",
-          "baseline_close": 655.0,
-          "next_session_date": "2026-09-01",
-          "next_close_pct": 5.65,
-          "after_3d_pct": 3.05,
-          "after_5d_pct": 2.29,
-          "price_source": "Yahoo Finance 日足"
-        },
-        {
-          "event_date": "2026-06-11",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9BcFZzU3ZRem9kaFJ1dWV6YVVuR19XQlRLWVhmNzFXOUdJaE8zVmhSTmRtM3JWak5BeE1HcS16c1NrLTM4czMyeUF0Ym1mYnJFR3d0dDhWeVBWcTN4ZGZabi1fblVMS2U4MlE?oc=5",
-          "headline": "ラクーンホールディングス[3031]：2026年４月期決算短信〔日本基準〕(連結) 2026年6月11日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "baseline_date": "2026-06-10",
-          "baseline_close": 639.0,
-          "next_session_date": "2026-06-12",
-          "next_close_pct": -11.11,
-          "after_3d_pct": -10.64,
-          "after_5d_pct": -10.8,
-          "price_source": "Yahoo Finance 日足"
-        }
-      ],
-      "archive_diagnostics": [
-        "https://irbank.net/3031/ir: HTTP 403",
-        "https://irbank.net/3031: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "2910",
@@ -210,41 +142,64 @@
           "after_3d_pct": -1.35,
           "after_5d_pct": -0.4,
           "price_source": "Yahoo Finance 日足"
-        },
+        }
+      ],
+      "status": "過去日付と翌営業日の終値を照合"
+    },
+    {
+      "code": "4369",
+      "name": "トリケミカル研究所",
+      "events": [
         {
-          "event_date": "2025-03-06",
+          "event_date": "2026-08-31",
           "date_kind": "IR BANK決算短信掲載一覧の日付（発表時刻未確認）",
-          "source_url": "https://irbank.net/2910/140120250305588497",
-          "headline": "2025年4月期第3四半期決算短信〔日本基準〕(連結)",
+          "source_url": "https://irbank.net/4369/140120131121062929",
+          "headline": "平成26年1月期第3四半期決算短信〔日本基準〕(非連結)（15:00）",
           "discovered_via": "IR BANK 銘柄別開示一覧",
-          "baseline_date": "2025-03-05",
-          "baseline_close": 1609.0,
-          "next_session_date": "2025-03-07",
-          "next_close_pct": 1.31,
-          "after_3d_pct": 0.62,
-          "after_5d_pct": 1.8,
-          "price_source": "Yahoo Finance 日足"
-        },
-        {
-          "event_date": "2024-12-06",
-          "date_kind": "IR BANK決算短信掲載一覧の日付（発表時刻未確認）",
-          "source_url": "https://irbank.net/2910/140120241205534832",
-          "headline": "2025年4月期第2四半期(中間期)決算短信〔日本基準〕(連結)",
-          "discovered_via": "IR BANK 銘柄別開示一覧",
-          "baseline_date": "2024-12-05",
-          "baseline_close": 1512.0,
-          "next_session_date": "2024-12-09",
-          "next_close_pct": 0.0,
-          "after_3d_pct": 0.6,
-          "after_5d_pct": 0.46,
+          "baseline_date": "2026-08-28",
+          "baseline_close": 3135.0,
+          "next_session_date": "2026-09-01",
+          "next_close_pct": -1.91,
+          "after_3d_pct": -5.45,
+          "after_5d_pct": 0.64,
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/2910/ir: HTTP 403",
-        "https://irbank.net/2910: HTTP 403"
+      "status": "過去日付と翌営業日の終値を照合"
+    },
+    {
+      "code": "3031",
+      "name": "ラクーンホールディングス",
+      "events": [
+        {
+          "event_date": "2026-08-31",
+          "date_kind": "IR BANK決算短信掲載一覧の日付（発表時刻未確認）",
+          "source_url": "https://irbank.net/3031/140120131120062560",
+          "headline": "平成26年4月期第2四半期決算短信〔日本基準〕(連結)（15:00）",
+          "discovered_via": "IR BANK 銘柄別開示一覧",
+          "baseline_date": "2026-08-28",
+          "baseline_close": 655.0,
+          "next_session_date": "2026-09-01",
+          "next_close_pct": 5.65,
+          "after_3d_pct": 3.05,
+          "after_5d_pct": 2.29,
+          "price_source": "Yahoo Finance 日足"
+        },
+        {
+          "event_date": "2026-06-11",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9BcFZzU3ZRem9kaFJ1dWV6YVVuR19XQlRLWVhmNzFXOUdJaE8zVmhSTmRtM3JWak5BeE1HcS16c1NrLTM4czMyeUF0Ym1mYnJFR3d0dDhWeVBWcTN4ZGZabi1fblVMS2U4MlE?oc=5",
+          "headline": "ラクーンホールディングス[3031]：2026年４月期決算短信〔日本基準〕(連結) 2026年6月11日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-06-10",
+          "baseline_close": 639.0,
+          "next_session_date": "2026-06-12",
+          "next_close_pct": -11.11,
+          "after_3d_pct": -10.64,
+          "after_5d_pct": -10.8,
+          "price_source": "Yahoo Finance 日足"
+        }
       ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "1873",
@@ -278,11 +233,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/1873/ir: HTTP 403",
-        "https://irbank.net/1873: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "3329",
@@ -303,11 +254,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/3329/ir: HTTP 403",
-        "https://irbank.net/3329: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "3662",
@@ -328,11 +275,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/3662/ir: HTTP 403",
-        "https://irbank.net/3662: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "6040",
@@ -366,11 +309,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/6040/ir: HTTP 403",
-        "https://irbank.net/6040: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     }
   ]
 }

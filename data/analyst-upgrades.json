@@ -1,13 +1,22 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-20T07:30:11+09:00",
-  "window_start": "2026-09-20",
-  "window_end": "2026-11-20",
+  "updated_at": "2026-11-21T07:00:38+09:00",
+  "window_start": "2026-09-21",
+  "window_end": "2026-11-21",
   "description": "ニュース見出しを用いた暫定検出。原文の格付け変更・コンセンサス時系列を検証したものではない。目標株価の引き上げ単独では加点しない。",
   "records": [
     {
       "code": "2590",
       "name": "ダイドーグループホールディングス",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
+      "code": "2910",
+      "name": "ロック・フィールド",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,
@@ -26,15 +35,6 @@
     {
       "code": "3031",
       "name": "ラクーンホールディングス",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
-      "code": "2910",
-      "name": "ロック・フィールド",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,

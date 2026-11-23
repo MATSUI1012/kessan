@@ -118,7 +118,10 @@
           "points": 1
         }
       ],
-      "evidence_count": 4
+      "evidence_count": 4,
+      "daily_turnover_to_market_cap_ratio": 0.002,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "1436",
@@ -198,7 +201,10 @@
           "points": 1
         }
       ],
-      "evidence_count": 3
+      "evidence_count": 3,
+      "daily_turnover_to_market_cap_ratio": 0.005,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "2590",
@@ -318,7 +324,10 @@
           "points": 1
         }
       ],
-      "evidence_count": 4
+      "evidence_count": 4,
+      "daily_turnover_to_market_cap_ratio": 0.003,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "4369",
@@ -408,7 +417,10 @@
           "points": 1
         }
       ],
-      "evidence_count": 4
+      "evidence_count": 4,
+      "daily_turnover_to_market_cap_ratio": 0.035,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "5971",
@@ -462,7 +474,10 @@
           "points": 2
         }
       ],
-      "evidence_count": 2
+      "evidence_count": 2,
+      "daily_turnover_to_market_cap_ratio": 0.001,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "3031",
@@ -514,7 +529,10 @@
           "points": 1
         }
       ],
-      "evidence_count": 3
+      "evidence_count": 3,
+      "daily_turnover_to_market_cap_ratio": 0.004,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "3854",
@@ -572,7 +590,10 @@
           "points": 1
         }
       ],
-      "evidence_count": 3
+      "evidence_count": 3,
+      "daily_turnover_to_market_cap_ratio": 0.005,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "6387",
@@ -636,7 +657,10 @@
           "points": 1
         }
       ],
-      "evidence_count": 3
+      "evidence_count": 3,
+      "daily_turnover_to_market_cap_ratio": 0.015,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "3180",
@@ -712,7 +736,10 @@
           "points": 1
         }
       ],
-      "evidence_count": 3
+      "evidence_count": 3,
+      "daily_turnover_to_market_cap_ratio": 0.002,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "1873",
@@ -778,7 +805,10 @@
           "points": 1
         }
       ],
-      "evidence_count": 2
+      "evidence_count": 2,
+      "daily_turnover_to_market_cap_ratio": 0.003,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "3329",
@@ -827,7 +857,10 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2
+      "evidence_count": 2,
+      "daily_turnover_to_market_cap_ratio": 0.001,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "3662",
@@ -894,7 +927,10 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2
+      "evidence_count": 2,
+      "daily_turnover_to_market_cap_ratio": 0.008,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "6040",
@@ -961,7 +997,10 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2
+      "evidence_count": 2,
+      "daily_turnover_to_market_cap_ratio": 0.001,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "7856",
@@ -1028,7 +1067,10 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2
+      "evidence_count": 2,
+      "daily_turnover_to_market_cap_ratio": 0.004,
+      "quality_flags": [],
+      "quality_review_required": false
     },
     {
       "code": "4238",
@@ -1071,7 +1113,10 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2
+      "evidence_count": 2,
+      "daily_turnover_to_market_cap_ratio": 0.008,
+      "quality_flags": [],
+      "quality_review_required": false
     }
   ],
   "count": 15,
@@ -1084,5 +1129,7 @@
     "market_analyst_estimates": 8,
     "historical_scheduled_event_reactions": 3,
     "news_links": 15
-  }
+  },
+  "quality_review_count": 0,
+  "quality_rule": "Heuristic only. Large turnover/volume/returns are not proof of bad data, good earnings or stock-split."
 }

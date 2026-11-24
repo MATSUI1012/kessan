@@ -1,64 +1,18 @@
 {
-  "schema": 4,
-  "updated_at": "2026-11-21T09:01:45+09:00",
+  "schema": 1,
+  "updated_at": "2026-11-24T11:36:18+09:00",
+  "method": "候補自身の出典のある過去決算日付とYahoo日足を照合。記事掲載日は実際の発表日と異なる場合がある。",
   "coverage": {
-    "candidates": 8,
-    "with_history": 8,
-    "events": 19,
-    "new_events": 0
+    "candidates": 15,
+    "with_history": 11,
+    "events": 22
   },
-  "method": "IR BANK決算短信の開示履歴に明記された日付とYahoo日足を照合。未確認は推測しない。",
   "records": [
     {
-      "code": "2590",
-      "name": "ダイドーグループホールディングス",
-      "events": [
-        {
-          "event_date": "2026-10-30",
-          "date_kind": "IR BANK決算短信掲載一覧の日付（発表時刻未確認）",
-          "source_url": "https://irbank.net/2590/140120131028045864",
-          "headline": "平成26年1月期第3四半期決算短信〔日本基準〕(連結)（15:00）",
-          "discovered_via": "IR BANK 銘柄別開示一覧",
-          "baseline_date": "2026-10-29",
-          "baseline_close": 2983.0,
-          "next_session_date": "2026-11-02",
-          "next_close_pct": 0.74,
-          "after_3d_pct": 8.62,
-          "after_5d_pct": 5.6,
-          "price_source": "Yahoo Finance 日足"
-        },
-        {
-          "event_date": "2026-08-27",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBZZjNGdWNyTi05YmJ3c2JjazYyc0tfNEc1WHpWekJ2MjFJSDNOUkg0X3gwdEtpdWtOOUtOTEJzWnFwT3pRQ1VMUUVPY1RGMXdJelk5WTJzRGpIczZCTTVGTlFBbXZRLTFrTEE?oc=5",
-          "headline": "ダイドーグループホールディングス[2590]：2027年1月期 第2四半期（中間期）決算短信〔日本基準〕（連結） 2026年8月27日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "baseline_date": "2026-08-26",
-          "baseline_close": 3050.0,
-          "next_session_date": "2026-08-28",
-          "next_close_pct": 1.31,
-          "after_3d_pct": -2.07,
-          "after_5d_pct": -2.2,
-          "price_source": "Yahoo Finance 日足"
-        },
-        {
-          "event_date": "2026-05-26",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9tQ21OVjZQMDByUTBaN0diUGdtdTh6WFVsM0JkajhUMV9wb3pfTWZ6ZEpmNHBjVmNlQnBrbElxZ25zZDU3dTdZVUt1c2l2WFBjeFIwVTUwZXN6RGdkUTlsd3p3YjViWWMzNVE?oc=5",
-          "headline": "ダイドーグループホールディングス[2590]：2027年1月期 第1四半期決算短信〔日本基準〕（連結） 2026年5月26日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "baseline_date": "2026-05-25",
-          "baseline_close": 2518.0,
-          "next_session_date": "2026-05-27",
-          "next_close_pct": 7.98,
-          "after_3d_pct": 6.55,
-          "after_5d_pct": -0.28,
-          "price_source": "Yahoo Finance 日足"
-        }
-      ],
-      "archive_diagnostics": [
-        "https://irbank.net/2590/ir: HTTP 403",
-        "https://irbank.net/2590: HTTP 403"
-      ],
-      "new_events": 0
+      "code": "1436",
+      "name": "グリーンエナジー＆カンパニー",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "2910",
@@ -148,11 +102,74 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/2910/ir: HTTP 403",
-        "https://irbank.net/2910: HTTP 403"
+      "status": "過去日付と翌営業日の終値を照合"
+    },
+    {
+      "code": "5971",
+      "name": "共和工業所",
+      "events": [
+        {
+          "event_date": "2026-09-10",
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBrX2ZWMDRRTjZsNEM1SGpxWDFUUTNVbGw1cmtRQUk2YmJrWWNDX0o2Z0t3RlpEWFJadTlvUXltblZRSWNhMFBFejNoQnpLMHpPam1Mdm5wWmNaX1BZZ2ZvLXFzODNQNnIxeEE?oc=5",
+          "headline": "共和工業所[5971]：2027年4月期 第1四半期決算短信〔日本基準〕（連結） 2026年9月10日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-09-09",
+          "baseline_close": 8700.0,
+          "next_session_date": "2026-09-11",
+          "next_close_pct": -3.33,
+          "after_3d_pct": -0.46,
+          "after_5d_pct": -0.57,
+          "price_source": "Yahoo Finance 日足"
+        }
       ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
+    },
+    {
+      "code": "2590",
+      "name": "ダイドーグループホールディングス",
+      "events": [
+        {
+          "event_date": "2026-10-30",
+          "date_kind": "IR BANK決算短信掲載一覧の日付（発表時刻未確認）",
+          "source_url": "https://irbank.net/2590/140120131028045864",
+          "headline": "平成26年1月期第3四半期決算短信〔日本基準〕(連結)（15:00）",
+          "discovered_via": "IR BANK 銘柄別開示一覧",
+          "baseline_date": "2026-10-29",
+          "baseline_close": 2983.0,
+          "next_session_date": "2026-11-02",
+          "next_close_pct": 0.74,
+          "after_3d_pct": 8.62,
+          "after_5d_pct": 5.6,
+          "price_source": "Yahoo Finance 日足"
+        },
+        {
+          "event_date": "2026-08-27",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBZZjNGdWNyTi05YmJ3c2JjazYyc0tfNEc1WHpWekJ2MjFJSDNOUkg0X3gwdEtpdWtOOUtOTEJzWnFwT3pRQ1VMUUVPY1RGMXdJelk5WTJzRGpIczZCTTVGTlFBbXZRLTFrTEE?oc=5",
+          "headline": "ダイドーグループホールディングス[2590]：2027年1月期 第2四半期（中間期）決算短信〔日本基準〕（連結） 2026年8月27日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-08-26",
+          "baseline_close": 3050.0,
+          "next_session_date": "2026-08-28",
+          "next_close_pct": 1.31,
+          "after_3d_pct": -2.07,
+          "after_5d_pct": -2.2,
+          "price_source": "Yahoo Finance 日足"
+        },
+        {
+          "event_date": "2026-05-26",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9tQ21OVjZQMDByUTBaN0diUGdtdTh6WFVsM0JkajhUMV9wb3pfTWZ6ZEpmNHBjVmNlQnBrbElxZ25zZDU3dTdZVUt1c2l2WFBjeFIwVTUwZXN6RGdkUTlsd3p3YjViWWMzNVE?oc=5",
+          "headline": "ダイドーグループホールディングス[2590]：2027年1月期 第1四半期決算短信〔日本基準〕（連結） 2026年5月26日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-05-25",
+          "baseline_close": 2518.0,
+          "next_session_date": "2026-05-27",
+          "next_close_pct": 7.98,
+          "after_3d_pct": 6.55,
+          "after_5d_pct": -0.28,
+          "price_source": "Yahoo Finance 日足"
+        }
+      ],
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "4369",
@@ -173,11 +190,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/4369/ir: HTTP 403",
-        "https://irbank.net/4369: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "3031",
@@ -211,11 +224,39 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/3031/ir: HTTP 403",
-        "https://irbank.net/3031: HTTP 403"
+      "status": "過去日付と翌営業日の終値を照合"
+    },
+    {
+      "code": "3854",
+      "name": "アイル",
+      "events": [
+        {
+          "event_date": "2026-09-07",
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1QbEluclRxUlN6UGRtQVVhNjE0T213akNVeE8tZnhQcjMxSDVXbU9id2NCYVNURmQ2TlZDYUY0cUVZY0Zkd3c1Z29hSGlHUXI0UUlpaTQ4TEEwZ2E5cWp6bEpmZUFpX3F4Ync?oc=5",
+          "headline": "アイル[3854]：2026年７月期 決算短信〔日本基準〕（連結） 2026年9月7日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-09-04",
+          "baseline_close": 2441.0,
+          "next_session_date": "2026-09-08",
+          "next_close_pct": -11.14,
+          "after_3d_pct": -12.78,
+          "after_5d_pct": -11.96,
+          "price_source": "Yahoo Finance 日足"
+        }
       ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
+    },
+    {
+      "code": "6387",
+      "name": "サムコ",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "3180",
+      "name": "ビューティガレージ",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "1873",
@@ -249,11 +290,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/1873/ir: HTTP 403",
-        "https://irbank.net/1873: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "3329",
@@ -274,11 +311,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/3329/ir: HTTP 403",
-        "https://irbank.net/3329: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "3662",
@@ -295,15 +328,11 @@
           "next_session_date": "2026-11-17",
           "next_close_pct": -3.33,
           "after_3d_pct": -4.36,
-          "after_5d_pct": null,
+          "after_5d_pct": -6.31,
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/3662/ir: HTTP 403",
-        "https://irbank.net/3662: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "6040",
@@ -350,11 +379,33 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/6040/ir: HTTP 403",
-        "https://irbank.net/6040: HTTP 403"
+      "status": "過去日付と翌営業日の終値を照合"
+    },
+    {
+      "code": "7856",
+      "name": "萩原工業",
+      "events": [
+        {
+          "event_date": "2026-09-07",
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9DNl9pSlhwNTY4QUNBZjhfRUxLMEJydEJiYU1FSDRWTHFMNjJJcjZDNWFfMTd4RTZUNDZBM0ZsRWE3WHN3eHRZaTd1dlQ1U0ZoUmFaYlJrdXhFakNoN196QkJ6WE9UblR1WXc?oc=5",
+          "headline": "萩原工業[7856]：2026年10月期 第３四半期決算短信〔日本基準〕（連結） 2026年9月7日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-09-04",
+          "baseline_close": 1878.0,
+          "next_session_date": "2026-09-08",
+          "next_close_pct": 6.39,
+          "after_3d_pct": 6.34,
+          "after_5d_pct": 7.29,
+          "price_source": "Yahoo Finance 日足"
+        }
       ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
+    },
+    {
+      "code": "4238",
+      "name": "ミライアル",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
     }
   ]
 }

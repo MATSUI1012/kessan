@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T05:53:15+09:00",
+  "generated_at": "2026-11-25T08:36:28+09:00",
   "schema": 1,
   "screening": {
     "days_ahead": 14,
@@ -8,115 +8,6 @@
     "min_latest_turnover_oku": 0
   },
   "records": [
-    {
-      "code": "2910",
-      "name": "ロック・フィールド",
-      "earnings_date": "2026-12-04",
-      "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan10_1120.xlsx",
-      "market_cap_yen": 36309317013,
-      "price_date": "2026-11-20",
-      "close": 1380.0,
-      "turnover_oku": 0.62,
-      "avg_turnover_20_oku": 1.46,
-      "volume_ratio_5_20": 0.35,
-      "return_5d": 0.44,
-      "return_20d": 1.1,
-      "financials": {
-        "revenue_yen": 51299999744,
-        "period_type": "ttm",
-        "latest_period": null,
-        "data_source": "Yahoo Finance TTM summary, not company IR",
-        "revenue_yoy_pct": null,
-        "operating_income_yoy_pct": null
-      },
-      "analyst_consensus": {
-        "revenue_mean_yen": 12630000000,
-        "analyst_count": 1,
-        "period": "0q"
-      },
-      "prior_reactions": [
-        {
-          "event_date": "2026-09-03",
-          "after_1d_pct": 2.41,
-          "after_3d_pct": -0.85,
-          "after_5d_pct": -1.77,
-          "eps_estimate": 2.87,
-          "eps_actual": 3.8,
-          "eps_surprise_pct": 32.4,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        },
-        {
-          "event_date": "2026-06-10",
-          "after_1d_pct": 0.8,
-          "after_3d_pct": 3.11,
-          "after_5d_pct": 1.04,
-          "eps_estimate": -8.34,
-          "eps_actual": -8.38,
-          "eps_surprise_pct": null,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        },
-        {
-          "event_date": "2026-03-06",
-          "after_1d_pct": 1.5,
-          "after_3d_pct": -0.57,
-          "after_5d_pct": -2.99,
-          "eps_estimate": 13.4,
-          "eps_actual": 16.01,
-          "eps_surprise_pct": 19.48,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        },
-        {
-          "event_date": "2025-12-05",
-          "after_1d_pct": -2.08,
-          "after_3d_pct": -4.09,
-          "after_5d_pct": -5.1,
-          "eps_estimate": 6.53,
-          "eps_actual": -3.43,
-          "eps_surprise_pct": -152.53,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        }
-      ],
-      "sources": {
-        "fundamentals": "https://finance.yahoo.com/quote/2910.T/financials/",
-        "estimates": "https://finance.yahoo.com/quote/2910.T/analysis/"
-      },
-      "missing_data": [
-        "Only TTM revenue available; quarterly year-on-year change unknown"
-      ],
-      "news": [
-        {
-          "title": "【決算速報】仙波糖化工業、中間経常580百万。事前予想を上回る(アイフィス株予報) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPdmtrdGdLSGNHai0wQXQxNGNpWnZ6WTd4bnNZcFR5akQzY191U2dyV2tBTjdxdzZENnJaWm5zTGxObjZGYnNPc3BWa3V4bWxYN29kams1OHFTZHZpVnR6LTRQM0RHR252NUwxMTdLenRMWmVFSzhsd2JWLTZkaXR6T1o3azVOaFU?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-11-13T17:00+09:00"
-        },
-        {
-          "title": "グローリー、純利益83%増 海外事業堅調、増収増益 26年9月中間連結決算|経済ニュース - 神戸新聞",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9ZbFRlWFlEMFlWc0pKRmhOb2ZzRFVaQnBlQW9YZXhmcm13ckFRUWRKUEpsRXlLeEI2WFA2X2d5Rm9LMkh1NENhRWl0UksweXhESEFncXlfS0dpOWgyMkNoMmtRRWo2RmFpT0lfQ2x3?oc=5",
-          "source": "神戸新聞",
-          "published_at": "2026-11-11T17:00+09:00"
-        }
-      ],
-      "research_priority_score": 3,
-      "signals": [
-        {
-          "label": "20営業日で緩やかな上昇",
-          "points": 1
-        },
-        {
-          "label": "担当アナリスト数を確認できる市場予想あり",
-          "points": 1
-        },
-        {
-          "label": "過去決算のEPS予想超過が確認できる",
-          "points": 1
-        }
-      ],
-      "evidence_count": 4,
-      "daily_turnover_to_market_cap_ratio": 0.002,
-      "quality_flags": [],
-      "quality_review_required": false
-    },
     {
       "code": "1436",
       "name": "グリーンエナジー＆カンパニー",
@@ -183,26 +74,23 @@
           "points": 1
         }
       ],
-      "evidence_count": 3,
-      "daily_turnover_to_market_cap_ratio": 0.005,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
-      "code": "2590",
-      "name": "ダイドーグループホールディングス",
-      "earnings_date": "2026-11-26",
+      "code": "2910",
+      "name": "ロック・フィールド",
+      "earnings_date": "2026-12-04",
       "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan10_1120.xlsx",
-      "market_cap_yen": 95914391925,
+      "market_cap_yen": 36309317013,
       "price_date": "2026-11-20",
-      "close": 3045.0,
-      "turnover_oku": 2.61,
-      "avg_turnover_20_oku": 2.39,
-      "volume_ratio_5_20": 1.04,
-      "return_5d": -2.25,
-      "return_20d": 0.0,
+      "close": 1380.0,
+      "turnover_oku": 0.62,
+      "avg_turnover_20_oku": 1.46,
+      "volume_ratio_5_20": 0.35,
+      "return_5d": 0.44,
+      "return_20d": 1.1,
       "financials": {
-        "revenue_yen": 243592003584,
+        "revenue_yen": 51299999744,
         "period_type": "ttm",
         "latest_period": null,
         "data_source": "Yahoo Finance TTM summary, not company IR",
@@ -210,175 +98,45 @@
         "operating_income_yoy_pct": null
       },
       "analyst_consensus": {
-        "eps_mean": 94.6406,
+        "revenue_mean_yen": 12630000000,
         "analyst_count": 1,
         "period": "0q"
       },
-      "prior_reactions": [
-        {
-          "event_date": "2026-08-27",
-          "after_1d_pct": 1.31,
-          "after_3d_pct": -2.07,
-          "after_5d_pct": -2.2,
-          "eps_estimate": 94.77,
-          "eps_actual": 84.85,
-          "eps_surprise_pct": -10.47,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        },
-        {
-          "event_date": "2026-05-25",
-          "after_1d_pct": -1.65,
-          "after_3d_pct": 2.59,
-          "after_5d_pct": 0.67,
-          "eps_estimate": -15.79,
-          "eps_actual": 3.49,
-          "eps_surprise_pct": null,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        },
-        {
-          "event_date": "2026-03-03",
-          "after_1d_pct": -3.6,
-          "after_3d_pct": 6.93,
-          "after_5d_pct": 11.57,
-          "eps_estimate": 32.28,
-          "eps_actual": -972.63,
-          "eps_surprise_pct": -3113.1,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        },
-        {
-          "event_date": "2025-11-26",
-          "after_1d_pct": -0.72,
-          "after_3d_pct": 2.48,
-          "after_5d_pct": -0.36,
-          "eps_estimate": 67.21,
-          "eps_actual": 57.85,
-          "eps_surprise_pct": -13.93,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        }
-      ],
+      "prior_reactions": [],
       "sources": {
-        "fundamentals": "https://finance.yahoo.com/quote/2590.T/financials/",
-        "estimates": "https://finance.yahoo.com/quote/2590.T/analysis/"
+        "fundamentals": "https://finance.yahoo.com/quote/2910.T/financials/",
+        "estimates": "https://finance.yahoo.com/quote/2910.T/analysis/"
       },
       "missing_data": [
-        "Only TTM revenue available; quarterly year-on-year change unknown"
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
       ],
       "news": [
         {
-          "title": "今週の決算発表予定 プラネット、ＤｙＤｏ、タカショーなど (11月24日～27日)(株探ニュース) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQcF91TDZZWGZnY0FGS1dndHFfcjlxdTJnRE5QbklVSk9SM0V3dkhNYTQ4UTQwRWdDdThhWHVQZjFoYm9YbjRSLTlvUmtsby1JVlk4RWdKcC1Fc2RaOHc5eDA2eWFXNmxYdk1FWTVlUmIxMnF6NVpJbXhUVzdJOUtYT2NLY2NCcnM?oc=5",
+          "title": "【決算速報】仙波糖化工業、中間経常580百万。事前予想を上回る(アイフィス株予報) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPdmtrdGdLSGNHai0wQXQxNGNpWnZ6WTd4bnNZcFR5akQzY191U2dyV2tBTjdxdzZENnJaWm5zTGxObjZGYnNPc3BWa3V4bWxYN29kams1OHFTZHZpVnR6LTRQM0RHR252NUwxMTdLenRMWmVFSzhsd2JWLTZkaXR6T1o3azVOaFU?oc=5",
           "source": "Yahoo!ファイナンス",
-          "published_at": "2026-11-22T19:00+09:00"
-        },
-        {
-          "title": "来週の株式相場に向けて＝「アンソロピック」不発で次の手掛かり材料模索に - 株探",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAxazFyVExCVXdKWFczUS1GeG5WVVRXaVc4TzhmNVRMNnJxMFN2WEJ6dXBjY0lZYk5YNTdwZmpWX3VFeHhmNnhPNFpOa0JRWnZaQkVEOTZZc1dNcGUxS1BYaQ?oc=5",
-          "source": "株探",
-          "published_at": "2026-11-20T17:42+09:00"
-        },
-        {
-          "title": "2027年３月期第２四半期（中間期）決算短信〔日本基準〕(連結) 投稿日時： 2026/11/13 15:30[適時開示] - みんかぶ",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1kT3I3aW9vakJKa19nanotX2NtNFpvUlh1azMwbHR1RUUtTHVhcFE5V1JXcHZpWk40VzBzZ24wU2pneTliMFE?oc=5",
-          "source": "みんかぶ",
           "published_at": "2026-11-13T17:00+09:00"
         },
         {
-          "title": "来週の決算発表予定 プラネット、ＤｙＤｏ、タカショーなど (11月24日～27日)(株探ニュース) - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQMExZZG9FZ0ZWalY1andMaXNGektYYkVETTFxYWM0bW5lOXUtcmxLMWZXSERNQWNxRFpWYVQ0RmliQkU0V0VnNHhBd1BOdHZfRDhqcEdnM1U1S3NROFpDelZMbUNsQWFRamVCSjJsdzlMMm54SndmNjhVd3k0bEVrdVRUU3dZdTA?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-11-20T16:10+09:00"
-        },
-        {
-          "title": "2027年３月期 第２四半期（中間期）決算説明資料 投稿日時： 2026/11/13 14:00[適時開示] - みんかぶ",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9XaVJEZjkyS2J2Mm10UUpyX2tpVElkaWpyc19pYWQ4cmIwV1hySnp2Yk1YNEk5VW9uaDE4MTZNWW0yanZGb3c?oc=5",
-          "source": "みんかぶ",
-          "published_at": "2026-11-13T17:00+09:00"
+          "title": "グローリー、純利益83%増 海外事業堅調、増収増益 26年9月中間連結決算|経済ニュース - 神戸新聞",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9ZbFRlWFlEMFlWc0pKRmhOb2ZzRFVaQnBlQW9YZXhmcm13ckFRUWRKUEpsRXlLeEI2WFA2X2d5Rm9LMkh1NENhRWl0UksweXhESEFncXlfS0dpOWgyMkNoMmtRRWo2RmFpT0lfQ2x3?oc=5",
+          "source": "神戸新聞",
+          "published_at": "2026-11-11T17:00+09:00"
         }
       ],
       "research_priority_score": 2,
       "signals": [
         {
-          "label": "担当アナリスト数を確認できる市場予想あり",
+          "label": "20営業日で緩やかな上昇",
           "points": 1
         },
         {
-          "label": "過去決算日付近の株価反応データあり",
-          "points": 1
-        }
-      ],
-      "evidence_count": 4,
-      "daily_turnover_to_market_cap_ratio": 0.003,
-      "quality_flags": [],
-      "quality_review_required": false
-    },
-    {
-      "code": "4369",
-      "name": "トリケミカル研究所",
-      "earnings_date": "2026-11-30",
-      "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan10_1120.xlsx",
-      "market_cap_yen": 85303858500,
-      "price_date": "2026-11-20",
-      "close": 2409.0,
-      "turnover_oku": 27.42,
-      "avg_turnover_20_oku": 16.45,
-      "volume_ratio_5_20": 1.2,
-      "return_5d": -15.62,
-      "return_20d": -19.22,
-      "financials": {
-        "revenue_yen": 26212999168,
-        "period_type": "ttm",
-        "latest_period": null,
-        "data_source": "Yahoo Finance TTM summary, not company IR",
-        "revenue_yoy_pct": null,
-        "operating_income_yoy_pct": null
-      },
-      "analyst_consensus": {
-        "revenue_mean_yen": 7600000000,
-        "analyst_count": 2,
-        "period": "0q"
-      },
-      "prior_reactions": [
-        {
-          "event_date": "2026-03-13",
-          "after_1d_pct": -16.71,
-          "after_3d_pct": -11.92,
-          "after_5d_pct": -16.9,
-          "eps_estimate": 43.77,
-          "eps_actual": 45.96,
-          "eps_surprise_pct": 5.0,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        }
-      ],
-      "sources": {
-        "fundamentals": "https://finance.yahoo.com/quote/4369.T/financials/",
-        "estimates": "https://finance.yahoo.com/quote/4369.T/analysis/"
-      },
-      "missing_data": [
-        "Only TTM revenue available; quarterly year-on-year change unknown"
-      ],
-      "news": [
-        {
-          "title": "本日の【パラボリック｜買い／売り・転換】前場 買い＝ 326 銘柄 売り＝ 46 銘柄 (11月12日) - 株探",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBOTjJlTERpX2lYLWRNalBhLU55N2JPcmVLZzZzQ0U3MGhHNFd3YU9CSWwwVW9DdE4yREgwcld5VjROdEU2dHVPSmVmektGRjNCM0hJVUhKUXdPbVc2T2xiXw?oc=5",
-          "source": "株探",
-          "published_at": "2026-11-12T11:38+09:00"
-        }
-      ],
-      "research_priority_score": 2,
-      "signals": [
-        {
           "label": "担当アナリスト数を確認できる市場予想あり",
           "points": 1
-        },
-        {
-          "label": "過去決算日付近の株価反応データあり",
-          "points": 1
         }
       ],
-      "evidence_count": 4,
-      "daily_turnover_to_market_cap_ratio": 0.032,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "5971",
@@ -432,10 +190,135 @@
           "points": 2
         }
       ],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.001,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
+    },
+    {
+      "code": "2590",
+      "name": "ダイドーグループホールディングス",
+      "earnings_date": "2026-11-26",
+      "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan10_1120.xlsx",
+      "market_cap_yen": 95914391925,
+      "price_date": "2026-11-20",
+      "close": 3045.0,
+      "turnover_oku": 2.61,
+      "avg_turnover_20_oku": 2.39,
+      "volume_ratio_5_20": 1.04,
+      "return_5d": -2.25,
+      "return_20d": 0.0,
+      "financials": {
+        "revenue_yen": 243592003584,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
+      "analyst_consensus": {
+        "eps_mean": 94.6406,
+        "analyst_count": 1,
+        "period": "0q"
+      },
+      "prior_reactions": [],
+      "sources": {
+        "fundamentals": "https://finance.yahoo.com/quote/2590.T/financials/",
+        "estimates": "https://finance.yahoo.com/quote/2590.T/analysis/"
+      },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
+      "news": [
+        {
+          "title": "今週の決算発表予定 プラネット、ＤｙＤｏ、タカショーなど (11月24日～27日)(株探ニュース) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQcF91TDZZWGZnY0FGS1dndHFfcjlxdTJnRE5QbklVSk9SM0V3dkhNYTQ4UTQwRWdDdThhWHVQZjFoYm9YbjRSLTlvUmtsby1JVlk4RWdKcC1Fc2RaOHc5eDA2eWFXNmxYdk1FWTVlUmIxMnF6NVpJbXhUVzdJOUtYT2NLY2NCcnM?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-22T19:00+09:00"
+        },
+        {
+          "title": "来週の株式相場に向けて＝「アンソロピック」不発で次の手掛かり材料模索に - 株探",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAxazFyVExCVXdKWFczUS1GeG5WVVRXaVc4TzhmNVRMNnJxMFN2WEJ6dXBjY0lZYk5YNTdwZmpWX3VFeHhmNnhPNFpOa0JRWnZaQkVEOTZZc1dNcGUxS1BYaQ?oc=5",
+          "source": "株探",
+          "published_at": "2026-11-20T17:42+09:00"
+        },
+        {
+          "title": "（訂正）「2025年度 通期業績決算説明資料」の一部訂正について 投稿日時： 2026/11/16 15:30[適時開示] - みんかぶ",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5LSVhvZUhFbjVSR2ZuUklUdk11WU9GUDVrXzBERHdiUWRaQTItUTdnY1RhQ0VjVUFnSm42cEpxc1JIMDZ1S3c?oc=5",
+          "source": "みんかぶ",
+          "published_at": "2026-11-16T15:30+09:00"
+        },
+        {
+          "title": "来週の決算発表予定 プラネット、ＤｙＤｏ、タカショーなど (11月24日～27日)(株探ニュース) - Yahoo!ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQMExZZG9FZ0ZWalY1andMaXNGektYYkVETTFxYWM0bW5lOXUtcmxLMWZXSERNQWNxRFpWYVQ0RmliQkU0V0VnNHhBd1BOdHZfRDhqcEdnM1U1S3NROFpDelZMbUNsQWFRamVCSjJsdzlMMm54SndmNjhVd3k0bEVrdVRUU3dZdTA?oc=5",
+          "source": "Yahoo!ファイナンス",
+          "published_at": "2026-11-20T16:10+09:00"
+        },
+        {
+          "title": "2026年12月期 第３四半期決算短信〔日本基準〕（連結） 投稿日時： 2026/11/11 15:30[適時開示] - みんかぶ",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE55WlYtSVUyc0QxeExtWEh2TGQ4UTB6a3dtRE5fOTRBLWJvRTZ3d1IyRGFfQnhmUnZmdENjVXd4Q2FDTjRWZlE?oc=5",
+          "source": "みんかぶ",
+          "published_at": "2026-11-11T15:30+09:00"
+        }
+      ],
+      "research_priority_score": 1,
+      "signals": [
+        {
+          "label": "担当アナリスト数を確認できる市場予想あり",
+          "points": 1
+        }
+      ],
+      "evidence_count": 3
+    },
+    {
+      "code": "4369",
+      "name": "トリケミカル研究所",
+      "earnings_date": "2026-11-30",
+      "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan10_1120.xlsx",
+      "market_cap_yen": 85303858500,
+      "price_date": "2026-11-20",
+      "close": 2409.0,
+      "turnover_oku": 27.42,
+      "avg_turnover_20_oku": 16.45,
+      "volume_ratio_5_20": 1.2,
+      "return_5d": -15.62,
+      "return_20d": -19.22,
+      "financials": {
+        "revenue_yen": 26212999168,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
+      "analyst_consensus": {
+        "revenue_mean_yen": 7600000000,
+        "analyst_count": 2,
+        "period": "0q"
+      },
+      "prior_reactions": [],
+      "sources": {
+        "fundamentals": "https://finance.yahoo.com/quote/4369.T/financials/",
+        "estimates": "https://finance.yahoo.com/quote/4369.T/analysis/"
+      },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
+      "news": [
+        {
+          "title": "本日の【パラボリック｜買い／売り・転換】前場 買い＝ 326 銘柄 売り＝ 46 銘柄 (11月12日) - 株探",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBOTjJlTERpX2lYLWRNalBhLU55N2JPcmVLZzZzQ0U3MGhHNFd3YU9CSWwwVW9DdE4yREgwcld5VjROdEU2dHVPSmVmektGRjNCM0hJVUhKUXdPbVc2T2xiXw?oc=5",
+          "source": "株探",
+          "published_at": "2026-11-12T11:38+09:00"
+        }
+      ],
+      "research_priority_score": 1,
+      "signals": [
+        {
+          "label": "担当アナリスト数を確認できる市場予想あり",
+          "points": 1
+        }
+      ],
+      "evidence_count": 3
     },
     {
       "code": "3031",
@@ -487,10 +370,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 3,
-      "daily_turnover_to_market_cap_ratio": 0.004,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "3854",
@@ -548,10 +428,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 3,
-      "daily_turnover_to_market_cap_ratio": 0.005,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "6387",
@@ -600,12 +477,6 @@
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5rUWs3RG9SeExzZzJobm5UZ3Fjbk0yVmpxOGluZGZEM25PODRoVXFzaEJTUVBTcjB0QW1CZFRaRmRSb2JCMUVrd2U4Z3lCRjc0ZEM3U1JiR083bWtkM3ZZ?oc=5",
           "source": "Yahoo!ファイナンス",
           "published_at": "2026-11-20T16:04+09:00"
-        },
-        {
-          "title": "サムコ(株)【6387】：株つぶやき - Yahoo!ファイナンス",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5SR216eHJzWUFabURPX1dmWUtPQlpDQldWWmd5dUZhbkhqUmJiUEx2Y1pmQll5aHBhLUZhU1FRQmItdGtDeC1MWjgwM1ByNkNQdGQ1N29BM1A?oc=5",
-          "source": "Yahoo!ファイナンス",
-          "published_at": "2026-11-17T21:02+09:00"
         }
       ],
       "research_priority_score": 1,
@@ -615,10 +486,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 3,
-      "daily_turnover_to_market_cap_ratio": 0.013,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "3180",
@@ -694,10 +562,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 3,
-      "daily_turnover_to_market_cap_ratio": 0.002,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "5132",
@@ -749,10 +614,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 3,
-      "daily_turnover_to_market_cap_ratio": 0.005,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "2751",
@@ -810,10 +672,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 3,
-      "daily_turnover_to_market_cap_ratio": 0.001,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "7678",
@@ -867,10 +726,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.001,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "1873",
@@ -911,10 +767,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 1,
-      "daily_turnover_to_market_cap_ratio": 0.003,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 1
     },
     {
       "code": "3329",
@@ -963,10 +816,7 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.001,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "3662",
@@ -1033,10 +883,7 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.008,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "6040",
@@ -1103,10 +950,7 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.001,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "7856",
@@ -1167,10 +1011,7 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.004,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "4238",
@@ -1213,10 +1054,7 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.008,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "2217",
@@ -1252,23 +1090,9 @@
       "news": [],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 1,
-      "daily_turnover_to_market_cap_ratio": 0.001,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 1
     }
   ],
   "count": 19,
-  "method": "Research PRIORITY only; no probability of an earnings beat. TTM revenue is not quarterly results. Prior reactions, if any, are based on historical JPX scheduled dates, not verified disclosure times.",
-  "coverage": {
-    "screened": 19,
-    "official_ir_verified": 0,
-    "quarterly_or_annual_yahoo": 0,
-    "ttm_reference_only": 19,
-    "market_analyst_estimates": 10,
-    "historical_scheduled_event_reactions": 3,
-    "news_links": 17
-  },
-  "quality_review_count": 0,
-  "quality_rule": "Heuristic only. Large turnover/volume/returns are not proof of bad data, good earnings or stock-split."
+  "method": "調査優先度は公開価格・出来高・取得できた四半期業績等のみ。買い推奨や決算予測確率ではありません。"
 }

@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-24T11:36:18+09:00",
-  "method": "候補自身の出典のある過去決算日付とYahoo日足を照合。記事掲載日は実際の発表日と異なる場合がある。",
+  "updated_at": "2026-11-24T11:54:37+09:00",
+  "method": "JPX予定日・Yahoo決算カレンダー・決算短信見出し内の適時開示日から本人の過去実績を取得。記事発信日をそのまま開示日として推定しない。",
   "coverage": {
     "candidates": 15,
     "with_history": 11,
@@ -110,7 +110,7 @@
       "events": [
         {
           "event_date": "2026-09-10",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBrX2ZWMDRRTjZsNEM1SGpxWDFUUTNVbGw1cmtRQUk2YmJrWWNDX0o2Z0t3RlpEWFJadTlvUXltblZRSWNhMFBFejNoQnpLMHpPam1Mdm5wWmNaX1BZZ2ZvLXFzODNQNnIxeEE?oc=5",
           "headline": "共和工業所[5971]：2027年4月期 第1四半期決算短信〔日本基準〕（連結） 2026年9月10日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-09-09",
@@ -232,7 +232,7 @@
       "events": [
         {
           "event_date": "2026-09-07",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1QbEluclRxUlN6UGRtQVVhNjE0T213akNVeE8tZnhQcjMxSDVXbU9id2NCYVNURmQ2TlZDYUY0cUVZY0Zkd3c1Z29hSGlHUXI0UUlpaTQ4TEEwZ2E5cWp6bEpmZUFpX3F4Ync?oc=5",
           "headline": "アイル[3854]：2026年７月期 決算短信〔日本基準〕（連結） 2026年9月7日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-09-04",
@@ -328,7 +328,7 @@
           "next_session_date": "2026-11-17",
           "next_close_pct": -3.33,
           "after_3d_pct": -4.36,
-          "after_5d_pct": -6.31,
+          "after_5d_pct": -6.08,
           "price_source": "Yahoo Finance 日足"
         }
       ],
@@ -387,7 +387,7 @@
       "events": [
         {
           "event_date": "2026-09-07",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9DNl9pSlhwNTY4QUNBZjhfRUxLMEJydEJiYU1FSDRWTHFMNjJJcjZDNWFfMTd4RTZUNDZBM0ZsRWE3WHN3eHRZaTd1dlQ1U0ZoUmFaYlJrdXhFakNoN196QkJ6WE9UblR1WXc?oc=5",
           "headline": "萩原工業[7856]：2026年10月期 第３四半期決算短信〔日本基準〕（連結） 2026年9月7日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-09-04",

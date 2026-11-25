@@ -1,14 +1,14 @@
 {
   "schema": 2,
-  "generated_at": "2026-11-24T13:59:13+09:00",
+  "generated_at": "2026-11-25T12:44:55+09:00",
   "description": "本人過去決算反応、出来高、同業反応、Yahoo EPS60日前比較および証券会社格付け履歴が揃った銘柄だけ表示。取れない項目を0点にしない。Yahooは二次データで証券会社原本未照合。",
-  "research_generated_at": "2026-11-24T10:49:13+09:00",
+  "research_generated_at": "2026-11-25T08:36:28+09:00",
   "coverage": {
-    "screened": 15,
+    "screened": 19,
     "formally_ranked": 0,
-    "own_history_available": 12,
-    "volume_available": 15,
-    "peers_available": 15,
+    "own_history_available": 13,
+    "volume_available": 19,
+    "peers_available": 19,
     "analyst_revision_verified": 0,
     "eps_trend_60d_available": 1,
     "broker_history_available": 0
@@ -169,6 +169,57 @@
       "diagnostics": {}
     },
     {
+      "code": "5132",
+      "name": "ｐｌｕｓｚｅｒｏ",
+      "covered": {
+        "own_earnings_reaction": true,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 1,
+      "peer_events": 27,
+      "eps_60d_available": false,
+      "broker_history_available": false,
+      "eps_up": null,
+      "broker_upgrades": 0,
+      "diagnostics": {}
+    },
+    {
+      "code": "2751",
+      "name": "テンポスホールディングス",
+      "covered": {
+        "own_earnings_reaction": false,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 0,
+      "peer_events": 11,
+      "eps_60d_available": false,
+      "broker_history_available": false,
+      "eps_up": null,
+      "broker_upgrades": 0,
+      "diagnostics": {}
+    },
+    {
+      "code": "7678",
+      "name": "あさくま",
+      "covered": {
+        "own_earnings_reaction": false,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 0,
+      "peer_events": 31,
+      "eps_60d_available": false,
+      "broker_history_available": false,
+      "eps_up": null,
+      "broker_upgrades": 0,
+      "diagnostics": {}
+    },
+    {
       "code": "1873",
       "name": "日本ハウスホールディングス",
       "covered": {
@@ -264,6 +315,23 @@
       },
       "own_events": 0,
       "peer_events": 7,
+      "eps_60d_available": false,
+      "broker_history_available": false,
+      "eps_up": null,
+      "broker_upgrades": 0,
+      "diagnostics": {}
+    },
+    {
+      "code": "2217",
+      "name": "モロゾフ",
+      "covered": {
+        "own_earnings_reaction": false,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 0,
+      "peer_events": 12,
       "eps_60d_available": false,
       "broker_history_available": false,
       "eps_up": null,

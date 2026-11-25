@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-25T08:40:50+09:00",
-  "window_start": "2026-09-25",
-  "window_end": "2026-11-25",
+  "updated_at": "2026-11-26T08:23:32+09:00",
+  "window_start": "2026-09-26",
+  "window_end": "2026-11-26",
   "description": "ニュース見出しを用いた暫定検出。原文の格付け変更・コンセンサス時系列を検証したものではない。目標株価の引き上げ単独では加点しない。",
   "records": [
     {
@@ -105,8 +105,8 @@
       "status": "確認できる上方修正記事なし"
     },
     {
-      "code": "7678",
-      "name": "あさくま",
+      "code": "1873",
+      "name": "日本ハウスホールディングス",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,
@@ -114,8 +114,8 @@
       "status": "確認できる上方修正記事なし"
     },
     {
-      "code": "1873",
-      "name": "日本ハウスホールディングス",
+      "code": "7678",
+      "name": "あさくま",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,
@@ -161,6 +161,15 @@
     {
       "code": "4238",
       "name": "ミライアル",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
+      "code": "7777",
+      "name": "スリー・ディー・マトリックス",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,

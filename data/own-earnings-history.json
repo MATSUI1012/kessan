@@ -1,23 +1,18 @@
 {
-  "schema": 4,
-  "updated_at": "2026-11-24T12:58:44+09:00",
+  "schema": 1,
+  "updated_at": "2026-11-25T09:08:44+09:00",
+  "method": "候補自身の出典のある過去決算日付とYahoo日足を照合。記事掲載日は実際の発表日と異なる場合がある。",
   "coverage": {
-    "candidates": 15,
-    "with_history": 11,
-    "events": 22,
-    "new_events": 0
+    "candidates": 19,
+    "with_history": 12,
+    "events": 23
   },
-  "method": "IR BANK決算短信の開示履歴に明記された日付とYahoo日足を照合。未確認は推測しない。",
   "records": [
     {
       "code": "1436",
       "name": "グリーンエナジー＆カンパニー",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/1436/ir: HTTP 403",
-        "https://irbank.net/1436: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "2910",
@@ -107,11 +102,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/2910/ir: HTTP 403",
-        "https://irbank.net/2910: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "5971",
@@ -131,11 +122,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/5971/ir: HTTP 403",
-        "https://irbank.net/5971: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "2590",
@@ -182,11 +169,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/2590/ir: HTTP 403",
-        "https://irbank.net/2590: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "4369",
@@ -207,11 +190,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/4369/ir: HTTP 403",
-        "https://irbank.net/4369: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "3031",
@@ -245,11 +224,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/3031/ir: HTTP 403",
-        "https://irbank.net/3031: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "3854",
@@ -269,31 +244,51 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/3854/ir: HTTP 403",
-        "https://irbank.net/3854: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "6387",
       "name": "サムコ",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/6387/ir: HTTP 403",
-        "https://irbank.net/6387: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "3180",
       "name": "ビューティガレージ",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/3180/ir: HTTP 403",
-        "https://irbank.net/3180: HTTP 403"
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "5132",
+      "name": "ｐｌｕｓｚｅｒｏ",
+      "events": [
+        {
+          "event_date": "2026-09-09",
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBuUmktOVpxQmppek9pZ0tBS0FJT2RSWi1KZGtyMUduSFY0SWtwMFlHNXp3aXlxQTFra1pwQWVlUkgzZ2VfR2l5S19PWjFNQklhbVNvb3Z6ZmpiNzF6alZ0M3JuUTIyYzBDRkE?oc=5",
+          "headline": "ｐｌｕｓｚｅｒｏ[5132]：2026年10月期第３四半期決算短信〔日本基準〕(非連結) 2026年9月9日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-09-08",
+          "baseline_close": 2121.0,
+          "next_session_date": "2026-09-10",
+          "next_close_pct": -13.44,
+          "after_3d_pct": -8.77,
+          "after_5d_pct": -7.54,
+          "price_source": "Yahoo Finance 日足"
+        }
       ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
+    },
+    {
+      "code": "2751",
+      "name": "テンポスホールディングス",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "7678",
+      "name": "あさくま",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "1873",
@@ -327,11 +322,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/1873/ir: HTTP 403",
-        "https://irbank.net/1873: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "3329",
@@ -352,11 +343,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/3329/ir: HTTP 403",
-        "https://irbank.net/3329: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "3662",
@@ -373,15 +360,11 @@
           "next_session_date": "2026-11-17",
           "next_close_pct": -3.33,
           "after_3d_pct": -4.36,
-          "after_5d_pct": -6.08,
+          "after_5d_pct": -5.39,
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/3662/ir: HTTP 403",
-        "https://irbank.net/3662: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "6040",
@@ -428,11 +411,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/6040/ir: HTTP 403",
-        "https://irbank.net/6040: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "7856",
@@ -452,21 +431,19 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/7856/ir: HTTP 403",
-        "https://irbank.net/7856: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "4238",
       "name": "ミライアル",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/4238/ir: HTTP 403",
-        "https://irbank.net/4238: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "2217",
+      "name": "モロゾフ",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
     }
   ]
 }

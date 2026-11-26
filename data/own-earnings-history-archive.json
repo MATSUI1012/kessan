@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-25T11:59:26+09:00",
+  "updated_at": "2026-11-26T11:08:02+09:00",
   "method": "過去の出典付き本人決算履歴とJPX予定日を日付別に蓄積。実際の決算発表時刻は未確認。",
   "coverage": {
-    "companies": 1490,
-    "events": 1786
+    "companies": 1493,
+    "events": 1789
   },
   "records": [
     {
@@ -15011,6 +15011,21 @@
       ]
     },
     {
+      "code": "6524",
+      "name": "湖北工業",
+      "events": [
+        {
+          "event_date": "2026-11-12",
+          "next_close_pct": -7.05,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-11",
+          "next_session_date": "2026-11-13",
+          "price_source": "Yahoo Finance 日足"
+        }
+      ]
+    },
+    {
       "code": "6533",
       "name": "Ｏｒｃｈｅｓｔｒａ　Ｈｏｌｄｉｎｇｓ",
       "events": [
@@ -16367,6 +16382,21 @@
       ]
     },
     {
+      "code": "6877",
+      "name": "ＯＢＡＲＡ　ＧＲＯＵＰ",
+      "events": [
+        {
+          "event_date": "2026-11-13",
+          "next_close_pct": 10.89,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-12",
+          "next_session_date": "2026-11-16",
+          "price_source": "Yahoo Finance 日足"
+        }
+      ]
+    },
+    {
       "code": "6882",
       "name": "三社電機製作所",
       "events": [
@@ -17263,6 +17293,21 @@
           "baseline_date": null,
           "next_session_date": null,
           "price_source": "Yahoo Finance / 保存済み日足"
+        }
+      ]
+    },
+    {
+      "code": "7157",
+      "name": "ライフネット生命保険",
+      "events": [
+        {
+          "event_date": "2026-11-12",
+          "next_close_pct": -4.96,
+          "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1009.xlsx",
+          "date_kind": "JPX決算発表予定日（発表時刻未確認）",
+          "baseline_date": "2026-11-11",
+          "next_session_date": "2026-11-13",
+          "price_source": "Yahoo Finance 日足"
         }
       ]
     },

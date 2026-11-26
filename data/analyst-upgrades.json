@@ -1,10 +1,19 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-26T08:23:32+09:00",
-  "window_start": "2026-09-26",
-  "window_end": "2026-11-26",
+  "updated_at": "2026-11-27T08:23:38+09:00",
+  "window_start": "2026-09-27",
+  "window_end": "2026-11-27",
   "description": "ニュース見出しを用いた暫定検出。原文の格付け変更・コンセンサス時系列を検証したものではない。目標株価の引き上げ単独では加点しない。",
   "records": [
+    {
+      "code": "4369",
+      "name": "トリケミカル研究所",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
     {
       "code": "1436",
       "name": "グリーンエナジー＆カンパニー",
@@ -24,26 +33,8 @@
       "status": "確認できる上方修正記事なし"
     },
     {
-      "code": "5971",
-      "name": "共和工業所",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
-      "code": "2590",
-      "name": "ダイドーグループホールディングス",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
-      "code": "4369",
-      "name": "トリケミカル研究所",
+      "code": "2751",
+      "name": "テンポスホールディングス",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,
@@ -87,17 +78,8 @@
       "status": "確認できる上方修正記事なし"
     },
     {
-      "code": "5132",
-      "name": "ｐｌｕｓｚｅｒｏ",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
-      "code": "2751",
-      "name": "テンポスホールディングス",
+      "code": "3491",
+      "name": "ＧＡ　ｔｅｃｈｎｏｌｏｇｉｅｓ",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,
@@ -114,8 +96,26 @@
       "status": "確認できる上方修正記事なし"
     },
     {
+      "code": "6040",
+      "name": "日本スキー場開発",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
       "code": "7678",
       "name": "あさくま",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
+      "code": "5132",
+      "name": "ｐｌｕｓｚｅｒｏ",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,
@@ -141,8 +141,8 @@
       "status": "確認できる上方修正記事なし"
     },
     {
-      "code": "6040",
-      "name": "日本スキー場開発",
+      "code": "7856",
+      "name": "萩原工業",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,
@@ -150,8 +150,8 @@
       "status": "確認できる上方修正記事なし"
     },
     {
-      "code": "7856",
-      "name": "萩原工業",
+      "code": "5971",
+      "name": "共和工業所",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,

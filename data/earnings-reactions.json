@@ -1,13 +1,31 @@
 {
-  "schema": 2,
-  "description": "TDnet決算短信の掲載日付近の終値反応。開示時刻未確認、決算による因果効果や上昇確率は示さない。",
+  "schema": 1,
+  "description": "決算カレンダー日付付近の終値反応。実際の発表時刻未検証であり、決算による因果効果・上昇確率ではありません。",
   "sources": [
-    "TDnet決算短信開示一覧（掲載日）",
-    "既存の出典付き履歴"
+    "JPX保存済み発表予定日",
+    "Yahoo Finance決算カレンダー日付（取得可能な銘柄のみ）"
   ],
-  "event_date_count": 10,
-  "with_reactions": 3,
+  "event_date_count": 5,
+  "with_reactions": 2,
   "records": [
+    {
+      "code": "4369",
+      "name": "トリケミカル研究所",
+      "reactions": [
+        {
+          "event_date": "2026-03-13",
+          "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
+          "source_url": "https://finance.yahoo.com/quote/4369.T/analysis/",
+          "baseline_date": "2026-03-12",
+          "baseline_close": 3130.0,
+          "after_1d_date": "2026-03-16",
+          "after_1d_pct": -16.71,
+          "after_3d_pct": -11.92,
+          "after_5d_pct": -16.9,
+          "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
+        }
+      ]
+    },
     {
       "code": "2910",
       "name": "ロック・フィールド",
@@ -68,80 +86,8 @@
       "reactions": []
     },
     {
-      "code": "2590",
-      "name": "ダイドーグループホールディングス",
-      "reactions": [
-        {
-          "event_date": "2026-08-27",
-          "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
-          "source_url": "https://finance.yahoo.com/quote/2590.T/analysis/",
-          "baseline_date": "2026-08-26",
-          "baseline_close": 3050.0,
-          "after_1d_date": "2026-08-28",
-          "after_1d_pct": 1.31,
-          "after_3d_pct": -2.07,
-          "after_5d_pct": -2.2,
-          "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
-        },
-        {
-          "event_date": "2026-05-25",
-          "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
-          "source_url": "https://finance.yahoo.com/quote/2590.T/analysis/",
-          "baseline_date": "2026-05-22",
-          "baseline_close": 2551.0,
-          "after_1d_date": "2026-05-26",
-          "after_1d_pct": -1.65,
-          "after_3d_pct": 2.59,
-          "after_5d_pct": 0.67,
-          "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
-        },
-        {
-          "event_date": "2026-03-03",
-          "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
-          "source_url": "https://finance.yahoo.com/quote/2590.T/analysis/",
-          "baseline_date": "2026-03-02",
-          "baseline_close": 2610.0,
-          "after_1d_date": "2026-03-04",
-          "after_1d_pct": -3.6,
-          "after_3d_pct": 6.93,
-          "after_5d_pct": 11.57,
-          "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
-        },
-        {
-          "event_date": "2025-11-26",
-          "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
-          "source_url": "https://finance.yahoo.com/quote/2590.T/analysis/",
-          "baseline_date": "2025-11-25",
-          "baseline_close": 2504.0,
-          "after_1d_date": "2025-11-27",
-          "after_1d_pct": -0.72,
-          "after_3d_pct": 2.48,
-          "after_5d_pct": -0.36,
-          "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
-        }
-      ]
-    },
-    {
-      "code": "4369",
-      "name": "トリケミカル研究所",
-      "reactions": [
-        {
-          "event_date": "2026-03-13",
-          "date_kind": "Yahoo決算カレンダー日付（発表時刻未確認）",
-          "source_url": "https://finance.yahoo.com/quote/4369.T/analysis/",
-          "baseline_date": "2026-03-12",
-          "baseline_close": 3130.0,
-          "after_1d_date": "2026-03-16",
-          "after_1d_pct": -16.71,
-          "after_3d_pct": -11.92,
-          "after_5d_pct": -16.9,
-          "method": "予定/カレンダー日付の前営業日終値から、日付後の1/3/5営業日終値まで。発表当日の終値は不使用。発表時刻は未確認。"
-        }
-      ]
-    },
-    {
-      "code": "5971",
-      "name": "共和工業所",
+      "code": "2751",
+      "name": "テンポスホールディングス",
       "reactions": []
     },
     {
@@ -165,13 +111,13 @@
       "reactions": []
     },
     {
-      "code": "5132",
-      "name": "ｐｌｕｓｚｅｒｏ",
+      "code": "1873",
+      "name": "日本ハウスホールディングス",
       "reactions": []
     },
     {
-      "code": "2751",
-      "name": "テンポスホールディングス",
+      "code": "6040",
+      "name": "日本スキー場開発",
       "reactions": []
     },
     {
@@ -180,8 +126,13 @@
       "reactions": []
     },
     {
-      "code": "1873",
-      "name": "日本ハウスホールディングス",
+      "code": "5132",
+      "name": "ｐｌｕｓｚｅｒｏ",
+      "reactions": []
+    },
+    {
+      "code": "3491",
+      "name": "ＧＡ　ｔｅｃｈｎｏｌｏｇｉｅｓ",
       "reactions": []
     },
     {
@@ -195,13 +146,13 @@
       "reactions": []
     },
     {
-      "code": "6040",
-      "name": "日本スキー場開発",
+      "code": "7856",
+      "name": "萩原工業",
       "reactions": []
     },
     {
-      "code": "7856",
-      "name": "萩原工業",
+      "code": "5971",
+      "name": "共和工業所",
       "reactions": []
     },
     {
@@ -220,12 +171,5 @@
       "reactions": []
     }
   ],
-  "generated_at": "2026-11-26T06:59:02+09:00",
-  "tdnet_days_requested": 176,
-  "tdnet_days_parsed": 0,
-  "tdnet_events_found": 0,
-  "tdnet_scan_diagnostics": {
-    "missing": 176,
-    "parsed": 0
-  }
+  "generated_at": "2026-11-27T06:28:25+09:00"
 }

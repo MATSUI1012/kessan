@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T04:40:05+09:00",
+  "generated_at": "2026-11-28T07:52:22+09:00",
   "schema": 1,
   "screening": {
     "days_ahead": 14,
@@ -34,24 +34,14 @@
         "analyst_count": 2,
         "period": "0q"
       },
-      "prior_reactions": [
-        {
-          "event_date": "2026-03-13",
-          "after_1d_pct": -16.71,
-          "after_3d_pct": -11.92,
-          "after_5d_pct": -16.9,
-          "eps_estimate": 43.77,
-          "eps_actual": 45.96,
-          "eps_surprise_pct": 5.0,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        }
-      ],
+      "prior_reactions": [],
       "sources": {
         "fundamentals": "https://finance.yahoo.com/quote/4369.T/financials/",
         "estimates": "https://finance.yahoo.com/quote/4369.T/analysis/"
       },
       "missing_data": [
-        "Only TTM revenue available; quarterly year-on-year change unknown"
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
       ],
       "news": [
         {
@@ -79,7 +69,7 @@
           "published_at": "2026-11-27T19:40+09:00"
         }
       ],
-      "research_priority_score": 4,
+      "research_priority_score": 3,
       "signals": [
         {
           "label": "直近出来高が増加（5日平均/前20日平均）",
@@ -88,119 +78,9 @@
         {
           "label": "担当アナリスト数を確認できる市場予想あり",
           "points": 1
-        },
-        {
-          "label": "過去決算日付近の株価反応データあり",
-          "points": 1
         }
       ],
-      "evidence_count": 4,
-      "daily_turnover_to_market_cap_ratio": 0.019,
-      "quality_flags": [],
-      "quality_review_required": false
-    },
-    {
-      "code": "2910",
-      "name": "ロック・フィールド",
-      "earnings_date": "2026-12-04",
-      "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan10_1120.xlsx",
-      "market_cap_yen": 36962832438,
-      "price_date": "2026-11-26",
-      "close": 1415.0,
-      "turnover_oku": 0.83,
-      "avg_turnover_20_oku": 1.35,
-      "volume_ratio_5_20": 0.37,
-      "return_5d": 2.98,
-      "return_20d": 3.28,
-      "financials": {
-        "revenue_yen": 51299999744,
-        "period_type": "ttm",
-        "latest_period": null,
-        "data_source": "Yahoo Finance TTM summary, not company IR",
-        "revenue_yoy_pct": null,
-        "operating_income_yoy_pct": null
-      },
-      "analyst_consensus": {
-        "revenue_mean_yen": 12895000000,
-        "analyst_count": 1,
-        "period": "0q"
-      },
-      "prior_reactions": [
-        {
-          "event_date": "2026-09-03",
-          "after_1d_pct": 2.41,
-          "after_3d_pct": -0.85,
-          "after_5d_pct": -1.77,
-          "eps_estimate": 2.87,
-          "eps_actual": 3.8,
-          "eps_surprise_pct": 32.4,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        },
-        {
-          "event_date": "2026-06-10",
-          "after_1d_pct": 0.8,
-          "after_3d_pct": 3.11,
-          "after_5d_pct": 1.04,
-          "eps_estimate": -8.34,
-          "eps_actual": -8.38,
-          "eps_surprise_pct": null,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        },
-        {
-          "event_date": "2026-03-06",
-          "after_1d_pct": 1.5,
-          "after_3d_pct": -0.57,
-          "after_5d_pct": -2.99,
-          "eps_estimate": 13.4,
-          "eps_actual": 16.01,
-          "eps_surprise_pct": 19.48,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        },
-        {
-          "event_date": "2025-12-05",
-          "after_1d_pct": -2.08,
-          "after_3d_pct": -4.09,
-          "after_5d_pct": -5.1,
-          "eps_estimate": 6.53,
-          "eps_actual": -3.43,
-          "eps_surprise_pct": -152.53,
-          "method": "前営業日終値→発表日後の各営業日終値（時刻未調整）"
-        }
-      ],
-      "sources": {
-        "fundamentals": "https://finance.yahoo.com/quote/2910.T/financials/",
-        "estimates": "https://finance.yahoo.com/quote/2910.T/analysis/"
-      },
-      "missing_data": [
-        "Only TTM revenue available; quarterly year-on-year change unknown"
-      ],
-      "news": [
-        {
-          "title": "来週の株式相場に向けて＝日本株は「大底」を打ったのか、次はＦＯＭＣ巡る動向注視 - 株探",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4yX3FqU0ljZnRUX3pjenNyNlhKd2Q1c2FRNHp0d2lic0Z1dGJyQ1JyTkRCUDdGa3NaRVNDMkVHdVpPTFBVUXU1M29zMzRWa1dyZmdWeUlVNXVUMHVPOElSLQ?oc=5",
-          "source": "株探",
-          "published_at": "2026-11-27T17:47+09:00"
-        }
-      ],
-      "research_priority_score": 3,
-      "signals": [
-        {
-          "label": "20営業日で緩やかな上昇",
-          "points": 1
-        },
-        {
-          "label": "担当アナリスト数を確認できる市場予想あり",
-          "points": 1
-        },
-        {
-          "label": "過去決算のEPS予想超過が確認できる",
-          "points": 1
-        }
-      ],
-      "evidence_count": 4,
-      "daily_turnover_to_market_cap_ratio": 0.002,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "1436",
@@ -256,10 +136,63 @@
           "points": 1
         }
       ],
-      "evidence_count": 3,
-      "daily_turnover_to_market_cap_ratio": 0.004,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
+    },
+    {
+      "code": "2910",
+      "name": "ロック・フィールド",
+      "earnings_date": "2026-12-04",
+      "earnings_source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan10_1120.xlsx",
+      "market_cap_yen": 36962832438,
+      "price_date": "2026-11-26",
+      "close": 1415.0,
+      "turnover_oku": 0.83,
+      "avg_turnover_20_oku": 1.35,
+      "volume_ratio_5_20": 0.37,
+      "return_5d": 2.98,
+      "return_20d": 3.28,
+      "financials": {
+        "revenue_yen": 51299999744,
+        "period_type": "ttm",
+        "latest_period": null,
+        "data_source": "Yahoo Finance TTM summary, not company IR",
+        "revenue_yoy_pct": null,
+        "operating_income_yoy_pct": null
+      },
+      "analyst_consensus": {
+        "revenue_mean_yen": 12895000000,
+        "analyst_count": 1,
+        "period": "0q"
+      },
+      "prior_reactions": [],
+      "sources": {
+        "fundamentals": "https://finance.yahoo.com/quote/2910.T/financials/",
+        "estimates": "https://finance.yahoo.com/quote/2910.T/analysis/"
+      },
+      "missing_data": [
+        "Only TTM revenue available; quarterly year-on-year change unknown",
+        "Historical earnings dates or surrounding daily price data unavailable"
+      ],
+      "news": [
+        {
+          "title": "来週の株式相場に向けて＝日本株は「大底」を打ったのか、次はＦＯＭＣ巡る動向注視 - 株探",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4yX3FqU0ljZnRUX3pjenNyNlhKd2Q1c2FRNHp0d2lic0Z1dGJyQ1JyTkRCUDdGa3NaRVNDMkVHdVpPTFBVUXU1M29zMzRWa1dyZmdWeUlVNXVUMHVPOElSLQ?oc=5",
+          "source": "株探",
+          "published_at": "2026-11-27T17:47+09:00"
+        }
+      ],
+      "research_priority_score": 2,
+      "signals": [
+        {
+          "label": "20営業日で緩やかな上昇",
+          "points": 1
+        },
+        {
+          "label": "担当アナリスト数を確認できる市場予想あり",
+          "points": 1
+        }
+      ],
+      "evidence_count": 3
     },
     {
       "code": "2751",
@@ -315,10 +248,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 3,
-      "daily_turnover_to_market_cap_ratio": 0.0,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "5971",
@@ -359,10 +289,7 @@
           "points": 2
         }
       ],
-      "evidence_count": 1,
-      "daily_turnover_to_market_cap_ratio": 0.001,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 1
     },
     {
       "code": "3031",
@@ -420,10 +347,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 3,
-      "daily_turnover_to_market_cap_ratio": 0.003,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "3854",
@@ -487,10 +411,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 3,
-      "daily_turnover_to_market_cap_ratio": 0.003,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "6387",
@@ -548,10 +469,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 3,
-      "daily_turnover_to_market_cap_ratio": 0.011,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "3180",
@@ -603,10 +521,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 3,
-      "daily_turnover_to_market_cap_ratio": 0.001,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "3491",
@@ -670,10 +585,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 3,
-      "daily_turnover_to_market_cap_ratio": 0.012,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 3
     },
     {
       "code": "1873",
@@ -727,10 +639,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.005,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "6040",
@@ -790,10 +699,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.0,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "7678",
@@ -841,10 +747,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.002,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "5132",
@@ -889,10 +792,7 @@
           "points": 1
         }
       ],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.003,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "3329",
@@ -947,10 +847,7 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.001,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "3662",
@@ -993,10 +890,7 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.005,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "7856",
@@ -1039,10 +933,7 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.003,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "7777",
@@ -1097,10 +988,7 @@
       ],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 2,
-      "daily_turnover_to_market_cap_ratio": 0.013,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 2
     },
     {
       "code": "4238",
@@ -1136,10 +1024,7 @@
       "news": [],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 1,
-      "daily_turnover_to_market_cap_ratio": 0.007,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 1
     },
     {
       "code": "2217",
@@ -1175,23 +1060,9 @@
       "news": [],
       "research_priority_score": 0,
       "signals": [],
-      "evidence_count": 1,
-      "daily_turnover_to_market_cap_ratio": 0.001,
-      "quality_flags": [],
-      "quality_review_required": false
+      "evidence_count": 1
     }
   ],
   "count": 20,
-  "method": "Research PRIORITY only; no probability of an earnings beat. TTM revenue is not quarterly results. Prior reactions, if any, are based on historical JPX scheduled dates, not verified disclosure times.",
-  "coverage": {
-    "screened": 20,
-    "official_ir_verified": 0,
-    "quarterly_or_annual_yahoo": 0,
-    "ttm_reference_only": 20,
-    "market_analyst_estimates": 10,
-    "historical_scheduled_event_reactions": 2,
-    "news_links": 16
-  },
-  "quality_review_count": 0,
-  "quality_rule": "Heuristic only. Large turnover/volume/returns are not proof of bad data, good earnings or stock-split."
+  "method": "調査優先度は公開価格・出来高・取得できた四半期業績等のみ。買い推奨や決算予測確率ではありません。"
 }

@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-27T08:23:38+09:00",
-  "window_start": "2026-09-27",
-  "window_end": "2026-11-27",
+  "updated_at": "2026-11-28T08:02:12+09:00",
+  "window_start": "2026-09-28",
+  "window_end": "2026-11-28",
   "description": "ニュース見出しを用いた暫定検出。原文の格付け変更・コンセンサス時系列を検証したものではない。目標株価の引き上げ単独では加点しない。",
   "records": [
     {
@@ -35,6 +35,15 @@
     {
       "code": "2751",
       "name": "テンポスホールディングス",
+      "events": [],
+      "rating_upgrade_points": 0,
+      "consensus_revision_points": 0,
+      "score": 0,
+      "status": "確認できる上方修正記事なし"
+    },
+    {
+      "code": "5971",
+      "name": "共和工業所",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,
@@ -150,8 +159,8 @@
       "status": "確認できる上方修正記事なし"
     },
     {
-      "code": "5971",
-      "name": "共和工業所",
+      "code": "7777",
+      "name": "スリー・ディー・マトリックス",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,
@@ -161,15 +170,6 @@
     {
       "code": "4238",
       "name": "ミライアル",
-      "events": [],
-      "rating_upgrade_points": 0,
-      "consensus_revision_points": 0,
-      "score": 0,
-      "status": "確認できる上方修正記事なし"
-    },
-    {
-      "code": "7777",
-      "name": "スリー・ディー・マトリックス",
       "events": [],
       "rating_upgrade_points": 0,
       "consensus_revision_points": 0,

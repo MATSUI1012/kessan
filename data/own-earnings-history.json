@@ -1,13 +1,12 @@
 {
-  "schema": 4,
-  "updated_at": "2026-11-27T10:47:43+09:00",
+  "schema": 1,
+  "updated_at": "2026-11-28T08:44:48+09:00",
+  "method": "候補自身の出典のある過去決算日付とYahoo日足を照合。記事掲載日は実際の発表日と異なる場合がある。",
   "coverage": {
     "candidates": 20,
     "with_history": 11,
-    "events": 20,
-    "new_events": 0
+    "events": 20
   },
-  "method": "IR BANK決算短信の開示履歴に明記された日付とYahoo日足を照合。未確認は推測しない。",
   "records": [
     {
       "code": "4369",
@@ -28,21 +27,13 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/4369/ir: HTTP 403",
-        "https://irbank.net/4369: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "1436",
       "name": "グリーンエナジー＆カンパニー",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/1436/ir: HTTP 403",
-        "https://irbank.net/1436: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "2910",
@@ -116,37 +107,35 @@
           "after_3d_pct": -3.82,
           "after_5d_pct": -4.07,
           "price_source": "Yahoo Finance 日足"
-        },
-        {
-          "event_date": "2025-06-10",
-          "date_kind": "IR BANK決算短信掲載一覧の日付（発表時刻未確認）",
-          "source_url": "https://irbank.net/2910/140120250609585398",
-          "headline": "2025年4月期決算短信〔日本基準〕(連結)",
-          "discovered_via": "IR BANK 銘柄別開示一覧",
-          "baseline_date": "2025-06-09",
-          "baseline_close": 1486.0,
-          "next_session_date": "2025-06-11",
-          "next_close_pct": -3.5,
-          "after_3d_pct": -1.35,
-          "after_5d_pct": -0.4,
-          "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/2910/ir: HTTP 403",
-        "https://irbank.net/2910: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "2751",
       "name": "テンポスホールディングス",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/2751/ir: HTTP 403",
-        "https://irbank.net/2751: HTTP 403"
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "5971",
+      "name": "共和工業所",
+      "events": [
+        {
+          "event_date": "2026-09-10",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBrX2ZWMDRRTjZsNEM1SGpxWDFUUTNVbGw1cmtRQUk2YmJrWWNDX0o2Z0t3RlpEWFJadTlvUXltblZRSWNhMFBFejNoQnpLMHpPam1Mdm5wWmNaX1BZZ2ZvLXFzODNQNnIxeEE?oc=5",
+          "headline": "共和工業所[5971]：2027年4月期 第1四半期決算短信〔日本基準〕（連結） 2026年9月10日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-09-09",
+          "baseline_close": 8700.0,
+          "next_session_date": "2026-09-11",
+          "next_close_pct": -3.33,
+          "after_3d_pct": -0.46,
+          "after_5d_pct": -0.57,
+          "price_source": "Yahoo Finance 日足"
+        }
       ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "3031",
@@ -180,11 +169,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/3031/ir: HTTP 403",
-        "https://irbank.net/3031: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "3854",
@@ -204,41 +189,25 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/3854/ir: HTTP 403",
-        "https://irbank.net/3854: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "6387",
       "name": "サムコ",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/6387/ir: HTTP 403",
-        "https://irbank.net/6387: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "3180",
       "name": "ビューティガレージ",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/3180/ir: HTTP 403",
-        "https://irbank.net/3180: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "3491",
       "name": "ＧＡ　ｔｅｃｈｎｏｌｏｇｉｅｓ",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/3491/ir: HTTP 403",
-        "https://irbank.net/3491: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "1873",
@@ -270,13 +239,22 @@
           "after_3d_pct": -5.57,
           "after_5d_pct": -6.5,
           "price_source": "Yahoo Finance 日足"
+        },
+        {
+          "event_date": "2026-06-12",
+          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9CbEF3bzdRdVRvLVR3NEhOS3QzLXk0VUUySzVFMTd1UW1ZNy0yaUo2eElpMG9KMGlIalhiMmdMdlNuenR4SEdXTlpfUmJIeEtOZmFmbm5WVnE0YmdiQlIzSmJ0T3pObFdxeFE?oc=5",
+          "headline": "日本ハウスホールディングス[1873]：2026年４月期決算短信〔日本基準〕（連結） 2026年6月12日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-06-11",
+          "baseline_close": 295.0,
+          "next_session_date": "2026-06-15",
+          "next_close_pct": 3.39,
+          "after_3d_pct": 2.71,
+          "after_5d_pct": 3.39,
+          "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/1873/ir: HTTP 403",
-        "https://irbank.net/1873: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "6040",
@@ -323,21 +301,13 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/6040/ir: HTTP 403",
-        "https://irbank.net/6040: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "7678",
       "name": "あさくま",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/7678/ir: HTTP 403",
-        "https://irbank.net/7678: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "5132",
@@ -357,11 +327,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/5132/ir: HTTP 403",
-        "https://irbank.net/5132: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "3329",
@@ -382,11 +348,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/3329/ir: HTTP 403",
-        "https://irbank.net/3329: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "3662",
@@ -407,11 +369,7 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/3662/ir: HTTP 403",
-        "https://irbank.net/3662: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "7856",
@@ -431,65 +389,25 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "archive_diagnostics": [
-        "https://irbank.net/7856/ir: HTTP 403",
-        "https://irbank.net/7856: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "5971",
-      "name": "共和工業所",
-      "events": [
-        {
-          "event_date": "2026-09-10",
-          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
-          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBrX2ZWMDRRTjZsNEM1SGpxWDFUUTNVbGw1cmtRQUk2YmJrWWNDX0o2Z0t3RlpEWFJadTlvUXltblZRSWNhMFBFejNoQnpLMHpPam1Mdm5wWmNaX1BZZ2ZvLXFzODNQNnIxeEE?oc=5",
-          "headline": "共和工業所[5971]：2027年4月期 第1四半期決算短信〔日本基準〕（連結） 2026年9月10日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-          "baseline_date": "2026-09-09",
-          "baseline_close": 8700.0,
-          "next_session_date": "2026-09-11",
-          "next_close_pct": -3.33,
-          "after_3d_pct": -0.46,
-          "after_5d_pct": -0.57,
-          "price_source": "Yahoo Finance 日足"
-        }
-      ],
-      "archive_diagnostics": [
-        "https://irbank.net/5971/ir: HTTP 403",
-        "https://irbank.net/5971: HTTP 403"
-      ],
-      "new_events": 0
-    },
-    {
-      "code": "4238",
-      "name": "ミライアル",
-      "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/4238/ir: HTTP 403",
-        "https://irbank.net/4238: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "7777",
       "name": "スリー・ディー・マトリックス",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/7777/ir: HTTP 403",
-        "https://irbank.net/7777: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
+    },
+    {
+      "code": "4238",
+      "name": "ミライアル",
+      "events": [],
+      "status": "過去発表日または対応する株価が未取得"
     },
     {
       "code": "2217",
       "name": "モロゾフ",
       "events": [],
-      "archive_diagnostics": [
-        "https://irbank.net/2217/ir: HTTP 403",
-        "https://irbank.net/2217: HTTP 403"
-      ],
-      "new_events": 0
+      "status": "過去発表日または対応する株価が未取得"
     }
   ]
 }

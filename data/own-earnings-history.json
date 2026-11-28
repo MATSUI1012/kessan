@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-28T08:44:48+09:00",
-  "method": "候補自身の出典のある過去決算日付とYahoo日足を照合。記事掲載日は実際の発表日と異なる場合がある。",
+  "updated_at": "2026-11-28T09:03:52+09:00",
+  "method": "JPX予定日・Yahoo決算カレンダー・決算短信見出し内の適時開示日から本人の過去実績を取得。記事発信日をそのまま開示日として推定しない。",
   "coverage": {
     "candidates": 20,
-    "with_history": 11,
-    "events": 20
+    "with_history": 12,
+    "events": 21
   },
   "records": [
     {
@@ -194,8 +194,22 @@
     {
       "code": "6387",
       "name": "サムコ",
-      "events": [],
-      "status": "過去発表日または対応する株価が未取得"
+      "events": [
+        {
+          "event_date": "2026-09-14",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
+          "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBZdTFYYkhBN3dpQS0wN0NhbW0tbVhOVmZaazFmcjY2UmxvMDZOQ2hja3NzWDVzYjdCcThkR2FXV2VxWXdXRmhfb2JPSHBEOFhEU0VjRmVIZ1U4eDV0ZXdVbUxfeU4tVDF1b1E?oc=5",
+          "headline": "サムコ[6387]：2026年７月期 決算短信〔日本基準〕（非連結） 2026年9月14日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+          "baseline_date": "2026-09-11",
+          "baseline_close": 8020.0,
+          "next_session_date": "2026-09-15",
+          "next_close_pct": -4.36,
+          "after_3d_pct": -7.86,
+          "after_5d_pct": -0.75,
+          "price_source": "Yahoo Finance 日足"
+        }
+      ],
+      "status": "過去日付と翌営業日の終値を照合"
     },
     {
       "code": "3180",
@@ -242,7 +256,7 @@
         },
         {
           "event_date": "2026-06-12",
-          "date_kind": "決算短信ニュース掲載日（実際の開示日時未確認）",
+          "date_kind": "決算短信の見出しに記載された適時開示日（発表時刻未確認）",
           "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9CbEF3bzdRdVRvLVR3NEhOS3QzLXk0VUUySzVFMTd1UW1ZNy0yaUo2eElpMG9KMGlIalhiMmdMdlNuenR4SEdXTlpfUmJIeEtOZmFmbm5WVnE0YmdiQlIzSmJ0T3pObFdxeFE?oc=5",
           "headline": "日本ハウスホールディングス[1873]：2026年４月期決算短信〔日本基準〕（連結） 2026年6月12日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
           "baseline_date": "2026-06-11",

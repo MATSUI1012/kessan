@@ -1,11 +1,12 @@
 {
-  "schema": 2,
-  "updated_at": "2026-11-28T09:31:19+09:00",
-  "method": "複数のニュースRSS、JPX決算予定日、Yahoo決算カレンダーの出典日付を株価と照合。単なる記事配信日から開示日を推定しない。",
+  "schema": 3,
+  "updated_at": "2026-11-28T09:42:23+09:00",
+  "method": "IR BANKの銘柄別開示一覧で決算短信の行に記載された日付とYahoo日足を照合。日付や終値が未確認なら過去履歴を保持しつつ加点しない。",
   "coverage": {
     "candidates": 20,
     "with_history": 12,
-    "events": 21
+    "events": 21,
+    "new_events": 0
   },
   "records": [
     {
@@ -27,21 +28,23 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 2
-      }
+      "status": "決算短信の日付と終値照合済",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "1436",
       "name": "グリーンエナジー＆カンパニー",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去の決算日時・株価を確認できず",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "2910",
@@ -117,21 +120,23 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 2,
-        "rss_failures": 1
-      }
+      "status": "決算短信の日付と終値照合済",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "2751",
       "name": "テンポスホールディングス",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 1
-      }
+      "status": "過去の決算日時・株価を確認できず",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "5971",
@@ -151,11 +156,12 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 3,
-        "rss_failures": 0
-      }
+      "status": "決算短信の日付と終値照合済",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "3031",
@@ -189,11 +195,12 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 3,
-        "rss_failures": 0
-      }
+      "status": "決算短信の日付と終値照合済",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "3854",
@@ -213,11 +220,12 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 3,
-        "rss_failures": 0
-      }
+      "status": "決算短信の日付と終値照合済",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "6387",
@@ -237,31 +245,34 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 2,
-        "rss_failures": 1
-      }
+      "status": "決算短信の日付と終値照合済",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "3180",
       "name": "ビューティガレージ",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 1
-      }
+      "status": "過去の決算日時・株価を確認できず",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "3491",
       "name": "ＧＡ　ｔｅｃｈｎｏｌｏｇｉｅｓ",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去の決算日時・株価を確認できず",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "1873",
@@ -308,11 +319,12 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 5,
-        "rss_failures": 0
-      }
+      "status": "決算短信の日付と終値照合済",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "6040",
@@ -359,21 +371,23 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 2,
-        "rss_failures": 1
-      }
+      "status": "決算短信の日付と終値照合済",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "7678",
       "name": "あさくま",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去の決算日時・株価を確認できず",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "5132",
@@ -393,11 +407,12 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 3,
-        "rss_failures": 0
-      }
+      "status": "決算短信の日付と終値照合済",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "3329",
@@ -418,11 +433,12 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "決算短信の日付と終値照合済",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "3662",
@@ -443,11 +459,12 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 1
-      }
+      "status": "決算短信の日付と終値照合済",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "7856",
@@ -467,41 +484,45 @@
           "price_source": "Yahoo Finance 日足"
         }
       ],
-      "status": "出典の日付と日足を照合",
-      "source_diagnostics": {
-        "google_and_bing_results": 3,
-        "rss_failures": 0
-      }
+      "status": "決算短信の日付と終値照合済",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "7777",
       "name": "スリー・ディー・マトリックス",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去の決算日時・株価を確認できず",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "4238",
       "name": "ミライアル",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 2
-      }
+      "status": "過去の決算日時・株価を確認できず",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     },
     {
       "code": "2217",
       "name": "モロゾフ",
       "events": [],
-      "status": "本人の過去決算履歴は未確認",
-      "source_diagnostics": {
-        "google_and_bing_results": 0,
-        "rss_failures": 0
-      }
+      "status": "過去の決算日時・株価を確認できず",
+      "irbank_diagnostics": [
+        "HTTP 403",
+        "HTTP 403"
+      ],
+      "new_events": 0
     }
   ]
 }

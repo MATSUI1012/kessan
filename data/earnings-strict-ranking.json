@@ -1,8 +1,8 @@
 {
-  "schema": 2,
-  "generated_at": "2026-11-27T12:17:06+09:00",
-  "description": "本人過去決算反応、出来高、同業反応、Yahoo EPS60日前比較および証券会社格付け履歴が揃った銘柄だけ表示。取れない項目を0点にしない。Yahooは二次データで証券会社原本未照合。",
-  "research_generated_at": "2026-11-27T08:13:26+09:00",
+  "schema": 1,
+  "generated_at": "2026-11-28T11:53:59+09:00",
+  "description": "4項目すべての根拠が確認できた銘柄だけ正式に採点。未取得を0点扱いしない。ニュース見出しのみではレーティング変更なしと認定しない。",
+  "research_generated_at": "2026-11-28T07:52:22+09:00",
   "coverage": {
     "screened": 20,
     "formally_ranked": 0,
@@ -10,14 +10,14 @@
     "volume_available": 20,
     "peers_available": 20,
     "analyst_revision_verified": 0,
-    "eps_trend_60d_available": 0,
-    "broker_history_available": 0
+    "new_own_events": 0
   },
   "records": [],
   "audits": [
     {
       "code": "4369",
       "name": "トリケミカル研究所",
+      "earnings_date": "2026-11-30",
       "covered": {
         "own_earnings_reaction": true,
         "volume_supply_demand": true,
@@ -26,15 +26,14 @@
       },
       "own_events": 4,
       "peer_events": 48,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
     },
     {
       "code": "1436",
       "name": "グリーンエナジー＆カンパニー",
+      "earnings_date": "2026-12-08",
       "covered": {
         "own_earnings_reaction": false,
         "volume_supply_demand": true,
@@ -43,32 +42,30 @@
       },
       "own_events": 0,
       "peer_events": 58,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
     },
     {
       "code": "2910",
       "name": "ロック・フィールド",
+      "earnings_date": "2026-12-04",
       "covered": {
         "own_earnings_reaction": true,
         "volume_supply_demand": true,
         "recent_industry_peers": true,
         "analyst_upgrades_61d": false
       },
-      "own_events": 4,
+      "own_events": 8,
       "peer_events": 42,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
     },
     {
       "code": "2751",
       "name": "テンポスホールディングス",
+      "earnings_date": "2026-12-09",
       "covered": {
         "own_earnings_reaction": false,
         "volume_supply_demand": true,
@@ -77,219 +74,14 @@
       },
       "own_events": 0,
       "peer_events": 11,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "3031",
-      "name": "ラクーンホールディングス",
-      "covered": {
-        "own_earnings_reaction": true,
-        "volume_supply_demand": true,
-        "recent_industry_peers": true,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 2,
-      "peer_events": 8,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "3854",
-      "name": "アイル",
-      "covered": {
-        "own_earnings_reaction": true,
-        "volume_supply_demand": true,
-        "recent_industry_peers": true,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 1,
-      "peer_events": 57,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "6387",
-      "name": "サムコ",
-      "covered": {
-        "own_earnings_reaction": true,
-        "volume_supply_demand": true,
-        "recent_industry_peers": true,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 2,
-      "peer_events": 7,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "3180",
-      "name": "ビューティガレージ",
-      "covered": {
-        "own_earnings_reaction": false,
-        "volume_supply_demand": true,
-        "recent_industry_peers": true,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 0,
-      "peer_events": 8,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "3491",
-      "name": "ＧＡ　ｔｅｃｈｎｏｌｏｇｉｅｓ",
-      "covered": {
-        "own_earnings_reaction": false,
-        "volume_supply_demand": true,
-        "recent_industry_peers": true,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 0,
-      "peer_events": 22,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "1873",
-      "name": "日本ハウスホールディングス",
-      "covered": {
-        "own_earnings_reaction": true,
-        "volume_supply_demand": true,
-        "recent_industry_peers": true,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 2,
-      "peer_events": 2,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "6040",
-      "name": "日本スキー場開発",
-      "covered": {
-        "own_earnings_reaction": true,
-        "volume_supply_demand": true,
-        "recent_industry_peers": true,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 3,
-      "peer_events": 1,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "7678",
-      "name": "あさくま",
-      "covered": {
-        "own_earnings_reaction": false,
-        "volume_supply_demand": true,
-        "recent_industry_peers": true,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 0,
-      "peer_events": 31,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "5132",
-      "name": "ｐｌｕｓｚｅｒｏ",
-      "covered": {
-        "own_earnings_reaction": true,
-        "volume_supply_demand": true,
-        "recent_industry_peers": true,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 1,
-      "peer_events": 27,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "3329",
-      "name": "東和フードサービス",
-      "covered": {
-        "own_earnings_reaction": true,
-        "volume_supply_demand": true,
-        "recent_industry_peers": true,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 1,
-      "peer_events": 31,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "3662",
-      "name": "エイチームホールディングス",
-      "covered": {
-        "own_earnings_reaction": true,
-        "volume_supply_demand": true,
-        "recent_industry_peers": true,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 1,
-      "peer_events": 21,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
-    },
-    {
-      "code": "7856",
-      "name": "萩原工業",
-      "covered": {
-        "own_earnings_reaction": true,
-        "volume_supply_demand": true,
-        "recent_industry_peers": true,
-        "analyst_upgrades_61d": false
-      },
-      "own_events": 2,
-      "peer_events": 8,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
     },
     {
       "code": "5971",
       "name": "共和工業所",
+      "earnings_date": "2026-12-07",
       "covered": {
         "own_earnings_reaction": true,
         "volume_supply_demand": true,
@@ -298,15 +90,62 @@
       },
       "own_events": 1,
       "peer_events": 16,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
     },
     {
-      "code": "4238",
-      "name": "ミライアル",
+      "code": "3031",
+      "name": "ラクーンホールディングス",
+      "earnings_date": "2026-11-30",
+      "covered": {
+        "own_earnings_reaction": true,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 2,
+      "peer_events": 8,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "3854",
+      "name": "アイル",
+      "earnings_date": "2026-12-07",
+      "covered": {
+        "own_earnings_reaction": true,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 1,
+      "peer_events": 57,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "6387",
+      "name": "サムコ",
+      "earnings_date": "2026-12-08",
+      "covered": {
+        "own_earnings_reaction": true,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 3,
+      "peer_events": 7,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "3180",
+      "name": "ビューティガレージ",
+      "earnings_date": "2026-12-08",
       "covered": {
         "own_earnings_reaction": false,
         "volume_supply_demand": true,
@@ -314,16 +153,143 @@
         "analyst_upgrades_61d": false
       },
       "own_events": 0,
-      "peer_events": 7,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
+      "peer_events": 8,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "3491",
+      "name": "ＧＡ　ｔｅｃｈｎｏｌｏｇｉｅｓ",
+      "earnings_date": "2026-12-10",
+      "covered": {
+        "own_earnings_reaction": false,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 0,
+      "peer_events": 22,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "1873",
+      "name": "日本ハウスホールディングス",
+      "earnings_date": "2026-12-04",
+      "covered": {
+        "own_earnings_reaction": true,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 3,
+      "peer_events": 2,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "6040",
+      "name": "日本スキー場開発",
+      "earnings_date": "2026-12-04",
+      "covered": {
+        "own_earnings_reaction": true,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 3,
+      "peer_events": 1,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "7678",
+      "name": "あさくま",
+      "earnings_date": "2026-12-09",
+      "covered": {
+        "own_earnings_reaction": false,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 0,
+      "peer_events": 31,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "5132",
+      "name": "ｐｌｕｓｚｅｒｏ",
+      "earnings_date": "2026-12-09",
+      "covered": {
+        "own_earnings_reaction": true,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 1,
+      "peer_events": 27,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "3329",
+      "name": "東和フードサービス",
+      "earnings_date": "2026-11-30",
+      "covered": {
+        "own_earnings_reaction": true,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 1,
+      "peer_events": 31,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "3662",
+      "name": "エイチームホールディングス",
+      "earnings_date": "2026-12-04",
+      "covered": {
+        "own_earnings_reaction": true,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 1,
+      "peer_events": 21,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "7856",
+      "name": "萩原工業",
+      "earnings_date": "2026-12-07",
+      "covered": {
+        "own_earnings_reaction": true,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 2,
+      "peer_events": 8,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
     },
     {
       "code": "7777",
       "name": "スリー・ディー・マトリックス",
+      "earnings_date": "2026-12-10",
       "covered": {
         "own_earnings_reaction": false,
         "volume_supply_demand": true,
@@ -332,15 +298,30 @@
       },
       "own_events": 0,
       "peer_events": 11,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
+    },
+    {
+      "code": "4238",
+      "name": "ミライアル",
+      "earnings_date": "2026-12-08",
+      "covered": {
+        "own_earnings_reaction": false,
+        "volume_supply_demand": true,
+        "recent_industry_peers": true,
+        "analyst_upgrades_61d": false
+      },
+      "own_events": 0,
+      "peer_events": 7,
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
     },
     {
       "code": "2217",
       "name": "モロゾフ",
+      "earnings_date": "2026-12-09",
       "covered": {
         "own_earnings_reaction": false,
         "volume_supply_demand": true,
@@ -349,11 +330,9 @@
       },
       "own_events": 0,
       "peer_events": 12,
-      "eps_60d_available": false,
-      "broker_history_available": false,
-      "eps_up": null,
-      "broker_upgrades": 0,
-      "diagnostics": {}
+      "analyst_headline_indications": [],
+      "newly_collected_own_events": 0,
+      "fetch_diagnostics": []
     }
   ]
 }
